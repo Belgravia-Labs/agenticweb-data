@@ -10982,5 +10982,1263 @@
   "prerequisites": [
    "mcp"
   ]
+ },
+ {
+  "id": "dawn-agent-discovery-framework",
+  "name": "A Framework for Agent Discovery in DAWN",
+  "acronym": "",
+  "aliases": [
+   "draft-zhang-dawn-agent-discovery-framework",
+   "DAWN Discovery Architecture"
+  ],
+  "collisions": [],
+  "step": "discover",
+  "parties": [
+   "agent-site",
+   "agent-registry"
+  ],
+  "form": "dns-record",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can a client discover the minimum public information about AI agents across local and cross-organizational boundaries while preserving each site's data sovereignty?",
+  "analog": "Federated DNS delegation and referral applied to agent discovery records",
+  "origin": {
+   "org": "Pengcheng Laboratory, Futurewei, Sun Yat-sen University (IETF DAWN contributors)",
+   "date": "2026-10-15"
+  },
+  "governance": "IETF Internet-Draft in the DAWN (Discovery of Agents With Names) working group context; Informational intended status",
+  "native_status": "Internet-Draft, Intended Status: Informational; expires 18 April 2027",
+  "phase": "draft",
+  "implementation": "none-found",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-zhang-dawn-agent-discovery-framework-06",
+   "date": "2026-10-15"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-zhang-dawn-agent-discovery-framework-06",
+  "discovery": {
+   "mechanism": "Federation Metadata Records (FMRs) published as DNS resource records in a site's authoritative zone (Mode A, DNSSEC-validated), or synchronized between Federation Gateways via non-DNS modes (Mode B: BGP-like peering, gossip, trusted directory publication)",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "No concrete record format or name is defined in this informational draft, so support cannot be observed from a site.",
+   "on_absent": "No inference; the draft defines no normative formats."
+  },
+  "evidence": [
+   {
+    "claim": "The draft describes a two-layer federated reference architecture (Local Discovery Plane and Federation Plane) with Federation Gateways, an Export Policy Engine and Federation Metadata Records for initial agent discovery; it is informational and defines no normative protocol formats.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-zhang-dawn-agent-discovery-framework-06",
+    "date": "2026-10-15"
+   }
+  ],
+  "summary_md": "An informational IETF Internet-Draft describing a two-layer federated reference architecture for initial discovery of AI agents under the DAWN charter. A Local Discovery Plane handles zero-configuration advertisement inside a site, while a Federation Plane exchanges Federation Metadata Records (a binding of Minimum Discoverable Information) between site gateways, preferably over DNS with DNSSEC. It includes an Export Policy Engine for data sovereignty and supports referral, delegation and indirection. It defines no normative formats and does not compete with ACAP, Agent Directory or ARDP.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.8,
+  "use_cases": [
+   "agent-naming",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "standards-body",
+   "platform",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "dns-aid",
+   "ardp"
+  ],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-16",
+  "history": [
+   {
+    "date": "2026-10-16",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-zhang-dawn-agent-discovery-framework-06)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-zhang-dawn-agent-discovery-framework-06"
+   }
+  ]
+ },
+ {
+  "id": "agent-identity-document",
+  "name": "The Agent Identity Document: A Hosted, Accountable Public Record for AI Agents",
+  "acronym": "",
+  "aliases": [
+   "Agent Identity Document",
+   "agent-identity.json"
+  ],
+  "collisions": [],
+  "step": "identify",
+  "parties": [
+   "agent-site",
+   "agent-registry"
+  ],
+  "form": "well-known-file",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can a counterparty look up who an agent is, who is accountable for it, what the provider has checked about its operator, and whether it has been withdrawn, when the operator has no domain or PKI of their own?",
+  "analog": "security.txt-style well-known record combined with a hosted identity provider's public registry entry",
+  "origin": {
+   "org": "knownAs.dev (Authecity Systems LLC)",
+   "date": "2026-10-10"
+  },
+  "governance": "Individual Internet-Draft by F. Alla; not adopted by an IETF working group. Intended status Informational.",
+  "native_status": "Internet-Draft, Intended Status: Informational; expires 13 April 2027",
+  "phase": "draft",
+  "implementation": "shipping",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-alla-agent-identity-document-01",
+   "date": "2026-10-10"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-alla-agent-identity-document-01",
+  "discovery": {
+   "mechanism": "well-known URI on the agent's identity hostname",
+   "path": "/.well-known/agent-identity.json"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "/.well-known/agent-identity.json",
+   "parse": "Parse JSON; check for version, fqdn, status and endpoints members, and for provider-generated facts versus operator-asserted claims",
+   "on_absent": "A 404 means no identity is published at that hostname; do not infer the hostname was never allocated. Also try legacy /.well-known/agent.json."
+  },
+  "evidence": [
+   {
+    "claim": "Internet-Draft specifying a JSON Agent Identity Document at /.well-known/agent-identity.json on a provider-assigned hostname, with lifecycle status, dated expiring checks on the operator, and a request to register the well-known URI suffix; states it describes a practice in production at one provider.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-alla-agent-identity-document-01",
+    "date": "2026-10-10"
+   }
+  ],
+  "summary_md": "Specifies a small JSON document served at /.well-known/agent-identity.json on a hostname assigned to a single agent by an identity provider. It separates provider-asserted facts (hostname, endpoints, lifecycle status) from operator-asserted claims (description, contact, homepage, public key) and publishes dated, expiring checks on the operator instead of a trust level. Every identity is held by an accountable person or organisation, and agents may not create accounts or modify DNS. The draft says it describes a practice in production at one provider.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.8,
+  "use_cases": [
+   "prove-agent-identity",
+   "describe-agent-capabilities",
+   "agent-naming"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "web-bot-auth-signature-agent-card",
+   "a2a",
+   "ans"
+  ],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-16",
+  "history": [
+   {
+    "date": "2026-10-16",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-alla-agent-identity-document-01)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-alla-agent-identity-document-01"
+   }
+  ]
+ },
+ {
+  "id": "mcp-dns-discovery",
+  "name": "Discovery of Model Context Protocol Servers via DNS TXT Records",
+  "acronym": "",
+  "aliases": [
+   "MCP DNS Discovery",
+   "draft-morrison-mcp-dns-discovery"
+  ],
+  "collisions": [],
+  "step": "discover",
+  "parties": [
+   "agent-site",
+   "agent-registry"
+  ],
+  "form": "dns-record",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can a client discover an MCP server's endpoint, the operating organisation's identity, and a signed ~handle identity envelope using DNS TXT records under a domain?",
+  "analog": "DKIM/DMARC-style underscore-labelled TXT records for MCP server discovery",
+  "origin": {
+   "org": "Alter Meridian Pty Ltd (B. Morrison)",
+   "date": null
+  },
+  "governance": "Individual Internet-Draft by a single author; not adopted by an IETF working group per the page text (Network Working Group, Intended Status: Informational).",
+  "native_status": "Internet-Draft, Intended Status: Informational; expires 12 April 2027",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-morrison-mcp-dns-discovery-08",
+   "date": "2026-10-09"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08",
+  "discovery": {
+   "mechanism": "DNS TXT records at _mcp.<domain>, _org-alter.<domain> and _alter.<domain>; DNSSEC required for the envelope record, DANE TLSA pin on the MCP endpoint where required",
+   "path": "_mcp.<domain>"
+  },
+  "probe": {
+   "method": "DNS TXT query",
+   "path": "_mcp.<domain>",
+   "parse": "Parse the semicolon-delimited key=value TXT record (endpoint URL, protocol family, transport, key, capability profile); optionally query _org-alter.<domain> and _alter.<domain>",
+   "on_absent": "Treat the domain as not advertising MCP discovery via DNS (NXDOMAIN or no TXT record)"
+  },
+  "evidence": [
+   {
+    "claim": "The Internet-Draft defines three DNS TXT records (_mcp, _org-alter, _alter) for MCP server discovery, organisational identity, and a signed Ed25519 handle envelope, with Informational intended status and expiry on 12 April 2027.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08",
+    "date": "2026-10-09"
+   }
+  ],
+  "summary_md": "This Internet-Draft defines three DNS TXT records: `_mcp.<domain>` for MCP server endpoint, transport, key and capability profile; `_org-alter.<domain>` for operator organisational identity; and `_alter.<domain>` for an Ed25519-signed ~handle envelope. DNSSEC validation is required for the envelope record, and a DANE TLSA pin is required on the MCP endpoint in some cases. It follows the DKIM, SPF, DMARC and MTA-STS precedent and discusses related DNS-based discovery drafts (AGENT-AID, DNS-AID, MDNS-AGENT).",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.8,
+  "use_cases": [
+   "discover-my-api",
+   "expose-tools-to-agents",
+   "prove-agent-identity"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "mcp",
+   "dns-aid",
+   "aid"
+  ],
+  "prerequisites": [
+   "mcp"
+  ],
+  "dispute": null,
+  "last_verified": "2026-10-16",
+  "history": [
+   {
+    "date": "2026-10-16",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08"
+   }
+  ]
+ },
+ {
+  "id": "agent-principal-binding",
+  "name": "Security Principal and Verifier Binding for Agent Communication Protocols",
+  "acronym": "",
+  "aliases": [
+   "Agent Principal Binding",
+   "draft-bu-agentproto-security-principal-binding"
+  ],
+  "collisions": [],
+  "step": "identify",
+  "parties": [
+   "agent-agent",
+   "agent-site"
+  ],
+  "form": "document-format",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can an agent communication protocol state, for each security-relevant claim (user authority, agent instance, tool identity, delegation, session, action evidence), which field carries it, which party verifies it, and what happens when it is absent, stale, or unverifiable?",
+  "analog": "A claim-to-verifier checklist template for protocol security reviews, similar to a threat-model matrix.",
+  "origin": {
+   "org": "S. Bu (individual IETF Internet-Draft author)",
+   "date": null
+  },
+  "governance": "Individual Internet-Draft submitted under BCP 78 and BCP 79; listed under the Agent Communication Protocols workgroup label.",
+  "native_status": "Internet-Draft, Intended Status: Informational; expires 17 April 2027",
+  "phase": "draft",
+  "implementation": "none-found",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-bu-agentproto-security-principal-binding-08",
+   "date": "2026-10-14"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-bu-agentproto-security-principal-binding-08",
+  "discovery": {
+   "mechanism": "none; a protocol-neutral review and specification-authoring model, not a wire protocol",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "Not applicable; no site-observable artifact is defined."
+  },
+  "evidence": [
+   {
+    "claim": "Internet-Draft -08 published 14 October 2026, Intended Status Informational, defining a verifier-facing claim matrix format, row-outcome semantics (satisfied, unsatisfied, indeterminate, unsupported, not-evaluated, not-applicable) and dependency-closure rules for composed mappings. States it does not define a new agent protocol, token format, audit log or authorization system.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-bu-agentproto-security-principal-binding-08",
+    "date": "2026-10-14"
+   }
+  ],
+  "summary_md": "An individual IETF Internet-Draft that defines a protocol-neutral matrix format for separating security claims such as user authority, agent instance identity, tool identity, delegation, session binding and action evidence. For each claim, the matrix records the carrier field, the verifier, the binding and freshness rule, the failure behavior, and the accepted result. It also defines row-outcome semantics and dependency-closure rules so that composite results are not stronger than their verified inputs. It is Informational guidance and does not define a wire protocol.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.6,
+  "use_cases": [
+   "prove-agent-identity",
+   "delegate-user-authority",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "standards-body",
+   "agent-builder"
+  ],
+  "pairs_with": [],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-16",
+  "history": [
+   {
+    "date": "2026-10-16",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-bu-agentproto-security-principal-binding-08)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-bu-agentproto-security-principal-binding-08"
+   }
+  ]
+ },
+ {
+  "id": "aip-delegation-chain",
+  "name": "Agent Identity Protocol (AIP): Verifiable Delegation for AI Agent Systems",
+  "acronym": "AIP",
+  "aliases": [
+   "Agent Identity Protocol",
+   "draft-prakash-aip"
+  ],
+  "collisions": [
+   "aip"
+  ],
+  "step": "permit",
+  "parties": [
+   "agent-agent"
+  ],
+  "form": "document-format",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can a relying party verify from a token and the issuer's public key who delegated authority, which agents it passed through, and that no hop widened it, when no authorization server is on the path?",
+  "analog": "Attenuable capability tokens (Biscuit), applied to agent-to-agent subdelegation",
+  "origin": {
+   "org": "Independent (S. Prakash)",
+   "date": null
+  },
+  "governance": "Individual Internet-Draft by a single independent author; Intended Status: Standards Track",
+  "native_status": "Internet-Draft, Intended Status: Standards Track; expires 13 April 2027",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-prakash-aip-02",
+   "date": "2026-10-10"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-prakash-aip-02",
+  "discovery": {
+   "mechanism": "Self-signed agent identity document at a well-known HTTPS path derived from the aip:web identifier",
+   "path": "/.well-known/aip/<path>.json"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "/.well-known/aip/<path>.json",
+   "parse": "Parse JSON; check aip equals \"1.0\", id is an AIP identifier, and document_signature verifies over the JCS-canonicalized document",
+   "on_absent": "Treat the site or agent as not supporting AIP"
+  },
+  "evidence": [
+   {
+    "claim": "The draft specifies AIP, a delegation chain model with an attenuation invariant, a verification algorithm, JWT-chain and Biscuit encodings, and bindings for MCP, A2A and HTTP.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-prakash-aip-02",
+    "date": "2026-10-10"
+   }
+  ],
+  "summary_md": "AIP conveys delegated authority along a chain of AI agents so a relying party can verify the grantor, the path, and that each hop only narrowed authority. It defines an encoding-neutral chain model with a single attenuation invariant, a normative verification algorithm, and two encodings (a JWT chain and a Biscuit token with Datalog policy). It defines bindings for MCP, A2A and generic HTTP, and is intended to compose with the AIMS framework. Agent identifiers are aip:web (DNS-based) or aip:key (self-certifying Ed25519).",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.8,
+  "use_cases": [
+   "delegate-user-authority",
+   "prove-agent-identity"
+  ],
+  "audience": [
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "mcp",
+   "a2a",
+   "wimse-aims"
+  ],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-16",
+  "history": [
+   {
+    "date": "2026-10-16",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-prakash-aip-02)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-prakash-aip-02"
+   }
+  ]
+ },
+ {
+  "id": "credential-delegation-protocol-wimse",
+  "name": "Credential Delegation Protocol for AI Agents in Multi-System Environments",
+  "acronym": "",
+  "aliases": [
+   "draft-sweeney-wimse-credential-delegation",
+   "Cred Credential Delegation Protocol"
+  ],
+  "collisions": [],
+  "step": "permit",
+  "parties": [
+   "agent-human",
+   "agent-site"
+  ],
+  "form": "endpoint",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can a human user delegate scoped, attenuated, revocable credentials to AI agents across multiple service providers without exposing the underlying OAuth tokens to the agents?",
+  "analog": "OAuth 2.0 Token Exchange profile for agent delegation",
+  "origin": {
+   "org": "K. Sweeney (individual IETF submission, WIMSE)",
+   "date": "2026-10-13"
+  },
+  "governance": "Individual Internet-Draft submitted to the IETF WIMSE Working Group mailing list; source on GitHub (cred-ninja/protocol)",
+  "native_status": "Internet-Draft, Intended Status: Standards Track; expires 16 April 2027",
+  "phase": "draft",
+  "implementation": "prototype",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-sweeney-wimse-credential-delegation-01",
+   "date": "2026-10-13"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-sweeney-wimse-credential-delegation-01",
+  "discovery": {
+   "mechanism": "Delegation Server endpoints within a trust domain; no standard discovery path described in the available text",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "No externally observable site-level signal described; treat support as unknown"
+  },
+  "evidence": [
+   {
+    "claim": "Internet-Draft draft-sweeney-wimse-credential-delegation-01, published 13 October 2026, Intended Status Standards Track, workgroup WIMSE; profiles RFC 8693, RFC 9449, RFC 9396 and OpenID CIBA for credential delegation to AI agents.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-sweeney-wimse-credential-delegation-01",
+    "date": "2026-10-13"
+   },
+   {
+    "claim": "Source for the draft and issue tracker are hosted on GitHub; the reference implementation is reported to pass twenty Asor interop vectors.",
+    "label": "REPORTED",
+    "url": "https://github.com/cred-ninja/protocol",
+    "date": null
+   }
+  ],
+  "summary_md": "An individual Internet-Draft in the IETF WIMSE space that profiles OAuth 2.0 Token Exchange (RFC 8693), DPoP (RFC 9449), Rich Authorization Requests (RFC 9396) and CIBA for delegating scoped credentials to AI agents. It defines ephemeral-key agent identities, capability-shaped delegation tokens, credential wrapping, consent-gated delegation, cascading revocation and audit chains. It defines no new token formats or grant types and is positioned as a companion to draft-ietf-wimse-aims.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.8,
+  "use_cases": [
+   "delegate-user-authority",
+   "prove-agent-identity",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "wimse-aims",
+   "http-message-signatures",
+   "aip-delegation-chain"
+  ],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-16",
+  "history": [
+   {
+    "date": "2026-10-16",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-sweeney-wimse-credential-delegation-01)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-sweeney-wimse-credential-delegation-01"
+   }
+  ]
+ },
+ {
+  "id": "agent-delegation-receipts",
+  "name": "Agent Delegation Receipts",
+  "acronym": "",
+  "aliases": [
+   "Delegation Receipt",
+   "draft-nelson-agent-delegation-receipts"
+  ],
+  "collisions": [],
+  "step": "permit",
+  "parties": [
+   "agent-human",
+   "agent-agent",
+   "agent-site"
+  ],
+  "form": "document-format",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can a human principal's authorization of an AI agent (scope, boundaries, validity window, and operator instruction hash) be recorded as a signed, verifiable receipt that can be checked before the agent acts?",
+  "analog": "A signed power-of-attorney slip the agent shows before acting, with a hash pinning the operator's instructions.",
+  "origin": {
+   "org": "Authproof (R. Nelson)",
+   "date": null
+  },
+  "governance": "Individual Internet-Draft submitted to the IETF (Network Working Group); not an adopted working group document.",
+  "native_status": "Internet-Draft, Intended Status: Informational; expires 12 April 2027",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-nelson-agent-delegation-receipts-11",
+   "date": "2026-10-09"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-nelson-agent-delegation-receipts-11",
+  "discovery": {
+   "mechanism": "No discovery mechanism described in the available page text; receipts are presented by the agent to a verifier before executing an action.",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "No site-level support signal is defined, so absence cannot be observed."
+  },
+  "evidence": [
+   {
+    "claim": "The Internet-Draft defines the Agent Delegation Receipt as a signed record of what a human principal authorized an AI agent to do, using a JWS profile over JCS-canonicalized JSON and a COSE_Sign1 profile, plus scope attenuation for delegation chains and a revocation registry with cascade semantics.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-nelson-agent-delegation-receipts-11",
+    "date": "2026-10-09"
+   }
+  ],
+  "summary_md": "Defines the Agent Delegation Receipt, a signed record of the scope, hard boundaries, validity window, and operator-instruction hash that a human principal authorized for an AI agent. Version -11 uses a JWS profile (RFC 7515) over JCS-canonicalized JSON (RFC 8785) and a COSE_Sign1 profile (RFC 9052). It also specifies scope attenuation across multi-agent delegation chains and a revocation registry with cascade semantics. The draft states it is an audit and attribution layer for honest deployments, not a control against a malicious operator.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.6,
+  "use_cases": [
+   "delegate-user-authority",
+   "audit-agent-actions",
+   "prove-agent-identity"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "ap2",
+   "erc-8004",
+   "agent-audit-trail"
+  ],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-16",
+  "history": [
+   {
+    "date": "2026-10-16",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-nelson-agent-delegation-receipts-11)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-nelson-agent-delegation-receipts-11"
+   }
+  ]
+ },
+ {
+  "id": "aauth-r3",
+  "name": "AAuth Rich Resource Requests",
+  "acronym": "R3",
+  "aliases": [
+   "AAuth R3",
+   "Rich Resource Requests"
+  ],
+  "collisions": [],
+  "step": "permit",
+  "parties": [
+   "agent-site",
+   "agent-human"
+  ],
+  "form": "endpoint",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can an agent request an API's named operations, and a person approve one exact call, without relying on opaque scope strings?",
+  "analog": "OAuth Rich Authorization Requests (RAR)",
+  "origin": {
+   "org": "Dick Hardt (Hellō)",
+   "date": "2026-09-28"
+  },
+  "governance": "Individual IETF Internet-Draft submission, companion to the AAuth Protocol; no working group.",
+  "native_status": "Exploratory Draft (-00); no known implementations",
+  "phase": "draft",
+  "implementation": "none-found",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "-00",
+   "date": "2026-09-28"
+  },
+  "spec_url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-09-28-aauth-rich-resource-requests",
+  "discovery": {
+   "mechanism": "Resource advertises supported operation vocabularies as r3_vocabularies; a resource token carries r3_uri and r3_s256 pointing at the R3 document",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": ""
+  },
+  "evidence": [
+   {
+    "claim": "Individual-submission companion to the AAuth Protocol by Dick Hardt (Hellō); -00, marked Exploratory Draft, no known implementations. It replaces scope strings with resource-named operations in vocabularies (MCP, OpenAPI, gRPC, GraphQL, AsyncAPI, WSDL, OData), content-addressed R3 documents identified by SHA-256, and per-call proposals.",
+    "label": "REPORTED",
+    "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-09-28-aauth-rich-resource-requests",
+    "date": "2026-09-28"
+   }
+  ],
+  "summary_md": "AAuth R3 is an individual IETF draft by Dick Hardt that extends AAuth so an agent can request named operations from a vocabulary the resource advertises, rather than scope strings. The resource describes the operations in a JSON R3 document identified by its SHA-256 hash, which the person's server shows for consent. The issuer places the granted operations and hash in the auth token, and the resource enforces from the token alone. For operations marked per-call, a single-use token is bound to the call's concrete parameters. The draft has no known implementations and defines no consent screen or revocation.",
+  "part_of": "aauth",
+  "group": null,
+  "candidate": true,
+  "confidence": 0.6,
+  "use_cases": [
+   "let-agents-act-on-my-site",
+   "delegate-user-authority"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "aauth",
+   "mcp"
+  ],
+  "prerequisites": [
+   "aauth"
+  ],
+  "dispute": null,
+  "last_verified": "2026-10-16",
+  "history": [
+   {
+    "date": "2026-10-16",
+    "note": "auto-drafted candidate from exa (https://insights.bostonidentity.com/research/ietf-datatracker-2026-09-28-aauth-rich-resource-requests)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-09-28-aauth-rich-resource-requests"
+   }
+  ]
+ },
+ {
+  "id": "acip",
+  "name": "Agent Context Interchange Protocol",
+  "acronym": "ACIP",
+  "aliases": [
+   "draft-agarwal-acip"
+  ],
+  "collisions": [],
+  "step": "permit",
+  "parties": [
+   "agent-human"
+  ],
+  "form": "document-format",
+  "track": "ietf",
+  "scope": "coding-tools",
+  "question": "How can a coding-agent host resolve organization, project, task, user, and vendor instruction sources into one deterministic set of rules with defined precedence, path scoping, enforceability, and an audit receipt?",
+  "analog": "AGENTS.md with a structured YAML schema, precedence algorithm, and resolution receipt",
+  "origin": {
+   "org": "S. Agarwal (individual IETF Internet-Draft submission)",
+   "date": "2026-10-12"
+  },
+  "governance": "Individual Internet-Draft, Network Working Group; not adopted by an IETF working group",
+  "native_status": "Internet-Draft, Intended Status: Informational; expires 15 April 2027; work in progress",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-agarwal-acip-00",
+   "date": "2026-10-12"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-agarwal-acip-00",
+  "discovery": {
+   "mechanism": "Fixed repository path (.agents/agent-context.yaml and .agents/policies/) plus a user-level config path; organization policy via a host-specific managed channel",
+   "path": ".agents/agent-context.yaml"
+  },
+  "probe": {
+   "method": "GET",
+   "path": ".agents/agent-context.yaml",
+   "parse": "Parse as a single YAML 1.2 document and check that it validates against the ACIP top-level members. Only applies to public repositories; file is in the repository, not the site root.",
+   "on_absent": "Treat ACIP as not supported by that repository"
+  },
+  "evidence": [
+   {
+    "claim": "Internet-Draft defines ACIP, a YAML-based format and host-resolution behavior for coding-agent context sources, with source precedence, file matching, constraint/directive/preference distinctions, and a resolution receipt.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-agarwal-acip-00",
+    "date": "2026-10-12"
+   }
+  ],
+  "summary_md": "ACIP is an individual Internet-Draft (Informational) defining a YAML policy file, `agent-context.yaml`, and a host resolution procedure for persistent instructions given to coding agents. It ranks organization, project, task, user, and vendor sources by host-determined provenance and applies path-scoped rules. It separates enforceable constraints from textual directives and preferences, and it defines a resolution receipt. It also specifies compatibility with AGENTS.md and Agent Skills, plus migration profiles for tools without native support. It states that natural-language instructions cannot force behavior and that enforcement requires a host control at the action boundary.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.8,
+  "use_cases": [
+   "let-agents-act-on-my-site",
+   "audit-agent-actions",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "agents-md",
+   "anthropic-agent-skills-format",
+   "mcp"
+  ],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-16",
+  "history": [
+   {
+    "date": "2026-10-16",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-agarwal-acip-00)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-agarwal-acip-00"
+   }
+  ]
+ },
+ {
+  "id": "knowledge-linkset",
+  "name": "The 'knowledge-linkset' Well-Known URI for Publishing Knowledge Artefacts",
+  "acronym": "",
+  "aliases": [
+   "knowledge-linkset well-known URI",
+   "draft-besleaga-agentic-knowledge-wellknown"
+  ],
+  "collisions": [],
+  "step": "discover",
+  "parties": [
+   "agent-site"
+  ],
+  "form": "well-known-file",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can a web origin publish, at one well-known location, a checkable list of the knowledge artefacts it offers (graph serializations, JSON-LD context, text file, chunk export, change ledger) so that agents can find them and verify digests?",
+  "analog": "api-catalog (RFC 9727) applied to knowledge artefacts instead of APIs",
+  "origin": {
+   "org": "A. N. Besleaga (independent)",
+   "date": "2026-10-14"
+  },
+  "governance": "Individual Internet-Draft, not adopted by a working group; Informational intended status; the artefact formats are defined in a separate AgenticSystemCore Specification.",
+  "native_status": "Internet-Draft, Intended Status: Informational; expires 17 April 2027; work in progress",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-besleaga-agentic-knowledge-wellknown-01",
+   "date": "2026-10-14"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-besleaga-agentic-knowledge-wellknown-01",
+  "discovery": {
+   "mechanism": "well-known URI serving an application/linkset+json link set, with a profile URI; pages point to it with the 'describedby' relation",
+   "path": "/.well-known/knowledge-linkset"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "/.well-known/knowledge-linkset",
+   "parse": "Check for HTTP 200 with Content-Type application/linkset+json carrying the profile https://w3id.org/agentic-system-core/profile/agentic-knowledge (or a Link rel=profile header); parse JSON with a single top-level 'linkset' member.",
+   "on_absent": "Treat as not supported (404 or no linkset JSON)."
+  },
+  "evidence": [
+   {
+    "claim": "Internet-Draft -01 defines the 'knowledge-linkset' well-known URI serving an RFC 9264 link set of knowledge artefacts with optional SHA-256 digests and a profile URI; intended status Informational, expires 17 April 2027.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-besleaga-agentic-knowledge-wellknown-01",
+    "date": "2026-10-14"
+   }
+  ],
+  "summary_md": "Defines the well-known URI /.well-known/knowledge-linkset, where an origin serves a single RFC 9264 link set (application/linkset+json) listing its knowledge artefacts such as graph serializations, a JSON-LD context, an agent-facing text file, a chunk export and a change ledger. Links may carry SHA-256 digests using HTTP digest field syntax, and a profile URI identifies the conventions followed. It defines no new media type or link relation; pages point to it with 'describedby'. It is an individual Informational Internet-Draft.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.8,
+  "use_cases": [
+   "serve-content-to-agents",
+   "discover-my-api"
+  ],
+  "audience": [
+   "site-owner",
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "api-catalog-rfc9727",
+   "llms-txt"
+  ],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-16",
+  "history": [
+   {
+    "date": "2026-10-16",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-besleaga-agentic-knowledge-wellknown-01)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-besleaga-agentic-knowledge-wellknown-01"
+   }
+  ]
+ },
+ {
+  "id": "scitt-ai-agent-execution",
+  "name": "AI Agent Execution Profile of SCITT",
+  "acronym": "AIR",
+  "aliases": [
+   "AgentInteractionRecord",
+   "Evidence Envelope Specification",
+   "draft-emirdag-scitt-ai-agent-execution"
+  ],
+  "collisions": [],
+  "step": "account",
+  "parties": [
+   "agent-agent",
+   "agent-human"
+  ],
+  "form": "document-format",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can an agent operator produce independently verifiable, tamper-evident records of an AI agent's material actions using SCITT signed statements and an independent transparency service?",
+  "analog": "A notarized, hash-chained audit ledger held by a third-party custodian, applied to agent actions via SCITT.",
+  "origin": {
+   "org": "Veridic Inc.",
+   "date": null
+  },
+  "governance": "Individual Internet-Draft submitted to the IETF Network Working Group; not an adopted working group document.",
+  "native_status": "Internet-Draft, Intended Status: Informational; expires 15 April 2027; work in progress",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-emirdag-scitt-ai-agent-execution-01",
+   "date": "2026-10-12"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-emirdag-scitt-ai-agent-execution-01",
+  "discovery": {
+   "mechanism": "Not a web-discovery standard. Records are registered with a SCITT Transparency Service (Evidence Custodian) and verified by relying parties out of band.",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "No site-level probe is defined; support cannot be observed from a site's public endpoints."
+  },
+  "evidence": [
+   {
+    "claim": "Internet-Draft defines the AgentInteractionRecord (AIR) as a COSE_Sign1 signed statement payload for material AI agent actions. It maps the Agent Operator to SCITT Issuer and an independent Evidence Custodian to Transparency Service, and defines registration policy, redaction receipts and regulatory mappings (EU AI Act Arts. 12/19, DORA, NIST AI RMF, MAS, PCI DSS, MiFID II).",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-emirdag-scitt-ai-agent-execution-01",
+    "date": "2026-10-12"
+   }
+  ],
+  "summary_md": "An individual IETF Internet-Draft (-01, Informational) profiling SCITT (RFC 9943) for AI agent execution evidence. It defines the AgentInteractionRecord, a hash-chained COSE_Sign1 signed statement for each material agent action, with the Agent Operator as Issuer and an independent Evidence Custodian as Transparency Service. It specifies registration policy, identity binding levels, redaction receipts and compliance mappings. The Evidence Receipt is not yet fully specified in this revision.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.8,
+  "use_cases": [
+   "audit-agent-actions",
+   "prove-agent-identity"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "wimse-agent-audit-record",
+   "agent-audit-trail"
+  ],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-16",
+  "history": [
+   {
+    "date": "2026-10-16",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-emirdag-scitt-ai-agent-execution-01)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-emirdag-scitt-ai-agent-execution-01"
+   }
+  ]
+ },
+ {
+  "id": "agent-channel-fan-out",
+  "name": "Agent-Channel Frame for Identity-Keyed Fan-Out Delivery to Concurrent Sessions",
+  "acronym": "",
+  "aliases": [
+   "agent-channel frame",
+   "draft-morrison-agent-channel-fan-out"
+  ],
+  "collisions": [],
+  "step": "coordinate",
+  "parties": [
+   "agent-agent"
+  ],
+  "form": "endpoint",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can concurrent agent sessions of one identity-bound principal (or members of an organisation) exchange short structured messages through identity-keyed fan-out delivery rather than a shared-file fallback?",
+  "analog": "A pub/sub message envelope with Server-Sent Events delivery, addressed by identity scope rather than endpoint",
+  "origin": {
+   "org": "Alter Meridian Pty Ltd",
+   "date": "2026-10-09"
+  },
+  "governance": "Individual Internet-Draft by a single author, submitted via the IETF datatracker; not an IETF working group document.",
+  "native_status": "Internet-Draft, Intended Status: Informational; expires 12 April 2027",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-morrison-agent-channel-fan-out-02",
+   "date": "2026-10-09"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-morrison-agent-channel-fan-out-02",
+  "discovery": {
+   "mechanism": "Delivery substrate addressed via the discovery mechanism of draft-morrison-mcp-dns-discovery (DNS-based); per-handle SSE stream",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "No public probe defined in the available text; support cannot be observed from a site without the companion discovery draft details."
+  },
+  "evidence": [
+   {
+    "claim": "Internet-Draft specifies a JSON agent-channel frame with a closed catalogue of kinds, identity attribution pair, provenance block, recipient scope expansion, and per-handle Server-Sent Events delivery with subscribe-time filters.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-morrison-agent-channel-fan-out-02",
+    "date": "2026-10-09"
+   }
+  ],
+  "summary_md": "An individual Internet-Draft (Informational) defining an application-layer JSON frame, the agent-channel frame, for short structured messages between concurrent agent sessions of one principal or members of an organisation. Senders name a recipient scope that is expanded against live subscriptions at delivery time, and recipients receive frames over a per-handle Server-Sent Events stream with an optional subscribe filter. Frames are ephemeral; persistence is out of scope. It composes with draft-morrison-mcp-dns-discovery and draft-morrison-identity-accord and introduces no new transport.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.6,
+  "use_cases": [
+   "agent-to-agent-messaging"
+  ],
+  "audience": [
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "mcp-dns-discovery"
+  ],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-16",
+  "history": [
+   {
+    "date": "2026-10-16",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-morrison-agent-channel-fan-out-02)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-morrison-agent-channel-fan-out-02"
+   }
+  ]
+ },
+ {
+  "id": "aagv",
+  "name": "Agentic Authority Graph Validation",
+  "acronym": "AAGV",
+  "aliases": [
+   "AAGV-v0.1",
+   "Agentic Authority Graph Validation: A Non-Vacuous Interchange Profile for Revocation-Cut Analysis"
+  ],
+  "collisions": [],
+  "step": "permit",
+  "parties": [
+   "agent-agent"
+  ],
+  "form": "document-format",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can an implementer represent a delegated-authority graph in JSON and deterministically validate that declared revocation cuts disconnect all authority roots from all consequential sinks, without accepting vacuous or incomplete graphs?",
+  "analog": "A linter or schema validator for authority graphs that returns INVALID, INDETERMINATE, VALID_OPEN, or VALID_CLOSED for a single snapshot.",
+  "origin": {
+   "org": "GoodShyt Group Inc.",
+   "date": "2026-10-14"
+  },
+  "governance": "Individual Internet-Draft submission (no working group), author D. O. Watts",
+  "native_status": "Internet-Draft, Intended Status: Experimental; expires 17 April 2027",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-watts-agentic-authority-graph-validation-00",
+   "date": "2026-10-14"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-watts-agentic-authority-graph-validation-00",
+  "discovery": {
+   "mechanism": "none defined; AAGV is a carrier-neutral JSON interchange profile exchanged out of band",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "No site-level discovery mechanism is defined, so support cannot be observed from a site."
+  },
+  "evidence": [
+   {
+    "claim": "The Internet-Draft defines AAGV, a JSON interchange profile and deterministic validation algorithm for authority roots, consequential sinks, normal paths, revocation cut sets and snapshot edge state, with outcomes INVALID, INDETERMINATE, VALID_OPEN and VALID_CLOSED.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-watts-agentic-authority-graph-validation-00",
+    "date": "2026-10-14"
+   }
+  ],
+  "summary_md": "AAGV is an individual IETF Internet-Draft (Experimental) defining a carrier-neutral JSON model and deterministic algorithm for validating authority graphs with declared roots, consequential sinks, normal paths, and revocation cut sets. It includes anti-vacuity rules that reject empty sink or normal-path sets, dangling references, non-dominating cuts, and non-revocable cut edges. It returns INDETERMINATE rather than closed when relevant edge state is unknown. It does not define an authorization token, discover hidden paths, or prove physical containment.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.7,
+  "use_cases": [
+   "audit-agent-actions",
+   "delegate-user-authority"
+  ],
+  "audience": [
+   "standards-body",
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-16",
+  "history": [
+   {
+    "date": "2026-10-16",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-watts-agentic-authority-graph-validation-00)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-watts-agentic-authority-graph-validation-00"
+   }
+  ]
+ },
+ {
+  "id": "agentic-payments-gating-model",
+  "name": "A Server-Side Model for Gating Agent-Initiated Human-Sourced Asynchronous HTTP Tasks on Payment or Entitlement",
+  "acronym": "",
+  "aliases": [
+   "Agent-Initiated Payment Gating",
+   "draft-king-yew-choo-agentic-payments"
+  ],
+  "collisions": [],
+  "step": "pay",
+  "parties": [
+   "agent-site",
+   "agent-payment"
+  ],
+  "form": "document-format",
+  "track": "ietf",
+  "scope": "payments",
+  "question": "How should a server gate paid, agent-initiated asynchronous HTTP tasks on payment or entitlement so that fulfilment never precedes validation and retries do not create duplicate tasks or gate acceptances?",
+  "analog": "",
+  "origin": {
+   "org": "True Primary, London (King Yew Choo, individual submission)",
+   "date": "2026-10-08"
+  },
+  "governance": "Individual IETF Internet-Draft submission, not adopted by a working group",
+  "native_status": "Internet-Draft, Intended Status: Informational; expires 11 April 2027",
+  "phase": "draft",
+  "implementation": "none-found",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-king-yew-choo-agentic-payments-01",
+   "date": "2026-10-08"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-king-yew-choo-agentic-payments-01",
+  "discovery": {
+   "mechanism": "none; architectural model with no wire format or discovery element",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": ""
+  },
+  "evidence": [
+   {
+    "claim": "Internet-Draft draft-king-yew-choo-agentic-payments-01 published 8 October 2026, Intended Status Informational. It defines no protocol, wire format, or conformance requirements, and presents a server-side payment/entitlement gate (g*) and task state machine for agent-initiated paid asynchronous HTTP tasks.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-king-yew-choo-agentic-payments-01",
+    "date": "2026-10-08"
+   }
+  ],
+  "summary_md": "An individual-submission Internet-Draft (Informational) presenting a server-side model for paid, human-sourced asynchronous HTTP tasks initiated by software agents. It places a payment or entitlement gate before fulfilment, maps the gate to adjacent protocols (HTTP Payment authentication scheme, MPP, x402, AP2), and defines a task state machine. Under stated assumptions it yields gate-before-fulfilment safety, at most one task per idempotency key, and at most one gate acceptance per payment requirement. It defines no wire format or conformance requirements.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.6,
+  "use_cases": [
+   "accept-agent-payments",
+   "agent-checkout",
+   "delegate-user-authority",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "platform",
+   "standards-body",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "mpp",
+   "x402",
+   "ap2"
+  ],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-16",
+  "history": [
+   {
+    "date": "2026-10-16",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-king-yew-choo-agentic-payments-01)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-king-yew-choo-agentic-payments-01"
+   }
+  ]
  }
 ]

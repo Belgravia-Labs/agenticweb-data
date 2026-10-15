@@ -488,5 +488,61 @@
  "mcp-server-cards": {
   "skip": "no-fixed-path",
   "note": "candidate record; probe rule pending"
+ },
+ "dawn-agent-discovery-framework": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "agent-identity-document": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "mcp-dns-discovery": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "agent-principal-binding": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "aip-delegation-chain": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "credential-delegation-protocol-wimse": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "agent-delegation-receipts": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "aauth-r3": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "acip": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "knowledge-linkset": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "scitt-ai-agent-execution": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "agent-channel-fan-out": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "aagv": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "agentic-payments-gating-model": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
  }
 }

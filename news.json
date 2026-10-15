@@ -413,5 +413,173 @@
   ],
   "kind": "status",
   "detector": "rules@1.0"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: A Framework for Agent Discovery in DAWN",
+  "url": "https://datatracker.ietf.org/doc/html/draft-zhang-dawn-agent-discovery-framework-06",
+  "summary": "An informational IETF Internet-Draft describing a two-layer federated reference architecture for initial discovery of AI agents under the DAWN charter.",
+  "related": [
+   "dawn-agent-discovery-framework"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: The Agent Identity Document: A Hosted, Accountable Public Record for AI Agents",
+  "url": "https://datatracker.ietf.org/doc/html/draft-alla-agent-identity-document-01",
+  "summary": "Specifies a small JSON document served at /.well-known/agent-identity.json on a hostname assigned to a single agent by an identity provider.",
+  "related": [
+   "agent-identity-document"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: Discovery of Model Context Protocol Servers via DNS TXT Records",
+  "url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08",
+  "summary": "This Internet-Draft defines three DNS TXT records: `_mcp.<domain>` for MCP server endpoint, transport, key and capability profile; `_org-alter.<domain>` for operator organisational identity; and `_alter.<domain>` for an Ed25519-signed ~handle envelope.",
+  "related": [
+   "mcp-dns-discovery"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: Security Principal and Verifier Binding for Agent Communication Protocols",
+  "url": "https://datatracker.ietf.org/doc/html/draft-bu-agentproto-security-principal-binding-08",
+  "summary": "An individual IETF Internet-Draft that defines a protocol-neutral matrix format for separating security claims such as user authority, agent instance identity, tool identity, delegation, session binding and action evidence.",
+  "related": [
+   "agent-principal-binding"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.6
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: Agent Identity Protocol (AIP): Verifiable Delegation for AI Agent Systems",
+  "url": "https://datatracker.ietf.org/doc/html/draft-prakash-aip-02",
+  "summary": "AIP conveys delegated authority along a chain of AI agents so a relying party can verify the grantor, the path, and that each hop only narrowed authority.",
+  "related": [
+   "aip-delegation-chain"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: Credential Delegation Protocol for AI Agents in Multi-System Environments",
+  "url": "https://datatracker.ietf.org/doc/html/draft-sweeney-wimse-credential-delegation-01",
+  "summary": "An individual Internet-Draft in the IETF WIMSE space that profiles OAuth 2.0 Token Exchange (RFC 8693), DPoP (RFC 9449), Rich Authorization Requests (RFC 9396) and CIBA for delegating scoped credentials to AI agents.",
+  "related": [
+   "credential-delegation-protocol-wimse"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: Agent Delegation Receipts",
+  "url": "https://datatracker.ietf.org/doc/html/draft-nelson-agent-delegation-receipts-11",
+  "summary": "Defines the Agent Delegation Receipt, a signed record of the scope, hard boundaries, validity window, and operator-instruction hash that a human principal authorized for an AI agent.",
+  "related": [
+   "agent-delegation-receipts"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.6
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: AAuth Rich Resource Requests",
+  "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-09-28-aauth-rich-resource-requests",
+  "summary": "AAuth R3 is an individual IETF draft by Dick Hardt that extends AAuth so an agent can request named operations from a vocabulary the resource advertises, rather than scope strings.",
+  "related": [
+   "aauth-r3"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.6
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: Agent Context Interchange Protocol",
+  "url": "https://datatracker.ietf.org/doc/html/draft-agarwal-acip-00",
+  "summary": "ACIP is an individual Internet-Draft (Informational) defining a YAML policy file, `agent-context.yaml`, and a host resolution procedure for persistent instructions given to coding agents.",
+  "related": [
+   "acip"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: The 'knowledge-linkset' Well-Known URI for Publishing Knowledge Artefacts",
+  "url": "https://datatracker.ietf.org/doc/html/draft-besleaga-agentic-knowledge-wellknown-01",
+  "summary": "Defines the well-known URI /.well-known/knowledge-linkset, where an origin serves a single RFC 9264 link set (application/linkset+json) listing its knowledge artefacts such as graph serializations, a JSON-LD context, an agent-facing text file, a chunk export and a change ledger.",
+  "related": [
+   "knowledge-linkset"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: AI Agent Execution Profile of SCITT",
+  "url": "https://datatracker.ietf.org/doc/html/draft-emirdag-scitt-ai-agent-execution-01",
+  "summary": "An individual IETF Internet-Draft (-01, Informational) profiling SCITT (RFC 9943) for AI agent execution evidence.",
+  "related": [
+   "scitt-ai-agent-execution"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: Agent-Channel Frame for Identity-Keyed Fan-Out Delivery to Concurrent Sessions",
+  "url": "https://datatracker.ietf.org/doc/html/draft-morrison-agent-channel-fan-out-02",
+  "summary": "An individual Internet-Draft (Informational) defining an application-layer JSON frame, the agent-channel frame, for short structured messages between concurrent agent sessions of one principal or members of an organisation.",
+  "related": [
+   "agent-channel-fan-out"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.6
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: Agentic Authority Graph Validation",
+  "url": "https://datatracker.ietf.org/doc/html/draft-watts-agentic-authority-graph-validation-00",
+  "summary": "AAGV is an individual IETF Internet-Draft (Experimental) defining a carrier-neutral JSON model and deterministic algorithm for validating authority graphs with declared roots, consequential sinks, normal paths, and revocation cut sets.",
+  "related": [
+   "aagv"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.7
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: A Server-Side Model for Gating Agent-Initiated Human-Sourced Asynchronous HTTP Tasks on Payment or Entitlement",
+  "url": "https://datatracker.ietf.org/doc/html/draft-king-yew-choo-agentic-payments-01",
+  "summary": "An individual-submission Internet-Draft (Informational) presenting a server-side model for paid, human-sourced asynchronous HTTP tasks initiated by software agents.",
+  "related": [
+   "agentic-payments-gating-model"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.6
  }
 ]
