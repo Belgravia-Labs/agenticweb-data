@@ -59,6 +59,28 @@
     "date": "2026",
     "label": "VERIFIED",
     "url": "https://modelcontextprotocol.io/docs/extensions/apps"
+   },
+   {
+    "claim": "MCP Server Cards (SEP-2127) reached Final on 2026-10-06; Skills over MCP (SEP-2640) reached Final on 2026-09-13; next spec release cadence is under discussion (SEP-3398)",
+    "label": "VERIFIED",
+    "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2127-mcp-server-cards.md",
+    "date": "2026-10-06",
+    "retrieved_at": "2026-10-15T22:20:39Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "25515147a14b4a8e3e7e30bf56c9285ee8f45c4b753083294f56cf1e064498c0",
+    "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "MCP Server Cards (SEP-2127) reached Final on 2026-10-06; Skills over MCP (SEP-2640) reached Final on 2026-09-13; next spec release cadence is under discussion (SEP-3398)",
+    "label": "REPORTED",
+    "url": "https://plan.modelcontextprotocol.io/releases/2",
+    "date": "2026-10-06",
+    "retrieved_at": "2026-10-15T22:20:39Z",
+    "source_type": "secondary",
+    "http_status": 200,
+    "content_sha256": "22ca99b2fbc44a3c92cb0a9c1af34bc84c382f36e162c0c1cd48221459e39ec2",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "endpoint",
@@ -72,11 +94,15 @@
    {
     "date": "2026-09-06",
     "note": "verified against modelcontextprotocol.io/specification/2026-07-28, github.com/modelcontextprotocol/experimental-ext-server-card, github.com/modelcontextprotocol/registry, modelcontextprotocol.io/docs/2026-07-28/sdk, modelcontextprotocol.io/docs/extensions/apps, en.wikipedia.org/wiki/Model_Context_Protocol, workos.com MCP-2026 blog"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "Server Cards (SEP-2127) Final 6 Oct 2026; Skills over MCP (SEP-2640) Final 13 Sep 2026; next spec release cadence under discussion (SEP-3398)"
    }
   ],
   "id": "mcp",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Model Context Protocol",
   "native_status": "Active open specification, current dated release 2026-07-28",
   "origin": {
@@ -164,10 +190,32 @@
     "date": "2026-04-09",
     "label": "VERIFIED",
     "url": "https://www.prnewswire.com/news-releases/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year-302737641.html"
+   },
+   {
+    "claim": "A2A v1.0.1 released on 2026-05-28 (v1.0.0 on 2026-03-12); governance is the Linux Foundation with a Technical Steering Committee of AWS, Cisco, Google, IBM Research, Microsoft, Salesforce, SAP and ServiceNow",
+    "label": "REPORTED",
+    "url": "https://github.com/a2aproject/A2A/releases",
+    "date": "2026-05-28",
+    "retrieved_at": "2026-10-15T22:20:38Z",
+    "source_type": "secondary",
+    "http_status": 200,
+    "content_sha256": "a9dad4ebe20d4fcfebcfa4634557d0c78aec03c3856bef805f38a481a961f547",
+    "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "A2A v1.0.1 released on 2026-05-28 (v1.0.0 on 2026-03-12); governance is the Linux Foundation with a Technical Steering Committee of AWS, Cisco, Google, IBM Research, Microsoft, Salesforce, SAP and ServiceNow",
+    "label": "VERIFIED",
+    "url": "https://a2a-protocol.org/latest/",
+    "date": "2026-05-28",
+    "retrieved_at": "2026-10-15T22:20:38Z",
+    "source_type": "issuer",
+    "http_status": 200,
+    "content_sha256": "1e6a86899688eeef5fc28539a57d93fd9d8fe4de8cf669a12fb916ac809a2433",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "endpoint",
-  "governance": "Linux Foundation (A2A Project); contributed by Google",
+  "governance": "Linux Foundation; Technical Steering Committee with AWS, Cisco, Google, IBM Research, Microsoft, Salesforce, SAP, ServiceNow",
   "group": null,
   "history": [
    {
@@ -177,11 +225,15 @@
    {
     "date": "2026-09-06",
     "note": "verified against a2a-protocol.org/latest/specification/, github.com/a2aproject/A2A README and agent-discovery.md, and the LF/A2A one-year press release (prnewswire)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "A2A v1.0.1 released on 2026-05-28 (v1.0.0 on 2026-03-12); governance is the Linux Foundation with a Technical Steering Committee of AWS, Cisco, Google, IBM Research, Microsoft, Salesforce, SAP and ServiceNow"
    }
   ],
   "id": "a2a",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent2Agent Protocol",
   "native_status": "Stable, v1.0.0",
   "origin": {
@@ -206,8 +258,8 @@
   "summary_md": "Agent2Agent (A2A) is an open protocol for two independent AI agents — potentially built on different frameworks, by different companies, running on separate servers — to discover each other's capabilities and collaborate on a task without either exposing its internal memory, tools, or proprietary logic [1]. It solves agent-to-agent interoperability at the application layer: an A2A server publishes a JSON \"Agent Card\" describing its identity, service endpoint, supported interaction modes (sync request/response, Server-Sent Events streaming, async push notifications), and skills; a client agent fetches that card, then exchanges JSON-RPC 2.0 messages over HTTP(S) to create and drive a task to completion [1]. Standard discovery is the well-known URI `https://{domain}/.well-known/agent-card.json`, per RFC 8615; the spec also allows curated-registry discovery (no standard registry API is prescribed) and direct/hardcoded configuration [1].\n\nA2A does not itself define a registry protocol, a payment mechanism, or a UI-rendering format — those are left to other layers (registries, x402/agentic-commerce specs, and UI-negotiation extensions respectively). It also does not replace intra-agent tool-calling protocols such as MCP; A2A and MCP are commonly described by the project as complementary.\n\nGoogle announced A2A on 2025-04-09 with 50+ launch partners and donated it to the Linux Foundation later in 2025 [2]. The specification reached v1.0.0 and is now labeled stable on the project's own documentation site [1]. At its one-year mark (2026-04-09) the project's press release claimed more than 150 supporting organizations, integration into major cloud platforms (the release names Google Cloud, Microsoft, and AWS), and active production deployments in supply chain, financial services, insurance, and IT operations [3] — this adoption count is a claim by the Linux Foundation/A2A project itself, not an independently measured probe count, so it is recorded here as \"claimed,\" not \"measured.\"\n\nOfficial SDKs are published for Python, Go, JavaScript, Java, .NET, and Rust under the `a2aproject` GitHub organization, and the project lists integrations from frameworks including Google ADK, LangGraph, and IBM's BeeAI [2]. What remains open/disputed: the spec explicitly does not standardize a registry API for curated discovery, leaving that to individual deployments; and no third-party, methodology-disclosed count of live A2A servers (as opposed to \"supporting organizations\") was found as of this verification pass.",
   "track": "linux-foundation",
   "version": {
-   "date": "2026-01",
-   "label": "1.0.0"
+   "label": "1.0.1",
+   "date": "2026-05-28"
   },
   "watch": [
    {
@@ -264,6 +316,17 @@
     "date": "2026",
     "label": "VERIFIED",
     "url": "https://agentclientprotocol.com/rfds/about"
+   },
+   {
+    "claim": "Agent Client Protocol v1.11.0 (schema v1.25.0) released on 2026-10-09; v2 is unstable",
+    "label": "REPORTED",
+    "url": "https://github.com/agentclientprotocol/agent-client-protocol/blob/main/CHANGELOG.md",
+    "date": "2026-10-09",
+    "retrieved_at": "2026-10-15T22:20:48Z",
+    "source_type": "secondary",
+    "http_status": 200,
+    "content_sha256": "ab27a5f47c36379f95ae8b62a3756bf1c337cb2b2cc8e17635dce197331867b0",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "endpoint",
@@ -281,11 +344,15 @@
    {
     "date": "2026-09-06",
     "note": "collisions updated to add Agent Connect Protocol (Cisco/AGNTCY), verified against github.com/agntcy/acp-spec, spec.acp.agntcy.org"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "Agent Client Protocol v1.11.0 (schema v1.25.0) released on 2026-10-09; v2 is unstable"
    }
   ],
   "id": "agent-client-protocol",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent Client Protocol",
   "native_status": "v1 stable and shipping; v2 published in Draft form as of 2026-07-20",
   "origin": {
@@ -310,8 +377,8 @@
   "summary_md": "The Agent Client Protocol (ACP) standardizes how a code editor or IDE talks to a coding agent, so that any ACP-compatible agent works with any ACP-compatible editor without bespoke integration work on either side [1]. It targets the same M×N problem the Language Server Protocol solved for editor-to-language-server integration, but for agent-to-editor instead.\n\nACP assumes the user's primary surface is the editor, which reaches out to agents for specific tasks. Local agents run as editor sub-processes and communicate over JSON-RPC via stdio; remote, cloud-hosted agents are supported over HTTP or WebSocket, though the project's own documentation states full remote support is still a work in progress [1]. ACP deliberately reuses MCP's JSON representations where practical, and layers on coding-specific UX types (e.g. representing diffs) that MCP does not define; user-facing text defaults to Markdown.\n\nACP does not itself define agent discovery beyond the ACP Registry (stabilized 2026-03-09), which gives clients a standard way to find, install, and configure agents — it does not attempt to be a general web-scale discovery mechanism [2]. It also does not (yet) fully specify remote-agent transport; a dedicated Transports Working Group (JetBrains and Block/Goose engineers) was formed on 2026-04-22 specifically to standardize WebSocket/HTTP transports for remote agents [2].\n\nAs of this check (September 2026), ACP v1 is stable and has shipped a steady cadence of \"Completed\" RFDs throughout 2026 (session resume, session list, logout, elicitation, boolean config options, request cancellation, and more), and ACP v2's protocol documentation and schema were published in Draft form on 2026-07-20 [2]. Rust and TypeScript SDKs both reached 1.0 on 2026-06-25 [2]. Governance is unambiguous and disclosed rather than disputed: Zed Industries is the explicit \"BDFL\" (benevolent dictator for life) design-team lead over a public Request-for-Dialog process modeled loosely on Rust's RFC process, and JetBrains' Sergey Ignatov joined as a second Lead Maintainer on 2026-02-18, formalizing what the project describes as \"growing collaboration between Zed and JetBrains\" [3][2]. What is not yet settled: how much of the remote-agent transport work lands in v1 versus v2, and whether governance broadens beyond the two-company core team the project says it currently anticipates expanding.",
   "track": "single-vendor",
   "version": {
-   "date": "2026-07-20",
-   "label": "v1 (stable); v2 draft"
+   "label": "v1.11.0 (schema v1.25.0); v2 unstable",
+   "date": "2026-10-09"
   },
   "watch": [
    {
@@ -361,6 +428,17 @@
     "date": "2026-09-05",
     "label": "VERIFIED",
     "url": "https://raw.githubusercontent.com/i-am-bee/acp/main/docs/spec/openapi.yaml"
+   },
+   {
+    "claim": "IBM's Agent Communication Protocol is deprecated (merged into A2A)",
+    "label": "VERIFIED",
+    "url": "https://github.com/i-am-bee/acp",
+    "date": "2026-10-16",
+    "retrieved_at": "2026-10-15T22:21:11Z",
+    "source_type": "issuer",
+    "http_status": 200,
+    "content_sha256": "cdaf746d21bc482262fb1195dd8f16a0af452f5719c91427f4417071661a7d1a",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "endpoint",
@@ -378,11 +456,15 @@
    {
     "date": "2026-09-06",
     "note": "collisions updated to add Agent Connect Protocol (Cisco/AGNTCY), verified against github.com/agntcy/acp-spec, spec.acp.agntcy.org"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "IBM's Agent Communication Protocol is deprecated (merged into A2A)"
    }
   ],
   "id": "agent-communication-protocol",
   "implementation": "deprecated",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent Communication Protocol",
   "native_status": "\"ACP is now part of A2A under the Linux Foundation\" (repository banner)",
   "origin": {
@@ -394,7 +476,7 @@
    "agent-agent",
    "agent-human"
   ],
-  "phase": "withdrawn",
+  "phase": "deprecated",
   "probe": {
    "method": "GET",
    "on_absent": "Expected: the protocol was retired in August 2025 and superseded by A2A, so absence is the normal case",
@@ -570,6 +652,17 @@
     "date": null,
     "label": "VERIFIED",
     "url": "https://raw.githubusercontent.com/Universal-Commerce-Protocol/ucp/main/README.md"
+   },
+   {
+    "claim": "UCP added a Payments Technical Council (2026-09-02), a Lodging Booking draft capability (2026-09-25) and Merchant Center cart transfer (2026-09-16)",
+    "label": "REPORTED",
+    "url": "https://github.com/Universal-Commerce-Protocol/ucp/releases",
+    "date": "2026-09-25",
+    "retrieved_at": "2026-10-15T22:20:58Z",
+    "source_type": "secondary",
+    "http_status": 200,
+    "content_sha256": "96b5252d6e99a64c3a7186a6f24dc50ea76120a4b32c188ca107d092c5d09c82",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "well-known-file",
@@ -583,11 +676,15 @@
    {
     "date": "2026-09-06",
     "note": "verified against ucp.dev (home, core-concepts), Universal-Commerce-Protocol/ucp README, and Universal-Commerce-Protocol/.github MAINTAINERS.md / GOVERNANCE.md"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "Payments Technical Council (2026-09-02); Lodging Booking draft capability (2026-09-25); Merchant Center cart transfer (2026-09-16)"
    }
   ],
   "id": "ucp",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Universal Commerce Protocol",
   "native_status": "Open standard; specification expanding beyond Shopping into Lodging and Food",
   "origin": {
@@ -671,10 +768,32 @@
     "date": null,
     "label": "VERIFIED",
     "url": "https://raw.githubusercontent.com/google-agentic-commerce/AP2/main/docs/ap2/checkout_mandate.md"
+   },
+   {
+    "claim": "AP2 v0.2.0 released on 2026-04-28, and AP2 was donated to the FIDO Alliance (Payments TWG and Agentic Authentication TWG) the same day",
+    "label": "REPORTED",
+    "url": "https://github.com/google-agentic-commerce/AP2/releases",
+    "date": "2026-04-28",
+    "retrieved_at": "2026-10-15T22:20:56Z",
+    "source_type": "secondary",
+    "http_status": 200,
+    "content_sha256": "3f3ce4b35fd99b3e8c9a046f534d704fe890e5cf24d5b8c38c56b0fd4b7cb1af",
+    "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "AP2 v0.2.0 released on 2026-04-28, and AP2 was donated to the FIDO Alliance (Payments TWG and Agentic Authentication TWG) the same day",
+    "label": "VERIFIED",
+    "url": "https://fidoalliance.org/fido-alliance-to-develop-standards-for-trusted-ai-agent-interactions/",
+    "date": "2026-04-28",
+    "retrieved_at": "2026-10-15T22:20:56Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "34366b11822769a91e63c43e2467f7402fbcd17ff0a0cd56816d9175c4e01146",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "endpoint",
-  "governance": "Core specification donated by Google to the FIDO Alliance for continued development; the google-agentic-commerce/AP2 repository now hosts only samples and an SDK, not the normative spec text",
+  "governance": "Google; core specification donated to the FIDO Alliance (Payments TWG and Agentic Authentication TWG), 2026-04-28; the google-agentic-commerce/AP2 repository now hosts only samples and an SDK, not the normative spec text",
   "group": null,
   "history": [
    {
@@ -684,11 +803,15 @@
    {
     "date": "2026-09-06",
     "note": "verified against google-agentic-commerce/AP2 (README, CONTRIBUTING.md, docs/ap2/specification.md, docs/ap2/checkout_mandate.md) and Google Cloud blog launch announcement; folded in ap2-checkout-mandate as a component rather than a separate protocol"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "AP2 v0.2.0 released on 2026-04-28, and AP2 was donated to the FIDO Alliance (Payments TWG and Agentic Authentication TWG) the same day"
    }
   ],
   "id": "ap2",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent Payments Protocol",
   "native_status": "Security/authorization protocol for agent-performed payments; core spec now stewarded by FIDO Alliance",
   "origin": {
@@ -713,8 +836,8 @@
   "summary_md": "The Agent Payments Protocol (AP2) is a security and authorization framework for agent-performed payments: it defines how a user's intent to buy something is captured as a cryptographically signed, tamper-evident Mandate that a Merchant, Credential Provider, and Merchant Payment Processor can verify and later present as dispute evidence [1]. It solves the \"was this agent actually authorized to spend this money on this cart\" problem for both human-present (\"direct\") and human-not-present (\"autonomous\") purchase flows, using two linked mandate types: a Checkout Mandate (what is being bought) and a Payment Mandate (how it is being paid for), each with a corresponding Receipt [1][4].\n\nAP2 explicitly does not define a commerce protocol itself — no catalog APIs, no checkout session lifecycle, no merchant-facing REST surface — it is a security layer meant to sit inside a Commerce Protocol such as the Universal Commerce Protocol (UCP), which it says it is \"designed explicitly to be compatible with\" [1]. It also does not expose any discoverable endpoint or well-known file: mandates travel as message payloads inside whatever transport the surrounding commerce or agent-to-agent protocol uses, so there is no generic HTTP probe that proves or disproves AP2 support at an origin.\n\nAs of this verification, AP2's normative specification text has been donated by Google to the FIDO Alliance for continued stewardship; the original `google-agentic-commerce/AP2` GitHub repository states explicitly that further contributions there are limited to code samples and an SDK, not the spec itself [2]. Google's original announcement (September 2025) cited more than 60 launch partners, though that figure comes from Google's own blog post rather than an independent count [3]. Reference samples exist in Python, Go, and Android using Google's Agent Development Kit (ADK) and Gemini models, but these are demonstration code, not a conformance suite.\n\nWhat is disputed or unresolved: how governance actually operates now that the spec sits with FIDO rather than in the original GitHub repo — no FIDO-hosted specification page was located during this verification, only the original repository's copy and Google's donation announcement — and how the 60+ \"launch partners\" map to organizations actually running AP2-verified mandates in production versus organizations that merely endorsed the announcement.",
   "track": "industry-body",
   "version": {
-   "date": null,
-   "label": "v0.2"
+   "label": "v0.2.0",
+   "date": "2026-04-28"
   },
   "watch": [
    {
@@ -842,10 +965,21 @@
     "date": "2026-09-06",
     "label": "VERIFIED",
     "url": "https://x402.org"
+   },
+   {
+    "claim": "The Linux Foundation appointed Michael Hursta as executive director of the x402 Foundation, effective 2026-10-01; the foundation has 50+ members",
+    "label": "VERIFIED",
+    "url": "https://www.linuxfoundation.org/press/linux-foundation-appoints-michael-hursta-as-executive-director-of-the-x402-foundation",
+    "date": "2026-10-01",
+    "retrieved_at": "2026-10-15T22:20:56Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "268710ef8fce0d258deb16a0c0f50e3e83087cc15d155c1d93cf6926fdea1e8f",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "http-header",
-  "governance": "x402 Foundation, a Series of LF Projects, LLC (Linux Foundation); operational launch announced 2026-07-14",
+  "governance": "x402 Foundation, a Series of LF Projects, LLC (Linux Foundation); operational launch announced 2026-07-14; Executive Director Michael Hursta from 2026-10-01; 50+ members",
   "group": "HTTP 402 family",
   "history": [
    {
@@ -855,11 +989,15 @@
    {
     "date": "2026-09-06",
     "note": "verified against x402.org (homepage, /announcement), x402-foundation/x402 specs/transports-v2/http.md"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "The Linux Foundation appointed Michael Hursta as executive director of the x402 Foundation, effective 2026-10-01; the foundation has 50+ members"
    }
   ],
   "id": "x402",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "x402",
   "native_status": "Open, neutral standard for internet-native payments",
   "origin": {
@@ -1014,6 +1152,17 @@
     "date": "2026-08-12",
     "label": "VERIFIED",
     "url": "https://mpp.dev"
+   },
+   {
+    "claim": "The MPP draft was renamed draft-httpauth-payment; draft-httpauth-payment-01 is dated 2026-09-09",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-httpauth-payment/",
+    "date": "2026-09-09",
+    "retrieved_at": "2026-10-15T22:20:57Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "0046155860396af50f22d1ee94ff0b2f52f4260a5024a22cd8bba61c34834962",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "http-header",
@@ -1027,11 +1176,15 @@
    {
     "date": "2026-09-06",
     "note": "verified against mpp.dev (homepage, /protocol, /governance)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "The MPP draft was renamed draft-httpauth-payment; draft-httpauth-payment-01 is dated 2026-09-09"
    }
   ],
   "id": "mpp",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Machine Payments Protocol",
   "native_status": "Open protocol; developer docs distinguish the normative IETF specification from the mpp.dev developer-friendly overview",
   "origin": {
@@ -1052,13 +1205,13 @@
   },
   "question": "How can a machine client (an agent, script, or another server) pay for an HTTP resource using any payment network, not just one?",
   "scope": "payments",
-  "spec_url": "https://mpp.dev/protocol",
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-httpauth-payment-01",
   "step": "pay",
   "summary_md": "The Machine Payments Protocol (MPP) standardizes HTTP 402 \"Payment Required\" as an extensible, payment-network-agnostic machine-to-machine payment flow: a client requests a resource, the server issues a 402 challenge with `WWW-Authenticate: Payment`, the client fulfills the payment (signing a transaction, paying an invoice, or completing a card charge depending on the method) and retries with `Authorization: Payment`, and the server verifies and serves the resource with an optional `Payment-Receipt` header [1]. It solves the same core problem as x402 and L402 — metered, account-free API access for agents and machines — but is explicitly designed to be method-agnostic: the same core Challenge/Credential/Receipt shape can carry Tempo, EVM, Stripe Card, Lightning, Solana, Stellar, Monad, or NEAR Intents payments [1][3].\n\nIt does not itself pick a payment network or currency: the core specification \"makes no claims or affordances to any specific payment method\" and is designed to work with any rail [2]. MPP is precise about status-code semantics in a way that differs from typical HTTP auth schemes — it uses 402 consistently for all payment-related failures (a fresh challenge, a malformed credential, an expired challenge, or a failed verification), reserving 401 for authentication failures unrelated to payment and 403 for cases where a valid payment was made but policy still denies access [1].\n\nMPP's governance is deliberately split in two: the core specification is co-authored by Tempo and Stripe and has been submitted to the IETF standards track under the name \"Payment HTTP Authentication Scheme,\" while individual payment methods are maintained separately by whoever supports that rail, which the project says \"keeps the protocol neutral while letting payment rails move at their own pace\" [2]. As of this verification the IETF submission's exact draft name/number was not independently located on the IETF datatracker, so its formal standing (individual submission vs. working-group adopted) is unconfirmed — mpp.dev's own \"IETF Specs\" card was checked but returned no distinct draft identifier in this pass. SDKs exist for TypeScript, Go, Ruby, Rust, and Python per the project's own site, and MPP maintains a direct compatibility/comparison page against x402 [3]. No independent adoption count was found; adoption is recorded as unmeasured.",
   "track": "vendor-consortium",
   "version": {
-   "date": null,
-   "label": "documented protocol overview on mpp.dev; normative text is the IETF-submitted 'Payment HTTP Authentication Scheme' draft"
+   "label": "draft-httpauth-payment-01",
+   "date": "2026-09-09"
   },
   "watch": [
    {
@@ -1684,6 +1837,17 @@
     "date": "2026",
     "label": "REPORTED",
     "url": "https://ahrefs.com/blog/llmstxt-study/"
+   },
+   {
+    "claim": "llms-txt Python package 0.0.7 released 2026-09-24 (tooling, spec unchanged at v2)",
+    "label": "REPORTED",
+    "url": "https://github.com/AnswerDotAI/llms-txt/releases",
+    "date": "2026-09-24",
+    "retrieved_at": "2026-10-15T22:21:19Z",
+    "source_type": "secondary",
+    "http_status": 200,
+    "content_sha256": "b9edd57a3290d9dd346a93adaad9415d46b7aaa52e75548222b5f9091538f458",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "well-known-file",
@@ -1697,11 +1861,15 @@
    {
     "date": "2026-09-06",
     "note": "verified against llmstxt.org (v2, Aug 2026), llmstxt.org/changes.html, Google's AI optimization guide, and three independent third-party adoption studies (Rankability, SE Ranking, Ahrefs)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "llms-txt Python package 0.0.7 released 2026-09-24 (tooling, spec unchanged at v2)"
    }
   ],
   "id": "llms-txt",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "llms.txt",
   "native_status": "\"This is v2 of the proposal\" — explicitly a community proposal open for input, not a standards-track document",
   "origin": {
@@ -2132,6 +2300,17 @@
     "date": "2026-07-06",
     "label": "VERIFIED",
     "url": "https://www.searchenginejournal.com/google-answers-question-about-llms-author-txt-for-seo/581547/"
+   },
+   {
+    "claim": "Cloudflare 'Disallow AI Training' and Accountable crawler designation (2026-09-15); Bot Preference Sync replaces Managed robots.txt",
+    "label": "VERIFIED",
+    "url": "https://blog.cloudflare.com/",
+    "date": "2026-09-15",
+    "retrieved_at": "2026-10-15T22:21:16Z",
+    "source_type": "issuer",
+    "http_status": 200,
+    "content_sha256": "43b0c38b091dc51269e3cd624032dad5e2ada2c83e94a9af8311f38a23f66149",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "well-known-file",
@@ -2149,11 +2328,15 @@
    {
     "date": "2026-09-07",
     "note": "added Google's 2026-07-06 statement that no crawler honours the directive (Search Engine Roundtable, Search Engine Journal)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "Cloudflare 'Disallow AI Training' and Accountable crawler designation (2026-09-15); Bot Preference Sync replaces Managed robots.txt"
    }
   ],
   "id": "cloudflare-content-signals-policy",
   "implementation": "shipping",
-  "last_verified": "2026-09-07",
+  "last_verified": "2026-10-16",
   "name": "Content Signals Policy",
   "native_status": "Vendor-published policy convention layered on robots.txt; not submitted to a standards body as of this verification",
   "origin": {
@@ -2956,6 +3139,17 @@
     "date": "2026-09-06",
     "label": "VERIFIED",
     "url": "https://github.com/harrylian8766/adp-protocol"
+   },
+   {
+    "claim": "draft-pro-adp-agent-discovery-02 is dated 2026-07-24",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-pro-adp-agent-discovery/",
+    "date": "2026-07-24",
+    "retrieved_at": "2026-10-15T22:21:03Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "fd36889de9a3e00f2399de17cff491c8f4675bf1d0ec5ea4c121b959875799ef",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "well-known-file",
@@ -2973,11 +3167,15 @@
    {
     "date": "2026-09-06",
     "note": "fix round 1: added second evidence entry (harrylian8766/adp-protocol reference implementation, fetched directly); upgraded implementation unknown -> prototype on that basis"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "draft-pro-adp-agent-discovery-02 is dated 2026-07-24"
    }
   ],
   "id": "adp",
   "implementation": "prototype",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent Discovery Protocol",
   "native_status": "Internet-Draft; work in progress",
   "origin": {
@@ -3003,8 +3201,8 @@
   "summary_md": "The Agent Discovery Protocol (ADP) is a layered protocol, currently at v1.1, for discovering, verifying, and interacting with AI agents on the internet [1]. It is an individual IETF Internet-Draft (not adopted by any working group), revision -02, dated 18 June 2026 [1].\n\nADP's organizing idea is escalation: \"if SVCB answers your question, do not issue an HTTP request; if Well-Known suffices, do not open a WebSocket\" [1]. It is explicitly a three-layer stack. Layer 1 is DNS discovery, and rather than redefine it, ADP delegates entirely to the separate DNS-AID Internet-Draft (see `dns-aid`), reusing its SVCB records, its `well-known`/`cap`/`cap-sha256` SvcParamKeys, and its DANE TLSA-based endpoint authentication [1]. Layer 2 is a well-known JSON metadata document, published by default at `/.well-known/agent.json`, containing identity, capability, relationship, security-policy and endpoint-map blocks [1]. Layer 3 covers interaction endpoints: an HTML landing page at the domain root with embedded JSON-LD structured data for human-facing discovery, plus a WebSocket transport -- the Agent Gateway Protocol (AGP) -- for real-time inter-agent messaging authenticated with Ed25519 signatures [1]. A TXT+SRV fallback exists for organizations that cannot deploy SVCB records [1].\n\nADP does not itself mint a new DNS mechanism (Layer 1 is DNS-AID verbatim) and does not define the internal schema of whatever protocol Layer 3 ultimately hands off to (MCP, A2A, etc. remain external, similar to ARD's artifact-agnostic envelope) [1]. Because it explicitly reuses DNS-AID, the two drafts should be read together rather than as fully independent proposals: ADP's Layer 1 section is a summary that points back to the normative DNS-AID text.\n\nCurrent state: revision -02 was published 18 June 2026, expiring 20 December 2026 unless refreshed, and its \"Changes from -00\" section (part of the table of contents) indicates it is still actively being revised rather than stable [1]. A single-author reference implementation was located at github.com/harrylian8766/adp-protocol (5 stars, 1 fork, fetched 2026-09-06): a Node.js SDK and CLI implementing all three layers (SVCB-first DNS discovery aligned with DNS-AID's SvcParamKeys, the agent.json builder, HTML landing-page generation, and Ed25519 verification), published under a CC0 protocol license / MIT SDK license [2]. This is a solo hobbyist project rather than a vendor or standards-body implementation, so implementation is recorded as prototype rather than shipping; no independent deployment or adopter evidence was located, so adoption remains unmeasured.\n\nWhat is disputed or unknown: whether ADP's Layer 2/3 additions (the well-known JSON schema, the WebSocket AGP transport) will be adopted independently of whether DNS-AID itself is adopted, since the two are only loosely coupled (an implementer could deploy DNS-AID without ADP's higher layers, or vice versa using the TXT+SRV fallback); and how ADP's `/.well-known/agent.json` relates to the similarly-named but structurally different `/.well-known/agent` fallback defined by the unrelated AID specification (see `aid`) -- both use the word \"agent\" in a well-known path but are not the same document format.",
   "track": "ietf",
   "version": {
-   "date": "2026-06-18",
-   "label": "draft-pro-adp-agent-discovery-02"
+   "label": "draft-pro-adp-agent-discovery-02",
+   "date": "2026-07-24"
   },
   "watch": [
    {
@@ -3218,6 +3416,17 @@
     "date": "2026-07-06",
     "label": "VERIFIED",
     "url": "https://datatracker.ietf.org/doc/html/draft-mp-agntcy-ads-02"
+   },
+   {
+    "claim": "OASF v1.1.0 released on 2026-07-10",
+    "label": "REPORTED",
+    "url": "https://github.com/agntcy/oasf/releases",
+    "date": "2026-07-10",
+    "retrieved_at": "2026-10-15T22:20:54Z",
+    "source_type": "secondary",
+    "http_status": 200,
+    "content_sha256": "fd7d57bb3bf27467ace6e049ac1978b06751a98a46438912d45ca737eb3e01c0",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "document-format",
@@ -3231,11 +3440,15 @@
    {
     "date": "2026-09-06",
     "note": "verified against live OASF schema browser at schema.oasf.outshift.com and cross-checked against draft-mp-agntcy-ads-02"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "OASF v1.1.0 released on 2026-07-10"
    }
   ],
   "id": "oasf",
   "implementation": "shipping",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Open Agentic Schema Framework",
   "native_status": "Active, versioned schema framework",
   "origin": {
@@ -3261,8 +3474,8 @@
   "summary_md": "The Open Agentic Schema Framework (OASF) is a versioned, hierarchical taxonomy and JSON Schema set for describing an AI agent's skills, domains, and deployment modules, published by Cisco Outshift's AGNTCY project [1]. Unlike most other records under Discover, OASF is not itself a discovery *mechanism* (there is no well-known path or DNS record that \"is\" OASF); it is a shared vocabulary that other discovery mechanisms use to classify what they find.\n\nIt solves a taxonomy-consistency problem: without a shared vocabulary, one registry's \"text summarization\" and another's \"document condensation\" cannot be matched by an automated filter. OASF assigns every skill, domain and module a stable numeric code within a browsable, versioned hierarchy -- for example, Language Processing [1] > Language Understanding [101] > Contextual Comprehension [10101] -- so registries and search clients can filter and aggregate on identical codes rather than free text [1]. The live schema browser at schema.oasf.outshift.com, fetched 6 September 2026, serves four schema versions concurrently (0.7.0, 0.8.0, 1.0.0, 1.1.0), each with its own Classes, Skills, Domains, Modules, Record Dictionary, Objects and Data Types sections, plus linked API documentation and a GitHub-based contribution path [1].\n\nOASF does not define transport, discovery paths, or a registry protocol of its own -- those are the job of AGNTCY's separate Agent Directory Service (ADS, see `ads`), which stores records natively in OASF and can export them into other ecosystems' formats (A2A cards, MCP server descriptors, agent-skill files) without changing the underlying OASF-tagged storage [2]. This makes OASF's own adoption hard to measure independently of ADS's: the clearest evidence of use found during this verification is that ADS's specification names OASF as its native record schema and export source, which is direct but is a single implementer's declared dependency rather than an independent count of registries or agents tagged against the taxonomy [2].\n\nCurrent state: the schema is actively versioned (four concurrent versions browsable, with a \"show deprecated items\" toggle implying an active deprecation/lifecycle process) but carries no publication date of its own on the browser page, unlike the dated IETF drafts and the ARD spec elsewhere on this map -- version history is tracked through the schema browser's version selector rather than a single canonical spec document with a title-page date [1]. Implementation is recorded as \"shipping\" on the strength of the AGNTCY/ADS dependency; adoption is recorded as \"observed\" rather than \"measured\" or \"claimed,\" since no adopter beyond AGNTCY's own tooling was independently verified and no probe was run.\n\nWhat is disputed or unknown: whether any registry or agent framework outside the AGNTCY/ADS lineage has adopted OASF as its primary skill taxonomy, versus ADS being currently its only real consumer; and how OASF's numeric skill codes relate (if at all) to ARD's free-text `capabilities` filter tokens or `representativeQueries` mechanism, which solve an adjacent classification problem without a shared taxonomy.",
   "track": "linux-foundation",
   "version": {
-   "date": null,
-   "label": "1.1.0 (also serving 0.7.0, 0.8.0, 1.0.0)"
+   "label": "v1.1.0",
+   "date": "2026-07-10"
   },
   "watch": [
    {
@@ -3322,10 +3535,21 @@
     "date": "2026-09-05",
     "label": "VERIFIED",
     "url": "https://docs.ag-ui.com/introduction"
+   },
+   {
+    "claim": "A2UI moved from google/A2UI to the a2ui-project GitHub organisation",
+    "label": "REPORTED",
+    "url": "https://github.com/a2ui-project/A2UI",
+    "date": "2026-10-16",
+    "retrieved_at": "2026-10-15T22:20:46Z",
+    "source_type": "secondary",
+    "http_status": 200,
+    "content_sha256": "7085d07feb163feec7caaa45e9b1c9ae223ba588276935fd7c98d1c8ae8d376e",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "document-format",
-  "governance": "a2ui-project (Google-originated, open-source on GitHub; Apache-2.0)",
+  "governance": "a2ui-project GitHub organisation (moved from google/A2UI)",
   "group": null,
   "history": [
    {
@@ -3335,11 +3559,15 @@
    {
     "date": "2026-09-06",
     "note": "verified against a2ui.org v1.0 spec and github.com/a2ui-project/a2ui"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "A2UI moved from google/A2UI to the a2ui-project GitHub organisation"
    }
   ],
   "id": "a2ui",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "A2UI (Agent to UI) Protocol",
   "native_status": "Early stage public preview: v0.9.1 is the 'Current' production release, v1.0 is a release 'Candidate', v0.8 is legacy",
   "origin": {
@@ -3359,7 +3587,7 @@
   },
   "question": "How can an agent describe and stream a framework-neutral, declarative UI to a renderer?",
   "scope": "general",
-  "spec_url": "https://a2ui.org/specification/v1.0-a2ui/",
+  "spec_url": "https://github.com/a2ui-project/A2UI",
   "step": "present",
   "summary_md": "A2UI (Agent to UI) is a JSON message protocol that lets an agent describe and incrementally stream a declarative, framework-neutral user interface to a client renderer. Communication is a stream of JSON objects; the agent-to-renderer protocol defines four message types — `createSurface`, `updateComponents`, `updateDataModel`, and `deleteSurface` — and the renderer maps abstract component descriptions (Card, Button, TextField, etc.) onto its own native widgets (Flutter, Angular, Lit, React, SwiftUI, or plain web components) [1]. The core design goal is safety: agents can only reference components from a client-defined, pre-approved 'catalog,' so a UI payload is 'safe like data, but expressive like code' rather than executable code [2].\n\nA2UI does not define its own transport. It is explicitly transport-agnostic and is documented with named bindings for three carriers: AG-UI (described as A2UI's 'standard transport binding'), the A2A protocol (via a dedicated A2A extension spec), and MCP (carried over tool calls, tool outputs, or resource subscriptions), plus generic support for SSE+JSON-RPC, WebSockets, and REST [1]. It solves the problem of agents needing to present rich, interactive interfaces — especially remote agents or agents running across a trust boundary — without shipping arbitrary executable code to the client [2]. It does not itself specify authentication, payment, or discovery of an agent's existence; those are left to whichever transport (AG-UI, A2A, MCP) carries it.\n\nCurrent state (as of 2026-09-05): the project describes itself as an 'early stage public preview.' The production-recommended version is v0.9.1 (a patch on the stable v0.9 family); v1.0 is a release candidate adding bidirectional typed function calls and single-message UI instantiation; v0.8 is legacy [2]. The canonical repository, github.com/a2ui-project/a2ui, carries an Apache-2.0 license and Google LLC copyright headers, and the spec site's own 'view source' link resolves to that same repository [1][2]. Reference renderers exist for Flutter and web frameworks (Lit, Angular, React), with a visual 'A2UI Composer' and a multi-renderer 'A2UI Theater' demo; the AG-UI project ships an `a2ui-toolkit` package and CopilotKit has added catalog-forwarding integration, indicating active cross-project use rather than a single-vendor demo [3].\n\nWhat is disputed or unknown: whether A2UI should be classified as a single-vendor (Google) spec or something closer to a vendor-consortium is judgment-dependent — the code and copyright are Google's, but the working GitHub org name ('a2ui-project') and the AG-UI/CopilotKit integration suggest broader de facto involvement. AG-UI's own docs (fetched 2026-09-05) still point to `github.com/google/A2UI` rather than the current `a2ui-project` org, an unresolved naming/rename inconsistency. No independent adoption count exists; observed ecosystem activity (16.3k GitHub stars, AG-UI/CopilotKit integration, multiple demo renderers) has not been converted into a documented probe run, so adoption here is 'observed,' not 'measured.'",
   "track": "single-vendor",
@@ -3418,6 +3646,17 @@
     "date": "2026-09-05",
     "label": "VERIFIED",
     "url": "https://github.com/ag-ui-protocol/ag-ui"
+   },
+   {
+    "claim": "AG-UI 1.0 was released and frozen on 2026-09-18, with a published JSON Schema",
+    "label": "REPORTED",
+    "url": "https://github.com/ag-ui-protocol/ag-ui/discussions/2792",
+    "date": "2026-09-18",
+    "retrieved_at": "2026-10-15T22:20:42Z",
+    "source_type": "secondary",
+    "http_status": 200,
+    "content_sha256": "396a8b3bb3332cbdcbf118cebd2f54fb1fcac18a39a4eec11d16896a304eb01e",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "endpoint",
@@ -3431,13 +3670,17 @@
    {
     "date": "2026-09-06",
     "note": "verified against docs.ag-ui.com/introduction, github.com/ag-ui-protocol/ag-ui, and CopilotKit's original announcement"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "AG-UI 1.0 was released and frozen on 2026-09-18, with a published JSON Schema"
    }
   ],
   "id": "ag-ui",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent-User Interaction Protocol",
-  "native_status": "Open, lightweight, event-based protocol; described by its maintainers as the general-purpose, bi-directional connection between a user-facing application and any agentic backend",
+  "native_status": "1.0 released and frozen; JSON Schema published",
   "origin": {
    "date": "2025-05-12",
    "org": "CopilotKit"
@@ -3446,7 +3689,7 @@
   "parties": [
    "agent-human"
   ],
-  "phase": "living",
+  "phase": "stable",
   "probe": {
    "method": "POST",
    "on_absent": "No AG-UI-shaped event stream; the backend is not exposing an AG-UI-compatible interface",
@@ -3460,8 +3703,8 @@
   "summary_md": "AG-UI (Agent-User Interaction Protocol) is an open, lightweight, event-based protocol that standardizes how an AI agent backend streams state, messages, generative-UI updates, and tool activity into a user-facing frontend application, and how the frontend sends interactions and tool results back. CopilotKit announced it on May 12, 2025 as 'an open, lightweight protocol that streams a single sequence of JSON events over standard HTTP or an optional binary channel' [1]. Its own docs position it as one of three complementary 'agentic protocols': MCP handles Agent↔Tools/Data, A2A handles Agent↔Agent, and AG-UI handles Agent↔User Interaction — it is explicitly not a competitor to either [2].\n\nMechanically, an agent backend emits roughly sixteen standard event types (e.g. streaming text message chunks, tool-call events, state snapshots and diffs, run lifecycle/error events) over whatever transport the integration chooses — SSE, WebSockets, or webhooks are all named as compatible — and a middleware layer normalizes 'loose event format matching' so different backend frameworks and different frontend clients can interoperate without agreeing on a single wire transport [2]. AG-UI itself does not define a fixed origin path or well-known discovery file; a given application wires its own agent endpoint and a client library (or hand-rolled parser) that speaks the event vocabulary. AG-UI does not solve tool invocation (that is MCP's job) or agent-to-agent delegation (A2A's job), and it does not define authentication, payment, or content-permission mechanics.\n\nCurrent state (as of 2026-09-05): the protocol is actively developed under github.com/ag-ui-protocol/ag-ui (MIT license), which shows 15.7k stars, 170 branches, and near-daily commits including a merge less than a day before this check. It is described in its own docs as supported 'first-party' by Microsoft Agent Framework, Google ADK, AWS Strands Agents, Mastra, Pydantic AI, Agno, LlamaIndex, AG2, and AWS Bedrock AgentCore, with community-maintained SDKs in Kotlin, Go, Dart, Java, Rust, Ruby, C++, and .NET, and CopilotKit itself as the reference first-party client [2][3]. AG-UI also documents relationships with two adjacent generative-UI specs — A2UI (which it calls its own declarative generative-UI companion, with AG-UI as A2UI's 'standard transport binding') and MCP Apps — treating both as things it can carry rather than as competitors.\n\nWhat is disputed or unknown: there is no independent, documented count of production deployments; the evidence here is repository activity and named partner integrations, which is 'observed,' not a measured census. The relationship between AG-UI, originated and still steered largely by CopilotKit, and 'community' governance is informal — there is a public Discord and a biweekly working group, but no independent foundation. It is unclear how much of the 1st-party partner list reflects deployed production traffic versus documented compatibility.",
   "track": "community",
   "version": {
-   "date": null,
-   "label": "protocol stable, packages versioned independently (e.g. @ag-ui/core on npm)"
+   "label": "1.0",
+   "date": "2026-09-18"
   },
   "watch": [
    {
@@ -3987,6 +4230,17 @@
     "date": "2026",
     "label": "REPORTED",
     "url": "https://agenticadvertising.org"
+   },
+   {
+    "claim": "AdCP v3.2.4 released on 2026-10-12",
+    "label": "REPORTED",
+    "url": "https://github.com/adcontextprotocol/adcp/releases",
+    "date": "2026-10-12",
+    "retrieved_at": "2026-10-15T22:20:50Z",
+    "source_type": "secondary",
+    "http_status": 200,
+    "content_sha256": "a6e2de8aebefc93efcb0502e876227711c6e90bfc615e8fb7ae29f3a9bb98eb9",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "well-known-file",
@@ -4000,11 +4254,15 @@
    {
     "date": "2026-09-06",
     "note": "verified against docs.adcontextprotocol.org/dist/docs/3.1.20/intro"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "AdCP v3.2.4 released on 2026-10-12"
    }
   ],
   "id": "adcp",
   "implementation": "shipping",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Ad Context Protocol",
   "native_status": "Active open protocol, documented current release 3.1.20",
   "origin": {
@@ -4030,8 +4288,8 @@
   "summary_md": "The Ad Context Protocol (AdCP) is an open standard, published by the industry organization AgenticAdvertising.org, that lets AI agents discover ad inventory, set up commercial relationships, plan and execute media buys, generate and distribute creative, activate targeting data, run governance checks, and report performance across many ad platforms through one set of tasks instead of a bespoke integration per platform [1]. It explicitly targets more than programmatic exchange: it covers direct deals, sponsorships, broadcast, and out-of-home, since most global ad spend still flows through non-programmatic channels [1].\n\nAdCP solves ad-tech's fragmentation problem for agentic buying: a media buyer's agent sends one natural-language brief via `get_products` to every connected seller and receives back a common schema (pricing, forecasts, targeting, creative requirements) instead of comparing incompatible dashboards; `create_media_buy` then executes across sellers in one call, and `get_media_buy_delivery` aggregates reporting the same way [1]. Publisher-side discovery runs through a well-known `adagents.json` file (analogous to `robots.txt`) declaring authorized agent endpoints and capabilities, and brand-side identity/authorization runs through `brand.json`; a hosted Registry API additionally resolves publishers and brands to their AdCP agents by capability, category, or geography for broader discovery beyond known domains [1]. Trust is handled structurally: requests are signed with RFC 9421 HTTP Message Signatures against operator-published JWKS, idempotency keys make retried writes safe, and governance approvals travel as signed JWS tokens so no intermediate agent can forge a human sign-off [1].\n\nAdCP does not itself run ad auctions or hold inventory — it is a transaction and coordination layer that sits on top of two existing agent-transport protocols, MCP (for AI-assistant tool calls) and A2A (for agent-to-agent collaboration), using the same task schemas over either transport [1]. It also does not claim every listed agent's capability claims are true by construction: the protocol ships compliance storyboards (a testable, runnable verification suite) precisely because claims otherwise would not be independently checkable [1].\n\nAs of this verification, the documented current release is 3.1.20, with published, versioned client SDKs for JavaScript/TypeScript, Python, and Go [1]. The one open-source implementation surfaced in the docs, the Prebid Sales Agent (Python backend, TypeScript protocol layer, GAM integration), is explicitly labeled a community example built by a Prebid working group rather than a maintained reference implementation — a caveat AdCP's own documentation states outright, which this record treats as direct evidence of at least one independent, named implementer rather than as proof of broad adoption [1]. Foundation-level governance (voting classes, Board composition, spec lifecycle) is documented in a public CHARTER.md, which is more governance transparency than many single-vendor competitors in this space disclose [1][2]. What remains unverified: no independent count of publishers actually serving `adagents.json` in production, nor of live AdCP agent endpoints, was located in this pass — that would need this project's own probe run before adoption could be upgraded from `observed` to `measured`.",
   "track": "industry-body",
   "version": {
-   "date": "2026",
-   "label": "3.1.20"
+   "label": "v3.2.4",
+   "date": "2026-10-12"
   },
   "watch": [
    {
@@ -4081,6 +4339,17 @@
     "date": "2026-09-06",
     "label": "VERIFIED",
     "url": "https://developer.visa.com/capabilities/trusted-agent-protocol/trusted-agent-protocol-specifications"
+   },
+   {
+    "claim": "Visa joined the KYA interoperability collaboration with Mastercard and Ant International (2026-09-10)",
+    "label": "REPORTED",
+    "url": "https://www.ant-intl.com/en/news/detail/?id=ant-internationals-agentic-mobile-protocol-rolls-out-globally-with-wallets-acquirers-initiating-collaboration-on-kya-interoperability-framework-with-mastercard-and-visa",
+    "date": "2026-09-10",
+    "retrieved_at": "2026-10-15T22:21:15Z",
+    "source_type": "secondary",
+    "http_status": 200,
+    "content_sha256": "833e4ac742a2c0424762aede715ae7308defb7f62586bfcdaf252011c06a76d5",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "http-header",
@@ -4094,11 +4363,15 @@
    {
     "date": "2026-09-06",
     "note": "verified against Visa's live merchant specification page and the 2025-10-14 launch announcement"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "Visa joined the KYA interoperability collaboration with Mastercard and Ant International (2026-09-10)"
    }
   ],
   "id": "tap",
   "implementation": "prototype",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Visa Trusted Agent Protocol",
   "native_status": "Active vendor-led merchant specification",
   "origin": {
@@ -4179,10 +4452,21 @@
     "date": "2026-09-05",
     "label": "VERIFIED",
     "url": "https://github.com/agent-intent/verifiable-intent"
+   },
+   {
+    "claim": "Mastercard contributed Verifiable Intent to the FIDO Alliance Payments TWG on 2026-04-28",
+    "label": "VERIFIED",
+    "url": "https://fidoalliance.org/fido-alliance-to-develop-standards-for-trusted-ai-agent-interactions/",
+    "date": "2026-04-28",
+    "retrieved_at": "2026-10-15T22:21:13Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "88d045c51070cc7b3e936a2429b36d72b50f8d7fdda5279a37edabbcd891a9ed",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "document-format",
-  "governance": "Maintained by Mastercard; open to multi-stakeholder contribution per the project's CONTRIBUTING.md; built on FIDO Alliance, EMVCo, IETF and W3C primitives (SD-JWT/RFC 9901, key confirmation/RFC 7800)",
+  "governance": "Mastercard; contributed to the FIDO Alliance Payments TWG (2026-04-28); built on FIDO Alliance, EMVCo, IETF and W3C primitives",
   "group": null,
   "history": [
    {
@@ -4192,11 +4476,15 @@
    {
     "date": "2026-09-06",
     "note": "verified against mastercard.com/.../verifiable-intent.html (via firecrawl, curl 403s), verifiableintent.dev/spec/, and github.com/agent-intent/verifiable-intent README and spec/credential-format.md; corrected version date to 2026-02-18, origin.date to 2026-03-05, governance and scope; kept step=account"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "Mastercard contributed Verifiable Intent to the FIDO Alliance Payments TWG on 2026-04-28"
    }
   ],
   "id": "vi",
   "implementation": "prototype",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Verifiable Intent",
   "native_status": "Draft (v0.1); open-sourced specification and reference implementation",
   "origin": {
@@ -4426,7 +4714,9 @@
   },
   "aliases": [],
   "analog": "OAuth Device Authorization Grant",
-  "collisions": [],
+  "collisions": [
+   "AAuth (Hardt), draft-hardt-oauth-aauth-protocol"
+  ],
   "discovery": {
    "mechanism": "OAuth 2.1 extension grant flow; no well-known file defined",
    "path": null
@@ -4449,6 +4739,28 @@
     "date": "2025-10-19",
     "label": "VERIFIED",
     "url": "https://www.ietf.org/archive/id/draft-rosenberg-oauth-aauth-00.html"
+   },
+   {
+    "claim": "draft-rosenberg-oauth-aauth-01 (2026-04-22) expired on 2026-04-23; the active AAuth lineage is draft-hardt-oauth-aauth-protocol-11",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-rosenberg-oauth-aauth/",
+    "date": "2026-04-23",
+    "retrieved_at": "2026-10-15T22:21:04Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "f6ad2a4fb32670e225200ee806cf3c953e6fe8aa9e7085b19f0fe207559e367e",
+    "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "draft-rosenberg-oauth-aauth-01 (2026-04-22) expired on 2026-04-23; the active AAuth lineage is draft-hardt-oauth-aauth-protocol-11",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-hardt-oauth-aauth-protocol/",
+    "date": "2026-04-23",
+    "retrieved_at": "2026-10-15T22:21:07Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "b3f78bf766c1de1f48be52ec8e5aacf1bbb98efd30479122d2a66ca0f1b08049",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "endpoint",
@@ -4462,13 +4774,17 @@
    {
     "date": "2026-09-06",
     "note": "verified against datatracker.ietf.org/doc/html/draft-rosenberg-oauth-aauth; found expired"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "draft-rosenberg-oauth-aauth-01 (2026-04-22) expired on 2026-04-23; the active AAuth lineage is draft-hardt-oauth-aauth-protocol-11"
    }
   ],
   "id": "aauth",
   "implementation": "none-found",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent Authorization Grant",
-  "native_status": "Internet-Draft, individual submission; page marked \"Expired\" by the IETF Datatracker",
+  "native_status": "Expired Internet-Draft (expired 2026-04-23); the active AAuth lineage is draft-hardt-oauth-aauth-protocol-11",
   "origin": {
    "date": "2025-10",
    "org": "IETF individual submission"
@@ -4491,8 +4807,8 @@
   "summary_md": "The Agent Authorization Grant (AAuth) is an individual IETF Internet-Draft, draft-rosenberg-oauth-aauth-00, dated 2025-10-19, proposing an OAuth 2.1 extension for a specific class of AI agent: one reached through a channel that does not support browser-redirect OAuth flows, such as a phone call over the PSTN or SMS texting [1]. It solves a narrow but real permit-adjacent problem — authorization, not content-use permission — for voice/text-only conversational agents.\n\nIn the flow it describes, the agent collects personally identifying information from the user through natural-language conversation, then presents that collected PII to obtain an access token with an appropriately constrained scope, rather than redirecting the user to a login page it cannot render over a phone call. The draft's stated primary concern is architectural: ensuring that LLM hallucination inside the agent cannot itself cause an impersonation attack against the authorization flow [1].\n\nIt does not define a well-known discovery file, a permission vocabulary, or content-use semantics — it is purely an authorization-grant flow, adjacent to this wiki's 'identify' and 'permit' steps rather than a pure fit for either. It does not specify a concrete `grant_type` string or endpoint schema in enough detail in the sections reviewed to build an executable, generic probe; a probe would need to be implementation-specific.\n\nAs of this verification (2026-09-06), the IETF Datatracker page for this draft shows its document state as an expired Internet-Draft; IETF drafts lapse automatically after roughly six months without a new revision, and no successor version beyond -00 was found. No independent implementation, reference server, or adopting product was located during this pass, so implementation is recorded as none-found rather than prototype. Given the expired status and absence of any implementation or successor draft, this record's phase is set to withdrawn: the proposal exists as a documented idea but has not advanced and appears inactive.\n\nWhat is unresolved: whether the author (Jonathan Rosenberg) or another party intends to revive this line of work, and whether its PII-collection-then-token-exchange pattern will instead be absorbed into a more general draft such as DAAP or AAP, which address overlapping agent-authorization ground within the same OAuth ecosystem.",
   "track": "ietf",
   "version": {
-   "date": "2025-10-19",
-   "label": "draft-rosenberg-oauth-aauth-00"
+   "label": "draft-rosenberg-oauth-aauth-01",
+   "date": "2026-04-22"
   },
   "watch": [
    {
@@ -4535,6 +4851,17 @@
     "date": "2026-08",
     "label": "REPORTED",
     "url": "https://datatracker.ietf.org/doc/draft-mishra-oauth-agent-grants/"
+   },
+   {
+    "claim": "draft-mishra-oauth-agent-grants-02 is dated 2026-08-30",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-mishra-oauth-agent-grants/",
+    "date": "2026-08-30",
+    "retrieved_at": "2026-10-15T22:21:01Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "54674652383a11260a456fa83a40c172ec2ae45fb7c0ece5a7ccfc1fea7dadb9",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "endpoint",
@@ -4548,11 +4875,15 @@
    {
     "date": "2026-09-06",
     "note": "verified against datatracker.ietf.org/doc/html/draft-mishra-oauth-agent-grants-02; corrected name from seed"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "draft-mishra-oauth-agent-grants-02 is dated 2026-08-30"
    }
   ],
   "id": "daap",
   "implementation": "prototype",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "OAuth Profile for Delegated AI Agent Authorization",
   "native_status": "Internet-Draft, individual submission, Active",
   "origin": {
@@ -4577,8 +4908,8 @@
   "summary_md": "This record, seeded under the id `daap` and the name 'Delegated Agent Authorization Protocol', is the IETF individual Internet-Draft draft-mishra-oauth-agent-grants, whose own title is 'OAuth Profile for Delegated AI Agent Authorization' — the seed's acronym and description matched a real, verifiable draft, but the name carried by the seed record does not appear in the document text itself; 'Delegated Agent Authorization Protocol' and 'DAAP' are recorded here as aliases rather than the primary name, which has been corrected to the draft's actual title [1].\n\nThe draft addresses AI agents that invoke protected APIs on behalf of a human user. It defines an OAuth profile covering: identifying an agent client instance distinctly from the user's own client, obtaining the user's authenticated consent, issuing access tokens that are both resource-bound (audience-restricted) and sender-constrained (bound to the agent's key), attenuating an agent's authority through RFC 8693 OAuth Token Exchange, and rotating refresh tokens safely [1]. Its central design constraint, stated in its own abstract, is that it 'defines no new JWT claims or OAuth endpoints' — it is explicitly a profile of composition over existing IETF mechanisms (OAuth 2.0/2.1, Token Exchange, JOSE, DPoP-style sender constraints), not a new protocol.\n\nIt explicitly places operational concerns — policy engines, audit stores, spending budgets, event streams, credential vaults — outside its interoperable core, leaving those to implementers. It does not define content-use or crawling permissions; its scope is strictly delegated API-calling authority, positioning it as a 'permit' record specifically for the agent-site API-invocation case, adjacent to AAP and AAuth.\n\nAs of this verification (2026-09-06), the current version is -02, and the Datatracker's own document-state field shows it Active (not expired) with a last-updated date in the 2026-08 range, and an expiry of 3 March 2027 — confirming it is a live, in-progress draft rather than lapsed [1][2]. The draft names 'Grantex' as an incomplete reference implementation, explicitly stating conformance does not require it, so implementation is recorded as prototype rather than shipping [1].\n\nWhat is unresolved: whether this draft will be adopted by the IETF OAuth Working Group as a formal work item (it is currently an individual submission), how it will be reconciled with the overlapping AAP and AAuth proposals covering similar agent-delegation ground within the same working group's orbit, and whether any production authorization server has implemented its specific attenuation/rotation profile beyond the Grantex reference code.",
   "track": "ietf",
   "version": {
-   "date": "2026-08",
-   "label": "draft-mishra-oauth-agent-grants-02"
+   "label": "draft-mishra-oauth-agent-grants-02",
+   "date": "2026-08-30"
   },
   "watch": [
    {
@@ -4949,6 +5280,17 @@
     "date": "2026-09-05",
     "label": "VERIFIED",
     "url": "https://raw.githubusercontent.com/agent-network-protocol/AgentNetworkProtocol/main/08-ANP-Agent-Discovery-Protocol-Specification.md"
+   },
+   {
+    "claim": "Agent Network Protocol v1.2 released on 2026-09-24",
+    "label": "VERIFIED",
+    "url": "https://github.com/agent-network-protocol/AgentNetworkProtocol/releases",
+    "date": "2026-09-24",
+    "retrieved_at": "2026-10-15T22:20:52Z",
+    "source_type": "issuer",
+    "http_status": 200,
+    "content_sha256": "5a4b4a143bfc5b0ec0e91b0b7e7e5edec50ac45f1ae39a131cb5681999bd95f8",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "well-known-file",
@@ -4962,11 +5304,15 @@
    {
     "date": "2026-09-06",
     "note": "verified against agent-network-protocol.com and github.com/agent-network-protocol/AgentNetworkProtocol README + ANP-08 discovery spec; corrected version from v0.1/experimental to released v1.1 and filled discovery path"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "Agent Network Protocol v1.2 released on 2026-09-24"
    }
   ],
   "id": "anp",
   "implementation": "shipping",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent Network Protocol",
   "native_status": "Released v1.1 (core suite); meta-protocol (ANP-06) remains draft/unreleased",
   "origin": {
@@ -4991,8 +5337,8 @@
   "summary_md": "The Agent Network Protocol (ANP) is a suite of open specifications describing itself as aiming to become \"the HTTP of the Agentic Web era\": a protocol stack for agent identity, naming, discovery, negotiation, secure messaging, and application-level collaboration [1]. It solves several coordinate-layer problems at once rather than one narrow one: `did:wba` (ANP-03) gives agents a Web-based DID identity method; ANP-04 layers human-readable WNS handles (e.g. `alice.example.com`) over DIDs; ANP-07 defines machine-readable Agent Description documents; ANP-08 (the Agent Discovery Protocol, ADSP) defines active discovery via a well-known JSON-LD collection page and a passive registration API for search-service agents; ANP-09 defines an end-to-end encrypted instant-messaging profile suite (direct and group messaging, attachments, federation, mentions); and ANP-10 layers an agent payment protocol (AP2) on top [1][2].\n\nANP explicitly does not rebuild core internet infrastructure — it reuses HTTP, DNS, CA/TLS, CDN, and search rather than defining a new network stack — and its meta-protocol layer (ANP-06, a semantic negotiation layer analogous in spirit to Agora's protocol negotiation) remains an unreleased draft, not part of the currently released architecture [1].\n\nAs of this verification (2026-09-05), the released specification-document version is 1.1, though the project is explicit that this document-version bump does not change the wire-level `protocolVersion` field, which remains `\"1.0.0\"` in released message examples — a versioning nuance worth flagging for implementers [1]. Discovery is confirmed executable: `GET https://{domain}/.well-known/agent-descriptions` should return a JSON-LD `CollectionPage` whose `items[]` array lists `ad:AgentDescription` entries with pagination via a `next` field, per RFC 8615 conventions [2]. The project also publishes vNext draft revisions (ANP-01 through ANP-09) that do not yet replace the released v1.1 text, and a separately versioned ANP Messaging 1.2 draft for multi-device cryptographic endpoints. What is unresolved: no independently measured count of live ANP deployments was found in this pass — adoption here is recorded as unmeasured, and the seed's prior \"v0.1, experimental\" characterization understated the protocol's actual maturity (v1.1, released), which was corrected in this pass.",
   "track": "community",
   "version": {
-   "date": null,
-   "label": "1.1 (protocol document release); protocolVersion field remains 1.0.0"
+   "label": "v1.2",
+   "date": "2026-09-24"
   },
   "watch": [
    {
@@ -5485,6 +5831,17 @@
     "date": "2026-09-05",
     "label": "REPORTED",
     "url": "https://www.ietf.org/archive/id/draft-mpsb-agntcy-slim-00.html"
+   },
+   {
+    "claim": "draft-mpsb-agntcy-slim-02 is dated 2026-07-19",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-mpsb-agntcy-slim/",
+    "date": "2026-07-19",
+    "retrieved_at": "2026-10-15T22:20:58Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "945750697c645cd994fcb157746bac30d5c16f3895675d3637897af7878e5285",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "endpoint",
@@ -5494,11 +5851,15 @@
    {
     "date": "2026-09-06",
     "note": "new record created during coordinate-step verification; verified against github.com/agntcy/slim README, Linux Foundation/AGNTCY donation coverage, and the IETF individual draft draft-mpsb-agntcy-slim-00"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "draft-mpsb-agntcy-slim-02 is dated 2026-07-19"
    }
   ],
   "id": "slim",
   "implementation": "shipping",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Secure Low-Latency Interactive Messaging",
   "native_status": "\"Next-generation communication framework that provides the secure, scalable transport layer for AI agent protocols like A2A and MCP\"",
   "origin": {
@@ -5523,8 +5884,8 @@
   "summary_md": "SLIM (Secure Low-Latency Interactive Messaging) is a messaging/transport framework built for the AGNTCY project, intended to serve as the secure, scalable transport layer underneath higher-level agent protocols such as A2A and MCP [1]. It solves a gap those protocols leave open: neither A2A nor MCP specifies a low-latency, group-aware, end-to-end-encrypted messaging transport; SLIM supports request-response, publish-subscribe, fire-and-forget, and streaming interaction patterns, and builds in authentication, authorization, and end-to-end (MLS) encryption at the transport layer [2]. Architecturally it splits into a Data Plane (pure hierarchical-name-based packet routing, content-blind), a Session Layer (reliable delivery, end-to-end MLS encryption, group membership), and a Control Plane (configuration, monitoring, orchestration) — letting lightweight routing nodes run only the data plane while applications carry the full stack via language bindings (Python, Go, .NET, Java, Kotlin) [1].\n\nSLIM does not define agent discovery, identity, or task semantics itself — those are the roles of A2A/MCP and AGNTCY's separate directory/identity components; SLIM's own README frames itself purely as the transport underneath those protocols [1].\n\nCurrent state: the `agntcy/slim` repository was created 2025-02-05, is Apache-2.0 licensed, and is actively maintained (CI, code coverage, and OpenSSF Scorecard badges all present and green as of this check) [1]. AGNTCY itself — the umbrella project SLIM belongs to — was donated by Cisco to the Linux Foundation, with Dell Technologies, Google Cloud, Oracle, and Red Hat joining as formative members, to standardize open multi-agent-system infrastructure including discovery, identity, messaging (SLIM), and observability [2]. A SLIM specification has also been filed as an individual IETF Internet-Draft, draft-mpsb-agntcy-slim-00, though it is not yet a working-group document — this record treats the Linux Foundation/AGNTCY project as SLIM's primary governance home given that the code, documentation, and formative-member structure all live there, and marks track as linux-foundation rather than ietf accordingly. Implementations exist and ship as bindings across five languages plus integrations for A2A and MCP transport (slim-a2a-python, slim-mcp-python) and OpenTelemetry [1]. What is unresolved: no independently measured adoption count was found; this is a genuinely new record added during this verification pass per the coordinator's occupant-diff instruction, and its exact relationship to the IETF draft (same authors? formally submitted by the AGNTCY project?) was not further disambiguated in this pass.",
   "track": "linux-foundation",
   "version": {
-   "date": null,
-   "label": "IETF individual draft draft-mpsb-agntcy-slim-00; active GitHub development"
+   "label": "draft-mpsb-agntcy-slim-02",
+   "date": "2026-07-19"
   },
   "watch": [
    {
@@ -5983,6 +6344,17 @@
     "date": "2026",
     "label": "VERIFIED",
     "url": "https://docs.perplexity.ai/guides/bots"
+   },
+   {
+    "claim": "Cloudflare 'Disallow AI Training' and Accountable crawler designation (2026-09-15); Bot Preference Sync replaces Managed robots.txt",
+    "label": "REPORTED",
+    "url": "https://blog.cloudflare.com/",
+    "date": "2026-09-15",
+    "retrieved_at": "2026-10-15T22:21:18Z",
+    "source_type": "secondary",
+    "http_status": 200,
+    "content_sha256": "43b0c38b091dc51269e3cd624032dad5e2ada2c83e94a9af8311f38a23f66149",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "well-known-file",
@@ -5992,11 +6364,15 @@
    {
     "date": "2026-09-06",
     "note": "created and verified against developers.openai.com/api/docs/bots, support.claude.com/en/articles/8896518, developers.google.com/search/docs/crawling-indexing/google-common-crawlers, docs.perplexity.ai/guides/bots (occupant-diff candidate)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "Cloudflare 'Disallow AI Training' and Accountable crawler designation (2026-09-15); Bot Preference Sync replaces Managed robots.txt"
    }
   ],
   "id": "ai-crawler-tokens-robots",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "AI Crawler User-Agent Tokens in robots.txt",
   "native_status": "A convention, not a formal spec; each vendor's documentation is normative only for that vendor's own crawler",
   "origin": {
@@ -6065,6 +6441,17 @@
     "date": "2026-09-05",
     "label": "VERIFIED",
     "url": "https://github.com/MCP-UI-Org/mcp-ui"
+   },
+   {
+    "claim": "MCP Apps SDK ext-apps v2.0.3 was released on 2026-09-25 (spec dated 2026-01-26)",
+    "label": "VERIFIED",
+    "url": "https://github.com/modelcontextprotocol/ext-apps/releases",
+    "date": "2026-09-25",
+    "retrieved_at": "2026-10-15T22:20:44Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "61c2dd32227a841718cebbe1282c94733a3e402e44ce3bc4d90075cbb17b4187",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "endpoint",
@@ -6074,11 +6461,15 @@
    {
     "date": "2026-09-06",
     "note": "new record: verified against github.com/modelcontextprotocol/ext-apps, its dated spec file, and github.com/MCP-UI-Org/mcp-ui; found via search for other agent-rendered-UI specs during A2UI/AG-UI verification"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "MCP Apps SDK ext-apps v2.0.3 was released on 2026-09-25 (spec dated 2026-01-26)"
    }
   ],
   "id": "mcp-apps",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "MCP Apps",
   "native_status": "Active extension to MCP; own repo describes it as extending 'the Model Context Protocol by letting tools declare UI resources'",
   "origin": {
@@ -6103,8 +6494,8 @@
   "summary_md": "MCP Apps is an extension to the Model Context Protocol (MCP) that lets an MCP server's tools declare an interactive UI — a chart, form, dashboard, or design canvas — that a compliant chat client renders inline, in the conversation, rather than as plain text or structured JSON. A tool definition declares a `ui://` resource containing bundled HTML/JavaScript; when the LLM calls the tool, the host fetches that resource over the ordinary MCP `resources/read` call and displays it in a sandboxed iframe; a bidirectional channel then lets the host push tool data into the UI via notifications and lets the UI call other MCP tools through the host [1]. It solves the specific gap that 'MCP tools return text and structured data... but not... an interactive UI' [1], and it explicitly targets the same problem A2UI and AG-UI's generative-UI feature address, but scoped to MCP-native tool calls rather than a general-purpose agent-to-frontend event stream.\n\nIt does not define a new transport (it rides on ordinary MCP JSON-RPC), does not specify how a host discovers that a server supports it beyond ordinary MCP capability negotiation and per-tool `ui://` metadata, and does not address payment, identity, or non-MCP agent frameworks.\n\nCurrent state (as of 2026-09-05): the canonical repository is github.com/modelcontextprotocol/ext-apps, Apache-2.0 licensed, with a dated spec file at `specification/2026-01-26/apps.mdx` and a companion blog post on blog.modelcontextprotocol.io dated 2026-01-26 announcing it. The repo shows sustained activity (666 commits, latest merge 2026-08-12, 2.8k stars) and ships an official npm package (`@modelcontextprotocol/ext-apps`) plus a React binding and a server-helpers package. The repo's own README lists ChatGPT, Claude, and VS Code as supported clients, each with first-party integration docs, which is stronger implementation evidence than a single reference build [1]. A separate, earlier community project, MCP-UI (github.com/idosal/mcp-ui, now under the MCP-UI-Org), predates MCP Apps and originally proposed its own `ui://`/`ui-app://` resource convention starting around April 2025; it has since repositioned itself explicitly as 'an SDK implementing the MCP Apps standard,' with a legacy rendering path kept only for pre-standard MCP-UI hosts [2]. The ext-apps repo itself credits MCP-UI's client as 'a fully-featured MCP Apps framework used by a few hosts,' alongside the possibility that a client rolls its own implementation.\n\nWhat is disputed or unknown: this is a new record on agenticweb.wiki, not previously tracked, so there is no prior baseline to compare against. Its governance track is marked 'community' here because the ext-apps repo, while living under the modelcontextprotocol GitHub org, is an 'ext-' (extension) project and it is not yet confirmed whether it has been formally folded into the same Agentic AI Foundation/Linux Foundation governance this site's core `mcp` record cites — that should be checked against MCP's own governance documents on a future pass. No independent, counted adoption figure exists; the evidence here is qualitative (named supported clients, repo activity), not a probe-based census.",
   "track": "community",
   "version": {
-   "date": "2026-01-26",
-   "label": "npm package @modelcontextprotocol/ext-apps, spec dated 2026-01-26"
+   "label": "spec 2026-01-26; SDK ext-apps v2.0.3",
+   "date": "2026-09-25"
   },
   "watch": [
    {
@@ -6245,6 +6636,17 @@
     "date": "2025-03",
     "label": "REPORTED",
     "url": "https://news.ycombinator.com/item?id=43243893"
+   },
+   {
+    "claim": "agents.json is dormant: last push 2025-08-21, version 0.1.0",
+    "label": "VERIFIED",
+    "url": "https://github.com/wild-card-ai/agents-json",
+    "date": "2025-08-21",
+    "retrieved_at": "2026-10-15T22:21:07Z",
+    "source_type": "issuer",
+    "http_status": 200,
+    "content_sha256": "c300c9765190b6aa1f65ac937b19bb9f73fa8ec89f8ee5c1a6556601ee42d318",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "well-known-file",
@@ -6254,13 +6656,17 @@
    {
     "date": "2026-09-06",
     "note": "new record added during read-step verification; reclassified to the act step and verified against the wild-card-ai/agents-json README and repository metadata"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "agents.json is dormant: last push 2025-08-21, version 0.1.0"
    }
   ],
   "id": "agents-json",
   "implementation": "prototype",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "agents.json",
-  "native_status": "\"An open specification\", version 0.1.0 as published by Wildcard",
+  "native_status": "Dormant: last push 2025-08-21, version 0.1.0",
   "origin": {
    "date": "2025-03",
    "org": "Wildcard AI (wild-card-ai)"
@@ -6269,7 +6675,7 @@
   "parties": [
    "agent-site"
   ],
-  "phase": "draft",
+  "phase": "deprecated",
   "probe": {
    "method": "GET",
    "on_absent": "No agents.json at the well-known path; the provider may still have one published in Wildcard's registry or elsewhere, since the path is a proposal, not a requirement",
@@ -6617,6 +7023,17 @@
     "date": "2026-09-06",
     "label": "VERIFIED",
     "url": "https://github.com/orgs/agntcy/repositories"
+   },
+   {
+    "claim": "The agntcy/acp-spec repository was archived on 2026-04-11",
+    "label": "VERIFIED",
+    "url": "https://github.com/agntcy/acp-spec",
+    "date": "2026-04-11",
+    "retrieved_at": "2026-10-15T22:21:13Z",
+    "source_type": "issuer",
+    "http_status": 200,
+    "content_sha256": "cc9546372415d494ce5afc1fc95b778064def6c3fd5b95a83388687f979a2fc2",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "endpoint",
@@ -6630,13 +7047,17 @@
    {
     "date": "2026-09-06",
     "note": "governance corrected to reflect Cisco donating AGNTCY to the Linux Foundation, per sibling records ads/oasf/slim; verified against existing agenticweb.wiki records"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "The agntcy/acp-spec repository was archived on 2026-04-11"
    }
   ],
   "id": "agent-connect-protocol",
   "implementation": "deprecated",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent Connect Protocol (AGNTCY)",
-  "native_status": "OpenAPI 3.1.1 specification, version 0.2.3; source repository archived (read-only) by the owner on 2026-04-11; the rendered interactive spec at spec.acp.agntcy.org still resolves and is unchanged since its last update in May 2025",
+  "native_status": "Archived repository (2026-04-11)",
   "origin": {
    "date": "2025-02",
    "org": "Cisco / LangChain, published under the AGNTCY Collective"
@@ -6949,6 +7370,17 @@
     "date": "2026-09-06",
     "label": "VERIFIED",
     "url": "https://www.otatech.ai/"
+   },
+   {
+    "claim": "Web Agent Protocol is dormant: last commit 2025-06-03",
+    "label": "VERIFIED",
+    "url": "https://github.com/OTA-Tech-AI/web-agent-protocol",
+    "date": "2025-06-03",
+    "retrieved_at": "2026-10-15T22:21:09Z",
+    "source_type": "issuer",
+    "http_status": 200,
+    "content_sha256": "9ffb247059b938aff92086a8a53b301919aae562ce2cbcb96db49e27e4452e82",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "document-format",
@@ -6962,13 +7394,17 @@
    {
     "date": "2026-09-06",
     "note": "added second evidence entry (otatech.ai) to satisfy the two-source verification requirement"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "Web Agent Protocol is dormant: last commit 2025-06-03"
    }
   ],
   "id": "web-agent-protocol",
   "implementation": "prototype",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Web Agent Protocol (WAP)",
-  "native_status": "\"A standardized framework designed to enable seamless interaction between users, web agents, and browsers by recording and replaying browser actions\" (repository's own description)",
+  "native_status": "Dormant: last commit 2025-06-03",
   "origin": {
    "date": "2025-05",
    "org": "OTA Tech AI"
@@ -6977,7 +7413,7 @@
   "parties": [
    "agent-site"
   ],
-  "phase": "draft",
+  "phase": "deprecated",
   "probe": {
    "method": "n/a",
    "on_absent": "n/a — presence is determined by whether the operator has locally installed the OTA-WAP Chrome extension and Python SDK and generated a recording, not by any network-visible signal at a target site.",
@@ -7368,22 +7804,48 @@
     "date": "2026-07-29",
     "label": "REPORTED",
     "url": "https://idpro.org/how-we-stopped-reinventing-and-started-composing-standards-for-agentic-identity/"
+   },
+   {
+    "claim": "draft-ietf-wimse-aims-00 was published as a WIMSE working group document on 2026-09-15 and replaces draft-klrc-aiagent-auth",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
+    "date": "2026-09-15",
+    "retrieved_at": "2026-10-15T22:20:40Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "bbd5d916e4f9b48b10117a2a0ed2ba12114d6ecf4ae74e447176163497e9440e",
+    "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "draft-ietf-wimse-aims-00 was published as a WIMSE working group document on 2026-09-15 and replaces draft-klrc-aiagent-auth",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-klrc-aiagent-auth/",
+    "date": "2026-09-15",
+    "retrieved_at": "2026-10-15T22:20:41Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "a07bd52255e7ceefdb2008376b3172e0b64ccdc59a18d82c2ca0cde3d5a2a0cf",
+    "detector": "phase-a@2026-10-15"
    }
   ],
   "form": "document-format",
-  "governance": "Individual IETF Internet-Draft under consideration by the IETF WIMSE working group (Applications and Real-Time Area); not yet a WG document as of 2026-09-07. Chairs of WIMSE: Justin Richer and Pieter Kasselman (a co-author of this draft, recused from chairing this specific adoption process).",
+  "governance": "IETF WIMSE Working Group (adopted as draft-ietf-wimse-aims)",
   "group": null,
   "history": [
    {
     "date": "2026-09-07",
     "note": "created from IETF datatracker (draft-klrc-aiagent-auth-03), WIMSE WG document list, and reporting on the 2026-08-24 WIMSE adoption call"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "draft-ietf-wimse-aims-00 was published as a WIMSE working group document on 2026-09-15 and replaces draft-klrc-aiagent-auth"
    }
   ],
   "id": "aiagent-auth",
   "implementation": "unknown",
-  "last_verified": "2026-09-07",
+  "last_verified": "2026-10-16",
   "name": "AI Agent Authentication and Authorization (AIMS)",
-  "native_status": "Active Internet-Draft (individual submission), Internet-Draft, no RFC stream and no intended RFC status assigned; expires 2027-01-07",
+  "native_status": "Replaced by draft-ietf-wimse-aims-00 (WG document, 2026-09-15)",
   "origin": {
    "date": "2026-03",
    "org": "Pieter Kasselman (independent; WIMSE WG co-chair), Jeff Lombardo (AWS), Yaroslav Rosomakho (Zscaler), Brian Campbell (Ping Identity), Nick Steele (OpenAI), Aaron Parecki"
@@ -7515,6 +7977,682 @@
    {
     "type": "ietf",
     "doc": "draft-seethiraju-dawn-dan"
+   }
+  ]
+ },
+ {
+  "acronym": "MCP Registry",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "aliases": [
+   "MCP Registry"
+  ],
+  "analog": "a package registry (npm) for tool servers",
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "collisions": [],
+  "discovery": {
+   "mechanism": "Registry API listing endpoint",
+   "path": "GET /v0.1/servers"
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "The MCP Registry working group charter describes the official MCP Registry as in preview with its API frozen at v0.1 and lists 'Registry API v1 GA: Ideating, no target date'; the server listing endpoint is GET /v0.1/servers, and the server.json schema is being aligned with the Server Card (charter changelog entry 2026-07-30).",
+    "label": "VERIFIED",
+    "url": "https://modelcontextprotocol.io/community/working-groups/registry",
+    "date": "2026-07-30",
+    "retrieved_at": "2026-10-15T22:21:19Z",
+    "source_type": "issuer",
+    "http_status": 200,
+    "content_sha256": "ed322054636ca39e9828acb238d5fa99fb59f3bb05122679893b7fe70b4a213c",
+    "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "The registry source is published in the modelcontextprotocol/registry repository (checked 2026-10-15).",
+    "label": "VERIFIED",
+    "url": "https://github.com/modelcontextprotocol/registry/",
+    "date": "2026-10-15",
+    "retrieved_at": "2026-10-15T22:21:21Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "9ac1aadeb8ae4412681c2468229217565eb6c792282ba4669d72692dca118641",
+    "detector": "phase-a@2026-10-15"
+   }
+  ],
+  "form": "endpoint",
+  "governance": "MCP Registry Working Group",
+  "group": null,
+  "history": [
+   {
+    "date": "2026-10-15",
+    "note": "curated update 2026-10-15"
+   }
+  ],
+  "id": "mcp-registry",
+  "implementation": "developer-trial",
+  "last_verified": "2026-10-16",
+  "name": "Official MCP Registry",
+  "native_status": "Preview; API frozen at v0.1; \"Registry API v1 GA: Ideating, no target date\"",
+  "origin": {
+   "org": "Model Context Protocol project (MCP Registry Working Group)",
+   "date": null
+  },
+  "pairs_with": [
+   "mcp"
+  ],
+  "part_of": null,
+  "parties": [
+   "agent-registry",
+   "agent-agent"
+  ],
+  "phase": "candidate",
+  "probe": {
+   "method": "GET",
+   "path": "{registry_origin}/v0.1/servers",
+   "parse": "A JSON response listing MCP servers (server.json entries) indicates a registry implementing the v0.1 API",
+   "on_absent": "404 or a non-JSON response means the origin does not host a v0.1 MCP Registry API"
+  },
+  "question": "Where can an agent or client find a catalogue of public MCP servers, and how do sub-registries mirror it?",
+  "scope": "general",
+  "spec_url": "https://modelcontextprotocol.io/community/working-groups/registry",
+  "step": "discover",
+  "summary_md": "The Official MCP Registry is the catalogue and API of public MCP servers run by the MCP Registry Working Group; sub-registries can mirror it [1]. Clients list servers with `GET /v0.1/servers`, and the registry's server.json schema is being aligned with the MCP Server Card [1].\n\nThe charter marks the registry as a preview with the API frozen at v0.1. It states `Registry API v1 GA: Ideating, no target date`, so no general-availability date exists [1]. The code lives in the modelcontextprotocol/registry repository [2].\n\nThe registry does not describe how an individual server behaves; that is the job of the Server Card and the MCP specification itself. This record was added on 2026-10-15 and has not yet been probed.",
+  "track": "linux-foundation",
+  "use_cases": [
+   "expose-tools-to-agents",
+   "describe-agent-capabilities"
+  ],
+  "version": {
+   "label": "API v0.1 (frozen, preview)",
+   "date": null
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "modelcontextprotocol/registry",
+    "mode": "release"
+   },
+   {
+    "type": "page",
+    "url": "https://modelcontextprotocol.io/community/working-groups/registry",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
+ },
+ {
+  "acronym": "AIMS",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "aliases": [
+   "draft-ietf-wimse-aims"
+  ],
+  "analog": "a workload-identity framework (cloud IAM roles) applied to agent callers",
+  "audience": [
+   "platform",
+   "standards-body"
+  ],
+  "collisions": [],
+  "discovery": {
+   "mechanism": "none; a best-practices document, not a discoverable wire protocol",
+   "path": null
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "draft-ietf-wimse-aims-00 is a WIMSE working group document dated 2026-09-15 covering best practices for authentication and authorization of AI agent interactions; it normatively references wimse-arch, wimse-http-signature, transaction tokens and RFC 9728.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
+    "date": "2026-09-15",
+    "retrieved_at": "2026-10-15T22:21:21Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "bbd5d916e4f9b48b10117a2a0ed2ba12114d6ecf4ae74e447176163497e9440e",
+    "detector": "phase-a@2026-10-15"
+   }
+  ],
+  "form": "document-format",
+  "governance": "IETF WIMSE Working Group (WG document)",
+  "group": null,
+  "history": [
+   {
+    "date": "2026-10-15",
+    "note": "curated update 2026-10-15"
+   }
+  ],
+  "id": "wimse-aims",
+  "implementation": "unknown",
+  "last_verified": "2026-10-16",
+  "name": "WIMSE AI Identity Management System",
+  "native_status": "Working group document, draft-ietf-wimse-aims-00 (2026-09-15)",
+  "origin": {
+   "org": "IETF WIMSE Working Group",
+   "date": "2026-09-15"
+  },
+  "pairs_with": [
+   "wimse",
+   "aiagent-auth"
+  ],
+  "part_of": "wimse",
+  "parties": [
+   "agent-site",
+   "agent-agent"
+  ],
+  "phase": "working-group",
+  "probe": {
+   "method": "GET",
+   "path": "none",
+   "parse": "not applicable: this is a best-practices draft with no origin artefact",
+   "on_absent": "No presence signal exists for this record; absence of a probe result says nothing about adoption."
+  },
+  "question": "What are the best practices for authenticating and authorising interactions between AI agents and the services they call?",
+  "scope": "general",
+  "spec_url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
+  "step": "identify",
+  "summary_md": "draft-ietf-wimse-aims is the IETF WIMSE working group's document on best practices for authentication and authorization of AI agent interactions [1]. It is the working-group successor of the individual draft draft-klrc-aiagent-auth, which this site tracks as `aiagent-auth`.\n\nThe draft normatively references the WIMSE architecture, the WIMSE HTTP signature draft, transaction tokens and RFC 9728 (OAuth Protected Resource Metadata) [1]. It defines no artefact at an origin, so there is nothing to probe.\n\nThe first revision, -00, is dated 2026-09-15.",
+  "track": "ietf",
+  "use_cases": [
+   "prove-agent-identity",
+   "delegate-user-authority"
+  ],
+  "version": {
+   "label": "draft-ietf-wimse-aims-00",
+   "date": "2026-09-15"
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-ietf-wimse-aims"
+   }
+  ]
+ },
+ {
+  "acronym": "Poppy",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "aliases": [
+   "Poppy"
+  ],
+  "analog": "OAuth sign-in, applied to the agent acting for a customer",
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "collisions": [],
+  "discovery": {
+   "mechanism": "not stated in the announcement",
+   "path": null
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "Sierra's announcement (2026-10-09) presents the Personal Agent Protocol draft as built on OAuth, JWT, OpenAPI and MCP, with 35+ design partners including OpenAI, Visa, Mastercard and Okta, and promises a reference implementation.",
+    "label": "VERIFIED",
+    "url": "https://sierra.ai/blog/poppy",
+    "date": "2026-10-09",
+    "retrieved_at": "2026-10-15T22:21:21Z",
+    "source_type": "issuer",
+    "http_status": 200,
+    "content_sha256": "fcf29d4c175273bf866e08dd472f5d110d42b05ab3dc1cfc7b85e85a3e3efd8f",
+    "detector": "phase-a@2026-10-15"
+   }
+  ],
+  "form": "endpoint",
+  "governance": "Sierra with design partners including OpenAI, Visa, Mastercard and Okta; no standards body named",
+  "group": null,
+  "history": [
+   {
+    "date": "2026-10-15",
+    "note": "curated update 2026-10-15; placement at the identify step is a judgement, permit is the alternative"
+   }
+  ],
+  "id": "personal-agent-protocol",
+  "implementation": "none-found",
+  "last_verified": "2026-10-16",
+  "name": "Personal Agent Protocol (Poppy)",
+  "native_status": "Draft published 2026-10-09; reference implementation promised",
+  "origin": {
+   "org": "Sierra, with Meta and others",
+   "date": "2026-10-09"
+  },
+  "part_of": null,
+  "parties": [
+   "agent-site",
+   "agent-human"
+  ],
+  "phase": "draft",
+  "probe": {
+   "method": "GET",
+   "path": "none",
+   "parse": "not applicable: no discovery artefact is described in the announcement",
+   "on_absent": "No presence signal exists for this record; absence of a probe result says nothing about adoption."
+  },
+  "question": "How does a customer's personal agent identify itself to a business and show it has the customer's permission to act?",
+  "scope": "general",
+  "spec_url": "https://sierra.ai/blog/poppy",
+  "step": "identify",
+  "summary_md": "The Personal Agent Protocol, nicknamed Poppy, is a draft from Sierra with Meta and others for how a customer's personal agent identifies itself to a business and receives the customer's permission [1]. Sierra says it is built on OAuth, JWT, OpenAPI and MCP and names 35+ design partners including OpenAI, Visa, Mastercard and Okta [1].\n\nThe draft was published on 2026-10-09 and a reference implementation is promised, not yet seen [1]. No standards body is named. The step placement is a judgement: it covers both identification and permission, and sits at identify here.\n\nEverything above is Sierra's own account in a single announcement.",
+  "track": "vendor-consortium",
+  "use_cases": [
+   "prove-agent-identity",
+   "delegate-user-authority"
+  ],
+  "version": {
+   "label": "draft",
+   "date": "2026-10-09"
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://sierra.ai/blog/poppy",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
+ },
+ {
+  "acronym": "AAuth",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "aliases": [
+   "draft-hardt-oauth-aauth-protocol"
+  ],
+  "analog": "OAuth, with the agent signing its own requests",
+  "audience": [
+   "agent-builder",
+   "standards-body"
+  ],
+  "collisions": [
+   "Agent Authorization Grant (Rosenberg), draft-rosenberg-oauth-aauth"
+  ],
+  "discovery": {
+   "mechanism": "not determined from the datatracker listing",
+   "path": null
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "draft-hardt-oauth-aauth-protocol-11 is dated 2026-09-25 and expires 2027-03-29.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-hardt-oauth-aauth-protocol/",
+    "date": "2026-09-25",
+    "retrieved_at": "2026-10-15T22:21:23Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "b3f78bf766c1de1f48be52ec8e5aacf1bbb98efd30479122d2a66ca0f1b08049",
+    "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "draft-hardt-aauth-headers-00 is dated 2026-10-04.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-headers/",
+    "date": "2026-10-04",
+    "retrieved_at": "2026-10-15T22:21:25Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "a071e220dfe6d6ed4e65fefcff35889df33a836db9bd69a7ab9e5427e0a7adbf",
+    "detector": "phase-a@2026-10-15"
+   }
+  ],
+  "form": "http-header",
+  "governance": "IETF Internet-Draft by Dick Hardt",
+  "group": null,
+  "history": [
+   {
+    "date": "2026-10-15",
+    "note": "curated update 2026-10-15"
+   }
+  ],
+  "id": "aauth-hardt",
+  "implementation": "unknown",
+  "last_verified": "2026-10-16",
+  "name": "AAuth (Hardt)",
+  "native_status": "Active Internet-Draft, draft-hardt-oauth-aauth-protocol-11 (2026-09-25, expires 2027-03-29); companion draft-hardt-aauth-headers-00 (2026-10-04)",
+  "origin": {
+   "org": "Dick Hardt",
+   "date": null
+  },
+  "pairs_with": [
+   "aauth"
+  ],
+  "part_of": null,
+  "parties": [
+   "agent-site",
+   "agent-agent"
+  ],
+  "phase": "draft",
+  "probe": {
+   "method": "GET",
+   "path": "none",
+   "parse": "not applicable: discovery mechanics were not reviewed for this record",
+   "on_absent": "No presence signal exists for this record; absence of a probe result says nothing about adoption."
+  },
+  "question": "How does an agent obtain and present authorisation to act at a resource, using signed HTTP requests?",
+  "scope": "general",
+  "spec_url": "https://datatracker.ietf.org/doc/draft-hardt-oauth-aauth-protocol/",
+  "step": "permit",
+  "summary_md": "AAuth in its current form is Dick Hardt's Internet-Draft `draft-hardt-oauth-aauth-protocol`, at revision -11 (2026-09-25, expiring 2027-03-29) [1]. A companion draft, `draft-hardt-aauth-headers`, is at revision -00 (2026-10-04) [2].\n\nThis is a different document from the Rosenberg draft, which this site tracks as `aauth` (Agent Authorization Grant). That one expired on 2026-04-23, and the Hardt draft is the active AAuth line.\n\nThe form, party and discovery details here are placeholders pending a read of the drafts; only the version, dates and expiry above are taken from the datatracker.",
+  "track": "ietf",
+  "use_cases": [
+   "delegate-user-authority",
+   "prove-agent-identity"
+  ],
+  "version": {
+   "label": "draft-hardt-oauth-aauth-protocol-11",
+   "date": "2026-09-25"
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-hardt-oauth-aauth-protocol"
+   },
+   {
+    "type": "ietf",
+    "doc": "draft-hardt-aauth-headers"
+   }
+  ]
+ },
+ {
+  "acronym": "",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "aliases": [
+   "Pay per crawl"
+  ],
+  "analog": "HTTP 402 Payment Required, used for crawl access",
+  "audience": [
+   "site-owner",
+   "platform"
+  ],
+  "collisions": [],
+  "discovery": {
+   "mechanism": "HTTP 402 response carrying a crawler-price header",
+   "path": null
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "Cloudflare's documentation says pay per crawl uses HTTP 402 with crawler-price, crawler-exact-price / crawler-max-price and crawler-charged headers, requires Web Bot Auth signing, and is in closed beta (documentation updated 2026-07-28).",
+    "label": "VERIFIED",
+    "url": "https://developers.cloudflare.com/ai-crawl-control/features/pay-per-crawl/what-is-pay-per-crawl/",
+    "date": "2026-07-28",
+    "retrieved_at": "2026-10-15T22:21:25Z",
+    "source_type": "issuer",
+    "http_status": 200,
+    "content_sha256": "a68830f4f3b86165b298aa0008a830c07e9d6091c66c4552909368a50f311e4c",
+    "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "Cloudflare's introductory post describes pay per crawl.",
+    "label": "REPORTED",
+    "url": "https://blog.cloudflare.com/introducing-pay-per-crawl/",
+    "retrieved_at": "2026-10-15T22:21:25Z",
+    "source_type": "secondary",
+    "http_status": 200,
+    "content_sha256": "fc55365cc818c94813ca676fb66084b7ad9de19f5e1a7bd1525bff0ed6f3bab2",
+    "detector": "phase-a@2026-10-15",
+    "date": null
+   }
+  ],
+  "form": "http-header",
+  "governance": "Cloudflare (single vendor)",
+  "group": "HTTP 402 family",
+  "history": [
+   {
+    "date": "2026-10-15",
+    "note": "curated update 2026-10-15"
+   }
+  ],
+  "id": "cloudflare-pay-per-crawl",
+  "implementation": "developer-trial",
+  "last_verified": "2026-10-16",
+  "name": "Cloudflare Pay per crawl",
+  "native_status": "Closed beta; documentation updated 2026-07-28",
+  "origin": {
+   "org": "Cloudflare",
+   "date": null
+  },
+  "pairs_with": [
+   "webbotauth",
+   "x402"
+  ],
+  "part_of": null,
+  "parties": [
+   "agent-site",
+   "agent-payment"
+  ],
+  "phase": "candidate",
+  "probe": {
+   "method": "GET",
+   "path": "{origin}/{priced-path}",
+   "parse": "HTTP 402 with a crawler-price response header; a crawler pays by sending crawler-exact-price or crawler-max-price, and the charged response carries crawler-charged. The crawler must sign requests with Web Bot Auth.",
+   "on_absent": "A 200 or a 402 without a crawler-price header means this path is not priced by pay per crawl; the probe cannot see an unsigned-agent decision."
+  },
+  "question": "How can a site charge an AI crawler per request, and how does the crawler agree to pay?",
+  "scope": "payments",
+  "spec_url": "https://developers.cloudflare.com/ai-crawl-control/features/pay-per-crawl/what-is-pay-per-crawl/",
+  "step": "pay",
+  "summary_md": "Pay per crawl is Cloudflare's way for a site to charge AI crawlers per request. The site answers with HTTP 402 and a `crawler-price` header; the crawler agrees by sending `crawler-exact-price` or `crawler-max-price`, and a charged response carries `crawler-charged` [1]. Crawlers must sign requests with Web Bot Auth, so a priced crawl is also an identified one [1].\n\nCloudflare documents it as a closed beta, and the documentation was last updated on 2026-07-28 [1]. It is a single-vendor mechanism, not an open standard, and sits in the HTTP 402 family with x402 and MPP.\n\nThe record could equally sit under permit; it is placed at pay because the exchange is a payment.",
+  "track": "single-vendor",
+  "use_cases": [
+   "accept-agent-payments",
+   "control-ai-crawling"
+  ],
+  "version": {
+   "label": "closed beta",
+   "date": "2026-07-28"
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://developers.cloudflare.com/ai-crawl-control/features/pay-per-crawl/what-is-pay-per-crawl/",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
+ },
+ {
+  "acronym": "Agent Audit Record",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "aliases": [
+   "draft-gilda-wimse-agent-audit-record"
+  ],
+  "analog": "a standardised audit-log entry",
+  "audience": [
+   "platform",
+   "standards-body"
+  ],
+  "collisions": [],
+  "discovery": {
+   "mechanism": "none; a record format, not a discoverable service",
+   "path": null
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "draft-gilda-wimse-agent-audit-record-02, 'An Audit Record Format for AI Agent Authorization Decisions', is dated 2026-10-05.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-gilda-wimse-agent-audit-record/",
+    "date": "2026-10-05",
+    "retrieved_at": "2026-10-15T22:21:27Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "ee0f6089afe0790a50882e6f1cb65a101845af74db345b1537957cb9f4f50537",
+    "detector": "phase-a@2026-10-15"
+   }
+  ],
+  "form": "document-format",
+  "governance": "IETF individual Internet-Draft (the datatracker lists it as an individual submission, not a working group document)",
+  "group": null,
+  "history": [
+   {
+    "date": "2026-10-15",
+    "note": "curated update 2026-10-15"
+   }
+  ],
+  "id": "wimse-agent-audit-record",
+  "implementation": "none-found",
+  "last_verified": "2026-10-16",
+  "name": "An Audit Record Format for AI Agent Authorization Decisions",
+  "native_status": "Internet-Draft, draft-gilda-wimse-agent-audit-record-02 (2026-10-05)",
+  "origin": {
+   "org": "IETF individual submission (draft-gilda)",
+   "date": null
+  },
+  "pairs_with": [
+   "wimse",
+   "agent-audit-trail"
+  ],
+  "part_of": null,
+  "parties": [
+   "agent-site"
+  ],
+  "phase": "draft",
+  "probe": {
+   "method": "GET",
+   "path": "none",
+   "parse": "not applicable: audit records are exported from an operator-defined endpoint, not found at a fixed path",
+   "on_absent": "No presence signal exists for this record; absence of a probe result says nothing about adoption."
+  },
+  "question": "What should a tamper-evident record of an agent's authorization decision contain?",
+  "scope": "general",
+  "spec_url": "https://datatracker.ietf.org/doc/draft-gilda-wimse-agent-audit-record/",
+  "step": "account",
+  "summary_md": "draft-gilda-wimse-agent-audit-record defines an audit record format for AI agent authorization decisions [1]. The current revision is -02, dated 2026-10-05 [1].\n\nIt belongs with the account step beside `agent-audit-trail`, which covers a hash-chained log of agent actions, and with the WIMSE identity work its name points to. It defines a record format, not an endpoint, so there is nothing to probe.\n\nOnly the title, revision and date are taken from the datatracker listing; the record's field definitions have not been reviewed here.",
+  "track": "ietf",
+  "use_cases": [
+   "audit-agent-actions"
+  ],
+  "version": {
+   "label": "draft-gilda-wimse-agent-audit-record-02",
+   "date": "2026-10-05"
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-gilda-wimse-agent-audit-record"
+   }
+  ]
+ },
+ {
+  "acronym": "Server Card",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "aliases": [
+   "SEP-2127",
+   "MCP Server Card"
+  ],
+  "analog": "A2A Agent Card, for MCP servers",
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "collisions": [],
+  "discovery": {
+   "mechanism": "Static JSON Server Card fetched before connecting; location defined in SEP-2127",
+   "path": null
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "SEP-2127 (MCP Server Cards) is marked Final as of 2026-10-06.",
+    "label": "VERIFIED",
+    "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2127-mcp-server-cards.md",
+    "date": "2026-10-06",
+    "retrieved_at": "2026-10-15T22:21:28Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "a8dcf4edc81b94148fea70960fbbac1ed5c4b9012a7b23ce36da346cf5800c17",
+    "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "The MCP Registry working group page states that the server.json schema is being aligned with the Server Card (charter changelog entry 2026-07-30).",
+    "label": "REPORTED",
+    "url": "https://modelcontextprotocol.io/community/working-groups/registry",
+    "date": "2026-07-30",
+    "retrieved_at": "2026-10-15T22:21:28Z",
+    "source_type": "secondary",
+    "http_status": 200,
+    "content_sha256": "ed322054636ca39e9828acb238d5fa99fb59f3bb05122679893b7fe70b4a213c",
+    "detector": "phase-a@2026-10-15"
+   }
+  ],
+  "form": "document-format",
+  "governance": "Model Context Protocol project (SEP process, MCP governance)",
+  "group": null,
+  "history": [
+   {
+    "date": "2026-10-15",
+    "note": "curated update 2026-10-15"
+   }
+  ],
+  "id": "mcp-server-cards",
+  "implementation": "prototype",
+  "last_verified": "2026-10-16",
+  "name": "MCP Server Cards (SEP-2127)",
+  "native_status": "SEP-2127 Final (2026-10-06); the MCP Registry working group page still describes Server Cards as experimental",
+  "origin": {
+   "org": "Model Context Protocol project",
+   "date": null
+  },
+  "pairs_with": [
+   "mcp-registry"
+  ],
+  "part_of": "mcp",
+  "parties": [
+   "agent-site"
+  ],
+  "phase": "candidate",
+  "probe": {
+   "method": "GET",
+   "path": "{endpoint}/server-card",
+   "parse": "A JSON document describing the MCP server. The path is the one recorded on the mcp record and may change with the final SEP.",
+   "on_absent": "404 or non-JSON means no Server Card is published; the server may still be a working MCP server."
+  },
+  "question": "How can a client learn what an MCP server offers before connecting to it?",
+  "scope": "general",
+  "spec_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2127-mcp-server-cards.md",
+  "step": "discover",
+  "summary_md": "An MCP Server Card is a static JSON description of an MCP server that a client can fetch before connecting. It is specified in SEP-2127, which reached Final on 2026-10-06 [1].\n\nThe MCP Registry working group is aligning the registry's server.json schema with the Server Card [2]. The mcp record on this site records the card path as `{endpoint}/server-card`; the final SEP text should be checked for the exact location before that path is relied on.\n\nThe working group page still calls Server Cards experimental, while the SEP is marked Final, so the status here is candidate until the specification release that includes it.",
+  "track": "linux-foundation",
+  "use_cases": [
+   "expose-tools-to-agents",
+   "describe-agent-capabilities"
+  ],
+  "version": {
+   "label": "SEP-2127 (Final)",
+   "date": "2026-10-06"
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "modelcontextprotocol/modelcontextprotocol",
+    "mode": "tag"
    }
   ]
  }

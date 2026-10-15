@@ -4827,5 +4827,33 @@
   "date_basis": "source",
   "source": "https://mvnrepository.com/artifact/org.eclipse.lmos/lmos-runtime-spring-boot-starter",
   "note": "Eclipse Foundation LMOS runtime and router published as actively versioned Maven artifacts with real usage counts. evidence VERIFIED"
+ },
+ {
+  "id": "mastercard-agent-pay",
+  "name": "Mastercard Agent Pay",
+  "url": "https://www.mastercard.com/us/en/news-and-trends/press/2026/september/new-trust-and-intelligence-services.html",
+  "type": "service",
+  "implements": [
+   "vi",
+   "emv-agentic-payments"
+  ],
+  "observed": "2026-10-15",
+  "date_basis": "recorded",
+  "source": "https://www.mastercard.com/us/en/news-and-trends/press/2026/september/new-trust-and-intelligence-services.html",
+  "note": "Mastercard's September 2026 press release describes the Agent Pay Trust Framework and an AI-initiation probability score in US testing. Mastercard's own account; the release gives a month, not a day."
+ },
+ {
+  "id": "kya-interoperability-collaboration",
+  "name": "KYA interoperability collaboration (Visa, Mastercard, Ant International)",
+  "url": "https://www.ant-intl.com/en/news/detail/?id=ant-internationals-agentic-mobile-protocol-rolls-out-globally-with-wallets-acquirers-initiating-collaboration-on-kya-interoperability-framework-with-mastercard-and-visa",
+  "type": "network",
+  "implements": [
+   "tap",
+   "vi"
+  ],
+  "observed": "2026-10-15",
+  "date_basis": "recorded",
+  "source": "https://www.ant-intl.com/en/news/detail/?id=ant-internationals-agentic-mobile-protocol-rolls-out-globally-with-wallets-acquirers-initiating-collaboration-on-kya-interoperability-framework-with-mastercard-and-visa",
+  "note": "Ant International announced a Know Your Agent interoperability collaboration with Mastercard and Visa; Visa's participation is dated 2026-09-10 per Reuters."
  }
 ]

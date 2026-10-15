@@ -1,84 +1,47 @@
 [
  {
-  "date": "2026-09-04",
-  "title": "WebMCP published as a Draft Community Group Report",
-  "url": "https://webmachinelearning.github.io/webmcp/",
-  "summary": "The W3C Web Machine Learning Community Group published a 4 September 2026 draft of WebMCP, the browser API for pages to expose tools to agents.",
+  "date": "2025-10-14",
+  "title": "Visa introduces the Trusted Agent Protocol",
+  "url": "https://investor.visa.com/news/news-details/2025/Visa-Introduces-Trusted-Agent-Protocol-An-Ecosystem-Led-Framework-for-AI-Commerce/default.aspx",
+  "summary": "Visa announced the Trusted Agent Protocol, a framework for merchants to recognise and trust shopping agents.",
   "related": [
-   "webmcp"
+   "tap"
   ]
  },
  {
-  "date": "2026-09-01",
-  "title": "IETF webbotauth working group adopts the HTTP signature draft",
-  "url": "https://datatracker.ietf.org/doc/draft-ietf-webbotauth-httpsig-protocol/",
-  "summary": "draft-ietf-webbotauth-httpsig-protocol-00 replaced the individual Web Bot Auth draft as a working-group document.",
+  "date": "2026-01-27",
+  "title": "Open Semantic Interchange specifications finalised",
+  "url": "https://www.snowflake.com/en/blog/open-semantic-interchanges-specs-finalized/",
+  "summary": "Snowflake reported that the Open Semantic Interchange specifications had been finalised by the initiative's partners.",
   "related": [
-   "webbotauth",
-   "http-message-signatures"
+   "osi"
   ]
  },
  {
-  "date": "2026-08-26",
-  "title": "Agentic Resource Discovery v0.91 published",
-  "url": "https://raw.githubusercontent.com/ards-project/ard-spec/main/spec/ard.md",
-  "summary": "The ARD specification reached v0.91, with the manifest served at /.well-known/ard.json.",
+  "date": "2026-03-05",
+  "title": "Mastercard announces Verifiable Intent",
+  "url": "https://www.mastercard.com/global/en/news-and-trends/stories/2026/verifiable-intent.html",
+  "summary": "Mastercard set out Verifiable Intent, a credential format for proving what a user asked an agent to buy.",
+  "related": [
+   "vi"
+  ]
+ },
+ {
+  "date": "2026-04-17",
+  "title": "Agentic Commerce Protocol dated specification 2026-04-17",
+  "url": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
+  "summary": "ACP published its 2026-04-17 dated specification, maintained by OpenAI, Stripe and Meta.",
+  "related": [
+   "agentic-commerce-protocol"
+  ]
+ },
+ {
+  "date": "2026-06-17",
+  "title": "Google announces the Agentic Resource Discovery specification",
+  "url": "https://developers.googleblog.com/en/announcing-the-agentic-resource-discovery-specification/",
+  "summary": "Google's developer blog announced ARD, a well-known manifest listing the resources a site offers agents.",
   "related": [
    "ard"
-  ]
- },
- {
-  "date": "2026-08-25",
-  "title": "Universal Commerce Protocol documentation released",
-  "url": "https://ucp.dev/documentation/core-concepts/",
-  "summary": "The UCP site published its core-concepts documentation, dated 25 August 2026, with Shopping, Lodging and Food tracks.",
-  "related": [
-   "ucp"
-  ]
- },
- {
-  "date": "2026-08-12",
-  "title": "IAB Tech Lab publishes ARTF v1.0",
-  "url": "https://iabtechlab.com/standards/artf/",
-  "summary": "The Agentic RTB Framework reached v1.0 and IAB Tech Lab reported production use by unnamed companies.",
-  "related": [
-   "artf"
-  ]
- },
- {
-  "date": "2026-08-07",
-  "title": "Chrome documents a WebMCP origin trial",
-  "url": "https://developer.chrome.com/docs/ai/webmcp",
-  "summary": "Chrome's developer documentation described a WebMCP origin trial running from Chrome 149.",
-  "related": [
-   "webmcp"
-  ]
- },
- {
-  "date": "2026-07-30",
-  "title": "IAB Tech Lab releases AAMP 2.3",
-  "url": "https://iabtechlab.com/press-releases/iab-tech-lab-releases-aamp-2-3-bringing-enterprise-grade-infrastructure-and-privacy-diligence-to-agentic-advertising/",
-  "summary": "AAMP 2.3 added infrastructure and privacy-diligence components contributed by AWS, HyperMindZ, Mixpeek, SafeGuard Privacy and Adform.",
-  "related": [
-   "aamp"
-  ]
- },
- {
-  "date": "2026-07-28",
-  "title": "Model Context Protocol 2026-07-28 specification revision",
-  "url": "https://modelcontextprotocol.io/specification/2026-07-28/index",
-  "summary": "MCP published a new dated specification revision, the current version of the protocol.",
-  "related": [
-   "mcp"
-  ]
- },
- {
-  "date": "2026-07-14",
-  "title": "x402 Foundation becomes operational under the Linux Foundation",
-  "url": "https://x402.org/announcement",
-  "summary": "The Linux Foundation announced the operational launch of the x402 Foundation to standardise internet-native payments for agents.",
-  "related": [
-   "x402"
   ]
  },
  {
@@ -92,48 +55,231 @@
   ]
  },
  {
-  "date": "2026-06-17",
-  "title": "Google announces the Agentic Resource Discovery specification",
-  "url": "https://developers.googleblog.com/en/announcing-the-agentic-resource-discovery-specification/",
-  "summary": "Google's developer blog announced ARD, a well-known manifest listing the resources a site offers agents.",
+  "date": "2026-07-14",
+  "title": "x402 Foundation becomes operational under the Linux Foundation",
+  "url": "https://x402.org/announcement",
+  "summary": "The Linux Foundation announced the operational launch of the x402 Foundation to standardise internet-native payments for agents.",
+  "related": [
+   "x402"
+  ]
+ },
+ {
+  "date": "2026-07-28",
+  "title": "Model Context Protocol 2026-07-28 specification revision",
+  "url": "https://modelcontextprotocol.io/specification/2026-07-28/index",
+  "summary": "MCP published a new dated specification revision, the current version of the protocol.",
+  "related": [
+   "mcp"
+  ]
+ },
+ {
+  "date": "2026-07-30",
+  "title": "IAB Tech Lab releases AAMP 2.3",
+  "url": "https://iabtechlab.com/press-releases/iab-tech-lab-releases-aamp-2-3-bringing-enterprise-grade-infrastructure-and-privacy-diligence-to-agentic-advertising/",
+  "summary": "AAMP 2.3 added infrastructure and privacy-diligence components contributed by AWS, HyperMindZ, Mixpeek, SafeGuard Privacy and Adform.",
+  "related": [
+   "aamp"
+  ]
+ },
+ {
+  "date": "2026-08-07",
+  "title": "Chrome documents a WebMCP origin trial",
+  "url": "https://developer.chrome.com/docs/ai/webmcp",
+  "summary": "Chrome's developer documentation described a WebMCP origin trial running from Chrome 149.",
+  "related": [
+   "webmcp"
+  ]
+ },
+ {
+  "date": "2026-08-12",
+  "title": "IAB Tech Lab publishes ARTF v1.0",
+  "url": "https://iabtechlab.com/standards/artf/",
+  "summary": "The Agentic RTB Framework reached v1.0 and IAB Tech Lab reported production use by unnamed companies.",
+  "related": [
+   "artf"
+  ]
+ },
+ {
+  "date": "2026-08-25",
+  "title": "Universal Commerce Protocol documentation released",
+  "url": "https://ucp.dev/documentation/core-concepts/",
+  "summary": "The UCP site published its core-concepts documentation, dated 25 August 2026, with Shopping, Lodging and Food tracks.",
+  "related": [
+   "ucp"
+  ]
+ },
+ {
+  "date": "2026-08-26",
+  "title": "Agentic Resource Discovery v0.91 published",
+  "url": "https://raw.githubusercontent.com/ards-project/ard-spec/main/spec/ard.md",
+  "summary": "The ARD specification reached v0.91, with the manifest served at /.well-known/ard.json.",
   "related": [
    "ard"
   ]
  },
  {
-  "date": "2026-04-17",
-  "title": "Agentic Commerce Protocol dated specification 2026-04-17",
-  "url": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
-  "summary": "ACP published its 2026-04-17 dated specification, maintained by OpenAI, Stripe and Meta.",
+  "date": "2026-09-01",
+  "title": "IETF webbotauth working group adopts the HTTP signature draft",
+  "url": "https://datatracker.ietf.org/doc/draft-ietf-webbotauth-httpsig-protocol/",
+  "summary": "draft-ietf-webbotauth-httpsig-protocol-00 replaced the individual Web Bot Auth draft as a working-group document.",
   "related": [
-   "agentic-commerce-protocol"
+   "webbotauth",
+   "http-message-signatures"
   ]
  },
  {
-  "date": "2026-03-05",
-  "title": "Mastercard announces Verifiable Intent",
-  "url": "https://www.mastercard.com/global/en/news-and-trends/stories/2026/verifiable-intent.html",
-  "summary": "Mastercard set out Verifiable Intent, a credential format for proving what a user asked an agent to buy.",
+  "date": "2026-09-04",
+  "title": "WebMCP published as a Draft Community Group Report",
+  "url": "https://webmachinelearning.github.io/webmcp/",
+  "summary": "The W3C Web Machine Learning Community Group published a 4 September 2026 draft of WebMCP, the browser API for pages to expose tools to agents.",
   "related": [
-   "vi"
+   "webmcp"
   ]
  },
  {
-  "date": "2026-01-27",
-  "title": "Open Semantic Interchange specifications finalised",
-  "url": "https://www.snowflake.com/en/blog/open-semantic-interchanges-specs-finalized/",
-  "summary": "Snowflake reported that the Open Semantic Interchange specifications had been finalised by the initiative's partners.",
+  "date": "2026-09-09",
+  "title": "MPP draft renamed draft-httpauth-payment",
+  "url": "https://datatracker.ietf.org/doc/draft-httpauth-payment/",
+  "summary": "The Machine Payments Protocol IETF draft is now draft-httpauth-payment, with revision -01 dated 9 September 2026.",
   "related": [
-   "osi"
-  ]
+   "mpp"
+  ],
+  "kind": "version",
+  "detector": "phase-a@2026-10-15"
  },
  {
-  "date": "2025-10-14",
-  "title": "Visa introduces the Trusted Agent Protocol",
-  "url": "https://investor.visa.com/news/news-details/2025/Visa-Introduces-Trusted-Agent-Protocol-An-Ecosystem-Led-Framework-for-AI-Commerce/default.aspx",
-  "summary": "Visa announced the Trusted Agent Protocol, a framework for merchants to recognise and trust shopping agents.",
+  "date": "2026-09-15",
+  "title": "aiagent-auth adopted by WIMSE as AIMS",
+  "url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
+  "summary": "The IETF WIMSE working group adopted draft-klrc-aiagent-auth as draft-ietf-wimse-aims-00 on 15 September 2026.",
   "related": [
-   "tap"
-  ]
+   "aiagent-auth",
+   "wimse-aims"
+  ],
+  "kind": "status",
+  "detector": "phase-a@2026-10-15"
+ },
+ {
+  "date": "2026-09-18",
+  "title": "AG-UI 1.0 released and frozen",
+  "url": "https://github.com/ag-ui-protocol/ag-ui/discussions/2792",
+  "summary": "AG-UI 1.0 was released and frozen on 18 September 2026, with a JSON Schema published alongside.",
+  "related": [
+   "ag-ui"
+  ],
+  "kind": "version",
+  "detector": "phase-a@2026-10-15"
+ },
+ {
+  "date": "2026-09-24",
+  "title": "ANP v1.2",
+  "url": "https://github.com/agent-network-protocol/AgentNetworkProtocol/releases",
+  "summary": "Agent Network Protocol v1.2 was released on 24 September 2026.",
+  "related": [
+   "anp"
+  ],
+  "kind": "version",
+  "detector": "phase-a@2026-10-15"
+ },
+ {
+  "date": "2026-09-25",
+  "title": "MCP Apps SDK v2.0.3",
+  "url": "https://github.com/modelcontextprotocol/ext-apps/releases",
+  "summary": "The MCP Apps SDK (ext-apps) v2.0.3 was released on 25 September 2026; the spec is dated 2026-01-26.",
+  "related": [
+   "mcp-apps"
+  ],
+  "kind": "version",
+  "detector": "phase-a@2026-10-15"
+ },
+ {
+  "date": "2026-09-25",
+  "title": "UCP adds lodging booking draft and payments council",
+  "url": "https://github.com/Universal-Commerce-Protocol/ucp/releases",
+  "summary": "UCP formed a Payments Technical Council on 2 September 2026 and added a Lodging Booking draft capability on 25 September 2026.",
+  "related": [
+   "ucp"
+  ],
+  "kind": "status",
+  "detector": "phase-a@2026-10-15"
+ },
+ {
+  "date": "2026-09-25",
+  "title": "AAuth: Rosenberg draft expired, Hardt draft active",
+  "url": "https://datatracker.ietf.org/doc/draft-hardt-oauth-aauth-protocol/",
+  "summary": "The Rosenberg AAuth draft expired on 23 April 2026; the active AAuth line is draft-hardt-oauth-aauth-protocol-11, dated 25 September 2026.",
+  "related": [
+   "aauth",
+   "aauth-hardt"
+  ],
+  "kind": "status",
+  "detector": "phase-a@2026-10-15"
+ },
+ {
+  "date": "2026-10-01",
+  "title": "x402 Foundation appoints executive director",
+  "url": "https://www.linuxfoundation.org/press/linux-foundation-appoints-michael-hursta-as-executive-director-of-the-x402-foundation",
+  "summary": "The Linux Foundation appointed Michael Hursta as executive director of the x402 Foundation, from 1 October 2026.",
+  "related": [
+   "x402"
+  ],
+  "kind": "status",
+  "detector": "phase-a@2026-10-15"
+ },
+ {
+  "date": "2026-10-05",
+  "title": "IETF draft: audit record format for agent authorization decisions",
+  "url": "https://datatracker.ietf.org/doc/draft-gilda-wimse-agent-audit-record/",
+  "summary": "draft-gilda-wimse-agent-audit-record-02, an audit record format for AI agent authorization decisions, is dated 5 October 2026.",
+  "related": [
+   "wimse-agent-audit-record"
+  ],
+  "kind": "candidate",
+  "detector": "phase-a@2026-10-15"
+ },
+ {
+  "date": "2026-10-06",
+  "title": "MCP Server Cards extension reaches Final",
+  "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2127-mcp-server-cards.md",
+  "summary": "SEP-2127 (MCP Server Cards) is marked Final as of 6 October 2026; Skills over MCP (SEP-2640) reached Final on 13 September 2026.",
+  "related": [
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "kind": "status",
+  "detector": "phase-a@2026-10-15"
+ },
+ {
+  "date": "2026-10-09",
+  "title": "ACP v1.11.0",
+  "url": "https://github.com/agentclientprotocol/agent-client-protocol/blob/main/CHANGELOG.md",
+  "summary": "Agent Client Protocol v1.11.0 (schema v1.25.0) was released on 9 October 2026; v2 remains unstable.",
+  "related": [
+   "agent-client-protocol"
+  ],
+  "kind": "version",
+  "detector": "phase-a@2026-10-15"
+ },
+ {
+  "date": "2026-10-09",
+  "title": "Sierra publishes the Personal Agent Protocol draft",
+  "url": "https://sierra.ai/blog/poppy",
+  "summary": "Sierra, with Meta and others, published the Personal Agent Protocol (Poppy) draft on 9 October 2026, with 35+ design partners named.",
+  "related": [
+   "personal-agent-protocol"
+  ],
+  "kind": "candidate",
+  "detector": "phase-a@2026-10-15"
+ },
+ {
+  "date": "2026-10-12",
+  "title": "AdCP v3.2.4",
+  "url": "https://github.com/adcontextprotocol/adcp/releases",
+  "summary": "AdCP v3.2.4 was released on 12 October 2026.",
+  "related": [
+   "adcp"
+  ],
+  "kind": "version",
+  "detector": "phase-a@2026-10-15"
  }
 ]

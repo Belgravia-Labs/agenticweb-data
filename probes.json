@@ -460,5 +460,33 @@
  "dan": {
   "skip": "not-http",
   "note": "DNS records of types AIINDEX (65502) at _agents.<domain> and AIDISCA (65501); not reachable by HTTP GET."
+ },
+ "mcp-registry": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "wimse-aims": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "personal-agent-protocol": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "aauth-hardt": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "cloudflare-pay-per-crawl": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "wimse-agent-audit-record": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "mcp-server-cards": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
  }
 }
