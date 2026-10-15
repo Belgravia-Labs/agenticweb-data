@@ -1300,7 +1300,7 @@
   ],
   "id": "erc-8004",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-07",
+  "last_verified": "2026-10-16",
   "name": "ERC-8004: Trustless Agents",
   "native_status": "Draft Standards Track ERC",
   "origin": {
@@ -1390,7 +1390,7 @@
   ],
   "id": "erc-8183",
   "implementation": "prototype",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "ERC-8183: Agentic Commerce",
   "native_status": "Draft ERC — 'This specification defines the Agentic Commerce Protocol: a job with escrowed budget...'",
   "origin": {
@@ -1473,7 +1473,7 @@
   ],
   "id": "erc-8226",
   "implementation": "prototype",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "ERC-8226 Regulated Agent Mandate",
   "native_status": "Draft, Standards Track: ERC (marked ⚠️ Draft on eips.ethereum.org)",
   "origin": {
@@ -1554,7 +1554,7 @@
   ],
   "id": "webmcp",
   "implementation": "developer-trial",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "WebMCP",
   "native_status": "Draft Community Group Report, dated 4 September 2026; explicitly \"not a W3C Standard nor on the W3C Standards Track\"",
   "origin": {
@@ -1736,7 +1736,7 @@
   ],
   "id": "anthropic-agent-skills-format",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent Skills",
   "native_status": "Active open format, described on agentskills.io as adopted by a growing number of agent products",
   "origin": {
@@ -1968,7 +1968,7 @@
   ],
   "id": "agents-md",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "AGENTS.md",
   "native_status": "\"An open format... regardless of which coding agent you use\"; explicitly not proprietary to any one tool",
   "origin": {
@@ -2056,7 +2056,7 @@
   ],
   "id": "aipref-content-usage-attachment",
   "implementation": "unknown",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "AIPREF Content-Usage Attachment",
   "native_status": "Internet-Draft, work in progress; \"About This Document\" note says it is to be removed before publishing as an RFC",
   "origin": {
@@ -2120,6 +2120,17 @@
     "date": "2026-08-19",
     "label": "REPORTED",
     "url": "https://www.ietf.org/archive/id/draft-ietf-aipref-attach-05.html"
+   },
+   {
+    "claim": "Datatracker shows draft-ietf-aipref-vocab-08, dated 2026-09-14, expires 2027-03-18",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-ietf-aipref-vocab/",
+    "date": "2026-09-14",
+    "retrieved_at": "2026-10-15T22:52:37Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "d91811c4d50d374d46d6b78072829a93e17b9af532327705f33c38f8292c83c1",
+    "detector": "ietf@1.0"
    }
   ],
   "form": "document-format",
@@ -2133,11 +2144,15 @@
    {
     "date": "2026-09-06",
     "note": "verified against datatracker.ietf.org/doc/html/draft-ietf-aipref-vocab-07"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "revision draft-ietf-aipref-vocab-07 → 08 (watcher)"
    }
   ],
   "id": "aipref-vocabulary",
   "implementation": "unknown",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "AIPREF Vocabulary",
   "native_status": "Internet-Draft, work in progress; explicitly states its contents 'DO NOT REFLECT CONSENSUS of the Working Group'",
   "origin": {
@@ -2157,13 +2172,13 @@
   },
   "question": "What controlled set of values expresses a publisher's AI-use preferences, independent of how they are attached to content?",
   "scope": "general",
-  "spec_url": "https://datatracker.ietf.org/doc/html/draft-ietf-aipref-vocab-07",
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-ietf-aipref-vocab-08",
   "step": "permit",
   "summary_md": "The AIPREF Vocabulary draft is the second half of the IETF AI Preferences Working Group's pair of documents. Where the Content-Usage Attachment draft defines where preference values live (robots.txt directive or HTTP header), this draft defines what those values mean: a controlled vocabulary for declaring restrictions or permissions on how digital assets may be used by automated processing systems [1]. The two are meant to be read together and are cross-referenced explicitly in the attach draft [2].\n\nIt does not define an attachment or discovery mechanism of its own — the vocabulary is inert without the Content-Usage attach draft to carry it — and it does not cover licensing, payment, or compensation terms, which are out of scope for the working group's charter as currently drafted.\n\nAs of this verification (2026-09-06), the current version is draft-ietf-aipref-vocab-07, dated 2026-08-19, matching the same publication date as the -05 attach draft, suggesting a coordinated release [1]. The document is unusually explicit about its immaturity: its own 'Note to Readers' states that presence or absence of any particular text does not indicate working-group consensus, and it is published solely as a basis for further discussion [1]. This is a stronger caveat than the boilerplate carried by most IETF drafts.\n\nGovernance is the IETF AI Preferences Working Group, with development on GitHub (ietf-wg-aipref/drafts) and discussion on the ai-control@ietf.org list. No implementer of the AIPREF vocabulary specifically (as opposed to the broader Content-Usage attachment surface) was identified in this verification pass; adoption is unmeasured. What is unresolved: the exact set of controlled vocabulary terms was not enumerated in this pass and should be checked against the rendered draft text at the GitHub Pages mirror (ietf-wg-aipref.github.io/drafts/draft-ietf-aipref-vocab.html) in a future review; whether the vocabulary will converge with, or remain distinct from, the pre-existing Cloudflare Content Signals Policy vocabulary (search/ai-input/ai-train) is also unresolved, since the two were developed independently and target overlapping use cases.",
   "track": "ietf",
   "version": {
-   "date": "2026-08-19",
-   "label": "draft-ietf-aipref-vocab-07"
+   "label": "draft-ietf-aipref-vocab-08",
+   "date": "2026-09-14"
   },
   "watch": [
    {
@@ -2216,7 +2231,7 @@
   ],
   "id": "tdmrep",
   "implementation": "unknown",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Text and Data Mining Reservation Protocol",
   "native_status": "W3C Community Group Final Report; explicitly \"not a W3C Standard nor is it on the W3C Standards Track\"",
   "origin": {
@@ -2435,7 +2450,7 @@
   ],
   "id": "webbotauth",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Web Bot Auth HTTP Message Signatures",
   "native_status": "Active Internet-Draft, WG Document, Intended Status: Informational",
   "origin": {
@@ -2522,7 +2537,7 @@
   ],
   "id": "web-bot-auth-signature-agent-card",
   "implementation": "prototype",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Signature Agent Card (Web Bot Auth registry)",
   "native_status": "Active Internet-Draft (individual), Intended Status: Informational",
   "origin": {
@@ -2601,7 +2616,7 @@
   ],
   "id": "http-message-signatures",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "HTTP Message Signatures",
   "native_status": "Proposed Standard",
   "origin": {
@@ -2707,7 +2722,7 @@
   ],
   "id": "ard",
   "implementation": "shipping",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agentic Resource Discovery",
   "native_status": "Proposal",
   "origin": {
@@ -2893,7 +2908,7 @@
   ],
   "id": "dns-aid",
   "implementation": "unknown",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "DNS for AI Discovery",
   "native_status": "Internet-Draft, Standards Track intended status",
   "origin": {
@@ -2963,6 +2978,17 @@
     "date": "2026-05-14",
     "label": "REPORTED",
     "url": "https://aboutus.godaddy.net/newsroom/news-releases/press-release-details/2026/Infoblox-and-GoDaddy-Support-Open-Standards-for-AI-Agent-Discovery-Identity-and-Verification-2026-0acKMntvOC/default.aspx"
+   },
+   {
+    "claim": "Expired Internet-Draft (expired 2026-10-15)",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-narajala-courtney-ansv2/",
+    "date": "2026-04-13",
+    "retrieved_at": "2026-10-15T22:52:44Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "c2ca8ee3899fafacfb29ae0d0f7366e4362af16b13474a1cdd0d5575c281b521",
+    "detector": "ietf@1.0"
    }
   ],
   "form": "dns-record",
@@ -2976,13 +3002,17 @@
    {
     "date": "2026-09-06",
     "note": "verified against draft-narajala-courtney-ansv2-01 primary text and the GoDaddy/Infoblox press release"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "Expired Internet-Draft (expired 2026-10-15)"
    }
   ],
   "id": "ans",
   "implementation": "none-found",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent Name Service v2 (ANS)",
-  "native_status": "Active Internet-Draft, Intended Status: Informational",
+  "native_status": "Expired Internet-Draft (expired 2026-10-15)",
   "origin": {
    "date": "2025-05",
    "org": "Scott Courtney (GoDaddy), Vineeth Sai Narajala (OWASP), Ken Huang, Idan Habler, Akram Sheriff (Cisco) — Independent Submission"
@@ -2992,7 +3022,7 @@
    "agent-agent",
    "agent-registry"
   ],
-  "phase": "draft",
+  "phase": "deprecated",
   "probe": {
    "method": "GET",
    "on_absent": "No ANS identity is bound to the domain; the agent cannot be verified at any of ANS's three assurance tiers (Bronze/Silver/Gold)",
@@ -3246,6 +3276,17 @@
     "date": "2026-09-06",
     "label": "VERIFIED",
     "url": "https://datatracker.ietf.org/doc/draft-pioli-agent-discovery/"
+   },
+   {
+    "claim": "Expired Internet-Draft (expired 2026-08-28)",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-pioli-agent-discovery/",
+    "date": "2026-02-24",
+    "retrieved_at": "2026-10-15T22:52:44Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "3d34220e757b225f25b8fb1c1e9793e1068a82e0e569f06bab9d684b74158acb",
+    "detector": "ietf@1.0"
    }
   ],
   "form": "endpoint",
@@ -3263,13 +3304,17 @@
    {
     "date": "2026-09-06",
     "note": "fix round 1: fetched IETF Datatracker status page as second, independent evidence entry confirming Expired/archived state; corrected version/spec_url from -00 to the actual latest revision -01; set phase from unknown to withdrawn on the strength of the datatracker's own Expired status (resolves the phase-unknown gate without needing an explanatory sentence)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "Expired Internet-Draft (expired 2026-08-28)"
    }
   ],
   "id": "ardp",
   "implementation": "none-found",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent Registration and Discovery Protocol",
-  "native_status": "Internet-Draft; work in progress",
+  "native_status": "Expired Internet-Draft (expired 2026-08-28)",
   "origin": {
    "date": "2026-02",
    "org": "Individual IETF submission"
@@ -3280,7 +3325,7 @@
    "agent-agent",
    "agent-registry"
   ],
-  "phase": "withdrawn",
+  "phase": "deprecated",
   "probe": {
    "method": "GET",
    "on_absent": "Domain does not run an ARDP-compliant registration/discovery endpoint",
@@ -3353,7 +3398,7 @@
   ],
   "id": "ads",
   "implementation": "shipping",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent Directory Service",
   "native_status": "Internet-Draft; work in progress; canonical spec tracked at spec.dir.agntcy.org",
   "origin": {
@@ -3978,7 +4023,7 @@
   ],
   "id": "openai-apps-sdk-manifests",
   "implementation": "shipping",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "OpenAI Plugins (formerly Apps SDK)",
   "native_status": "Active vendor product, rebranded from \"Apps SDK\" to \"Plugins\" as the top-level developers.openai.com section name (developers.openai.com/apps-sdk now redirects to developers.openai.com/plugins)",
   "origin": {
@@ -4578,7 +4623,7 @@
   ],
   "id": "spiffe",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "SPIFFE (Secure Production Identity Framework for Everyone)",
   "native_status": "Active, stable open-source specification set (SPIFFE/SPIRE); SPIFFE itself makes no agent-specific claims",
   "origin": {
@@ -4666,7 +4711,7 @@
   ],
   "id": "wimse",
   "implementation": "prototype",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Workload Identity in Multi System Environments (WIMSE) Architecture",
   "native_status": "Active Internet-Draft, WG Document, Intended Status: Informational",
   "origin": {
@@ -4761,6 +4806,17 @@
     "http_status": 200,
     "content_sha256": "b3f78bf766c1de1f48be52ec8e5aacf1bbb98efd30479122d2a66ca0f1b08049",
     "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "Expired Internet-Draft (expired 2026-04-23)",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-rosenberg-oauth-aauth/",
+    "date": "2025-10-20",
+    "retrieved_at": "2026-10-15T22:52:57Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "21ed5617c4b5b48a86889d8113f8375823c58ca1933c23b1efaf9beda725f696",
+    "detector": "ietf@1.0"
    }
   ],
   "form": "endpoint",
@@ -4778,13 +4834,17 @@
    {
     "date": "2026-10-16",
     "note": "draft-rosenberg-oauth-aauth-01 (2026-04-22) expired on 2026-04-23; the active AAuth lineage is draft-hardt-oauth-aauth-protocol-11"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "Expired Internet-Draft (expired 2026-04-23)"
    }
   ],
   "id": "aauth",
   "implementation": "none-found",
   "last_verified": "2026-10-16",
   "name": "Agent Authorization Grant",
-  "native_status": "Expired Internet-Draft (expired 2026-04-23); the active AAuth lineage is draft-hardt-oauth-aauth-protocol-11",
+  "native_status": "Expired Internet-Draft (expired 2026-04-23)",
   "origin": {
    "date": "2025-10",
    "org": "IETF individual submission"
@@ -4793,7 +4853,7 @@
   "parties": [
    "agent-site"
   ],
-  "phase": "withdrawn",
+  "phase": "deprecated",
   "probe": {
    "method": "POST",
    "on_absent": "Authorization server does not implement this grant; this is expected, since the draft is expired and no implementation was found",
@@ -4954,6 +5014,17 @@
     "date": "2026-02-07",
     "label": "REPORTED",
     "url": "https://github.com/aapspec/spec"
+   },
+   {
+    "claim": "Expired Internet-Draft (expired 2026-08-11)",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-aap-oauth-profile/",
+    "date": "2026-02-07",
+    "retrieved_at": "2026-10-15T22:52:57Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "ea1eef473d7120534a99386daef2180d4de3c9a6c024d65b89dce992761da458",
+    "detector": "ietf@1.0"
    }
   ],
   "form": "endpoint",
@@ -4967,13 +5038,17 @@
    {
     "date": "2026-09-06",
     "note": "verified against datatracker.ietf.org/doc/draft-aap-oauth-profile/ and github.com/aapspec/spec; found expired"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "Expired Internet-Draft (expired 2026-08-11)"
    }
   ],
   "id": "aap",
   "implementation": "prototype",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent Authorization Profile",
-  "native_status": "Expired Internet-Draft (individual), per the IETF Datatracker; last updated 2026-08-11, latest revision -01 dated 2026-02-07",
+  "native_status": "Expired Internet-Draft (expired 2026-08-11)",
   "origin": {
    "date": "2026-02-07",
    "org": "Individual author (\"angel cruz\"), published via IETF individual submission and the aapspec GitHub organization"
@@ -4982,7 +5057,7 @@
   "parties": [
    "agent-site"
   ],
-  "phase": "withdrawn",
+  "phase": "deprecated",
   "probe": {
    "method": "GET",
    "on_absent": "No AAP claims present; given the draft's expired status this is the expected default across the ecosystem",
@@ -5057,7 +5132,7 @@
   ],
   "id": "aip",
   "implementation": "none-found",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent Identity Protocol (AIP)",
   "native_status": "Internet-Draft, Intended Status: Standards Track (author's stated intent; not adopted by any WG)",
   "origin": {
@@ -5136,7 +5211,7 @@
   ],
   "id": "agtp",
   "implementation": "none-found",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent Transfer Protocol",
   "native_status": "Internet-Draft (work in progress), independent submission",
   "origin": {
@@ -5218,7 +5293,7 @@
   ],
   "id": "vcap",
   "implementation": "unknown",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "VCAP: Verified Commerce for Agent Protocols",
   "native_status": "Active Internet-Draft (individual); Intended RFC status: Informational",
   "origin": {
@@ -5497,7 +5572,7 @@
   ],
   "id": "agora-commerce-protocol",
   "implementation": "prototype",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agora (agent marketplace protocol)",
   "native_status": "Testnet-only; production_status explicitly \"testnet-only\" in its own manifest",
   "origin": {
@@ -5748,6 +5823,17 @@
     "date": "2026-09-05",
     "label": "VERIFIED",
     "url": "https://www.ietf.org/archive/id/draft-sharif-agent-audit-trail-03.txt"
+   },
+   {
+    "claim": "Datatracker shows draft-sharif-agent-audit-trail-08, dated 2026-10-13, expires 2027-04-16",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-sharif-agent-audit-trail/",
+    "date": "2026-10-13",
+    "retrieved_at": "2026-10-15T22:52:57Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "76aa3b38854f6f30704eafe80566b4426452b5317a46405f629eb344e241064a",
+    "detector": "ietf@1.0"
    }
   ],
   "form": "document-format",
@@ -5757,11 +5843,15 @@
    {
     "date": "2026-09-06",
     "note": "new record: found via search for 'agent audit log standard'; verified against datatracker.ietf.org and the archived draft text (revision -03, 2026-09-05); no implementation found"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "revision draft-sharif-agent-audit-trail-03 → 08 (watcher)"
    }
   ],
   "id": "agent-audit-trail",
   "implementation": "none-found",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent Audit Trail",
   "native_status": "Active Internet-Draft (individual submission), Intended status: Standards Track; not a Working Group document",
   "origin": {
@@ -5781,13 +5871,13 @@
   },
   "question": "Is there a standard, tamper-evident log format any autonomous AI agent can write its actions to, so a regulator, auditor or victim can later reconstruct exactly what it did and why?",
   "scope": "general",
-  "spec_url": "https://datatracker.ietf.org/doc/draft-sharif-agent-audit-trail/",
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-sharif-agent-audit-trail-08",
   "step": "account",
   "summary_md": "Agent Audit Trail (AAT) is an individual IETF Internet-Draft proposing a standard JSON logging format for autonomous AI agent systems: each record must carry an agent identity (URI), a session id, an action type (tool_call, decision, delegation, escalation, error, lifecycle, etc.), an outcome (success, failure, timeout, denied, escalated), and a trust level (L0 no verification through L4 full mutual authentication with revocation checking) [1][2]. Records are linked into a tamper-evident hash chain -- each record stores the SHA-256 hash (per RFC 8785 canonical JSON) of the immediately preceding record -- with optional ECDSA signatures for non-repudiation, and a record_phase field (pre_execution/post_execution/concurrent) that distinguishes a log written before an action is allowed to run from one written after it completes [2]. This is a direct fit for this site's 'account' step: it is explicitly a logs/audit-trail format for reconstructing and judging what an agent did.\n\n**What it solves.** It gives autonomous-agent operators a single, exportable record format (JSONL is the recommended primary export, with Syslog and CSV also supported) intended to satisfy several overlapping compliance regimes at once: the EU AI Act's Article on automatic event recording for high-risk AI systems (effective August 2026), SOC 2 Trust Services Criteria, ISO/IEC 42001 and 24970, prEN 18229-1, and PCI DSS v4.0.1 [2]. Later revisions add a 'Decision Reproducibility' section distinguishing record reproducibility (available for any model) from full decision reproducibility (only for open-weight models run at temperature zero in an attested environment), and, in the current -03 revision, an 'Attestation Closure' requirement that the digests recorded cover the entire inference stack (model weights, tokenizer, chat template, inference-engine build, decoding configuration, numeric environment) to close forgery gaps [2].\n\n**What it does not do.** AAT does not define a discovery mechanism, a transport, or a place logs must be published -- it is a record format for whatever storage/export pipeline an operator already has. It does not define agent identity or authentication itself (trust_level is self-reported by the logging system, referencing an external identity mechanism such as the also-draft 'MCPS'/Agent Passport concept).\n\n**Current state.** As of 2026-09-05 this is revision -03 of an individual (not Working-Group) draft, authored solely by Raza Sharif of CyberSecAI Ltd, with 'Intended status: Standards Track' -- an author aspiration, not a Working Group adoption. The IETF datatracker's own boilerplate states individual drafts are not endorsed by the IETF and have no formal standing [1].\n\n**Who implements it.** No implementation, pilot, or third-party adopter was found in the sources checked; implementation is marked none-found and adoption unmeasured.\n\n**Disputed / unknown.** Whether this draft will be adopted by any IETF working group, referenced by an actual EU AI Act compliance guidance document, or implemented by any agent framework, is unknown. It is listed here as the most complete public spec text found for the 'account' step, explicitly flagged as early-stage and unimplemented rather than as an established standard.",
   "track": "ietf",
   "version": {
-   "date": "2026-09-05",
-   "label": "draft-sharif-agent-audit-trail-03"
+   "label": "draft-sharif-agent-audit-trail-08",
+   "date": "2026-10-13"
   },
   "watch": [
    {
@@ -5947,7 +6037,7 @@
   ],
   "id": "api-catalog-rfc9727",
   "implementation": "unknown",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs",
   "native_status": "Proposed Standard (errata exist)",
   "origin": {
@@ -6024,7 +6114,7 @@
   ],
   "id": "rsl",
   "implementation": "shipping",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Really Simple Licensing",
   "native_status": "Recommendation (RSL's own maturity label, not a W3C/IETF Recommendation) — Document RSL-SPEC-1.0, Category 'Industry Specification'",
   "origin": {
@@ -6268,7 +6358,7 @@
   ],
   "id": "oauth-metadata-for-agents",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)",
   "native_status": "Internet Standard (RFC 8414, published June 2018) and Internet Standard (RFC 9728, published 2025); both are products of IETF consensus, not works in progress",
   "origin": {
@@ -6561,7 +6651,7 @@
   ],
   "id": "vercel-agent-readability",
   "implementation": "shipping",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Agent Readability Spec",
   "native_status": "A specification and scoring checklist, not a protocol; framed as best practices to implement voluntarily",
   "origin": {
@@ -6762,7 +6852,7 @@
   ],
   "id": "agents-txt",
   "implementation": "prototype",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "agents.txt",
   "native_status": "\"An open standard proposal for declaring what AI agents can do on a website\" (kaylacar/agents-txt); a Mastercard developer-documentation page independently characterizes the space as \"IETF draft expired ... fragmented landscape with 11+ competing proposals ... no ratified standard\"",
   "origin": {
@@ -6861,7 +6951,7 @@
   ],
   "id": "ai-txt",
   "implementation": "prototype",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "ai.txt",
   "native_status": "IETF Internet-Draft (draft-car-ai-txt-wellknown-00) presented as a formal well-known-URI registration proposal; kaylacar/ai-txt separately claims IANA filing (#76/#77, 'under review')",
   "origin": {
@@ -6945,7 +7035,7 @@
   ],
   "id": "lmos",
   "implementation": "shipping",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "LMOS (Language Model Operating System)",
   "native_status": "LMOS Protocol spec is explicitly \"work in progress and contains empty sections\"; \"It is not a W3C Standard nor is it on the W3C Standards Track\" (project's own words), though the project states it plans to start the formal W3C process once mature",
   "origin": {
@@ -7221,7 +7311,7 @@
   ],
   "id": "aitp",
   "implementation": "prototype",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "AITP (Agent Interaction & Transaction Protocol)",
   "native_status": "Version: 0.1.0. Status: Draft. \"AITP is a spec in progress and we are open to comments, feedback, and contributions\" (project's own words)",
   "origin": {
@@ -7302,7 +7392,7 @@
   ],
   "id": "coral-protocol",
   "implementation": "shipping",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "Coral Protocol (CoralOS)",
   "native_status": "\"Kubernetes for AI agents: a platform for everything between your agents and production — registry, runtimes, security, and orchestration\" (current docs homepage); described elsewhere as a 'decentralized protocol powering AI agent collaboration, trust, and payments'",
   "origin": {
@@ -7512,7 +7602,7 @@
   ],
   "id": "nlip",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-07",
+  "last_verified": "2026-10-16",
   "name": "Natural Language Interaction Protocol",
   "native_status": "Ecma International Standard, 1st edition, published 10 December 2025 (ECMA-430 core spec, plus companion ECMA-431/432/433 transport bindings, ECMA-434 security profiles, and ECMA TR/113 explanatory report); an ISO standardisation ballot was reported in progress by project contributors as of August 2026",
   "origin": {
@@ -7610,7 +7700,7 @@
   ],
   "id": "emv-agentic-payments",
   "implementation": "none-found",
-  "last_verified": "2026-09-07",
+  "last_verified": "2026-10-16",
   "name": "EMV Agentic Payments – Framework for Specifications",
   "native_status": "Draft v1.0, released for public review and comment; EMVCo describes it as ‘a foundation for further industry engagement and potential specification development’, not itself a finished specification",
   "origin": {
@@ -7722,7 +7812,7 @@
   ],
   "id": "identity-assertion-authz-grant",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-07",
+  "last_verified": "2026-10-16",
   "name": "Identity Assertion JWT Authorization Grant",
   "native_status": "Active Internet-Draft, WG Document (oauth WG); Intended status: Standards Track (per document front matter); IESG state: I-D Exists",
   "origin": {
@@ -7949,7 +8039,7 @@
   ],
   "id": "dan",
   "implementation": "prototype",
-  "last_verified": "2026-09-07",
+  "last_verified": "2026-10-16",
   "name": "DNS-Based Agent Naming",
   "native_status": "Active Internet-Draft (individual, -00), Intended status: Standards Track; IESG state 'I-D Exists'; expires 7 December 2026",
   "origin": {
@@ -8336,6 +8426,17 @@
     "http_status": 200,
     "content_sha256": "a071e220dfe6d6ed4e65fefcff35889df33a836db9bd69a7ab9e5427e0a7adbf",
     "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "Expired Internet-Draft (expired 2026-10-04)",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-headers/",
+    "date": "2026-04-02",
+    "retrieved_at": "2026-10-15T22:53:17Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "58201d0d03f1f478254c052b1e9722554e900019b4782c259d5d7336c6c9ef71",
+    "detector": "ietf@1.0"
    }
   ],
   "form": "http-header",
@@ -8345,13 +8446,17 @@
    {
     "date": "2026-10-15",
     "note": "curated update 2026-10-15"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "Expired Internet-Draft (expired 2026-10-04)"
    }
   ],
   "id": "aauth-hardt",
   "implementation": "unknown",
   "last_verified": "2026-10-16",
   "name": "AAuth (Hardt)",
-  "native_status": "Active Internet-Draft, draft-hardt-oauth-aauth-protocol-11 (2026-09-25, expires 2027-03-29); companion draft-hardt-aauth-headers-00 (2026-10-04)",
+  "native_status": "Expired Internet-Draft (expired 2026-10-04)",
   "origin": {
    "org": "Dick Hardt",
    "date": null
@@ -8364,7 +8469,7 @@
    "agent-site",
    "agent-agent"
   ],
-  "phase": "draft",
+  "phase": "deprecated",
   "probe": {
    "method": "GET",
    "path": "none",

@@ -36,6 +36,17 @@
   ]
  },
  {
+  "date": "2026-04-23",
+  "title": "Agent Authorization Grant draft expired",
+  "url": "https://datatracker.ietf.org/doc/draft-rosenberg-oauth-aauth/",
+  "summary": "Expired Internet-Draft (expired 2026-04-23)",
+  "related": [
+   "aauth"
+  ],
+  "kind": "expiry",
+  "detector": "rules@1.0"
+ },
+ {
   "date": "2026-06-17",
   "title": "Google announces the Agentic Resource Discovery specification",
   "url": "https://developers.googleblog.com/en/announcing-the-agentic-resource-discovery-specification/",
@@ -91,6 +102,17 @@
   ]
  },
  {
+  "date": "2026-08-11",
+  "title": "Agent Authorization Profile draft expired",
+  "url": "https://datatracker.ietf.org/doc/draft-aap-oauth-profile/",
+  "summary": "Expired Internet-Draft (expired 2026-08-11)",
+  "related": [
+   "aap"
+  ],
+  "kind": "expiry",
+  "detector": "rules@1.0"
+ },
+ {
   "date": "2026-08-12",
   "title": "IAB Tech Lab publishes ARTF v1.0",
   "url": "https://iabtechlab.com/standards/artf/",
@@ -116,6 +138,17 @@
   "related": [
    "ard"
   ]
+ },
+ {
+  "date": "2026-08-28",
+  "title": "Agent Registration and Discovery Protocol draft expired",
+  "url": "https://datatracker.ietf.org/doc/draft-pioli-agent-discovery/",
+  "summary": "Expired Internet-Draft (expired 2026-08-28)",
+  "related": [
+   "ardp"
+  ],
+  "kind": "expiry",
+  "detector": "rules@1.0"
  },
  {
   "date": "2026-09-01",
@@ -146,6 +179,17 @@
   ],
   "kind": "version",
   "detector": "phase-a@2026-10-15"
+ },
+ {
+  "date": "2026-09-14",
+  "title": "AIPREF Vocabulary: revision -08 published",
+  "url": "https://datatracker.ietf.org/doc/html/draft-ietf-aipref-vocab-08",
+  "summary": "Datatracker shows draft-ietf-aipref-vocab-08, dated 2026-09-14, expires 2027-03-18",
+  "related": [
+   "aipref-vocabulary"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
  },
  {
   "date": "2026-09-15",
@@ -227,6 +271,17 @@
   "detector": "phase-a@2026-10-15"
  },
  {
+  "date": "2026-10-04",
+  "title": "AAuth (Hardt) draft expired",
+  "url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-headers/",
+  "summary": "Expired Internet-Draft (expired 2026-10-04)",
+  "related": [
+   "aauth-hardt"
+  ],
+  "kind": "expiry",
+  "detector": "rules@1.0"
+ },
+ {
   "date": "2026-10-05",
   "title": "IETF draft: audit record format for agent authorization decisions",
   "url": "https://datatracker.ietf.org/doc/draft-gilda-wimse-agent-audit-record/",
@@ -281,5 +336,27 @@
   ],
   "kind": "version",
   "detector": "phase-a@2026-10-15"
+ },
+ {
+  "date": "2026-10-13",
+  "title": "Agent Audit Trail: revision -08 published",
+  "url": "https://datatracker.ietf.org/doc/html/draft-sharif-agent-audit-trail-08",
+  "summary": "Datatracker shows draft-sharif-agent-audit-trail-08, dated 2026-10-13, expires 2027-04-16",
+  "related": [
+   "agent-audit-trail"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
+  "date": "2026-10-15",
+  "title": "Agent Name Service v2 (ANS) draft expired",
+  "url": "https://datatracker.ietf.org/doc/draft-narajala-courtney-ansv2/",
+  "summary": "Expired Internet-Draft (expired 2026-10-15)",
+  "related": [
+   "ans"
+  ],
+  "kind": "expiry",
+  "detector": "rules@1.0"
  }
 ]

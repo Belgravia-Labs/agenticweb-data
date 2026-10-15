@@ -512,5 +512,108 @@
   "evidence_url": "https://datatracker.ietf.org/doc/draft-rosenberg-oauth-aauth/",
   "detector": "phase-a@2026-10-15",
   "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-aipref-vocabulary-revision",
+  "date": "2026-10-15",
+  "record_id": "aipref-vocabulary",
+  "kind": "revision",
+  "field": "version",
+  "from": {
+   "date": "2026-08-19",
+   "label": "draft-ietf-aipref-vocab-07"
+  },
+  "to": {
+   "label": "draft-ietf-aipref-vocab-08",
+   "date": "2026-09-14"
+  },
+  "claim": "Datatracker shows draft-ietf-aipref-vocab-08, dated 2026-09-14, expires 2027-03-18",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-ietf-aipref-vocab/",
+  "detector": "ietf@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-ans-expired",
+  "date": "2026-10-15",
+  "record_id": "ans",
+  "kind": "expired",
+  "field": "native_status",
+  "from": "Active Internet-Draft, Intended Status: Informational",
+  "to": "Expired Internet-Draft (expired 2026-10-15)",
+  "claim": "Expired Internet-Draft (expired 2026-10-15)",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-narajala-courtney-ansv2/",
+  "detector": "ietf@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-ardp-expired",
+  "date": "2026-10-15",
+  "record_id": "ardp",
+  "kind": "expired",
+  "field": "native_status",
+  "from": "Internet-Draft; work in progress",
+  "to": "Expired Internet-Draft (expired 2026-08-28)",
+  "claim": "Expired Internet-Draft (expired 2026-08-28)",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-pioli-agent-discovery/",
+  "detector": "ietf@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-aauth-expired-2",
+  "date": "2026-10-15",
+  "record_id": "aauth",
+  "kind": "expired",
+  "field": "native_status",
+  "from": "Expired Internet-Draft (expired 2026-04-23); the active AAuth lineage is draft-hardt-oauth-aauth-protocol-11",
+  "to": "Expired Internet-Draft (expired 2026-04-23)",
+  "claim": "Expired Internet-Draft (expired 2026-04-23)",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-rosenberg-oauth-aauth/",
+  "detector": "ietf@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-aap-expired",
+  "date": "2026-10-15",
+  "record_id": "aap",
+  "kind": "expired",
+  "field": "native_status",
+  "from": "Expired Internet-Draft (individual), per the IETF Datatracker; last updated 2026-08-11, latest revision -01 dated 2026-02-07",
+  "to": "Expired Internet-Draft (expired 2026-08-11)",
+  "claim": "Expired Internet-Draft (expired 2026-08-11)",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-aap-oauth-profile/",
+  "detector": "ietf@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-agent-audit-trail-revision",
+  "date": "2026-10-15",
+  "record_id": "agent-audit-trail",
+  "kind": "revision",
+  "field": "version",
+  "from": {
+   "date": "2026-09-05",
+   "label": "draft-sharif-agent-audit-trail-03"
+  },
+  "to": {
+   "label": "draft-sharif-agent-audit-trail-08",
+   "date": "2026-10-13"
+  },
+  "claim": "Datatracker shows draft-sharif-agent-audit-trail-08, dated 2026-10-13, expires 2027-04-16",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-sharif-agent-audit-trail/",
+  "detector": "ietf@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-aauth-hardt-expired",
+  "date": "2026-10-15",
+  "record_id": "aauth-hardt",
+  "kind": "expired",
+  "field": "native_status",
+  "from": "Active Internet-Draft, draft-hardt-oauth-aauth-protocol-11 (2026-09-25, expires 2027-03-29); companion draft-hardt-aauth-headers-00 (2026-10-04)",
+  "to": "Expired Internet-Draft (expired 2026-10-04)",
+  "claim": "Expired Internet-Draft (expired 2026-10-04)",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-headers/",
+  "detector": "ietf@1.0",
+  "commit": null
  }
 ]
