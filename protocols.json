@@ -8428,7 +8428,7 @@
     "detector": "phase-a@2026-10-15"
    },
    {
-    "claim": "Expired Internet-Draft (expired 2026-10-04)",
+    "claim": "draft-hardt-aauth-headers-00 (the companion headers draft, not the protocol draft) is marked Expired by the Datatracker as of 2026-10-04.",
     "label": "VERIFIED",
     "url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-headers/",
     "date": "2026-04-02",
@@ -8450,13 +8450,17 @@
    {
     "date": "2026-10-16",
     "note": "Expired Internet-Draft (expired 2026-10-04)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "correction: the 2026-10-04 expiry belongs to the companion headers draft; the protocol draft -11 is active until 2027-03-29, so native_status and phase restored"
    }
   ],
   "id": "aauth-hardt",
   "implementation": "unknown",
   "last_verified": "2026-10-16",
   "name": "AAuth (Hardt)",
-  "native_status": "Expired Internet-Draft (expired 2026-10-04)",
+  "native_status": "Active Internet-Draft, draft-hardt-oauth-aauth-protocol-11 (2026-09-25, expires 2027-03-29); the companion draft-hardt-aauth-headers-00 (2026-10-04) is marked Expired by the Datatracker",
   "origin": {
    "org": "Dick Hardt",
    "date": null
@@ -8469,7 +8473,7 @@
    "agent-site",
    "agent-agent"
   ],
-  "phase": "deprecated",
+  "phase": "draft",
   "probe": {
    "method": "GET",
    "path": "none",
@@ -8480,7 +8484,7 @@
   "scope": "general",
   "spec_url": "https://datatracker.ietf.org/doc/draft-hardt-oauth-aauth-protocol/",
   "step": "permit",
-  "summary_md": "AAuth in its current form is Dick Hardt's Internet-Draft `draft-hardt-oauth-aauth-protocol`, at revision -11 (2026-09-25, expiring 2027-03-29) [1]. A companion draft, `draft-hardt-aauth-headers`, is at revision -00 (2026-10-04) [2].\n\nThis is a different document from the Rosenberg draft, which this site tracks as `aauth` (Agent Authorization Grant). That one expired on 2026-04-23, and the Hardt draft is the active AAuth line.\n\nThe form, party and discovery details here are placeholders pending a read of the drafts; only the version, dates and expiry above are taken from the datatracker.",
+  "summary_md": "AAuth in its current form is Dick Hardt's Internet-Draft `draft-hardt-oauth-aauth-protocol`, at revision -11 (2026-09-25, expiring 2027-03-29) [1]. A companion draft, `draft-hardt-aauth-headers`, was published as -00 on 2026-10-04 and is already marked Expired by the Datatracker [2]; the protocol draft itself is active.\n\nThis is a different document from the Rosenberg draft, which this site tracks as `aauth` (Agent Authorization Grant). That one expired on 2026-04-23, and the Hardt draft is the active AAuth line.\n\nThe form, party and discovery details here are placeholders pending a read of the drafts; only the version, dates and expiry above are taken from the datatracker.",
   "track": "ietf",
   "use_cases": [
    "delegate-user-authority",
