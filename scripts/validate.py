@@ -51,6 +51,8 @@ def check(root: Path) -> list[str]:
     for pid in data["resources.json"]:
         if pid not in known: errors.append(f"resources.json: unknown id {pid}")
     for t in data["terms.json"]:
+        if t["id"] in known: errors.append(f"terms.json {t['id']}: id collides with a protocol id (terms and protocols share one search index)")
+    for t in data["terms.json"]:
         for pid in t.get("related_protocols", []):
             if pid not in known: errors.append(f"terms.json {t['id']}: unknown id {pid}")
     for fname, field in (("useful-resources.json", "covers"), ("instances.json", "implements"), ("news.json", "related")):

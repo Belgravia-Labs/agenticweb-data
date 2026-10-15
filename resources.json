@@ -220,6 +220,13 @@
   "sdks": [],
   "validators": []
  },
+ "aauth-hardt": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
  "adcp": {
   "adopters": [
    {
@@ -273,7 +280,7 @@
     "date": "2026",
     "evidence": "VERIFIED",
     "name": "Addie (chat-based protocol tester)",
-    "note": "adcontextprotocol.org/chat \u2014 ask questions and test AdCP tasks with no code",
+    "note": "adcontextprotocol.org/chat — ask questions and test AdCP tasks with no code",
     "url": "https://docs.adcontextprotocol.org/"
    },
    {
@@ -794,7 +801,7 @@
    {
     "date": "2026",
     "evidence": "REPORTED",
-    "name": "GitHub code search (path:AGENTS.md NOT is:fork NOT is:archived) \u2014 self-reported 60k+ results",
+    "name": "GitHub code search (path:AGENTS.md NOT is:fork NOT is:archived) — self-reported 60k+ results",
     "url": "https://github.com/search?q=path%3AAGENTS.md+NOT+is%3Afork+NOT+is%3Aarchived&type=code"
    }
   ],
@@ -1320,6 +1327,13 @@
   "registries": [],
   "sdks": [],
   "validators": []
+ },
+ "cloudflare-pay-per-crawl": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
  },
  "coral-protocol": {
   "adopters": [],
@@ -1865,7 +1879,7 @@
    {
     "date": "2026-09-05",
     "evidence": "VERIFIED",
-    "name": "MCP-UI client (@mcp-ui/client, AppRenderer \u2014 full MCP Apps framework used by several hosts)",
+    "name": "MCP-UI client (@mcp-ui/client, AppRenderer — full MCP Apps framework used by several hosts)",
     "url": "https://github.com/MCP-UI-Org/mcp-ui"
    }
   ],
@@ -1885,6 +1899,20 @@
    }
   ],
   "validators": []
+ },
+ "mcp-registry": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "mcp-server-cards": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
  },
  "mpp": {
   "adopters": [
@@ -2227,12 +2255,19 @@
    }
   ]
  },
+ "personal-agent-protocol": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
  "rsl": {
   "adopters": [
    {
     "date": "2025-12-10",
     "evidence": "VERIFIED",
-    "name": "RSL Collective editorial roster: Cond\u00e9 Nast, Ziff Davis, Yahoo, Automattic, O'Reilly Media, Fastly, Schema.org",
+    "name": "RSL Collective editorial roster: Condé Nast, Ziff Davis, Yahoo, Automattic, O'Reilly Media, Fastly, Schema.org",
     "note": "named as spec editors, which establishes institutional backing, not confirmed independent production deployment of rsl.xml files",
     "url": "https://rslstandard.org/rsl"
    }
@@ -2618,6 +2653,20 @@
   "registries": [],
   "sdks": [],
   "validators": []
+ },
+ "wimse-agent-audit-record": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "wimse-aims": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
  },
  "x402": {
   "adopters": [

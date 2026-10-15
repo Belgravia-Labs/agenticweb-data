@@ -7366,10 +7366,11 @@
     "url": "https://github.com/OTA-Tech-AI/web-agent-protocol"
    },
    {
-    "claim": "OTA Tech AI's own homepage (otatech.ai, 'OTA Technologies Inc.') lists Web-Agent-Protocol (WAP) alongside its OTA-v1 Browser Agent Model as company products, confirming WAP is a single-company project rather than an independently governed spec.",
+    "claim": "OTA Tech AI's own homepage (otatech.ai, 'OTA Technologies Inc.') lists Web-Agent-Protocol (WAP) alongside its OTA-v1 Browser Agent Model as company products, confirming WAP is a single-company project rather than an independently governed spec. The live site stopped answering in October 2026; this is the archived copy from 2026-06-07.",
     "date": "2026-09-06",
     "label": "VERIFIED",
-    "url": "https://www.otatech.ai/"
+    "url": "http://web.archive.org/web/20260607080002/https://www.otatech.ai/",
+    "archive_url": "http://web.archive.org/web/20260607080002/https://www.otatech.ai/"
    },
    {
     "claim": "Web Agent Protocol is dormant: last commit 2025-06-03",
@@ -7398,6 +7399,10 @@
    {
     "date": "2026-10-16",
     "note": "Web Agent Protocol is dormant: last commit 2025-06-03"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "otatech.ai offline; homepage evidence now points at the 2026-06-07 Wayback snapshot"
    }
   ],
   "id": "web-agent-protocol",
@@ -8118,6 +8123,16 @@
     "http_status": 200,
     "content_sha256": "bbd5d916e4f9b48b10117a2a0ed2ba12114d6ecf4ae74e447176163497e9440e",
     "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "The draft text (AIMS, Kasselman et al., September 2026, expires 19 March 2027) proposes best practices for authentication and authorization of AI agent interactions.",
+    "label": "VERIFIED",
+    "url": "https://www.ietf.org/archive/id/draft-ietf-wimse-aims-00.html",
+    "date": "2026-09-15",
+    "retrieved_at": "2026-10-16T10:30:00Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "detector": "phase-a-fix@2026-10-16"
    }
   ],
   "form": "document-format",
@@ -8192,13 +8207,23 @@
   ],
   "collisions": [],
   "discovery": {
-   "mechanism": "not stated in the announcement",
-   "path": null
+   "mechanism": "Well-known file published by the company",
+   "path": "/.well-known/poppy.json"
   },
   "dispute": null,
   "evidence": [
    {
-    "claim": "Sierra's announcement (2026-10-09) presents the Personal Agent Protocol draft as built on OAuth, JWT, OpenAPI and MCP, with 35+ design partners including OpenAI, Visa, Mastercard and Okta, and promises a reference implementation.",
+    "claim": "personalagentprotocol.org describes the protocol: personal agents discover participating companies, sign users in, and get things done through APIs, web pages and company agents.",
+    "label": "VERIFIED",
+    "url": "https://personalagentprotocol.org/",
+    "date": "2026-10-09",
+    "retrieved_at": "2026-10-16T10:30:00Z",
+    "source_type": "issuer",
+    "http_status": 200,
+    "detector": "phase-a-fix@2026-10-16"
+   },
+   {
+    "claim": "Sierra's announcement (2026-10-09) presents the Personal Agent Protocol draft as built on OAuth, JWT, OpenAPI and MCP, with 35+ design partners including OpenAI, Visa, Mastercard and Okta, and promises a reference implementation. Discovery is one file at /.well-known/poppy.json; sessions, OAuth sign-in and one token across APIs, website and company agent are the other building blocks.",
     "label": "VERIFIED",
     "url": "https://sierra.ai/blog/poppy",
     "date": "2026-10-09",
@@ -8216,6 +8241,10 @@
    {
     "date": "2026-10-15",
     "note": "curated update 2026-10-15; placement at the identify step is a judgement, permit is the alternative"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "discovery path /.well-known/poppy.json and the protocol site added from the Sierra announcement"
    }
   ],
   "id": "personal-agent-protocol",
@@ -8235,15 +8264,15 @@
   "phase": "draft",
   "probe": {
    "method": "GET",
-   "path": "none",
-   "parse": "not applicable: no discovery artefact is described in the announcement",
-   "on_absent": "No presence signal exists for this record; absence of a probe result says nothing about adoption."
+   "path": "{origin}/.well-known/poppy.json",
+   "parse": "A JSON document means the company publishes a Personal Agent Protocol discovery file; the draft's schema for its contents was not reviewed for this record.",
+   "on_absent": "404 or non-JSON means no Poppy discovery file is published at that origin."
   },
   "question": "How does a customer's personal agent identify itself to a business and show it has the customer's permission to act?",
   "scope": "general",
   "spec_url": "https://sierra.ai/blog/poppy",
   "step": "identify",
-  "summary_md": "The Personal Agent Protocol, nicknamed Poppy, is a draft from Sierra with Meta and others for how a customer's personal agent identifies itself to a business and receives the customer's permission [1]. Sierra says it is built on OAuth, JWT, OpenAPI and MCP and names 35+ design partners including OpenAI, Visa, Mastercard and Okta [1].\n\nThe draft was published on 2026-10-09 and a reference implementation is promised, not yet seen [1]. No standards body is named. The step placement is a judgement: it covers both identification and permission, and sits at identify here.\n\nEverything above is Sierra's own account in a single announcement.",
+  "summary_md": "The Personal Agent Protocol, nicknamed Poppy, is a draft from Sierra with Meta and others for how a customer's personal agent identifies itself to a business and receives the customer's permission [1]. Companies publish one discovery file at `/.well-known/poppy.json`; Sierra says the protocol is built on OAuth, JWT, OpenAPI and MCP and names 35+ design partners including OpenAI, Visa, Mastercard and Okta [1].\n\nThe draft was published on 2026-10-09 and a reference implementation is promised, not yet seen [1]. No standards body is named. The step placement is a judgement: it covers both identification and permission, and sits at identify here.\n\nEverything above is Sierra's own account in a single announcement.",
   "track": "vendor-consortium",
   "use_cases": [
    "prove-agent-identity",
@@ -8501,6 +8530,16 @@
     "http_status": 200,
     "content_sha256": "ee0f6089afe0790a50882e6f1cb65a101845af74db345b1537957cb9f4f50537",
     "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "The -02 draft text (October 2026, expires 7 April 2027) defines the record format as an in-toto predicate type.",
+    "label": "VERIFIED",
+    "url": "https://www.ietf.org/archive/id/draft-gilda-wimse-agent-audit-record-02.html",
+    "date": "2026-10-05",
+    "retrieved_at": "2026-10-16T10:30:00Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "detector": "phase-a-fix@2026-10-16"
    }
   ],
   "form": "document-format",

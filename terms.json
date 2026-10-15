@@ -273,7 +273,7 @@
   ]
  },
  {
-  "id": "mcp-registry",
+  "id": "official-mcp-registry",
   "name": "MCP Registry",
   "aliases": [],
   "definition_md": "The official catalogue and API of public MCP servers, run by the MCP Registry Working Group. Sub-registries can mirror it. Clients list servers with `GET /v0.1/servers`.",
@@ -335,7 +335,7 @@
   "group": null
  },
  {
-  "id": "http-message-signatures",
+  "id": "rfc-9421",
   "name": "HTTP Message Signatures",
   "aliases": [
    "RFC 9421"
@@ -436,7 +436,7 @@
   "group": null
  },
  {
-  "id": "llms-txt",
+  "id": "llms-txt-file",
   "name": "llms.txt",
   "aliases": [],
   "definition_md": "A Markdown file at `/llms.txt` that points language models to a site's key content.",
@@ -516,7 +516,7 @@
   "group": null
  },
  {
-  "id": "mcp",
+  "id": "model-context-protocol",
   "name": "MCP",
   "aliases": [
    "Model Context Protocol"
