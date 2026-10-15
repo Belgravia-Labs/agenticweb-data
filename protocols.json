@@ -98,6 +98,10 @@
    {
     "date": "2026-10-16",
     "note": "Server Cards (SEP-2127) Final 6 Oct 2026; Skills over MCP (SEP-2640) Final 13 Sep 2026; next spec release cadence under discussion (SEP-3398)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "mcp",
@@ -151,7 +155,26 @@
     "url": "https://modelcontextprotocol.io/specification/versioning",
     "selector": "main"
    }
-  ]
+  ],
+  "use_cases": [
+   "expose-tools-to-agents",
+   "describe-agent-capabilities",
+   "discover-my-api",
+   "render-agent-ui"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "mcp-apps",
+   "mcp-registry",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents",
+   "a2a"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "A2A",
@@ -348,6 +371,10 @@
    {
     "date": "2026-10-16",
     "note": "Agent Client Protocol v1.11.0 (schema v1.25.0) released on 2026-10-09; v2 is unstable"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "agent-client-protocol",
@@ -392,7 +419,22 @@
     "repo": "agentclientprotocol/agent-client-protocol",
     "mode": "release"
    }
-  ]
+  ],
+  "use_cases": [
+   "describe-agent-capabilities",
+   "render-agent-ui",
+   "agent-to-agent-messaging"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "mcp",
+   "a2a",
+   "ag-ui"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "ACP",
@@ -460,6 +502,10 @@
    {
     "date": "2026-10-16",
     "note": "IBM's Agent Communication Protocol is deprecated (merged into A2A)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "agent-communication-protocol",
@@ -499,7 +545,21 @@
     "repo": "i-am-bee/acp",
     "mode": "release"
    }
-  ]
+  ],
+  "use_cases": [
+   "agent-to-agent-messaging",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "a2a",
+   "mcp",
+   "oasf"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "ACP",
@@ -571,6 +631,10 @@
    {
     "date": "2026-09-06",
     "note": "collisions updated to add Agent Connect Protocol (Cisco/AGNTCY), verified against github.com/agntcy/acp-spec, spec.acp.agntcy.org"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "agentic-commerce-protocol",
@@ -609,7 +673,23 @@
     "repo": "agentic-commerce-protocol/agentic-commerce-protocol",
     "mode": "tag"
    }
-  ]
+  ],
+  "use_cases": [
+   "agent-checkout",
+   "accept-agent-payments"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "ap2",
+   "ucp",
+   "x402",
+   "tap",
+   "mpp"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "UCP",
@@ -680,6 +760,10 @@
    {
     "date": "2026-10-16",
     "note": "Payments Technical Council (2026-09-02); Lodging Booking draft capability (2026-09-25); Merchant Center cart transfer (2026-09-16)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "ucp",
@@ -724,6 +808,27 @@
     "repo": "Universal-Commerce-Protocol/ucp",
     "mode": "release"
    }
+  ],
+  "use_cases": [
+   "agent-checkout",
+   "discover-my-api",
+   "delegate-user-authority"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder",
+   "site-owner"
+  ],
+  "pairs_with": [
+   "ap2",
+   "mcp",
+   "a2a",
+   "agentic-commerce-protocol",
+   "ap2-checkout-mandate"
+  ],
+  "prerequisites": [
+   "ap2",
+   "oauth-metadata-for-agents"
   ]
  },
  {
@@ -807,6 +912,10 @@
    {
     "date": "2026-10-16",
     "note": "AP2 v0.2.0 released on 2026-04-28, and AP2 was donated to the FIDO Alliance (Payments TWG and Agentic Authentication TWG) the same day"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "ap2",
@@ -850,6 +959,25 @@
     "url": "https://ap2-protocol.org/",
     "selector": "main"
    }
+  ],
+  "use_cases": [
+   "agent-checkout",
+   "delegate-user-authority",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "ucp",
+   "agentic-commerce-protocol",
+   "a2a",
+   "mcp",
+   "x402"
+  ],
+  "prerequisites": [
+   "ucp"
   ]
  },
  {
@@ -892,6 +1020,10 @@
    {
     "date": "2026-09-06",
     "note": "verified: confirmed this is a component of ap2's specification.md, not a distinct protocol; set phase=withdrawn and merged content into ap2"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "ap2-checkout-mandate",
@@ -930,6 +1062,24 @@
     "repo": "google-agentic-commerce/AP2",
     "mode": "release"
    }
+  ],
+  "use_cases": [
+   "agent-checkout",
+   "delegate-user-authority",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "ap2",
+   "agentic-commerce-protocol",
+   "tap",
+   "emv-agentic-payments"
+  ],
+  "prerequisites": [
+   "ap2"
   ]
  },
  {
@@ -993,6 +1143,10 @@
    {
     "date": "2026-10-16",
     "note": "The Linux Foundation appointed Michael Hursta as executive director of the x402 Foundation, effective 2026-10-01; the foundation has 50+ members"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "x402",
@@ -1032,7 +1186,24 @@
     "repo": "x402-foundation/x402",
     "mode": "release"
    }
-  ]
+  ],
+  "use_cases": [
+   "accept-agent-payments",
+   "agent-checkout"
+  ],
+  "audience": [
+   "agent-builder",
+   "site-owner",
+   "platform"
+  ],
+  "pairs_with": [
+   "mpp",
+   "l402",
+   "ap2",
+   "s402",
+   "cloudflare-pay-per-crawl"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "L402",
@@ -1076,6 +1247,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against lightninglabs/L402 README.md and protocol-specification.md on GitHub"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "l402",
@@ -1115,7 +1290,25 @@
     "repo": "lightninglabs/L402",
     "mode": "release"
    }
-  ]
+  ],
+  "use_cases": [
+   "accept-agent-payments",
+   "delegate-user-authority",
+   "expose-tools-to-agents"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "site-owner"
+  ],
+  "pairs_with": [
+   "x402",
+   "mpp",
+   "http-message-signatures",
+   "mcp",
+   "s402"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "MPP",
@@ -1180,6 +1373,10 @@
    {
     "date": "2026-10-16",
     "note": "The MPP draft was renamed draft-httpauth-payment; draft-httpauth-payment-01 is dated 2026-09-09"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "mpp",
@@ -1229,7 +1426,24 @@
     "repo": "tempoxyz/mpp-specs",
     "mode": "tag"
    }
-  ]
+  ],
+  "use_cases": [
+   "accept-agent-payments",
+   "agent-checkout"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "x402",
+   "l402",
+   "http-message-signatures",
+   "ap2",
+   "agentic-commerce-protocol"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "ERC-8004",
@@ -1296,6 +1510,10 @@
    {
     "date": "2026-09-07",
     "note": "added the arXiv 2606.26028 empirical study on live endpoints and Sybil feedback"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "erc-8004",
@@ -1334,7 +1552,26 @@
     "type": "erc",
     "num": 8004
    }
-  ]
+  ],
+  "use_cases": [
+   "agent-naming",
+   "prove-agent-identity",
+   "describe-agent-capabilities",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "a2a",
+   "mcp",
+   "x402",
+   "oasf",
+   "ans"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "ERC-8183",
@@ -1386,6 +1623,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against eips.ethereum.org/EIPS/eip-8183; flagged name collision with agentic-commerce-protocol (ACP)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "erc-8183",
@@ -1424,6 +1665,25 @@
     "type": "erc",
     "num": 8183
    }
+  ],
+  "use_cases": [
+   "accept-agent-payments",
+   "agent-to-agent-messaging",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "erc-8004",
+   "x402",
+   "agentic-commerce-protocol",
+   "a2a",
+   "erc-8226"
+  ],
+  "prerequisites": [
+   "erc-8004"
   ]
  },
  {
@@ -1469,6 +1729,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against eips.ethereum.org/EIPS/eip-8226 and github.com/ethereum/ERCs/pull/1844"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "erc-8226",
@@ -1506,6 +1770,24 @@
     "type": "erc",
     "num": 8226
    }
+  ],
+  "use_cases": [
+   "delegate-user-authority",
+   "agent-checkout",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "erc-8004",
+   "erc-8183",
+   "ap2"
+  ],
+  "prerequisites": [
+   "erc-8004"
   ]
  },
  {
@@ -1550,6 +1832,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against webmachinelearning.github.io/webmcp (4 Sept 2026 draft) and developer.chrome.com/docs/ai/webmcp (updated 2026-08-07); Cloudflare BrowserRun claim dropped, unverified in this pass"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "webmcp",
@@ -1593,6 +1879,24 @@
     "shortname": "webmcp",
     "url": "https://webmachinelearning.github.io/webmcp/"
    }
+  ],
+  "use_cases": [
+   "let-agents-act-on-my-site",
+   "expose-tools-to-agents"
+  ],
+  "audience": [
+   "site-owner",
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "mcp",
+   "nlweb",
+   "mcp-apps",
+   "agents-json"
+  ],
+  "prerequisites": [
+   "mcp"
   ]
  },
  {
@@ -1647,6 +1951,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against github.com/microsoft/NLWeb (redirects to github.com/nlweb-ai/NLWeb); nlweb.ai/spec confirmed unreachable via curl and firecrawl"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "nlweb",
@@ -1685,6 +1993,25 @@
     "repo": "nlweb-ai/NLWeb",
     "mode": "tag"
    }
+  ],
+  "use_cases": [
+   "let-agents-act-on-my-site",
+   "serve-content-to-agents",
+   "expose-tools-to-agents"
+  ],
+  "audience": [
+   "site-owner",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "mcp",
+   "a2a",
+   "llms-txt",
+   "agents-md",
+   "mcp-server-cards"
+  ],
+  "prerequisites": [
+   "mcp"
   ]
  },
  {
@@ -1732,6 +2059,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against agentskills.io and agentskills.io/specification"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "anthropic-agent-skills-format",
@@ -1775,7 +2106,22 @@
     "repo": "agentskills/agentskills",
     "mode": "tag"
    }
-  ]
+  ],
+  "use_cases": [
+   "describe-agent-capabilities",
+   "expose-tools-to-agents"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "mcp",
+   "agents-md",
+   "llms-txt",
+   "oasf"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "",
@@ -1865,6 +2211,10 @@
    {
     "date": "2026-10-16",
     "note": "llms-txt Python package 0.0.7 released 2026-09-24 (tooling, spec unchanged at v2)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "llms-txt",
@@ -1914,7 +2264,23 @@
     "url": "https://llmstxt.org/",
     "selector": "main"
    }
-  ]
+  ],
+  "use_cases": [
+   "serve-content-to-agents",
+   "discover-my-api"
+  ],
+  "audience": [
+   "site-owner",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "agents-md",
+   "vercel-agent-readability",
+   "ai-catalog-well-known-file",
+   "nlweb",
+   "ai-crawler-tokens-robots"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "",
@@ -1964,6 +2330,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against agents.md, OpenAI's harness-engineering post, and a secondary account of the August 2025 launch"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "agents-md",
@@ -2008,7 +2378,21 @@
     "repo": "agentsmd/agents.md",
     "mode": "tag"
    }
-  ]
+  ],
+  "use_cases": [
+   "serve-content-to-agents",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "agent-builder",
+   "site-owner"
+  ],
+  "pairs_with": [
+   "llms-txt",
+   "mcp",
+   "anthropic-agent-skills-format"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "AIPREF",
@@ -2052,6 +2436,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against ietf.org/archive/id/draft-ietf-aipref-attach-05.html"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "aipref-content-usage-attachment",
@@ -2089,6 +2477,24 @@
     "type": "ietf",
     "doc": "draft-ietf-aipref-attach"
    }
+  ],
+  "use_cases": [
+   "control-ai-crawling"
+  ],
+  "audience": [
+   "site-owner",
+   "standards-body",
+   "platform"
+  ],
+  "pairs_with": [
+   "aipref-vocabulary",
+   "ai-crawler-tokens-robots",
+   "cloudflare-content-signals-policy",
+   "tdmrep",
+   "ai-txt"
+  ],
+  "prerequisites": [
+   "aipref-vocabulary"
   ]
  },
  {
@@ -2148,6 +2554,10 @@
    {
     "date": "2026-10-16",
     "note": "revision draft-ietf-aipref-vocab-07 → 08 (watcher)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "aipref-vocabulary",
@@ -2185,7 +2595,23 @@
     "type": "ietf",
     "doc": "draft-ietf-aipref-vocab"
    }
-  ]
+  ],
+  "use_cases": [
+   "control-ai-crawling"
+  ],
+  "audience": [
+   "site-owner",
+   "standards-body",
+   "platform"
+  ],
+  "pairs_with": [
+   "aipref-content-usage-attachment",
+   "cloudflare-content-signals-policy",
+   "ai-crawler-tokens-robots",
+   "tdmrep",
+   "rsl"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "TDMRep",
@@ -2347,6 +2773,10 @@
    {
     "date": "2026-10-16",
     "note": "Cloudflare 'Disallow AI Training' and Accountable crawler designation (2026-09-15); Bot Preference Sync replaces Managed robots.txt"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "cloudflare-content-signals-policy",
@@ -2395,6 +2825,23 @@
     "url": "https://contentsignals.org/",
     "selector": "main"
    }
+  ],
+  "use_cases": [
+   "control-ai-crawling"
+  ],
+  "audience": [
+   "site-owner",
+   "platform"
+  ],
+  "pairs_with": [
+   "ai-crawler-tokens-robots",
+   "tdmrep",
+   "aipref-vocabulary",
+   "aipref-content-usage-attachment",
+   "cloudflare-pay-per-crawl"
+  ],
+  "prerequisites": [
+   "ai-crawler-tokens-robots"
   ]
  },
  {
@@ -2446,6 +2893,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against draft-meunier-webbotauth-httpsig-protocol-00, its WG-adopted successor draft-ietf-webbotauth-httpsig-protocol-00 (2026-09-01), and Cloudflare's Web Bot Auth integration docs"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "webbotauth",
@@ -2483,6 +2934,26 @@
     "type": "ietf",
     "doc": "draft-ietf-webbotauth-httpsig-protocol"
    }
+  ],
+  "use_cases": [
+   "prove-agent-identity",
+   "attribute-agent-traffic",
+   "control-ai-crawling"
+  ],
+  "audience": [
+   "platform",
+   "site-owner",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "http-message-signatures",
+   "web-bot-auth-signature-agent-card",
+   "cloudflare-pay-per-crawl",
+   "ai-crawler-tokens-robots",
+   "x402"
+  ],
+  "prerequisites": [
+   "http-message-signatures"
   ]
  },
  {
@@ -2533,6 +3004,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against draft-meunier-webbotauth-registry-03 primary text and its current datatracker status page"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "web-bot-auth-signature-agent-card",
@@ -2570,6 +3045,28 @@
     "type": "ietf",
     "doc": "draft-meunier-webbotauth-registry"
    }
+  ],
+  "use_cases": [
+   "prove-agent-identity",
+   "describe-agent-capabilities",
+   "attribute-agent-traffic",
+   "control-ai-crawling"
+  ],
+  "audience": [
+   "platform",
+   "site-owner",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "webbotauth",
+   "http-message-signatures",
+   "ai-crawler-tokens-robots",
+   "aipref-vocabulary",
+   "cloudflare-pay-per-crawl"
+  ],
+  "prerequisites": [
+   "http-message-signatures",
+   "webbotauth"
   ]
  },
  {
@@ -2612,6 +3109,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against RFC 9421 primary source and confirmed as the base standard profiled by Web Bot Auth"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "http-message-signatures",
@@ -2651,7 +3152,23 @@
     "selector": "main",
     "cadence": "weekly"
    }
-  ]
+  ],
+  "use_cases": [
+   "prove-agent-identity",
+   "attribute-agent-traffic"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "webbotauth",
+   "web-bot-auth-signature-agent-card",
+   "tap",
+   "x402"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "ARD",
@@ -2718,6 +3235,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against ARD v0.91 spec text (raw.githubusercontent.com/ards-project/ard-spec/main/spec/ard.md); corrected canonical path from ai-catalog.json to ard.json; folded ai-catalog-well-known-file into this record"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "ard",
@@ -2762,7 +3283,25 @@
     "url": "https://agenticresourcediscovery.org/spec",
     "selector": "main"
    }
-  ]
+  ],
+  "use_cases": [
+   "discover-my-api",
+   "describe-agent-capabilities",
+   "expose-tools-to-agents"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "site-owner"
+  ],
+  "pairs_with": [
+   "mcp",
+   "a2a",
+   "ads",
+   "dns-aid",
+   "aid"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "",
@@ -2810,6 +3349,10 @@
    {
     "date": "2026-09-06",
     "note": "fix round 1: added second evidence entry (Google ARD launch blog post, fetched directly) to satisfy the two-evidence gate"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "ai-catalog-well-known-file",
@@ -2848,7 +3391,22 @@
     "repo": "ards-project/ard-spec",
     "mode": "release"
    }
-  ]
+  ],
+  "use_cases": [
+   "discover-my-api",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "site-owner",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "ard",
+   "api-catalog-rfc9727",
+   "mcp-server-cards",
+   "agents-json"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "DNS-AID",
@@ -2904,6 +3462,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against draft-mozleywilliams-dnsop-dnsaid-02 spec text via datatracker.ietf.org"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "dns-aid",
@@ -2942,7 +3504,25 @@
     "type": "ietf",
     "doc": "draft-mozleywilliams-dnsop-dnsaid"
    }
-  ]
+  ],
+  "use_cases": [
+   "discover-my-api",
+   "describe-agent-capabilities",
+   "agent-naming"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "aid",
+   "adp",
+   "ard",
+   "api-catalog-rfc9727",
+   "ans"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "ANS",
@@ -3006,6 +3586,10 @@
    {
     "date": "2026-10-16",
     "note": "Expired Internet-Draft (expired 2026-10-15)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "ans",
@@ -3044,7 +3628,26 @@
     "type": "ietf",
     "doc": "draft-narajala-courtney-ansv2"
    }
-  ]
+  ],
+  "use_cases": [
+   "prove-agent-identity",
+   "agent-naming",
+   "audit-agent-actions",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "standards-body",
+   "platform",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "dns-aid",
+   "spiffe",
+   "wimse",
+   "web-bot-auth-signature-agent-card",
+   "a2a"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "AID",
@@ -3099,6 +3702,10 @@
    {
     "date": "2026-09-06",
     "note": "fix round 1: added second evidence entry (agentcommunity GitHub repo, fetched directly) showing real published multi-language packages; upgraded implementation unknown -> shipping and adoption unmeasured -> observed on that basis"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "aid",
@@ -3138,6 +3745,27 @@
     "repo": "agentcommunity/agent-identity-discovery",
     "mode": "release"
    }
+  ],
+  "use_cases": [
+   "discover-my-api",
+   "describe-agent-capabilities",
+   "prove-agent-identity",
+   "agent-naming"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "site-owner"
+  ],
+  "pairs_with": [
+   "dns-aid",
+   "mcp",
+   "a2a",
+   "http-message-signatures",
+   "ans"
+  ],
+  "prerequisites": [
+   "http-message-signatures"
   ]
  },
  {
@@ -3201,6 +3829,10 @@
    {
     "date": "2026-10-16",
     "note": "draft-pro-adp-agent-discovery-02 is dated 2026-07-24"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "adp",
@@ -3239,6 +3871,27 @@
     "type": "ietf",
     "doc": "draft-pro-adp-agent-discovery"
    }
+  ],
+  "use_cases": [
+   "discover-my-api",
+   "describe-agent-capabilities",
+   "agent-to-agent-messaging",
+   "agent-naming"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "dns-aid",
+   "aid",
+   "a2a",
+   "mcp",
+   "ard"
+  ],
+  "prerequisites": [
+   "dns-aid"
   ]
  },
  {
@@ -3308,6 +3961,10 @@
    {
     "date": "2026-10-16",
     "note": "Expired Internet-Draft (expired 2026-08-28)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "ardp",
@@ -3347,7 +4004,26 @@
     "type": "ietf",
     "doc": "draft-pioli-agent-discovery"
    }
-  ]
+  ],
+  "use_cases": [
+   "agent-naming",
+   "discover-my-api",
+   "describe-agent-capabilities",
+   "agent-to-agent-messaging"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "a2a",
+   "mcp",
+   "ans",
+   "dns-aid",
+   "ard"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "ADS",
@@ -3394,6 +4070,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against draft-mp-agntcy-ads-02 spec text via datatracker.ietf.org"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "ads",
@@ -3432,6 +4112,27 @@
     "type": "ietf",
     "doc": "draft-mp-agntcy-ads"
    }
+  ],
+  "use_cases": [
+   "describe-agent-capabilities",
+   "discover-my-api",
+   "agent-to-agent-messaging",
+   "agent-naming"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "oasf",
+   "ard",
+   "ai-catalog-well-known-file",
+   "a2a",
+   "mcp"
+  ],
+  "prerequisites": [
+   "oasf"
   ]
  },
  {
@@ -3489,6 +4190,10 @@
    {
     "date": "2026-10-16",
     "note": "OASF v1.1.0 released on 2026-07-10"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "oasf",
@@ -3534,7 +4239,24 @@
     "repo": "agntcy/oasf",
     "mode": "release"
    }
-  ]
+  ],
+  "use_cases": [
+   "describe-agent-capabilities",
+   "discover-my-api"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "ads",
+   "a2a",
+   "mcp",
+   "anthropic-agent-skills-format",
+   "ard"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "A2UI",
@@ -3608,6 +4330,10 @@
    {
     "date": "2026-10-16",
     "note": "A2UI moved from google/A2UI to the a2ui-project GitHub organisation"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "a2ui",
@@ -3652,7 +4378,21 @@
     "repo": "a2ui-project/A2UI",
     "mode": "release"
    }
-  ]
+  ],
+  "use_cases": [
+   "render-agent-ui"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "ag-ui",
+   "a2a",
+   "mcp",
+   "mcp-apps"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "AG-UI",
@@ -3719,6 +4459,10 @@
    {
     "date": "2026-10-16",
     "note": "AG-UI 1.0 was released and frozen on 2026-09-18, with a published JSON Schema"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "ag-ui",
@@ -3767,7 +4511,23 @@
     "type": "npm",
     "pkg": "@ag-ui/core"
    }
-  ]
+  ],
+  "use_cases": [
+   "render-agent-ui",
+   "expose-tools-to-agents",
+   "agent-to-agent-messaging"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "a2ui",
+   "mcp",
+   "a2a",
+   "mcp-apps"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "OSI",
@@ -3832,6 +4592,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against github.com/apache/ossie (README, core-spec/spec.md), incubator.apache.org/projects/ossie.html, and Snowflake's 2025-09-23 and 2026-01-27 posts; moved step from 'account' to 'read', corrected spec_url, name, governance, and version; flagged draft-vs-finalized dispute"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "osi",
@@ -3870,7 +4634,18 @@
     "repo": "apache/ossie",
     "mode": "release"
    }
-  ]
+  ],
+  "use_cases": [
+   "serve-content-to-agents",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [],
+  "prerequisites": []
  },
  {
   "acronym": "OKF",
@@ -3926,6 +4701,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against the OKF v0.2 SPEC.md, the original Google Cloud blog announcement, and the repo-migration notice in the old knowledge-catalog/okf directory"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "okf",
@@ -3964,7 +4743,25 @@
     "repo": "GoogleCloudPlatform/open-knowledge-format",
     "mode": "release"
    }
-  ]
+  ],
+  "use_cases": [
+   "serve-content-to-agents",
+   "describe-agent-capabilities",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "agents-md",
+   "llms-txt",
+   "mcp",
+   "oasf",
+   "anthropic-agent-skills-format"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "",
@@ -4019,6 +4816,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against developers.openai.com/apps-sdk (redirects to /plugins), developers.openai.com/plugins/concepts/mcp-server, developers.openai.com/plugins/build/chatgpt-ui, modelcontextprotocol.io/docs/extensions/apps; name changed to reflect OpenAI's Apps SDK -> Plugins rebrand"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "openai-apps-sdk-manifests",
@@ -4058,6 +4859,24 @@
     "selector": "main",
     "cadence": "weekly"
    }
+  ],
+  "use_cases": [
+   "expose-tools-to-agents",
+   "render-agent-ui",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "mcp",
+   "mcp-apps",
+   "mcp-registry",
+   "mcp-server-cards"
+  ],
+  "prerequisites": [
+   "mcp"
   ]
  },
  {
@@ -4114,6 +4933,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against iabtechlab.com/standards/aamp-agentic-advertising-management-protocols/, the 2026-07-30 AAMP 2.3 press release, and github.com/IABTechLab/AAMP; moved step from 'account' to 'coordinate'; flagged umbrella-program dispute and acronym collision with IETF AAP (Agent Authorization Profile)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "aamp",
@@ -4152,7 +4975,24 @@
     "repo": "IABTechLab/AAMP",
     "mode": "release"
    }
-  ]
+  ],
+  "use_cases": [
+   "agent-to-agent-messaging",
+   "describe-agent-capabilities",
+   "prove-agent-identity"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "artf",
+   "adcp",
+   "mcp",
+   "a2a"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "ARTF",
@@ -4208,6 +5048,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against iabtechlab.com/standards/artf/, the 2025-11-13 launch press release, the 2026-08-12 milestone post, and github.com/IABTechLab/agentic-real-time-framework (README, internal/health, cmd/agent/main.go); moved step from 'account' to 'act'; filled probe, discovery, adoption=claimed"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "artf",
@@ -4246,6 +5090,22 @@
     "repo": "IABTechLab/agentic-real-time-framework",
     "mode": "release"
    }
+  ],
+  "use_cases": [
+   "expose-tools-to-agents",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "aamp",
+   "mcp",
+   "adcp"
+  ],
+  "prerequisites": [
+   "mcp"
   ]
  },
  {
@@ -4303,6 +5163,10 @@
    {
     "date": "2026-10-16",
     "note": "AdCP v3.2.4 released on 2026-10-12"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "adcp",
@@ -4348,6 +5212,29 @@
     "repo": "adcontextprotocol/adcp",
     "mode": "release"
    }
+  ],
+  "use_cases": [
+   "discover-my-api",
+   "agent-checkout",
+   "describe-agent-capabilities",
+   "attribute-agent-traffic"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "mcp",
+   "a2a",
+   "http-message-signatures",
+   "agents-json",
+   "mcp-registry"
+  ],
+  "prerequisites": [
+   "mcp",
+   "a2a",
+   "http-message-signatures"
   ]
  },
  {
@@ -4412,6 +5299,10 @@
    {
     "date": "2026-10-16",
     "note": "Visa joined the KYA interoperability collaboration with Mastercard and Ant International (2026-09-10)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "tap",
@@ -4462,6 +5353,26 @@
     "url": "https://developer.visa.com/capabilities/trusted-agent-protocol",
     "selector": "main"
    }
+  ],
+  "use_cases": [
+   "prove-agent-identity",
+   "agent-checkout",
+   "attribute-agent-traffic"
+  ],
+  "audience": [
+   "site-owner",
+   "platform",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "web-bot-auth-signature-agent-card",
+   "webbotauth",
+   "http-message-signatures",
+   "agentic-commerce-protocol",
+   "ap2"
+  ],
+  "prerequisites": [
+   "http-message-signatures"
   ]
  },
  {
@@ -4525,6 +5436,10 @@
    {
     "date": "2026-10-16",
     "note": "Mastercard contributed Verifiable Intent to the FIDO Alliance Payments TWG on 2026-04-28"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "vi",
@@ -4570,7 +5485,26 @@
     "selector": "main",
     "cadence": "weekly"
    }
-  ]
+  ],
+  "use_cases": [
+   "agent-checkout",
+   "delegate-user-authority",
+   "audit-agent-actions",
+   "prove-agent-identity"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "ap2",
+   "ucp",
+   "agentic-commerce-protocol",
+   "tap",
+   "ap2-checkout-mandate"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "SPIFFE",
@@ -4619,6 +5553,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against spiffe.io's own overview/ecosystem page and draft-klrc-aiagent-auth-03; corrected framing to make clear SPIFFE itself is agent-agnostic and the agent application is an outside proposal"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "spiffe",
@@ -4658,7 +5596,23 @@
     "selector": "main",
     "cadence": "weekly"
    }
-  ]
+  ],
+  "use_cases": [
+   "prove-agent-identity",
+   "delegate-user-authority"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "wimse",
+   "aiagent-auth",
+   "wimse-aims",
+   "oauth-metadata-for-agents",
+   "identity-assertion-authz-grant"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "WIMSE",
@@ -4707,6 +5661,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against draft-ietf-wimse-arch-08's datatracker status page, confirming chartered WG status and 2026-07-06 update"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "wimse",
@@ -4748,6 +5706,25 @@
     "type": "ietf",
     "doc": "draft-ietf-wimse-http-signature"
    }
+  ],
+  "use_cases": [
+   "prove-agent-identity",
+   "delegate-user-authority"
+  ],
+  "audience": [
+   "platform",
+   "standards-body",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "spiffe",
+   "aiagent-auth",
+   "wimse-aims",
+   "wimse-agent-audit-record",
+   "http-message-signatures"
+  ],
+  "prerequisites": [
+   "spiffe"
   ]
  },
  {
@@ -4838,6 +5815,10 @@
    {
     "date": "2026-10-16",
     "note": "Expired Internet-Draft (expired 2026-04-23)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "aauth",
@@ -4879,7 +5860,23 @@
     "type": "ietf",
     "doc": "draft-hardt-oauth-aauth-protocol"
    }
-  ]
+  ],
+  "use_cases": [
+   "delegate-user-authority",
+   "prove-agent-identity"
+  ],
+  "audience": [
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "daap",
+   "aap",
+   "aiagent-auth",
+   "oauth-metadata-for-agents",
+   "identity-assertion-authz-grant"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "DAAP",
@@ -4939,6 +5936,10 @@
    {
     "date": "2026-10-16",
     "note": "draft-mishra-oauth-agent-grants-02 is dated 2026-08-30"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "daap",
@@ -4976,6 +5977,25 @@
     "type": "ietf",
     "doc": "draft-mishra-oauth-agent-grants"
    }
+  ],
+  "use_cases": [
+   "delegate-user-authority",
+   "prove-agent-identity"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "aap",
+   "aauth",
+   "http-message-signatures",
+   "oauth-metadata-for-agents",
+   "identity-assertion-authz-grant"
+  ],
+  "prerequisites": [
+   "oauth-metadata-for-agents"
   ]
  },
  {
@@ -5042,6 +6062,10 @@
    {
     "date": "2026-10-16",
     "note": "Expired Internet-Draft (expired 2026-08-11)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "aap",
@@ -5079,6 +6103,26 @@
     "type": "ietf",
     "doc": "draft-aap-oauth-profile"
    }
+  ],
+  "use_cases": [
+   "delegate-user-authority",
+   "prove-agent-identity",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "standards-body",
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "aauth",
+   "daap",
+   "oauth-metadata-for-agents",
+   "http-message-signatures",
+   "identity-assertion-authz-grant"
+  ],
+  "prerequisites": [
+   "oauth-metadata-for-agents"
   ]
  },
  {
@@ -5128,6 +6172,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against draft-singla-agent-identity-protocol-03's abstract, introduction and document header; flagged limited depth of review and the AIP acronym collision"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "aip",
@@ -5165,7 +6213,25 @@
     "type": "ietf",
     "doc": "draft-singla-agent-identity-protocol"
    }
-  ]
+  ],
+  "use_cases": [
+   "prove-agent-identity",
+   "delegate-user-authority",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "agent-builder",
+   "standards-body",
+   "platform"
+  ],
+  "pairs_with": [
+   "erc-8004",
+   "ans",
+   "aauth",
+   "wimse",
+   "spiffe"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "AGTP",
@@ -5207,6 +6273,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against IETF datatracker and draft-hood-independent-agtp-09 (updated spec_url from -04 to current -09, dated 2026-06-28); no implementations found"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "agtp",
@@ -5245,7 +6315,25 @@
     "type": "ietf",
     "doc": "draft-hood-independent-agtp"
    }
-  ]
+  ],
+  "use_cases": [
+   "agent-to-agent-messaging",
+   "prove-agent-identity",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "standards-body",
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "a2a",
+   "mcp",
+   "anp",
+   "agent-communication-protocol",
+   "agentic-commerce-protocol"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "VCAP",
@@ -5289,6 +6377,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against datatracker.ietf.org/doc/draft-stone-vcap/ and the draft-stone-vcap-02 text; confirmed individual-submission, no-IETF-standing status"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "vcap",
@@ -5326,7 +6418,26 @@
     "type": "ietf",
     "doc": "draft-stone-vcap"
    }
-  ]
+  ],
+  "use_cases": [
+   "accept-agent-payments",
+   "agent-checkout",
+   "audit-agent-actions",
+   "agent-to-agent-messaging"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "a2a",
+   "erc-8183",
+   "x402",
+   "ap2",
+   "agentic-commerce-protocol"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "ANP",
@@ -5383,6 +6494,10 @@
    {
     "date": "2026-10-16",
     "note": "Agent Network Protocol v1.2 released on 2026-09-24"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "anp",
@@ -5421,6 +6536,27 @@
     "repo": "agent-network-protocol/AgentNetworkProtocol",
     "mode": "release"
    }
+  ],
+  "use_cases": [
+   "agent-to-agent-messaging",
+   "prove-agent-identity",
+   "discover-my-api",
+   "agent-naming"
+  ],
+  "audience": [
+   "agent-builder",
+   "standards-body",
+   "platform"
+  ],
+  "pairs_with": [
+   "a2a",
+   "ans",
+   "agora-protocol",
+   "mcp",
+   "ap2"
+  ],
+  "prerequisites": [
+   "http-message-signatures"
   ]
  },
  {
@@ -5473,6 +6609,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against agora-protocol paper-demo README, agora-protocol.github.io specs.html, and agoraproto.org's own disambiguation notice; confirmed distinct from agora-commerce-protocol"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "agora-protocol",
@@ -5511,7 +6651,23 @@
     "repo": "agora-protocol/agora-protocol.github.io",
     "mode": "release"
    }
-  ]
+  ],
+  "use_cases": [
+   "agent-to-agent-messaging",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "a2a",
+   "anp",
+   "agent-connect-protocol",
+   "agent-communication-protocol",
+   "mcp"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "",
@@ -5568,6 +6724,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against api.agoraproto.org openapi.json and .well-known manifests, and agoraproto.org homepage; moved step from coordinate to pay given its payments/escrow/marketplace scope; confirmed distinct project from agora-protocol (Oxford academic) via the project's own disambiguation notice"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "agora-commerce-protocol",
@@ -5608,6 +6768,26 @@
     "selector": "main",
     "cadence": "weekly"
    }
+  ],
+  "use_cases": [
+   "accept-agent-payments",
+   "agent-to-agent-messaging",
+   "discover-my-api",
+   "agent-checkout"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "x402",
+   "a2a",
+   "mcp",
+   "erc-8183",
+   "erc-8004"
+  ],
+  "prerequisites": [
+   "x402"
   ]
  },
  {
@@ -5656,6 +6836,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against s402-protocol/core (README.md, docs/specification.md) and GitHub repo metadata; corrected discovery mechanism from a nonexistent /.well-known/s402.json to the x402-envelope extensions.s402 signal"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "s402",
@@ -5695,6 +6879,23 @@
     "repo": "s402-protocol/core",
     "mode": "release"
    }
+  ],
+  "use_cases": [
+   "accept-agent-payments",
+   "agent-checkout"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "x402",
+   "mpp",
+   "http-message-signatures",
+   "ap2"
+  ],
+  "prerequisites": [
+   "x402"
   ]
  },
  {
@@ -5748,6 +6949,10 @@
    {
     "date": "2026-09-06",
     "note": "new record: found via search for post-hoc agent commerce attribution specs; verified against rako.sh/aap, rako.sh/docs, and github.com/rakohq/aap-spec (README, spec/v1/README.md); flagged as single-vendor 'open spec, closed operation' and acronym collision"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "agent-attribution-protocol",
@@ -5786,7 +6991,23 @@
     "repo": "rakohq/aap-spec",
     "mode": "release"
    }
-  ]
+  ],
+  "use_cases": [
+   "attribute-agent-traffic",
+   "agent-checkout",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "mcp",
+   "agentic-commerce-protocol",
+   "ucp",
+   "ap2"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "AAT",
@@ -5847,6 +7068,10 @@
    {
     "date": "2026-10-16",
     "note": "revision draft-sharif-agent-audit-trail-03 → 08 (watcher)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "agent-audit-trail",
@@ -5884,7 +7109,22 @@
     "type": "ietf",
     "doc": "draft-sharif-agent-audit-trail"
    }
-  ]
+  ],
+  "use_cases": [
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "wimse-agent-audit-record",
+   "agent-attribution-protocol",
+   "spiffe",
+   "http-message-signatures"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "SLIM",
@@ -5945,6 +7185,10 @@
    {
     "date": "2026-10-16",
     "note": "draft-mpsb-agntcy-slim-02 is dated 2026-07-19"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "slim",
@@ -5987,7 +7231,24 @@
     "type": "ietf",
     "doc": "draft-mpsb-agntcy-slim"
    }
-  ]
+  ],
+  "use_cases": [
+   "agent-to-agent-messaging",
+   "expose-tools-to-agents"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "a2a",
+   "mcp",
+   "spiffe",
+   "oasf",
+   "ans"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "RFC 9727",
@@ -6033,6 +7294,10 @@
    {
     "date": "2026-09-06",
     "note": "fix round 1: added second evidence entry (IANA Well-Known URIs registry, fetched directly) confirming permanent registration"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "api-catalog-rfc9727",
@@ -6072,7 +7337,23 @@
     "selector": "main",
     "cadence": "weekly"
    }
-  ]
+  ],
+  "use_cases": [
+   "discover-my-api"
+  ],
+  "audience": [
+   "site-owner",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "ard",
+   "dns-aid",
+   "ai-catalog-well-known-file",
+   "mcp-server-cards",
+   "agents-json"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "RSL",
@@ -6110,6 +7391,10 @@
    {
     "date": "2026-09-06",
     "note": "created and verified against rslstandard.org/rsl (occupant-diff candidate)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "rsl",
@@ -6150,6 +7435,26 @@
     "selector": "main",
     "cadence": "weekly"
    }
+  ],
+  "use_cases": [
+   "control-ai-crawling",
+   "accept-agent-payments",
+   "serve-content-to-agents"
+  ],
+  "audience": [
+   "site-owner",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "ai-crawler-tokens-robots",
+   "aipref-vocabulary",
+   "aipref-content-usage-attachment",
+   "cloudflare-content-signals-policy",
+   "cloudflare-pay-per-crawl"
+  ],
+  "prerequisites": [
+   "ai-crawler-tokens-robots"
   ]
  },
  {
@@ -6266,6 +7571,10 @@
    {
     "date": "2026-09-06",
     "note": "created and verified against auth-md.com/specification and auth-md.com (occupant-diff candidate)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "auth-md",
@@ -6305,6 +7614,27 @@
     "selector": "main",
     "cadence": "weekly"
    }
+  ],
+  "use_cases": [
+   "delegate-user-authority",
+   "prove-agent-identity",
+   "discover-my-api"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "site-owner"
+  ],
+  "pairs_with": [
+   "identity-assertion-authz-grant",
+   "oauth-metadata-for-agents",
+   "x402",
+   "agents-txt",
+   "mcp"
+  ],
+  "prerequisites": [
+   "oauth-metadata-for-agents",
+   "identity-assertion-authz-grant"
   ]
  },
  {
@@ -6354,6 +7684,10 @@
    {
     "date": "2026-09-06",
     "note": "created and verified against rfc-editor.org/rfc/rfc9728.html and rfc-editor.org/rfc/rfc8414.html (occupant-diff candidate)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "oauth-metadata-for-agents",
@@ -6393,7 +7727,24 @@
     "selector": "main",
     "cadence": "weekly"
    }
-  ]
+  ],
+  "use_cases": [
+   "discover-my-api",
+   "delegate-user-authority",
+   "expose-tools-to-agents"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "mcp",
+   "auth-md",
+   "aiagent-auth",
+   "identity-assertion-authz-grant",
+   "api-catalog-rfc9727"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "",
@@ -6458,6 +7809,10 @@
    {
     "date": "2026-10-16",
     "note": "Cloudflare 'Disallow AI Training' and Accountable crawler designation (2026-09-15); Bot Preference Sync replaces Managed robots.txt"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "ai-crawler-tokens-robots",
@@ -6497,7 +7852,23 @@
     "selector": "main",
     "cadence": "weekly"
    }
-  ]
+  ],
+  "use_cases": [
+   "control-ai-crawling",
+   "attribute-agent-traffic"
+  ],
+  "audience": [
+   "site-owner",
+   "platform"
+  ],
+  "pairs_with": [
+   "aipref-vocabulary",
+   "aipref-content-usage-attachment",
+   "cloudflare-content-signals-policy",
+   "ai-txt",
+   "tdmrep"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "MCP Apps",
@@ -6555,6 +7926,10 @@
    {
     "date": "2026-10-16",
     "note": "MCP Apps SDK ext-apps v2.0.3 was released on 2026-09-25 (spec dated 2026-01-26)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "mcp-apps",
@@ -6593,6 +7968,24 @@
     "repo": "modelcontextprotocol/ext-apps",
     "mode": "release"
    }
+  ],
+  "use_cases": [
+   "render-agent-ui",
+   "expose-tools-to-agents"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "mcp",
+   "a2ui",
+   "ag-ui",
+   "mcp-registry",
+   "openai-apps-sdk-manifests"
+  ],
+  "prerequisites": [
+   "mcp"
   ]
  },
  {
@@ -6647,6 +8040,10 @@
    {
     "date": "2026-09-06",
     "note": "new record added during read-step verification; verified against vercel.com/kb/guide/agent-readability-spec and independent commentary"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "vercel-agent-readability",
@@ -6686,7 +8083,24 @@
     "selector": "main",
     "cadence": "weekly"
    }
-  ]
+  ],
+  "use_cases": [
+   "serve-content-to-agents",
+   "discover-my-api",
+   "control-ai-crawling"
+  ],
+  "audience": [
+   "site-owner",
+   "platform"
+  ],
+  "pairs_with": [
+   "llms-txt",
+   "agents-md",
+   "ai-crawler-tokens-robots",
+   "api-catalog-rfc9727",
+   "nlweb"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "",
@@ -6750,6 +8164,10 @@
    {
     "date": "2026-10-16",
     "note": "agents.json is dormant: last push 2025-08-21, version 0.1.0"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "agents-json",
@@ -6788,7 +8206,24 @@
     "repo": "wild-card-ai/agents-json",
     "mode": "release"
    }
-  ]
+  ],
+  "use_cases": [
+   "discover-my-api",
+   "expose-tools-to-agents",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "mcp",
+   "llms-txt",
+   "api-catalog-rfc9727",
+   "agents-md",
+   "ai-catalog-well-known-file"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "",
@@ -6848,6 +8283,10 @@
    {
     "date": "2026-09-06",
     "note": "new record added during read-step verification; reclassified to the discover step after finding the name covers multiple non-converging, competing specifications"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "agents-txt",
@@ -6887,7 +8326,24 @@
     "selector": "main",
     "cadence": "weekly"
    }
-  ]
+  ],
+  "use_cases": [
+   "discover-my-api",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "site-owner",
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "a2a",
+   "mcp",
+   "x402",
+   "api-catalog-rfc9727",
+   "llms-txt"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "",
@@ -7031,6 +8487,10 @@
    {
     "date": "2026-09-06",
     "note": "added from arXiv 2504.16736 survey comparison, verified against eclipse.dev/lmos/, eclipse.dev/lmos/docs/lmos_protocol/introduction/, github.com/eclipse-lmos"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "lmos",
@@ -7071,7 +8531,26 @@
     "selector": "main",
     "cadence": "weekly"
    }
-  ]
+  ],
+  "use_cases": [
+   "describe-agent-capabilities",
+   "discover-my-api",
+   "agent-to-agent-messaging",
+   "prove-agent-identity"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "a2a",
+   "mcp",
+   "oasf",
+   "anp",
+   "ans"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "ACP",
@@ -7141,6 +8620,10 @@
    {
     "date": "2026-10-16",
     "note": "The agntcy/acp-spec repository was archived on 2026-04-11"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "agent-connect-protocol",
@@ -7179,7 +8662,24 @@
     "repo": "agntcy/acp-spec",
     "mode": "release"
    }
-  ]
+  ],
+  "use_cases": [
+   "agent-to-agent-messaging",
+   "describe-agent-capabilities",
+   "expose-tools-to-agents"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "oasf",
+   "a2a",
+   "agent-client-protocol",
+   "agent-communication-protocol",
+   "mcp"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "AP",
@@ -7229,6 +8729,10 @@
    {
     "date": "2026-09-06",
     "note": "added from arXiv 2504.16736 survey comparison, verified against github.com/AI-Engineer-Foundation/agent-protocol (redirects to agi-inc/agent-protocol), agentprotocol.ai"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "agent-protocol-aief",
@@ -7267,7 +8771,21 @@
     "repo": "AI-Engineer-Foundation/agent-protocol",
     "mode": "release"
    }
-  ]
+  ],
+  "use_cases": [
+   "expose-tools-to-agents",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "mcp",
+   "a2a",
+   "agent-communication-protocol"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "AITP",
@@ -7307,6 +8825,10 @@
    {
     "date": "2026-09-06",
     "note": "added from arXiv 2504.16736 survey comparison, verified against aitp.dev, github.com/nearai/aitp"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "aitp",
@@ -7347,7 +8869,25 @@
     "selector": "main",
     "cadence": "weekly"
    }
-  ]
+  ],
+  "use_cases": [
+   "agent-to-agent-messaging",
+   "render-agent-ui",
+   "agent-checkout",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "a2a",
+   "mcp",
+   "a2ui",
+   "llms-txt",
+   "ap2"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "Coral",
@@ -7388,6 +8928,10 @@
    {
     "date": "2026-09-06",
     "note": "added from arXiv 2504.16736 survey comparison, verified against docs.coralos.ai/about, docs.coralos.ai/api-reference/local/create-session"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "coral-protocol",
@@ -7427,6 +8971,25 @@
     "selector": "main",
     "cadence": "weekly"
    }
+  ],
+  "use_cases": [
+   "agent-to-agent-messaging",
+   "describe-agent-capabilities",
+   "accept-agent-payments",
+   "expose-tools-to-agents"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "mcp",
+   "x402",
+   "a2a",
+   "oasf"
+  ],
+  "prerequisites": [
+   "mcp"
   ]
  },
  {
@@ -7493,6 +9056,10 @@
    {
     "date": "2026-10-16",
     "note": "otatech.ai offline; homepage evidence now points at the 2026-06-07 Wayback snapshot"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "web-agent-protocol",
@@ -7531,7 +9098,19 @@
     "repo": "OTA-Tech-AI/web-agent-protocol",
     "mode": "release"
    }
-  ]
+  ],
+  "use_cases": [
+   "let-agents-act-on-my-site",
+   "expose-tools-to-agents"
+  ],
+  "audience": [
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "mcp",
+   "webmcp"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "NLIP",
@@ -7598,6 +9177,10 @@
    {
     "date": "2026-09-07",
     "note": "created and verified against Ecma International ECMA-430 standard page, the NLIP arXiv paper (2609.04135, Sept 2026), nlip-project.org, an Enterprise Neurosystem blog post on Ecma recognition, and the nlip-project GitHub org's reference implementation repos"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "nlip",
@@ -7638,7 +9221,24 @@
     "selector": "main",
     "cadence": "weekly"
    }
-  ]
+  ],
+  "use_cases": [
+   "agent-to-agent-messaging",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "agent-builder",
+   "standards-body",
+   "platform"
+  ],
+  "pairs_with": [
+   "a2a",
+   "mcp",
+   "anp",
+   "agent-communication-protocol",
+   "http-message-signatures"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "EMV Agentic Payments",
@@ -7696,6 +9296,10 @@
    {
     "date": "2026-09-07",
     "note": "created and verified against EMVCo's 2026-09-01 news release, the companion EMV Insights article by Clinton Allen, independent trade press (fintech.global, 2026-09-04), and the EMVCo overview page"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "emv-agentic-payments",
@@ -7741,7 +9345,24 @@
     "selector": "main",
     "cadence": "weekly"
    }
-  ]
+  ],
+  "use_cases": [
+   "agent-checkout",
+   "delegate-user-authority",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "ap2",
+   "ap2-checkout-mandate",
+   "ucp",
+   "agentic-commerce-protocol",
+   "vi"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "ID-JAG",
@@ -7808,6 +9429,10 @@
    {
     "date": "2026-09-07",
     "note": "created and verified against datatracker.ietf.org/doc/draft-ietf-oauth-identity-assertion-authz-grant/ (rev -04, 2026-05-21), xaa.dev, and vendor implementation announcements from Okta, Auth0 and Descope"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "identity-assertion-authz-grant",
@@ -7845,6 +9470,25 @@
     "type": "ietf",
     "doc": "draft-ietf-oauth-identity-assertion-authz-grant"
    }
+  ],
+  "use_cases": [
+   "delegate-user-authority",
+   "prove-agent-identity",
+   "expose-tools-to-agents"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "oauth-metadata-for-agents",
+   "mcp",
+   "aauth",
+   "wimse-aims",
+   "aap"
+  ],
+  "prerequisites": [
+   "oauth-metadata-for-agents"
   ]
  },
  {
@@ -7934,6 +9578,10 @@
    {
     "date": "2026-10-16",
     "note": "draft-ietf-wimse-aims-00 was published as a WIMSE working group document on 2026-09-15 and replaces draft-klrc-aiagent-auth"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "aiagent-auth",
@@ -7976,6 +9624,27 @@
     "type": "ietf",
     "doc": "draft-ietf-wimse-aims"
    }
+  ],
+  "use_cases": [
+   "prove-agent-identity",
+   "delegate-user-authority",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "wimse",
+   "wimse-aims",
+   "spiffe",
+   "http-message-signatures",
+   "identity-assertion-authz-grant"
+  ],
+  "prerequisites": [
+   "wimse",
+   "spiffe"
   ]
  },
  {
@@ -8035,6 +9704,10 @@
    {
     "date": "2026-09-07",
     "note": "created as a new discover-step record; verified against draft-seethiraju-dawn-dan-00 (datatracker.ietf.org), the verisign/dan proof-of-concept repository, and Verisign's 2026-09-01 blog announcement"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "dan",
@@ -8073,7 +9746,25 @@
     "type": "ietf",
     "doc": "draft-seethiraju-dawn-dan"
    }
-  ]
+  ],
+  "use_cases": [
+   "agent-naming",
+   "discover-my-api",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "standards-body",
+   "platform",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "dns-aid",
+   "aid",
+   "mcp",
+   "a2a",
+   "ans"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "MCP Registry",
@@ -8127,6 +9818,10 @@
    {
     "date": "2026-10-15",
     "note": "curated update 2026-10-15"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "mcp-registry",
@@ -8139,7 +9834,10 @@
    "date": null
   },
   "pairs_with": [
-   "mcp"
+   "mcp",
+   "mcp-server-cards",
+   "oasf",
+   "ai-catalog-well-known-file"
   ],
   "part_of": null,
   "parties": [
@@ -8160,6 +9858,7 @@
   "summary_md": "The Official MCP Registry is the catalogue and API of public MCP servers run by the MCP Registry Working Group; sub-registries can mirror it [1]. Clients list servers with `GET /v0.1/servers`, and the registry's server.json schema is being aligned with the MCP Server Card [1].\n\nThe charter marks the registry as a preview with the API frozen at v0.1. It states `Registry API v1 GA: Ideating, no target date`, so no general-availability date exists [1]. The code lives in the modelcontextprotocol/registry repository [2].\n\nThe registry does not describe how an individual server behaves; that is the job of the Server Card and the MCP specification itself. This record was added on 2026-10-15 and has not yet been probed.",
   "track": "linux-foundation",
   "use_cases": [
+   "discover-my-api",
    "expose-tools-to-agents",
    "describe-agent-capabilities"
   ],
@@ -8179,6 +9878,9 @@
     "selector": "main",
     "cadence": "weekly"
    }
+  ],
+  "prerequisites": [
+   "mcp"
   ]
  },
  {
@@ -8193,8 +9895,9 @@
   ],
   "analog": "a workload-identity framework (cloud IAM roles) applied to agent callers",
   "audience": [
+   "standards-body",
    "platform",
-   "standards-body"
+   "agent-builder"
   ],
   "collisions": [],
   "discovery": {
@@ -8232,6 +9935,10 @@
    {
     "date": "2026-10-15",
     "note": "curated update 2026-10-15"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "wimse-aims",
@@ -8245,7 +9952,10 @@
   },
   "pairs_with": [
    "wimse",
-   "aiagent-auth"
+   "aiagent-auth",
+   "http-message-signatures",
+   "spiffe",
+   "oauth-metadata-for-agents"
   ],
   "part_of": "wimse",
   "parties": [
@@ -8278,6 +9988,11 @@
     "type": "ietf",
     "doc": "draft-ietf-wimse-aims"
    }
+  ],
+  "prerequisites": [
+   "wimse",
+   "http-message-signatures",
+   "oauth-metadata-for-agents"
   ]
  },
  {
@@ -8293,6 +10008,7 @@
   "analog": "OAuth sign-in, applied to the agent acting for a customer",
   "audience": [
    "agent-builder",
+   "site-owner",
    "platform"
   ],
   "collisions": [],
@@ -8335,6 +10051,10 @@
    {
     "date": "2026-10-16",
     "note": "discovery path /.well-known/poppy.json and the protocol site added from the Sierra announcement"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "personal-agent-protocol",
@@ -8366,7 +10086,8 @@
   "track": "vendor-consortium",
   "use_cases": [
    "prove-agent-identity",
-   "delegate-user-authority"
+   "delegate-user-authority",
+   "discover-my-api"
   ],
   "version": {
    "label": "draft",
@@ -8379,6 +10100,16 @@
     "selector": "main",
     "cadence": "weekly"
    }
+  ],
+  "pairs_with": [
+   "mcp",
+   "oauth-metadata-for-agents",
+   "identity-assertion-authz-grant",
+   "ap2",
+   "web-bot-auth-signature-agent-card"
+  ],
+  "prerequisites": [
+   "oauth-metadata-for-agents"
   ]
  },
  {
@@ -8394,6 +10125,7 @@
   "analog": "OAuth, with the agent signing its own requests",
   "audience": [
    "agent-builder",
+   "platform",
    "standards-body"
   ],
   "collisions": [
@@ -8454,6 +10186,10 @@
    {
     "date": "2026-10-16",
     "note": "correction: the 2026-10-04 expiry belongs to the companion headers draft; the protocol draft -11 is active until 2027-03-29, so native_status and phase restored"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "aauth-hardt",
@@ -8466,7 +10202,11 @@
    "date": null
   },
   "pairs_with": [
-   "aauth"
+   "http-message-signatures",
+   "aauth",
+   "web-bot-auth-signature-agent-card",
+   "oauth-metadata-for-agents",
+   "identity-assertion-authz-grant"
   ],
   "part_of": null,
   "parties": [
@@ -8487,8 +10227,8 @@
   "summary_md": "AAuth in its current form is Dick Hardt's Internet-Draft `draft-hardt-oauth-aauth-protocol`, at revision -11 (2026-09-25, expiring 2027-03-29) [1]. A companion draft, `draft-hardt-aauth-headers`, was published as -00 on 2026-10-04 and is already marked Expired by the Datatracker [2]; the protocol draft itself is active.\n\nThis is a different document from the Rosenberg draft, which this site tracks as `aauth` (Agent Authorization Grant). That one expired on 2026-04-23, and the Hardt draft is the active AAuth line.\n\nThe form, party and discovery details here are placeholders pending a read of the drafts; only the version, dates and expiry above are taken from the datatracker.",
   "track": "ietf",
   "use_cases": [
-   "delegate-user-authority",
-   "prove-agent-identity"
+   "prove-agent-identity",
+   "delegate-user-authority"
   ],
   "version": {
    "label": "draft-hardt-oauth-aauth-protocol-11",
@@ -8503,6 +10243,9 @@
     "type": "ietf",
     "doc": "draft-hardt-aauth-headers"
    }
+  ],
+  "prerequisites": [
+   "http-message-signatures"
   ]
  },
  {
@@ -8557,6 +10300,10 @@
    {
     "date": "2026-10-15",
     "note": "curated update 2026-10-15"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "cloudflare-pay-per-crawl",
@@ -8569,8 +10316,11 @@
    "date": null
   },
   "pairs_with": [
+   "web-bot-auth-signature-agent-card",
    "webbotauth",
-   "x402"
+   "x402",
+   "mpp",
+   "http-message-signatures"
   ],
   "part_of": null,
   "parties": [
@@ -8592,7 +10342,8 @@
   "track": "single-vendor",
   "use_cases": [
    "accept-agent-payments",
-   "control-ai-crawling"
+   "control-ai-crawling",
+   "prove-agent-identity"
   ],
   "version": {
    "label": "closed beta",
@@ -8605,6 +10356,10 @@
     "selector": "main",
     "cadence": "weekly"
    }
+  ],
+  "prerequisites": [
+   "http-message-signatures",
+   "webbotauth"
   ]
  },
  {
@@ -8620,7 +10375,8 @@
   "analog": "a standardised audit-log entry",
   "audience": [
    "platform",
-   "standards-body"
+   "standards-body",
+   "agent-builder"
   ],
   "collisions": [],
   "discovery": {
@@ -8658,6 +10414,10 @@
    {
     "date": "2026-10-15",
     "note": "curated update 2026-10-15"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "wimse-agent-audit-record",
@@ -8670,8 +10430,11 @@
    "date": null
   },
   "pairs_with": [
+   "agent-audit-trail",
+   "wimse-aims",
    "wimse",
-   "agent-audit-trail"
+   "spiffe",
+   "http-message-signatures"
   ],
   "part_of": null,
   "parties": [
@@ -8691,7 +10454,8 @@
   "summary_md": "draft-gilda-wimse-agent-audit-record defines an audit record format for AI agent authorization decisions [1]. The current revision is -02, dated 2026-10-05 [1].\n\nIt belongs with the account step beside `agent-audit-trail`, which covers a hash-chained log of agent actions, and with the WIMSE identity work its name points to. It defines a record format, not an endpoint, so there is nothing to probe.\n\nOnly the title, revision and date are taken from the datatracker listing; the record's field definitions have not been reviewed here.",
   "track": "ietf",
   "use_cases": [
-   "audit-agent-actions"
+   "audit-agent-actions",
+   "prove-agent-identity"
   ],
   "version": {
    "label": "draft-gilda-wimse-agent-audit-record-02",
@@ -8702,6 +10466,9 @@
     "type": "ietf",
     "doc": "draft-gilda-wimse-agent-audit-record"
    }
+  ],
+  "prerequisites": [
+   "wimse"
   ]
  },
  {
@@ -8757,6 +10524,10 @@
    {
     "date": "2026-10-15",
     "note": "curated update 2026-10-15"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "mcp-server-cards",
@@ -8769,7 +10540,11 @@
    "date": null
   },
   "pairs_with": [
-   "mcp-registry"
+   "mcp",
+   "mcp-registry",
+   "ai-catalog-well-known-file",
+   "api-catalog-rfc9727",
+   "oauth-metadata-for-agents"
   ],
   "part_of": "mcp",
   "parties": [
@@ -8789,8 +10564,9 @@
   "summary_md": "An MCP Server Card is a static JSON description of an MCP server that a client can fetch before connecting. It is specified in SEP-2127, which reached Final on 2026-10-06 [1].\n\nThe MCP Registry working group is aligning the registry's server.json schema with the Server Card [2]. The mcp record on this site records the card path as `{endpoint}/server-card`; the final SEP text should be checked for the exact location before that path is relied on.\n\nThe working group page still calls Server Cards experimental, while the SEP is marked Final, so the status here is candidate until the specification release that includes it.",
   "track": "linux-foundation",
   "use_cases": [
-   "expose-tools-to-agents",
-   "describe-agent-capabilities"
+   "discover-my-api",
+   "describe-agent-capabilities",
+   "expose-tools-to-agents"
   ],
   "version": {
    "label": "SEP-2127 (Final)",
@@ -8802,6 +10578,9 @@
     "repo": "modelcontextprotocol/modelcontextprotocol",
     "mode": "tag"
    }
+  ],
+  "prerequisites": [
+   "mcp"
   ]
  }
 ]
