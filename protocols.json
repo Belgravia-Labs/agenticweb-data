@@ -103,7 +103,29 @@
   "version": {
    "date": "2026-07-28",
    "label": "2026-07-28"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://modelcontextprotocol.io/specification/2026-07-28/index",
+    "selector": "main",
+    "cadence": "weekly"
+   },
+   {
+    "type": "github",
+    "repo": "modelcontextprotocol/modelcontextprotocol",
+    "mode": "tag"
+   },
+   {
+    "type": "feed",
+    "url": "https://blog.modelcontextprotocol.io/index.xml"
+   },
+   {
+    "type": "page",
+    "url": "https://modelcontextprotocol.io/specification/versioning",
+    "selector": "main"
+   }
+  ]
  },
  {
   "acronym": "A2A",
@@ -186,7 +208,24 @@
   "version": {
    "date": "2026-01",
    "label": "1.0.0"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://a2a-protocol.org/latest/specification/",
+    "selector": "main",
+    "cadence": "weekly"
+   },
+   {
+    "type": "github",
+    "repo": "a2aproject/A2A",
+    "mode": "release"
+   },
+   {
+    "type": "pypi",
+    "pkg": "a2a-sdk"
+   }
+  ]
  },
  {
   "acronym": "ACP",
@@ -273,7 +312,20 @@
   "version": {
    "date": "2026-07-20",
    "label": "v1 (stable); v2 draft"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://agentclientprotocol.com/get-started/introduction",
+    "selector": "main",
+    "cadence": "weekly"
+   },
+   {
+    "type": "github",
+    "repo": "agentclientprotocol/agent-client-protocol",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "ACP",
@@ -358,7 +410,14 @@
   "version": {
    "date": "2025-08",
    "label": "0.2.0 (final OpenAPI spec, archived)"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "i-am-bee/acp",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "ACP",
@@ -461,7 +520,14 @@
   "version": {
    "date": "2026-04-17",
    "label": "2026-04-17 (date-versioned spec; unreleased/ tracks current development)"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "agentic-commerce-protocol/agentic-commerce-protocol",
+    "mode": "tag"
+   }
+  ]
  },
  {
   "acronym": "UCP",
@@ -548,7 +614,20 @@
   "version": {
    "date": "2026-08-25",
    "label": "documentation site dated 2026-08-25; active/expanding specification (Lodging and Food detailed specs pending)"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://ucp.dev/documentation/core-concepts/",
+    "selector": "main",
+    "cadence": "weekly"
+   },
+   {
+    "type": "github",
+    "repo": "Universal-Commerce-Protocol/ucp",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "AP2",
@@ -636,7 +715,19 @@
   "version": {
    "date": null,
    "label": "v0.2"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "google-agentic-commerce/AP2",
+    "mode": "release"
+   },
+   {
+    "type": "page",
+    "url": "https://ap2-protocol.org/",
+    "selector": "main"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -709,7 +800,14 @@
   "version": {
    "date": null,
    "label": "AP2 v0.2"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "google-agentic-commerce/AP2",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -789,7 +887,14 @@
   "version": {
    "date": null,
    "label": "x402 protocol specification v2, transports-v2/http.md"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "x402-foundation/x402",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "L402",
@@ -865,7 +970,14 @@
   "version": {
    "date": null,
    "label": "current protocol-specification.md on the master branch"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "lightninglabs/L402",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "MPP",
@@ -947,7 +1059,24 @@
   "version": {
    "date": null,
    "label": "documented protocol overview on mpp.dev; normative text is the IETF-submitted 'Payment HTTP Authentication Scheme' draft"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://mpp.dev/protocol",
+    "selector": "main",
+    "cadence": "weekly"
+   },
+   {
+    "type": "ietf",
+    "doc": "draft-httpauth-payment"
+   },
+   {
+    "type": "github",
+    "repo": "tempoxyz/mpp-specs",
+    "mode": "tag"
+   }
+  ]
  },
  {
   "acronym": "ERC-8004",
@@ -1046,7 +1175,13 @@
   "version": {
    "date": "2025-08-13",
    "label": "Draft ERC, created 2025-08-13; Identity and Reputation Registries live on Ethereum mainnet since 2026-01-29"
-  }
+  },
+  "watch": [
+   {
+    "type": "erc",
+    "num": 8004
+   }
+  ]
  },
  {
   "acronym": "ERC-8183",
@@ -1130,7 +1265,13 @@
   "version": {
    "date": "2026-02-25",
    "label": "Draft, created 2026-02-25"
-  }
+  },
+  "watch": [
+   {
+    "type": "erc",
+    "num": 8183
+   }
+  ]
  },
  {
   "acronym": "ERC-8226",
@@ -1206,7 +1347,13 @@
   "version": {
    "date": "2026-04-12",
    "label": "Draft, created 2026-04-12"
-  }
+  },
+  "watch": [
+   {
+    "type": "erc",
+    "num": 8226
+   }
+  ]
  },
  {
   "acronym": "",
@@ -1281,7 +1428,19 @@
   "version": {
    "date": "2026-09-04",
    "label": "Draft Community Group Report, 4 September 2026"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://webmachinelearning.github.io/webmcp/",
+    "selector": "main"
+   },
+   {
+    "type": "w3c",
+    "shortname": "webmcp",
+    "url": "https://webmachinelearning.github.io/webmcp/"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -1366,7 +1525,14 @@
   "version": {
    "date": null,
    "label": "unversioned; MIT-licensed, actively committed"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "nlweb-ai/NLWeb",
+    "mode": "tag"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -1444,7 +1610,19 @@
   "version": {
    "date": null,
    "label": "unversioned living spec (agentskills.io/specification)"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://agentskills.io/specification",
+    "selector": "main"
+   },
+   {
+    "type": "github",
+    "repo": "agentskills/agentskills",
+    "mode": "tag"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -1550,7 +1728,25 @@
   "version": {
    "date": "2026-08",
    "label": "v2"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://llmstxt.org",
+    "selector": "main",
+    "cadence": "weekly"
+   },
+   {
+    "type": "github",
+    "repo": "AnswerDotAI/llms-txt",
+    "mode": "release"
+   },
+   {
+    "type": "page",
+    "url": "https://llmstxt.org/",
+    "selector": "main"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -1631,7 +1827,20 @@
   "version": {
    "date": "2026-09",
    "label": "current site guidance (living document)"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://agents.md",
+    "selector": "main",
+    "cadence": "weekly"
+   },
+   {
+    "type": "github",
+    "repo": "agentsmd/agents.md",
+    "mode": "tag"
+   }
+  ]
  },
  {
   "acronym": "AIPREF",
@@ -1706,7 +1915,13 @@
   "version": {
    "date": "2026-08-19",
    "label": "draft-ietf-aipref-attach-05"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-ietf-aipref-attach"
+   }
+  ]
  },
  {
   "acronym": "AIPREF",
@@ -1781,7 +1996,13 @@
   "version": {
    "date": "2026-08-19",
    "label": "draft-ietf-aipref-vocab-07"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-ietf-aipref-vocab"
+   }
+  ]
  },
  {
   "acronym": "TDMRep",
@@ -1854,7 +2075,15 @@
   "version": {
    "date": "2024-05-10",
    "label": "CG-FINAL-tdmrep-20240510"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240510/",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -1951,7 +2180,24 @@
   "version": {
    "date": "2025-09-24",
    "label": "Announced 2025-09-24"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://blog.cloudflare.com/content-signals-policy/",
+    "selector": "main",
+    "cadence": "weekly"
+   },
+   {
+    "type": "feed",
+    "url": "https://blog.cloudflare.com/rss/"
+   },
+   {
+    "type": "page",
+    "url": "https://contentsignals.org/",
+    "selector": "main"
+   }
+  ]
  },
  {
   "acronym": "WebBotAuth",
@@ -2033,7 +2279,13 @@
   "version": {
    "date": "2026-09-01",
    "label": "draft-ietf-webbotauth-httpsig-protocol-00, adopted by the webbotauth WG, last updated 2026-09-01 (supersedes the individual draft-meunier-webbotauth-httpsig-protocol-00 of 2026-06-26)"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-ietf-webbotauth-httpsig-protocol"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -2114,7 +2366,17 @@
   "version": {
    "date": "2026-06-26",
    "label": "draft-meunier-webbotauth-registry-03, 2026-06-26"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-meunier-webbotauth-registry"
+   },
+   {
+    "type": "ietf",
+    "doc": "draft-meunier-web-bot-auth-signature-agent-card"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -2187,7 +2449,15 @@
   "version": {
    "date": "2024-02",
    "label": "RFC 9421, February 2024, Proposed Standard"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://www.rfc-editor.org/info/rfc9421",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "ARD",
@@ -2286,7 +2556,19 @@
   "version": {
    "date": "2026-08-26",
    "label": "v0.91"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "ards-project/ard-spec",
+    "mode": "tag"
+   },
+   {
+    "type": "page",
+    "url": "https://agenticresourcediscovery.org/spec",
+    "selector": "main"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -2365,7 +2647,14 @@
   "version": {
    "date": null,
    "label": "n/a -- not a separately versioned artifact"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "ards-project/ard-spec",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "DNS-AID",
@@ -2453,7 +2742,13 @@
   "version": {
    "date": "2026-05-27",
    "label": "draft-mozleywilliams-dnsop-dnsaid-02"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-mozleywilliams-dnsop-dnsaid"
+   }
+  ]
  },
  {
   "acronym": "ANS",
@@ -2534,7 +2829,13 @@
   "version": {
    "date": "2026-04-15",
    "label": "draft-narajala-courtney-ansv2-01, last updated 2026-04-15 (replaces draft-narajala-ans, first published 2025-05)"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-narajala-courtney-ansv2"
+   }
+  ]
  },
  {
   "acronym": "AID",
@@ -2621,7 +2922,14 @@
   "version": {
    "date": "2026-06-01",
    "label": "v2.1.0 (aid2 wire format; aid1 legacy)"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "agentcommunity/agent-identity-discovery",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "ADP",
@@ -2701,7 +3009,13 @@
   "version": {
    "date": "2026-06-18",
    "label": "draft-pro-adp-agent-discovery-02"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-pro-adp-agent-discovery"
+   }
+  ]
  },
  {
   "acronym": "ARDP",
@@ -2788,7 +3102,13 @@
   "version": {
    "date": "2026-02-24",
    "label": "draft-pioli-agent-discovery-01 (latest revision, expired)"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-pioli-agent-discovery"
+   }
+  ]
  },
  {
   "acronym": "ADS",
@@ -2867,7 +3187,13 @@
   "version": {
    "date": "2026-07-06",
    "label": "draft-mp-agntcy-ads-02"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-mp-agntcy-ads"
+   }
+  ]
  },
  {
   "acronym": "OASF",
@@ -2941,7 +3267,20 @@
   "version": {
    "date": null,
    "label": "1.1.0 (also serving 0.7.0, 0.8.0, 1.0.0)"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://schema.oasf.outshift.com/",
+    "selector": "main",
+    "cadence": "weekly"
+   },
+   {
+    "type": "github",
+    "repo": "agntcy/oasf",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "A2UI",
@@ -3031,7 +3370,20 @@
   "version": {
    "date": "2026-06-08",
    "label": "v1.0 (Candidate); v0.9.1 (Current)"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://a2ui.org/specification/v1.0-a2ui/",
+    "selector": "main",
+    "cadence": "weekly"
+   },
+   {
+    "type": "github",
+    "repo": "a2ui-project/A2UI",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "AG-UI",
@@ -3114,7 +3466,24 @@
   "version": {
    "date": null,
    "label": "protocol stable, packages versioned independently (e.g. @ag-ui/core on npm)"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://docs.ag-ui.com/introduction",
+    "selector": "main",
+    "cadence": "weekly"
+   },
+   {
+    "type": "github",
+    "repo": "ag-ui-protocol/ag-ui",
+    "mode": "release"
+   },
+   {
+    "type": "npm",
+    "pkg": "@ag-ui/core"
+   }
+  ]
  },
  {
   "acronym": "OSI",
@@ -3210,7 +3579,14 @@
   "version": {
    "date": null,
    "label": "0.2.0.dev0 (draft, in development); last tagged pre-release osi-0.1.1-rc1"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "apache/ossie",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "OKF",
@@ -3297,7 +3673,14 @@
   "version": {
    "date": "2026-08",
    "label": "v0.2"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "GoogleCloudPlatform/open-knowledge-format",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -3383,7 +3766,15 @@
   "version": {
    "date": null,
    "label": "current, 2026 (unversioned docs; MCP Apps sub-standard dated 2026-01-26)"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://developers.openai.com/plugins/concepts/mcp-server",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "AAMP",
@@ -3470,7 +3861,14 @@
   "version": {
    "date": "2026-07-30",
    "label": "AAMP 2.3"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "IABTechLab/AAMP",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "ARTF",
@@ -3557,7 +3955,14 @@
   "version": {
    "date": "2026-07-20",
    "label": "v1.0"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "IABTechLab/agentic-real-time-framework",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "AdCP",
@@ -3631,7 +4036,20 @@
   "version": {
    "date": "2026",
    "label": "3.1.20"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://docs.adcontextprotocol.org/dist/docs/3.1.20/intro",
+    "selector": "main",
+    "cadence": "weekly"
+   },
+   {
+    "type": "github",
+    "repo": "adcontextprotocol/adcp",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "TAP",
@@ -3712,7 +4130,25 @@
   "version": {
    "date": null,
    "label": "Current merchant specification, 2026, published on Visa Developer"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://developer.visa.com/capabilities/trusted-agent-protocol/trusted-agent-protocol-specifications",
+    "selector": "main",
+    "cadence": "weekly"
+   },
+   {
+    "type": "github",
+    "repo": "visa/trusted-agent-protocol",
+    "mode": "tag"
+   },
+   {
+    "type": "page",
+    "url": "https://developer.visa.com/capabilities/trusted-agent-protocol",
+    "selector": "main"
+   }
+  ]
  },
  {
   "acronym": "VI",
@@ -3791,7 +4227,21 @@
   "version": {
    "date": "2026-02-18",
    "label": "0.1-draft"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://verifiableintent.dev/spec/",
+    "selector": "main",
+    "cadence": "weekly"
+   },
+   {
+    "type": "page",
+    "url": "https://fidoalliance.org/specifications/",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "SPIFFE",
@@ -3871,7 +4321,15 @@
   "version": {
    "date": null,
    "label": "SPIFFE core specs (SPIFFE ID, X509-SVID, JWT-SVID, Workload API) are stable and versioned independently; the AI-agent profile is draft-klrc-aiagent-auth-03, published 2026-07-06"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://spiffe.io/docs/latest/spiffe-about/overview/",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "WIMSE",
@@ -3951,7 +4409,17 @@
   "version": {
    "date": "2026-07-06",
    "label": "draft-ietf-wimse-arch-08, last updated 2026-07-06 (supersedes draft-salowey-wimse-arch, first published 2024-03)"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-ietf-wimse-arch"
+   },
+   {
+    "type": "ietf",
+    "doc": "draft-ietf-wimse-http-signature"
+   }
+  ]
  },
  {
   "acronym": "AAuth",
@@ -4029,7 +4497,17 @@
   "version": {
    "date": "2025-10-19",
    "label": "draft-rosenberg-oauth-aauth-00"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-rosenberg-oauth-aauth"
+   },
+   {
+    "type": "ietf",
+    "doc": "draft-hardt-oauth-aauth-protocol"
+   }
+  ]
  },
  {
   "acronym": "DAAP",
@@ -4105,7 +4583,13 @@
   "version": {
    "date": "2026-08",
    "label": "draft-mishra-oauth-agent-grants-02"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-mishra-oauth-agent-grants"
+   }
+  ]
  },
  {
   "acronym": "AAP",
@@ -4187,7 +4671,13 @@
   "version": {
    "date": "2026-02-07",
    "label": "draft-aap-oauth-profile-01"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-aap-oauth-profile"
+   }
+  ]
  },
  {
   "acronym": "AIP",
@@ -4267,7 +4757,13 @@
   "version": {
    "date": "2026-06-10",
    "label": "draft-singla-agent-identity-protocol-03, published 2026-06-10"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-singla-agent-identity-protocol"
+   }
+  ]
  },
  {
   "acronym": "AGTP",
@@ -4341,7 +4837,13 @@
   "version": {
    "date": "2026-06-28",
    "label": "draft-hood-independent-agtp-09"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-hood-independent-agtp"
+   }
+  ]
  },
  {
   "acronym": "VCAP",
@@ -4416,7 +4918,13 @@
   "version": {
    "date": "2026-09-04",
    "label": "draft-stone-vcap-02"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-stone-vcap"
+   }
+  ]
  },
  {
   "acronym": "ANP",
@@ -4489,7 +4997,14 @@
   "version": {
    "date": null,
    "label": "1.1 (protocol document release); protocolVersion field remains 1.0.0"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "agent-network-protocol/AgentNetworkProtocol",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -4572,7 +5087,14 @@
   "version": {
    "date": null,
    "label": "current repository (post-paper iteration)"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "agora-protocol/agora-protocol.github.io",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -4661,7 +5183,15 @@
   "version": {
    "date": "2026-05-25",
    "label": "API v1, contract v1 (V2 contract written but undeployed)"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://api.agoraproto.org/v1/openapi.json",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "s402",
@@ -4741,7 +5271,14 @@
   "version": {
    "date": "2026-03",
    "label": "Wire Format Specification v1, Draft, dated March 2026 (repository has continued past this to align with x402 v2)"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "s402-protocol/core",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "AAP",
@@ -4825,7 +5362,14 @@
   "version": {
    "date": "2026-04-02",
    "label": "v1.0"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "rakohq/aap-spec",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "AAT",
@@ -4902,7 +5446,13 @@
   "version": {
    "date": "2026-09-05",
    "label": "draft-sharif-agent-audit-trail-03"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-sharif-agent-audit-trail"
+   }
+  ]
  },
  {
   "acronym": "SLIM",
@@ -4979,7 +5529,18 @@
   "version": {
    "date": null,
    "label": "IETF individual draft draft-mpsb-agntcy-slim-00; active GitHub development"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "agntcy/slim",
+    "mode": "release"
+   },
+   {
+    "type": "ietf",
+    "doc": "draft-mpsb-agntcy-slim"
+   }
+  ]
  },
  {
   "acronym": "RFC 9727",
@@ -5056,7 +5617,15 @@
   "version": {
    "date": "2025-06",
    "label": "RFC 9727"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://www.rfc-editor.org/rfc/rfc9727.html",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "RSL",
@@ -5126,7 +5695,15 @@
   "version": {
    "date": "2025-12-10",
    "label": "RSL 1.0"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://rslstandard.org/rsl",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -5195,7 +5772,14 @@
   "version": {
    "date": "2026-07-17",
    "label": "1.0.0"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "las-wg/agent-permissions.json",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -5266,7 +5850,15 @@
   "version": {
    "date": "2026-06",
    "label": "Launched 2026-06, current spec undated beyond launch"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://auth-md.com/specification",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -5346,7 +5938,15 @@
   "version": {
    "date": "2025",
    "label": "RFC 8414 (2018-06) and RFC 9728 (2025)"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://www.rfc-editor.org/rfc/rfc9728.html",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -5427,7 +6027,15 @@
   "version": {
    "date": null,
    "label": "Ongoing; tokens and their scopes are updated by each vendor independently"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://www.rfc-editor.org/rfc/rfc9309.html",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "MCP Apps",
@@ -5501,7 +6109,14 @@
   "version": {
    "date": "2026-01-26",
    "label": "npm package @modelcontextprotocol/ext-apps, spec dated 2026-01-26"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "modelcontextprotocol/ext-apps",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "ARS",
@@ -5586,7 +6201,15 @@
   "version": {
    "date": "2026-03",
    "label": "current (last updated 2026-03-23 per a secondary source; no version number or publication date is given on the page itself)"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://vercel.com/kb/guide/agent-readability-spec",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -5666,7 +6289,14 @@
   "version": {
    "date": "2025-03",
    "label": "0.1.0"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "wild-card-ai/agents-json",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -5757,7 +6387,15 @@
   "version": {
    "date": null,
    "label": "agents-txt.com: v1.0; competing proposals carry no shared version"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://agents-txt.com/spec",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "",
@@ -5848,7 +6486,13 @@
   "version": {
    "date": null,
    "label": "draft-car-ai-txt-wellknown-00"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-car-ai-txt-wellknown"
+   }
+  ]
  },
  {
   "acronym": "LMOS",
@@ -5927,7 +6571,15 @@
   "version": {
    "date": null,
    "label": "LMOS Protocol v1 (draft, namespace https://eclipse.dev/lmos/protocol/v1)"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://eclipse.dev/lmos/docs/lmos_protocol/introduction/",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "ACP",
@@ -6013,7 +6665,14 @@
   "version": {
    "date": "2025-05-23",
    "label": "v0.2.3 (OpenAPI 3.1.1)"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "agntcy/acp-spec",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "AP",
@@ -6094,7 +6753,14 @@
   "version": {
    "date": null,
    "label": "unversioned OpenAPI spec (schemas/openapi.yml)"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "AI-Engineer-Foundation/agent-protocol",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "AITP",
@@ -6166,7 +6832,15 @@
   "version": {
    "date": null,
    "label": "0.1.0 (Draft)"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://aitp.dev/",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "Coral",
@@ -6238,7 +6912,15 @@
   "version": {
    "date": null,
    "label": "unversioned, continuously updated platform (Coral Server, Coralizer, Marketplace)"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://docs.coralos.ai/welcome",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "WAP",
@@ -6315,7 +6997,14 @@
   "version": {
    "date": "2025-06-03",
    "label": "unversioned (main branch, 1 tag, last commit 2025-06-03)"
-  }
+  },
+  "watch": [
+   {
+    "type": "github",
+    "repo": "OTA-Tech-AI/web-agent-protocol",
+    "mode": "release"
+   }
+  ]
  },
  {
   "acronym": "NLIP",
@@ -6414,7 +7103,15 @@
   "version": {
    "date": "2025-12-10",
    "label": "ECMA-430, 1st edition"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://ecma-international.org/publications-and-standards/standards/ecma-430/",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "EMV Agentic Payments",
@@ -6503,7 +7200,21 @@
   "version": {
    "date": "2026-08-31",
    "label": "EMV® Agentic Payments – Framework for Specifications, v1.0 DRAFT"
-  }
+  },
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://www.emvco.com/resources/emv-agentic-payments-framework-for-specifications-v1-0-draft-comment-period-ends-30-sept-2026/",
+    "selector": "main",
+    "cadence": "weekly"
+   },
+   {
+    "type": "page",
+    "url": "https://www.emvco.com/specifications/",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
  },
  {
   "acronym": "ID-JAG",
@@ -6601,7 +7312,13 @@
   "version": {
    "date": "2026-05-21",
    "label": "draft-ietf-oauth-identity-assertion-authz-grant-04 (replaces the individual draft-parecki-oauth-identity-assertion-authz-grant)"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-ietf-oauth-identity-assertion-authz-grant"
+   }
+  ]
  },
  {
   "acronym": "AIMS",
@@ -6696,7 +7413,17 @@
   "version": {
    "date": "2026-07-06",
    "label": "draft-klrc-aiagent-auth-03, individual submission, expires 2027-01-07"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-klrc-aiagent-auth"
+   },
+   {
+    "type": "ietf",
+    "doc": "draft-ietf-wimse-aims"
+   }
+  ]
  },
  {
   "acronym": "DAN",
@@ -6787,6 +7514,12 @@
   "version": {
    "date": "2026-06-05",
    "label": "draft-seethiraju-dawn-dan-00, 5 June 2026 (single published version; no -01 as of 2026-09-07)"
-  }
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-seethiraju-dawn-dan"
+   }
+  ]
  }
 ]
