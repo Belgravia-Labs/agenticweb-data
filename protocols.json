@@ -390,6 +390,10 @@
    {
     "date": "2026-10-16",
     "note": "version schema-v1.25.0 (watcher)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "version label restored to 'v1.11.0 (schema v1.25.0); v2 unstable'; the repository's latest tag (schema-v1.25.0) is a package, SDK or build tag, not the specification version, so the GitHub watch no longer drives version"
    }
   ],
   "id": "agent-client-protocol",
@@ -419,7 +423,7 @@
   "summary_md": "The Agent Client Protocol (ACP) standardizes how a code editor or IDE talks to a coding agent, so that any ACP-compatible agent works with any ACP-compatible editor without bespoke integration work on either side [1]. It targets the same M×N problem the Language Server Protocol solved for editor-to-language-server integration, but for agent-to-editor instead.\n\nACP assumes the user's primary surface is the editor, which reaches out to agents for specific tasks. Local agents run as editor sub-processes and communicate over JSON-RPC via stdio; remote, cloud-hosted agents are supported over HTTP or WebSocket, though the project's own documentation states full remote support is still a work in progress [1]. ACP deliberately reuses MCP's JSON representations where practical, and layers on coding-specific UX types (e.g. representing diffs) that MCP does not define; user-facing text defaults to Markdown.\n\nACP does not itself define agent discovery beyond the ACP Registry (stabilized 2026-03-09), which gives clients a standard way to find, install, and configure agents — it does not attempt to be a general web-scale discovery mechanism [2]. It also does not (yet) fully specify remote-agent transport; a dedicated Transports Working Group (JetBrains and Block/Goose engineers) was formed on 2026-04-22 specifically to standardize WebSocket/HTTP transports for remote agents [2].\n\nAs of this check (September 2026), ACP v1 is stable and has shipped a steady cadence of \"Completed\" RFDs throughout 2026 (session resume, session list, logout, elicitation, boolean config options, request cancellation, and more), and ACP v2's protocol documentation and schema were published in Draft form on 2026-07-20 [2]. Rust and TypeScript SDKs both reached 1.0 on 2026-06-25 [2]. Governance is unambiguous and disclosed rather than disputed: Zed Industries is the explicit \"BDFL\" (benevolent dictator for life) design-team lead over a public Request-for-Dialog process modeled loosely on Rust's RFC process, and JetBrains' Sergey Ignatov joined as a second Lead Maintainer on 2026-02-18, formalizing what the project describes as \"growing collaboration between Zed and JetBrains\" [3][2]. What is not yet settled: how much of the remote-agent transport work lands in v1 versus v2, and whether governance broadens beyond the two-company core team the project says it currently anticipates expanding.",
   "track": "single-vendor",
   "version": {
-   "label": "schema-v1.25.0",
+   "label": "v1.11.0 (schema v1.25.0); v2 unstable",
    "date": "2026-10-09"
   },
   "watch": [
@@ -432,7 +436,8 @@
    {
     "type": "github",
     "repo": "agentclientprotocol/agent-client-protocol",
-    "mode": "release"
+    "mode": "release",
+    "version": false
    }
   ],
   "use_cases": [
@@ -1237,6 +1242,10 @@
    {
     "date": "2026-10-16",
     "note": "version v1 (watcher)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "version label restored to 'x402 protocol specification v2, transports-v2/http.md'; the repository's latest tag (v1) is a package, SDK or build tag, not the specification version, so the GitHub watch no longer drives version"
    }
   ],
   "id": "x402",
@@ -1267,14 +1276,15 @@
   "summary_md": "x402 is an open, HTTP-native payment protocol that activates the long-reserved (since 1999) HTTP 402 \"Payment Required\" status code: a server responds 402 with machine-readable payment requirements, the client pays (in practice, stablecoins over an EVM-compatible network) and retries the request with proof of payment attached [1]. It solves instant, account-free, per-request monetization for APIs and agentic consumers — no signup, no KYC, no stored API keys, no prepaid credit balance — collapsing what the project calls a five-step \"old way\" of API onboarding into three HTTP round trips [own site, x402.org homepage].\n\nIt does not itself define a payment network; it is a wire-format and challenge/response convention that networks and asset issuers plug into via a `scheme` and `network` field (the reference implementation targets EVM chains and USDC, per the transport spec's example payload) [1]. Version 2 of the specification moved the payment-required and payment-signature payloads into dedicated `PAYMENT-REQUIRED` and `PAYMENT-SIGNATURE` HTTP headers rather than embedding them in earlier v1 conventions, and the specification separately defines non-HTTP transports (the repository lists transports-v1 and transports-v2 directories) [1].\n\nAs of this verification, x402 is governed by the x402 Foundation, described in its own site footer as \"a Series of LF Projects, LLC\" — i.e., a Linux Foundation-hosted project — with an operational launch announced by the Linux Foundation on 2026-07-14 [2]. Coinbase originated the protocol; the Foundation now governs it independently of any single company, per the project's own framing [x402.org homepage]. The site's homepage displays a real-time usage dashboard claiming 75.41M transactions and $24.24M in volume over the trailing 30 days, with 94.06K buyers and 22K sellers, current as of this check [3] — but this figure is self-reported by the Foundation running the protocol, not measured by an independent index, so it is recorded here as claimed rather than observed or measured. What remains open: no independently operated adoption index (e.g. a third-party \"402 index\") was located and fetched during this verification to cross-check the Foundation's own dashboard number.",
   "track": "linux-foundation",
   "version": {
-   "label": "v1",
-   "date": null
+   "date": null,
+   "label": "x402 protocol specification v2, transports-v2/http.md"
   },
   "watch": [
    {
     "type": "github",
     "repo": "x402-foundation/x402",
-    "mode": "release"
+    "mode": "release",
+    "version": false
    }
   ],
   "use_cases": [
@@ -1482,6 +1492,10 @@
    {
     "date": "2026-10-16",
     "note": "version spec-artifacts-fe0d414f3d71469d5784a2ce973aa7269ee0c8b7 (watcher)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "version label restored to 'draft-httpauth-payment-01'; the repository's latest tag (spec-artifacts-fe0d414f3d71469d5784a2ce973aa7269ee0c8b7) is a package, SDK or build tag, not the specification version, so the GitHub watch no longer drives version"
    }
   ],
   "id": "mpp",
@@ -1512,7 +1526,7 @@
   "summary_md": "The Machine Payments Protocol (MPP) standardizes HTTP 402 \"Payment Required\" as an extensible, payment-network-agnostic machine-to-machine payment flow: a client requests a resource, the server issues a 402 challenge with `WWW-Authenticate: Payment`, the client fulfills the payment (signing a transaction, paying an invoice, or completing a card charge depending on the method) and retries with `Authorization: Payment`, and the server verifies and serves the resource with an optional `Payment-Receipt` header [1]. It solves the same core problem as x402 and L402 — metered, account-free API access for agents and machines — but is explicitly designed to be method-agnostic: the same core Challenge/Credential/Receipt shape can carry Tempo, EVM, Stripe Card, Lightning, Solana, Stellar, Monad, or NEAR Intents payments [1][3].\n\nIt does not itself pick a payment network or currency: the core specification \"makes no claims or affordances to any specific payment method\" and is designed to work with any rail [2]. MPP is precise about status-code semantics in a way that differs from typical HTTP auth schemes — it uses 402 consistently for all payment-related failures (a fresh challenge, a malformed credential, an expired challenge, or a failed verification), reserving 401 for authentication failures unrelated to payment and 403 for cases where a valid payment was made but policy still denies access [1].\n\nMPP's governance is deliberately split in two: the core specification is co-authored by Tempo and Stripe and has been submitted to the IETF standards track under the name \"Payment HTTP Authentication Scheme,\" while individual payment methods are maintained separately by whoever supports that rail, which the project says \"keeps the protocol neutral while letting payment rails move at their own pace\" [2]. As of this verification the IETF submission's exact draft name/number was not independently located on the IETF datatracker, so its formal standing (individual submission vs. working-group adopted) is unconfirmed — mpp.dev's own \"IETF Specs\" card was checked but returned no distinct draft identifier in this pass. SDKs exist for TypeScript, Go, Ruby, Rust, and Python per the project's own site, and MPP maintains a direct compatibility/comparison page against x402 [3]. No independent adoption count was found; adoption is recorded as unmeasured.",
   "track": "vendor-consortium",
   "version": {
-   "label": "spec-artifacts-fe0d414f3d71469d5784a2ce973aa7269ee0c8b7",
+   "label": "draft-httpauth-payment-01",
    "date": "2026-09-09"
   },
   "watch": [
@@ -1529,7 +1543,8 @@
    {
     "type": "github",
     "repo": "tempoxyz/mpp-specs",
-    "mode": "tag"
+    "mode": "tag",
+    "version": false
    }
   ],
   "use_cases": [
@@ -2335,6 +2350,10 @@
    {
     "date": "2026-10-16",
     "note": "version 0.0.7 (watcher)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "version label restored to 'v2'; the repository's latest tag (0.0.7) is a package, SDK or build tag, not the specification version, so the GitHub watch no longer drives version"
    }
   ],
   "id": "llms-txt",
@@ -2364,8 +2383,8 @@
   "summary_md": "llms.txt is a proposed convention for publishing a small, curated, markdown-formatted index of a site's content at `/llms.txt` (or a subpath such as `/docs/llms.txt`), intended to be read by language models and AI agents rather than crawled and scraped like a full site [1]. The file is one required H1 heading naming the project, an optional blockquote summary, optional free-form context, and then H2-delimited \"file lists\" of markdown links to more detailed content — typically clean `.md` mirrors of a site's HTML pages [1].\n\nIt solves a narrow problem: HTML pages are built for browsers, wrap information in navigation and scripts that are wasteful to parse into an LLM's limited context window, and give an agent no small, authoritative starting point for a large site. llms.txt gives a site a place to say \"start here\" and to link to markdown-native content instead of full HTML [1].\n\nIt does not solve discovery for sites that don't publish one, does not replace `robots.txt` (a permission signal, not a content index) or `sitemap.xml` (exhaustive, for search-engine crawlers, and usually not markdown-native) [1], and — critically — it does not guarantee that anything reads it. Google's own Search Central documentation, last updated 2026-07-10, explicitly tells site owners they \"don't need to create ... llms.txt\" because \"Google Search itself doesn't use them,\" filing it alongside other AEO/GEO \"hacks\" to ignore [3]. No answer engine has published documentation describing llms.txt consumption in its retrieval pipeline.\n\nThe current text is v2, published August 2026, revising the original September 2024 proposal by Jeremy Howard (Answer.AI). v2's main addition is standard discovery link relations (`rel=\"alternate\" type=\"text/markdown\"` for a page's markdown twin, `rel=\"describedby\"` for the covering llms.txt file), expressible as HTML `<link>` tags or an HTTP `Link:` header; it also loosened the markdown-mirror URL convention and dropped the v1 context-expansion tooling and the special meaning of the \"Optional\" section [1][2]. The specification remains an informal, single-maintainer GitHub proposal, not a standards-track document of any kind [1].\n\nOn the producer side, several documentation platforms and CMSs generate llms.txt automatically — Mintlify, GitBook, Yoast SEO, AIOSEO, and Wix — and OpenAI, Anthropic, and Google publish llms.txt for their own developer docs [1]. This is genuine, if modest, publisher-side adoption: independent Tranco-based studies put it at roughly 8.7% of the top 1,000 domains (June 2026) and 5.6% of the top 10,000 [4], while a broader ~300,000-domain analysis found 10.13% overall, spread fairly evenly across traffic tiers rather than concentrated among high-traffic sites [5].\n\nWhat is disputed or unknown is consumption, not existence. The gap between \"a file exists\" and \"a model reads it\" is large and, per the sources available, mostly unmeasured by anyone with visibility into model retrieval internals. One large-scale server-log study of 137,000 llms.txt-publishing sites found 97% of the files were never fetched by any client during the observation window, and of the requests that did arrive, 96% came from generic bots rather than identifiable AI assistants [6]. Combined with Google's explicit statement that its own systems ignore the file, the safest characterization is: llms.txt is a real, growing publisher-side convention with no documented reader among major answer engines as of mid-2026.",
   "track": "single-vendor",
   "version": {
-   "label": "0.0.7",
-   "date": "2026-09-24"
+   "date": "2026-08",
+   "label": "v2"
   },
   "watch": [
    {
@@ -2377,7 +2396,8 @@
    {
     "type": "github",
     "repo": "AnswerDotAI/llms-txt",
-    "mode": "release"
+    "mode": "release",
+    "version": false
    },
    {
     "type": "page",
@@ -3841,6 +3861,10 @@
    {
     "date": "2026-10-16",
     "note": "version packages/aid-go/v2.1.1 (watcher)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "version label restored to 'v2.1.0 (aid2 wire format; aid1 legacy)'; the repository's latest tag (packages/aid-go/v2.1.1) is a package, SDK or build tag, not the specification version, so the GitHub watch no longer drives version"
    }
   ],
   "id": "aid",
@@ -3871,14 +3895,15 @@
   "summary_md": "Agent Identity & Discovery (AID) answers \"given a domain, where is the agent and which protocol should I speak?\" using a single DNS TXT record published at the fixed base name `_agent.<domain>` [1]. It is deliberately minimal: after AID resolves an endpoint and protocol token, richer protocols (MCP, A2A, OpenAPI, OAuth) take over for the actual interaction [1]. It is maintained by \"Agent Community\" as an open-source project (agentcommunity/agent-identity-discovery on GitHub) rather than through any formal standards body.\n\nThe current wire format is v2 (`aid2`), current since 1 June 2026, which supersedes a legacy `aid1` format kept only for backward compatibility during a migration window [1]. A record is a semicolon-delimited `key=value` string with required `version`/`uri`/`proto` (or their single-letter aliases `v`/`u`/`p`), and optional fields for auth hints, description, docs link, deprecation date, and an Ed25519 public key (`pka`/`k`) used for endpoint proof [1]. When a key is present, an AID client performs a PKA (Public-Key-for-Agent) handshake -- HTTP Message Signatures (RFC 9421) over a nonce challenge, keyed by an RFC 7638 JWK thumbprint -- to verify the endpoint controls the corresponding private key [1]. A newer \"domain-binding\" profile (Appendix B.7) lets the endpoint additionally attest that it consents to serve the specific queried domain, closing a gap where any domain could otherwise publish another party's endpoint and key without that endpoint's consent [1].\n\nAID is explicit about what it does not do: it does not issue credentials, grant authorization, prove human approval, define SPIFFE/WIMSE trust-domain federation, or manage cryptographic key rotation -- a key change is simply a key change, with no DNS-level provenance chain [1]. Discovery is exact-host only; clients must not walk up to parent domains, though CNAME delegation lets child hosts share a record explicitly [1]. A `.well-known/agent` HTTP fallback exists for environments (some managed DNS panels) where TXT record creation is restricted, but that path's trust rests on TLS rather than DNS, and cannot satisfy a `dnssec=require` policy [1].\n\nThe project's own GitHub repository (47 stars, 8 forks, fetched 2026-09-06) shows real shipped code: published npm (`@agentcommunity/aid`) and PyPI (`aid-discovery`) packages, source-available Go/Rust/.NET/Java libraries, an `aid-doctor` CLI, a live interactive workbench, and at least one documented live showcase domain (`supabase.agentcommunity.org`) [2] -- so implementation is recorded as shipping. No independent count of AID-publishing domains beyond that one showcase example was located, so adoption is recorded as observed rather than measured. The specification's own roadmap flags that a future major version (`aid3`) is expected to make domain-binding mandatory rather than optional-with-default, once adoption is broad enough that the switching cost is low [1].\n\nWhat is disputed: AID's DNS-TXT approach and the separately-authored, IETF-track DNS-AID specification (see `dns-aid`) solve the identical \"resolve a domain to an agent endpoint\" problem with incompatible record shapes (TXT vs. SVCB), and no evidence of coordination between the two efforts was found in the texts read for this verification.",
   "track": "community",
   "version": {
-   "label": "packages/aid-go/v2.1.1",
-   "date": "2026-06-01"
+   "date": "2026-06-01",
+   "label": "v2.1.0 (aid2 wire format; aid1 legacy)"
   },
   "watch": [
    {
     "type": "github",
     "repo": "agentcommunity/agent-identity-discovery",
-    "mode": "release"
+    "mode": "release",
+    "version": false
    }
   ],
   "use_cases": [
@@ -4484,6 +4509,10 @@
    {
     "date": "2026-10-16",
     "note": "version python/a2ui-agent-sdk/v0.8.0 (watcher)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "version label restored to 'v1.0 (Candidate); v0.9.1 (Current)'; the repository's latest tag (python/a2ui-agent-sdk/v0.8.0) is a package, SDK or build tag, not the specification version, so the GitHub watch no longer drives version"
    }
   ],
   "id": "a2ui",
@@ -4513,8 +4542,8 @@
   "summary_md": "A2UI (Agent to UI) is a JSON message protocol that lets an agent describe and incrementally stream a declarative, framework-neutral user interface to a client renderer. Communication is a stream of JSON objects; the agent-to-renderer protocol defines four message types — `createSurface`, `updateComponents`, `updateDataModel`, and `deleteSurface` — and the renderer maps abstract component descriptions (Card, Button, TextField, etc.) onto its own native widgets (Flutter, Angular, Lit, React, SwiftUI, or plain web components) [1]. The core design goal is safety: agents can only reference components from a client-defined, pre-approved 'catalog,' so a UI payload is 'safe like data, but expressive like code' rather than executable code [2].\n\nA2UI does not define its own transport. It is explicitly transport-agnostic and is documented with named bindings for three carriers: AG-UI (described as A2UI's 'standard transport binding'), the A2A protocol (via a dedicated A2A extension spec), and MCP (carried over tool calls, tool outputs, or resource subscriptions), plus generic support for SSE+JSON-RPC, WebSockets, and REST [1]. It solves the problem of agents needing to present rich, interactive interfaces — especially remote agents or agents running across a trust boundary — without shipping arbitrary executable code to the client [2]. It does not itself specify authentication, payment, or discovery of an agent's existence; those are left to whichever transport (AG-UI, A2A, MCP) carries it.\n\nCurrent state (as of 2026-09-05): the project describes itself as an 'early stage public preview.' The production-recommended version is v0.9.1 (a patch on the stable v0.9 family); v1.0 is a release candidate adding bidirectional typed function calls and single-message UI instantiation; v0.8 is legacy [2]. The canonical repository, github.com/a2ui-project/a2ui, carries an Apache-2.0 license and Google LLC copyright headers, and the spec site's own 'view source' link resolves to that same repository [1][2]. Reference renderers exist for Flutter and web frameworks (Lit, Angular, React), with a visual 'A2UI Composer' and a multi-renderer 'A2UI Theater' demo; the AG-UI project ships an `a2ui-toolkit` package and CopilotKit has added catalog-forwarding integration, indicating active cross-project use rather than a single-vendor demo [3].\n\nWhat is disputed or unknown: whether A2UI should be classified as a single-vendor (Google) spec or something closer to a vendor-consortium is judgment-dependent — the code and copyright are Google's, but the working GitHub org name ('a2ui-project') and the AG-UI/CopilotKit integration suggest broader de facto involvement. AG-UI's own docs (fetched 2026-09-05) still point to `github.com/google/A2UI` rather than the current `a2ui-project` org, an unresolved naming/rename inconsistency. No independent adoption count exists; observed ecosystem activity (16.3k GitHub stars, AG-UI/CopilotKit integration, multiple demo renderers) has not been converted into a documented probe run, so adoption here is 'observed,' not 'measured.'",
   "track": "single-vendor",
   "version": {
-   "label": "python/a2ui-agent-sdk/v0.8.0",
-   "date": "2026-10-08"
+   "date": "2026-06-08",
+   "label": "v1.0 (Candidate); v0.9.1 (Current)"
   },
   "watch": [
    {
@@ -4526,7 +4555,8 @@
    {
     "type": "github",
     "repo": "a2ui-project/A2UI",
-    "mode": "release"
+    "mode": "release",
+    "version": false
    }
   ],
   "use_cases": [
@@ -4628,6 +4658,10 @@
    {
     "date": "2026-10-16",
     "note": "version release/2026-10-13 (watcher)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "version label restored to '1.0'; the repository's latest tag (release/2026-10-13) is a package, SDK or build tag, not the specification version, so the GitHub watch no longer drives version"
    }
   ],
   "id": "ag-ui",
@@ -4657,8 +4691,8 @@
   "summary_md": "AG-UI (Agent-User Interaction Protocol) is an open, lightweight, event-based protocol that standardizes how an AI agent backend streams state, messages, generative-UI updates, and tool activity into a user-facing frontend application, and how the frontend sends interactions and tool results back. CopilotKit announced it on May 12, 2025 as 'an open, lightweight protocol that streams a single sequence of JSON events over standard HTTP or an optional binary channel' [1]. Its own docs position it as one of three complementary 'agentic protocols': MCP handles Agent↔Tools/Data, A2A handles Agent↔Agent, and AG-UI handles Agent↔User Interaction — it is explicitly not a competitor to either [2].\n\nMechanically, an agent backend emits roughly sixteen standard event types (e.g. streaming text message chunks, tool-call events, state snapshots and diffs, run lifecycle/error events) over whatever transport the integration chooses — SSE, WebSockets, or webhooks are all named as compatible — and a middleware layer normalizes 'loose event format matching' so different backend frameworks and different frontend clients can interoperate without agreeing on a single wire transport [2]. AG-UI itself does not define a fixed origin path or well-known discovery file; a given application wires its own agent endpoint and a client library (or hand-rolled parser) that speaks the event vocabulary. AG-UI does not solve tool invocation (that is MCP's job) or agent-to-agent delegation (A2A's job), and it does not define authentication, payment, or content-permission mechanics.\n\nCurrent state (as of 2026-09-05): the protocol is actively developed under github.com/ag-ui-protocol/ag-ui (MIT license), which shows 15.7k stars, 170 branches, and near-daily commits including a merge less than a day before this check. It is described in its own docs as supported 'first-party' by Microsoft Agent Framework, Google ADK, AWS Strands Agents, Mastra, Pydantic AI, Agno, LlamaIndex, AG2, and AWS Bedrock AgentCore, with community-maintained SDKs in Kotlin, Go, Dart, Java, Rust, Ruby, C++, and .NET, and CopilotKit itself as the reference first-party client [2][3]. AG-UI also documents relationships with two adjacent generative-UI specs — A2UI (which it calls its own declarative generative-UI companion, with AG-UI as A2UI's 'standard transport binding') and MCP Apps — treating both as things it can carry rather than as competitors.\n\nWhat is disputed or unknown: there is no independent, documented count of production deployments; the evidence here is repository activity and named partner integrations, which is 'observed,' not a measured census. The relationship between AG-UI, originated and still steered largely by CopilotKit, and 'community' governance is informal — there is a public Discord and a biweekly working group, but no independent foundation. It is unclear how much of the 1st-party partner list reflects deployed production traffic versus documented compatibility.",
   "track": "community",
   "version": {
-   "label": "release/2026-10-13",
-   "date": "2026-10-13"
+   "label": "1.0",
+   "date": "2026-09-18"
   },
   "watch": [
    {
@@ -4670,7 +4704,8 @@
    {
     "type": "github",
     "repo": "ag-ui-protocol/ag-ui",
-    "mode": "release"
+    "mode": "release",
+    "version": false
    },
    {
     "type": "npm",
@@ -4776,6 +4811,10 @@
    {
     "date": "2026-10-16",
     "note": "version osi-0.1.1-rc1 (watcher)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "version label restored to '0.2.0.dev0 (draft, in development); last tagged pre-release osi-0.1.1-rc1'; the repository's latest tag (osi-0.1.1-rc1) is a package, SDK or build tag, not the specification version, so the GitHub watch no longer drives version"
    }
   ],
   "id": "osi",
@@ -4805,14 +4844,15 @@
   "summary_md": "OSI/Apache Ossie is a JSON- and YAML-based specification for representing semantic-layer objects (datasets, metrics, dimensions, relationships) so that BI tools, data catalogs and AI/agentic applications compute a term like \"churn rate\" the same way regardless of which vendor's tool wrote the definition [1]. It is a document/interchange format, not a network protocol: there is no discovery endpoint or well-known path, and no runtime negotiation. Consumption happens by reading (or generating) a semantic-model file against the published JSON Schema -- which is why this record has been moved from the site's original 'account' placement to 'read': OSI is squarely about machine-readable representations of content (metric/data definitions) for consumption by BI and agent tooling, not about recording or attributing actions after the fact.\n\n**What it does not do:** OSI/Ossie does not define an API, an audit trail, an authentication scheme, or a discovery mechanism. It says nothing about who is allowed to read or write a given semantic model, and it does not itself measure or certify adoption.\n\n**Current state.** Snowflake announced OSI on 2025-09-23 with Salesforce, BlackRock, dbt Labs and RelationalAI as co-leads, alongside a larger coalition of BI/data vendors [1]. On 2026-01-27 Snowflake published \"the first version of the OSI specification\" as an Apache-2.0 repository and said governance would eventually move to a neutral foundation [2]. That move happened on 2026-06-22, when the project entered the Apache Incubator as \"Apache Ossie (incubating)\"; the original open-semantic-interchange GitHub organization now has zero public repositories, and its old repo URL redirects to github.com/apache/ossie [3]. As of this verification, the live core specification is versioned 0.2.0.dev0 and is explicitly marked DRAFT -- \"schema may change before 0.2.0 is released\" -- and the only Git tag in the history is a release-candidate, osi-0.1.1-rc1, not a 1.0 [4]. This means the January 2026 \"specification finalized\" headline describes the spec's first public release, not a stable/versioned final; readers should not assume OSI has reached a frozen v1.0.\n\n**Who implements it.** The repository ships reference converters for a dozen vendor ecosystems -- Snowflake, Databricks, Salesforce, dbt, GoodData, NVIDIA, Omni, Polaris, Honeydew, Wisdom, OrionBelt and an ontology bridge -- but these live in a converters/ directory of a repo whose core spec is still draft, so they read as reference/example integrations rather than confirmed production deployments; this record conservatively marks implementation as 'prototype' rather than 'multi-implementation.'\n\n**Disputed / unknown.** Whether OSI's broad vendor coalition (dbt Labs, Salesforce, BlackRock, Databricks, Mistral AI and ~30 others) reflects production adoption of the spec itself, or membership in a working group around a still-drafting spec, is not independently measurable from public sources. No probe has been run; adoption is marked unmeasured rather than claimed, because no single party made a countable claim we could cite. The vocabulary used by this site for 'track' does not have a category for an ASF Incubator podling, which is a materially different governance state from an informal community project.",
   "track": "community",
   "version": {
-   "label": "osi-0.1.1-rc1",
-   "date": null
+   "date": null,
+   "label": "0.2.0.dev0 (draft, in development); last tagged pre-release osi-0.1.1-rc1"
   },
   "watch": [
    {
     "type": "github",
     "repo": "apache/ossie",
-    "mode": "release"
+    "mode": "release",
+    "version": false
    }
   ],
   "use_cases": [
@@ -7429,6 +7469,10 @@
    {
     "date": "2026-10-16",
     "note": "version slimctl-v3.4.2 (watcher)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "version label restored to 'draft-mpsb-agntcy-slim-02'; the repository's latest tag (slimctl-v3.4.2) is a package, SDK or build tag, not the specification version, so the GitHub watch no longer drives version"
    }
   ],
   "id": "slim",
@@ -7458,14 +7502,15 @@
   "summary_md": "SLIM (Secure Low-Latency Interactive Messaging) is a messaging/transport framework built for the AGNTCY project, intended to serve as the secure, scalable transport layer underneath higher-level agent protocols such as A2A and MCP [1]. It solves a gap those protocols leave open: neither A2A nor MCP specifies a low-latency, group-aware, end-to-end-encrypted messaging transport; SLIM supports request-response, publish-subscribe, fire-and-forget, and streaming interaction patterns, and builds in authentication, authorization, and end-to-end (MLS) encryption at the transport layer [2]. Architecturally it splits into a Data Plane (pure hierarchical-name-based packet routing, content-blind), a Session Layer (reliable delivery, end-to-end MLS encryption, group membership), and a Control Plane (configuration, monitoring, orchestration) — letting lightweight routing nodes run only the data plane while applications carry the full stack via language bindings (Python, Go, .NET, Java, Kotlin) [1].\n\nSLIM does not define agent discovery, identity, or task semantics itself — those are the roles of A2A/MCP and AGNTCY's separate directory/identity components; SLIM's own README frames itself purely as the transport underneath those protocols [1].\n\nCurrent state: the `agntcy/slim` repository was created 2025-02-05, is Apache-2.0 licensed, and is actively maintained (CI, code coverage, and OpenSSF Scorecard badges all present and green as of this check) [1]. AGNTCY itself — the umbrella project SLIM belongs to — was donated by Cisco to the Linux Foundation, with Dell Technologies, Google Cloud, Oracle, and Red Hat joining as formative members, to standardize open multi-agent-system infrastructure including discovery, identity, messaging (SLIM), and observability [2]. A SLIM specification has also been filed as an individual IETF Internet-Draft, draft-mpsb-agntcy-slim-00, though it is not yet a working-group document — this record treats the Linux Foundation/AGNTCY project as SLIM's primary governance home given that the code, documentation, and formative-member structure all live there, and marks track as linux-foundation rather than ietf accordingly. Implementations exist and ship as bindings across five languages plus integrations for A2A and MCP transport (slim-a2a-python, slim-mcp-python) and OpenTelemetry [1]. What is unresolved: no independently measured adoption count was found; this is a genuinely new record added during this verification pass per the coordinator's occupant-diff instruction, and its exact relationship to the IETF draft (same authors? formally submitted by the AGNTCY project?) was not further disambiguated in this pass.",
   "track": "linux-foundation",
   "version": {
-   "label": "slimctl-v3.4.2",
-   "date": "2026-10-15"
+   "label": "draft-mpsb-agntcy-slim-02",
+   "date": "2026-07-19"
   },
   "watch": [
    {
     "type": "github",
     "repo": "agntcy/slim",
-    "mode": "release"
+    "mode": "release",
+    "version": false
    },
    {
     "type": "ietf",
@@ -8468,6 +8513,10 @@
    {
     "date": "2026-10-16",
     "note": "No push since 2025-08-21 (over 180 days)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "version label restored to '0.1.0'; the repository's latest tag (resend) is a package, SDK or build tag, not the specification version, so the GitHub watch no longer drives version"
    }
   ],
   "id": "agents-json",
@@ -8497,14 +8546,15 @@
   "summary_md": "**Moved from the Read step to Act.** agents.json is Wildcard AI's specification for describing multi-step API call sequences (\"flows\") for LLM agents, built as an extension of OpenAPI rather than a competitor to it [1]. It belongs under \"Act\" (do something for me), not \"Read\": its own FAQ explicitly contrasts it with llms.txt — \"llms.txt ... doesn't address the challenges of taking structured actions ... agents.json enables them to execute multi-step workflows reliably\" [1]. It was included in this batch as a read-step candidate but is a discovery-plus-invocation spec for API actions, so it is reported here with a corrected step rather than filed under Read.\n\nWhat it is: a JSON document, structurally an annotated OpenAPI spec, adding two concepts — `flows` (a named sequence of one or more API calls that accomplishes an outcome) and `links` (how the output of one call feeds the input of the next) — so an agent doesn't have to infer multi-call sequences (e.g., \"search Gmail threads, list messages in a thread, reply with base64 RFC 822 content\") from raw endpoint descriptions alone [1]. It proposes, but does not require, publishing the file at `/.well-known/agents.json`, and maintains a discretionary registry of published files at wild-card.ai/registry [1] (not independently verified in this pass). The reference runtime, \"Wildcard Bridge\", is a Python package that loads an agents.json file and executes the described flows with Basic/ApiKey/Bearer auth [1].\n\nWhat it does not do: it is explicitly stateless — orchestration and context are the calling agent's responsibility, not the spec's — and it does not define a serving protocol beyond \"an agent fetches this JSON document\" [1]. It is single-vendor: Wildcard AI controls the spec text, the only public runtime implementation, and the registry.\n\nCurrent state: version 0.1.0, first shown publicly in a March 2025 Hacker News post [3], with the GitHub repository still receiving commits as of August 2026 [2]. No changelog entry or version bump beyond 0.1.0 was found during this pass, and no independent (non-Wildcard) implementation of the spec or the registry was located.\n\nWhat is disputed or unknown: adoption beyond Wildcard's own quickstart examples (Resend, Stripe, Rootly, Twitter+Giphy, and a Resend+Hubspot+Google Sheets demo) is unmeasured; there is no evidence of provider-side publication of agents.json files outside Wildcard's own demos, and the well-known path is explicitly optional per the spec's own FAQ, so counting adoption by well-known-path presence alone would understate or misstate real usage.",
   "track": "single-vendor",
   "version": {
-   "label": "resend",
-   "date": "2025-02-09"
+   "date": "2025-03",
+   "label": "0.1.0"
   },
   "watch": [
    {
     "type": "github",
     "repo": "wild-card-ai/agents-json",
-    "mode": "release"
+    "mode": "release",
+    "version": false
    }
   ],
   "use_cases": [
@@ -9078,6 +9128,10 @@
    {
     "date": "2026-10-16",
     "note": "No push since 2025-04-08 (over 180 days)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "version label restored to 'unversioned OpenAPI spec (schemas/openapi.yml)'; the repository's latest tag (js-sdk-v1.0.5) is a package, SDK or build tag, not the specification version, so the GitHub watch no longer drives version"
    }
   ],
   "id": "agent-protocol-aief",
@@ -9107,14 +9161,15 @@
   "summary_md": "Agent Protocol is a framework-agnostic, OpenAPI v3 REST specification originally proposed by the AI Engineer Foundation (AIEF) community, alongside the early Auto-GPT/e2b ecosystem, to give any autonomous agent a single, predictable interface: create a task (POST /ap/v1/agent/tasks), execute it step by step (POST /ap/v1/agent/tasks/{task_id}/steps), and list or download artifacts, regardless of the framework the agent was built with [1]. It solves the comparison and integration problem for early agent frameworks — before Agent Protocol, every agent exposed a bespoke interface, making benchmarking and devtool-building across agents difficult; the spec's own stated goal is 'great developer experience' for agent builders wanting to avoid writing boilerplate API code [1].\n\nIt does not define agent-to-agent communication (the README lists this as future roadmap, unrealized), does not define authorization on behalf of end users, and does not define discovery — clients are expected to know an agent's base URL out of band [1].\n\nAs of this check (September 2026), the project's governance and web presence show significant drift from its AIEF origins. The GitHub repository formerly hosted under the AI-Engineer-Foundation organization now redirects to agi-inc/agent-protocol and states it is \"Maintained by AGI, Inc.,\" a commercial entity, rather than the original community foundation [1]. More notably, the repository's own linked documentation domain, agentprotocol.ai, no longer hosts the project's docs at all: as fetched during this verification pass, it serves an unrelated third-party site describing itself as an 'independent, vendor-neutral guide' to MCP, A2A, and Agent Protocol, with no visible connection to AI Engineer Foundation, AGI Inc., or the GitHub repository that links to it as its official documentation [2]. This is flagged as a dispute rather than treated as settled, since it was not possible in this pass to determine whether the domain lapsed and was independently re-registered, or was deliberately repurposed by a current stakeholder.\n\nImplementation history shows genuine multi-party adoption during the 2023–2024 Auto-GPT era — Auto-GPT, Auto-GPT-Forge, and smol developer all merged Agent-Protocol-compliant PRs, with e2b and Auto-GPT credited as 'engaged' co-developers of the spec — but no evidence of continued active development or adoption was found in the past year of repository activity [1]. What is unresolved: whether Agent Protocol should be considered a live, maintained standard at all today, or a historically important but now largely dormant spec whose primary surviving artifact is the OpenAPI file in a repository under new, commercial ownership.",
   "track": "single-vendor",
   "version": {
-   "label": "js-sdk-v1.0.5",
-   "date": "2024-04-02"
+   "date": null,
+   "label": "unversioned OpenAPI spec (schemas/openapi.yml)"
   },
   "watch": [
    {
     "type": "github",
     "repo": "AI-Engineer-Foundation/agent-protocol",
-    "mode": "release"
+    "mode": "release",
+    "version": false
    }
   ],
   "use_cases": [
