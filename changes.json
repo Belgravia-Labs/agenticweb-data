@@ -530,7 +530,7 @@
   "claim": "Datatracker shows draft-ietf-aipref-vocab-08, dated 2026-09-14, expires 2027-03-18",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-ietf-aipref-vocab/",
   "detector": "ietf@1.0",
-  "commit": null
+  "commit": "97432375977df65c46a270f588706a7c3817276a"
  },
  {
   "id": "q-2026-10-16-ans-expired",
@@ -543,7 +543,7 @@
   "claim": "Expired Internet-Draft (expired 2026-10-15)",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-narajala-courtney-ansv2/",
   "detector": "ietf@1.0",
-  "commit": null
+  "commit": "97432375977df65c46a270f588706a7c3817276a"
  },
  {
   "id": "q-2026-10-16-ardp-expired",
@@ -556,7 +556,7 @@
   "claim": "Expired Internet-Draft (expired 2026-08-28)",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-pioli-agent-discovery/",
   "detector": "ietf@1.0",
-  "commit": null
+  "commit": "97432375977df65c46a270f588706a7c3817276a"
  },
  {
   "id": "q-2026-10-16-aauth-expired-2",
@@ -569,7 +569,7 @@
   "claim": "Expired Internet-Draft (expired 2026-04-23)",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-rosenberg-oauth-aauth/",
   "detector": "ietf@1.0",
-  "commit": null
+  "commit": "97432375977df65c46a270f588706a7c3817276a"
  },
  {
   "id": "q-2026-10-16-aap-expired",
@@ -582,7 +582,7 @@
   "claim": "Expired Internet-Draft (expired 2026-08-11)",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-aap-oauth-profile/",
   "detector": "ietf@1.0",
-  "commit": null
+  "commit": "97432375977df65c46a270f588706a7c3817276a"
  },
  {
   "id": "q-2026-10-16-agent-audit-trail-revision",
@@ -601,7 +601,7 @@
   "claim": "Datatracker shows draft-sharif-agent-audit-trail-08, dated 2026-10-13, expires 2027-04-16",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-sharif-agent-audit-trail/",
   "detector": "ietf@1.0",
-  "commit": null
+  "commit": "97432375977df65c46a270f588706a7c3817276a"
  },
  {
   "id": "q-2026-10-16-aauth-hardt-expired",
@@ -614,6 +614,6 @@
   "claim": "Expired Internet-Draft (expired 2026-10-04)",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-headers/",
   "detector": "ietf@1.0",
-  "commit": null
+  "commit": "97432375977df65c46a270f588706a7c3817276a"
  }
 ]
