@@ -16,7 +16,7 @@
   "claim": "A2A v1.0.1 released on 2026-05-28 (v1.0.0 on 2026-03-12); governance is the Linux Foundation with a Technical Steering Committee of AWS, Cisco, Google, IBM Research, Microsoft, Salesforce, SAP and ServiceNow",
   "evidence_url": "https://github.com/a2aproject/A2A/releases",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-ag-ui-version",
@@ -35,7 +35,7 @@
   "claim": "AG-UI 1.0 was released and frozen on 2026-09-18, with a published JSON Schema",
   "evidence_url": "https://github.com/ag-ui-protocol/ag-ui/discussions/2792",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-mcp-apps-version",
@@ -54,7 +54,7 @@
   "claim": "MCP Apps SDK ext-apps v2.0.3 was released on 2026-09-25 (spec dated 2026-01-26)",
   "evidence_url": "https://github.com/modelcontextprotocol/ext-apps/releases",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-a2ui-status",
@@ -67,7 +67,7 @@
   "claim": "A2UI moved from google/A2UI to the a2ui-project GitHub organisation",
   "evidence_url": "https://github.com/a2ui-project/A2UI",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-agent-client-protocol-version",
@@ -86,7 +86,7 @@
   "claim": "Agent Client Protocol v1.11.0 (schema v1.25.0) released on 2026-10-09; v2 is unstable",
   "evidence_url": "https://github.com/agentclientprotocol/agent-client-protocol/blob/main/CHANGELOG.md",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-adcp-version",
@@ -105,7 +105,7 @@
   "claim": "AdCP v3.2.4 released on 2026-10-12",
   "evidence_url": "https://github.com/adcontextprotocol/adcp/releases",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-anp-version",
@@ -124,7 +124,7 @@
   "claim": "Agent Network Protocol v1.2 released on 2026-09-24",
   "evidence_url": "https://github.com/agent-network-protocol/AgentNetworkProtocol/releases",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-oasf-version",
@@ -143,7 +143,7 @@
   "claim": "OASF v1.1.0 released on 2026-07-10",
   "evidence_url": "https://github.com/agntcy/oasf/releases",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-ap2-version",
@@ -162,7 +162,7 @@
   "claim": "AP2 v0.2.0 released on 2026-04-28, and AP2 was donated to the FIDO Alliance (Payments TWG and Agentic Authentication TWG) the same day",
   "evidence_url": "https://github.com/google-agentic-commerce/AP2/releases",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-x402-status",
@@ -175,7 +175,7 @@
   "claim": "The Linux Foundation appointed Michael Hursta as executive director of the x402 Foundation, effective 2026-10-01; the foundation has 50+ members",
   "evidence_url": "https://www.linuxfoundation.org/press/linux-foundation-appoints-michael-hursta-as-executive-director-of-the-x402-foundation",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-mpp-revision",
@@ -188,7 +188,7 @@
   "claim": "The MPP draft was renamed draft-httpauth-payment; draft-httpauth-payment-01 is dated 2026-09-09",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-httpauth-payment/",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-ucp-status",
@@ -201,7 +201,7 @@
   "claim": "UCP added a Payments Technical Council (2026-09-02), a Lodging Booking draft capability (2026-09-25) and Merchant Center cart transfer (2026-09-16)",
   "evidence_url": "https://github.com/Universal-Commerce-Protocol/ucp/releases",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-slim-revision",
@@ -220,7 +220,7 @@
   "claim": "draft-mpsb-agntcy-slim-02 is dated 2026-07-19",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-mpsb-agntcy-slim/",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-daap-revision",
@@ -239,7 +239,7 @@
   "claim": "draft-mishra-oauth-agent-grants-02 is dated 2026-08-30",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-mishra-oauth-agent-grants/",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-adp-revision",
@@ -258,7 +258,7 @@
   "claim": "draft-pro-adp-agent-discovery-02 is dated 2026-07-24",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-pro-adp-agent-discovery/",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-agents-json-dormant",
@@ -271,7 +271,7 @@
   "claim": "agents.json is dormant: last push 2025-08-21, version 0.1.0",
   "evidence_url": "https://github.com/wild-card-ai/agents-json",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-web-agent-protocol-dormant",
@@ -284,7 +284,7 @@
   "claim": "Web Agent Protocol is dormant: last commit 2025-06-03",
   "evidence_url": "https://github.com/OTA-Tech-AI/web-agent-protocol",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-agent-communication-protocol-status",
@@ -297,7 +297,7 @@
   "claim": "IBM's Agent Communication Protocol is deprecated (merged into A2A)",
   "evidence_url": "https://github.com/i-am-bee/acp",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-agent-connect-protocol-status",
@@ -310,7 +310,7 @@
   "claim": "The agntcy/acp-spec repository was archived on 2026-04-11",
   "evidence_url": "https://github.com/agntcy/acp-spec",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-vi-status",
@@ -323,7 +323,7 @@
   "claim": "Mastercard contributed Verifiable Intent to the FIDO Alliance Payments TWG on 2026-04-28",
   "evidence_url": "https://fidoalliance.org/fido-alliance-to-develop-standards-for-trusted-ai-agent-interactions/",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-tap-status",
@@ -336,7 +336,7 @@
   "claim": "Visa joined the KYA interoperability collaboration with Mastercard and Ant International (2026-09-10)",
   "evidence_url": "https://www.ant-intl.com/en/news/detail/?id=ant-internationals-agentic-mobile-protocol-rolls-out-globally-with-wallets-acquirers-initiating-collaboration-on-kya-interoperability-framework-with-mastercard-and-visa",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-cloudflare-content-signals-policy-status",
@@ -349,7 +349,7 @@
   "claim": "Cloudflare 'Disallow AI Training' and Accountable crawler designation (2026-09-15); Bot Preference Sync replaces Managed robots.txt",
   "evidence_url": "https://blog.cloudflare.com/",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-ai-crawler-tokens-robots-status",
@@ -362,7 +362,7 @@
   "claim": "Cloudflare 'Disallow AI Training' and Accountable crawler designation (2026-09-15); Bot Preference Sync replaces Managed robots.txt",
   "evidence_url": "https://blog.cloudflare.com/",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-llms-txt-sdk-release",
@@ -375,7 +375,7 @@
   "claim": "llms-txt Python package 0.0.7 released 2026-09-24 (tooling, spec unchanged at v2)",
   "evidence_url": "https://github.com/AnswerDotAI/llms-txt/releases",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-mcp-registry-candidate",
@@ -388,7 +388,7 @@
   "claim": "The MCP Registry working group charter describes the official MCP Registry as in preview with its API frozen at v0.1 and lists 'Registry API v1 GA: Ideating, no target date'; the server listing endpoint is GET /v0.1/servers, and the server.json schema is being aligned with the Server Card (charter changelog entry 2026-07-30).",
   "evidence_url": "https://modelcontextprotocol.io/community/working-groups/registry",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-wimse-aims-candidate",
@@ -401,7 +401,7 @@
   "claim": "draft-ietf-wimse-aims-00 is a WIMSE working group document dated 2026-09-15 covering best practices for authentication and authorization of AI agent interactions; it normatively references wimse-arch, wimse-http-signature, transaction tokens and RFC 9728.",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-personal-agent-protocol-candidate",
@@ -414,7 +414,7 @@
   "claim": "Sierra's announcement (2026-10-09) presents the Personal Agent Protocol draft as built on OAuth, JWT, OpenAPI and MCP, with 35+ design partners including OpenAI, Visa, Mastercard and Okta, and promises a reference implementation.",
   "evidence_url": "https://sierra.ai/blog/poppy",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-aauth-hardt-candidate",
@@ -427,7 +427,7 @@
   "claim": "draft-hardt-oauth-aauth-protocol-11 is dated 2026-09-25 and expires 2027-03-29.",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-hardt-oauth-aauth-protocol/",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-cloudflare-pay-per-crawl-candidate",
@@ -440,7 +440,7 @@
   "claim": "Cloudflare's documentation says pay per crawl uses HTTP 402 with crawler-price, crawler-exact-price / crawler-max-price and crawler-charged headers, requires Web Bot Auth signing, and is in closed beta (documentation updated 2026-07-28).",
   "evidence_url": "https://developers.cloudflare.com/ai-crawl-control/features/pay-per-crawl/what-is-pay-per-crawl/",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-wimse-agent-audit-record-candidate",
@@ -453,7 +453,7 @@
   "claim": "draft-gilda-wimse-agent-audit-record-02, 'An Audit Record Format for AI Agent Authorization Decisions', is dated 2026-10-05.",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-gilda-wimse-agent-audit-record/",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-mcp-server-cards-candidate",
@@ -466,7 +466,7 @@
   "claim": "SEP-2127 (MCP Server Cards) is marked Final as of 2026-10-06.",
   "evidence_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2127-mcp-server-cards.md",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-mcp-status",
@@ -479,7 +479,7 @@
   "claim": "MCP Server Cards (SEP-2127) reached Final on 2026-10-06; Skills over MCP (SEP-2640) reached Final on 2026-09-13; next spec release cadence is under discussion (SEP-3398)",
   "evidence_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2127-mcp-server-cards.md",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-aiagent-auth-replaced",
@@ -492,7 +492,7 @@
   "claim": "draft-ietf-wimse-aims-00 was published as a WIMSE working group document on 2026-09-15 and replaces draft-klrc-aiagent-auth",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  },
  {
   "id": "q-2026-10-16-aauth-expired",
@@ -511,6 +511,6 @@
   "claim": "draft-rosenberg-oauth-aauth-01 (2026-04-22) expired on 2026-04-23; the active AAuth lineage is draft-hardt-oauth-aauth-protocol-11",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-rosenberg-oauth-aauth/",
   "detector": "phase-a@2026-10-15",
-  "commit": null
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
  }
 ]
