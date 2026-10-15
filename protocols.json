@@ -2371,10 +2371,6 @@
    {
     "type": "ietf",
     "doc": "draft-meunier-webbotauth-registry"
-   },
-   {
-    "type": "ietf",
-    "doc": "draft-meunier-web-bot-auth-signature-agent-card"
    }
   ]
  },
