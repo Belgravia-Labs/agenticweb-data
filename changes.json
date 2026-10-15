@@ -615,5 +615,394 @@
   "evidence_url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-headers/",
   "detector": "ietf@1.0",
   "commit": "97432375977df65c46a270f588706a7c3817276a"
+ },
+ {
+  "id": "q-2026-10-16-agent-client-protocol-version-2",
+  "date": "2026-10-15",
+  "record_id": "agent-client-protocol",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "label": "v1.11.0 (schema v1.25.0); v2 unstable",
+   "date": "2026-10-09"
+  },
+  "to": {
+   "label": "schema-v1.25.0",
+   "date": "2026-10-09"
+  },
+  "claim": "schema-v1.25.0 released 2026-10-09",
+  "evidence_url": "https://github.com/agentclientprotocol/agent-client-protocol/releases/tag/schema-v1.25.0",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-agent-communication-protocol-version",
+  "date": "2026-10-15",
+  "record_id": "agent-communication-protocol",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": "2025-08",
+   "label": "0.2.0 (final OpenAPI spec, archived)"
+  },
+  "to": {
+   "label": "v1.0.3",
+   "date": "2025-08-21"
+  },
+  "claim": "v1.0.3 released 2025-08-21",
+  "evidence_url": "https://github.com/i-am-bee/acp/releases/tag/v1.0.3",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-agent-communication-protocol-dormant",
+  "date": "2026-10-15",
+  "record_id": "agent-communication-protocol",
+  "kind": "dormant",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "No push since 2025-08-25 (over 180 days)",
+  "evidence_url": "https://github.com/i-am-bee/acp/releases/tag/v1.0.3",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-ucp-version",
+  "date": "2026-10-15",
+  "record_id": "ucp",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": "2026-08-25",
+   "label": "documentation site dated 2026-08-25; active/expanding specification (Lodging and Food detailed specs pending)"
+  },
+  "to": {
+   "label": "v2026-08-25",
+   "date": "2026-08-25"
+  },
+  "claim": "v2026-08-25 released 2026-08-25",
+  "evidence_url": "https://github.com/Universal-Commerce-Protocol/ucp/releases/tag/v2026-08-25",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-ap2-checkout-mandate-version",
+  "date": "2026-10-15",
+  "record_id": "ap2-checkout-mandate",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": null,
+   "label": "AP2 v0.2"
+  },
+  "to": {
+   "label": "v0.2.0",
+   "date": "2026-04-28"
+  },
+  "claim": "v0.2.0 released 2026-04-28",
+  "evidence_url": "https://github.com/google-agentic-commerce/AP2/releases/tag/v0.2.0",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-x402-version",
+  "date": "2026-10-15",
+  "record_id": "x402",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": null,
+   "label": "x402 protocol specification v2, transports-v2/http.md"
+  },
+  "to": {
+   "label": "v1",
+   "date": null
+  },
+  "claim": "latest tag v1",
+  "evidence_url": "https://github.com/x402-foundation/x402/releases/tag/v1",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-mpp-version",
+  "date": "2026-10-15",
+  "record_id": "mpp",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "label": "draft-httpauth-payment-01",
+   "date": "2026-09-09"
+  },
+  "to": {
+   "label": "spec-artifacts-fe0d414f3d71469d5784a2ce973aa7269ee0c8b7",
+   "date": "2026-09-09"
+  },
+  "claim": "spec-artifacts-fe0d414f3d71469d5784a2ce973aa7269ee0c8b7 released 2026-09-09",
+  "evidence_url": "https://github.com/tempoxyz/mpp-specs/releases/tag/spec-artifacts-fe0d414f3d71469d5784a2ce973aa7269ee0c8b7",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-llms-txt-version",
+  "date": "2026-10-15",
+  "record_id": "llms-txt",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": "2026-08",
+   "label": "v2"
+  },
+  "to": {
+   "label": "0.0.7",
+   "date": "2026-09-24"
+  },
+  "claim": "0.0.7 released 2026-09-24",
+  "evidence_url": "https://github.com/AnswerDotAI/llms-txt/releases/tag/0.0.7",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-aid-version",
+  "date": "2026-10-15",
+  "record_id": "aid",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": "2026-06-01",
+   "label": "v2.1.0 (aid2 wire format; aid1 legacy)"
+  },
+  "to": {
+   "label": "packages/aid-go/v2.1.1",
+   "date": "2026-06-01"
+  },
+  "claim": "packages/aid-go/v2.1.1 released 2026-06-01",
+  "evidence_url": "https://github.com/agentcommunity/agent-identity-discovery/releases/tag/packages/aid-go/v2.1.1",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-a2ui-version",
+  "date": "2026-10-15",
+  "record_id": "a2ui",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": "2026-06-08",
+   "label": "v1.0 (Candidate); v0.9.1 (Current)"
+  },
+  "to": {
+   "label": "python/a2ui-agent-sdk/v0.8.0",
+   "date": "2026-10-08"
+  },
+  "claim": "python/a2ui-agent-sdk/v0.8.0 released 2026-10-08",
+  "evidence_url": "https://github.com/a2ui-project/a2ui/releases/tag/python/a2ui-agent-sdk/v0.8.0",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-ag-ui-version-2",
+  "date": "2026-10-15",
+  "record_id": "ag-ui",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "label": "1.0",
+   "date": "2026-09-18"
+  },
+  "to": {
+   "label": "release/2026-10-13",
+   "date": "2026-10-13"
+  },
+  "claim": "release/2026-10-13 released 2026-10-13",
+  "evidence_url": "https://github.com/ag-ui-protocol/ag-ui/releases/tag/release/2026-10-13",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-osi-version",
+  "date": "2026-10-15",
+  "record_id": "osi",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": null,
+   "label": "0.2.0.dev0 (draft, in development); last tagged pre-release osi-0.1.1-rc1"
+  },
+  "to": {
+   "label": "osi-0.1.1-rc1",
+   "date": null
+  },
+  "claim": "latest tag osi-0.1.1-rc1",
+  "evidence_url": "https://github.com/apache/ossie/releases/tag/osi-0.1.1-rc1",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-tap-dormant",
+  "date": "2026-10-15",
+  "record_id": "tap",
+  "kind": "dormant",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "No push since 2025-10-28 (over 180 days)",
+  "evidence_url": "https://github.com/visa/trusted-agent-protocol",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-agora-protocol-dormant",
+  "date": "2026-10-15",
+  "record_id": "agora-protocol",
+  "kind": "dormant",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "No push since 2025-03-04 (over 180 days)",
+  "evidence_url": "https://github.com/agora-protocol/agora-protocol.github.io",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-s402-status",
+  "date": "2026-10-15",
+  "record_id": "s402",
+  "kind": "status",
+  "field": "native_status",
+  "from": "Draft wire-format specification, actively developed (commits as recent as 2026-09-04)",
+  "to": "Archived repository (observed 2026-10-16)",
+  "claim": "Repository archived by its owner",
+  "evidence_url": "https://github.com/s402-protocol/core/releases/tag/v0.8.0",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-slim-version",
+  "date": "2026-10-15",
+  "record_id": "slim",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "label": "draft-mpsb-agntcy-slim-02",
+   "date": "2026-07-19"
+  },
+  "to": {
+   "label": "slimctl-v3.4.2",
+   "date": "2026-10-15"
+  },
+  "claim": "slimctl-v3.4.2 released 2026-10-15",
+  "evidence_url": "https://github.com/agntcy/slim/releases/tag/slimctl-v3.4.2",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-agent-permissions-json-dormant",
+  "date": "2026-10-15",
+  "record_id": "agent-permissions-json",
+  "kind": "dormant",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "No push since 2025-12-10 (over 180 days)",
+  "evidence_url": "https://github.com/las-wg/agent-permissions.json",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-mcp-apps-version-2",
+  "date": "2026-10-15",
+  "record_id": "mcp-apps",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "label": "spec 2026-01-26; SDK ext-apps v2.0.3",
+   "date": "2026-09-25"
+  },
+  "to": {
+   "label": "v2.0.3",
+   "date": "2026-09-25"
+  },
+  "claim": "v2.0.3 released 2026-09-25",
+  "evidence_url": "https://github.com/modelcontextprotocol/ext-apps/releases/tag/v2.0.3",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-agents-json-version",
+  "date": "2026-10-15",
+  "record_id": "agents-json",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": "2025-03",
+   "label": "0.1.0"
+  },
+  "to": {
+   "label": "resend",
+   "date": "2025-02-09"
+  },
+  "claim": "resend released 2025-02-09",
+  "evidence_url": "https://github.com/wild-card-ai/agents-json/releases/tag/resend",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-agents-json-dormant-2",
+  "date": "2026-10-15",
+  "record_id": "agents-json",
+  "kind": "dormant",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "No push since 2025-08-21 (over 180 days)",
+  "evidence_url": "https://github.com/wild-card-ai/agents-json/releases/tag/resend",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-agent-connect-protocol-dormant",
+  "date": "2026-10-15",
+  "record_id": "agent-connect-protocol",
+  "kind": "dormant",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "No push since 2025-05-23 (over 180 days)",
+  "evidence_url": "https://github.com/agntcy/acp-spec",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-agent-protocol-aief-version",
+  "date": "2026-10-15",
+  "record_id": "agent-protocol-aief",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": null,
+   "label": "unversioned OpenAPI spec (schemas/openapi.yml)"
+  },
+  "to": {
+   "label": "js-sdk-v1.0.5",
+   "date": "2024-04-02"
+  },
+  "claim": "js-sdk-v1.0.5 released 2024-04-02",
+  "evidence_url": "https://github.com/agi-inc/agent-protocol/releases/tag/js-sdk-v1.0.5",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-agent-protocol-aief-dormant",
+  "date": "2026-10-15",
+  "record_id": "agent-protocol-aief",
+  "kind": "dormant",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "No push since 2025-04-08 (over 180 days)",
+  "evidence_url": "https://github.com/agi-inc/agent-protocol/releases/tag/js-sdk-v1.0.5",
+  "detector": "github@1.0",
+  "commit": null
  }
 ]

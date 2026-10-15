@@ -1,5 +1,38 @@
 [
  {
+  "date": "2024-04-02",
+  "title": "Agent Protocol js-sdk-v1.0.5 released",
+  "url": "https://github.com/agi-inc/agent-protocol/releases/tag/js-sdk-v1.0.5",
+  "summary": "js-sdk-v1.0.5 released 2024-04-02",
+  "related": [
+   "agent-protocol-aief"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
+  "date": "2025-02-09",
+  "title": "agents.json resend released",
+  "url": "https://github.com/wild-card-ai/agents-json/releases/tag/resend",
+  "summary": "resend released 2025-02-09",
+  "related": [
+   "agents-json"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
+  "date": "2025-08-21",
+  "title": "Agent Communication Protocol v1.0.3 released",
+  "url": "https://github.com/i-am-bee/acp/releases/tag/v1.0.3",
+  "summary": "v1.0.3 released 2025-08-21",
+  "related": [
+   "agent-communication-protocol"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
   "date": "2025-10-14",
   "title": "Visa introduces the Trusted Agent Protocol",
   "url": "https://investor.visa.com/news/news-details/2025/Visa-Introduces-Trusted-Agent-Protocol-An-Ecosystem-Led-Framework-for-AI-Commerce/default.aspx",
@@ -44,6 +77,28 @@
    "aauth"
   ],
   "kind": "expiry",
+  "detector": "rules@1.0"
+ },
+ {
+  "date": "2026-04-28",
+  "title": "AP2 Checkout Mandate v0.2.0 released",
+  "url": "https://github.com/google-agentic-commerce/AP2/releases/tag/v0.2.0",
+  "summary": "v0.2.0 released 2026-04-28",
+  "related": [
+   "ap2-checkout-mandate"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
+  "date": "2026-06-01",
+  "title": "Agent Identity and Discovery packages/aid-go/v2.1.1 released",
+  "url": "https://github.com/agentcommunity/agent-identity-discovery/releases/tag/packages/aid-go/v2.1.1",
+  "summary": "packages/aid-go/v2.1.1 released 2026-06-01",
+  "related": [
+   "aid"
+  ],
+  "kind": "version",
   "detector": "rules@1.0"
  },
  {
@@ -131,6 +186,17 @@
   ]
  },
  {
+  "date": "2026-08-25",
+  "title": "Universal Commerce Protocol v2026-08-25 released",
+  "url": "https://github.com/Universal-Commerce-Protocol/ucp/releases/tag/v2026-08-25",
+  "summary": "v2026-08-25 released 2026-08-25",
+  "related": [
+   "ucp"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
   "date": "2026-08-26",
   "title": "Agentic Resource Discovery v0.91 published",
   "url": "https://raw.githubusercontent.com/ards-project/ard-spec/main/spec/ard.md",
@@ -181,6 +247,17 @@
   "detector": "phase-a@2026-10-15"
  },
  {
+  "date": "2026-09-09",
+  "title": "Machine Payments Protocol spec-artifacts-fe0d414f3d71469d5784a2ce973aa7269ee0c8b7 released",
+  "url": "https://github.com/tempoxyz/mpp-specs/releases/tag/spec-artifacts-fe0d414f3d71469d5784a2ce973aa7269ee0c8b7",
+  "summary": "spec-artifacts-fe0d414f3d71469d5784a2ce973aa7269ee0c8b7 released 2026-09-09",
+  "related": [
+   "mpp"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
   "date": "2026-09-14",
   "title": "AIPREF Vocabulary: revision -08 published",
   "url": "https://datatracker.ietf.org/doc/html/draft-ietf-aipref-vocab-08",
@@ -226,6 +303,17 @@
   "detector": "phase-a@2026-10-15"
  },
  {
+  "date": "2026-09-24",
+  "title": "llms.txt 0.0.7 released",
+  "url": "https://github.com/AnswerDotAI/llms-txt/releases/tag/0.0.7",
+  "summary": "0.0.7 released 2026-09-24",
+  "related": [
+   "llms-txt"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
   "date": "2026-09-25",
   "title": "MCP Apps SDK v2.0.3",
   "url": "https://github.com/modelcontextprotocol/ext-apps/releases",
@@ -258,6 +346,17 @@
   ],
   "kind": "status",
   "detector": "phase-a@2026-10-15"
+ },
+ {
+  "date": "2026-09-25",
+  "title": "MCP Apps v2.0.3 released",
+  "url": "https://github.com/modelcontextprotocol/ext-apps/releases/tag/v2.0.3",
+  "summary": "v2.0.3 released 2026-09-25",
+  "related": [
+   "mcp-apps"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
  },
  {
   "date": "2026-10-01",
@@ -305,6 +404,17 @@
   "detector": "phase-a@2026-10-15"
  },
  {
+  "date": "2026-10-08",
+  "title": "A2UI (Agent to UI) Protocol python/a2ui-agent-sdk/v0.8.0 released",
+  "url": "https://github.com/a2ui-project/a2ui/releases/tag/python/a2ui-agent-sdk/v0.8.0",
+  "summary": "python/a2ui-agent-sdk/v0.8.0 released 2026-10-08",
+  "related": [
+   "a2ui"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
   "date": "2026-10-09",
   "title": "ACP v1.11.0",
   "url": "https://github.com/agentclientprotocol/agent-client-protocol/blob/main/CHANGELOG.md",
@@ -325,6 +435,17 @@
   ],
   "kind": "candidate",
   "detector": "phase-a@2026-10-15"
+ },
+ {
+  "date": "2026-10-09",
+  "title": "Agent Client Protocol schema-v1.25.0 released",
+  "url": "https://github.com/agentclientprotocol/agent-client-protocol/releases/tag/schema-v1.25.0",
+  "summary": "schema-v1.25.0 released 2026-10-09",
+  "related": [
+   "agent-client-protocol"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
  },
  {
   "date": "2026-10-12",
@@ -349,6 +470,17 @@
   "detector": "rules@1.0"
  },
  {
+  "date": "2026-10-13",
+  "title": "Agent-User Interaction Protocol release/2026-10-13 released",
+  "url": "https://github.com/ag-ui-protocol/ag-ui/releases/tag/release/2026-10-13",
+  "summary": "release/2026-10-13 released 2026-10-13",
+  "related": [
+   "ag-ui"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
   "date": "2026-10-15",
   "title": "Agent Name Service v2 (ANS) draft expired",
   "url": "https://datatracker.ietf.org/doc/draft-narajala-courtney-ansv2/",
@@ -357,6 +489,50 @@
    "ans"
   ],
   "kind": "expiry",
+  "detector": "rules@1.0"
+ },
+ {
+  "date": "2026-10-15",
+  "title": "Secure Low-Latency Interactive Messaging slimctl-v3.4.2 released",
+  "url": "https://github.com/agntcy/slim/releases/tag/slimctl-v3.4.2",
+  "summary": "slimctl-v3.4.2 released 2026-10-15",
+  "related": [
+   "slim"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "x402 v1 released",
+  "url": "https://github.com/x402-foundation/x402/releases/tag/v1",
+  "summary": "latest tag v1",
+  "related": [
+   "x402"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "Apache Ossie (formerly Open Semantic Interchange) osi-0.1.1-rc1 released",
+  "url": "https://github.com/apache/ossie/releases/tag/osi-0.1.1-rc1",
+  "summary": "latest tag osi-0.1.1-rc1",
+  "related": [
+   "osi"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "s402 repository archived",
+  "url": "https://github.com/s402-protocol/core/releases/tag/v0.8.0",
+  "summary": "Repository archived by its owner",
+  "related": [
+   "s402"
+  ],
+  "kind": "status",
   "detector": "rules@1.0"
  }
 ]
