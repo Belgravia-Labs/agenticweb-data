@@ -81,5 +81,28 @@
     {"id":"review-due","label":"review due","definition":"Past cadence; not yet re-checked."},
     {"id":"stale","label":"stale","definition":"Past twice the cadence."},
     {"id":"source-unavailable","label":"source unavailable","definition":"Primary source no longer resolves."}
+  ],
+  "use_cases": [
+    {"id":"discover-my-api","label":"Let agents discover my API or service","definition":"Publish where an agent can find what an origin offers."},
+    {"id":"expose-tools-to-agents","label":"Expose tools to agents","definition":"Let a model call functions or actions you host."},
+    {"id":"let-agents-act-on-my-site","label":"Let agents act on my website","definition":"Forms, bookings and tasks performed by agents in a browser or via a page-level API."},
+    {"id":"serve-content-to-agents","label":"Serve readable content to agents","definition":"Give agents a machine-friendly version of pages and documents."},
+    {"id":"prove-agent-identity","label":"Prove an agent's identity","definition":"Let a server verify which agent, operator or workload is calling."},
+    {"id":"delegate-user-authority","label":"Delegate a user's authority to an agent","definition":"Scoped, revocable permission for an agent to act for a person."},
+    {"id":"control-ai-crawling","label":"Control AI crawling and training use","definition":"State what automated systems may do with your content."},
+    {"id":"accept-agent-payments","label":"Accept payments from agents","definition":"Charge an agent per request or per purchase."},
+    {"id":"agent-checkout","label":"Let agents buy on behalf of a person","definition":"Mandates, carts and checkout flows for agent purchases."},
+    {"id":"agent-to-agent-messaging","label":"Let agents talk to other agents","definition":"Discover, message and delegate between independent agents."},
+    {"id":"agent-naming","label":"Name and resolve agents","definition":"Stable names or records that resolve to an agent's endpoint."},
+    {"id":"render-agent-ui","label":"Render agent output as a user interface","definition":"Structured UI that a client renders from an agent."},
+    {"id":"audit-agent-actions","label":"Audit what an agent did","definition":"Tamper-evident records of actions and the authority behind them."},
+    {"id":"attribute-agent-traffic","label":"Attribute and measure agent traffic","definition":"Know which agents visited and what they did."},
+    {"id":"describe-agent-capabilities","label":"Describe an agent's capabilities","definition":"Cards, manifests and schemas that say what an agent can do."}
+  ],
+  "audience": [
+    {"id":"site-owner","label":"Site or API owner","definition":"Runs a website, API or shop that agents will use."},
+    {"id":"agent-builder","label":"Agent builder","definition":"Builds agents or the frameworks they run on."},
+    {"id":"platform","label":"Platform or infrastructure","definition":"CDNs, identity providers, payment networks, registries."},
+    {"id":"standards-body","label":"Standards and policy","definition":"People shaping or tracking the specifications themselves."}
   ]
 }
