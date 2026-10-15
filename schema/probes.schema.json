@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "propertyNames": {"pattern": "^[a-z0-9-]+$"},
+  "additionalProperties": {
+    "oneOf": [
+      {"type": "object", "required": ["path", "expect", "note"], "additionalProperties": false,
+       "properties": {
+         "path": {"type": "string", "pattern": "^/[^\\s{}]*$"},
+         "expect": {"type": "object", "additionalProperties": false,
+           "properties": {"status": {"type": "integer", "minimum": 100, "maximum": 599},
+                          "content_type": {"type": "string", "minLength": 1},
+                          "json_keys": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+                          "text_match": {"type": "string", "minLength": 1},
+                          "header": {"type": "string", "minLength": 1}}},
+         "note": {"type": "string", "minLength": 10}}},
+      {"type": "object", "required": ["skip", "note"], "additionalProperties": false,
+       "properties": {"skip": {"enum": ["needs-credentials", "not-http", "no-fixed-path", "client-side", "superseded", "unsafe-post"]},
+                      "note": {"type": "string", "minLength": 10}}}
+    ]
+  }
+}

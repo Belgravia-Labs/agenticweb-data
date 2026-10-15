@@ -1,0 +1,20 @@
+name: Propose a new standard
+description: A protocol, spec or convention agents or agent-ready sites use, with a public normative text.
+labels: [candidate]
+body:
+  - type: input
+    id: name
+    attributes: { label: Name and acronym }
+    validations: { required: true }
+  - type: input
+    id: spec_url
+    attributes: { label: URL of the normative text (spec, draft, RFC) }
+    validations: { required: true }
+  - type: dropdown
+    id: step
+    attributes: { label: Lifecycle step, options: [discover, identify, permit, read, act, coordinate, pay, present, account] }
+    validations: { required: true }
+  - type: textarea
+    id: evidence
+    attributes: { label: Evidence, description: "Who publishes it, who implements it, dated URLs. Products, SDKs and papers are not standards." }
+    validations: { required: true }

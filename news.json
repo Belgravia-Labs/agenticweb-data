@@ -1,0 +1,139 @@
+[
+ {
+  "date": "2026-09-04",
+  "title": "WebMCP published as a Draft Community Group Report",
+  "url": "https://webmachinelearning.github.io/webmcp/",
+  "summary": "The W3C Web Machine Learning Community Group published a 4 September 2026 draft of WebMCP, the browser API for pages to expose tools to agents.",
+  "related": [
+   "webmcp"
+  ]
+ },
+ {
+  "date": "2026-09-01",
+  "title": "IETF webbotauth working group adopts the HTTP signature draft",
+  "url": "https://datatracker.ietf.org/doc/draft-ietf-webbotauth-httpsig-protocol/",
+  "summary": "draft-ietf-webbotauth-httpsig-protocol-00 replaced the individual Web Bot Auth draft as a working-group document.",
+  "related": [
+   "webbotauth",
+   "http-message-signatures"
+  ]
+ },
+ {
+  "date": "2026-08-26",
+  "title": "Agentic Resource Discovery v0.91 published",
+  "url": "https://raw.githubusercontent.com/ards-project/ard-spec/main/spec/ard.md",
+  "summary": "The ARD specification reached v0.91, with the manifest served at /.well-known/ard.json.",
+  "related": [
+   "ard"
+  ]
+ },
+ {
+  "date": "2026-08-25",
+  "title": "Universal Commerce Protocol documentation released",
+  "url": "https://ucp.dev/documentation/core-concepts/",
+  "summary": "The UCP site published its core-concepts documentation, dated 25 August 2026, with Shopping, Lodging and Food tracks.",
+  "related": [
+   "ucp"
+  ]
+ },
+ {
+  "date": "2026-08-12",
+  "title": "IAB Tech Lab publishes ARTF v1.0",
+  "url": "https://iabtechlab.com/standards/artf/",
+  "summary": "The Agentic RTB Framework reached v1.0 and IAB Tech Lab reported production use by unnamed companies.",
+  "related": [
+   "artf"
+  ]
+ },
+ {
+  "date": "2026-08-07",
+  "title": "Chrome documents a WebMCP origin trial",
+  "url": "https://developer.chrome.com/docs/ai/webmcp",
+  "summary": "Chrome's developer documentation described a WebMCP origin trial running from Chrome 149.",
+  "related": [
+   "webmcp"
+  ]
+ },
+ {
+  "date": "2026-07-30",
+  "title": "IAB Tech Lab releases AAMP 2.3",
+  "url": "https://iabtechlab.com/press-releases/iab-tech-lab-releases-aamp-2-3-bringing-enterprise-grade-infrastructure-and-privacy-diligence-to-agentic-advertising/",
+  "summary": "AAMP 2.3 added infrastructure and privacy-diligence components contributed by AWS, HyperMindZ, Mixpeek, SafeGuard Privacy and Adform.",
+  "related": [
+   "aamp"
+  ]
+ },
+ {
+  "date": "2026-07-28",
+  "title": "Model Context Protocol 2026-07-28 specification revision",
+  "url": "https://modelcontextprotocol.io/specification/2026-07-28/index",
+  "summary": "MCP published a new dated specification revision, the current version of the protocol.",
+  "related": [
+   "mcp"
+  ]
+ },
+ {
+  "date": "2026-07-14",
+  "title": "x402 Foundation becomes operational under the Linux Foundation",
+  "url": "https://x402.org/announcement",
+  "summary": "The Linux Foundation announced the operational launch of the x402 Foundation to standardise internet-native payments for agents.",
+  "related": [
+   "x402"
+  ]
+ },
+ {
+  "date": "2026-06-26",
+  "title": "First Web Bot Auth HTTP signature draft published at the IETF",
+  "url": "https://datatracker.ietf.org/doc/html/draft-meunier-webbotauth-httpsig-protocol-00",
+  "summary": "draft-meunier-webbotauth-httpsig-protocol-00 set out how a bot signs requests with RFC 9421 HTTP message signatures.",
+  "related": [
+   "webbotauth",
+   "http-message-signatures"
+  ]
+ },
+ {
+  "date": "2026-06-17",
+  "title": "Google announces the Agentic Resource Discovery specification",
+  "url": "https://developers.googleblog.com/en/announcing-the-agentic-resource-discovery-specification/",
+  "summary": "Google's developer blog announced ARD, a well-known manifest listing the resources a site offers agents.",
+  "related": [
+   "ard"
+  ]
+ },
+ {
+  "date": "2026-04-17",
+  "title": "Agentic Commerce Protocol dated specification 2026-04-17",
+  "url": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
+  "summary": "ACP published its 2026-04-17 dated specification, maintained by OpenAI, Stripe and Meta.",
+  "related": [
+   "agentic-commerce-protocol"
+  ]
+ },
+ {
+  "date": "2026-03-05",
+  "title": "Mastercard announces Verifiable Intent",
+  "url": "https://www.mastercard.com/global/en/news-and-trends/stories/2026/verifiable-intent.html",
+  "summary": "Mastercard set out Verifiable Intent, a credential format for proving what a user asked an agent to buy.",
+  "related": [
+   "vi"
+  ]
+ },
+ {
+  "date": "2026-01-27",
+  "title": "Open Semantic Interchange specifications finalised",
+  "url": "https://www.snowflake.com/en/blog/open-semantic-interchanges-specs-finalized/",
+  "summary": "Snowflake reported that the Open Semantic Interchange specifications had been finalised by the initiative's partners.",
+  "related": [
+   "osi"
+  ]
+ },
+ {
+  "date": "2025-10-14",
+  "title": "Visa introduces the Trusted Agent Protocol",
+  "url": "https://investor.visa.com/news/news-details/2025/Visa-Introduces-Trusted-Agent-Protocol-An-Ecosystem-Led-Framework-for-AI-Commerce/default.aspx",
+  "summary": "Visa announced the Trusted Agent Protocol, a framework for merchants to recognise and trust shopping agents.",
+  "related": [
+   "tap"
+  ]
+ }
+]

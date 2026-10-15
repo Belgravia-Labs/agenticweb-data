@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["steps","parties","form","track","scope","phase","implementation","adoption","evidence","freshness"],
+  "properties": {
+    "steps": {"type":"array","minItems":9,"maxItems":9,"items":{
+      "type":"object","required":["id","order","label","question","analog","definition"],
+      "properties":{"id":{"type":"string","pattern":"^[a-z]+$"},"order":{"type":"integer"},"label":{"type":"string"},
+        "question":{"type":"string"},"analog":{"type":"string"},"definition":{"type":"string"}}}}
+  },
+  "additionalProperties": {"type":"array","items":{"type":"object","required":["id","label","definition"],
+    "properties":{"id":{"type":"string","pattern":"^[A-Za-z0-9-]+$"},"label":{"type":"string"},"definition":{"type":"string"}}}}
+}

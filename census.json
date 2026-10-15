@@ -1,0 +1,430 @@
+{
+ "generated": "2026-09-04",
+ "origins": {
+  "2s.io": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "agenticresourcediscovery.org": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "airtable.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "amplitude.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "anthropic.com": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "api.mcp.github.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "apify.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "aws.amazon.com": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "bird.com": {
+   "absent": [],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "cisco.com": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "clickhouse.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "cloudflare.com": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "databricks.com": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "desvela.dev": {
+   "absent": [],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "developers.cloudflare.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "eodly.io": {
+   "absent": [],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "fly.io": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "getlago.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "github.com": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "godaddy.com": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "google.com": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "gtmetrix.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "hostinger.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "huggingface.co": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "img.ly": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "loops.so": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "microsoft.com": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "neon.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "neuronto.com": {
+   "absent": [],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "nextjs.org": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "notion.so": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "nvidia.com": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "openai.com": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "padlet.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "publica.la": {
+   "absent": [],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "quicknode.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "railway.com": {
+   "absent": [],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "roboflow.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "rudderstack.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "salesforce.com": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "servicenow.com": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "shopify.com": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "slack.com": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "snowflake.com": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "speakeasy.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "stripe.com": {
+   "absent": [
+    "ard",
+    "ai-catalog-well-known-file"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": []
+  },
+  "surrealdb.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "telnyx.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "vercel.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  },
+  "zapier.com": {
+   "absent": [
+    "ard"
+   ],
+   "checked": "2026-09-04T00:00:00Z",
+   "found": [
+    "ai-catalog-well-known-file"
+   ]
+  }
+ }
+}
