@@ -11657,7 +11657,7 @@
    "label": "-00",
    "date": "2026-09-28"
   },
-  "spec_url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-09-28-aauth-rich-resource-requests",
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-hardt-aauth-r3-00",
   "discovery": {
    "mechanism": "Resource advertises supported operation vocabularies as r3_vocabularies; a resource token carries r3_uri and r3_s256 pointing at the R3 document",
    "path": null
@@ -11692,6 +11692,7 @@
   ],
   "pairs_with": [
    "aauth",
+   "aauth-hardt",
    "mcp"
   ],
   "prerequisites": [
@@ -11703,12 +11704,16 @@
    {
     "date": "2026-10-16",
     "note": "auto-drafted candidate from exa (https://insights.bostonidentity.com/research/ietf-datatracker-2026-09-28-aauth-rich-resource-requests)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "spec_url moved from the Boston Identity write-up to the Internet-Draft draft-hardt-aauth-r3-00; ietf watch added"
    }
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-09-28-aauth-rich-resource-requests"
+    "type": "ietf",
+    "doc": "draft-hardt-aauth-r3"
    }
   ]
  },

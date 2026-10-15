@@ -104,6 +104,13 @@
   ],
   "validators": []
  },
+ "aagv": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
  "aamp": {
   "adopters": [
    {
@@ -221,6 +228,20 @@
   "validators": []
  },
  "aauth-hardt": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "aauth-r3": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "acip": {
   "implementations": [],
   "sdks": [],
   "validators": [],
@@ -429,6 +450,13 @@
   "sdks": [],
   "validators": []
  },
+ "agent-channel-fan-out": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
  "agent-client-protocol": {
   "adopters": [],
   "implementations": [
@@ -526,6 +554,20 @@
   "sdks": [],
   "validators": []
  },
+ "agent-delegation-receipts": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "agent-identity-document": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
  "agent-permissions-json": {
   "adopters": [],
   "implementations": [
@@ -547,6 +589,13 @@
     "url": "https://agent-ready.dev/agent-permissions-validator"
    }
   ]
+ },
+ "agent-principal-binding": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
  },
  "agent-protocol-aief": {
   "adopters": [],
@@ -619,6 +668,13 @@
   "registries": [],
   "sdks": [],
   "validators": []
+ },
+ "agentic-payments-gating-model": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
  },
  "agents-json": {
   "adopters": [
@@ -951,6 +1007,13 @@
   "registries": [],
   "sdks": [],
   "validators": []
+ },
+ "aip-delegation-chain": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
  },
  "aipref-content-usage-attachment": {
   "adopters": [],
@@ -1362,6 +1425,13 @@
   "sdks": [],
   "validators": []
  },
+ "credential-delegation-protocol-wimse": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
  "daap": {
   "adopters": [],
   "implementations": [
@@ -1390,6 +1460,13 @@
   "registries": [],
   "sdks": [],
   "validators": []
+ },
+ "dawn-agent-discovery-framework": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
  },
  "dns-aid": {
   "adopters": [
@@ -1555,6 +1632,13 @@
     "url": "https://xaa.dev"
    }
   ]
+ },
+ "knowledge-linkset": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
  },
  "l402": {
   "adopters": [
@@ -1899,6 +1983,13 @@
    }
   ],
   "validators": []
+ },
+ "mcp-dns-discovery": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
  },
  "mcp-registry": {
   "implementations": [],
@@ -2318,6 +2409,13 @@
     "url": "https://raw.githubusercontent.com/s402-protocol/core/main/README.md"
    }
   ]
+ },
+ "scitt-ai-agent-execution": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
  },
  "slim": {
   "adopters": [
