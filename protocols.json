@@ -252,6 +252,10 @@
    {
     "date": "2026-10-16",
     "note": "A2A v1.0.1 released on 2026-05-28 (v1.0.0 on 2026-03-12); governance is the Linux Foundation with a Technical Steering Committee of AWS, Cisco, Google, IBM Research, Microsoft, Salesforce, SAP and ServiceNow"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "a2a",
@@ -300,7 +304,25 @@
     "type": "pypi",
     "pkg": "a2a-sdk"
    }
-  ]
+  ],
+  "use_cases": [
+   "agent-to-agent-messaging",
+   "describe-agent-capabilities",
+   "discover-my-api"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "mcp",
+   "x402",
+   "ap2",
+   "mcp-registry",
+   "agent-identity-document"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "ACP",
@@ -2793,6 +2815,10 @@
    {
     "date": "2026-09-06",
     "note": "verified against w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240510/"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "tdmrep",
@@ -2832,7 +2858,22 @@
     "selector": "main",
     "cadence": "weekly"
    }
-  ]
+  ],
+  "use_cases": [
+   "control-ai-crawling"
+  ],
+  "audience": [
+   "site-owner",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "ai-crawler-tokens-robots",
+   "aipref-vocabulary",
+   "aipref-content-usage-attachment",
+   "cloudflare-content-signals-policy",
+   "rsl"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "",
@@ -7808,6 +7849,10 @@
    {
     "date": "2026-10-16",
     "note": "No push since 2025-12-10 (over 180 days)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "agent-permissions-json",
@@ -7846,7 +7891,23 @@
     "repo": "las-wg/agent-permissions.json",
     "mode": "release"
    }
-  ]
+  ],
+  "use_cases": [
+   "let-agents-act-on-my-site",
+   "control-ai-crawling"
+  ],
+  "audience": [
+   "site-owner",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "ai-crawler-tokens-robots",
+   "aipref-vocabulary",
+   "cloudflare-content-signals-policy",
+   "agents-json",
+   "webmcp"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "",
