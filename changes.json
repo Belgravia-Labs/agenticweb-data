@@ -1186,5 +1186,56 @@
   "evidence_url": "https://datatracker.ietf.org/doc/html/draft-king-yew-choo-agentic-payments-01",
   "detector": "sonnet@candidate-record-v1",
   "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
+ },
+ {
+  "id": "q-2026-10-16-web-agent-protocol-dormant-2",
+  "date": "2026-10-16",
+  "record_id": "web-agent-protocol",
+  "kind": "dormant",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "No push since 2025-06-19 (over 180 days)",
+  "evidence_url": "https://github.com/OTA-Tech-AI/web-agent-protocol/releases/tag/wap-replay-tool-1.0.0",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-mcp-registry-version",
+  "date": "2026-10-16",
+  "record_id": "mcp-registry",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "label": "API v0.1 (frozen, preview)",
+   "date": null
+  },
+  "to": {
+   "label": "v1.8.1",
+   "date": "2026-08-06"
+  },
+  "claim": "v1.8.1 released 2026-08-06",
+  "evidence_url": "https://github.com/modelcontextprotocol/registry/releases/tag/v1.8.1",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-mcp-server-cards-version",
+  "date": "2026-10-16",
+  "record_id": "mcp-server-cards",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "label": "SEP-2127 (Final)",
+   "date": "2026-10-06"
+  },
+  "to": {
+   "label": "2026-07-28",
+   "date": "2026-10-06"
+  },
+  "claim": "2026-07-28 released 2026-10-06",
+  "evidence_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/releases/tag/2026-07-28",
+  "detector": "github@1.0",
+  "commit": null
  }
 ]

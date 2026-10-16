@@ -115,6 +115,17 @@
   ]
  },
  {
+  "date": "2026-08-06",
+  "title": "Official MCP Registry v1.8.1 released",
+  "url": "https://github.com/modelcontextprotocol/registry/releases/tag/v1.8.1",
+  "summary": "v1.8.1 released 2026-08-06",
+  "related": [
+   "mcp-registry"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
   "date": "2026-08-07",
   "title": "Chrome documents a WebMCP origin trial",
   "url": "https://developer.chrome.com/docs/ai/webmcp",
@@ -347,6 +358,17 @@
   ],
   "kind": "status",
   "detector": "phase-a@2026-10-15"
+ },
+ {
+  "date": "2026-10-06",
+  "title": "MCP Server Cards (SEP-2127) 2026-07-28 released",
+  "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/releases/tag/2026-07-28",
+  "summary": "2026-07-28 released 2026-10-06",
+  "related": [
+   "mcp-server-cards"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
  },
  {
   "date": "2026-10-09",

@@ -9435,6 +9435,17 @@
     "http_status": 200,
     "content_sha256": "9ffb247059b938aff92086a8a53b301919aae562ce2cbcb96db49e27e4452e82",
     "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "No push since 2025-06-19 (over 180 days)",
+    "label": "REPORTED",
+    "url": "https://github.com/OTA-Tech-AI/web-agent-protocol/releases/tag/wap-replay-tool-1.0.0",
+    "date": "2025-06-01",
+    "retrieved_at": "2026-10-16T00:32:28Z",
+    "source_type": "issuer",
+    "http_status": 200,
+    "content_sha256": "8f50e13f485789cc5c82255fc1d574348e8e2ed23225561aa1edb36c3fa746ab",
+    "detector": "github@1.0"
    }
   ],
   "form": "document-format",
@@ -9460,6 +9471,10 @@
    {
     "date": "2026-10-16",
     "note": "use-case tags (auto)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "No push since 2025-06-19 (over 180 days)"
    }
   ],
   "id": "web-agent-protocol",
@@ -10209,6 +10224,17 @@
     "http_status": 200,
     "content_sha256": "9ac1aadeb8ae4412681c2468229217565eb6c792282ba4669d72692dca118641",
     "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "v1.8.1 released 2026-08-06",
+    "label": "VERIFIED",
+    "url": "https://github.com/modelcontextprotocol/registry/releases/tag/v1.8.1",
+    "date": "2026-08-06",
+    "retrieved_at": "2026-10-16T00:32:32Z",
+    "source_type": "issuer",
+    "http_status": 200,
+    "content_sha256": "c08fbeb8dbc4fafb4184c24ede91d2b9fcf0a46d1f0066d90837a36985da1764",
+    "detector": "github@1.0"
    }
   ],
   "form": "endpoint",
@@ -10222,6 +10248,10 @@
    {
     "date": "2026-10-16",
     "note": "use-case tags (auto)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "version v1.8.1 (watcher)"
    }
   ],
   "id": "mcp-registry",
@@ -10263,8 +10293,8 @@
    "describe-agent-capabilities"
   ],
   "version": {
-   "label": "API v0.1 (frozen, preview)",
-   "date": null
+   "label": "v1.8.1",
+   "date": "2026-08-06"
   },
   "watch": [
    {
@@ -10915,6 +10945,17 @@
     "http_status": 200,
     "content_sha256": "ed322054636ca39e9828acb238d5fa99fb59f3bb05122679893b7fe70b4a213c",
     "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "2026-07-28 released 2026-10-06",
+    "label": "VERIFIED",
+    "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/releases/tag/2026-07-28",
+    "date": "2026-10-16",
+    "retrieved_at": "2026-10-16T00:32:36Z",
+    "source_type": "issuer",
+    "http_status": 200,
+    "content_sha256": "88630031324ae0732729241846dc8127cb43db3b1ac83d70661cc94a1b89bf8e",
+    "detector": "github@1.0"
    }
   ],
   "form": "document-format",
@@ -10928,6 +10969,10 @@
    {
     "date": "2026-10-16",
     "note": "use-case tags (auto)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "version 2026-07-28 (watcher)"
    }
   ],
   "id": "mcp-server-cards",
@@ -10969,7 +11014,7 @@
    "expose-tools-to-agents"
   ],
   "version": {
-   "label": "SEP-2127 (Final)",
+   "label": "2026-07-28",
    "date": "2026-10-06"
   },
   "watch": [
