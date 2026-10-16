@@ -1237,5 +1237,37 @@
   "evidence_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/releases/tag/2026-07-28",
   "detector": "github@1.0",
   "commit": "a777470eae79c475313169f8056fc11037c20c3e"
+ },
+ {
+  "id": "q-2026-10-16-aauth-hardt-status",
+  "date": "2026-10-16",
+  "record_id": "aauth-hardt",
+  "kind": "status",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Companion draft draft-hardt-aauth-headers-00 expired on 2026-10-04; the record follows draft-hardt-oauth-aauth-protocol",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-headers/",
+  "detector": "ietf@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-16-aauth-r3-revision",
+  "date": "2026-10-16",
+  "record_id": "aauth-r3",
+  "kind": "revision",
+  "field": "version",
+  "from": {
+   "label": "-00",
+   "date": "2026-09-28"
+  },
+  "to": {
+   "label": "draft-hardt-aauth-r3-00",
+   "date": "2026-09-28"
+  },
+  "claim": "Datatracker shows draft-hardt-aauth-r3-00, dated 2026-09-28, expires 2027-04-01",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-r3/",
+  "detector": "ietf@1.0",
+  "commit": null
  }
 ]

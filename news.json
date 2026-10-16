@@ -304,6 +304,17 @@
   "detector": "rules@1.0"
  },
  {
+  "date": "2026-09-28",
+  "title": "AAuth Rich Resource Requests: revision -00 published",
+  "url": "https://datatracker.ietf.org/doc/html/draft-hardt-aauth-r3-00",
+  "summary": "Datatracker shows draft-hardt-aauth-r3-00, dated 2026-09-28, expires 2027-04-01",
+  "related": [
+   "aauth-r3"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
   "date": "2026-10-01",
   "title": "x402 Foundation appoints executive director",
   "url": "https://www.linuxfoundation.org/press/linux-foundation-appoints-michael-hursta-as-executive-director-of-the-x402-foundation",
@@ -319,6 +330,17 @@
   "title": "AAuth (Hardt) draft expired",
   "url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-headers/",
   "summary": "Expired Internet-Draft (expired 2026-10-04)",
+  "related": [
+   "aauth-hardt"
+  ],
+  "kind": "expiry",
+  "detector": "rules@1.0"
+ },
+ {
+  "date": "2026-10-04",
+  "title": "AAuth (Hardt): companion draft draft-hardt-aauth-headers expired",
+  "url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-headers/",
+  "summary": "Companion draft draft-hardt-aauth-headers-00 expired on 2026-10-04; the record follows draft-hardt-oauth-aauth-protocol",
   "related": [
    "aauth-hardt"
   ],

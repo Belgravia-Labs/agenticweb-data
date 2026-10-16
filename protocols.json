@@ -10604,6 +10604,17 @@
     "http_status": 200,
     "content_sha256": "58201d0d03f1f478254c052b1e9722554e900019b4782c259d5d7336c6c9ef71",
     "detector": "ietf@1.0"
+   },
+   {
+    "claim": "Companion draft draft-hardt-aauth-headers-00 expired on 2026-10-04; the record follows draft-hardt-oauth-aauth-protocol",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-headers/",
+    "date": "2026-04-02",
+    "retrieved_at": "2026-10-16T05:02:16Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "58201d0d03f1f478254c052b1e9722554e900019b4782c259d5d7336c6c9ef71",
+    "detector": "ietf@1.0"
    }
   ],
   "form": "http-header",
@@ -10625,6 +10636,10 @@
    {
     "date": "2026-10-16",
     "note": "use-case tags (auto)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "Companion draft draft-hardt-aauth-headers-00 expired on 2026-10-04; the record follows draft-hardt-oauth-aauth-protocol"
    }
   ],
   "id": "aauth-hardt",
@@ -11709,7 +11724,7 @@
    "probe_run": null
   },
   "version": {
-   "label": "-00",
+   "label": "draft-hardt-aauth-r3-00",
    "date": "2026-09-28"
   },
   "spec_url": "https://datatracker.ietf.org/doc/html/draft-hardt-aauth-r3-00",
@@ -11729,6 +11744,17 @@
     "label": "REPORTED",
     "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-09-28-aauth-rich-resource-requests",
     "date": "2026-09-28"
+   },
+   {
+    "claim": "Datatracker shows draft-hardt-aauth-r3-00, dated 2026-09-28, expires 2027-04-01",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-r3/",
+    "date": "2026-09-28",
+    "retrieved_at": "2026-10-16T05:02:29Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "2a362a61b49b8a914872cf8258b6b7cdf1d385cc8a27b84b9fc65f24555e55f6",
+    "detector": "ietf@1.0"
    }
   ],
   "summary_md": "AAuth R3 is an individual IETF draft by Dick Hardt that extends AAuth so an agent can request named operations from a vocabulary the resource advertises, rather than scope strings. The resource describes the operations in a JSON R3 document identified by its SHA-256 hash, which the person's server shows for consent. The issuer places the granted operations and hash in the auth token, and the resource enforces from the token alone. For operations marked per-call, a single-use token is bound to the call's concrete parameters. The draft has no known implementations and defines no consent screen or revocation.",
@@ -11763,6 +11789,10 @@
    {
     "date": "2026-10-16",
     "note": "spec_url moved from the Boston Identity write-up to the Internet-Draft draft-hardt-aauth-r3-00; ietf watch added"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "revision -00 → 00 (watcher)"
    }
   ],
   "watch": [
