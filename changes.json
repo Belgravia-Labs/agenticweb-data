@@ -1281,6 +1281,6 @@
   "claim": "@ag-ui/core 1.0.3 published 2026-10-16",
   "evidence_url": "https://www.npmjs.com/package/@ag-ui/core",
   "detector": "npm@1.0",
-  "commit": null
+  "commit": "c8408d99d6f3b6d190aef664081d3f713473c2f5"
  }
 ]
