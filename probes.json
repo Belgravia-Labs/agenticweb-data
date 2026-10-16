@@ -4,11 +4,11 @@
   "expect": {
    "content_type": "json",
    "json_keys": [
-    "name",
-    "url"
-   ]
+    "name"
+   ],
+   "text_match": "\"url\"\\s*:|supportedInterfaces"
   },
-  "note": "An A2A Agent Card names the agent and its service URL."
+  "note": "An A2A Agent Card names the agent and where to reach it: a top-level url (0.3) or supportedInterfaces (1.0)."
  },
  "ucp": {
   "path": "/.well-known/ucp",
