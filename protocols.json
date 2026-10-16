@@ -7894,7 +7894,7 @@
   ],
   "id": "auth-md",
   "implementation": "multi-implementation",
-  "last_verified": "2026-09-06",
+  "last_verified": "2026-10-16",
   "name": "auth.md",
   "native_status": "Published protocol specification at auth-md.com/specification; not submitted to IETF, W3C, or any standards body",
   "origin": {
