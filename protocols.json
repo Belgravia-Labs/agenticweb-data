@@ -8829,6 +8829,10 @@
    {
     "date": "2026-09-06",
     "note": "new record added during read-step verification; reclassified to the permit step after finding the name covers multiple unrelated policy proposals plus one unrelated content-description product"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "use-case tags (auto)"
    }
   ],
   "id": "ai-txt",
@@ -8866,7 +8870,22 @@
     "type": "ietf",
     "doc": "draft-car-ai-txt-wellknown"
    }
-  ]
+  ],
+  "use_cases": [
+   "control-ai-crawling"
+  ],
+  "audience": [
+   "site-owner",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "ai-crawler-tokens-robots",
+   "aipref-vocabulary",
+   "aipref-content-usage-attachment",
+   "tdmrep",
+   "rsl"
+  ],
+  "prerequisites": []
  },
  {
   "acronym": "LMOS",
