@@ -4633,6 +4633,17 @@
     "http_status": 200,
     "content_sha256": "63bfe4fb293299171add8f390466f9c0bf2b88d2334b7da627561fdc0d6ab268",
     "detector": "github@1.0"
+   },
+   {
+    "claim": "@ag-ui/core 1.0.3 published 2026-10-16",
+    "label": "REPORTED",
+    "url": "https://www.npmjs.com/package/@ag-ui/core",
+    "date": "2026-10-16",
+    "retrieved_at": "2026-10-16T12:31:50Z",
+    "source_type": "registry",
+    "http_status": 200,
+    "content_sha256": "519f05592567369fdcd05402f5eb41581ab25f823288d0d4bb4bbb1917b15d29",
+    "detector": "npm@1.0"
    }
   ],
   "form": "endpoint",
@@ -4662,6 +4673,10 @@
    {
     "date": "2026-10-16",
     "note": "version label restored to '1.0'; the repository's latest tag (release/2026-10-13) is a package, SDK or build tag, not the specification version, so the GitHub watch no longer drives version"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "@ag-ui/core 1.0.3 published 2026-10-16"
    }
   ],
   "id": "ag-ui",

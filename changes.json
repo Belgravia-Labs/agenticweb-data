@@ -1269,5 +1269,18 @@
   "evidence_url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-r3/",
   "detector": "ietf@1.0",
   "commit": "055dd38ff94d85a530545304a49d32a1cd02d17c"
+ },
+ {
+  "id": "q-2026-10-16-ag-ui-sdk-release",
+  "date": "2026-10-16",
+  "record_id": "ag-ui",
+  "kind": "sdk-release",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "@ag-ui/core 1.0.3 published 2026-10-16",
+  "evidence_url": "https://www.npmjs.com/package/@ag-ui/core",
+  "detector": "npm@1.0",
+  "commit": null
  }
 ]
