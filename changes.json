@@ -1249,7 +1249,7 @@
   "claim": "Companion draft draft-hardt-aauth-headers-00 expired on 2026-10-04; the record follows draft-hardt-oauth-aauth-protocol",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-headers/",
   "detector": "ietf@1.0",
-  "commit": null
+  "commit": "055dd38ff94d85a530545304a49d32a1cd02d17c"
  },
  {
   "id": "q-2026-10-16-aauth-r3-revision",
@@ -1268,6 +1268,6 @@
   "claim": "Datatracker shows draft-hardt-aauth-r3-00, dated 2026-09-28, expires 2027-04-01",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-r3/",
   "detector": "ietf@1.0",
-  "commit": null
+  "commit": "055dd38ff94d85a530545304a49d32a1cd02d17c"
  }
 ]
