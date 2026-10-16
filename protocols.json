@@ -10252,6 +10252,10 @@
    {
     "date": "2026-10-16",
     "note": "version v1.8.1 (watcher)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "version label restored to 'API v0.1 (frozen, preview)'; the repository tag v1.8.1 is the registry server software release, not the Registry API version, so the GitHub watch no longer drives version"
    }
   ],
   "id": "mcp-registry",
@@ -10293,14 +10297,15 @@
    "describe-agent-capabilities"
   ],
   "version": {
-   "label": "v1.8.1",
-   "date": "2026-08-06"
+   "label": "API v0.1 (frozen, preview)",
+   "date": null
   },
   "watch": [
    {
     "type": "github",
     "repo": "modelcontextprotocol/registry",
-    "mode": "release"
+    "mode": "release",
+    "version": false
    },
    {
     "type": "page",
@@ -10973,6 +10978,10 @@
    {
     "date": "2026-10-16",
     "note": "version 2026-07-28 (watcher)"
+   },
+   {
+    "date": "2026-10-16",
+    "note": "version label restored to 'SEP-2127 (Final)'; the repository tag 2026-07-28 is the MCP specification repository's revision tag, not the Server Card SEP, so the GitHub watch no longer drives version"
    }
   ],
   "id": "mcp-server-cards",
@@ -11014,14 +11023,15 @@
    "expose-tools-to-agents"
   ],
   "version": {
-   "label": "2026-07-28",
+   "label": "SEP-2127 (Final)",
    "date": "2026-10-06"
   },
   "watch": [
    {
     "type": "github",
     "repo": "modelcontextprotocol/modelcontextprotocol",
-    "mode": "tag"
+    "mode": "tag",
+    "version": false
    }
   ],
   "prerequisites": [
