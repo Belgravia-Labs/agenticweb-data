@@ -1300,6 +1300,6 @@
   "claim": "v3.2.5 released 2026-10-16",
   "evidence_url": "https://github.com/adcontextprotocol/adcp/releases/tag/v3.2.5",
   "detector": "github@1.0",
-  "commit": null
+  "commit": "ce9d31135357dd56973a7446bc76d139dee8dd0d"
  }
 ]
