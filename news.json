@@ -603,5 +603,16 @@
   "kind": "candidate",
   "detector": "sonnet@candidate-record-v1",
   "confidence": 0.6
+ },
+ {
+  "date": "2026-10-16",
+  "title": "Ad Context Protocol v3.2.5 released",
+  "url": "https://github.com/adcontextprotocol/adcp/releases/tag/v3.2.5",
+  "summary": "v3.2.5 released 2026-10-16",
+  "related": [
+   "adcp"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
  }
 ]
