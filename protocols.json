@@ -1664,7 +1664,7 @@
   ],
   "id": "erc-8004",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "ERC-8004: Trustless Agents",
   "native_status": "Draft Standards Track ERC",
   "origin": {
@@ -1777,7 +1777,7 @@
   ],
   "id": "erc-8183",
   "implementation": "prototype",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "ERC-8183: Agentic Commerce",
   "native_status": "Draft ERC — 'This specification defines the Agentic Commerce Protocol: a job with escrowed budget...'",
   "origin": {
@@ -1883,7 +1883,7 @@
   ],
   "id": "erc-8226",
   "implementation": "prototype",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "ERC-8226 Regulated Agent Mandate",
   "native_status": "Draft, Standards Track: ERC (marked ⚠️ Draft on eips.ethereum.org)",
   "origin": {
@@ -1986,7 +1986,7 @@
   ],
   "id": "webmcp",
   "implementation": "developer-trial",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "WebMCP",
   "native_status": "Draft Community Group Report, dated 4 September 2026; explicitly \"not a W3C Standard nor on the W3C Standards Track\"",
   "origin": {
@@ -2610,7 +2610,7 @@
   ],
   "id": "aipref-content-usage-attachment",
   "implementation": "unknown",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "AIPREF Content-Usage Attachment",
   "native_status": "Internet-Draft, work in progress; \"About This Document\" note says it is to be removed before publishing as an RFC",
   "origin": {
@@ -2728,7 +2728,7 @@
   ],
   "id": "aipref-vocabulary",
   "implementation": "unknown",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "AIPREF Vocabulary",
   "native_status": "Internet-Draft, work in progress; explicitly states its contents 'DO NOT REFLECT CONSENSUS of the Working Group'",
   "origin": {
@@ -3086,7 +3086,7 @@
   ],
   "id": "webbotauth",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "Web Bot Auth HTTP Message Signatures",
   "native_status": "Active Internet-Draft, WG Document, Intended Status: Informational",
   "origin": {
@@ -3197,7 +3197,7 @@
   ],
   "id": "web-bot-auth-signature-agent-card",
   "implementation": "prototype",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "Signature Agent Card (Web Bot Auth registry)",
   "native_status": "Active Internet-Draft (individual), Intended Status: Informational",
   "origin": {
@@ -3655,7 +3655,7 @@
   ],
   "id": "dns-aid",
   "implementation": "unknown",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "DNS for AI Discovery",
   "native_status": "Internet-Draft, Standards Track intended status",
   "origin": {
@@ -3779,7 +3779,7 @@
   ],
   "id": "ans",
   "implementation": "none-found",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "Agent Name Service v2 (ANS)",
   "native_status": "Expired Internet-Draft (expired 2026-10-15)",
   "origin": {
@@ -4042,7 +4042,7 @@
   ],
   "id": "adp",
   "implementation": "prototype",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "Agent Discovery Protocol",
   "native_status": "Internet-Draft; work in progress",
   "origin": {
@@ -4174,7 +4174,7 @@
   ],
   "id": "ardp",
   "implementation": "none-found",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "Agent Registration and Discovery Protocol",
   "native_status": "Expired Internet-Draft (expired 2026-08-28)",
   "origin": {
@@ -4283,7 +4283,7 @@
   ],
   "id": "ads",
   "implementation": "shipping",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "Agent Directory Service",
   "native_status": "Internet-Draft; work in progress; canonical spec tracked at spec.dir.agntcy.org",
   "origin": {
@@ -5979,7 +5979,7 @@
   ],
   "id": "wimse",
   "implementation": "prototype",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "Workload Identity in Multi System Environments (WIMSE) Architecture",
   "native_status": "Active Internet-Draft, WG Document, Intended Status: Informational",
   "origin": {
@@ -6133,7 +6133,7 @@
   ],
   "id": "aauth",
   "implementation": "none-found",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "Agent Authorization Grant",
   "native_status": "Expired Internet-Draft (expired 2026-04-23)",
   "origin": {
@@ -6254,7 +6254,7 @@
   ],
   "id": "daap",
   "implementation": "prototype",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "OAuth Profile for Delegated AI Agent Authorization",
   "native_status": "Internet-Draft, individual submission, Active",
   "origin": {
@@ -6380,7 +6380,7 @@
   ],
   "id": "aap",
   "implementation": "prototype",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "Agent Authorization Profile",
   "native_status": "Expired Internet-Draft (expired 2026-08-11)",
   "origin": {
@@ -6490,7 +6490,7 @@
   ],
   "id": "aip",
   "implementation": "none-found",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "Agent Identity Protocol (AIP)",
   "native_status": "Internet-Draft, Intended Status: Standards Track (author's stated intent; not adopted by any WG)",
   "origin": {
@@ -6591,7 +6591,7 @@
   ],
   "id": "agtp",
   "implementation": "none-found",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "Agent Transfer Protocol",
   "native_status": "Internet-Draft (work in progress), independent submission",
   "origin": {
@@ -6695,7 +6695,7 @@
   ],
   "id": "vcap",
   "implementation": "unknown",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "VCAP: Verified Commerce for Agent Protocols",
   "native_status": "Active Internet-Draft (individual); Intended RFC status: Informational",
   "origin": {
@@ -7416,7 +7416,7 @@
   ],
   "id": "agent-audit-trail",
   "implementation": "none-found",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "Agent Audit Trail",
   "native_status": "Active Internet-Draft (individual submission), Intended status: Standards Track; not a Working Group document",
   "origin": {
@@ -8856,7 +8856,7 @@
   ],
   "id": "ai-txt",
   "implementation": "prototype",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "ai.txt",
   "native_status": "IETF Internet-Draft (draft-car-ai-txt-wellknown-00) presented as a formal well-known-URI registration proposal; kaylacar/ai-txt separately claims IANA filing (#76/#77, 'under review')",
   "origin": {
@@ -9966,7 +9966,7 @@
   ],
   "id": "identity-assertion-authz-grant",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "Identity Assertion JWT Authorization Grant",
   "native_status": "Active Internet-Draft, WG Document (oauth WG); Intended status: Standards Track (per document front matter); IESG state: I-D Exists",
   "origin": {
@@ -10115,7 +10115,7 @@
   ],
   "id": "aiagent-auth",
   "implementation": "unknown",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "AI Agent Authentication and Authorization (AIMS)",
   "native_status": "Replaced by draft-ietf-wimse-aims-00 (WG document, 2026-09-15)",
   "origin": {
@@ -10241,7 +10241,7 @@
   ],
   "id": "dan",
   "implementation": "prototype",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "DNS-Based Agent Naming",
   "native_status": "Active Internet-Draft (individual, -00), Intended status: Standards Track; IESG state 'I-D Exists'; expires 7 December 2026",
   "origin": {
@@ -10492,7 +10492,7 @@
   ],
   "id": "wimse-aims",
   "implementation": "unknown",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "WIMSE AI Identity Management System",
   "native_status": "Working group document, draft-ietf-wimse-aims-00 (2026-09-15)",
   "origin": {
@@ -10758,7 +10758,7 @@
   ],
   "id": "aauth-hardt",
   "implementation": "unknown",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "AAuth (Hardt)",
   "native_status": "Active Internet-Draft, draft-hardt-oauth-aauth-protocol-11 (2026-09-25, expires 2027-03-29); the companion draft-hardt-aauth-headers-00 (2026-10-04) is marked Expired by the Datatracker",
   "origin": {
@@ -10969,6 +10969,17 @@
     "source_type": "standards-body",
     "http_status": 200,
     "detector": "phase-a-fix@2026-10-16"
+   },
+   {
+    "claim": "Datatracker marks draft-gilda-wimse-agent-audit-record as replaced by draft-gilda-audit-agent-audit-record",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-gilda-wimse-agent-audit-record/",
+    "date": "2026-10-05",
+    "retrieved_at": "2026-10-17T05:04:18Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "eff59c40da87d466ca13e1b5daa48027a07f7a397627900433a458988b11afff",
+    "detector": "ietf@1.0"
    }
   ],
   "form": "document-format",
@@ -10982,11 +10993,15 @@
    {
     "date": "2026-10-16",
     "note": "use-case tags (auto)"
+   },
+   {
+    "date": "2026-10-17",
+    "note": "Datatracker marks draft-gilda-wimse-agent-audit-record as replaced by draft-gilda-audit-agent-audit-record"
    }
   ],
   "id": "wimse-agent-audit-record",
   "implementation": "none-found",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "name": "An Audit Record Format for AI Agent Authorization Decisions",
   "native_status": "Internet-Draft, draft-gilda-wimse-agent-audit-record-02 (2026-10-05)",
   "origin": {
@@ -11029,6 +11044,10 @@
    {
     "type": "ietf",
     "doc": "draft-gilda-wimse-agent-audit-record"
+   },
+   {
+    "type": "ietf",
+    "doc": "draft-gilda-audit-agent-audit-record"
    }
   ],
   "prerequisites": [
@@ -11242,7 +11261,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "history": [
    {
     "date": "2026-10-16",
@@ -11333,7 +11352,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "history": [
    {
     "date": "2026-10-16",
@@ -11426,7 +11445,7 @@
    "mcp"
   ],
   "dispute": null,
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "history": [
    {
     "date": "2026-10-16",
@@ -11512,7 +11531,7 @@
   "pairs_with": [],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "history": [
    {
     "date": "2026-10-16",
@@ -11602,7 +11621,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "history": [
    {
     "date": "2026-10-16",
@@ -11699,7 +11718,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "history": [
    {
     "date": "2026-10-16",
@@ -11791,7 +11810,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "history": [
    {
     "date": "2026-10-16",
@@ -11894,7 +11913,7 @@
    "aauth"
   ],
   "dispute": null,
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "history": [
    {
     "date": "2026-10-16",
@@ -11991,7 +12010,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "history": [
    {
     "date": "2026-10-16",
@@ -12079,7 +12098,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "history": [
    {
     "date": "2026-10-16",
@@ -12169,7 +12188,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "history": [
    {
     "date": "2026-10-16",
@@ -12254,7 +12273,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "history": [
    {
     "date": "2026-10-16",
@@ -12339,7 +12358,7 @@
   "pairs_with": [],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "history": [
    {
     "date": "2026-10-16",
@@ -12431,7 +12450,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-17",
   "history": [
    {
     "date": "2026-10-16",

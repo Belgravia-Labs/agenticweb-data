@@ -359,6 +359,17 @@
   "detector": "phase-a@2026-10-15"
  },
  {
+  "date": "2026-10-05",
+  "title": "An Audit Record Format for AI Agent Authorization Decisions replaced by draft-gilda-audit-agent-audit-record",
+  "url": "https://datatracker.ietf.org/doc/draft-gilda-audit-agent-audit-record/",
+  "summary": "Datatracker marks draft-gilda-wimse-agent-audit-record as replaced by draft-gilda-audit-agent-audit-record",
+  "related": [
+   "wimse-agent-audit-record"
+  ],
+  "kind": "status",
+  "detector": "rules@1.0"
+ },
+ {
   "date": "2026-10-06",
   "title": "MCP Server Cards extension reaches Final",
   "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2127-mcp-server-cards.md",

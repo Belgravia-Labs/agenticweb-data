@@ -1301,5 +1301,18 @@
   "evidence_url": "https://github.com/adcontextprotocol/adcp/releases/tag/v3.2.5",
   "detector": "github@1.0",
   "commit": "ce9d31135357dd56973a7446bc76d139dee8dd0d"
+ },
+ {
+  "id": "q-2026-10-17-wimse-agent-audit-record-replaced",
+  "date": "2026-10-17",
+  "record_id": "wimse-agent-audit-record",
+  "kind": "replaced",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Datatracker marks draft-gilda-wimse-agent-audit-record as replaced by draft-gilda-audit-agent-audit-record",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-gilda-wimse-agent-audit-record/",
+  "detector": "ietf@1.0",
+  "commit": null
  }
 ]
