@@ -544,5 +544,45 @@
  "agentic-payments-gating-model": {
   "skip": "no-fixed-path",
   "note": "candidate record; probe rule pending"
+ },
+ "idmandat-credential": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "lws10-authn-ssi-cid": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "wimse-workload-identity-metadata": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "haace": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "local-tool-call-proof": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "agent-audit-record": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "agent-authorization-envelope": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "a2wp": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "agent-decision-commitment": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
+ },
+ "agent-identity-protocol-singla": {
+  "skip": "no-fixed-path",
+  "note": "candidate record; probe rule pending"
  }
 }

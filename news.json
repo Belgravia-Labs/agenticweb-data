@@ -625,5 +625,125 @@
   ],
   "kind": "version",
   "detector": "rules@1.0"
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: ID MANDAT: A Machine-Readable Credential for the Agents of a Company",
+  "url": "https://datatracker.ietf.org/doc/html/draft-koenig-idmandat-credential-00",
+  "summary": "Describes a JSON credential file a company publishes at /.well-known/idmandat.json, naming the company and its agents with per-agent 'may' and 'mayNot' mandates.",
+  "related": [
+   "idmandat-credential"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.6
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: LWS 1.0 Authentication Suite: Self-signed Identity using Controlled Identifiers",
+  "url": "https://w3.org/TR/lws10-authn-ssi-cid",
+  "summary": "Defines an authentication suite for the Linked Web Storage (LWS) protocol for agents that can sign their own identity tokens.",
+  "related": [
+   "lws10-authn-ssi-cid"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: Workload Identity Metadata",
+  "url": "https://datatracker.ietf.org/doc/html/draft-heigh-wimse-workload-identity-metadata-00",
+  "summary": "This Internet-Draft specifies metadata attributes (group, role, entitlements) for workload identities, profiling existing JWT claims and defining an authenticated workload metadata endpoint usable with JWT- or X.509-based credentials.",
+  "related": [
+   "wimse-workload-identity-metadata"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: High-Assurance Agent Control Envelope",
+  "url": "https://datatracker.ietf.org/doc/html/draft-watts-high-assurance-agent-control-envelope-00",
+  "summary": "HAACE is an individual Internet-Draft (Informational) defining a protocol-neutral execution-gate profile for agent actions.",
+  "related": [
+   "haace"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: Per-Call Proof for Local Tool Invocation by AI Agents",
+  "url": "https://datatracker.ietf.org/doc/html/draft-lee-wimse-local-tool-call-proof-01",
+  "summary": "Defines a per-call proof for local tool invocations by AI agents, such as MCP servers over stdio.",
+  "related": [
+   "local-tool-call-proof"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: Agent Audit Record",
+  "url": "https://datatracker.ietf.org/doc/html/draft-gilda-audit-agent-audit-record",
+  "summary": "Defines one in-toto predicate type, signed in a DSSE envelope, for recording an AI agent's authorization decisions and the effects that followed.",
+  "related": [
+   "agent-audit-record"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: Agent Authorization Envelope",
+  "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-05-21-agent-authorization-envelope-aae",
+  "summary": "The Agent Authorization Envelope (AAE) is an individual IETF Internet-Draft by Lars Kersten Kroehl of CryptoKRI GmbH.",
+  "related": [
+   "agent-authorization-envelope"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.6
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: Agent-to-Wallet Protocol for Digital Credentials",
+  "url": "https://datatracker.ietf.org/doc/html/draft-senarath-a2wp-01",
+  "summary": "A2WP is an individual IETF Internet-Draft (Standards Track intended) that defines messages and calls between an AI Agent and a Wallet.",
+  "related": [
+   "a2wp"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: Agent Decision Commitments for Payments",
+  "url": "https://datatracker.ietf.org/doc/html/draft-milan-agent-decision-commitment-00",
+  "summary": "Defines the Agent Decision Commitment (ADC), a salted hash commitment to a decision record covering the content given to the model interface, the model calls, and the resulting answer and action.",
+  "related": [
+   "agent-decision-commitment"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: Agent Identity Protocol (did:aip, Singla draft)",
+  "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-04-17-agent-identity-protocol-aip",
+  "summary": "Draft by Paras Singla that defines did:aip, a DID method whose identifiers derive from an agent's Ed25519 key, with a Registry that issues short-lived signed Credential Tokens.",
+  "related": [
+   "agent-identity-protocol-singla"
+  ],
+  "kind": "candidate",
+  "detector": "sonnet@candidate-record-v1",
+  "confidence": 0.6
  }
 ]

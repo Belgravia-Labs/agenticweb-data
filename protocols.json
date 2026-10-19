@@ -12463,5 +12463,901 @@
     "url": "https://datatracker.ietf.org/doc/html/draft-king-yew-choo-agentic-payments-01"
    }
   ]
+ },
+ {
+  "id": "idmandat-credential",
+  "name": "ID MANDAT: A Machine-Readable Credential for the Agents of a Company",
+  "acronym": "ID MANDAT",
+  "aliases": [
+   "idmandat",
+   "draft-koenig-idmandat-credential"
+  ],
+  "collisions": [],
+  "step": "identify",
+  "parties": [
+   "agent-site",
+   "agent-registry"
+  ],
+  "form": "well-known-file",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can a recipient find out which company stands behind an agent and what that agent is declared to be allowed and not allowed to do on the company's behalf?",
+  "analog": "An imprint page for agents, with a DNS TXT proof record and a signed registry lookup",
+  "origin": {
+   "org": "M. König (individual submission; registry operated at idmandat.com)",
+   "date": "2026-10-16"
+  },
+  "governance": "Individual Internet-Draft, not an IETF working group product; the reference registry is operated at idmandat.com",
+  "native_status": "Internet-Draft, Intended Status: Informational; individual submission describing a deployed beta (version 0.3), not the product of an IETF working group",
+  "phase": "draft",
+  "implementation": "prototype",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-koenig-idmandat-credential-00",
+   "date": "2026-10-16"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-koenig-idmandat-credential-00",
+  "discovery": {
+   "mechanism": "well-known file at /.well-known/idmandat.json, linked to the domain by a DNS TXT record at _idmandat.<domain>",
+   "path": "/.well-known/idmandat.json"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "/.well-known/idmandat.json",
+   "parse": "Parse JSON; check that 'domain' equals the fetched host and that 'agents' is present; optionally resolve the TXT record _idmandat.<domain> for 'v=idmandat1'",
+   "on_absent": "Treat as no declaration; absence is not evidence against the agent"
+  },
+  "evidence": [
+   {
+    "claim": "Internet-Draft defining a credential file at /.well-known/idmandat.json, a DNS TXT proof record at _idmandat, and a signed Ed25519 registry lookup answer format; described as a deployed beta (version 0.3).",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-koenig-idmandat-credential-00",
+    "date": "2026-10-16"
+   }
+  ],
+  "summary_md": "Describes a JSON credential file a company publishes at /.well-known/idmandat.json, naming the company and its agents with per-agent 'may' and 'mayNot' mandates. A DNS TXT record at _idmandat.<domain> ties the file to the domain. A public registry checks both and returns Ed25519-signed answers with check levels and revocation states. The agent details are operator declarations and not verified by the registry. It complements Web Bot Auth, which proves key possession but not who operates the agent.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.6,
+  "use_cases": [
+   "prove-agent-identity",
+   "describe-agent-capabilities",
+   "delegate-user-authority",
+   "attribute-agent-traffic"
+  ],
+  "audience": [
+   "site-owner",
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "webbotauth",
+   "http-message-signatures",
+   "a2a",
+   "mcp"
+  ],
+  "prerequisites": [
+   "webbotauth"
+  ],
+  "dispute": null,
+  "last_verified": "2026-10-19",
+  "history": [
+   {
+    "date": "2026-10-19",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-koenig-idmandat-credential-00)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-koenig-idmandat-credential-00"
+   }
+  ]
+ },
+ {
+  "id": "lws10-authn-ssi-cid",
+  "name": "LWS 1.0 Authentication Suite: Self-signed Identity using Controlled Identifiers",
+  "acronym": "LWS-SSI-CID",
+  "aliases": [
+   "lws10-authn-ssi-cid",
+   "LWS Self-signed Identity authentication suite"
+  ],
+  "collisions": [],
+  "step": "identify",
+  "parties": [
+   "agent-site"
+  ],
+  "form": "document-format",
+  "track": "w3c",
+  "scope": "general",
+  "question": "How can an agent that signs its own JWT identity tokens authenticate to a Linked Web Storage server, with verifiers validating the token against the agent's controlled identifier document?",
+  "analog": "Self-issued OpenID-style JWT client authentication, where the public key is resolved from the subject's own HTTPS or DID controlled identifier document.",
+  "origin": {
+   "org": "W3C Linked Web Storage Working Group",
+   "date": null
+  },
+  "governance": "W3C Linked Web Storage Working Group, Recommendation track, under the W3C Patent Policy and the 18 August 2025 W3C Process Document",
+  "native_status": "W3C Working Draft 15 October 2026; published by the Linked Web Storage Working Group as a Working Draft using the Recommendation track. The page also says: This is an unofficial proposal.",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "W3C Working Draft",
+   "date": "2026-10-15"
+  },
+  "spec_url": "https://www.w3.org/TR/lws10-authn-ssi-cid/",
+  "discovery": {
+   "mechanism": "The verifier dereferences the JWT sub claim (an HTTPS URI or DID URI) to fetch the controlled identifier document and selects a verification method by the JWT kid header.",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "Support cannot be observed passively. It would require an authenticated request to an LWS authorization server using a self-issued JWT."
+  },
+  "evidence": [
+   {
+    "claim": "W3C Working Draft of 15 October 2026 defining an authentication suite for Linked Web Storage that lets clients sign their own identity tokens (JWT) validated through W3C Controlled Identifiers documents.",
+    "label": "REPORTED",
+    "url": "https://www.w3.org/TR/lws10-authn-ssi-cid/",
+    "date": "2026-10-15"
+   }
+  ],
+  "summary_md": "Defines an authentication suite for the Linked Web Storage (LWS) protocol for agents that can sign their own identity tokens. The credential is a signed JWT in which sub, iss and client_id carry the same URI, with exp and iat required and alg none forbidden. Verifiers dereference the subject URI to get a W3C Controlled Identifier document and check the signature against the verification method matching the kid. It works with HTTPS URIs and DID URIs, and uses the token type urn:ietf:params:oauth:token-type:jwt.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.8,
+  "use_cases": [
+   "prove-agent-identity"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-19",
+  "history": [
+   {
+    "date": "2026-10-19",
+    "note": "auto-drafted candidate from exa (https://w3.org/TR/lws10-authn-ssi-cid)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://w3.org/TR/lws10-authn-ssi-cid"
+   }
+  ]
+ },
+ {
+  "id": "wimse-workload-identity-metadata",
+  "name": "Workload Identity Metadata",
+  "acronym": "",
+  "aliases": [
+   "draft-heigh-wimse-workload-identity-metadata"
+  ],
+  "collisions": [],
+  "step": "identify",
+  "parties": [
+   "agent-agent",
+   "agent-site"
+  ],
+  "form": "endpoint",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can a workload's group, role, and entitlement attributes be conveyed to relying parties without encoding them in the workload identifier?",
+  "analog": "",
+  "origin": {
+   "org": "Palo Alto Networks / Zscaler",
+   "date": "2026-10-16"
+  },
+  "governance": "IETF WIMSE working group mailing list; individual Internet-Draft",
+  "native_status": "Internet-Draft, Intended Status: Standards Track; expires 19 April 2027",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-heigh-wimse-workload-identity-metadata-00",
+   "date": "2026-10-16"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-heigh-wimse-workload-identity-metadata-00",
+  "discovery": {
+   "mechanism": "Optional JWT claim or X.509 certificate extension in the workload credential that identifies the workload metadata endpoint",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "Support cannot be observed externally; the endpoint location is carried inside workload credentials, so treat as unobserved."
+  },
+  "evidence": [
+   {
+    "claim": "Internet-Draft draft-heigh-wimse-workload-identity-metadata-00 published 16 October 2026 by S. Heigh, J. Salowey (Palo Alto Networks) and Y. Rosomakho (Zscaler); specifies workload metadata attributes delivered in JWT-based credentials or via an authenticated metadata endpoint, separate from the workload identifier.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-heigh-wimse-workload-identity-metadata-00",
+    "date": "2026-10-16"
+   }
+  ],
+  "summary_md": "This Internet-Draft specifies metadata attributes (group, role, entitlements) for workload identities, profiling existing JWT claims and defining an authenticated workload metadata endpoint usable with JWT- or X.509-based credentials. It defines a separation principle between identifier and metadata, including identifier uniqueness requirements. An optional JWT claim or X.509 extension points to the metadata endpoint. It applies to workloads generally, including AI agents, with agentic use cases discussed separately.",
+  "part_of": "wimse",
+  "group": null,
+  "candidate": true,
+  "confidence": 0.8,
+  "use_cases": [
+   "prove-agent-identity",
+   "audit-agent-actions",
+   "delegate-user-authority"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "wimse",
+   "spiffe"
+  ],
+  "prerequisites": [
+   "wimse"
+  ],
+  "dispute": null,
+  "last_verified": "2026-10-19",
+  "history": [
+   {
+    "date": "2026-10-19",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-heigh-wimse-workload-identity-metadata-00)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-heigh-wimse-workload-identity-metadata-00"
+   }
+  ]
+ },
+ {
+  "id": "haace",
+  "name": "High-Assurance Agent Control Envelope",
+  "acronym": "HAACE",
+  "aliases": [
+   "draft-watts-high-assurance-agent-control-envelope"
+  ],
+  "collisions": [],
+  "step": "permit",
+  "parties": [
+   "agent-site"
+  ],
+  "form": "document-format",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can a relying party gate an exact agent action at execution time so that missing, stale, or indeterminate identity, authorization, evidence, revocation, or human-approval prerequisites fail closed?",
+  "analog": "A pre-flight checklist with a separate sign-off and a logbook entry: authorization is checked against the exact action at execution time and recorded in non-bearer receipts.",
+  "origin": {
+   "org": "GoodShyt Group Inc.",
+   "date": "2026-10-14"
+  },
+  "governance": "Individual Internet-Draft by a single author, submitted to the IETF Network Working Group; not adopted by a working group",
+  "native_status": "Internet-Draft, Intended Status: Informational; expires 17 April 2027",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-watts-high-assurance-agent-control-envelope-00",
+   "date": "2026-10-14"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-watts-high-assurance-agent-control-envelope-00",
+  "discovery": {
+   "mechanism": "No discovery mechanism defined; the relying party declares an Assurance Requirement Profile (ARP) out of band",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "Support cannot be observed externally; HAACE is an internal action-time enforcement profile with no public endpoint."
+  },
+  "evidence": [
+   {
+    "claim": "The Internet-Draft defines HAACE, a protocol-neutral profile binding an exact agent action to identity status, authorization state, policy, assurance stage, evidence state, authority epoch, revocation state and oversight requirements, with fail-closed handling and non-bearer decision and execution receipts.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-watts-high-assurance-agent-control-envelope-00",
+    "date": "2026-10-14"
+   }
+  ],
+  "summary_md": "HAACE is an individual Internet-Draft (Informational) defining a protocol-neutral execution-gate profile for agent actions. A relying party declares an Assurance Requirement Profile; an Action Control Point evaluates an Action Request Record and emits a non-bearer Action Decision Receipt, followed by a separate Action Execution Receipt if an effect is attempted. Missing or indeterminate required premises must not produce ALLOW. It composes with OAuth, workload identity, attestation and transparency mechanisms rather than replacing them.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.8,
+  "use_cases": [
+   "audit-agent-actions",
+   "delegate-user-authority",
+   "let-agents-act-on-my-site"
+  ],
+  "audience": [
+   "platform",
+   "standards-body",
+   "agent-builder"
+  ],
+  "pairs_with": [],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-19",
+  "history": [
+   {
+    "date": "2026-10-19",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-watts-high-assurance-agent-control-envelope-00)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-watts-high-assurance-agent-control-envelope-00"
+   }
+  ]
+ },
+ {
+  "id": "local-tool-call-proof",
+  "name": "Per-Call Proof for Local Tool Invocation by AI Agents",
+  "acronym": "",
+  "aliases": [
+   "Local Tool Call Proof",
+   "draft-lee-wimse-local-tool-call-proof"
+  ],
+  "collisions": [],
+  "step": "permit",
+  "parties": [
+   "agent-agent"
+  ],
+  "form": "endpoint",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can a local tool server (for example an MCP stdio server) verify that each invocation from an AI agent passed a policy decision, without reusable credentials in the agent process?",
+  "analog": "Per-request signed authorization token, applied to local inter-process tool calls instead of HTTP",
+  "origin": {
+   "org": "SSenStone Inc.",
+   "date": "2026-10-12"
+  },
+  "governance": "IETF Internet-Draft, discussed on the WIMSE Working Group mailing list",
+  "native_status": "Internet-Draft, Intended Status: Standards Track; expires 15 April 2027",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-lee-wimse-local-tool-call-proof-01",
+   "date": "2026-10-12"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-lee-wimse-local-tool-call-proof-01",
+  "discovery": {
+   "mechanism": "Local Call Authority exposes a JSON-RPC 2.0 interface over a Unix domain socket or named pipe on the host; no network discovery described in the available text",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "Support is a host-local deployment property and cannot be observed from outside the host"
+  },
+  "evidence": [
+   {
+    "claim": "The draft defines a per-call proof for local tool invocation: a Call Authority outside the agent process issues short-lived, single-use proofs bound to the tool name and arguments through a canonical action digest (JCS + SHA-256), and the tool server rejects invocations lacking a valid proof. It includes an MCP stdio binding.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-lee-wimse-local-tool-call-proof-01",
+    "date": "2026-10-12"
+   }
+  ],
+  "summary_md": "Defines a per-call proof for local tool invocations by AI agents, such as MCP servers over stdio. A Call Authority running outside the agent process evaluates policy, issues a short-lived single-use proof bound to a canonical action digest of the method, tool name and arguments, and verifies it for the tool server. Proof formats are opaque and defined by evidence type profiles. An MCP stdio binding is included. It does not prevent prompt injection, but confines the effects of a compromised agent to actions policy permits.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.8,
+  "use_cases": [
+   "delegate-user-authority",
+   "audit-agent-actions",
+   "expose-tools-to-agents"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "mcp",
+   "wimse-aims"
+  ],
+  "prerequisites": [
+   "mcp"
+  ],
+  "dispute": null,
+  "last_verified": "2026-10-19",
+  "history": [
+   {
+    "date": "2026-10-19",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-lee-wimse-local-tool-call-proof-01)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-lee-wimse-local-tool-call-proof-01"
+   }
+  ]
+ },
+ {
+  "id": "agent-audit-record",
+  "name": "Agent Audit Record",
+  "acronym": "",
+  "aliases": [
+   "An Audit Record Format for AI Agent Authorization Decisions",
+   "draft-gilda-audit-agent-audit-record"
+  ],
+  "collisions": [],
+  "step": "account",
+  "parties": [
+   "agent-site"
+  ],
+  "form": "document-format",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can an AI agent's authorization decision and its observed effect be recorded in one signed, canonical record that a party trusting neither the agent nor its operator can verify from the bytes?",
+  "analog": "in-toto attestation with a DSSE envelope, specialized for agent authorization decisions",
+  "origin": {
+   "org": "S. Gilda (individual Internet-Draft author)",
+   "date": "2026-10-16"
+  },
+  "governance": "Individual Internet-Draft submitted to the IETF Network Working Group; discussed on the AUDIT BoF mailing list",
+  "native_status": "Internet-Draft, Intended Status: Informational; expires 19 April 2027",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-gilda-audit-agent-audit-record-00",
+   "date": "2026-10-16"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-gilda-audit-agent-audit-record",
+  "discovery": {
+   "mechanism": "None defined; records are in-toto Statements in DSSE envelopes, identified by a predicateType URI",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "Support cannot be observed from a site; it is a record format exchanged between parties, not a published endpoint."
+  },
+  "evidence": [
+   {
+    "claim": "Internet-Draft defining an in-toto predicate type (agent-audit-record) in a DSSE envelope, carrying the decision, the observed effect, decision-point evaluability and input freshness, and an RFC 8785 canonicalization contract; carries the seven minimum audit fields of the WIMSE AIMS framework and is offered as a data model for the proposed AUDIT working group.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-gilda-audit-agent-audit-record",
+    "date": "2026-10-16"
+   }
+  ],
+  "summary_md": "Defines one in-toto predicate type, signed in a DSSE envelope, for recording an AI agent's authorization decisions and the effects that followed. A record carries the decision, the observed effect and the derived agreement between them, decision-point evaluability and input freshness, and an RFC 8785 canonicalization contract so a third party can recompute consistency from the bytes. It also specifies what a retaining party keeps beside a record so it can later be dated from external anchors. It carries the seven minimum audit fields of the WIMSE AIMS framework, defines no policy, and replaces draft-gilda-wimse-agent-audit-record-02.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.8,
+  "use_cases": [
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "wimse-aims",
+   "wimse-agent-audit-record"
+  ],
+  "prerequisites": [
+   "wimse-aims"
+  ],
+  "dispute": null,
+  "last_verified": "2026-10-19",
+  "history": [
+   {
+    "date": "2026-10-19",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-gilda-audit-agent-audit-record)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-gilda-audit-agent-audit-record"
+   }
+  ]
+ },
+ {
+  "id": "agent-authorization-envelope",
+  "name": "Agent Authorization Envelope",
+  "acronym": "AAE",
+  "aliases": [],
+  "collisions": [],
+  "step": "permit",
+  "parties": [
+   "agent-site"
+  ],
+  "form": "document-format",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can a relying party verify offline, without calling the issuer, that an agent holds a mandate with limits, an expiry and a bounded delegation chain?",
+  "analog": "A signed power of attorney with stated spending limits and an expiry date that a counterparty can check on its own.",
+  "origin": {
+   "org": "CryptoKRI GmbH (Lars Kersten Kroehl)",
+   "date": "2026-05-21"
+  },
+  "governance": "Individual Internet-Draft submitted to the IETF datatracker by a single author; not adopted by a working group per the page.",
+  "native_status": "Individual Internet-Draft",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "Individual Internet-Draft (May 2026)",
+   "date": "2026-05-21"
+  },
+  "spec_url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-05-21-agent-authorization-envelope-aae",
+  "discovery": {
+   "mechanism": "Envelope presented by the agent to the relying party; no discovery path is described. The optional revocation endpoint is named inside the envelope.",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "No site-level signal to observe; support is only visible when an agent presents an envelope."
+  },
+  "evidence": [
+   {
+    "claim": "The AAE is a W3C Verifiable Credential signed as a compact JWS (EdDSA/Ed25519) with mandatory mandate, constraints and validity blocks; the key is named by a DID URL.",
+    "label": "REPORTED",
+    "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-05-21-agent-authorization-envelope-aae",
+    "date": "2026-05-21"
+   },
+   {
+    "claim": "A relying party MUST reject an AAE if any required constraint is unrecognized or cannot be evaluated; delegated envelopes may only narrow the parent's grant, with a maximum delegation depth.",
+    "label": "REPORTED",
+    "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-05-21-agent-authorization-envelope-aae",
+    "date": "2026-05-21"
+   }
+  ],
+  "summary_md": "The Agent Authorization Envelope (AAE) is an individual IETF Internet-Draft by Lars Kersten Kroehl of CryptoKRI GmbH. It defines a JWS-secured W3C Verifiable Credential carrying a mandate, constraints and a validity block for an agent acting under delegated authority. Relying parties run nine ordered checks, including proof of key possession, revocation and delegation-chain narrowing, and refuse when a required constraint or revocation status cannot be checked. Delegated envelopes may only narrow the parent's actions, caps, allowlists and validity window.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.6,
+  "use_cases": [
+   "delegate-user-authority",
+   "prove-agent-identity",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "wimse",
+   "spiffe"
+  ],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-19",
+  "history": [
+   {
+    "date": "2026-10-19",
+    "note": "auto-drafted candidate from exa (https://insights.bostonidentity.com/research/ietf-datatracker-2026-05-21-agent-authorization-envelope-aae)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-05-21-agent-authorization-envelope-aae"
+   }
+  ]
+ },
+ {
+  "id": "a2wp",
+  "name": "Agent-to-Wallet Protocol for Digital Credentials",
+  "acronym": "A2WP",
+  "aliases": [
+   "Agent-to-Wallet Protocol"
+  ],
+  "collisions": [],
+  "step": "present",
+  "parties": [
+   "agent-agent"
+  ],
+  "form": "endpoint",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can an AI agent hand a credential offer or presentation request to a wallet unchanged, so that credentials and keys never reach the agent, and still resume its task from the outcome and continuation?",
+  "analog": "A delegation hand-off, similar to a browser passing a payment request to a separate wallet app, applied to OpenID4VCI and OpenID4VP requests",
+  "origin": {
+   "org": "T. S. Senarath (individual Internet-Draft, IETF Network Working Group)",
+   "date": "2026-10-17"
+  },
+  "governance": "Individual Internet-Draft submitted to the IETF Network Working Group; not adopted by a working group per the page text",
+  "native_status": "Internet-Draft, Intended Status: Standards Track; expires 20 April 2027; work in progress",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-senarath-a2wp-01",
+   "date": "2026-10-17"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-senarath-a2wp-01",
+  "discovery": {
+   "mechanism": "Not specified in the visible text; bindings (transport and agent authentication) are out of scope of the document",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "No public discovery mechanism is defined in the visible text, so support cannot be observed from a site."
+  },
+  "evidence": [
+   {
+    "claim": "The Internet-Draft defines A2WP, where an AI Agent passes a credential offer or presentation request unchanged to a Wallet. The Wallet runs OpenID4VCI or OpenID4VP, and credentials, presentations and keys never reach the agent. The draft has Submit, Get and Cancel calls and an operation lifecycle of pending, completed, failed and cancelled.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-senarath-a2wp-01",
+    "date": "2026-10-17"
+   }
+  ],
+  "summary_md": "A2WP is an individual IETF Internet-Draft (Standards Track intended) that defines messages and calls between an AI Agent and a Wallet. The Agent submits a credential offer or presentation request exactly as received. The Wallet decides whether to act, involves the Principal when needed, and runs OpenID4VCI or OpenID4VP with the Issuer or Verifier. The Agent polls the operation status and receives any continuation, while keys and credentials stay in the Wallet. Transport bindings, wallet policy, and credential formats are out of scope.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.8,
+  "use_cases": [
+   "prove-agent-identity",
+   "delegate-user-authority"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "prerequisites": [],
+  "pairs_with": [],
+  "dispute": null,
+  "last_verified": "2026-10-19",
+  "history": [
+   {
+    "date": "2026-10-19",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-senarath-a2wp-01)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-senarath-a2wp-01"
+   }
+  ]
+ },
+ {
+  "id": "agent-decision-commitment",
+  "name": "Agent Decision Commitments for Payments",
+  "acronym": "ADC",
+  "aliases": [
+   "Agent Decision Commitment"
+  ],
+  "collisions": [],
+  "step": "account",
+  "parties": [
+   "agent-payment",
+   "agent-agent"
+  ],
+  "form": "document-format",
+  "track": "ietf",
+  "scope": "payments",
+  "question": "How can an agent's payment decision, including the content it gave the model, be committed to before payment and later disclosed to dispute participants for verification?",
+  "analog": "A sealed, timestamped receipt of what the agent read before it paid, openable only in a dispute.",
+  "origin": {
+   "org": "F. H. D. Milan (individual IETF submission)",
+   "date": "2026-10-15"
+  },
+  "governance": "Individual Internet-Draft; discussion on DISPATCH, SCITT and OAuth mailing lists",
+  "native_status": "Internet-Draft, Intended Status: Experimental; expires 18 April 2027",
+  "phase": "draft",
+  "implementation": "none-found",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-milan-agent-decision-commitment-00",
+   "date": "2026-10-15"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-milan-agent-decision-commitment-00",
+  "discovery": {
+   "mechanism": "Decision context claim (JWT claim \"decision_context\") carried in a payment mandate or payload; commitment registered with a SCITT transparency service",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "No public discovery endpoint; support could only be observed by inspecting payment mandates for a decision_context claim."
+  },
+  "evidence": [
+   {
+    "claim": "Internet-Draft defines the Agent Decision Commitment: a salted hash commitment to a decision record, carried as a selectively disclosable claim in a payment mandate and registered with a transparency service, with bindings to three agent payment protocols and account-to-account credit transfers, plus a witnessed reciprocal exchange.",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-milan-agent-decision-commitment-00",
+    "date": "2026-10-15"
+   }
+  ],
+  "summary_md": "Defines the Agent Decision Commitment (ADC), a salted hash commitment to a decision record covering the content given to the model interface, the model calls, and the resulting answer and action. The commitment is carried as a single selectively disclosable claim (\"decision_context\") in an existing payment mandate or payload and is by default registered with a SCITT transparency service before payment authorization. Disclosure and verification report attestation levels rather than verdicts. It also defines bindings to three agent payment protocols and to account-to-account credit transfers, and a witnessed reciprocal exchange between two parties' agents. It produces evidence only and does not allocate liability.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.8,
+  "use_cases": [
+   "audit-agent-actions",
+   "agent-checkout"
+  ],
+  "audience": [
+   "standards-body",
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "vi",
+   "ap2",
+   "scitt-ai-agent-execution"
+  ],
+  "prerequisites": [
+   "ap2"
+  ],
+  "dispute": null,
+  "last_verified": "2026-10-19",
+  "history": [
+   {
+    "date": "2026-10-19",
+    "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-milan-agent-decision-commitment-00)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://datatracker.ietf.org/doc/html/draft-milan-agent-decision-commitment-00"
+   }
+  ]
+ },
+ {
+  "id": "agent-identity-protocol-singla",
+  "name": "Agent Identity Protocol (did:aip, Singla draft)",
+  "acronym": "AIP",
+  "aliases": [
+   "did:aip",
+   "AIP-GRANT"
+  ],
+  "collisions": [
+   "aip",
+   "did:aip Solana-based DID method in the W3C DID method registry",
+   "Agent Identity Protocol (Prakash, arXiv 2603.24775)"
+  ],
+  "step": "identify",
+  "parties": [
+   "agent-site",
+   "agent-registry"
+  ],
+  "form": "document-format",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can an agent get a registry-anchored did:aip identity with a signed capability manifest and a delegation chain back to a person or organisation, which relying parties and MCP servers can check and revoke?",
+  "analog": "DID method plus OAuth 2.0 token exchange (RFC 8693) for agents",
+  "origin": {
+   "org": "Paras Singla (independent)",
+   "date": "2026-04-17"
+  },
+  "governance": "Individual author's IETF Internet-Draft; no working group adoption stated on the page",
+  "native_status": "Internet-Draft; the did:aip DID method is \"requested for registration\" with status Draft (Section 22.1)",
+  "phase": "draft",
+  "implementation": "none-found",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "Draft (version not stated; before v1.0 minor versions may break compatibility)",
+   "date": null
+  },
+  "spec_url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-04-17-agent-identity-protocol-aip",
+  "discovery": {
+   "mechanism": "A principal's did:aip DID document names its Registry; the Registry holds a versioned Trust Record and issues credential tokens",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "No site-level probe is defined; support cannot be observed from a well-known path."
+  },
+  "evidence": [
+   {
+    "claim": "Boston Identity's IAM Insights briefing reports that the draft defines did:aip identifiers, a Registry, Capability Manifests, EdDSA-signed Credential Tokens, delegation chains with attenuation, an AIP-GRANT ceremony and Approval Envelopes. It also reports that no deployment or implementation is named, and that the draft's claim of W3C did:aip registration conflicts with its IANA-section statement that registration is only requested.",
+    "label": "REPORTED",
+    "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-04-17-agent-identity-protocol-aip",
+    "date": "2026-10-16"
+   }
+  ],
+  "summary_md": "Draft by Paras Singla that defines did:aip, a DID method whose identifiers derive from an agent's Ed25519 key, with a Registry that issues short-lived signed Credential Tokens. It also covers Capability Manifests, delegation chains with scope attenuation (default depth 3, hard cap 10), revocation and an AIP-GRANT consent ceremony. For MCP servers the Registry acts as an OAuth server and issues DPoP-bound tokens by RFC 8693 token exchange. A third-party briefing reports that Tier 2 scopes require live Registry revocation checks, and that the did:aip name collides with another project's registered method.",
+  "part_of": null,
+  "group": null,
+  "candidate": true,
+  "confidence": 0.6,
+  "use_cases": [
+   "prove-agent-identity",
+   "delegate-user-authority",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "mcp",
+   "wimse"
+  ],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-19",
+  "history": [
+   {
+    "date": "2026-10-19",
+    "note": "auto-drafted candidate from exa (https://insights.bostonidentity.com/research/ietf-datatracker-2026-04-17-agent-identity-protocol-aip)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-04-17-agent-identity-protocol-aip"
+   }
+  ]
  }
 ]
