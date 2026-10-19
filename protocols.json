@@ -1664,7 +1664,7 @@
   ],
   "id": "erc-8004",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "ERC-8004: Trustless Agents",
   "native_status": "Draft Standards Track ERC",
   "origin": {
@@ -1777,7 +1777,7 @@
   ],
   "id": "erc-8183",
   "implementation": "prototype",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "ERC-8183: Agentic Commerce",
   "native_status": "Draft ERC — 'This specification defines the Agentic Commerce Protocol: a job with escrowed budget...'",
   "origin": {
@@ -1883,7 +1883,7 @@
   ],
   "id": "erc-8226",
   "implementation": "prototype",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "ERC-8226 Regulated Agent Mandate",
   "native_status": "Draft, Standards Track: ERC (marked ⚠️ Draft on eips.ethereum.org)",
   "origin": {
@@ -1986,7 +1986,7 @@
   ],
   "id": "webmcp",
   "implementation": "developer-trial",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "WebMCP",
   "native_status": "Draft Community Group Report, dated 4 September 2026; explicitly \"not a W3C Standard nor on the W3C Standards Track\"",
   "origin": {
@@ -2610,7 +2610,7 @@
   ],
   "id": "aipref-content-usage-attachment",
   "implementation": "unknown",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "AIPREF Content-Usage Attachment",
   "native_status": "Internet-Draft, work in progress; \"About This Document\" note says it is to be removed before publishing as an RFC",
   "origin": {
@@ -2728,7 +2728,7 @@
   ],
   "id": "aipref-vocabulary",
   "implementation": "unknown",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "AIPREF Vocabulary",
   "native_status": "Internet-Draft, work in progress; explicitly states its contents 'DO NOT REFLECT CONSENSUS of the Working Group'",
   "origin": {
@@ -2827,7 +2827,7 @@
   ],
   "id": "tdmrep",
   "implementation": "unknown",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "Text and Data Mining Reservation Protocol",
   "native_status": "W3C Community Group Final Report; explicitly \"not a W3C Standard nor is it on the W3C Standards Track\"",
   "origin": {
@@ -3086,7 +3086,7 @@
   ],
   "id": "webbotauth",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "Web Bot Auth HTTP Message Signatures",
   "native_status": "Active Internet-Draft, WG Document, Intended Status: Informational",
   "origin": {
@@ -3197,7 +3197,7 @@
   ],
   "id": "web-bot-auth-signature-agent-card",
   "implementation": "prototype",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "Signature Agent Card (Web Bot Auth registry)",
   "native_status": "Active Internet-Draft (individual), Intended Status: Informational",
   "origin": {
@@ -3302,7 +3302,7 @@
   ],
   "id": "http-message-signatures",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "HTTP Message Signatures",
   "native_status": "Proposed Standard",
   "origin": {
@@ -3655,7 +3655,7 @@
   ],
   "id": "dns-aid",
   "implementation": "unknown",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "DNS for AI Discovery",
   "native_status": "Internet-Draft, Standards Track intended status",
   "origin": {
@@ -3779,7 +3779,7 @@
   ],
   "id": "ans",
   "implementation": "none-found",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "Agent Name Service v2 (ANS)",
   "native_status": "Expired Internet-Draft (expired 2026-10-15)",
   "origin": {
@@ -4042,7 +4042,7 @@
   ],
   "id": "adp",
   "implementation": "prototype",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "Agent Discovery Protocol",
   "native_status": "Internet-Draft; work in progress",
   "origin": {
@@ -4174,7 +4174,7 @@
   ],
   "id": "ardp",
   "implementation": "none-found",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "Agent Registration and Discovery Protocol",
   "native_status": "Expired Internet-Draft (expired 2026-08-28)",
   "origin": {
@@ -4283,7 +4283,7 @@
   ],
   "id": "ads",
   "implementation": "shipping",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "Agent Directory Service",
   "native_status": "Internet-Draft; work in progress; canonical spec tracked at spec.dir.agntcy.org",
   "origin": {
@@ -5104,7 +5104,7 @@
   ],
   "id": "openai-apps-sdk-manifests",
   "implementation": "shipping",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "OpenAI Plugins (formerly Apps SDK)",
   "native_status": "Active vendor product, rebranded from \"Apps SDK\" to \"Plugins\" as the top-level developers.openai.com section name (developers.openai.com/apps-sdk now redirects to developers.openai.com/plugins)",
   "origin": {
@@ -5754,7 +5754,7 @@
   ],
   "id": "vi",
   "implementation": "prototype",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "Verifiable Intent",
   "native_status": "Draft (v0.1); open-sourced specification and reference implementation",
   "origin": {
@@ -5871,7 +5871,7 @@
   ],
   "id": "spiffe",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "SPIFFE (Secure Production Identity Framework for Everyone)",
   "native_status": "Active, stable open-source specification set (SPIFFE/SPIRE); SPIFFE itself makes no agent-specific claims",
   "origin": {
@@ -5979,7 +5979,7 @@
   ],
   "id": "wimse",
   "implementation": "prototype",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "Workload Identity in Multi System Environments (WIMSE) Architecture",
   "native_status": "Active Internet-Draft, WG Document, Intended Status: Informational",
   "origin": {
@@ -6133,7 +6133,7 @@
   ],
   "id": "aauth",
   "implementation": "none-found",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "Agent Authorization Grant",
   "native_status": "Expired Internet-Draft (expired 2026-04-23)",
   "origin": {
@@ -6254,7 +6254,7 @@
   ],
   "id": "daap",
   "implementation": "prototype",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "OAuth Profile for Delegated AI Agent Authorization",
   "native_status": "Internet-Draft, individual submission, Active",
   "origin": {
@@ -6380,7 +6380,7 @@
   ],
   "id": "aap",
   "implementation": "prototype",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "Agent Authorization Profile",
   "native_status": "Expired Internet-Draft (expired 2026-08-11)",
   "origin": {
@@ -6490,7 +6490,7 @@
   ],
   "id": "aip",
   "implementation": "none-found",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "Agent Identity Protocol (AIP)",
   "native_status": "Internet-Draft, Intended Status: Standards Track (author's stated intent; not adopted by any WG)",
   "origin": {
@@ -6591,7 +6591,7 @@
   ],
   "id": "agtp",
   "implementation": "none-found",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "Agent Transfer Protocol",
   "native_status": "Internet-Draft (work in progress), independent submission",
   "origin": {
@@ -6695,7 +6695,7 @@
   ],
   "id": "vcap",
   "implementation": "unknown",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "VCAP: Verified Commerce for Agent Protocols",
   "native_status": "Active Internet-Draft (individual); Intended RFC status: Informational",
   "origin": {
@@ -7057,7 +7057,7 @@
   ],
   "id": "agora-commerce-protocol",
   "implementation": "prototype",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "Agora (agent marketplace protocol)",
   "native_status": "Testnet-only; production_status explicitly \"testnet-only\" in its own manifest",
   "origin": {
@@ -7416,7 +7416,7 @@
   ],
   "id": "agent-audit-trail",
   "implementation": "none-found",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "Agent Audit Trail",
   "native_status": "Active Internet-Draft (individual submission), Intended status: Standards Track; not a Working Group document",
   "origin": {
@@ -7662,7 +7662,7 @@
   ],
   "id": "api-catalog-rfc9727",
   "implementation": "unknown",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs",
   "native_status": "Proposed Standard (errata exist)",
   "origin": {
@@ -7759,7 +7759,7 @@
   ],
   "id": "rsl",
   "implementation": "shipping",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "Really Simple Licensing",
   "native_status": "Recommendation (RSL's own maturity label, not a W3C/IETF Recommendation) — Document RSL-SPEC-1.0, Category 'Industry Specification'",
   "origin": {
@@ -7974,7 +7974,7 @@
   ],
   "id": "auth-md",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "auth.md",
   "native_status": "Published protocol specification at auth-md.com/specification; not submitted to IETF, W3C, or any standards body",
   "origin": {
@@ -8087,7 +8087,7 @@
   ],
   "id": "oauth-metadata-for-agents",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)",
   "native_status": "Internet Standard (RFC 8414, published June 2018) and Internet Standard (RFC 9728, published 2025); both are products of IETF consensus, not works in progress",
   "origin": {
@@ -8212,7 +8212,7 @@
   ],
   "id": "ai-crawler-tokens-robots",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "AI Crawler User-Agent Tokens in robots.txt",
   "native_status": "A convention, not a formal spec; each vendor's documentation is normative only for that vendor's own crawler",
   "origin": {
@@ -8458,7 +8458,7 @@
   ],
   "id": "vercel-agent-readability",
   "implementation": "shipping",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "Agent Readability Spec",
   "native_status": "A specification and scoring checklist, not a protocol; framed as best practices to implement voluntarily",
   "origin": {
@@ -8736,7 +8736,7 @@
   ],
   "id": "agents-txt",
   "implementation": "prototype",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "agents.txt",
   "native_status": "\"An open standard proposal for declaring what AI agents can do on a website\" (kaylacar/agents-txt); a Mastercard developer-documentation page independently characterizes the space as \"IETF draft expired ... fragmented landscape with 11+ competing proposals ... no ratified standard\"",
   "origin": {
@@ -8856,7 +8856,7 @@
   ],
   "id": "ai-txt",
   "implementation": "prototype",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "ai.txt",
   "native_status": "IETF Internet-Draft (draft-car-ai-txt-wellknown-00) presented as a formal well-known-URI registration proposal; kaylacar/ai-txt separately claims IANA filing (#76/#77, 'under review')",
   "origin": {
@@ -8959,7 +8959,7 @@
   ],
   "id": "lmos",
   "implementation": "shipping",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "LMOS (Language Model Operating System)",
   "native_status": "LMOS Protocol spec is explicitly \"work in progress and contains empty sections\"; \"It is not a W3C Standard nor is it on the W3C Standards Track\" (project's own words), though the project states it plans to start the formal W3C process once mature",
   "origin": {
@@ -9347,7 +9347,7 @@
   ],
   "id": "aitp",
   "implementation": "prototype",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "AITP (Agent Interaction & Transaction Protocol)",
   "native_status": "Version: 0.1.0. Status: Draft. \"AITP is a spec in progress and we are open to comments, feedback, and contributions\" (project's own words)",
   "origin": {
@@ -9450,7 +9450,7 @@
   ],
   "id": "coral-protocol",
   "implementation": "shipping",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "Coral Protocol (CoralOS)",
   "native_status": "\"Kubernetes for AI agents: a platform for everything between your agents and production — registry, runtimes, security, and orchestration\" (current docs homepage); described elsewhere as a 'decentralized protocol powering AI agent collaboration, trust, and payments'",
   "origin": {
@@ -9714,7 +9714,7 @@
   ],
   "id": "nlip",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "Natural Language Interaction Protocol",
   "native_status": "Ecma International Standard, 1st edition, published 10 December 2025 (ECMA-430 core spec, plus companion ECMA-431/432/433 transport bindings, ECMA-434 security profiles, and ECMA TR/113 explanatory report); an ISO standardisation ballot was reported in progress by project contributors as of August 2026",
   "origin": {
@@ -9833,7 +9833,7 @@
   ],
   "id": "emv-agentic-payments",
   "implementation": "none-found",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "EMV Agentic Payments – Framework for Specifications",
   "native_status": "Draft v1.0, released for public review and comment; EMVCo describes it as ‘a foundation for further industry engagement and potential specification development’, not itself a finished specification",
   "origin": {
@@ -9966,7 +9966,7 @@
   ],
   "id": "identity-assertion-authz-grant",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "Identity Assertion JWT Authorization Grant",
   "native_status": "Active Internet-Draft, WG Document (oauth WG); Intended status: Standards Track (per document front matter); IESG state: I-D Exists",
   "origin": {
@@ -10115,7 +10115,7 @@
   ],
   "id": "aiagent-auth",
   "implementation": "unknown",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "AI Agent Authentication and Authorization (AIMS)",
   "native_status": "Replaced by draft-ietf-wimse-aims-00 (WG document, 2026-09-15)",
   "origin": {
@@ -10241,7 +10241,7 @@
   ],
   "id": "dan",
   "implementation": "prototype",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "DNS-Based Agent Naming",
   "native_status": "Active Internet-Draft (individual, -00), Intended status: Standards Track; IESG state 'I-D Exists'; expires 7 December 2026",
   "origin": {
@@ -10492,7 +10492,7 @@
   ],
   "id": "wimse-aims",
   "implementation": "unknown",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "WIMSE AI Identity Management System",
   "native_status": "Working group document, draft-ietf-wimse-aims-00 (2026-09-15)",
   "origin": {
@@ -10608,7 +10608,7 @@
   ],
   "id": "personal-agent-protocol",
   "implementation": "none-found",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "Personal Agent Protocol (Poppy)",
   "native_status": "Draft published 2026-10-09; reference implementation promised",
   "origin": {
@@ -10758,7 +10758,7 @@
   ],
   "id": "aauth-hardt",
   "implementation": "unknown",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "AAuth (Hardt)",
   "native_status": "Active Internet-Draft, draft-hardt-oauth-aauth-protocol-11 (2026-09-25, expires 2027-03-29); the companion draft-hardt-aauth-headers-00 (2026-10-04) is marked Expired by the Datatracker",
   "origin": {
@@ -10872,7 +10872,7 @@
   ],
   "id": "cloudflare-pay-per-crawl",
   "implementation": "developer-trial",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-19",
   "name": "Cloudflare Pay per crawl",
   "native_status": "Closed beta; documentation updated 2026-07-28",
   "origin": {
@@ -11001,7 +11001,7 @@
   ],
   "id": "wimse-agent-audit-record",
   "implementation": "none-found",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "name": "An Audit Record Format for AI Agent Authorization Decisions",
   "native_status": "Internet-Draft, draft-gilda-wimse-agent-audit-record-02 (2026-10-05)",
   "origin": {
@@ -11261,7 +11261,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "history": [
    {
     "date": "2026-10-16",
@@ -11352,7 +11352,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "history": [
    {
     "date": "2026-10-16",
@@ -11445,7 +11445,7 @@
    "mcp"
   ],
   "dispute": null,
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "history": [
    {
     "date": "2026-10-16",
@@ -11531,7 +11531,7 @@
   "pairs_with": [],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "history": [
    {
     "date": "2026-10-16",
@@ -11621,7 +11621,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "history": [
    {
     "date": "2026-10-16",
@@ -11718,7 +11718,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "history": [
    {
     "date": "2026-10-16",
@@ -11810,7 +11810,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "history": [
    {
     "date": "2026-10-16",
@@ -11913,7 +11913,7 @@
    "aauth"
   ],
   "dispute": null,
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "history": [
    {
     "date": "2026-10-16",
@@ -12010,7 +12010,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "history": [
    {
     "date": "2026-10-16",
@@ -12098,7 +12098,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "history": [
    {
     "date": "2026-10-16",
@@ -12188,7 +12188,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "history": [
    {
     "date": "2026-10-16",
@@ -12273,7 +12273,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "history": [
    {
     "date": "2026-10-16",
@@ -12358,7 +12358,7 @@
   "pairs_with": [],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "history": [
    {
     "date": "2026-10-16",
@@ -12450,7 +12450,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "history": [
    {
     "date": "2026-10-16",
