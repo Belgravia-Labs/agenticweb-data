@@ -61,6 +61,18 @@ def check(root: Path) -> list[str]:
                 if pid not in known: errors.append(f"{fname}: unknown id {pid}")
     for row in data["changes.json"]:
         if row["record_id"] not in known: errors.append(f"changes.json {row['id']}: unknown id {row['record_id']}")
+    # digests/<date>.json (written by the engine's daily command): schema, file name = date, related ids known
+    digest_schema = load(root, "schema/digest.schema.json") if (root / "schema/digest.schema.json").exists() else None
+    for f in sorted((root / "digests").glob("????-??-??.json")) if (root / "digests").exists() else []:
+        try:
+            d = json.loads(f.read_text())
+            if digest_schema: jsonschema.validate(d, digest_schema)
+        except (json.JSONDecodeError, jsonschema.ValidationError) as e:
+            errors.append(f"digests/{f.name}: {getattr(e, 'message', e)}"); continue
+        if d["date"] != f.stem: errors.append(f"digests/{f.name}: date {d['date']} does not match the file name")
+        for it in d["items"]:
+            for r in it["related"]:
+                if r["id"] not in known: errors.append(f"digests/{f.name} {it['id']}: unknown id {r['id']}")
     probes = data["probes.json"]
     if set(probes) != known: errors.append(f"probes.json: ids differ from protocols.json: {sorted(set(probes) ^ known)[:5]}")
     return errors
