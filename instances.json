@@ -4389,15 +4389,15 @@
  {
   "id": "supabase-api-catalog-rfc9727",
   "name": "Supabase",
-  "url": "https://github.com/supabase/supabase/pull/44880",
+  "url": "https://supabase.com/.well-known/api-catalog",
   "type": "business",
   "implements": [
    "api-catalog-rfc9727"
   ],
-  "observed": "2026-04-15",
-  "date_basis": "source",
-  "source": "https://github.com/supabase/supabase/pull/44880",
-  "note": "Merged PR adding a /.well-known/api-catalog file to Supabase's own docs/website for agent discovery. evidence VERIFIED"
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://supabase.com/.well-known/api-catalog",
+  "note": "VERIFIED: fetched 2026-10-20, 200 application/linkset+json, items api.supabase.com/v1 and mcp.supabase.com/mcp. First added by merged PR https://github.com/supabase/supabase/pull/44880 (2026-04-15)."
  },
  {
   "id": "cloudflare-docs-api-catalog-rfc9727",
@@ -4618,7 +4618,7 @@
   "observed": "2026-06-17",
   "date_basis": "source",
   "source": "https://huggingface.co/blog/agentic-resource-discovery-launch",
-  "note": "Co-launched ARD alongside Google and Microsoft and publishes its own catalog; the only one of the 11 launch backers our own probe found serving at root, evidence VERIFIED."
+  "note": "Co-launched ARD alongside Google and Microsoft and publishes its own catalog; the only one of the 11 launch backers our 2026-09-04 probe found serving at root, evidence VERIFIED. On 2026-10-20 GitHub was found serving github.com/.well-known/ai-catalog.json (see github-ard)."
  },
  {
   "id": "google-ai-catalog-json-launch-ard",
@@ -4644,7 +4644,7 @@
   "observed": "2026-07-07",
   "date_basis": "source",
   "source": "https://qail.ai/agentic-resource-discovery-ai-catalog-json/",
-  "note": "Named as launch backers of the Agentic Resource Discovery spec alongside Google; our own probe found none of these serving a manifest at root, evidence THIN (backer list only, not confirmed live deployment)."
+  "note": "Named as launch backers of the Agentic Resource Discovery spec alongside Google; our own probe of 2026-09-04 found none of these serving a manifest at root, evidence THIN (backer list only, not confirmed live deployment). On 2026-10-20 GitHub was found serving github.com/.well-known/ai-catalog.json (see github-ard)."
  },
  {
   "id": "infoblox-dns-aid-reference-implementation-dns-aid",
@@ -4855,5 +4855,608 @@
   "date_basis": "recorded",
   "source": "https://www.ant-intl.com/en/news/detail/?id=ant-internationals-agentic-mobile-protocol-rolls-out-globally-with-wallets-acquirers-initiating-collaboration-on-kya-interoperability-framework-with-mastercard-and-visa",
   "note": "Ant International announced a Know Your Agent interoperability collaboration with Mastercard and Visa; Visa's participation is dated 2026-09-10 per Reuters."
+ },
+ {
+  "id": "supabase-ard",
+  "name": "Supabase",
+  "url": "https://supabase.com/.well-known/ard.json",
+  "type": "site",
+  "implements": [
+   "ard",
+   "ai-catalog-well-known-file"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://supabase.com/.well-known/ard.json",
+  "note": "VERIFIED: fetched 2026-10-20, 200 application/json, specVersion 1.0, 5 entries (MCP server, OAuth PRM, OpenAPI, llms.txt, skills index); same document at /.well-known/ai-catalog.json."
+ },
+ {
+  "id": "supabase-llms-txt",
+  "name": "Supabase",
+  "url": "https://supabase.com/llms.txt",
+  "type": "site",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://supabase.com/llms.txt",
+  "note": "VERIFIED: fetched 2026-10-20, 200 text/plain, H1 \"# Supabase Docs\"."
+ },
+ {
+  "id": "vercel-ard",
+  "name": "Vercel",
+  "url": "https://vercel.com/.well-known/ai-catalog.json",
+  "type": "site",
+  "implements": [
+   "ard",
+   "ai-catalog-well-known-file"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://vercel.com/.well-known/ai-catalog.json",
+  "note": "VERIFIED: fetched 2026-10-20, 200 application/ai-catalog+json, specVersion 1.0, 6 entries; ai-catalog.json only (ard.json 404)."
+ },
+ {
+  "id": "vercel-api-catalog-rfc9727",
+  "name": "Vercel",
+  "url": "https://vercel.com/.well-known/api-catalog",
+  "type": "site",
+  "implements": [
+   "api-catalog-rfc9727"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://vercel.com/.well-known/api-catalog",
+  "note": "VERIFIED: fetched 2026-10-20, 200 application/linkset+json with the RFC 9727 profile, one item (api.vercel.com)."
+ },
+ {
+  "id": "vercel-llms-txt",
+  "name": "Vercel",
+  "url": "https://vercel.com/llms.txt",
+  "type": "site",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://vercel.com/llms.txt",
+  "note": "VERIFIED: fetched 2026-10-20, 200, H1 \"# Vercel\"."
+ },
+ {
+  "id": "github-ard",
+  "name": "GitHub",
+  "url": "https://github.com/.well-known/ai-catalog.json",
+  "type": "site",
+  "implements": [
+   "ard",
+   "ai-catalog-well-known-file"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://github.com/.well-known/ai-catalog.json",
+  "note": "VERIFIED: fetched 2026-10-20, 200 application/ai-catalog+json, specVersion 1.0, single entry pointing at the GitHub MCP Server Card (SEP-2127 location); ard.json 404. Contradicts the 'none of the launch backers serve at root' note on the ARD-backers row."
+ },
+ {
+  "id": "github-llms-txt",
+  "name": "GitHub",
+  "url": "https://github.com/llms.txt",
+  "type": "site",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://github.com/llms.txt",
+  "note": "VERIFIED: fetched 2026-10-20, 200, H1 \"# GitHub\"."
+ },
+ {
+  "id": "github-mcp-server-cards",
+  "name": "GitHub MCP Server (Server Card)",
+  "url": "https://api.githubcopilot.com/mcp/server-card",
+  "type": "service",
+  "implements": [
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://api.githubcopilot.com/mcp/server-card",
+  "note": "VERIFIED: fetched 2026-10-20, 200 application/mcp-server-card+json, $schema v1 server-card.schema.json, name io.github.github/github-mcp-server, remote https://api.githubcopilot.com/mcp/ (401 with resource_metadata challenge); served at the SEP-2127 <endpoint>/server-card location and linked from github.com's AI Catalog."
+ },
+ {
+  "id": "zapier-ard",
+  "name": "Zapier",
+  "url": "https://zapier.com/.well-known/ai-catalog.json",
+  "type": "site",
+  "implements": [
+   "ard",
+   "ai-catalog-well-known-file"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://zapier.com/.well-known/ai-catalog.json",
+  "note": "VERIFIED: fetched 2026-10-20, 200 application/json, specVersion 1.0, 14 entries; ai-catalog.json only (ard.json 404)."
+ },
+ {
+  "id": "zapier-mcp-server-cards",
+  "name": "Zapier MCP (Server Card)",
+  "url": "https://zapier.com/.well-known/mcp/server-card.json",
+  "type": "service",
+  "implements": [
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://zapier.com/.well-known/mcp/server-card.json",
+  "note": "REPORTED: fetched 2026-10-20, 200 application/json, name com.zapier/mcp, remote https://mcp.zapier.com/api/v1/connect (401 with RFC 9728 challenge). Card at the non-SEP path /.well-known/mcp/server-card.json, server.json-shaped (reverse-DNS name, remotes) but no $schema; linked from its AI Catalog."
+ },
+ {
+  "id": "zapier-api-catalog-rfc9727",
+  "name": "Zapier",
+  "url": "https://zapier.com/.well-known/api-catalog",
+  "type": "site",
+  "implements": [
+   "api-catalog-rfc9727"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://zapier.com/.well-known/api-catalog",
+  "note": "VERIFIED: fetched 2026-10-20, 200 application/linkset+json, 5 linkset objects (MCP, Actions API, Connections API and others)."
+ },
+ {
+  "id": "zapier-llms-txt",
+  "name": "Zapier",
+  "url": "https://zapier.com/llms.txt",
+  "type": "site",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://zapier.com/llms.txt",
+  "note": "VERIFIED: fetched 2026-10-20, 200, H1 \"# Zapier\"."
+ },
+ {
+  "id": "proof-ard",
+  "name": "Proof",
+  "url": "https://proof.com/.well-known/ard.json",
+  "type": "site",
+  "implements": [
+   "ard",
+   "ai-catalog-well-known-file"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://proof.com/.well-known/ard.json",
+  "note": "VERIFIED: fetched 2026-10-20, 200 application/json, specVersion 1.0, 4 entries (3 application/ai-skill+md, 1 MCP server card); same document at /.well-known/ai-catalog.json."
+ },
+ {
+  "id": "proof-mcp",
+  "name": "Proof MCP server",
+  "url": "https://mcp.proof.com/mcp",
+  "type": "service",
+  "implements": [
+   "mcp"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://mcp.proof.com/mcp",
+  "note": "VERIFIED: fetched 2026-10-20, 401 with a Bearer resource_metadata challenge (OAuth-protected MCP server); its card at proof.com/.well-known/mcp/server-card.json uses the pre-SEP serverInfo/transport shape, so it is not listed as a Server Card."
+ },
+ {
+  "id": "proof-oauth-metadata-for-agents",
+  "name": "Proof",
+  "url": "https://proof.com/.well-known/oauth-protected-resource",
+  "type": "site",
+  "implements": [
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://proof.com/.well-known/oauth-protected-resource",
+  "note": "VERIFIED: fetched 2026-10-20, 200 JSON RFC 9728 metadata, resource https://api.proof.com, authorization_servers [https://api.proof.com]."
+ },
+ {
+  "id": "proof-api-catalog-rfc9727",
+  "name": "Proof",
+  "url": "https://proof.com/.well-known/api-catalog",
+  "type": "site",
+  "implements": [
+   "api-catalog-rfc9727"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://proof.com/.well-known/api-catalog",
+  "note": "VERIFIED: fetched 2026-10-20, 200 application/linkset+json, 7 linkset objects."
+ },
+ {
+  "id": "proof-llms-txt",
+  "name": "Proof",
+  "url": "https://api.proof.com/llms.txt",
+  "type": "site",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://api.proof.com/llms.txt",
+  "note": "VERIFIED: fetched 2026-10-20, 200, H1 \"# Proof for AI agents\"; proof.com/llms.txt 301-redirects here (off-host, so our grader does not count it)."
+ },
+ {
+  "id": "shopify-llms-txt",
+  "name": "Shopify",
+  "url": "https://www.shopify.com/llms.txt",
+  "type": "site",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://www.shopify.com/llms.txt",
+  "note": "VERIFIED: fetched 2026-10-20, 200, H1 \"# Shopify\" (shopify.com/llms.txt redirects to www)."
+ },
+ {
+  "id": "coinbase-mcp",
+  "name": "Coinbase for Agents MCP server",
+  "url": "https://agents.coinbase.com/mcp",
+  "type": "service",
+  "implements": [
+   "mcp"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://agents.coinbase.com/mcp",
+  "note": "VERIFIED: fetched 2026-10-20, 401 with a Bearer resource_metadata challenge (OAuth-protected MCP server); its /.well-known/mcp/server-card.json is ad hoc and self-declared non-compliant, so it is not listed as a Server Card."
+ },
+ {
+  "id": "coinbase-api-catalog-rfc9727",
+  "name": "Coinbase",
+  "url": "https://www.coinbase.com/.well-known/api-catalog",
+  "type": "site",
+  "implements": [
+   "api-catalog-rfc9727"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://www.coinbase.com/.well-known/api-catalog",
+  "note": "VERIFIED: fetched 2026-10-20, 200 application/linkset+json, 7 linkset objects (CDP API v2 OpenAPI and others)."
+ },
+ {
+  "id": "coinbase-llms-txt",
+  "name": "Coinbase",
+  "url": "https://www.coinbase.com/llms.txt",
+  "type": "site",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://www.coinbase.com/llms.txt",
+  "note": "VERIFIED: fetched 2026-10-20, 200, H1 \"# Coinbase & Coinbase Developer Platform (landing pages)\"."
+ },
+ {
+  "id": "coinbase-cdp-docs-a2a",
+  "name": "Coinbase Developer Documentation (Agent Card)",
+  "url": "https://docs.cdp.coinbase.com/.well-known/agent-card.json",
+  "type": "site",
+  "implements": [
+   "a2a"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://docs.cdp.coinbase.com/.well-known/agent-card.json",
+  "note": "REPORTED: fetched 2026-10-20, 200 JSON, name \"Coinbase Developer Documentation\", protocolVersion 0.3 (pre-1.0 shape), one skill pointing to a skill.md. A docs-site Agent Card, not a transactional agent, possibly generated by the docs platform."
+ },
+ {
+  "id": "cloudflare-mcp-server-cards",
+  "name": "Cloudflare MCP Servers (Server Card)",
+  "url": "https://www.cloudflare.com/.well-known/mcp/server-card.json",
+  "type": "service",
+  "implements": [
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://www.cloudflare.com/.well-known/mcp/server-card.json",
+  "note": "REPORTED: fetched 2026-10-20, 200 JSON, name cloudflare, title \"Cloudflare MCP Servers\", 3 remotes (docs, blog, api). Non-SEP path, server.json-like but no $schema and no reverse-DNS name."
+ },
+ {
+  "id": "cloudflare-mcp",
+  "name": "Cloudflare docs MCP server",
+  "url": "https://docs.mcp.cloudflare.com/mcp",
+  "type": "service",
+  "implements": [
+   "mcp"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://docs.mcp.cloudflare.com/mcp",
+  "note": "VERIFIED: fetched 2026-10-20, POST initialize answered 200 (SSE) on the public docs MCP server; mcp.cloudflare.com/mcp returns 401 with an OAuth challenge."
+ },
+ {
+  "id": "cloudflare-llms-txt",
+  "name": "Cloudflare",
+  "url": "https://www.cloudflare.com/llms.txt",
+  "type": "site",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://www.cloudflare.com/llms.txt",
+  "note": "VERIFIED: fetched 2026-10-20, 200, H1 \"# Cloudflare\"."
+ },
+ {
+  "id": "sentry-mcp",
+  "name": "Sentry MCP server",
+  "url": "https://mcp.sentry.dev/mcp",
+  "type": "service",
+  "implements": [
+   "mcp"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://mcp.sentry.dev/mcp",
+  "note": "VERIFIED: fetched 2026-10-20, 401 with a Bearer resource_metadata challenge (OAuth-protected MCP server); its /.well-known/mcp/server-card.json is ad hoc (no $schema, version or remotes), so it is not listed as a Server Card."
+ },
+ {
+  "id": "sentry-oauth-metadata-for-agents",
+  "name": "Sentry",
+  "url": "https://sentry.io/.well-known/oauth-protected-resource",
+  "type": "site",
+  "implements": [
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://sentry.io/.well-known/oauth-protected-resource",
+  "note": "VERIFIED: fetched 2026-10-20, 200 JSON RFC 9728 metadata, resource https://sentry.io."
+ },
+ {
+  "id": "sentry-api-catalog-rfc9727",
+  "name": "Sentry",
+  "url": "https://sentry.io/.well-known/api-catalog",
+  "type": "site",
+  "implements": [
+   "api-catalog-rfc9727"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://sentry.io/.well-known/api-catalog",
+  "note": "VERIFIED: fetched 2026-10-20, 200 application/linkset+json, items sentry.io/api/0/ and mcp.sentry.dev/mcp."
+ },
+ {
+  "id": "sentry-llms-txt",
+  "name": "Sentry",
+  "url": "https://sentry.io/llms.txt",
+  "type": "site",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://sentry.io/llms.txt",
+  "note": "VERIFIED: fetched 2026-10-20, 200, H1 \"# Sentry\" (about 246 KB)."
+ },
+ {
+  "id": "twilio-mcp-server-cards",
+  "name": "Twilio public web MCP (Server Card)",
+  "url": "https://www.twilio.com/.well-known/mcp/server-card.json",
+  "type": "service",
+  "implements": [
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://twilio.com/.well-known/mcp/server-card.json",
+  "note": "REPORTED: fetched 2026-10-20, 200 JSON, name com.twilio/twilio-com-public-web-mcp, $schema is the 2025-10-17 registry server.schema.json rather than the v1 server-card schema; non-SEP path (twilio.com redirects to www)."
+ },
+ {
+  "id": "twilio-mcp",
+  "name": "Twilio public web MCP server",
+  "url": "https://www.twilio.com/.well-known/mcp",
+  "type": "service",
+  "implements": [
+   "mcp"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://www.twilio.com/.well-known/mcp",
+  "note": "VERIFIED: fetched 2026-10-20, POST initialize answered 200, serverInfo.name twilio-com-public-web-mcp; public, no auth."
+ },
+ {
+  "id": "huggingface-api-catalog-rfc9727",
+  "name": "Hugging Face",
+  "url": "https://huggingface.co/.well-known/api-catalog",
+  "type": "site",
+  "implements": [
+   "api-catalog-rfc9727"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://huggingface.co/.well-known/api-catalog",
+  "note": "VERIFIED: fetched 2026-10-20, 200 application/linkset+json with the RFC 9727 profile, one item (huggingface.co)."
+ },
+ {
+  "id": "huggingface-oauth-metadata-for-agents",
+  "name": "Hugging Face",
+  "url": "https://huggingface.co/.well-known/oauth-protected-resource",
+  "type": "site",
+  "implements": [
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://huggingface.co/.well-known/oauth-protected-resource",
+  "note": "VERIFIED: fetched 2026-10-20, 200 JSON RFC 9728 metadata, resource https://huggingface.co/mcp, authorization_servers [https://huggingface.co]."
+ },
+ {
+  "id": "huggingface-mcp-server-cards",
+  "name": "Hugging Face MCP server (Server Card)",
+  "url": "https://huggingface.co/mcp/server-card",
+  "type": "service",
+  "implements": [
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://huggingface.co/mcp/server-card",
+  "note": "VERIFIED: fetched 2026-10-20, 200 application/mcp-server-card+json, $schema v1 server-card.schema.json, name huggingface.co/mcp, version 0.4.31; served at the SEP-2127 <endpoint>/server-card location."
+ },
+ {
+  "id": "huggingface-mcp",
+  "name": "Hugging Face MCP server",
+  "url": "https://huggingface.co/mcp",
+  "type": "service",
+  "implements": [
+   "mcp"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://huggingface.co/mcp",
+  "note": "VERIFIED: fetched 2026-10-20, POST initialize answered 200."
+ },
+ {
+  "id": "mintlify-oauth-metadata-for-agents",
+  "name": "Mintlify",
+  "url": "https://www.mintlify.com/.well-known/oauth-protected-resource",
+  "type": "site",
+  "implements": [
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://mintlify.com/.well-known/oauth-protected-resource",
+  "note": "VERIFIED: fetched 2026-10-20, 200 JSON RFC 9728 metadata, resource https://mcp.mintlify.com, authorization_servers [https://mcp.mintlify.com] (mintlify.com redirects to www)."
+ },
+ {
+  "id": "tencent-cloud-llms-txt",
+  "name": "Tencent Cloud",
+  "url": "https://cloud.tencent.com/llms.txt",
+  "type": "site",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://cloud.tencent.com/llms.txt",
+  "note": "VERIFIED: fetched 2026-10-20, 200 text/plain, H1 present (Chinese-language index)."
+ },
+ {
+  "id": "samsung-llms-txt",
+  "name": "Samsung",
+  "url": "https://www.samsung.com/llms.txt",
+  "type": "site",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://www.samsung.com/llms.txt",
+  "note": "VERIFIED: fetched 2026-10-20, 200 text/plain, H1 \"# Samsung Electronics\" with curl and browser user agents; serves 403 to some non-browser clients, including our probe, so /check/ grades samsung.com F."
+ },
+ {
+  "id": "paypal-llms-txt",
+  "name": "PayPal",
+  "url": "https://www.paypal.com/llms.txt",
+  "type": "site",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://www.paypal.com/llms.txt",
+  "note": "VERIFIED: fetched 2026-10-20, 200 text/plain, H1 \"# PayPal\"."
+ },
+ {
+  "id": "stripe-llms-txt",
+  "name": "Stripe",
+  "url": "https://stripe.com/llms.txt",
+  "type": "site",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://stripe.com/llms.txt",
+  "note": "VERIFIED: fetched 2026-10-20, 200 text/plain, H1 \"# Stripe\"; docs.stripe.com/llms.txt also serves one (200 text/markdown, \"# Stripe Documentation\")."
+ },
+ {
+  "id": "atlassian-llms-txt",
+  "name": "Atlassian",
+  "url": "https://www.atlassian.com/llms.txt",
+  "type": "site",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://www.atlassian.com/llms.txt",
+  "note": "VERIFIED: fetched 2026-10-20, 200, H1 \"# Atlassian\"."
+ },
+ {
+  "id": "hubspot-llms-txt",
+  "name": "HubSpot",
+  "url": "https://www.hubspot.com/llms.txt",
+  "type": "site",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://www.hubspot.com/llms.txt",
+  "note": "VERIFIED: fetched 2026-10-20, 200, H1 \"# HubSpot\"."
+ },
+ {
+  "id": "linear-llms-txt",
+  "name": "Linear",
+  "url": "https://linear.app/llms.txt",
+  "type": "site",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://linear.app/llms.txt",
+  "note": "VERIFIED: fetched 2026-10-20, 200, H1 \"# Linear\"."
+ },
+ {
+  "id": "kakao-playmcp-mcp",
+  "name": "Kakao PlayMCP gateway",
+  "url": "https://playmcp.kakao.com/mcp",
+  "type": "service",
+  "implements": [
+   "mcp"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://playmcp.kakao.com/mcp",
+  "note": "REPORTED: fetched 2026-10-20, GET and POST initialize both return 401 with a Bearer resource_metadata challenge; an OAuth-protected MCP gateway, handshake past auth not tested."
+ },
+ {
+  "id": "kakao-playmcp-oauth-metadata-for-agents",
+  "name": "Kakao PlayMCP",
+  "url": "https://playmcp.kakao.com/.well-known/oauth-protected-resource/mcp",
+  "type": "site",
+  "implements": [
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://playmcp.kakao.com/.well-known/oauth-protected-resource/mcp",
+  "note": "VERIFIED: fetched 2026-10-20, 200 JSON RFC 9728 metadata, resource https://playmcp.kakao.com/mcp, authorization_servers [https://playauth.kakao.com/playmcp]."
+ },
+ {
+  "id": "kakao-playmcp-llms-txt",
+  "name": "Kakao PlayMCP",
+  "url": "https://playmcp.kakao.com/llms.txt",
+  "type": "site",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-20",
+  "date_basis": "recorded",
+  "source": "https://playmcp.kakao.com/llms.txt",
+  "note": "VERIFIED: fetched 2026-10-20, 200, H1 \"# PlayMCP\" (Korean)."
  }
 ]

@@ -37,10 +37,10 @@
     "url": "https://workos.com/blog/everything-your-team-needs-to-know-about-mcp-in-2026"
    },
    {
-    "claim": "The MCP Server Card is defined by SEP-2127, tracked as an experimental extension (modelcontextprotocol/ext-server-card), reserving GET <streamable-http-url>/server-card as the recommended discovery location; it is explicitly NOT an accepted or official MCP extension as of this check, and discovery is intended to route through AI Catalog entries rather than a fixed /.well-known/ path.",
+    "claim": "Superseded: as of 2026-08-12 SEP-2127 was an experimental extension, not yet accepted. SEP-2127 reached Final on 2026-10-06, and the extension repo moved from experimental-ext-server-card to ext-server-card (301 observed 2026-10-20). It reserves GET <streamable-http-url>/server-card; domain-level discovery routes through AI Catalog entries.",
     "date": "2026-08-12",
     "label": "VERIFIED",
-    "url": "https://github.com/modelcontextprotocol/experimental-ext-server-card"
+    "url": "https://github.com/modelcontextprotocol/ext-server-card"
    },
    {
     "claim": "The MCP GitHub org publishes ten official/community SDKs tiered 1-3 (TypeScript, Python, C#, Go, Rust = Tier 1; Java, Ruby = Tier 2; Swift, PHP, Kotlin = Tier 3); the Python SDK has 24.2k GitHub stars and the TypeScript SDK 13.3k, both far larger than any competing protocol's SDK repos checked in this pass.",
@@ -106,11 +106,15 @@
    {
     "date": "2026-10-17",
     "note": "prose brought in line with the infobox and history: SEP-2127 Server Cards are Final (2026-10-06), not experimental; reserved location, media type and the superseded /.well-known/mcp.json noted"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "server-card evidence line marked superseded (SEP-2127 Final; repo renamed to ext-server-card)"
    }
   ],
   "id": "mcp",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "name": "Model Context Protocol",
   "native_status": "Active open specification, current dated release 2026-07-28",
   "origin": {
@@ -387,6 +391,12 @@
     "http_status": 200,
     "content_sha256": "583ce8c44ab5db9f99750f1ed762fbad9158edf69450d54770fed3d55ca868d2",
     "detector": "github@1.0"
+   },
+   {
+    "claim": "Releases v1.12.0 (Rust crate), schema-v1.26.0 and schema-v2.0.0-alpha.9 (prerelease) published 2026-10-16.",
+    "date": "2026-10-16",
+    "label": "VERIFIED",
+    "url": "https://github.com/agentclientprotocol/agent-client-protocol/releases/tag/schema-v1.26.0"
    }
   ],
   "form": "endpoint",
@@ -420,11 +430,15 @@
    {
     "date": "2026-10-16",
     "note": "version label restored to 'v1.11.0 (schema v1.25.0); v2 unstable'; the repository's latest tag (schema-v1.25.0) is a package, SDK or build tag, not the specification version, so the GitHub watch no longer drives version"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "version v1.12.0 / schema v1.26.0 (2026-10-16); the release watcher does not bump labels (gap scout 2026-10-20)"
    }
   ],
   "id": "agent-client-protocol",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "name": "Agent Client Protocol",
   "native_status": "v1 stable and shipping; v2 published in Draft form as of 2026-07-20",
   "origin": {
@@ -449,8 +463,8 @@
   "summary_md": "The Agent Client Protocol (ACP) standardizes how a code editor or IDE talks to a coding agent, so that any ACP-compatible agent works with any ACP-compatible editor without bespoke integration work on either side [1]. It targets the same M×N problem the Language Server Protocol solved for editor-to-language-server integration, but for agent-to-editor instead.\n\nACP assumes the user's primary surface is the editor, which reaches out to agents for specific tasks. Local agents run as editor sub-processes and communicate over JSON-RPC via stdio; remote, cloud-hosted agents are supported over HTTP or WebSocket, though the project's own documentation states full remote support is still a work in progress [1]. ACP deliberately reuses MCP's JSON representations where practical, and layers on coding-specific UX types (e.g. representing diffs) that MCP does not define; user-facing text defaults to Markdown.\n\nACP does not itself define agent discovery beyond the ACP Registry (stabilized 2026-03-09), which gives clients a standard way to find, install, and configure agents — it does not attempt to be a general web-scale discovery mechanism [2]. It also does not (yet) fully specify remote-agent transport; a dedicated Transports Working Group (JetBrains and Block/Goose engineers) was formed on 2026-04-22 specifically to standardize WebSocket/HTTP transports for remote agents [2].\n\nAs of this check (September 2026), ACP v1 is stable and has shipped a steady cadence of \"Completed\" RFDs throughout 2026 (session resume, session list, logout, elicitation, boolean config options, request cancellation, and more), and ACP v2's protocol documentation and schema were published in Draft form on 2026-07-20 [2]. Rust and TypeScript SDKs both reached 1.0 on 2026-06-25 [2]. Governance is unambiguous and disclosed rather than disputed: Zed Industries is the explicit \"BDFL\" (benevolent dictator for life) design-team lead over a public Request-for-Dialog process modeled loosely on Rust's RFC process, and JetBrains' Sergey Ignatov joined as a second Lead Maintainer on 2026-02-18, formalizing what the project describes as \"growing collaboration between Zed and JetBrains\" [3][2]. What is not yet settled: how much of the remote-agent transport work lands in v1 versus v2, and whether governance broadens beyond the two-company core team the project says it currently anticipates expanding.",
   "track": "single-vendor",
   "version": {
-   "label": "v1.11.0 (schema v1.25.0); v2 unstable",
-   "date": "2026-10-09"
+   "label": "v1.12.0 (schema v1.26.0); v2 unstable (schema v2.0.0-alpha.9)",
+   "date": "2026-10-16"
   },
   "watch": [
    {
@@ -1639,6 +1653,12 @@
     "date": "2026-06-24",
     "label": "VERIFIED",
     "url": "https://arxiv.org/abs/2606.26028"
+   },
+   {
+    "claim": "ERC-8122 'Minimal Agent Registry' (Draft, created 2025-12-17, author Prem Makeig) proposes a lightweight agent-discovery registry built on ERC-6909 that anyone can deploy on any L2 or mainnet, with fully on-chain metadata (ERC-8048) and cross-chain agent ids (ERC-7930). Its motivation cites ERC-8004's one-singleton-per-chain design as the reason for an alternative that supports custom and curated registries.",
+    "date": "2025-12-17",
+    "label": "VERIFIED",
+    "url": "https://eips.ethereum.org/EIPS/eip-8122"
    }
   ],
   "form": "onchain-registry",
@@ -1660,11 +1680,15 @@
    {
     "date": "2026-10-16",
     "note": "use-case tags (auto)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "added ERC-8122 (Minimal Agent Registry, Draft), an alternative registry design that cites ERC-8004's singleton-per-chain model; from gap scout 2026-10-20, verified against eips.ethereum.org/EIPS/eip-8122"
    }
   ],
   "id": "erc-8004",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "name": "ERC-8004: Trustless Agents",
   "native_status": "Draft Standards Track ERC",
   "origin": {
@@ -3065,6 +3089,18 @@
     "date": "2026-07-01",
     "label": "VERIFIED",
     "url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/"
+   },
+   {
+    "claim": "draft-ietf-webbotauth-httpsig-protocol-00 header: 1 September 2026, expires 5 March 2027, Intended status: Standards Track (T. Meunier, Cloudflare; S. Major, Google). The individual predecessor reached -02 on 18 August 2026.",
+    "date": "2026-09-01",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-ietf-webbotauth-httpsig-protocol/"
+   },
+   {
+    "claim": "draft-nottingham-webbotauth-use-cases (M. Nottingham) set out use cases to inform the webbotauth WG's scope: for sites, mitigating volumetric abuse, controlling access, serving different content to bots, auditing bot behaviour, classifying traffic and authenticating site services; for bots, IP address mobility, shared IP addresses, robots.txt alignment and conveying context. Its last revision, -02 of 2026-04-01, expired on 2026-10-03 and is archived.",
+    "date": "2026-04-01",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-nottingham-webbotauth-use-cases/"
    }
   ],
   "form": "http-header",
@@ -3082,13 +3118,21 @@
    {
     "date": "2026-10-16",
     "note": "use-case tags (auto)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "intended status corrected to Standards Track; predecessor draft history corrected (gap scout 2026-10-20)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "noted the expired use-cases memo draft-nottingham-webbotauth-use-cases-02 (2026-04-01, expired 2026-10-03); from gap scout 2026-10-20, verified against the datatracker page (via Exa) and the -02 text (IETF rsync archive)"
    }
   ],
   "id": "webbotauth",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "name": "Web Bot Auth HTTP Message Signatures",
-  "native_status": "Active Internet-Draft, WG Document, Intended Status: Informational",
+  "native_status": "Active Internet-Draft, WG Document, Intended Status: Standards Track; expires 5 March 2027",
   "origin": {
    "date": "2025-04",
    "org": "Thibault Meunier (Cloudflare), Sandor Major (Google)"
@@ -3108,11 +3152,11 @@
   "scope": "general",
   "spec_url": "https://datatracker.ietf.org/doc/draft-ietf-webbotauth-httpsig-protocol/",
   "step": "identify",
-  "summary_md": "Web Bot Auth is an IETF specification that lets an automated HTTP client (a crawler, agent, or bot) cryptographically sign its outbound requests using RFC 9421 HTTP Message Signatures, so the receiving server can verify the client's identity and intent without relying on spoofable signals like the User-Agent string or source IP [1]. A client sends a Signature-Agent header naming where its public keys can be found; the origin resolves that to a JSON Web Key Set served at a fixed well-known path and verifies the request's Signature/Signature-Input fields against it [1].\n\nIt solves bot/agent attribution at the transport layer: an origin can distinguish a signed, identity-bearing automated client from unsigned traffic, and can grant differentiated treatment (rate limits, access, billing) based on a verified identity rather than heuristics [1][3]. It does not define what a client is *authorized* to do once verified (that is left to the origin's own policy), does not cover payment, and does not itself specify how a verifier should be told which identities to trust — that is the job of the companion Signature Agent Card / registry draft.\n\nCurrent state: originally an individual submission (draft-meunier-webbotauth-httpsig-protocol, first published 2025-04, reaching -00 of the current \"httpsig-protocol\" naming on 2026-06-26). On 2026-09-01 it was formally adopted as a document of the newly chartered IETF **webbotauth** Working Group, republished as draft-ietf-webbotauth-httpsig-protocol-00 [2]. Intended status is Informational, not yet a Working Group last call or RFC.\n\nWho implements it: Cloudflare verifies Web Bot Auth signatures at the edge for its Verified Bots program and publishes an integration guide with the exact required headers and the /.well-known/http-message-signatures-directory path [3]. The draft's own appendix lists further independent implementations: a Chrome MV3 extension and Rust/TypeScript libraries from Cloudflare, a Puppeteer-based client example, a PHP Guzzle middleware, Python scripts, and server-side modules for Caddy and Apache [1]. Cloudflare previously reported signing bots from OpenAI as an early adopter (2025-05-15, per the prior seed research; not independently re-verified in this pass).\n\nDisputed or unknown: the spec's naming and draft numbering have churned repeatedly (it replaces draft-meunier-web-bot-auth-architecture and draft-meunier-webbotauth-httpsig-directory), which makes citing a stable version number difficult; always resolve to the datatracker's \"current\" redirect rather than a pinned draft-NN URL. Adoption beyond Cloudflare's own edge and the listed open-source projects has not been independently counted.",
+  "summary_md": "Web Bot Auth is an IETF specification that lets an automated HTTP client (a crawler, agent, or bot) cryptographically sign its outbound requests using RFC 9421 HTTP Message Signatures, so the receiving server can verify the client's identity and intent without relying on spoofable signals like the User-Agent string or source IP [1]. A client sends a Signature-Agent header naming where its public keys can be found; the origin resolves that to a JSON Web Key Set served at a fixed well-known path and verifies the request's Signature/Signature-Input fields against it [1].\n\nIt solves bot/agent attribution at the transport layer: an origin can distinguish a signed, identity-bearing automated client from unsigned traffic, and can grant differentiated treatment (rate limits, access, billing) based on a verified identity rather than heuristics [1][3]. It does not define what a client is *authorized* to do once verified (that is left to the origin's own policy), does not cover payment, and does not itself specify how a verifier should be told which identities to trust — that is the job of the companion Signature Agent Card / registry draft.\n\nCurrent state: originally an individual submission (draft-meunier-webbotauth-httpsig-protocol, first published 2025-04, reaching -00 of the current \"httpsig-protocol\" naming on 2026-06-26 and -02 on 2026-08-18). On 2026-09-01 it was formally adopted as a document of the newly chartered IETF **webbotauth** Working Group, republished as draft-ietf-webbotauth-httpsig-protocol-00 [2]. Intended status is Standards Track; it has not reached Working Group last call.\n\nWho implements it: Cloudflare verifies Web Bot Auth signatures at the edge for its Verified Bots program and publishes an integration guide with the exact required headers and the /.well-known/http-message-signatures-directory path [3]. The draft's own appendix lists further independent implementations: a Chrome MV3 extension and Rust/TypeScript libraries from Cloudflare, a Puppeteer-based client example, a PHP Guzzle middleware, Python scripts, and server-side modules for Caddy and Apache [1]. Cloudflare previously reported signing bots from OpenAI as an early adopter (2025-05-15, per the prior seed research; not independently re-verified in this pass).\n\nDisputed or unknown: the spec's naming and draft numbering have churned repeatedly (it replaces draft-meunier-web-bot-auth-architecture and draft-meunier-webbotauth-httpsig-directory), which makes citing a stable version number difficult; always resolve to the datatracker's \"current\" redirect rather than a pinned draft-NN URL. Adoption beyond Cloudflare's own edge and the listed open-source projects has not been independently counted.",
   "track": "ietf",
   "version": {
    "date": "2026-09-01",
-   "label": "draft-ietf-webbotauth-httpsig-protocol-00, adopted by the webbotauth WG, last updated 2026-09-01 (supersedes the individual draft-meunier-webbotauth-httpsig-protocol-00 of 2026-06-26)"
+   "label": "draft-ietf-webbotauth-httpsig-protocol-00, adopted by the webbotauth WG, 2026-09-01 (replaces the individual draft-meunier-webbotauth-httpsig-protocol, last revision -02 of 2026-08-18)"
   },
   "watch": [
    {
@@ -3775,11 +3819,15 @@
    {
     "date": "2026-10-16",
     "note": "use-case tags (auto)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "version label notes expiry"
    }
   ],
   "id": "ans",
   "implementation": "none-found",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "name": "Agent Name Service v2 (ANS)",
   "native_status": "Expired Internet-Draft (expired 2026-10-15)",
   "origin": {
@@ -3806,7 +3854,7 @@
   "track": "community",
   "version": {
    "date": "2026-04-15",
-   "label": "draft-narajala-courtney-ansv2-01, last updated 2026-04-15 (replaces draft-narajala-ans, first published 2025-05)"
+   "label": "draft-narajala-courtney-ansv2-01, last updated 2026-04-15 (replaces draft-narajala-ans, first published 2025-05); expired 2026-10-15"
   },
   "watch": [
    {
@@ -5462,11 +5510,15 @@
    {
     "date": "2026-10-17",
     "note": "version v3.2.5 (watcher)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "spec_url and page watcher moved off the pinned 3.1.20 docs to the docs home (current release v3.2.5)"
    }
   ],
   "id": "adcp",
   "implementation": "shipping",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "name": "Ad Context Protocol",
   "native_status": "Active open protocol, documented current release 3.1.20",
   "origin": {
@@ -5487,7 +5539,7 @@
   },
   "question": "How can an AI agent discover ad inventory, execute a media buy, sync creative, and report performance across many ad platforms through one protocol?",
   "scope": "advertising",
-  "spec_url": "https://docs.adcontextprotocol.org/dist/docs/3.1.20/intro",
+  "spec_url": "https://docs.adcontextprotocol.org/",
   "step": "act",
   "summary_md": "The Ad Context Protocol (AdCP) is an open standard, published by the industry organization AgenticAdvertising.org, that lets AI agents discover ad inventory, set up commercial relationships, plan and execute media buys, generate and distribute creative, activate targeting data, run governance checks, and report performance across many ad platforms through one set of tasks instead of a bespoke integration per platform [1]. It explicitly targets more than programmatic exchange: it covers direct deals, sponsorships, broadcast, and out-of-home, since most global ad spend still flows through non-programmatic channels [1].\n\nAdCP solves ad-tech's fragmentation problem for agentic buying: a media buyer's agent sends one natural-language brief via `get_products` to every connected seller and receives back a common schema (pricing, forecasts, targeting, creative requirements) instead of comparing incompatible dashboards; `create_media_buy` then executes across sellers in one call, and `get_media_buy_delivery` aggregates reporting the same way [1]. Publisher-side discovery runs through a well-known `adagents.json` file (analogous to `robots.txt`) declaring authorized agent endpoints and capabilities, and brand-side identity/authorization runs through `brand.json`; a hosted Registry API additionally resolves publishers and brands to their AdCP agents by capability, category, or geography for broader discovery beyond known domains [1]. Trust is handled structurally: requests are signed with RFC 9421 HTTP Message Signatures against operator-published JWKS, idempotency keys make retried writes safe, and governance approvals travel as signed JWS tokens so no intermediate agent can forge a human sign-off [1].\n\nAdCP does not itself run ad auctions or hold inventory — it is a transaction and coordination layer that sits on top of two existing agent-transport protocols, MCP (for AI-assistant tool calls) and A2A (for agent-to-agent collaboration), using the same task schemas over either transport [1]. It also does not claim every listed agent's capability claims are true by construction: the protocol ships compliance storyboards (a testable, runnable verification suite) precisely because claims otherwise would not be independently checkable [1].\n\nAs of this verification, the documented current release is 3.1.20, with published, versioned client SDKs for JavaScript/TypeScript, Python, and Go [1]. The one open-source implementation surfaced in the docs, the Prebid Sales Agent (Python backend, TypeScript protocol layer, GAM integration), is explicitly labeled a community example built by a Prebid working group rather than a maintained reference implementation — a caveat AdCP's own documentation states outright, which this record treats as direct evidence of at least one independent, named implementer rather than as proof of broad adoption [1]. Foundation-level governance (voting classes, Board composition, spec lifecycle) is documented in a public CHARTER.md, which is more governance transparency than many single-vendor competitors in this space disclose [1][2]. What remains unverified: no independent count of publishers actually serving `adagents.json` in production, nor of live AdCP agent endpoints, was located in this pass — that would need this project's own probe run before adoption could be upgraded from `observed` to `measured`.",
   "track": "industry-body",
@@ -5498,7 +5550,7 @@
   "watch": [
    {
     "type": "page",
-    "url": "https://docs.adcontextprotocol.org/dist/docs/3.1.20/intro",
+    "url": "https://docs.adcontextprotocol.org/",
     "selector": "main",
     "cadence": "weekly"
    },
@@ -5836,7 +5888,7 @@
    "claims": [
     "It is not yet established whether the SPIFFE project itself will adopt an agent-specific profile, or whether this remains solely the proposal of the outside aiagent-auth draft."
    ],
-   "summary": "SPIFFE itself is not an agent-specific standard — it is a general workload-identity framework. Its relevance to this map comes entirely from a separate, non-SPIFFE-governed IETF individual draft that proposes profiling SPIFFE (and WIMSE) for AI agents."
+   "summary": "SPIFFE itself is not an agent-specific standard — it is a general workload-identity framework. Its relevance to this map comes entirely from a separate, non-SPIFFE-governed IETF WIMSE working-group draft (draft-ietf-wimse-aims) that proposes profiling SPIFFE (and WIMSE) for AI agents."
   },
   "evidence": [
    {
@@ -5867,11 +5919,15 @@
    {
     "date": "2026-10-16",
     "note": "use-case tags (auto)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "AI-agent profile now draft-ietf-wimse-aims-00 (gap scout 2026-10-20)"
    }
   ],
   "id": "spiffe",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "name": "SPIFFE (Secure Production Identity Framework for Everyone)",
   "native_status": "Active, stable open-source specification set (SPIFFE/SPIRE); SPIFFE itself makes no agent-specific claims",
   "origin": {
@@ -5893,11 +5949,11 @@
   "scope": "general",
   "spec_url": "https://spiffe.io/docs/latest/spiffe-about/overview/",
   "step": "identify",
-  "summary_md": "SPIFFE (Secure Production Identity Framework for Everyone) is a CNCF-graduated set of open-source specifications for issuing short-lived, cryptographic identity documents (SVIDs — SPIFFE Verifiable Identity Documents, either X.509 or JWT) to software workloads via a local Workload API, so that services can mutually authenticate across dynamic, heterogeneous infrastructure without relying on network location [1]. It is included in this map's Identify layer because an active IETF individual draft proposes applying it — alongside WIMSE and OAuth 2.0 — to AI-agent authentication specifically [2].\n\nIt solves workload-to-workload mutual authentication at scale: instead of IP-based network policies, each workload instance attests to a SPIRE server (or another SPIFFE-compliant issuer) and receives a short-lived, automatically rotated identity bound to a `spiffe://trust-domain/path` name [1]. What it does not do is anything agent-specific by itself: the SPIFFE specification and its own documentation make no claims about AI agents, delegation from a human principal, or any of the semantics an autonomous-agent identity system would need beyond \"this is workload X.\" That gap is what the separate draft-klrc-aiagent-auth draft (co-authored by engineers from Defakto, AWS, Zscaler, Ping Identity, OpenAI and Okta) attempts to address by describing how SPIFFE and WIMSE identities, combined with OAuth 2.0 token exchange, could carry an agent's identity and a delegation chain from its human or organizational principal — without SPIFFE itself defining any new protocol for this [2].\n\nCurrent state: SPIFFE's core specifications (SPIFFE ID, X509-SVID, JWT-SVID, Workload API, Federation) are stable and have been for years; SPIFFE and its reference implementation SPIRE are both CNCF-graduated projects. The AI-agent application is at draft-klrc-aiagent-auth-03 (July 2026), an Informational individual draft under the IETF Network Working Group umbrella, not a SPIFFE-project deliverable [2].\n\nWho implements it: SPIFFE's own ecosystem page lists SPIRE, cert-manager, Consul, Dapr and Istio as open-source implementers, and GCP, Teleport, Palo Alto Networks (Idira), Red Hat, Defakto, Cofide and Greymatter.io as commercial implementers of the general workload-identity spec [1] — none of this reflects AI-agent-specific deployment.\n\nDisputed or unknown: whether SPIFFE will formally adopt an agent identity profile, versus this remaining an outside proposal layered on top of it, is unresolved. No production system was found in this pass actually issuing SPIFFE SVIDs to AI agents specifically (as opposed to conventional microservice workloads).",
+  "summary_md": "SPIFFE (Secure Production Identity Framework for Everyone) is a CNCF-graduated set of open-source specifications for issuing short-lived, cryptographic identity documents (SVIDs — SPIFFE Verifiable Identity Documents, either X.509 or JWT) to software workloads via a local Workload API, so that services can mutually authenticate across dynamic, heterogeneous infrastructure without relying on network location [1]. It is included in this map's Identify layer because a WIMSE working-group draft (draft-ietf-wimse-aims, formerly the individual draft-klrc-aiagent-auth) proposes applying it — alongside WIMSE and OAuth 2.0 — to AI-agent authentication specifically [2].\n\nIt solves workload-to-workload mutual authentication at scale: instead of IP-based network policies, each workload instance attests to a SPIRE server (or another SPIFFE-compliant issuer) and receives a short-lived, automatically rotated identity bound to a `spiffe://trust-domain/path` name [1]. What it does not do is anything agent-specific by itself: the SPIFFE specification and its own documentation make no claims about AI agents, delegation from a human principal, or any of the semantics an autonomous-agent identity system would need beyond \"this is workload X.\" That gap is what the separate draft-klrc-aiagent-auth draft (co-authored by engineers from Defakto, AWS, Zscaler, Ping Identity, OpenAI and Okta) attempts to address by describing how SPIFFE and WIMSE identities, combined with OAuth 2.0 token exchange, could carry an agent's identity and a delegation chain from its human or organizational principal — without SPIFFE itself defining any new protocol for this [2].\n\nCurrent state: SPIFFE's core specifications (SPIFFE ID, X509-SVID, JWT-SVID, Workload API, Federation) are stable and have been for years; SPIFFE and its reference implementation SPIRE are both CNCF-graduated projects. The AI-agent application is at draft-klrc-aiagent-auth-03 (July 2026), an Informational individual draft under the IETF Network Working Group umbrella, not a SPIFFE-project deliverable [2].\n\nWho implements it: SPIFFE's own ecosystem page lists SPIRE, cert-manager, Consul, Dapr and Istio as open-source implementers, and GCP, Teleport, Palo Alto Networks (Idira), Red Hat, Defakto, Cofide and Greymatter.io as commercial implementers of the general workload-identity spec [1] — none of this reflects AI-agent-specific deployment.\n\nDisputed or unknown: whether SPIFFE will formally adopt an agent identity profile, versus this remaining an outside proposal layered on top of it, is unresolved. No production system was found in this pass actually issuing SPIFFE SVIDs to AI agents specifically (as opposed to conventional microservice workloads).",
   "track": "linux-foundation",
   "version": {
    "date": null,
-   "label": "SPIFFE core specs (SPIFFE ID, X509-SVID, JWT-SVID, Workload API) are stable and versioned independently; the AI-agent profile is draft-klrc-aiagent-auth-03, published 2026-07-06"
+   "label": "SPIFFE core specs (SPIFFE ID, X509-SVID, JWT-SVID, Workload API) are stable and versioned independently; the AI-agent profile is draft-ietf-wimse-aims-00 (WIMSE WG document, 2026-09-15; replaces draft-klrc-aiagent-auth-03)"
   },
   "watch": [
    {
@@ -5958,6 +6014,12 @@
     "date": "2026-07-06",
     "label": "VERIFIED",
     "url": "https://www.ietf.org/ietf-ftp/internet-drafts/draft-klrc-aiagent-auth-03.html"
+   },
+   {
+    "claim": "draft-ni-wimse-ai-agent-identity-03 'WIMSE Applicability for AI Agents' (Y. Ni and C. P. Liu, Huawei; M. Richardson, Sandelman Software Works), an individual Informational draft dated 1 October 2026 and expiring 4 April 2027, discussed on the wimse list, discusses applying WIMSE so AI agents get independent identities and credential management, and how to bind an agent identity cryptographically to an accountable user or organization. It is an applicability statement and defines no new protocol.",
+    "date": "2026-10-01",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-ni-wimse-ai-agent-identity/"
    }
   ],
   "form": "endpoint",
@@ -5975,11 +6037,15 @@
    {
     "date": "2026-10-16",
     "note": "use-case tags (auto)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "noted draft-ni-wimse-ai-agent-identity-03 (WIMSE Applicability for AI Agents, individual, 2026-10-01); from gap scout 2026-10-20, verified against the datatracker page (via Exa) and the -03 text (IETF rsync mirror)"
    }
   ],
   "id": "wimse",
   "implementation": "prototype",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "name": "Workload Identity in Multi System Environments (WIMSE) Architecture",
   "native_status": "Active Internet-Draft, WG Document, Intended Status: Informational",
   "origin": {
@@ -8191,6 +8257,12 @@
     "http_status": 200,
     "content_sha256": "43b0c38b091dc51269e3cd624032dad5e2ada2c83e94a9af8311f38a23f66149",
     "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "draft-illyes-aipref-cbcp 'Crawler best practices' (G. Illyes, M. Kühlewind of Ericsson, A. Kohn) lists six practices crawlers must follow: respect the Robots Exclusion Protocol, identify themselves in the User-Agent string, not interfere with a site's normal operation, support caching directives, publish their IP ranges in a standardized format, and publish a page explaining how to block them and how crawled data is used. Its last revision, -04 of 2026-04-09, expired on 2026-10-11 with no successor and is archived.",
+    "date": "2026-04-09",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-illyes-aipref-cbcp/"
    }
   ],
   "form": "well-known-file",
@@ -8208,11 +8280,15 @@
    {
     "date": "2026-10-16",
     "note": "use-case tags (auto)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "noted the expired crawler best-practices draft draft-illyes-aipref-cbcp-04 (2026-04-09, expired 2026-10-11); from gap scout 2026-10-20, verified against the datatracker page (via Exa) and the -04 text (IETF rsync archive)"
    }
   ],
   "id": "ai-crawler-tokens-robots",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "name": "AI Crawler User-Agent Tokens in robots.txt",
   "native_status": "A convention, not a formal spec; each vendor's documentation is normative only for that vendor's own crawler",
   "origin": {
@@ -8525,7 +8601,8 @@
   "analog": "an OpenAPI/Swagger spec, extended with the multi-call recipes a human developer would otherwise write by hand",
   "collisions": [
    "agents.md (unrelated coding-agent instructions file)",
-   "agent.json / agentfile.json (various unrelated agent-config conventions used by other frameworks)"
+   "agent.json / agentfile.json (various unrelated agent-config conventions used by other frameworks)",
+   "an unrelated /.well-known/agents.json format with an agents[] list (seen at zapier.com and cloudflare.com, 2026-10-20), not Wildcard's OpenAPI + flows file"
   ],
   "discovery": {
    "mechanism": "Proposed well-known path, though the spec itself notes providers can maintain files without adopting the path; a discretionary third-party registry also exists",
@@ -8612,11 +8689,15 @@
    {
     "date": "2026-10-16",
     "note": "version label restored to '0.1.0'; the repository's latest tag (resend) is a package, SDK or build tag, not the specification version, so the GitHub watch no longer drives version"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "collision with the unrelated agents.json format served by Zapier and Cloudflare recorded"
    }
   ],
   "id": "agents-json",
   "implementation": "prototype",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "name": "agents.json",
   "native_status": "Dormant: last push 2025-08-21, version 0.1.0",
   "origin": {
@@ -10044,9 +10125,9 @@
    "claims": [
     "Adoption is confirmed and imminent (author/IdPro framing, 2026-07-29 and 2026-08-24 sources)",
     "Adoption is a starting point only, not a blessing of every line, and the document still has open security gaps the WG must resolve (WIMSE chair Justin Richer and multiple list commenters, per the 2026-08-24 report)",
-    "As of 2026-09-07 no WG-adopted document exists yet in the datatracker, so formal adoption has not been finalized"
+    "Formal adoption is now complete: draft-ietf-wimse-aims-00 was published as a WIMSE WG document on 2026-09-15 under the title 'AI Identity Management System'."
    ],
-   "summary": "The draft is in a live WIMSE working-group adoption process: a formal call for adoption closed 2026-08-24 with broad list support for adopting it as a WG starting point, but as of 2026-09-07 the datatracker's WIMSE WG document list still shows no draft-ietf-wimse-aiagent-auth — only the individual draft-klrc-aiagent-auth-03 exists. Reviewers on the WIMSE list flagged unresolved gaps: no defined revocation path for a subverted-but-still-validly-credentialed agent, no per-hop scope narrowing or chain verification for multi-hop agent-to-agent delegation (at least one reviewer reported a confused-deputy escalation path), disagreement over modeling agent identity purely as workload identity, and concern that cryptographic signing material should not live inside AI workloads that often run with broad sandbox privileges."
+   "summary": "The draft is in a live WIMSE working-group adoption process: a formal call for adoption closed 2026-08-24 with broad list support for adopting it as a WG starting point, and on 2026-09-15 it was published as the WG document draft-ietf-wimse-aims-00 ('AI Identity Management System'). Reviewers on the WIMSE list flagged unresolved gaps: no defined revocation path for a subverted-but-still-validly-credentialed agent, no per-hop scope narrowing or chain verification for multi-hop agent-to-agent delegation (at least one reviewer reported a confused-deputy escalation path), disagreement over modeling agent identity purely as workload identity, and concern that cryptographic signing material should not live inside AI workloads that often run with broad sandbox privileges."
   },
   "evidence": [
    {
@@ -10094,6 +10175,12 @@
     "http_status": 200,
     "content_sha256": "a07bd52255e7ceefdb2008376b3172e0b64ccdc59a18d82c2ca0cde3d5a2a0cf",
     "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "draft-ietf-wimse-aims-00 header: WIMSE, 15 September 2026, expires 19 March 2027, Informational, title 'AI Identity Management System', same six authors as draft-klrc-aiagent-auth.",
+    "date": "2026-09-15",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/"
    }
   ],
   "form": "document-format",
@@ -10111,11 +10198,15 @@
    {
     "date": "2026-10-16",
     "note": "use-case tags (auto)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "version, spec_url and dispute moved to draft-ietf-wimse-aims-00 (gap scout 2026-10-20)"
    }
   ],
   "id": "aiagent-auth",
   "implementation": "unknown",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "name": "AI Agent Authentication and Authorization (AIMS)",
   "native_status": "Replaced by draft-ietf-wimse-aims-00 (WG document, 2026-09-15)",
   "origin": {
@@ -10136,13 +10227,13 @@
   },
   "question": "Is there an IETF-endorsed way to authenticate and authorize an AI agent, and has the WIMSE working group actually taken this on?",
   "scope": "general",
-  "spec_url": "https://datatracker.ietf.org/doc/draft-klrc-aiagent-auth/",
+  "spec_url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
   "step": "identify",
   "summary_md": "AI Agent Authentication and Authorization — informally called AIMS (Agent Identity Management System) by its authors — is an IETF Internet-Draft that proposes best practices for authenticating and authorizing AI agents by composing existing standards, principally the WIMSE architecture and the OAuth 2.0 family, rather than by defining any new wire protocol [1]. Its core thesis, as described by co-author Jeff Lombardo, is that an AI agent should be modeled as a workload: it needs an identifier, credentials that cryptographically bind to that identifier, a way to authenticate to other systems, and a way to request delegated authorization, all of which the identity community has already built for services and microservices [4].\n\nIt solves the \"assembly gap\" rather than a standards gap: instead of inventing new token formats or credential lifecycles for agents, it maps WIMSE identifiers (a superset of SPIFFE IDs) to identifiers, WIMSE Workload Identity Tokens / X.509 / SPIFFE JWT-SVIDs to credentials, mTLS and HTTP Message Signatures and WIMSE Proof Tokens to authentication, and OAuth 2.0 flows — authorization code for delegated user flows, client credentials for autonomous agents, token exchange and ID-JAG identity chaining for multi-domain workflows — to authorization, with the OpenID Foundation's Shared Signals Framework, CAEP and RISC left as the mechanism for observability and revocation [4]. It explicitly does not define any new protocol, does not pick a single policy/compliance standard (deliberately left deployment-specific), and — as of the version reviewed — does not close several hard problems: it has no defined way to revoke a subverted agent that still holds a validly attested credential, no settled per-hop scope-narrowing or chain-verification mechanism for multi-hop agent-to-agent delegation (at least one WIMSE list reviewer reported a confused-deputy escalation path under the current grant patterns), and does not resolve where cryptographic signing material should live given that AI workloads often run with broad sandbox privileges [3].\n\nCurrent state, and the specific adoption question this record was created to check: the document is draft-klrc-aiagent-auth-03, an individual submission, last updated 2026-07-06, with no RFC stream and no intended RFC status set, expiring 2027-01-07 [1]. WIMSE WG chair Justin Richer opened a formal call for the working group to adopt it (co-author Pieter Kasselman, who also co-chairs WIMSE, recused himself from that process); the call closed 2026-08-24 with broad list support, most commenters treating the open technical gaps as post-adoption work rather than blockers [3]. However, checking the IETF datatracker's live WIMSE WG document list on 2026-09-07 — after that call closed — shows no draft-ietf-wimse-aiagent-auth or any other WG-adopted successor document; the WG's six active documents are unrelated WIMSE deliverables (architecture, workload proof tokens, HTTP signatures, identifiers, mutual TLS, workload credentials), and the WG's own \"related drafts\" list shows several other individual proposals on agent delegation instead. So: broad support for adoption exists on the list, but as of this check formal WG adoption has not yet been completed or reflected in the datatracker — this record should not claim WIMSE has adopted it.\n\nWho implements it: no implementation was located; this is a framework/best-practices document, not a protocol with conformance software, so \"implementation\" here would mean deployments that follow its composition guidance, and none was independently verified in this pass.\n\nDisputed or unknown: whether and when formal WG adoption completes; whether the final adopted scope keeps the AIMS name or the informal acronym; how the unresolved revocation and multi-hop delegation gaps get closed once (if) the WG owns the document; and how this composition-first approach will relate to competing agent-identity proposals also sitting in WIMSE's orbit (e.g. draft-asor-wimse-agent-delegation-chain, draft-reece-wimse-cross-org-delegation, draft-sweeney-wimse-credential-delegation), none of which this pass reviewed in depth.",
   "track": "ietf",
   "version": {
-   "date": "2026-07-06",
-   "label": "draft-klrc-aiagent-auth-03, individual submission, expires 2027-01-07"
+   "label": "draft-ietf-wimse-aims-00 (WIMSE WG document, expires 2027-03-19); replaces draft-klrc-aiagent-auth-03",
+   "date": "2026-09-15"
   },
   "watch": [
    {
@@ -10475,6 +10566,12 @@
     "source_type": "standards-body",
     "http_status": 200,
     "detector": "phase-a-fix@2026-10-16"
+   },
+   {
+    "claim": "draft-thaha-wimse-agent-evidence-binding-00 'Evidence Binding for AI Agent Credentials' (S. Thaha and S. Shamsudeen, individual contributors; Informational; datatracker 2026-10-19, expires 22 April 2027) observes that AIMS requires tamper-evident agent audit logs without specifying their format or discovery. It maps the AIMS minimum fields to the authors' own SCITT profile (draft-thaha-scitt-agent-execution-evidence-00), defines a claim binding a workload credential to the persistent agent, governing policy and expected Evidence Service, and registers an AEE-Caller-Ref HTTP field linking each call to the caller's evidence. It calls itself input to the AIMS work and makes no change to it.",
+    "date": "2026-10-19",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-thaha-wimse-agent-evidence-binding/"
    }
   ],
   "form": "document-format",
@@ -10488,11 +10585,15 @@
    {
     "date": "2026-10-16",
     "note": "use-case tags (auto)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "noted draft-thaha-wimse-agent-evidence-binding-00 (individual input to AIMS on audit evidence, 2026-10-19); from gap scout 2026-10-20, verified against the datatracker page (via Exa) and the -00 text (IETF rsync mirror); reconsider an own account-step record at -01"
    }
   ],
   "id": "wimse-aims",
   "implementation": "unknown",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "name": "WIMSE AI Identity Management System",
   "native_status": "Working group document, draft-ietf-wimse-aims-00 (2026-09-15)",
   "origin": {
@@ -10934,7 +11035,8 @@
    "probe_run": null
   },
   "aliases": [
-   "draft-gilda-wimse-agent-audit-record"
+   "draft-gilda-wimse-agent-audit-record",
+   "draft-gilda-audit-agent-audit-record"
   ],
   "analog": "a standardised audit-log entry",
   "audience": [
@@ -10980,6 +11082,18 @@
     "http_status": 200,
     "content_sha256": "eff59c40da87d466ca13e1b5daa48027a07f7a397627900433a458988b11afff",
     "detector": "ietf@1.0"
+   },
+   {
+    "claim": "draft-gilda-audit-agent-audit-record-00 (S. Gilda, 16 October 2026, Informational, expires 19 April 2027) states: 'This document replaces draft-gilda-wimse-agent-audit-record-02.'",
+    "date": "2026-10-16",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-gilda-audit-agent-audit-record/"
+   },
+   {
+    "claim": "draft-thaha-wimse-agent-evidence-binding-00 (October 2026) defines an in-toto predicate type for Execution Receipts so they can be carried by the same toolchain as audit records in the format of draft-gilda-wimse-agent-audit-record (an in-toto Statement in a DSSE envelope), and cites that draft's -02 revision.",
+    "date": "2026-10-19",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-thaha-wimse-agent-evidence-binding/"
    }
   ],
   "form": "document-format",
@@ -10997,13 +11111,21 @@
    {
     "date": "2026-10-17",
     "note": "Datatracker marks draft-gilda-wimse-agent-audit-record as replaced by draft-gilda-audit-agent-audit-record"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "renamed draft: label, spec_url, summary and status moved to draft-gilda-audit-agent-audit-record-00 (gap scout 2026-10-20)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "noted draft-thaha-wimse-agent-evidence-binding-00, which defines an in-toto predicate designed to compose with this audit record format; from gap scout 2026-10-20, verified against the -00 text (IETF rsync mirror)"
    }
   ],
   "id": "wimse-agent-audit-record",
   "implementation": "none-found",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "name": "An Audit Record Format for AI Agent Authorization Decisions",
-  "native_status": "Internet-Draft, draft-gilda-wimse-agent-audit-record-02 (2026-10-05)",
+  "native_status": "Internet-Draft (individual), Intended Status: Informational; expires 19 April 2027",
   "origin": {
    "org": "IETF individual submission (draft-gilda)",
    "date": null
@@ -11028,17 +11150,17 @@
   },
   "question": "What should a tamper-evident record of an agent's authorization decision contain?",
   "scope": "general",
-  "spec_url": "https://datatracker.ietf.org/doc/draft-gilda-wimse-agent-audit-record/",
+  "spec_url": "https://datatracker.ietf.org/doc/draft-gilda-audit-agent-audit-record/",
   "step": "account",
-  "summary_md": "draft-gilda-wimse-agent-audit-record defines an audit record format for AI agent authorization decisions [1]. The current revision is -02, dated 2026-10-05 [1].\n\nIt belongs with the account step beside `agent-audit-trail`, which covers a hash-chained log of agent actions, and with the WIMSE identity work its name points to. It defines a record format, not an endpoint, so there is nothing to probe.\n\nOnly the title, revision and date are taken from the datatracker listing; the record's field definitions have not been reviewed here.",
+  "summary_md": "draft-gilda-audit-agent-audit-record defines an audit record format for AI agent authorization decisions: one in-toto predicate type in a DSSE envelope. Its -00 of 2026-10-16 replaces draft-gilda-wimse-agent-audit-record-02 and still builds on WIMSE identifiers and draft-ietf-wimse-aims.\n\nIt belongs with the account step beside `agent-audit-trail`, which covers a hash-chained log of agent actions, and with the WIMSE identity work its name points to. It defines a record format, not an endpoint, so there is nothing to probe.\n\nOnly the title, revision and date are taken from the datatracker listing; the record's field definitions have not been reviewed here.",
   "track": "ietf",
   "use_cases": [
    "audit-agent-actions",
    "prove-agent-identity"
   ],
   "version": {
-   "label": "draft-gilda-wimse-agent-audit-record-02",
-   "date": "2026-10-05"
+   "label": "draft-gilda-audit-agent-audit-record-00 (replaces draft-gilda-wimse-agent-audit-record-02)",
+   "date": "2026-10-16"
   },
   "watch": [
    {
@@ -11109,6 +11231,24 @@
     "http_status": 200,
     "content_sha256": "88630031324ae0732729241846dc8127cb43db3b1ac83d70661cc94a1b89bf8e",
     "detector": "github@1.0"
+   },
+   {
+    "claim": "GitHub serves a SEP-2127-conformant card at api.githubcopilot.com/mcp/server-card (linked from github.com/.well-known/ai-catalog.json); Hugging Face at huggingface.co/mcp/server-card.",
+    "date": "2026-10-20",
+    "label": "VERIFIED",
+    "url": "https://api.githubcopilot.com/mcp/server-card"
+   },
+   {
+    "claim": "Six domains (Zapier, Proof, Coinbase, Cloudflare, Sentry, Twilio) served JSON at /.well-known/mcp/server-card.json on 2026-10-20; none at <endpoint>/server-card and none with the v1 server-card $schema.",
+    "date": "2026-10-20",
+    "label": "VERIFIED",
+    "url": "https://zapier.com/.well-known/mcp/server-card.json"
+   },
+   {
+    "claim": "The extension's wire format (schema.ts, docs/discovery.md) lives in the ext-server-card repository, renamed from experimental-ext-server-card.",
+    "date": "2026-10-20",
+    "label": "VERIFIED",
+    "url": "https://github.com/modelcontextprotocol/ext-server-card"
    }
   ],
   "form": "document-format",
@@ -11130,11 +11270,15 @@
    {
     "date": "2026-10-16",
     "note": "version label restored to 'SEP-2127 (Final)'; the repository tag 2026-07-28 is the MCP specification repository's revision tag, not the Server Card SEP, so the GitHub watch no longer drives version"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "location per Final SEP-2127, conformant publishers, and the unofficial /.well-known/mcp/server-card.json convention recorded (gap scout 2026-10-20, every URL fetched)"
    }
   ],
   "id": "mcp-server-cards",
   "implementation": "prototype",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "name": "MCP Server Cards (SEP-2127)",
   "native_status": "SEP-2127 Final (2026-10-06); the MCP Registry working group page still describes Server Cards as experimental",
   "origin": {
@@ -11156,14 +11300,14 @@
   "probe": {
    "method": "GET",
    "path": "{endpoint}/server-card",
-   "parse": "A JSON document describing the MCP server. The path is the one recorded on the mcp record and may change with the final SEP.",
+   "parse": "A JSON document describing the MCP server, at the location SEP-2127 (Final) reserves: GET <streamable-http-url>/server-card.",
    "on_absent": "404 or non-JSON means no Server Card is published; the server may still be a working MCP server."
   },
   "question": "How can a client learn what an MCP server offers before connecting to it?",
   "scope": "general",
   "spec_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2127-mcp-server-cards.md",
   "step": "discover",
-  "summary_md": "An MCP Server Card is a static JSON description of an MCP server that a client can fetch before connecting. It is specified in SEP-2127, which reached Final on 2026-10-06 [1].\n\nThe MCP Registry working group is aligning the registry's server.json schema with the Server Card [2]. The mcp record on this site records the card path as `{endpoint}/server-card`; the final SEP text should be checked for the exact location before that path is relied on.\n\nThe working group page still calls Server Cards experimental, while the SEP is marked Final, so the status here is candidate until the specification release that includes it.",
+  "summary_md": "An MCP Server Card is a static JSON description of an MCP server that a client can fetch before connecting. It is specified in SEP-2127, which reached Final on 2026-10-06 [1].\n\nThe MCP Registry working group is aligning the registry's server.json schema with the Server Card [2]. SEP-2127 reserves `GET <streamable-http-url>/server-card` and leaves domain-level discovery to AI Catalog entries; GitHub (api.githubcopilot.com/mcp/server-card, linked from its AI Catalog) and Hugging Face (huggingface.co/mcp/server-card) serve conformant cards there.\n\nA different, unofficial convention has also appeared: on 2026-10-20 Zapier, Proof, Coinbase, Cloudflare, Sentry and Twilio all served JSON at `/.well-known/mcp/server-card.json`, a path the SEP does not define. None used the v1 server-card `$schema`; three were card-shaped (two following the registry's server.json) and three were ad hoc.\n\nThe working group page still calls Server Cards experimental, while the SEP is marked Final, so the status here is candidate until the specification release that includes it.",
   "track": "linux-foundation",
   "use_cases": [
    "discover-my-api",
@@ -11210,7 +11354,7 @@
    "date": "2026-10-15"
   },
   "governance": "IETF Internet-Draft in the DAWN (Discovery of Agents With Names) working group context; Informational intended status",
-  "native_status": "Internet-Draft, Intended Status: Informational; expires 18 April 2027",
+  "native_status": "Internet-Draft, Intended Status: Informational; expires 22 April 2027",
   "phase": "draft",
   "implementation": "none-found",
   "adoption": {
@@ -11219,10 +11363,10 @@
    "probe_run": null
   },
   "version": {
-   "label": "draft-zhang-dawn-agent-discovery-framework-06",
-   "date": "2026-10-15"
+   "label": "draft-zhang-dawn-agent-discovery-framework-08",
+   "date": "2026-10-19"
   },
-  "spec_url": "https://datatracker.ietf.org/doc/html/draft-zhang-dawn-agent-discovery-framework-06",
+  "spec_url": "https://datatracker.ietf.org/doc/draft-zhang-dawn-agent-discovery-framework/",
   "discovery": {
    "mechanism": "Federation Metadata Records (FMRs) published as DNS resource records in a site's authoritative zone (Mode A, DNSSEC-validated), or synchronized between Federation Gateways via non-DNS modes (Mode B: BGP-like peering, gossip, trusted directory publication)",
    "path": null
@@ -11239,9 +11383,15 @@
     "label": "REPORTED",
     "url": "https://datatracker.ietf.org/doc/html/draft-zhang-dawn-agent-discovery-framework-06",
     "date": "2026-10-15"
+   },
+   {
+    "claim": "Revision -08 (19 October 2026, expires 22 April 2027, Intended status: Informational; editors B. Zhang, L. Dunbar, Y. Yang) rewrites the abstract: local discovery via mDNS/DNS-SD or infrastructure-assisted discovery; federation with DNS as baseline plus non-DNS and mixed-mode mechanisms.",
+    "date": "2026-10-19",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-zhang-dawn-agent-discovery-framework/"
    }
   ],
-  "summary_md": "An informational IETF Internet-Draft describing a two-layer federated reference architecture for initial discovery of AI agents under the DAWN charter. A Local Discovery Plane handles zero-configuration advertisement inside a site, while a Federation Plane exchanges Federation Metadata Records (a binding of Minimum Discoverable Information) between site gateways, preferably over DNS with DNSSEC. It includes an Export Policy Engine for data sovereignty and supports referral, delegation and indirection. It defines no normative formats and does not compete with ACAP, Agent Directory or ARDP.",
+  "summary_md": "An informational IETF Internet-Draft describing a two-layer federated reference architecture for initial discovery of AI agents under the DAWN charter. A Local Discovery Plane uses mDNS/DNS-SD or infrastructure-assisted discovery inside a site, while a Federation Plane exchanges Federation Metadata Records (a binding of Minimum Discoverable Information) between site gateways, using DNS (with DNSSEC) as its baseline and adding non-DNS and mixed-mode options such as proactive distribution and directory lookup. It includes an Export Policy Engine for data sovereignty and supports referral, delegation and indirection. It defines no normative formats and positions itself alongside ACAP and Agent Directory rather than replacing them.",
   "part_of": null,
   "group": null,
   "candidate": true,
@@ -11261,17 +11411,21 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "history": [
    {
     "date": "2026-10-16",
     "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-zhang-dawn-agent-discovery-framework-06)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "version -08 (2026-10-19) and summary re-read; watcher unpinned from -06 (gap scout 2026-10-20, verified via the IETF rsync mirror)"
    }
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-zhang-dawn-agent-discovery-framework-06"
+    "type": "ietf",
+    "doc": "draft-zhang-dawn-agent-discovery-framework"
    }
   ]
  },
@@ -11757,7 +11911,7 @@
    "date": null
   },
   "governance": "Individual Internet-Draft submitted to the IETF (Network Working Group); not an adopted working group document.",
-  "native_status": "Internet-Draft, Intended Status: Informational; expires 12 April 2027",
+  "native_status": "Internet-Draft, Intended Status: Informational; expires 18 April 2027",
   "phase": "draft",
   "implementation": "unknown",
   "adoption": {
@@ -11766,10 +11920,10 @@
    "probe_run": null
   },
   "version": {
-   "label": "draft-nelson-agent-delegation-receipts-11",
-   "date": "2026-10-09"
+   "label": "draft-nelson-agent-delegation-receipts-14",
+   "date": "2026-10-15"
   },
-  "spec_url": "https://datatracker.ietf.org/doc/html/draft-nelson-agent-delegation-receipts-11",
+  "spec_url": "https://datatracker.ietf.org/doc/draft-nelson-agent-delegation-receipts/",
   "discovery": {
    "mechanism": "No discovery mechanism described in the available page text; receipts are presented by the agent to a verifier before executing an action.",
    "path": null
@@ -11786,6 +11940,12 @@
     "label": "REPORTED",
     "url": "https://datatracker.ietf.org/doc/html/draft-nelson-agent-delegation-receipts-11",
     "date": "2026-10-09"
+   },
+   {
+    "claim": "Revision -14 (15 October 2026, expires 18 April 2027, R. Nelson, Informational); its abstract keeps the -11 JWS/JCS and COSE_Sign1 profiles.",
+    "date": "2026-10-15",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-nelson-agent-delegation-receipts/"
    }
   ],
   "summary_md": "Defines the Agent Delegation Receipt, a signed record of the scope, hard boundaries, validity window, and operator-instruction hash that a human principal authorized for an AI agent. Version -11 uses a JWS profile (RFC 7515) over JCS-canonicalized JSON (RFC 8785) and a COSE_Sign1 profile (RFC 9052). It also specifies scope attenuation across multi-agent delegation chains and a revocation registry with cascade semantics. The draft states it is an audit and attribution layer for honest deployments, not a control against a malicious operator.",
@@ -11810,17 +11970,21 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "history": [
    {
     "date": "2026-10-16",
     "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-nelson-agent-delegation-receipts-11)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "version -14 (2026-10-15); watcher unpinned from -11 (gap scout 2026-10-20)"
    }
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-nelson-agent-delegation-receipts-11"
+    "type": "ietf",
+    "doc": "draft-nelson-agent-delegation-receipts"
    }
   ]
  },
@@ -13357,6 +13521,1691 @@
    {
     "type": "page",
     "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-04-17-agent-identity-protocol-aip"
+   }
+  ]
+ },
+ {
+  "id": "gbz-185-agent-interconnection",
+  "name": "GB/Z 185 Artificial intelligence — Agent interconnection (人工智能 智能体互联)",
+  "acronym": "GB/Z 185",
+  "aliases": [
+   "GB/Z 185-2026",
+   "智能体互联",
+   "Agent interconnection national standard"
+  ],
+  "collisions": [
+   "AIP: the open-source Agent Interconnection Protocol (OpenAtom) that accompanies this series is unrelated to the Agent Identity Protocol drafts tracked as aip, aip-delegation-chain and agent-identity-protocol-singla"
+  ],
+  "step": "coordinate",
+  "parties": [
+   "agent-agent",
+   "agent-registry"
+  ],
+  "form": "document-format",
+  "track": "industry-body",
+  "scope": "general",
+  "question": "How do AI agents built by different Chinese companies identify, describe, find and call each other, and invoke tools, under one national framework?",
+  "analog": "A national interconnection standard, like the rules that let different carriers' phone networks call each other",
+  "origin": {
+   "org": "China Electronics Standardization Institute (CESI), lead drafter, under SAC/TC28/SC42",
+   "date": "2026-05-22"
+  },
+  "governance": "Chinese national standardization guidance technical document (GB/Z) under the Standardization Administration (国家标准委); technical committee TC28, executed by TC28/SC42 (artificial intelligence); 37 drafting units listed for Part 1, led by CESI",
+  "native_status": "国家标准 指导性技术文件 (GB/Z, national standardization guidance technical document), status 现行 (in force), published 2026-05-22; guidance-grade, not mandatory; no implementation date shown on the SAMR pages",
+  "phase": "stable",
+  "implementation": "developer-trial",
+  "adoption": {
+   "level": "claimed",
+   "by": "SAMR press conference 2026-06-26 (100+ firms in the initiative, 50+ pilots)",
+   "probe_run": null
+  },
+  "version": {
+   "label": "GB/Z 185.1–185.7-2026 (national standardization guidance technical document)",
+   "date": "2026-05-22"
+  },
+  "spec_url": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=CFF03D872963466AC7F03ED0E28B6702",
+  "discovery": {
+   "mechanism": "Part 5 of the series covers agent discovery; its full text was not read for this record, so no fixed path is asserted",
+   "path": null
+  },
+  "probe": {
+   "method": "GET",
+   "path": "none — no origin path confirmed",
+   "parse": "No probe rule yet. Reading Part 5 (discovery) is needed to learn whether the series defines a well-known path or registry endpoint.",
+   "on_absent": "Not probeable from an origin until Part 5 is read; absence says nothing about adoption."
+  },
+  "evidence": [
+   {
+    "claim": "The SAMR national standards record for GB/Z 185.1-2026 '人工智能 智能体互联 第1部分：总体架构 / Artificial intelligence—Agent interconnection—Part 1: General architecture' shows a GB/Z guidance technical document, status 现行 (in force), published 2026-05-22, technical committee TC28 executed by TC28/SC42, with 37 drafting units led by CESI and including BUPT, Xiaomi, Huawei, Ant Group, China Mobile, Alibaba Cloud, ByteDance (Volcano Engine), ZTE, Lenovo and CNNIC.",
+    "label": "VERIFIED",
+    "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=52A05F8113453761E06397BE0A0AFEB5",
+    "date": "2026-05-22"
+   },
+   {
+    "claim": "The SAMR record for GB/Z 185.7-2026 'Part 7: Agent tool invocation' carries the same publication date and technical committee.",
+    "label": "VERIFIED",
+    "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=52A05F8113493761E06397BE0A0AFEB5",
+    "date": "2026-05-22"
+   },
+   {
+    "claim": "The openstd.samr.gov.cn entry for Part 1 offers the full text free of charge (online preview and download).",
+    "label": "VERIFIED",
+    "url": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=CFF03D872963466AC7F03ED0E28B6702",
+    "date": "2026-05-22"
+   },
+   {
+    "claim": "At a SAMR press conference on 2026-06-26, the regulator described a series of seven national standards covering architecture, identity code, identity management, description, discovery, interaction and tool invocation, drafted under CESI's lead with 70+ organisations and 600+ comments; it said 100+ firms had joined the initiative and 50+ pilots were under way, and named the Agent Interconnection Protocol (AIP), whose open-source development BUPT helps lead. The page does not cite the number GB/Z 185.",
+    "label": "VERIFIED",
+    "url": "https://www.samr.gov.cn/xw/xwfbt/art/2026/art_fa730f984b2740baa248318118d77921.html",
+    "date": "2026-06-26"
+   },
+   {
+    "claim": "The AIP project news page (2025-11-01) reports the first open-source AIP code release on 2025-10-27 by BUPT and CESI, and says AIP conforms to the TC28/SC42 agent interconnection series without naming GB/Z 185.",
+    "label": "VERIFIED",
+    "url": "https://aip.openatom.tech/explore/journalism/detail/507545311238033408",
+    "date": "2025-11-01"
+   }
+  ],
+  "last_verified": "2026-10-20",
+  "dispute": null,
+  "summary_md": "GB/Z 185 is China's seven-part national guidance standard for interconnecting AI agents. The parts cover general architecture, agent identity codes, identity management, agent description, discovery, interaction and tool invocation [1][2][4]. It is a GB/Z document, a national standardization guidance technical document: in force since 2026-05-22, but guidance-grade rather than mandatory [1].\n\nThe series sits under technical committee TC28 and its AI subcommittee TC28/SC42. CESI led the drafting. The Part 1 record lists 37 drafting units, among them BUPT, Xiaomi, Huawei, Ant Group, China Mobile, Alibaba Cloud, ByteDance (Volcano Engine), ZTE, Lenovo and CNNIC [1]. The full text of Part 1 is free to read and download from SAMR's openstd site [3].\n\nThe regulator says 70+ organisations drafted it, 100+ firms have joined the initiative and 50+ pilots are running [4]. Those are the regulator's figures, not counts this site has checked. An open-source companion, the Agent Interconnection Protocol (AIP), was first released on 2025-10-27 by BUPT and CESI, and its project says it conforms to the series [5]. That AIP is a different thing from the Agent Identity Protocol drafts this site tracks under the same initialism.\n\nWhat is open: this record has not yet been checked against the full text of Part 5 (discovery), so it does not say whether the series defines a well-known path or registry an agent could probe.",
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from gap scout 2026-10-20; verified against the SAMR standards records for Parts 1 and 7, the openstd full-text entry, the SAMR press conference of 2026-06-26 and the AIP project news page"
+   }
+  ],
+  "part_of": null,
+  "group": null,
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=52A05F8113453761E06397BE0A0AFEB5",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ],
+  "use_cases": [
+   "agent-to-agent-messaging",
+   "prove-agent-identity",
+   "agent-naming",
+   "describe-agent-capabilities"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "a2a",
+   "anp",
+   "ads",
+   "mcp"
+  ],
+  "prerequisites": []
+ },
+ {
+  "id": "amp-ant",
+  "name": "Agentic Mobile Protocol (AMP)",
+  "acronym": "AMP",
+  "aliases": [
+   "AMP",
+   "Alipay+ Agentic Mobile Protocol"
+  ],
+  "collisions": [
+   "AMP (Accelerated Mobile Pages, Google's unrelated web page format)"
+  ],
+  "step": "pay",
+  "parties": [
+   "agent-payment",
+   "agent-human"
+  ],
+  "form": "endpoint",
+  "track": "single-vendor",
+  "scope": "payments",
+  "question": "How can an AI agent shop and pay through a person's mobile wallet, within limits the person signed in advance, and have each step checked against that permission?",
+  "analog": "A signed standing order on a mobile wallet, checked at every step of the payment",
+  "origin": {
+   "org": "Ant International (Alipay+)",
+   "date": "2026-04-28"
+  },
+  "governance": "Ant International; Apache-2.0 repository ant-intl/AMP; no external standards body",
+  "native_status": "Described by Ant International as fully open-sourced at launch (2026-04-28); the public repository was created 2026-08-17 and has no tags or releases",
+  "phase": "draft",
+  "implementation": "shipping",
+  "adoption": {
+   "level": "claimed",
+   "by": "Ant International (launch press 2026-04-28: 40+ wallet partners, 1.8 billion accounts, 150 million merchants; global rollout reported 2026-09-11 with 50+ mobile payment partners)",
+   "probe_run": null
+  },
+  "version": {
+   "label": "unversioned (no tags or releases; main branch)",
+   "date": "2026-09-23"
+  },
+  "spec_url": "https://github.com/ant-intl/AMP/blob/main/docs/Overview.md",
+  "discovery": {
+   "mechanism": "none at an origin; mandates, payment tokens and assurance data pass between the agent, the wallet and the Alipay+ network",
+   "path": null
+  },
+  "probe": {
+   "method": "GET",
+   "path": "none — mandates and payment tokens are exchanged inside an authorised wallet flow",
+   "parse": "No public artefact at a fixed path to parse.",
+   "on_absent": "Not probeable from an origin; check the merchant's or wallet's own announcement instead."
+  },
+  "evidence": [
+   {
+    "claim": "The ant-intl/AMP repository is Apache-2.0 licensed, created 2026-08-17 and last pushed 2026-09-23, with no tags or releases; its docs/ folder holds Overview, Intent Trust Domain, Payment Service Domain, Wallet Service Domain and Business Scenarios Processes documents written with MUST/SHOULD requirements.",
+    "label": "VERIFIED",
+    "url": "https://github.com/ant-intl/AMP",
+    "date": "2026-09-23"
+   },
+   {
+    "claim": "The Intent Trust Domain document defines IMMEDIATE and AUTONOMOUS mandate types, four verification checkpoints (S1 Mandate Creation Pre-Verification, S2 Payment Token, S3 Payment Request, S4 Wallet Debit) and three layers of assurance data (L1 User Identity, L2 Mandate Authorization, L3 Payment Token Request) carried as a three-layer SD-JWT (RFC 9901, ES256).",
+    "label": "VERIFIED",
+    "url": "https://github.com/ant-intl/AMP/blob/main/docs/Intent%20Trust%20Domain.md",
+    "date": "2026-09-23"
+   },
+   {
+    "claim": "Ant International's launch release (Kuala Lumpur, 2026-04-28) calls AMP fully open-sourced, cites 40+ wallet partners, 1.8 billion accounts and 150 million merchants, and says it supports nano-transactions as small as $0.000001.",
+    "label": "VERIFIED",
+    "url": "https://www.ant-intl.com/en/news/detail/?id=ant-international-launches-open-sourced-agentic-mobile-protocol-to-drive-ai-commerce",
+    "date": "2026-04-28"
+   },
+   {
+    "claim": "The Paypers reports AMP's global rollout on 2026-09-11 with 50+ mobile payment partners and first-phase wallets including Alipay, GCash, DANA, KakaoPay and Toss.",
+    "label": "REPORTED",
+    "url": "https://thepaypers.com/payments/news/ant-internationals-agentic-mobile-protocol-rolls-out-globally",
+    "date": "2026-09-11"
+   }
+  ],
+  "last_verified": "2026-10-20",
+  "dispute": null,
+  "summary_md": "AMP is Ant International's open protocol for AI agents that shop and pay through mobile wallets on the Alipay+ network [1][3]. The person signs a Mandate in advance, either IMMEDIATE (one purchase) or AUTONOMOUS (the agent may act later within limits) [2]. An Intent Guard then checks each later step against that mandate [1].\n\nThe spec text names four checkpoints: mandate creation pre-verification, payment token, payment request and wallet debit (S1 to S4). It also defines three layers of assurance data (user identity, mandate authorization and payment token request), carried as a three-layer SD-JWT [2]. The repository has five spec documents with MUST/SHOULD requirements, under Apache-2.0 [1].\n\nAnt International launched AMP on 2026-04-28, calling it fully open-sourced and citing 40+ wallet partners, 1.8 billion accounts and 150 million merchants [3]. The public repository, however, was only created on 2026-08-17 and has no tags or releases [1]. A global rollout with 50+ mobile payment partners was reported on 2026-09-11 [4]. All adoption figures are Ant's own.\n\nAMP defines nothing at a merchant's origin, so there is no path to probe. It overlaps in purpose with AP2's mandates and the card networks' agent-payment schemes, but runs on wallet rails rather than cards.",
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from gap scout 2026-10-20; verified against github.com/ant-intl/AMP (repo metadata, Overview.md, Intent Trust Domain.md) and Ant International's 2026-04-28 launch release; rollout via The Paypers"
+   }
+  ],
+  "part_of": null,
+  "group": null,
+  "watch": [
+   {
+    "type": "github",
+    "repo": "ant-intl/AMP",
+    "mode": "release"
+   }
+  ],
+  "use_cases": [
+   "agent-checkout",
+   "accept-agent-payments",
+   "delegate-user-authority"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder"
+  ],
+  "pairs_with": [
+   "ap2",
+   "tap",
+   "vi"
+  ],
+  "prerequisites": []
+ },
+ {
+  "id": "x401",
+  "name": "x401: HTTP Proof Requirement Protocol",
+  "acronym": "",
+  "aliases": [
+   "x401"
+  ],
+  "collisions": [],
+  "step": "identify",
+  "parties": [
+   "agent-site"
+  ],
+  "form": "http-header",
+  "track": "vendor-consortium",
+  "scope": "general",
+  "question": "How can a resource ask an agent to prove something about the person behind it, such as being a verified human, before serving a request?",
+  "analog": "A WWW-Authenticate challenge that asks for a verifiable credential instead of a password",
+  "origin": {
+   "org": "Proof, with Circle",
+   "date": "2026-06-25"
+  },
+  "governance": "Editors Daniel Buchner (Proof) and Bhushit Agarwal (Circle); Apache-2.0 repository proof/x401; Proof says it plans to submit x401 to the FIDO Alliance agentic authentication workgroup",
+  "native_status": "Status: Draft, Version 0.2.0 (version 0.1.0 still published at /spec/0.1.0/); the spec page carries no date",
+  "phase": "draft",
+  "implementation": "shipping",
+  "adoption": {
+   "level": "claimed",
+   "by": "Proof (Superfluid named as a live implementation, 2026-09-22)",
+   "probe_run": null
+  },
+  "version": {
+   "label": "0.2.0 (Draft)",
+   "date": null
+  },
+  "spec_url": "https://x401.proof.com/spec/latest/",
+  "discovery": {
+   "mechanism": "PROOF-REQUEST response header on a protected resource",
+   "path": "none — signalled per request on the protected resource, not at a fixed path"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "{origin}/{protected-path}",
+   "parse": "A PROOF-REQUEST response header carrying base64url JSON that describes the credential required (OpenID4VP/DCQL)",
+   "on_absent": "No PROOF-REQUEST header means this path does not ask for proof via x401; other paths on the same origin may."
+  },
+  "evidence": [
+   {
+    "claim": "The x401 spec page reads 'Status: Draft' and 'Version: 0.2.0', names editors Daniel Buchner (Proof) and Bhushit Agarwal (Circle), and defines PROOF-REQUEST, PROOF-RESPONSE and PROOF-RESULT headers carrying base64url JSON; credential requests use OpenID4VP over the Digital Credentials API with DCQL, an optional OAuth token exchange yields a reusable Verification Token, and payment stays in a separate 402 flow.",
+    "label": "VERIFIED",
+    "url": "https://x401.proof.com/spec/latest/",
+    "date": null
+   },
+   {
+    "claim": "The proof/x401 repository is Apache-2.0 licensed, created 2026-05-07 and last pushed 2026-10-18, with no tags.",
+    "label": "VERIFIED",
+    "url": "https://github.com/proof/x401",
+    "date": "2026-10-18"
+   },
+   {
+    "claim": "Proof's launch post announces x401 with Circle as named co-endorser and says Proof plans to submit it to the FIDO Alliance agentic authentication workgroup.",
+    "label": "VERIFIED",
+    "url": "https://www.proof.com/blog/identity-infrastructure-agentic-internet-x401",
+    "date": "2026-06-25"
+   },
+   {
+    "claim": "Proof's post 'Proof and Superfluid: A Verified Human Behind Every Agent Transaction' describes Superfluid's live use of x401.",
+    "label": "VERIFIED",
+    "url": "https://www.proof.com/blog/proof-and-superfluid-a-verified-human-behind-every-agent-transaction",
+    "date": "2026-09-22"
+   },
+   {
+    "claim": "Biometric Update reports Proof and Superfluid testing reusable identity for an AI agent wallet.",
+    "label": "REPORTED",
+    "url": "https://www.biometricupdate.com/202609/proof-superfluid-test-reusable-identity-for-ai-agent-wallet",
+    "date": "2026-09-24"
+   }
+  ],
+  "last_verified": "2026-10-20",
+  "dispute": null,
+  "summary_md": "x401 is an HTTP challenge-response pattern for proof of identity. A resource sends a PROOF-REQUEST header naming the verifiable credential it needs, and the agent answers with a PROOF-RESPONSE; the verifier sends back its own information, including any proof error, in a PROOF-RESULT header [1]. All three headers carry base64url JSON. The credential request uses OpenID4VP over the browser Digital Credentials API, with DCQL queries. An optional OAuth token exchange turns a successful proof into a reusable Verification Token [1].\n\nThe name echoes x402, and the two are meant to sit side by side. x401 does not use the HTTP status code to carry proof state, and payment stays in a separate 402 flow [1].\n\nThe spec is a Draft at version 0.2.0, edited by Proof and Circle, with the code under Apache-2.0 [1][2]. Proof launched it on 2026-06-25 and says it plans to take it to the FIDO Alliance's agentic authentication workgroup [3]. Proof names Superfluid as a live implementation [4][5]; that claim comes from Proof, not from a count.",
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from gap scout 2026-10-20; verified against x401.proof.com/spec/latest/, github.com/proof/x401 and Proof's launch and Superfluid posts"
+   }
+  ],
+  "part_of": null,
+  "group": null,
+  "watch": [
+   {
+    "type": "github",
+    "repo": "proof/x401",
+    "mode": "release",
+    "version": false
+   },
+   {
+    "type": "page",
+    "url": "https://x401.proof.com/spec/latest/",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ],
+  "use_cases": [
+   "prove-agent-identity",
+   "delegate-user-authority"
+  ],
+  "audience": [
+   "site-owner",
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "x402",
+   "vi",
+   "a2wp",
+   "webbotauth"
+  ],
+  "prerequisites": []
+ },
+ {
+  "id": "kya-os",
+  "name": "KYA-OS (Know Your Agent Operating System)",
+  "acronym": "KYA-OS",
+  "aliases": [
+   "MCP-I",
+   "Model Context Protocol – Identity",
+   "KYA-OS"
+  ],
+  "collisions": [
+   "KYA (the generic Know-Your-Agent term in the glossary)",
+   "KYAPay (Skyfire's token profile, tracked as kyapay-token, unrelated)"
+  ],
+  "step": "identify",
+  "parties": [
+   "agent-site",
+   "agent-agent"
+  ],
+  "form": "document-format",
+  "track": "industry-body",
+  "scope": "general",
+  "question": "How can an MCP server tell which agent is calling, on whose authority it acts, and keep signed proof of what it did?",
+  "analog": "A signed letter of authority plus a receipt for every action",
+  "origin": {
+   "org": "Vouched (as MCP-I), donated to the Decentralized Identity Foundation",
+   "date": null
+  },
+  "governance": "Decentralized Identity Foundation (DIF), KYA-OS Task Force in the Trusted AI Agents Working Group (TAAWG); donated by Vouched; spec editors Dylan Hobbs and the KYA-OS Working Group",
+  "native_status": "SPEC.md declares 'Version: 1.0.0, Status: Stable' and says it was ratified as a DIF standard; DIF's own posts describe a task force under community development",
+  "phase": "stable",
+  "implementation": "shipping",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "1.0.0 (Stable, self-declared)",
+   "date": null
+  },
+  "spec_url": "https://github.com/decentralized-identity/kya-os-mcp/blob/main/SPEC.md",
+  "discovery": {
+   "mechanism": "well-known JSON document on the MCP server naming its DID, capabilities and endpoints (SPEC.md §10, SHOULD)",
+   "path": "/.well-known/mcp"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "/.well-known/mcp",
+   "parse": "JSON with 'serverDid', 'version' and a 'capabilities' object (proofs, delegation, statusList); validate against schemas/well-known-mcpi.json",
+   "on_absent": "The server does not advertise KYA-OS; the endpoint is a SHOULD, so a KYA-OS server may still attach proofs in MCP _meta without it."
+  },
+  "evidence": [
+   {
+    "claim": "SPEC.md, 'KYA-OS Protocol Specification', declares Version 1.0.0, Status Stable; it defines agent DIDs (did:key, did:web), W3C Verifiable Credential delegation chains rooted at a Responsible Party, Ed25519 signed per-response proofs attached in MCP _meta, StatusList2021 revocation, and a /.well-known/mcp endpoint servers SHOULD expose.",
+    "label": "VERIFIED",
+    "url": "https://github.com/decentralized-identity/kya-os-mcp/blob/main/SPEC.md",
+    "date": null
+   },
+   {
+    "claim": "DIF's post 'Why We Brought KYA-OS (formerly MCP-I) to DIF' confirms the rename from MCP-I and the donation by Vouched.",
+    "label": "VERIFIED",
+    "url": "https://blog.identity.foundation/why-dif-said-yes-to-mcp-i/",
+    "date": "2026-03-05"
+   },
+   {
+    "claim": "DIF announces a KYA-OS Task Force inside the Trusted AI Agents Working Group, with a scope extending well beyond MCP.",
+    "label": "VERIFIED",
+    "url": "https://blog.identity.foundation/kya-os/",
+    "date": "2026-04-22"
+   },
+   {
+    "claim": "Vouched announces, with DIF, the launch of KYA-OS as an open trust layer for AI agents.",
+    "label": "REPORTED",
+    "url": "https://www.vouched.id/learn/vouched-and-the-decentralized-identity-foundation-launch-kya-os-an-open-trust-layer-for-ai-agents",
+    "date": "2026-07-29"
+   }
+  ],
+  "last_verified": "2026-10-20",
+  "dispute": {
+   "summary": "The spec's own status line says Stable 1.0.0 and claims ratification as a DIF standard, but DIF's posts describe a task force still developing it, and no DIF ratification notice was found.",
+   "claims": [
+    "SPEC.md: 'Stable 1.0.0 — Donated to DIF TAAWG ... and ratified as a DIF standard.'",
+    "DIF blog 2026-04-22: a KYA-OS Task Force inside TAAWG, under community development."
+   ]
+  },
+  "summary_md": "KYA-OS, formerly MCP-I, is an identity and delegation layer for MCP and other agent protocols [1][2]. Each agent has a DID. A chain of W3C Verifiable Credentials links it back to the person or company that authorised it. The server can then check who is calling and on whose authority [1]. Each tool response carries an Ed25519 signed proof in the MCP `_meta` field, giving both sides a record of what was done. Revocation uses StatusList2021 [1].\n\nServers SHOULD publish a JSON document at `/.well-known/mcp` naming their DID and which KYA-OS features they support [1]. Note that this is a different path from the `/.well-known/mcp.json` some MCP server cards use.\n\nVouched built it as MCP-I and donated it to the Decentralized Identity Foundation, which renamed it [2]. DIF runs it as a task force inside its Trusted AI Agents Working Group and says the scope now reaches well beyond MCP [3]. The spec calls itself Stable 1.0.0 and says DIF ratified it; DIF's own posts do not say so (see dispute). The repository's v1.20.0 tag versions the code package, not the spec.",
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from gap scout 2026-10-20; verified against SPEC.md in decentralized-identity/kya-os-mcp (status line, §10 well-known endpoint) and DIF's posts of 2026-03-05 and 2026-04-22"
+   }
+  ],
+  "part_of": null,
+  "group": null,
+  "watch": [
+   {
+    "type": "github",
+    "repo": "decentralized-identity/kya-os-mcp",
+    "mode": "tag",
+    "version": false
+   },
+   {
+    "type": "page",
+    "url": "https://github.com/decentralized-identity/kya-os-mcp/blob/main/SPEC.md",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ],
+  "use_cases": [
+   "prove-agent-identity",
+   "delegate-user-authority",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "mcp",
+   "x401",
+   "kyapay-token"
+  ],
+  "prerequisites": [
+   "mcp"
+  ]
+ },
+ {
+  "id": "kyapay-token",
+  "name": "KYAPay Token",
+  "acronym": "KYAPay",
+  "aliases": [
+   "KYAPay",
+   "draft-skyfire-oauth-kyapay-token",
+   "draft-skyfire-kyapayprofile"
+  ],
+  "collisions": [
+   "KYA-OS (DIF identity layer for MCP, tracked as kya-os, unrelated)"
+  ],
+  "step": "pay",
+  "parties": [
+   "agent-site",
+   "agent-payment"
+  ],
+  "form": "document-format",
+  "track": "ietf",
+  "scope": "payments",
+  "question": "How can an authorization or resource server from one vendor check which agent is calling and accept its payment token, when the token was issued by another vendor?",
+  "analog": "A signed ID card and a payment card in one envelope, readable by any shop",
+  "origin": {
+   "org": "Skyfire Systems",
+   "date": null
+  },
+  "governance": "Individual Internet-Draft, not adopted by an IETF working group; authors Ankit Agarwal (Skyfire Systems) and Michael B. Jones (Self-Issued Consulting); header area Web Authorization Protocol (OAuth)",
+  "native_status": "Active Internet-Draft, individual submission, intended status Standards Track; -02 dated 2026-10-02, expires 2027-04-05; replaces draft-skyfire-kyapayprofile",
+  "phase": "draft",
+  "implementation": "shipping",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-skyfire-oauth-kyapay-token-02",
+   "date": "2026-10-02"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/draft-skyfire-oauth-kyapay-token/",
+  "discovery": {
+   "mechanism": "tokens are presented to the resource server; verifiers fetch the issuer's signing keys (Skyfire publishes its own at app.skyfire.xyz/.well-known/jwks.json)",
+   "path": null
+  },
+  "probe": {
+   "method": "GET",
+   "path": "none — tokens are presented per request by the agent",
+   "parse": "No artefact at a fixed path on the resource server; a verifier would check the token's typ (kya+jwt, pay+jwt or kya-pay+jwt) against the issuer's JWKS.",
+   "on_absent": "Not probeable from a resource server's origin."
+  },
+  "evidence": [
+   {
+    "claim": "Datatracker lists draft-skyfire-oauth-kyapay-token-02, 'KYAPay Token', as an Active individual Internet-Draft by Ankit Agarwal (Skyfire Systems Inc.) and Michael B. Jones (Self-Issued Consulting), intended Standards Track, last updated 2026-10-01, replacing draft-skyfire-kyapayprofile.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-skyfire-oauth-kyapay-token/",
+    "date": "2026-10-01"
+   },
+   {
+    "claim": "The -02 text, dated 2 October 2026 and expiring 5 April 2027, defines the kya+jwt, pay+jwt and kya-pay+jwt token types and settlement types including visa_vic and mastercard_scof.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-skyfire-oauth-kyapay-token-02",
+    "date": "2026-10-02"
+   },
+   {
+    "claim": "Skyfire's JWKS endpoint returns live signing keys (HTTP 200).",
+    "label": "VERIFIED",
+    "url": "https://app.skyfire.xyz/.well-known/jwks.json",
+    "date": "2026-10-20"
+   }
+  ],
+  "last_verified": "2026-10-20",
+  "dispute": null,
+  "summary_md": "KYAPay Token defines JWT profiles that let an agent show who it is and pay in one step [2]. There are three token types: `kya+jwt` for agent identity, `pay+jwt` for payment and `kya-pay+jwt` for both together [2]. The aim is for authorization and resource servers from different vendors to verify the agent and accept its payment without a bilateral integration. The draft lists settlement types, including card schemes such as `visa_vic` and `mastercard_scof` [2].\n\nIt is an individual Internet-Draft from Skyfire, co-authored by Michael B. Jones, and has not been adopted by an IETF working group [1]. Revision -02 is dated 2026-10-02 and replaces the earlier draft-skyfire-kyapayprofile [1][2]. Skyfire publishes live signing keys for its tokens [3]. It lives under Pay because of the combined token and settlement types, but it does Identify work too.",
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from gap scout 2026-10-20; verified against the datatracker record and -02 text of draft-skyfire-oauth-kyapay-token, and Skyfire's live JWKS"
+   }
+  ],
+  "part_of": null,
+  "group": null,
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-skyfire-oauth-kyapay-token"
+   }
+  ],
+  "use_cases": [
+   "accept-agent-payments",
+   "prove-agent-identity",
+   "agent-checkout"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder",
+   "site-owner"
+  ],
+  "pairs_with": [
+   "x402",
+   "ap2",
+   "kya-os"
+  ],
+  "prerequisites": []
+ },
+ {
+  "id": "oauth-cimd",
+  "name": "OAuth Client ID Metadata Document",
+  "acronym": "CIMD",
+  "aliases": [
+   "CIMD",
+   "Client ID Metadata Document",
+   "draft-ietf-oauth-client-id-metadata-document",
+   "draft-parecki-oauth-client-id-metadata-document"
+  ],
+  "collisions": [],
+  "step": "permit",
+  "parties": [
+   "agent-site"
+  ],
+  "form": "document-format",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can an authorization server accept an OAuth client, such as an MCP client, that it has never seen before, without pre-registration or Dynamic Client Registration?",
+  "analog": "A business card at a URL: the client's ID is the address where its details live",
+  "origin": {
+   "org": "Aaron Parecki and Emelia Smith (individual draft draft-parecki-oauth-client-id-metadata-document, adopted by the IETF OAuth WG)",
+   "date": null
+  },
+  "governance": "IETF OAuth Working Group (WG Document)",
+  "native_status": "Active Internet-Draft, WG Document of the IETF oauth WG; -02 dated 2026-07-06, expires 2027-01-07; the draft header says Standards Track",
+  "phase": "working-group",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-ietf-oauth-client-id-metadata-document-02",
+   "date": "2026-07-06"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/draft-ietf-oauth-client-id-metadata-document/",
+  "discovery": {
+   "mechanism": "the client_id is an HTTPS URL that serves the client's metadata JSON; authorization servers advertise support with client_id_metadata_document_supported in their RFC 8414 metadata",
+   "path": "/.well-known/oauth-authorization-server"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "{origin}/.well-known/oauth-authorization-server",
+   "parse": "RFC 8414 authorization server metadata JSON; check for client_id_metadata_document_supported: true",
+   "on_absent": "The authorization server does not advertise CIMD support; clients must pre-register or fall back to Dynamic Client Registration."
+  },
+  "evidence": [
+   {
+    "claim": "Datatracker lists draft-ietf-oauth-client-id-metadata-document-02 as an Active Internet-Draft in WG state 'WG Document' of the oauth WG, by Aaron Parecki (Okta) and Emelia Smith, dated 2026-07-06 and expiring 2027-01-07, replacing draft-parecki-oauth-client-id-metadata-document.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-ietf-oauth-client-id-metadata-document/",
+    "date": "2026-07-06"
+   },
+   {
+    "claim": "The stable MCP specification revision 2026-07-28 says MCP clients and authorization servers SHOULD support OAuth Client ID Metadata Documents, uses the client_id_metadata_document_supported metadata field, and says Dynamic Client Registration is deprecated.",
+    "label": "VERIFIED",
+    "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization/client-registration",
+    "date": "2026-07-28"
+   }
+  ],
+  "last_verified": "2026-10-20",
+  "dispute": null,
+  "summary_md": "A Client ID Metadata Document lets an OAuth client use an HTTPS URL as its `client_id` and publish its metadata (name, redirect URIs, keys) at that URL [1]. An authorization server that has never seen the client fetches the URL and learns what it needs. That removes the need to register in advance or to use Dynamic Client Registration. Servers say they support it with `client_id_metadata_document_supported` in their RFC 8414 metadata [2].\n\nIt matters for agents mainly through MCP. The stable MCP revision of 2026-07-28 says clients and authorization servers SHOULD support CIMD, and it deprecates Dynamic Client Registration [2]. That spec still cites the -00 revision of the draft.\n\nThe draft is an IETF OAuth working group document, by Aaron Parecki and Emelia Smith; revision -02 is dated 2026-07-06 [1]. This site has not counted how many authorization servers advertise support.",
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from gap scout 2026-10-20; verified against the datatracker record of draft-ietf-oauth-client-id-metadata-document and the MCP 2026-07-28 client-registration page"
+   }
+  ],
+  "part_of": null,
+  "group": null,
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-ietf-oauth-client-id-metadata-document"
+   }
+  ],
+  "use_cases": [
+   "delegate-user-authority",
+   "expose-tools-to-agents"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "mcp",
+   "oauth-metadata-for-agents",
+   "identity-assertion-authz-grant"
+  ],
+  "prerequisites": []
+ },
+ {
+  "id": "iab-comp",
+  "name": "CoMP (Content Monetization Protocols)",
+  "acronym": "CoMP",
+  "aliases": [
+   "CoMP",
+   "Content Metadata Marketplace Supply Specification"
+  ],
+  "collisions": [],
+  "step": "permit",
+  "parties": [
+   "agent-site",
+   "agent-registry"
+  ],
+  "form": "endpoint",
+  "track": "industry-body",
+  "scope": "general",
+  "question": "How does a licensed AI system ask a publisher or content marketplace for content, saying who it is, how it authenticates and what it will use the content for?",
+  "analog": "A syndication licence request, made machine-readable",
+  "origin": {
+   "org": "IAB Tech Lab",
+   "date": "2026-02"
+  },
+  "governance": "IAB Tech Lab; specification under CC-BY 3.0 in github.com/IABTechLab/CoMP",
+  "native_status": "CoMP v1 (Final): open for public comment until 2026-04-09 and finalized 2026-04-28, per IAB Tech Lab's initiative page",
+  "phase": "stable",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "CoMP v1 (Final)",
+   "date": "2026-04-28"
+  },
+  "spec_url": "https://github.com/IABTechLab/CoMP/blob/main/CoMP-1.0.md",
+  "discovery": {
+   "mechanism": "none defined; supply discovery is explicitly out of scope, and terms are reached through a licenseurl in the response",
+   "path": null
+  },
+  "probe": {
+   "method": "GET",
+   "path": "none — the spec defines request and response objects, not a fixed endpoint path",
+   "parse": "No fixed path to parse.",
+   "on_absent": "Not probeable from an origin."
+  },
+  "evidence": [
+   {
+    "claim": "IAB Tech Lab's CoMP initiative page says V1 of CoMP was open for public comment until April 9, 2026 and was finalized on April 28, 2026, linking 'CoMP v1 (Final)' to github.com/IABTechLab/CoMP; it lists AI Bot Management Guidance as in public comment until June 25, 2026.",
+    "label": "VERIFIED",
+    "url": "https://iabtechlab.com/standards/comp-content-monetization-protocols-initiative/",
+    "date": "2026-04-28"
+   },
+   {
+    "claim": "CoMP-1.0.md, titled 'Content Metadata Marketplace Supply Specification (MVP)', defines an AI System request (identification, aiauth methods including Web Bot Auth, intended-use functions) and a content owner or marketplace response (Package with licenseurl, reporturl, retrieval authorization and delivery formats including MCP and NLWeb); its last commits (2026-04-16, 2026-04-20) are 'Updated per Public Comment Feedback'.",
+    "label": "VERIFIED",
+    "url": "https://github.com/IABTechLab/CoMP/blob/main/CoMP-1.0.md",
+    "date": "2026-04-20"
+   }
+  ],
+  "last_verified": "2026-10-20",
+  "dispute": null,
+  "summary_md": "CoMP is IAB Tech Lab's final v1 API specification for licensed content supply to AI systems [1]. The document itself is titled \"Content Metadata Marketplace Supply Specification (MVP)\" [2]. An AI system sends a request saying who it is and how it authenticates (the listed methods include Web Bot Auth). It also states what it will use the content for, from a fixed list of functions [2]. The publisher or marketplace answers with a Package: the content scope, a `licenseurl` for terms, a `reporturl` for usage reporting, how to retrieve the content, and delivery formats that include MCP and NLWeb [2].\n\nIt sits under Permit, next to RSL, because it is about access and licence terms between AI systems and publishers. It does not settle payment itself. How an AI system finds suppliers is explicitly out of scope [2].\n\nV1 closed public comment on 2026-04-09 and was finalized on 2026-04-28 [1]. The spec is CC-BY 3.0. IAB Tech Lab runs a related AI Bot Management Guidance, which was in public comment until 2026-06-25; its later status is not known [1]. No implementations have been counted.",
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from gap scout 2026-10-20; verified against IAB Tech Lab's CoMP initiative page and CoMP-1.0.md on the main branch of github.com/IABTechLab/CoMP"
+   }
+  ],
+  "part_of": null,
+  "group": null,
+  "watch": [
+   {
+    "type": "github",
+    "repo": "IABTechLab/CoMP",
+    "mode": "release"
+   },
+   {
+    "type": "page",
+    "url": "https://iabtechlab.com/standards/comp-content-monetization-protocols-initiative/",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ],
+  "use_cases": [
+   "serve-content-to-agents",
+   "control-ai-crawling",
+   "prove-agent-identity"
+  ],
+  "audience": [
+   "site-owner",
+   "platform"
+  ],
+  "pairs_with": [
+   "rsl",
+   "webbotauth",
+   "aamp",
+   "nlweb",
+   "mcp"
+  ],
+  "prerequisites": []
+ },
+ {
+  "id": "agent-commerce-kit",
+  "name": "Agent Commerce Kit (ACK)",
+  "acronym": "ACK",
+  "aliases": [
+   "ACK",
+   "ACK-ID",
+   "ACK-Pay"
+  ],
+  "collisions": [
+   "ACK (TCP acknowledgement, unrelated)",
+   "Not one of the protocols called ACP"
+  ],
+  "step": "pay",
+  "parties": [
+   "agent-payment",
+   "agent-agent",
+   "agent-site"
+  ],
+  "form": "document-format",
+  "track": "single-vendor",
+  "scope": "payments",
+  "question": "How can an agent prove who owns it and pay another party, on any rail, with a receipt both sides can verify?",
+  "analog": "A company ID badge plus a signed receipt book",
+  "origin": {
+   "org": "Catena Labs",
+   "date": "2025-05-20"
+  },
+  "governance": "Developed by Catena Labs and contributed as MIT-licensed open source (agentcommercekit/ack); no standards body",
+  "native_status": "Open protocols with no stated version, status or date on the concepts page; reference packages tagged up to agentcommercekit@0.11.0",
+  "phase": "draft",
+  "implementation": "prototype",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "unversioned docs; reference packages agentcommercekit@0.11.0",
+   "date": "2026-10-16"
+  },
+  "spec_url": "https://www.agentcommercekit.com/overview/concepts",
+  "discovery": {
+   "mechanism": "none at a fixed path; identity rests on DIDs and verifiable credentials exchanged between the parties",
+   "path": null
+  },
+  "probe": {
+   "method": "GET",
+   "path": "none — no fixed path defined",
+   "parse": "No artefact at a fixed path to parse.",
+   "on_absent": "Not probeable from an origin."
+  },
+  "evidence": [
+   {
+    "claim": "The ACK concepts page describes Agent Commerce Kit as open protocols: ACK-ID for agent identity and ownership chains built on DIDs and verifiable credentials, and ACK-Pay for payment initiation, verifiable receipts and settlement-agnostic flows that support x402; it says Catena Labs initially developed it and contributed it as MIT-licensed open source, and gives no version, status or date.",
+    "label": "VERIFIED",
+    "url": "https://www.agentcommercekit.com/overview/concepts",
+    "date": null
+   },
+   {
+    "claim": "The agentcommercekit/ack repository is MIT licensed, created 2025-05-19 and last pushed 2026-10-16, with package tags up to agentcommercekit@0.11.0.",
+    "label": "VERIFIED",
+    "url": "https://github.com/agentcommercekit/ack",
+    "date": "2026-10-16"
+   },
+   {
+    "claim": "Business Wire carries Catena Labs' launch announcement of Agent Commerce Kit.",
+    "label": "REPORTED",
+    "url": "https://www.businesswire.com/news/home/20250520361792/en/",
+    "date": "2025-05-20"
+   }
+  ],
+  "last_verified": "2026-10-20",
+  "dispute": null,
+  "summary_md": "Agent Commerce Kit (ACK) is Catena Labs' set of open patterns for agent identity and agent payments, with reference code [1][2]. ACK-ID gives an agent a DID and verifiable credentials that trace it back to its owner [1]. ACK-Pay covers starting a payment, issuing a verifiable receipt and settling on whichever rail the parties use, card or stablecoin among them; it supports x402 [1].\n\nCatena Labs launched it in May 2025 and contributed it as MIT-licensed open source [1][3]. The docs give no version, status or date. The reference packages are tagged up to agentcommercekit@0.11.0 and the code is still active [2]. ACK defines nothing at a fixed path on an origin. Its payment half is filed under Pay; ACK-ID would also fit under Identify.",
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from gap scout 2026-10-20; verified against agentcommercekit.com/overview/concepts and github.com/agentcommercekit/ack"
+   }
+  ],
+  "part_of": null,
+  "group": null,
+  "watch": [
+   {
+    "type": "github",
+    "repo": "agentcommercekit/ack",
+    "mode": "tag",
+    "version": false
+   }
+  ],
+  "use_cases": [
+   "accept-agent-payments",
+   "prove-agent-identity",
+   "agent-checkout"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "x402",
+   "erc-8004",
+   "ap2"
+  ],
+  "prerequisites": []
+ },
+ {
+  "id": "cloudflare-markdown-for-agents",
+  "name": "Markdown for Agents",
+  "acronym": "",
+  "aliases": [
+   "Cloudflare Markdown for Agents",
+   "content_converter",
+   "Accept: text/markdown"
+  ],
+  "collisions": [],
+  "step": "read",
+  "parties": [
+   "agent-site"
+  ],
+  "form": "http-header",
+  "track": "single-vendor",
+  "scope": "general",
+  "question": "Can an agent ask a site for a Markdown version of an HTML page, instead of parsing the HTML itself?",
+  "analog": "HTTP content negotiation (as used for languages and image formats), applied to Markdown",
+  "origin": {
+   "org": "Cloudflare",
+   "date": "2026-02-12"
+  },
+  "governance": "Cloudflare; a feature of its network documented in Cloudflare's developer docs, not submitted to a standards body; it rides on ordinary HTTP content negotiation",
+  "native_status": "Vendor feature, available to Pro, Business and Enterprise plans and SSL for SaaS customers at no cost; not a standards-track document",
+  "phase": "living",
+  "implementation": "shipping",
+  "adoption": {
+   "level": "observed",
+   "by": "Cloudflare's own developer docs and blog answer Accept: text/markdown with text/markdown (our check, 2026-10-20); Cloudflare publishes no count of enabled zones",
+   "probe_run": null
+  },
+  "version": {
+   "label": "Generally available on Pro, Business and Enterprise plans; docs last updated 2026-10-09",
+   "date": "2026-02-12"
+  },
+  "spec_url": "https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/",
+  "discovery": {
+   "mechanism": "HTTP content negotiation: the client sends Accept: text/markdown and an enabled zone answers with Content-Type: text/markdown; charset=utf-8 and Vary: Accept. There is no manifest or well-known file.",
+   "path": null
+  },
+  "probe": {
+   "method": "GET",
+   "path": "{origin}/ (request header Accept: text/markdown)",
+   "parse": "Content-Type is text/markdown; a Content-Signal response header is present (Cloudflare adds ai-train=yes, search=yes, ai-input=yes when the origin sets none); an x-markdown-tokens header is described in the launch post but was not returned in our 2026-10-20 check",
+   "on_absent": "An HTML response means the zone has not turned the feature on, or is not on Cloudflare; the site may still offer Markdown by other means, such as .md mirrors or llms.txt"
+  },
+  "evidence": [
+   {
+    "claim": "Cloudflare's docs page (last updated 2026-10-09) says a client that sends Accept: text/markdown to an enabled zone gets the HTML converted at the edge, with Content-Type: text/markdown; charset=utf-8 and Vary: Accept. Output is optional YAML frontmatter from meta tags, the body as Markdown, and any JSON-LD in a fenced json block. Only HTML is converted, up to 6 MiB. When the origin sends no content-signal header, Cloudflare adds Content-Signal: ai-train=yes, search=yes, ai-input=yes. It is enabled in AI Crawl Control, by a Configuration Rule, or via PATCH /zones/{zone_tag}/settings/content_converter, and is free on Pro, Business, Enterprise and SSL for SaaS.",
+    "date": "2026-10-09",
+    "label": "VERIFIED",
+    "url": "https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/"
+   },
+   {
+    "claim": "The launch post (datePublished 2026-02-12) introduces the feature and says converted responses carry an x-markdown-tokens header with the estimated token count of the Markdown document.",
+    "date": "2026-02-12",
+    "label": "VERIFIED",
+    "url": "https://blog.cloudflare.com/markdown-for-agents/"
+   },
+   {
+    "claim": "Our own request on 2026-10-20 to this post and to the docs page with Accept: text/markdown returned HTTP 200, content-type: text/markdown; charset=utf-8 and content-signal: ai-train=yes, search=yes, ai-input=yes, and no x-markdown-tokens header.",
+    "date": "2026-10-20",
+    "label": "VERIFIED",
+    "url": "https://blog.cloudflare.com/markdown-for-agents/"
+   }
+  ],
+  "summary_md": "Markdown for Agents is a Cloudflare network feature: when an agent requests a page with `Accept: text/markdown`, an enabled zone fetches the HTML from the origin, converts it to Markdown at the edge and returns it as `text/markdown` with `Vary: Accept`, so caches keep the HTML and Markdown variants apart [1]. The output has a fixed layout: optional YAML frontmatter built from the page's title, description and og:image meta tags, the body with navigation, scripts and styles stripped, and any JSON-LD kept in a fenced block at the end [1]. Only HTML is converted, up to 6 MiB [1].\n\nIt is a vendor feature, not a standard: any server can do the same content negotiation, and Vercel's Agent Readability Spec lists `Accept: text/markdown` as one of its checks. Cloudflare's version is free on Pro, Business and Enterprise plans and for SSL for SaaS, and is switched on in AI Crawl Control, per path or host by a Configuration Rule, or through the `content_converter` zone setting [1]. Cloudflare launched it on 2026-02-12 and serves its own docs and blog this way [2][3].\n\nTwo details matter. First, if the origin sends no `content-signal` header, Cloudflare adds `Content-Signal: ai-train=yes, search=yes, ai-input=yes` to the converted response [1][3], so a site that turns the feature on without setting its own header advertises consent to every use the Content Signals Policy names. Second, the launch post describes an `x-markdown-tokens` header with an estimated token count [2], but the current docs do not mention it and our check on 2026-10-20 did not receive it [3].",
+  "part_of": null,
+  "group": null,
+  "use_cases": [
+   "serve-content-to-agents"
+  ],
+  "audience": [
+   "site-owner",
+   "platform"
+  ],
+  "pairs_with": [
+   "cloudflare-content-signals-policy",
+   "llms-txt",
+   "vercel-agent-readability",
+   "ai-crawler-tokens-robots"
+  ],
+  "prerequisites": [],
+  "dispute": {
+   "claims": [
+    "Cloudflare's launch post (2026-02-12) says converted responses include an x-markdown-tokens header with the estimated token count [2].",
+    "The current docs (updated 2026-10-09) do not list that header, and our 2026-10-20 requests to Cloudflare's own docs and blog did not return it [1][3].",
+    "When the origin sets no content-signal header, Cloudflare adds Content-Signal: ai-train=yes, search=yes, ai-input=yes, so turning the feature on also publishes a permissive AI-use preference unless the site overrides it [1]."
+   ],
+   "summary": "The token-count header promised at launch is not in the current docs and was not returned in our check, so agents should not rely on it. The feature also attaches a permissive Content-Signal by default, which a site owner may not expect from a format-conversion switch."
+  },
+  "last_verified": "2026-10-20",
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from gap scout 2026-10-20; verified against developers.cloudflare.com/fundamentals/reference/markdown-for-agents/ (updated 2026-10-09), blog.cloudflare.com/markdown-for-agents/ (2026-02-12) and our own Accept: text/markdown requests on 2026-10-20"
+   }
+  ],
+  "watch": [
+   {
+    "type": "page",
+    "url": "https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/",
+    "selector": "main",
+    "cadence": "weekly"
+   },
+   {
+    "type": "feed",
+    "url": "https://blog.cloudflare.com/rss/"
+   }
+  ]
+ },
+ {
+  "id": "otel-genai-semconv",
+  "name": "OpenTelemetry GenAI Semantic Conventions (agents and MCP)",
+  "acronym": "",
+  "aliases": [
+   "OTel GenAI semconv",
+   "gen_ai.* attributes",
+   "semantic-conventions-genai"
+  ],
+  "collisions": [],
+  "step": "account",
+  "parties": [
+   "agent-site",
+   "agent-agent"
+  ],
+  "form": "document-format",
+  "track": "linux-foundation",
+  "scope": "general",
+  "question": "What span, metric and attribute names should agent frameworks and MCP clients and servers emit, so traces of agent runs and tool calls line up across vendors?",
+  "analog": "A common log format (like the web server combined log), for agent traces",
+  "origin": {
+   "org": "OpenTelemetry (CNCF)",
+   "date": null
+  },
+  "governance": "OpenTelemetry project (backed by the CNCF); developed in the open-telemetry/semantic-conventions-genai repository, which extends the core OpenTelemetry Semantic Conventions",
+  "native_status": "Status: Development (OpenTelemetry document status) on both the agent-spans and MCP documents; the repository has no tagged release",
+  "phase": "draft",
+  "implementation": "prototype",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "Development (unreleased; repository has no tags); builds on core semantic conventions v1.44.0",
+   "date": "2026-10-19"
+  },
+  "spec_url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md",
+  "discovery": {
+   "mechanism": "None at the web layer; the conventions name attributes on OpenTelemetry spans and metrics that an agent's own instrumentation exports to its operator's tracing backend",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "Telemetry naming lives inside an operator's tracing pipeline; nothing can be observed from a site's public endpoints."
+  },
+  "evidence": [
+   {
+    "claim": "gen-ai-agent-spans.md, Status: Development, defines spans for create_agent, invoke_agent (client and internal), invoke workflow, plan, execute_tool, load skill, read skill resource and command execution, using gen_ai.* attributes such as gen_ai.operation.name and gen_ai.agent.name.",
+    "date": "2026-10-19",
+    "label": "VERIFIED",
+    "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md"
+   },
+   {
+    "claim": "mcp.md, Status: Development, defines MCP client and server spans with context propagation, the metrics mcp.client.operation.duration, mcp.server.operation.duration, mcp.client.session.duration and mcp.server.session.duration, and examples for stdio and Streamable HTTP transports; it links core semantic conventions v1.44.0.",
+    "date": "2026-10-19",
+    "label": "VERIFIED",
+    "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/mcp.md"
+   },
+   {
+    "claim": "The repository (Apache-2.0, created 2026-05-05, last pushed 2026-10-19, no tags) says it extends the core OpenTelemetry Semantic Conventions with GenAI, MCP and provider-specific conventions, generated from YAML models with Weaver, and keeps reference implementations under reference/.",
+    "date": "2026-10-19",
+    "label": "VERIFIED",
+    "url": "https://github.com/open-telemetry/semantic-conventions-genai"
+   }
+  ],
+  "summary_md": "OpenTelemetry's GenAI semantic conventions give agent frameworks and MCP implementations a shared vocabulary for telemetry: the names of spans, metrics and `gen_ai.*` attributes to emit when an agent is created or invoked, plans, runs a workflow, calls a tool, loads a skill or runs a command [1]. A separate MCP document defines client and server spans, how trace context is propagated over MCP, and four duration metrics for operations and sessions on each side [2]. With the same names, a trace that crosses frameworks and MCP servers can be followed and audited in one tracing backend.\n\nThe conventions live in their own repository, open-telemetry/semantic-conventions-genai (Apache-2.0, created 2026-05-05), which extends the core OpenTelemetry Semantic Conventions and keeps reference implementations alongside the spec [3]. Both documents read here are marked Development, OpenTelemetry's least stable document status, and the repository has no tagged release, so names may still change [1][2][3].\n\nThis is an account-step record: it does not decide who an agent is or what it may do, only how what it did is recorded. Nothing is exposed at a website origin, so there is no probe. Which frameworks emit these conventions today was not counted in this pass.",
+  "part_of": null,
+  "group": null,
+  "use_cases": [
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "mcp",
+   "agent-audit-trail"
+  ],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-20",
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from gap scout 2026-10-20; verified against open-telemetry/semantic-conventions-genai (docs/gen-ai/gen-ai-agent-spans.md, docs/gen-ai/mcp.md, README and repository metadata)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "github",
+    "repo": "open-telemetry/semantic-conventions-genai",
+    "mode": "tag",
+    "version": false
+   },
+   {
+    "type": "page",
+    "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md",
+    "selector": "main",
+    "cadence": "weekly"
+   },
+   {
+    "type": "page",
+    "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/mcp.md",
+    "selector": "main",
+    "cadence": "weekly"
+   }
+  ]
+ },
+ {
+  "id": "erc-8001",
+  "name": "ERC-8001: Agent Coordination Framework",
+  "acronym": "ERC-8001",
+  "aliases": [
+   "EIP-8001"
+  ],
+  "collisions": [],
+  "step": "coordinate",
+  "parties": [
+   "agent-agent"
+  ],
+  "form": "onchain-registry",
+  "track": "community",
+  "scope": "general",
+  "question": "How can several agents agree on-chain that a coordinated action may run only once every required participant has signed an acceptance?",
+  "analog": "A contract that takes effect only when every party has countersigned",
+  "origin": {
+   "org": "Ethereum community (Kwame Bryan)",
+   "date": "2025-08-02"
+  },
+  "governance": "Ethereum EIP/ERC process (Ethereum Magicians discussion + ERCs repository); status Final",
+  "native_status": "Final Standards Track ERC (moved to Last Call 2025-12-02 and to Final 2025-12-16)",
+  "phase": "stable",
+  "implementation": "prototype",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "Final, created 2025-08-02",
+   "date": "2025-12-16"
+  },
+  "spec_url": "https://eips.ethereum.org/EIPS/eip-8001",
+  "discovery": {
+   "mechanism": "EVM smart-contract interface; an initiator posts an EIP-712 intent and participants post EIP-712 or ERC-1271 acceptances to an ERC-8001 contract",
+   "path": "none — no well-known file; discovery is by contract address/ABI"
+  },
+  "probe": {
+   "method": "eth_call",
+   "path": "{contract_address}",
+   "parse": "Contract implements the ERC-8001 functions (proposeCoordination, acceptCoordination, executeCoordination, cancelCoordination, getCoordinationStatus, getRequiredAcceptances, getAgentNonce) and emits the mandatory lifecycle events",
+   "on_absent": "Absence at a given contract address only shows that deployment does not implement ERC-8001; there is no registry of ERC-8001 deployments to enumerate."
+  },
+  "evidence": [
+   {
+    "claim": "ERC-8001 defines a minimal single-chain primitive for multi-party agent coordination: an initiator posts an intent, each participant provides a verifiable acceptance attestation, and the intent is executable once the required set of acceptances is present and fresh. It requires EIP-712, ERC-1271, EIP-2098 and EIP-5267, leaves privacy, reputation, thresholds, bonding and cross-chain semantics to optional modules, and ships a reference implementation (AgentCoordination.sol). Status Final, created 2025-08-02, author Kwame Bryan.",
+    "date": "2025-12-16",
+    "label": "VERIFIED",
+    "url": "https://eips.ethereum.org/EIPS/eip-8001"
+   },
+   {
+    "claim": "The ERCs repository front matter for erc-8001.md reads status: Final; its commit history shows the move to Last Call on 2025-12-02 and to Final on 2025-12-16.",
+    "date": "2025-12-16",
+    "label": "VERIFIED",
+    "url": "https://github.com/ethereum/ERCs/blob/master/ERCS/erc-8001.md"
+   },
+   {
+    "claim": "ERC-8107 'ENS Trust Registry for Agent Coordination' (status Review, created 2025-12-16, same author) defines a web-of-trust registry keyed by ENS names, with OpenPGP-style trust levels and path verification, as the trust and delegation module that ERC-8001 anticipates; it requires ERC-8001.",
+    "date": "2025-12-16",
+    "label": "VERIFIED",
+    "url": "https://eips.ethereum.org/EIPS/eip-8107"
+   }
+  ],
+  "summary_md": "ERC-8001 is a Final Ethereum standard for agents that need to act together without a trusted coordinator [1]. An initiator posts an EIP-712 signed intent naming the participants; each participant posts its own signed acceptance (EIP-712, or ERC-1271 for contract wallets); and the intent becomes executable only once every required acceptance is present and unexpired [1]. Canonical, sorted participant lists, nonces and standard typed data give replay protection and wallet compatibility, and the spec fixes the lifecycle and the events a contract must emit [1].\n\nIt is deliberately small. The authors leave privacy, reputation, threshold policies, bonding and cross-chain coordination to optional modules that reference it, and the spec includes a reference contract rather than pointing to production deployments [1]. It moved to Last Call on 2025-12-02 and to Final on 2025-12-16 [2].\n\nRelated: ERC-8107, an ENS Trust Registry by the same author and still in Review, is written as the trust and delegation module ERC-8001 anticipates. Agents vouch for or deny each other under ENS names, and a coordinator can admit only participants reachable through a trust path [3]. No count of ERC-8001 deployments was found, so adoption is unmeasured.",
+  "part_of": null,
+  "group": null,
+  "use_cases": [
+   "agent-to-agent-messaging"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "erc-8183",
+   "erc-8004"
+  ],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-20",
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from gap scout 2026-10-20; verified against eips.ethereum.org/EIPS/eip-8001, the ERCs repository file and commit history (Last Call 2025-12-02, Final 2025-12-16), and eips.ethereum.org/EIPS/eip-8107 (related ENS Trust Registry, Review)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "erc",
+    "num": 8001
+   },
+   {
+    "type": "erc",
+    "num": 8107
+   }
+  ]
+ },
+ {
+  "id": "erc-8126",
+  "name": "ERC-8126: AI Agent Verification",
+  "acronym": "ERC-8126",
+  "aliases": [
+   "EIP-8126"
+  ],
+  "collisions": [],
+  "step": "identify",
+  "parties": [
+   "agent-registry",
+   "agent-agent"
+  ],
+  "form": "onchain-registry",
+  "track": "community",
+  "scope": "general",
+  "question": "How can an agent registered under ERC-8004 be put through standard security checks and carry a comparable risk score?",
+  "analog": "A security audit report with a credit-style score, attached to an on-chain identity",
+  "origin": {
+   "org": "Ethereum community (Leigh Cronian, Cybercentry; Chris Johnson, Virtuals)",
+   "date": "2026-01-15"
+  },
+  "governance": "Ethereum EIP/ERC process (Ethereum Magicians discussion + ERCs repository); status Final",
+  "native_status": "Final Standards Track ERC (moved to Last Call 2026-05-12 and to Final 2026-06-02); requires ERC-8004, which is still Draft",
+  "phase": "stable",
+  "implementation": "prototype",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "Final, created 2026-01-15",
+   "date": "2026-06-02"
+  },
+  "spec_url": "https://eips.ethereum.org/EIPS/eip-8126",
+  "discovery": {
+   "mechanism": "Agents are identified by their ERC-8004 Identity Registry token; verification attestations can be posted to ERC-8004's Validation Registry",
+   "path": "none — no well-known file; discovery is by contract address/ABI"
+  },
+  "probe": {
+   "method": "eth_call",
+   "path": "{contract_address}",
+   "parse": "Look up the agent in an ERC-8004 Validation Registry for ERC-8126 verification attestations; detailed results and the 0-100 risk score are readable only by the agent's wallet holder",
+   "on_absent": "No attestation means no ERC-8126 provider has posted one for this agent; it says nothing about whether the agent is safe."
+  },
+  "evidence": [
+   {
+    "claim": "ERC-8126 defines a standard interface for verifying AI agents registered via ERC-8004, with five verification types (Ethereum Token, Media Content, Solidity Code, Web Application and Wallet Verification), zero-knowledge proofs generated by Private Data Verification, and a unified 0-100 risk score visible only to the agent's wallet holder; attestations can be posted to ERC-8004's Validation Registry. Status Final; requires 155, 191, 712, 721, 3009 and 8004; created 2026-01-15.",
+    "date": "2026-06-02",
+    "label": "VERIFIED",
+    "url": "https://eips.ethereum.org/EIPS/eip-8126"
+   },
+   {
+    "claim": "The ERCs repository front matter for erc-8126.md reads status: Final with requires including 8004; its commit history shows the move to Last Call on 2026-05-12 and to Final on 2026-06-02.",
+    "date": "2026-06-02",
+    "label": "VERIFIED",
+    "url": "https://github.com/ethereum/ERCs/blob/master/ERCS/erc-8126.md"
+   },
+   {
+    "claim": "ERC-8004, which ERC-8126 requires, is still status Draft on its EIP page.",
+    "date": "2025-08-13",
+    "label": "VERIFIED",
+    "url": "https://eips.ethereum.org/EIPS/eip-8004"
+   }
+  ],
+  "summary_md": "ERC-8126 is a Final Ethereum standard for checking AI agents that already hold an ERC-8004 identity [1]. A verification provider runs up to five checks: the agent's token contract, media it produces (with C2PA guidance), its Solidity code (with OWASP guidance), its web endpoints, and its wallet history. It turns the results into zero-knowledge proofs and a single 0-100 risk score [1]. Detailed results go only to the agent's wallet holder, and attestations can be posted to ERC-8004's Validation Registry so others can see that a check happened [1]. An optional quantum-resistant encryption layer is also described [1].\n\nIt is the first layer of a two-part stack by the same authors: ERC-8196 builds policy-bound agent wallets on top of it. The authors are Leigh Cronian (Cybercentry) and Chris Johnson (Virtuals) [1]. It moved to Last Call on 2026-05-12 and to Final on 2026-06-02 [2].\n\nThe oddity: ERC-8126 is Final while the standard it requires, ERC-8004, is still a Draft that can change [2][3]. Its interfaces could therefore break if ERC-8004 changes before finalisation. The spec carries reference code, but no deployed verification provider was counted in this pass, so adoption is unmeasured.",
+  "part_of": null,
+  "group": null,
+  "use_cases": [
+   "prove-agent-identity",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "erc-8004",
+   "erc-8196"
+  ],
+  "prerequisites": [
+   "erc-8004"
+  ],
+  "dispute": {
+   "claims": [
+    "ERC-8126 front matter: status Final (Final 2026-06-02), requires 8004 [1][2].",
+    "ERC-8004 EIP page: status Draft [3]."
+   ],
+   "summary": "ERC-8126 reached Final while it depends on ERC-8004, which is still a Draft. A Final standard is meant to be frozen, but the identity and validation registries it builds on can still change, so ERC-8126 implementations may need to follow ERC-8004 revisions."
+  },
+  "last_verified": "2026-10-20",
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from gap scout 2026-10-20; verified against eips.ethereum.org/EIPS/eip-8126, the ERCs repository file and commit history (Last Call 2026-05-12, Final 2026-06-02), and the ERC-8004 EIP page (Draft); dispute recorded: Final while its dependency ERC-8004 is Draft"
+   }
+  ],
+  "watch": [
+   {
+    "type": "erc",
+    "num": 8126
+   }
+  ]
+ },
+ {
+  "id": "erc-8196",
+  "name": "ERC-8196: AI Agent Authenticated Wallet",
+  "acronym": "ERC-8196",
+  "aliases": [
+   "EIP-8196"
+  ],
+  "collisions": [],
+  "step": "permit",
+  "parties": [
+   "agent-payment",
+   "agent-human"
+  ],
+  "form": "onchain-registry",
+  "track": "community",
+  "scope": "general",
+  "question": "How can an asset owner let an AI agent transact from a wallet only within a policy the owner set, with proof and an audit trail for every action?",
+  "analog": "A corporate card with spending rules enforced by the card itself, plus a tamper-evident statement",
+  "origin": {
+   "org": "Ethereum community (Leigh Cronian, Cybercentry; Chris Johnson, Virtuals)",
+   "date": "2026-03-14"
+  },
+  "governance": "Ethereum EIP/ERC process (Ethereum Magicians discussion + ERCs repository); status Final",
+  "native_status": "Final Standards Track ERC (Final 2026-07-21); requires ERC-4337 and ERC-8126",
+  "phase": "stable",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "Final, created 2026-03-14",
+   "date": "2026-07-21"
+  },
+  "spec_url": "https://eips.ethereum.org/EIPS/eip-8196",
+  "discovery": {
+   "mechanism": "EVM smart-contract interface on an ERC-4337 account; policies are registered on the wallet contract",
+   "path": "none — no well-known file; discovery is by contract address/ABI"
+  },
+  "probe": {
+   "method": "eth_call",
+   "path": "{contract_address}",
+   "parse": "Contract implements the ERC-8196 functions (registerPolicy, getPolicy, revokePolicy, executeAction)",
+   "on_absent": "Absence at a given contract address only shows that wallet does not implement ERC-8196; there is no registry of ERC-8196 wallets to enumerate."
+  },
+  "evidence": [
+   {
+    "claim": "ERC-8196 defines a standard interface for AI agent-authenticated wallets that execute transactions only with verifiable cryptographic proof that the action complies with a policy set by the asset owner. It is Layer 2 (Execute) above ERC-8126 (Layer 1, Identify and Verify), with credential delegation without exposing private keys, a hash-chained audit trail, entropy commit-reveal against host influence, and legacy credential delegation via TLS attestations. Status Final; requires 155, 191, 712, 4337 and 8126; created 2026-03-14.",
+    "date": "2026-07-21",
+    "label": "VERIFIED",
+    "url": "https://eips.ethereum.org/EIPS/eip-8196"
+   },
+   {
+    "claim": "The ERCs repository front matter for erc-8196.md reads status: Final; its commit history shows the move to Final on 2026-07-21.",
+    "date": "2026-07-21",
+    "label": "VERIFIED",
+    "url": "https://github.com/ethereum/ERCs/blob/master/ERCS/erc-8196.md"
+   }
+  ],
+  "summary_md": "ERC-8196 is a Final Ethereum standard for wallets that an AI agent can use but not abuse [1]. The asset owner registers a policy on an ERC-4337 smart account, and the wallet executes an agent's transaction only when it comes with cryptographic proof that the action complies with that policy [1]. Every session is logged in a hash-chained audit trail. A commit-reveal of entropy stops a host from steering a probabilistic agent by resampling, and credentials for legacy (non-chain) services can be delegated through TLS attestations without handing the agent private keys [1].\n\nIt is the execute layer of a two-layer stack by the same authors: ERC-8126 answers whether an agent is trustworthy, ERC-8196 whether this action is authorised now, and the spec encourages ERC-8126 Wallet Verification before granting control [1]. It reached Final on 2026-07-21 [2].\n\nThe dependency chain runs through ERC-8126 to ERC-8004, which is still a Draft (see the dispute on `erc-8126`). No deployed wallet implementing ERC-8196 was found in this pass, so implementation is unknown and adoption unmeasured.",
+  "part_of": null,
+  "group": null,
+  "use_cases": [
+   "delegate-user-authority",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "erc-8126",
+   "erc-8004"
+  ],
+  "prerequisites": [
+   "erc-8126"
+  ],
+  "dispute": null,
+  "last_verified": "2026-10-20",
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from gap scout 2026-10-20; verified against eips.ethereum.org/EIPS/eip-8196 and the ERCs repository file and commit history (Final 2026-07-21)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "erc",
+    "num": 8196
+   }
+  ]
+ },
+ {
+  "id": "erc-8444",
+  "name": "ERC-8444: Agentic Resource Discovery (ARD) Onchain",
+  "acronym": "ERC-8444",
+  "aliases": [
+   "EIP-8444",
+   "ARD Onchain"
+  ],
+  "collisions": [],
+  "step": "discover",
+  "parties": [
+   "agent-registry",
+   "agent-site"
+  ],
+  "form": "onchain-registry",
+  "track": "community",
+  "scope": "general",
+  "question": "How can on-chain skills, task bounties and agent identities be found through ordinary ARD search, without the searcher needing a wallet or an RPC endpoint?",
+  "analog": "A search-engine listing backed by a land registry: the listing is ordinary, the title to it is on-chain",
+  "origin": {
+   "org": "Ethereum community (Gary Yang, finchip)",
+   "date": "2026-10-12"
+  },
+  "governance": "Ethereum EIP/ERC process (Ethereum Magicians discussion + ERCs repository); status Draft",
+  "native_status": "Draft Standards Track ERC, created 2026-10-12",
+  "phase": "draft",
+  "implementation": "prototype",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "Draft, created 2026-10-12",
+   "date": "2026-10-12"
+  },
+  "spec_url": "https://eips.ethereum.org/EIPS/eip-8444",
+  "discovery": {
+   "mechanism": "On-chain registry of value records, served by gateways that are conformant ARD registries; a domain acknowledges an address in its own ARD manifest through a top-level value:controllers member or an entry's value:controller",
+   "path": "/.well-known/ard.json"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "https://{origin}/.well-known/ard.json",
+   "parse": "ARD manifest with a top-level value:controllers array (did:pkh identifiers) or entries carrying value:controller; a gateway's manifest must also list at least one application/ai-registry+json entry describing itself",
+   "on_absent": "The domain has not acknowledged any ERC-8444 controller address; its ordinary ARD entries remain valid, and per the ERC every existing ARD entry is already a dormant (level 0) value record"
+  },
+  "evidence": [
+   {
+    "claim": "ERC-8444 defines an on-chain registry of value records for agentic resources: each record binds an ARD entry to an on-chain anchor (a token-bound executable skill, a token-bound task tender, an address-anchored agent identity, or an ARD registry endpoint) and, via a kind adapter, to the controlling address. Every record is a valid ARD entry and every resolver that serves records is a conformant ARD registry; a domain acknowledges an address in /.well-known/ard.json via value:controllers or value:controller. Status Draft; requires 165, 712 and 1271; created 2026-10-12; author Gary Yang (finchip).",
+    "date": "2026-10-12",
+    "label": "VERIFIED",
+    "url": "https://eips.ethereum.org/EIPS/eip-8444"
+   },
+   {
+    "claim": "The ERCs repository file erc-8444.md reads status: Draft and lists reference assets: an ARDOnchainRegistry.sol kernel, four kind adapters (skill, task, agent, registry), example descriptors, a gateway manifest and test vectors, and vendors the ARD v0.91 entry schema.",
+    "date": "2026-10-12",
+    "label": "VERIFIED",
+    "url": "https://github.com/ethereum/ERCs/blob/master/ERCS/erc-8444.md"
+   }
+  ],
+  "summary_md": "ERC-8444 puts ARD (Agentic Resource Discovery) on Ethereum [1]. ARD answers what exists and who says so, rooted in domains; this draft adds the other half, what a resource is worth and how it settles, rooted in addresses [1]. It defines an on-chain registry of value records. Each record is a valid ARD v0.91 entry bound to an on-chain anchor: a token-bound skill, a token-bound task tender with an escrowed bounty, an address-anchored agent identity (which can point to an ERC-8004 registration file), or an ARD registry endpoint [1][2].\n\nThe bridge to the web is two-way. Gateways that serve these records must be conformant ARD registries, so ordinary ARD clients find on-chain offers with no wallet or RPC endpoint [1]. A domain endorses an address by listing it under `value:controllers` (or an entry's `value:controller`) in its own `/.well-known/ard.json`, which plain ARD registries ignore [1]. Authority always sits with the address, never the domain, and records are identified by anchor, with ARD URNs as aliases [1]. Tenders add a new direction to ARD: an entry whose reader is a supplier looking for work [1].\n\nCurrent state: a Draft created 2026-10-12 by a single author, with reference contracts and test vectors in the ERCs repository [2]. It is not part of the ARD specification itself, and no deployment was found.",
+  "part_of": null,
+  "group": null,
+  "use_cases": [
+   "discover-my-api",
+   "describe-agent-capabilities",
+   "accept-agent-payments"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform"
+  ],
+  "pairs_with": [
+   "ard",
+   "erc-8004",
+   "x402"
+  ],
+  "prerequisites": [
+   "ard"
+  ],
+  "dispute": null,
+  "last_verified": "2026-10-20",
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from gap scout 2026-10-20; verified against eips.ethereum.org/EIPS/eip-8444 and the ERCs repository file erc-8444.md (Draft, 2026-10-12)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "erc",
+    "num": 8444
+   }
+  ]
+ },
+ {
+  "id": "jafar",
+  "name": "JAFAR: A JSON-Based Format for Publishing IP Ranges of Automated HTTP Clients",
+  "acronym": "JAFAR",
+  "aliases": [
+   "draft-illyes-webbotauth-jafar",
+   "draft-illyes-aipref-jafar"
+  ],
+  "collisions": [],
+  "step": "identify",
+  "parties": [
+   "agent-site"
+  ],
+  "form": "document-format",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can a crawler or bot operator publish the IP ranges its automated clients use, in one machine-readable format that sites can check traffic against?",
+  "analog": "A crawler's published list of IP ranges, checked alongside reverse DNS",
+  "origin": {
+   "org": "Gary Illyes (individual submission)",
+   "date": "2025-09-30"
+  },
+  "governance": "Individual Internet-Draft, not adopted by a working group; despite 'webbotauth' in its name, discussion takes place on the AI Preferences (aipref) WG list ai-control@ietf.org; source at github.com/garyillyes/jafar",
+  "native_status": "Active Internet-Draft, Intended Status: Informational; expires 23 October 2026",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-illyes-webbotauth-jafar-00",
+   "date": "2026-04-21"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/draft-illyes-webbotauth-jafar/",
+  "discovery": {
+   "mechanism": "None defined: the draft specifies only the JSON file's syntax and semantics (media type application/jafar+json), not where it is published or how it is retrieved",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "The draft defines no fixed location for the file, so absence at any given URL says nothing about whether an operator publishes one."
+  },
+  "evidence": [
+   {
+    "claim": "Datatracker lists draft-illyes-webbotauth-jafar-00 as an active individual Internet-Draft by Gary Illyes, Informational, dated 2026-04-21 and expiring 2026-10-23; it replaces draft-illyes-aipref-jafar.",
+    "date": "2026-04-21",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-illyes-webbotauth-jafar/"
+   },
+   {
+    "claim": "The -00 text defines a single JSON object with a required creationTime and prefixes array (one unified IPv4/IPv6 list of Prefix Objects, each with exactly one of ipv4Prefix or ipv6Prefix and optional services), an optional synctoken and notes, fetching, caching and versioning rules via the application/jafar+json media type, and says it codifies and extends common existing practice to complement, not replace, forward-confirmed reverse DNS. Discussion is on the aipref list (ai-control@ietf.org).",
+    "date": "2026-04-21",
+    "label": "VERIFIED",
+    "url": "https://www.ietf.org/archive/id/draft-illyes-webbotauth-jafar-00.html"
+   }
+  ],
+  "summary_md": "JAFAR defines one JSON format in which operators of crawlers, AI bots and other automated HTTP clients publish the IP address ranges they send traffic from, so site operators can recognise legitimate automated traffic without maintaining a different parser per vendor [2]. A file is a single JSON object with a creation timestamp and one array of prefixes covering both IPv4 and IPv6. Each prefix can be tagged with the publisher's own service names, and an optional sync token signals changes [2]. The draft registers `application/jafar+json`, with a version parameter for future changes, and gives caching rules for consumers [2].\n\nIt says it codifies and extends common existing practice and complements forward-confirmed reverse DNS rather than replacing it [2]. It defines only the file, not where it lives or how sites should use it, so there is nothing to probe at an origin [2]. It sits beside Web Bot Auth, which identifies a client by signature rather than by address, and the expired crawler best-practices draft by the same author listed publishing IP ranges in a standard format as one of its six practices.\n\nCurrent state: an individual draft, -00 of 2026-04-21, replacing the earlier draft-illyes-aipref-jafar. Discussion is on the aipref list despite the name [1][2]. It expires on 2026-10-23; if no -01 appears, this record should be marked expired as `ardp` was.",
+  "part_of": null,
+  "group": null,
+  "use_cases": [
+   "attribute-agent-traffic",
+   "control-ai-crawling"
+  ],
+  "audience": [
+   "site-owner",
+   "platform"
+  ],
+  "pairs_with": [
+   "webbotauth",
+   "ai-crawler-tokens-robots",
+   "anonymous-bot-auth"
+  ],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-20",
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from gap scout 2026-10-20; verified against the datatracker page (via Exa) and the -00 text (IETF rsync mirror); expires 2026-10-23, watch for -01"
+   }
+  ],
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-illyes-webbotauth-jafar"
+   }
+  ]
+ },
+ {
+  "id": "anonymous-bot-auth",
+  "name": "Anonymous Bot Authentication",
+  "acronym": "ABA",
+  "aliases": [
+   "draft-rescorla-anonymous-webbotauth",
+   "Anonymous Bot Authentication: Authorization and Rate Limiting for Web Agents"
+  ],
+  "collisions": [],
+  "step": "identify",
+  "parties": [
+   "agent-site"
+  ],
+  "form": "endpoint",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can a site tell authorised, well-behaved bots from others, and rate-limit them, without learning which bot sent each request?",
+  "analog": "A members-only pass that proves you belong to a club without showing your name",
+  "origin": {
+   "org": "E. Rescorla (Independent), R. Barnes (Cisco)",
+   "date": "2026-04-08"
+  },
+  "governance": "Individual Internet-Draft, not adopted by a working group; source at github.com/ekr/draft-rescorla-anonymous-webbotauth",
+  "native_status": "Active Internet-Draft, Intended Status: Informational; expires 20 January 2027; the draft says it 'has not yet seen significant security analysis'",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-rescorla-anonymous-webbotauth-01",
+   "date": "2026-07-19"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/draft-rescorla-anonymous-webbotauth/",
+  "discovery": {
+   "mechanism": "None at an origin: a bot registers with a credential Anchor, receives an Endorsement, redeems it with a Moderator (run by or for the site) for an anonymous Credential and presents that Credential; the concrete design uses the MoLE architecture",
+   "path": null
+  },
+  "probe": {
+   "method": "NONE",
+   "path": "",
+   "parse": "",
+   "on_absent": "The draft defines no site-side artefact, so support cannot be observed from a site's public endpoints."
+  },
+  "evidence": [
+   {
+    "claim": "Datatracker lists draft-rescorla-anonymous-webbotauth-01 as an active individual Internet-Draft by E. Rescorla (Independent) and R. Barnes (Cisco), Informational, dated 2026-07-19 and expiring 2027-01-20.",
+    "date": "2026-07-19",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-rescorla-anonymous-webbotauth/"
+   },
+   {
+    "claim": "The -01 text describes Anonymous Bot Authentication: bots register with an Anchor and receive anonymous credentials, so a site learns only that a request comes from some bot the Anchor endorsed. It supports per-bot rate limiting, separate content for bots, access conditioned on criteria, traffic classification and unlinkability, but not allow or deny lists of individual bots or auditing; the concrete instantiation uses MoLE (draft-jms-mole-architecture), and it contrasts itself with the signature-based draft-meunier-webbotauth-httpsig-protocol.",
+    "date": "2026-07-19",
+    "label": "VERIFIED",
+    "url": "https://www.ietf.org/archive/id/draft-rescorla-anonymous-webbotauth-01.html"
+   }
+  ],
+  "summary_md": "Anonymous Bot Authentication (ABA) is an individual IETF draft by Eric Rescorla and Richard Barnes that offers a privacy-preserving alternative to signature-based Web Bot Auth [1][2]. Bots register with a credential Anchor, which checks them against its policy and issues an anonymous credential. The bot redeems it with a Moderator, run by or cooperating with the site, for a credential it presents later; the site learns only that the request comes from some bot that Anchor endorsed, not which one [2]. The concrete design builds on the MoLE anonymous-endorsement architecture [2].\n\nThe authors argue that identifying every bot lets sites discriminate against bots acting in the public interest, such as price comparison or monitoring for discrimination, and stops people fetching content anonymously with automated tools [2]. ABA keeps per-bot rate limiting, separate content for bots, access based on criteria, and bot-versus-human classification. It gives up allow and deny lists of individual bots and auditing of what a given bot did [2]. A site can still treat Anchors differently, and IP addresses or fingerprinting may still identify a bot by other means [2].\n\nCurrent state: -01 of 2026-07-19 (the -00 appeared on 2026-04-08), Informational, expiring 2027-01-20, not adopted by the webbotauth WG [1]. The draft says it has not yet had significant security analysis, and no implementation was found.",
+  "part_of": null,
+  "group": null,
+  "use_cases": [
+   "prove-agent-identity",
+   "attribute-agent-traffic",
+   "control-ai-crawling"
+  ],
+  "audience": [
+   "site-owner",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "webbotauth",
+   "jafar",
+   "web-bot-auth-signature-agent-card"
+  ],
+  "prerequisites": [],
+  "dispute": null,
+  "last_verified": "2026-10-20",
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from gap scout 2026-10-20; verified against the datatracker page (via Exa) and the -01 text (IETF rsync mirror)"
+   }
+  ],
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-rescorla-anonymous-webbotauth"
    }
   ]
  }

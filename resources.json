@@ -1545,6 +1545,13 @@
     "evidence": "VERIFIED",
     "name": "AgenticCommerce.sol / IACPHook.sol (reference implementation in the EIP text)",
     "url": "https://eips.ethereum.org/EIPS/eip-8183"
+   },
+   {
+    "name": "Virtuals ACP (Agent Commerce Protocol, EconomyOS)",
+    "url": "https://os.virtuals.io/acp/overview/",
+    "date": "2026-10-20",
+    "evidence": "VERIFIED",
+    "note": "Virtuals' own docs call ACP the reference implementation of ERC-8183 and list ACP Core 0x238E541BfefD82238730D00a2208E5497F1832E0 on Base Mainnet and the SDK @virtuals-protocol/acp-node-v2; the contract was not checked on-chain."
    }
   ],
   "registries": [],
@@ -2781,6 +2788,202 @@
     "url": "https://x402.org"
    }
   ],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "a2wp": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "agent-audit-record": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "agent-authorization-envelope": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "agent-commerce-kit": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "agent-decision-commitment": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "agent-identity-protocol-singla": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "amp-ant": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-10-20",
+    "evidence": "VERIFIED",
+    "name": "ant-intl/AMP: specification and reference code (Apache-2.0)",
+    "url": "https://github.com/ant-intl/AMP"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "anonymous-bot-auth": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "cloudflare-markdown-for-agents": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "erc-8001": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "erc-8126": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "erc-8196": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "erc-8444": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "gbz-185-agent-interconnection": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "haace": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "iab-comp": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "idmandat-credential": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "jafar": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "kya-os": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-10-20",
+    "evidence": "VERIFIED",
+    "name": "KYA-OS reference implementation and documentation",
+    "url": "https://modelcontextprotocol-identity.io"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "kyapay-token": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "local-tool-call-proof": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "lws10-authn-ssi-cid": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "oauth-cimd": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "otel-genai-semconv": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "wimse-workload-identity-metadata": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "x401": {
+  "adopters": [],
   "implementations": [],
   "registries": [],
   "sdks": [],

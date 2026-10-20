@@ -584,5 +584,82 @@
  "agent-identity-protocol-singla": {
   "skip": "no-fixed-path",
   "note": "candidate record; probe rule pending"
+ },
+ "gbz-185-agent-interconnection": {
+  "skip": "no-fixed-path",
+  "note": "probe rule pending: Part 5 (discovery) full text not yet read for a well-known path"
+ },
+ "amp-ant": {
+  "skip": "needs-credentials",
+  "note": "AMP mandates and payment tokens are exchanged inside an authorised wallet flow; nothing is published at a fixed path."
+ },
+ "x401": {
+  "skip": "no-fixed-path",
+  "note": "A PROOF-REQUEST header appears only on a resource that asks for proof; there is no fixed path to check."
+ },
+ "kya-os": {
+  "path": "/.well-known/mcp",
+  "expect": {
+   "json_keys": [
+    "serverDid"
+   ]
+  },
+  "note": "KYA-OS SPEC.md section 10: servers SHOULD expose /.well-known/mcp with serverDid and capabilities."
+ },
+ "kyapay-token": {
+  "skip": "needs-credentials",
+  "note": "KYAPay tokens are presented per request by the agent; nothing is published at a fixed path on the resource server."
+ },
+ "oauth-cimd": {
+  "path": "/.well-known/oauth-authorization-server",
+  "expect": {
+   "json_keys": [
+    "client_id_metadata_document_supported"
+   ]
+  },
+  "note": "RFC 8414 metadata advertises CIMD support with client_id_metadata_document_supported."
+ },
+ "iab-comp": {
+  "skip": "no-fixed-path",
+  "note": "CoMP defines request and response objects, not a fixed path; supply discovery is out of scope."
+ },
+ "agent-commerce-kit": {
+  "skip": "no-fixed-path",
+  "note": "ACK identity and payment objects are exchanged between parties; no fixed path is defined."
+ },
+ "cloudflare-markdown-for-agents": {
+  "skip": "no-fixed-path",
+  "note": "Needs an Accept: text/markdown request header on any page; the probe rule format cannot set request headers."
+ },
+ "otel-genai-semconv": {
+  "skip": "not-http",
+  "note": "Telemetry naming conventions inside an operator's tracing pipeline; no origin artefact."
+ },
+ "erc-8001": {
+  "skip": "not-http",
+  "note": "An Ethereum contract; observable via eth_call, not HTTP."
+ },
+ "erc-8126": {
+  "skip": "not-http",
+  "note": "An Ethereum contract; observable via eth_call, not HTTP."
+ },
+ "erc-8196": {
+  "skip": "not-http",
+  "note": "An Ethereum contract; observable via eth_call, not HTTP."
+ },
+ "erc-8444": {
+  "path": "/.well-known/ard.json",
+  "expect": {
+   "text_match": "\"value:controllers?\""
+  },
+  "note": "A domain acknowledges an ERC-8444 controller address with value:controllers or value:controller in its ARD manifest."
+ },
+ "jafar": {
+  "skip": "no-fixed-path",
+  "note": "The draft defines the JSON format only, not where the file is published."
+ },
+ "anonymous-bot-auth": {
+  "skip": "no-fixed-path",
+  "note": "Anonymous credentials are presented per request; no site-side artefact is defined."
  }
 }
