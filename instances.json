@@ -2,53 +2,53 @@
  {
   "id": "google-sheets-demo-agent-agents-json",
   "name": "Google Sheets demo agent",
-  "url": "https://demo.wild-card.ai/googlesheets",
+  "url": "https://wild-card.ai",
   "type": "agent",
   "implements": [
    "agents-json"
   ],
   "observed": "2026-09-06",
   "date_basis": "recorded",
-  "source": "https://demo.wild-card.ai/googlesheets",
+  "source": "https://wild-card.ai",
   "note": "Listed as an adopter in the agents.json record; evidence THIN."
  },
  {
   "id": "resend-demo-agent-agents-json",
   "name": "Resend demo agent",
-  "url": "https://demo.wild-card.ai/resend",
+  "url": "https://wild-card.ai",
   "type": "agent",
   "implements": [
    "agents-json"
   ],
   "observed": "2026-09-06",
   "date_basis": "recorded",
-  "source": "https://demo.wild-card.ai/resend",
+  "source": "https://wild-card.ai",
   "note": "Listed as an adopter in the agents.json record; evidence THIN."
  },
  {
   "id": "rootly-demo-agent-agents-json",
   "name": "Rootly demo agent",
-  "url": "https://demo.wild-card.ai/rootly",
+  "url": "https://wild-card.ai",
   "type": "agent",
   "implements": [
    "agents-json"
   ],
   "observed": "2026-09-06",
   "date_basis": "recorded",
-  "source": "https://demo.wild-card.ai/rootly",
+  "source": "https://wild-card.ai",
   "note": "Listed as an adopter in the agents.json record; evidence THIN."
  },
  {
   "id": "stripe-demo-agent-agents-json",
   "name": "Stripe demo agent",
-  "url": "https://demo.wild-card.ai/stripe",
+  "url": "https://wild-card.ai",
   "type": "agent",
   "implements": [
    "agents-json"
   ],
   "observed": "2026-09-06",
   "date_basis": "recorded",
-  "source": "https://demo.wild-card.ai/stripe",
+  "source": "https://wild-card.ai",
   "note": "Listed as an adopter in the agents.json record; evidence THIN."
  },
  {
@@ -171,7 +171,7 @@
  {
   "id": "fido-alliance-specification-steward-ap2",
   "name": "FIDO Alliance (specification steward)",
-  "url": "https://raw.githubusercontent.com/google-agentic-commerce/AP2/main/CONTRIBUTING.md",
+  "url": "https://github.com/google-agentic-commerce/AP2",
   "type": "business",
   "implements": [
    "ap2"
@@ -184,7 +184,7 @@
  {
   "id": "food-tech-council-seat-holders-google-sq-ucp",
   "name": "Food Tech Council seat-holders (Google, Square, Toast, DoorDash, Uber Eats)",
-  "url": "https://raw.githubusercontent.com/Universal-Commerce-Protocol/.github/main/MAINTAINERS.md",
+  "url": "https://github.com/Universal-Commerce-Protocol/.github",
   "type": "business",
   "implements": [
    "ucp"
@@ -197,7 +197,7 @@
  {
   "id": "godaddy-infoblox-joint-standards-support-ans",
   "name": "GoDaddy / Infoblox joint standards-support announcement",
-  "url": "https://aboutus.godaddy.net/newsroom/news-releases/press-release-details/2026/Infoblox-and-GoDaddy-Support-Open-Standards-for-AI-Agent-Discovery-Identity-and-Verification-2026-0acKMntvOC/default.aspx",
+  "url": "https://www.godaddy.com",
   "type": "business",
   "implements": [
    "ans"
@@ -223,7 +223,7 @@
  {
   "id": "google-deepmind-mcp",
   "name": "Google DeepMind",
-  "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol",
+  "url": "https://deepmind.google",
   "type": "business",
   "implements": [
    "mcp"
@@ -288,7 +288,7 @@
  {
   "id": "infoblox-godaddy-joint-support-announcem-dns-aid",
   "name": "Infoblox / GoDaddy joint support announcement",
-  "url": "https://aboutus.godaddy.net/newsroom/news-releases/press-release-details/2026/Infoblox-and-GoDaddy-Support-Open-Standards-for-AI-Agent-Discovery-Identity-and-Verification-2026-0acKMntvOC/default.aspx",
+  "url": "https://www.godaddy.com",
   "type": "business",
   "implements": [
    "dns-aid"
@@ -301,7 +301,7 @@
  {
   "id": "lightning-labs-steward-l402",
   "name": "Lightning Labs (steward)",
-  "url": "https://raw.githubusercontent.com/lightninglabs/L402/master/README.md",
+  "url": "https://github.com/lightninglabs/L402",
   "type": "business",
   "implements": [
    "l402"
@@ -327,7 +327,7 @@
  {
   "id": "microsoft-semantic-kernel-azure-openai-i-mcp",
   "name": "Microsoft (Semantic Kernel, Azure OpenAI integration)",
-  "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol",
+  "url": "https://learn.microsoft.com",
   "type": "business",
   "implements": [
    "mcp"
@@ -353,7 +353,7 @@
  {
   "id": "openai-chatgpt-desktop-app-then-chatgpt-mcp",
   "name": "OpenAI (ChatGPT desktop app, then ChatGPT apps)",
-  "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol",
+  "url": "https://openai.com",
   "type": "business",
   "implements": [
    "mcp"
@@ -418,7 +418,7 @@
  {
   "id": "shopping-tech-council-seat-holders-googl-ucp",
   "name": "Shopping Tech Council seat-holders (Google, Shopify, Etsy, Meta, Amazon, Microsoft, Target, Stripe, Salesforce, Wayfair)",
-  "url": "https://raw.githubusercontent.com/Universal-Commerce-Protocol/.github/main/MAINTAINERS.md",
+  "url": "https://github.com/Universal-Commerce-Protocol/.github",
   "type": "business",
   "implements": [
    "ucp"
@@ -496,7 +496,7 @@
  {
   "id": "visa-trusted-agent-protocol-launch-annou-tap",
   "name": "Visa Trusted Agent Protocol launch announcement",
-  "url": "https://investor.visa.com/news/news-details/2025/Visa-Introduces-Trusted-Agent-Protocol-An-Ecosystem-Led-Framework-for-AI-Commerce/default.aspx",
+  "url": "https://developer.visa.com/capabilities/trusted-agent-protocol",
   "type": "business",
   "implements": [
    "tap"
@@ -626,7 +626,7 @@
  {
   "id": "sweefi-sui-sui-chain-binding-reference-i-s402",
   "name": "@sweefi/sui (Sui chain binding / reference implementation)",
-  "url": "https://raw.githubusercontent.com/s402-protocol/core/main/README.md",
+  "url": "https://github.com/s402-protocol/core",
   "type": "service",
   "implements": [
    "s402"
@@ -873,7 +873,7 @@
  {
   "id": "agora-protocol-python-python-library-agora-protocol",
   "name": "agora-protocol/python (Python library)",
-  "url": "https://raw.githubusercontent.com/agora-protocol/paper-demo/main/README.md",
+  "url": "https://github.com/agora-protocol/paper-demo",
   "type": "service",
   "implements": [
    "agora-protocol"
@@ -925,7 +925,7 @@
  {
   "id": "ap2-sdk-samples-python-go-android-using-ap2",
   "name": "AP2 SDK + samples (Python, Go, Android) using Google ADK",
-  "url": "https://raw.githubusercontent.com/google-agentic-commerce/AP2/main/README.md",
+  "url": "https://github.com/google-agentic-commerce/AP2",
   "type": "service",
   "implements": [
    "ap2"
@@ -2004,14 +2004,14 @@
  {
   "id": "anthropic-docs-llms-txt-llms-txt",
   "name": "Anthropic docs llms.txt",
-  "url": "https://docs.anthropic.com/llms.txt",
+  "url": "https://platform.claude.com/llms.txt",
   "type": "site",
   "implements": [
    "llms-txt"
   ],
   "observed": "2026-09-06",
   "date_basis": "recorded",
-  "source": "https://docs.anthropic.com/llms.txt",
+  "source": "https://platform.claude.com/llms.txt",
   "note": "Listed as an implementation in the llms.txt record; evidence REPORTED."
  },
  {
@@ -2108,14 +2108,14 @@
  {
   "id": "factory-agents-md",
   "name": "Factory",
-  "url": "https://factory.ai/",
+  "url": "https://factory.com/",
   "type": "site",
   "implements": [
    "agents-md"
   ],
   "observed": "2026-09-06",
   "date_basis": "recorded",
-  "source": "https://factory.ai/",
+  "source": "https://factory.com/",
   "note": "Listed as an implementation in the AGENTS.md record; evidence VERIFIED."
  },
  {
@@ -2173,14 +2173,14 @@
  {
   "id": "github-copilot-coding-agent-agents-md",
   "name": "GitHub Copilot coding agent",
-  "url": "https://gh.io/coding-agent-docs",
+  "url": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent",
   "type": "site",
   "implements": [
    "agents-md"
   ],
   "observed": "2026-09-06",
   "date_basis": "recorded",
-  "source": "https://gh.io/coding-agent-docs",
+  "source": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent",
   "note": "Listed as an implementation in the AGENTS.md record; evidence REPORTED."
  },
  {
@@ -2264,14 +2264,14 @@
  {
   "id": "kilo-code-agents-md",
   "name": "Kilo Code",
-  "url": "https://kilocode.ai/",
+  "url": "https://kilo.ai/",
   "type": "site",
   "implements": [
    "agents-md"
   ],
   "observed": "2026-09-06",
   "date_basis": "recorded",
-  "source": "https://kilocode.ai/",
+  "source": "https://kilo.ai/",
   "note": "Listed as an implementation in the AGENTS.md record; evidence REPORTED."
  },
  {
@@ -2368,14 +2368,14 @@
  {
   "id": "roocode-agents-md",
   "name": "RooCode",
-  "url": "https://roocode.com/",
+  "url": "https://roomote.dev/",
   "type": "site",
   "implements": [
    "agents-md"
   ],
   "observed": "2026-09-06",
   "date_basis": "recorded",
-  "source": "https://roocode.com/",
+  "source": "https://roomote.dev/",
   "note": "Listed as an implementation in the AGENTS.md record; evidence REPORTED."
  },
  {
@@ -2459,14 +2459,14 @@
  {
   "id": "windsurf-cognition-agents-md",
   "name": "Windsurf (Cognition)",
-  "url": "https://windsurf.com/",
+  "url": "https://docs.windsurf.com/",
   "type": "site",
   "implements": [
    "agents-md"
   ],
   "observed": "2026-09-06",
   "date_basis": "recorded",
-  "source": "https://windsurf.com/",
+  "source": "https://docs.windsurf.com/",
   "note": "Listed as an implementation in the AGENTS.md record; evidence REPORTED."
  },
  {
@@ -2682,7 +2682,7 @@
  {
   "id": "shopify-webmcp-experimentation-webmcp",
   "name": "Shopify (WebMCP experimentation)",
-  "url": "https://www.developersdigest.tech/blog/webmcp-google-browser-agent-standard-2026",
+  "url": "https://shopify.com",
   "type": "business",
   "implements": [
    "webmcp"
@@ -3124,7 +3124,7 @@
  {
   "id": "swisscom-slim",
   "name": "Swisscom",
-  "url": "https://www.linkedin.com/posts/vijoy_happy-1st-birthday-agntcy-a-year-ago-this-activity-7488620714682408962-LJBs",
+  "url": "https://www.swisscom.ch",
   "type": "business",
   "implements": [
    "slim"
@@ -3482,7 +3482,7 @@
   ],
   "observed": "2026-07-06",
   "date_basis": "source",
-  "source": "https://github.laiyagushi.com/sitedex/web-bot-auth-lint",
+  "source": "https://github.com/sitedex/web-bot-auth-lint",
   "note": "Akamai implements the Web Bot Auth / HTTP message signature drafts as a verifier alongside Cloudflare; evidence REPORTED."
  },
  {
@@ -4051,14 +4051,14 @@
  {
   "id": "christian-posta-aauth-go-library-aauth",
   "name": "christian-posta / aauth-go-library",
-  "url": "https://github.laiyagushi.com/christian-posta/aauth-go-library",
+  "url": "https://github.com/christian-posta/aauth-go-library",
   "type": "service",
   "implements": [
    "aauth"
   ],
   "observed": "2026-05-11",
   "date_basis": "source",
-  "source": "https://github.laiyagushi.com/christian-posta/aauth-go-library",
+  "source": "https://github.com/christian-posta/aauth-go-library",
   "note": "Go implementation of AAuth used in production by extauth-aauth-resource, an Agentgateway/Envoy ext_authz filter enforcing AAuth on inbound service requests. evidence VERIFIED"
  },
  {
@@ -4077,14 +4077,14 @@
  {
   "id": "marcofanti-aauth-java-library-aauth",
   "name": "marcofanti / aauth-java-library",
-  "url": "https://github.laiyagushi.com/marcofanti/aauth-java-library",
+  "url": "https://github.com/marcofanti/aauth-java-library",
   "type": "service",
   "implements": [
    "aauth"
   ],
   "observed": "2026-07-30",
   "date_basis": "source",
-  "source": "https://github.laiyagushi.com/marcofanti/aauth-java-library",
+  "source": "https://github.com/marcofanti/aauth-java-library",
   "note": "Independent Java implementation of AAuth (RFC 9421 HTTP Message Signatures + JWT proof-of-possession) with an accompanying Person Server + Agent Server demo portal. evidence VERIFIED"
  },
  {
@@ -4272,7 +4272,7 @@
  {
   "id": "agntcy-cisco-outshift-directory-over-ard-ard",
   "name": "AGNTCY / Cisco Outshift (Directory over ARD)",
-  "url": "https://blogs.agntcy.org/technical/2026/06/17/ai-catalog-over-directory.html",
+  "url": "https://agntcy.org",
   "type": "registry",
   "implements": [
    "ard"
@@ -4480,14 +4480,14 @@
  {
   "id": "opena2a-agent-authorization-protocol-aap",
   "name": "opena2a Agent Authorization Protocol",
-  "url": "https://github.laiyagushi.com/opena2a-standards/agent-authorization-protocol",
+  "url": "https://github.com/opena2a-standards/agent-authorization-protocol",
   "type": "registry",
   "implements": [
    "aap"
   ],
   "observed": "2026-06-01",
   "date_basis": "source",
-  "source": "https://github.laiyagushi.com/opena2a-standards/agent-authorization-protocol",
+  "source": "https://github.com/opena2a-standards/agent-authorization-protocol",
   "note": "opena2a-standards' Agent Authorization Protocol (AAP): scoped, attested authorization token model + broker/resolution layer, evidence VERIFIED."
  },
  {

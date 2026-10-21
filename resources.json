@@ -682,25 +682,25 @@
     "date": "2026",
     "evidence": "THIN",
     "name": "Resend demo agent",
-    "url": "https://demo.wild-card.ai/resend"
+    "url": "https://wild-card.ai/resend"
    },
    {
     "date": "2026",
     "evidence": "THIN",
     "name": "Stripe demo agent",
-    "url": "https://demo.wild-card.ai/stripe"
+    "url": "https://wild-card.ai/stripe"
    },
    {
     "date": "2026",
     "evidence": "THIN",
     "name": "Rootly demo agent",
-    "url": "https://demo.wild-card.ai/rootly"
+    "url": "https://wild-card.ai/rootly"
    },
    {
     "date": "2026",
     "evidence": "THIN",
     "name": "Google Sheets demo agent",
-    "url": "https://demo.wild-card.ai/googlesheets"
+    "url": "https://wild-card.ai/googlesheets"
    }
   ],
   "implementations": [
@@ -772,7 +772,7 @@
     "date": "2026",
     "evidence": "VERIFIED",
     "name": "Factory",
-    "url": "https://factory.ai/"
+    "url": "https://factory.com/"
    },
    {
     "date": "2026",
@@ -808,13 +808,13 @@
     "date": "2026",
     "evidence": "REPORTED",
     "name": "Windsurf (Cognition)",
-    "url": "https://windsurf.com/"
+    "url": "https://docs.windsurf.com/"
    },
    {
     "date": "2026",
     "evidence": "REPORTED",
     "name": "GitHub Copilot coding agent",
-    "url": "https://gh.io/coding-agent-docs"
+    "url": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent"
    },
    {
     "date": "2026",
@@ -832,7 +832,7 @@
     "date": "2026",
     "evidence": "REPORTED",
     "name": "RooCode",
-    "url": "https://roocode.com/"
+    "url": "https://roomote.dev/"
    },
    {
     "date": "2026",
@@ -844,7 +844,7 @@
     "date": "2026",
     "evidence": "REPORTED",
     "name": "Kilo Code",
-    "url": "https://kilocode.ai/"
+    "url": "https://kilo.ai/"
    },
    {
     "date": "2026",
@@ -1718,7 +1718,7 @@
     "date": "2026",
     "evidence": "REPORTED",
     "name": "Anthropic docs llms.txt",
-    "url": "https://docs.anthropic.com/llms.txt"
+    "url": "https://platform.claude.com/llms.txt"
    },
    {
     "date": "2026",
