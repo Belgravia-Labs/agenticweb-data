@@ -8,7 +8,7 @@
    ],
    "text_match": "\"url\"\\s*:|supportedInterfaces"
   },
-  "note": "An A2A Agent Card names the agent and where to reach it: a top-level url (0.3) or supportedInterfaces (1.0)."
+  "note": "An A2A Agent Card names the agent and where to reach it: a top-level url on a 0.3 card, or url, protocolBinding, and protocolVersion inside supportedInterfaces on a 1.0 card."
  },
  "ucp": {
   "path": "/.well-known/ucp",
@@ -254,7 +254,7 @@
  },
  "mcp": {
   "skip": "no-fixed-path",
-  "note": "MCP endpoints live wherever the vendor puts them; the server card is at <endpoint>/server-card, not at a well-known path. Look in ard.json entries."
+  "note": "MCP endpoints are not at a fixed well-known path. On 2026-07-28, capabilities are read with server/discover; initialize is the legacy handshake for 2025-11-25 and earlier. The server card is GET <endpoint>/server-card."
  },
  "agent-communication-protocol": {
   "skip": "superseded",
@@ -487,7 +487,7 @@
  },
  "mcp-server-cards": {
   "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
+  "note": "SEP-2127 reserves GET <streamable-http-url>/server-card as application/mcp-server-card+json. That URL is not one well-known path on the origin; discovery is /.well-known/ai-catalog.json."
  },
  "dawn-agent-discovery-framework": {
   "skip": "no-fixed-path",
@@ -661,5 +661,21 @@
  "anonymous-bot-auth": {
   "skip": "no-fixed-path",
   "note": "Anonymous credentials are presented per request; no site-side artefact is defined."
+ },
+ "workload-authz-grant": {
+  "skip": "needs-credentials",
+  "note": "The Workload Authorization Grant is a platform-signed JWT presented at a token endpoint; nothing is published at a fixed path."
+ },
+ "oauth-id-continuation": {
+  "skip": "needs-credentials",
+  "note": "The identity-continuation assertion is a token-exchange subject token; it is not published at a fixed path."
+ },
+ "oauth-agent-delegation": {
+  "skip": "no-fixed-path",
+  "note": "Agent-Delegation is an HTTP header on a request signed with RFC 9421; there is no fixed path to fetch."
+ },
+ "opena2a-aap": {
+  "skip": "no-fixed-path",
+  "note": "OpenA2A AAP is a token model. The named broker layer is not specified, and nothing is published at a fixed path."
  }
 }

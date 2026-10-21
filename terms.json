@@ -298,17 +298,28 @@
   "aliases": [
    "KYA"
   ],
-  "definition_md": "**Know Your Agent (KYA)** means verifying which agent, and which human behind it, is transacting before trusting it. Mastercard describes KYA in its Agent Pay Trust Framework, and Visa, Mastercard and Ant International have announced a KYA interoperability collaboration.",
+  "definition_md": "**Know Your Agent (KYA)** means verifying which agent, and which operator behind it, is transacting before trusting it. On 10 September 2026 Ant International, Mastercard, and Visa announced a collaboration on shared principles: operator traceability, shared certification requirements, and continuous transaction monitoring. A joint specification text was not published with that announcement. Each network keeps its own protocol: Visa Trusted Agent Protocol (TAP), Mastercard Verifiable Intent, and Ant International Agentic Mobile Protocol (AMP). The announcement also pointed at MAS BuildFin.ai and the SAFR framework. Mastercard separately describes KYA in its Agent Pay trust-services release.",
   "step": "identify",
   "related_protocols": [
    "tap",
-   "vi"
+   "vi",
+   "amp-ant"
   ],
   "sources": [
    {
     "url": "https://www.mastercard.com/us/en/news-and-trends/press/2026/september/new-trust-and-intelligence-services.html",
     "date": "2026-10-15",
     "label": "VERIFIED"
+   },
+   {
+    "url": "https://www.ant-intl.com/en/news/detail/?id=ant-international-mastercard-and-visa-initiate-collaboration-on-know-your-agent-interoperability-to-scale-agentic-commerce",
+    "date": "2026-09-10",
+    "label": "VERIFIED"
+   },
+   {
+    "url": "https://www.reuters.com/technology/payment-firms-visa-mastercard-ant-international-team-up-ai-agent-trust-framework-2026-09-10/",
+    "date": "2026-09-10",
+    "label": "REPORTED"
    }
   ],
   "part_of": null,

@@ -2988,5 +2988,33 @@
   "registries": [],
   "sdks": [],
   "validators": []
+ },
+ "workload-authz-grant": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "oauth-id-continuation": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "oauth-agent-delegation": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "opena2a-aap": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
  }
 }

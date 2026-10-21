@@ -2,8 +2,8 @@
  {
   "acronym": "MCP",
   "adoption": {
-   "by": "Wikipedia (OpenAI, Google DeepMind adopted MCP by March 2025) and WorkOS ('adopted by OpenAI, Google DeepMind, Microsoft, and thousands of development teams')",
-   "level": "claimed",
+   "level": "measured",
+   "by": "Three independent registry censuses, kept separate and not averaged. VerifyMCP as of 2026-10-19 (https://verifymcp.io/stats): 47,870 logical servers (45,953 active, 601 deprecated, 1,316 deleted; 31,337 remote; 30,842 Streamable HTTP; among handshook components, 20,031 on 2025-11-25 and 6,571 on 2026-07-28). Registry Discussion 1580 as of 2026-08-27 (https://github.com/modelcontextprotocol/registry/discussions/1580): a cursor walk of 82,994 version records yielding 25,125 distinct isLatest servers across 15,468 publishers (13,279 Streamable HTTP remotes). Registry Discussion 1548 as of 2026-08-19 (https://github.com/modelcontextprotocol/registry/discussions/1548): 22,636 active latest registrations (12,077 declaring an HTTPS remote).",
    "probe_run": null
   },
   "aliases": [],
@@ -13,8 +13,8 @@
    "Master Control Program"
   ],
   "discovery": {
-   "mechanism": "Capability negotiation during the JSON-RPC initialize handshake over a streamable-HTTP or stdio transport; optional static Server Card for pre-connection discovery",
-   "path": "GET {endpoint}/server-card (SEP-2127 Server Card, Final 2026-10-06; found via an AI Catalog entry)"
+   "mechanism": "On protocol 2026-07-28, an optional JSON-RPC server/discover call over a stateless transport. Each request carries MCP-Protocol-Version, and the method and tool name travel in Mcp-Method and Mcp-Name. initialize, initialized, and Mcp-Session-Id are retired. initialize remains the legacy handshake for 2025-11-25 and earlier. A static Server Card is the pre-connection signal.",
+   "path": "GET {endpoint}/server-card (SEP-2127 Final, application/mcp-server-card+json, discovered via /.well-known/ai-catalog.json; /.well-known/mcp.json is legacy SEP-1649)"
   },
   "dispute": null,
   "evidence": [
@@ -55,7 +55,7 @@
     "url": "https://github.com/modelcontextprotocol/registry"
    },
    {
-    "claim": "MCP Apps is an accepted extension (distinct from the experimental Server Card) letting servers return sandboxed-iframe interactive UI; it is supported by Claude, Claude Desktop, VS Code GitHub Copilot, Microsoft 365 Copilot, Goose, Postman, MCPJam, and Archestra.AI, and is also the standard OpenAI's ChatGPT plugin UI builds on.",
+    "claim": "MCP Apps is an accepted extension (distinct from the Server Card, which is SEP-2127) letting servers return sandboxed-iframe interactive UI; it is supported by Claude, Claude Desktop, VS Code GitHub Copilot, Microsoft 365 Copilot, Goose, Postman, MCPJam, and Archestra.AI, and is also the standard OpenAI's ChatGPT plugin UI builds on.",
     "date": "2026",
     "label": "VERIFIED",
     "url": "https://modelcontextprotocol.io/docs/extensions/apps"
@@ -81,6 +81,30 @@
     "http_status": 200,
     "content_sha256": "22ca99b2fbc44a3c92cb0a9c1af34bc84c382f36e162c0c1cd48221459e39ec2",
     "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "The 2026-07-28 specification made MCP stateless. initialize and initialized, and the Mcp-Session-Id header, are retired. A request carries MCP-Protocol-Version, and the method and tool name travel in Mcp-Method and Mcp-Name. A client that wants capabilities before any other call uses server/discover, which is optional.",
+    "date": "2026-07-28",
+    "label": "VERIFIED",
+    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/"
+   },
+   {
+    "claim": "VerifyMCP's hourly recount of the official registry, as of 2026-10-19: 47,870 logical servers (45,953 active, 601 deprecated, 1,316 deleted); 31,337 remote; 30,842 Streamable HTTP; among handshook components, 20,031 on 2025-11-25 and 6,571 on 2026-07-28.",
+    "date": "2026-10-19",
+    "label": "VERIFIED",
+    "url": "https://verifymcp.io/stats"
+   },
+   {
+    "claim": "A cursor walk of the official registry published in discussion 1580 on 2026-08-27: 82,994 version records, 25,125 distinct isLatest servers, 15,468 publishers, and 13,279 Streamable HTTP remotes.",
+    "date": "2026-08-27",
+    "label": "VERIFIED",
+    "url": "https://github.com/modelcontextprotocol/registry/discussions/1580"
+   },
+   {
+    "claim": "Registry discussion 1548, as of 2026-08-19, counted version=latest registrations without connecting to endpoints: 22,636 active, 12,077 of them declaring an HTTPS remote.",
+    "date": "2026-08-19",
+    "label": "VERIFIED",
+    "url": "https://github.com/modelcontextprotocol/registry/discussions/1548"
    }
   ],
   "form": "endpoint",
@@ -110,6 +134,10 @@
    {
     "date": "2026-10-20",
     "note": "server-card evidence line marked superseded (SEP-2127 Final; repo renamed to ext-server-card)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "probe now uses server/discover for 2026-07-28 with initialize as the legacy fallback; SEP-2127 card is Final; three registry censuses recorded with their units and dates"
    }
   ],
   "id": "mcp",
@@ -128,15 +156,15 @@
   "phase": "living",
   "probe": {
    "method": "POST",
-   "on_absent": "connection refused, 404, or a non-JSON-RPC response means no MCP server is exposed at that endpoint; a Server Card GET at {endpoint}/server-card returning JSON is a weaker, static signal since Server Cards are still experimental (SEP-2127)",
-   "parse": "JSON-RPC 2.0 request {\"method\":\"initialize\",...}; on success, response.result.protocolVersion (e.g. \"2026-07-28\") and response.result.serverInfo.name prove an MCP server is present",
+   "on_absent": "Connection refused, 404, or a non-JSON-RPC response means no MCP server is exposed at that endpoint. SEP-2127 is Final: GET {endpoint}/server-card as application/mcp-server-card+json is a static discovery signal, discovered via /.well-known/ai-catalog.json. /.well-known/mcp.json is the legacy SEP-1649 path. When the static card and a live server/discover response disagree, the live call wins.",
+   "parse": "For protocol 2026-07-28, POST a JSON-RPC 2.0 request with method server/discover. The 2026-07-28 specification made MCP stateless and retired initialize, initialized, and Mcp-Session-Id. Each request carries the MCP-Protocol-Version header, and the method and tool name travel in Mcp-Method and Mcp-Name. server/discover is optional; any other request can land on any instance. On success, the returned protocol version (for example 2026-07-28) and the server name prove an MCP server is present. For servers that still speak 2025-11-25 and earlier, fall back to the legacy initialize handshake and read response.result.protocolVersion and response.result.serverInfo.name.",
    "path": "{endpoint}/mcp"
   },
   "question": "How does an AI application call tools and pull structured context, prompts, and data from an external server?",
   "scope": "general",
   "spec_url": "https://modelcontextprotocol.io/specification/2026-07-28/index",
   "step": "act",
-  "summary_md": "The Model Context Protocol (MCP) is a JSON-RPC 2.0 based protocol that lets an AI \"host\" application (an IDE, a chat client) connect, through a \"client\" it embeds, to one or more \"servers\" that expose tools (functions the model can call), resources (data or content), and prompts (reusable templates) [1]. It also defines client-side elicitation (a server asking the user a question) and utilities for progress, cancellation, and structured errors. Anthropic published the first version in November 2024; the current dated release is 2026-07-28 [1].\n\nMCP solves the M×N integration problem: rather than every AI application writing bespoke connectors to every tool and data source, both sides implement one protocol once, similarly to how the Language Server Protocol standardized editor-to-language-server integration [1]. It is transport-agnostic (stdio for local processes, streamable HTTP for remote servers) and stateless per request, with capabilities negotiated during an `initialize` handshake.\n\nMCP does not itself define a machine-readable way to discover a server before connecting to it, nor an interactive-UI format; both live in extensions. The MCP Server Card, a static document giving a server's identity and remote endpoints, is SEP-2127, which reached Final status on the Extensions Track on 2026-10-06 [8]; the normative schema lives in the `modelcontextprotocol/ext-server-card` repository (graduated from its experimental name on acceptance) [4]. Its reserved location is `GET <streamable-http-url>/server-card`, served as `application/mcp-server-card+json`, and cards are meant to be found through an AI Catalog entry rather than guessed; `/.well-known/mcp.json` belongs to the earlier, superseded SEP-1649 proposal, though some scanners still try it. Cards carry identity, transports and protocol versions only, never tools or prompts, which clients list live. MCP Apps, a separate extension for sandboxed-iframe interactive UI returned by tools, is an accepted extension with multi-vendor host support (Claude, VS Code Copilot, Microsoft 365 Copilot, Goose, Postman, and others) [7].\n\nAs of September 2026, MCP is implemented by ten official SDKs spanning three support tiers, with the Python SDK alone carrying 24,200+ GitHub stars, and by an official cross-language server registry (7,200+ stars) [5][6]. Adoption is broad but the strongest public claims are secondary, not counted: Wikipedia states OpenAI adopted MCP in ChatGPT's desktop app in March 2025 and extended support to ChatGPT apps in September 2025, and that Microsoft integrates it with Semantic Kernel and Azure OpenAI [2]; WorkOS separately describes MCP as adopted by \"OpenAI, Google DeepMind, Microsoft, and thousands of development teams\" [3]. No systematic, third-party-run census of live MCP servers was located in this pass, so adoption here is recorded as `claimed` (by those two secondary sources) rather than `measured`.\n\nGovernance sits with the Agentic AI Foundation under the Linux Foundation, with day-to-day specification work happening in public via SEPs (Specification Enhancement Proposals) and topic-specific working groups (e.g. the Server Card working group) in the `modelcontextprotocol` GitHub org — this is a materially more open, standards-body-adjacent process than the seed record's placeholder \"Agentic AI Foundation / Linux Foundation\" implied but did not source. What remains genuinely unsettled: whether any independent org will publish a measured adoption count rather than vendor and press claims, and how widely Server Cards are deployed now that SEP-2127 is Final.",
+  "summary_md": "The Model Context Protocol (MCP) is a JSON-RPC 2.0 based protocol that lets an AI \"host\" application (an IDE, a chat client) connect, through a \"client\" it embeds, to one or more \"servers\" that expose tools (functions the model can call), resources (data or content), and prompts (reusable templates) [1]. It also defines client-side elicitation (a server asking the user a question) and utilities for progress, cancellation, and structured errors. Anthropic published the first version in November 2024; the current dated release is 2026-07-28 [1].\n\nMCP solves the M×N integration problem: rather than every AI application writing bespoke connectors to every tool and data source, both sides implement one protocol once, similarly to how the Language Server Protocol standardized editor-to-language-server integration [1]. It is transport-agnostic (stdio for local processes, streamable HTTP for remote servers). The 2026-07-28 specification made the protocol stateless: the `initialize` / `initialized` exchange and the `Mcp-Session-Id` header are retired [10]. A request carries `MCP-Protocol-Version`, and the method and tool name travel in `Mcp-Method` and `Mcp-Name`, so a gateway can route on headers. A client that wants capabilities before any other call uses `server/discover`. That call is optional, and any other request can land on any instance [10]. `initialize` remains the legacy fallback for servers that still speak `2025-11-25` and earlier.\n\nMCP does not itself define a machine-readable way to discover a server before connecting to it, nor an interactive-UI format; both live in extensions. The MCP Server Card, a static document giving a server's identity and remote endpoints, is SEP-2127, which reached Final status on the Extensions Track on 2026-10-06 [8]; the normative schema lives in the `modelcontextprotocol/ext-server-card` repository (graduated from its experimental name on acceptance) [4]. Its reserved location is `GET <streamable-http-url>/server-card`, served as `application/mcp-server-card+json`, and cards are discovered through an AI Catalog at `/.well-known/ai-catalog.json`. `/.well-known/mcp.json` is the earlier SEP-1649 path. When the static card and a live `server/discover` response disagree, the live call wins [8]. Cards carry identity, transports and protocol versions only, never tools or prompts, which clients list live. MCP Apps, a separate extension for sandboxed-iframe interactive UI returned by tools, is an accepted extension with multi-vendor host support (Claude, VS Code Copilot, Microsoft 365 Copilot, Goose, Postman, and others) [7].\n\nAs of September 2026, MCP is implemented by ten official SDKs spanning three support tiers, with the Python SDK alone carrying 24,200+ GitHub stars, and by an official cross-language server registry (7,200+ stars) [5][6]. Vendor and press claims sit beside those counts: Wikipedia states OpenAI adopted MCP in ChatGPT's desktop app in March 2025 and extended support to ChatGPT apps in September 2025, and that Microsoft integrates it with Semantic Kernel and Azure OpenAI [2]; WorkOS separately describes MCP as adopted by \"OpenAI, Google DeepMind, Microsoft, and thousands of development teams\" [3]. The official registry API does not publish a catalogue total (`metadata.count` on a one-row page is the page size). Three independent censuses exist. They use different units and dates, so this record keeps each figure and does not average them. VerifyMCP, as of 2026-10-19, reports 47,870 logical servers in an hourly recount: 45,953 active, 601 deprecated, and 1,316 deleted; 31,337 remote; 30,842 Streamable HTTP. Among components they handshook, 20,031 spoke `2025-11-25` and 6,571 spoke `2026-07-28` [11]. Registry discussion 1580, as of 2026-08-27, walked the cursor to the end: 82,994 version records, 25,125 distinct `isLatest` servers, 15,468 publishers, and 13,279 Streamable HTTP remotes. Counting version rows makes the registry look heavily duplicated; that duplication is release cadence [12]. Registry discussion 1548, as of 2026-08-19, counted `version=latest` registrations without connecting to endpoints: 22,636 active, of which 12,077 declare an HTTPS remote [13].\n\nGovernance sits with the Agentic AI Foundation under the Linux Foundation, with day-to-day specification work happening in public via SEPs (Specification Enhancement Proposals) and topic-specific working groups (e.g. the Server Card working group) in the `modelcontextprotocol` GitHub org — this is a materially more open, standards-body-adjacent process than the seed record's placeholder \"Agentic AI Foundation / Linux Foundation\" implied but did not source. What remains open is how widely Server Cards are deployed now that SEP-2127 is Final, and that the three registry counts above answer different questions.",
   "track": "linux-foundation",
   "version": {
    "date": "2026-07-28",
@@ -187,7 +215,7 @@
  {
   "acronym": "A2A",
   "adoption": {
-   "by": "Linux Foundation",
+   "by": "150+ supporting organizations, claimed by the Linux Foundation on 9 April 2026 (https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year). Card-version censuses are separate measurements, kept with their frames and not averaged. Agenstry 2026-09-01 (https://agenstry.com/blog/state-of-the-agent-card): of 1,910 cards declaring protocolVersion, 65.5% (1,252) are 0.3.x and 25.5% (488) are 1.0.x. Emissar 2026-10-02 (https://emissar.ai/learn/a2a-adoption-2026): 276 cards on the Tranco top 1M (205 in v1.0 shape, 71 in v0.3 shape, 0 signed, 0 in the top 1,000 domains). APIs.io / Kin Lane 2026-09-21 (https://apievangelist.com/2026/09/21/a2a-adoption-is-421-of-27840-and-most-of-them-arrived-with-the-card/): 421 parseable cards out of 4,718 hosts probed (27,840 providers). rStation 2026-10-12 (https://rstation.ai/problems/ai_agent/papers/1): 661 cards on 2,164 x402 seller hosts (189 pass their attributed version and fail a check that assumes 1.0).",
    "level": "claimed",
    "probe_run": null
   },
@@ -243,10 +271,52 @@
     "http_status": 200,
     "content_sha256": "1e6a86899688eeef5fc28539a57d93fd9d8fe4de8cf669a12fb916ac809a2433",
     "detector": "phase-a@2026-10-15"
+   },
+   {
+    "claim": "A2A joined the Agentic AI Foundation on 17 August 2026. The project was already a Linux Foundation project.",
+    "date": "2026-08-17",
+    "label": "VERIFIED",
+    "url": "https://aaif.io/blog/a2a-joins-aaif"
+   },
+   {
+    "claim": "In v1.0, protocolVersion left the top of the Agent Card and sits on each supportedInterfaces[] entry, next to protocolBinding and url. preferredTransport and additionalInterfaces folded into that array.",
+    "date": "2026-03-12",
+    "label": "VERIFIED",
+    "url": "https://a2a-protocol.org/latest/whats-new-v1/"
+   },
+   {
+    "claim": "Of 1,910 Agent Cards declaring protocolVersion in the Agenstry registry on 2026-09-01, 65.5% (1,252) are 0.3.x and 25.5% (488) are 1.0.x.",
+    "date": "2026-09-01",
+    "label": "VERIFIED",
+    "url": "https://agenstry.com/blog/state-of-the-agent-card"
+   },
+   {
+    "claim": "Emissar's crawl of 2 October 2026 found 276 Agent Cards on the Tranco top million: 205 in the v1.0 shape, 71 in the v0.3 shape, none signed, and none in the top 1,000 domains.",
+    "date": "2026-10-02",
+    "label": "VERIFIED",
+    "url": "https://emissar.ai/learn/a2a-adoption-2026"
+   },
+   {
+    "claim": "APIs.io reported on 2026-09-21 that 421 parseable Agent Cards were found from 4,718 hosts probed, out of 27,840 providers.",
+    "date": "2026-09-21",
+    "label": "VERIFIED",
+    "url": "https://apievangelist.com/2026/09/21/a2a-adoption-is-421-of-27840-and-most-of-them-arrived-with-the-card/"
+   },
+   {
+    "claim": "rStation, collected 12 October 2026, parsed 661 Agent Cards on 2,164 x402 seller hosts. 189 documents pass their attributed version and fail a check that assumes 1.0.",
+    "date": "2026-10-12",
+    "label": "VERIFIED",
+    "url": "https://rstation.ai/problems/ai_agent/papers/1"
+   },
+   {
+    "claim": "The Linux Foundation one-year release on 9 April 2026 claimed more than 150 supporting organizations, and named Google, Microsoft, and AWS integrations. That organization count is the project's own claim.",
+    "date": "2026-04-09",
+    "label": "VERIFIED",
+    "url": "https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year"
    }
   ],
   "form": "endpoint",
-  "governance": "Linux Foundation; Technical Steering Committee with AWS, Cisco, Google, IBM Research, Microsoft, Salesforce, SAP, ServiceNow",
+  "governance": "Linux Foundation (Technical Steering Committee: AWS, Cisco, Google, IBM Research, Microsoft, Salesforce, SAP, ServiceNow); Agentic AI Foundation (AAIF) since 17 August 2026",
   "group": null,
   "history": [
    {
@@ -264,11 +334,15 @@
    {
     "date": "2026-10-16",
     "note": "use-case tags (auto)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "AAIF membership (17 August 2026) added beside the Linux Foundation TSC; probe accepts v1.0 supportedInterfaces cards and legacy v0.3 cards; four card-version censuses recorded with their frames"
    }
   ],
   "id": "a2a",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "name": "Agent2Agent Protocol",
   "native_status": "Stable, v1.0.0",
   "origin": {
@@ -283,14 +357,14 @@
   "probe": {
    "method": "GET",
    "on_absent": "404 or non-JSON response means no public Agent Card is hosted at this well-known path; the origin may still run A2A behind auth or a registry",
-   "parse": "JSON body with name, url (A2A service endpoint), and skills[] fields present confirms an A2A server",
+   "parse": "Accept either card shape and record which one was seen. A v1.0 card places url, protocolBinding, and protocolVersion inside supportedInterfaces[] (preferredTransport and additionalInterfaces fold into that array). A legacy v0.3 card carries a top-level url. name may be present on either shape.",
    "path": "{origin}/.well-known/agent-card.json"
   },
   "question": "How do two independent agents, built on different frameworks, discover each other and delegate a task to completion?",
   "scope": "general",
   "spec_url": "https://a2a-protocol.org/latest/specification/",
   "step": "coordinate",
-  "summary_md": "Agent2Agent (A2A) is an open protocol for two independent AI agents — potentially built on different frameworks, by different companies, running on separate servers — to discover each other's capabilities and collaborate on a task without either exposing its internal memory, tools, or proprietary logic [1]. It solves agent-to-agent interoperability at the application layer: an A2A server publishes a JSON \"Agent Card\" describing its identity, service endpoint, supported interaction modes (sync request/response, Server-Sent Events streaming, async push notifications), and skills; a client agent fetches that card, then exchanges JSON-RPC 2.0 messages over HTTP(S) to create and drive a task to completion [1]. Standard discovery is the well-known URI `https://{domain}/.well-known/agent-card.json`, per RFC 8615; the spec also allows curated-registry discovery (no standard registry API is prescribed) and direct/hardcoded configuration [1].\n\nA2A does not itself define a registry protocol, a payment mechanism, or a UI-rendering format — those are left to other layers (registries, x402/agentic-commerce specs, and UI-negotiation extensions respectively). It also does not replace intra-agent tool-calling protocols such as MCP; A2A and MCP are commonly described by the project as complementary.\n\nGoogle announced A2A on 2025-04-09 with 50+ launch partners and donated it to the Linux Foundation later in 2025 [2]. The specification reached v1.0.0 and is now labeled stable on the project's own documentation site [1]. At its one-year mark (2026-04-09) the project's press release claimed more than 150 supporting organizations, integration into major cloud platforms (the release names Google Cloud, Microsoft, and AWS), and active production deployments in supply chain, financial services, insurance, and IT operations [3] — this adoption count is a claim by the Linux Foundation/A2A project itself, not an independently measured probe count, so it is recorded here as \"claimed,\" not \"measured.\"\n\nOfficial SDKs are published for Python, Go, JavaScript, Java, .NET, and Rust under the `a2aproject` GitHub organization, and the project lists integrations from frameworks including Google ADK, LangGraph, and IBM's BeeAI [2]. What remains open/disputed: the spec explicitly does not standardize a registry API for curated discovery, leaving that to individual deployments; and no third-party, methodology-disclosed count of live A2A servers (as opposed to \"supporting organizations\") was found as of this verification pass.",
+  "summary_md": "Agent2Agent (A2A) is an open protocol for two independent AI agents — potentially built on different frameworks, by different companies, running on separate servers — to discover each other's capabilities and collaborate on a task without either exposing its internal memory, tools, or proprietary logic [1]. It solves agent-to-agent interoperability at the application layer: an A2A server publishes a JSON \"Agent Card\" describing its identity, service endpoint, supported interaction modes (sync request/response, Server-Sent Events streaming, async push notifications), and skills; a client agent fetches that card, then exchanges JSON-RPC 2.0 messages over HTTP(S) to create and drive a task to completion [1]. Standard discovery is the well-known URI `https://{domain}/.well-known/agent-card.json`, per RFC 8615; the spec also allows curated-registry discovery (no standard registry API is prescribed) and direct/hardcoded configuration [1]. In v1.0 the endpoint left the top of the card: `url`, `protocolBinding`, and `protocolVersion` sit on each `supportedInterfaces[]` entry, and `preferredTransport` and `additionalInterfaces` fold into that array [7]. A legacy v0.3 card still carries a top-level `url`. A probe accepts either shape and records which fields it used.\n\nA2A does not itself define a registry protocol, a payment mechanism, or a UI-rendering format — those are left to other layers (registries, x402/agentic-commerce specs, and UI-negotiation extensions respectively). It also does not replace intra-agent tool-calling protocols such as MCP; A2A and MCP are commonly described by the project as complementary.\n\nGoogle announced A2A on 2025-04-09 with 50+ launch partners and donated it to the Linux Foundation later in 2025 [2]. On 17 August 2026 A2A joined the Agentic AI Foundation (AAIF), alongside that Linux Foundation project and its Technical Steering Committee [6]. The specification reached v1.0.0 and is now labeled stable on the project's own documentation site [1]. At its one-year mark (2026-04-09) the project's press release claimed more than 150 supporting organizations, integration into major cloud platforms (the release names Google Cloud, Microsoft, and AWS), and active production deployments in supply chain, financial services, insurance, and IT operations [3] — this adoption count is a claim by the Linux Foundation/A2A project itself, not an independently measured probe count, so it is recorded here as \"claimed,\" not \"measured.\"\n\nOfficial SDKs are published for Python, Go, JavaScript, Java, .NET, and Rust under the `a2aproject` GitHub organization, and the project lists integrations from frameworks including Google ADK, LangGraph, and IBM's BeeAI [2]. The spec leaves curated-discovery registry APIs to individual deployments. The 150-organization figure stays labelled claimed [3][12]. Public card versions are a different instrument, and the censuses below are not averaged because their frames differ. Agenstry, 1 September 2026: of 1,910 cards that declare a `protocolVersion`, 65.5% (1,252) are `0.3.x` and 25.5% (488) are `1.0.x` [8]. Emissar, crawl of 2 October 2026: 276 cards on the Tranco top million, 205 in the v1.0 shape and 71 in the v0.3 shape, none signed, and none in the top 1,000 domains [9]. APIs.io / Kin Lane, 21 September 2026: 421 parseable cards out of 4,718 hosts probed, from a catalogue of 27,840 providers [10]. rStation, collected 12 October 2026: 661 cards on 2,164 x402 seller hosts; 189 pass the version they were attributed and fail a check that assumes 1.0, so grading every card as 1.0 inflates the failure count [11].",
   "track": "linux-foundation",
   "version": {
    "label": "1.0.1",
@@ -3101,6 +3175,12 @@
     "date": "2026-04-01",
     "label": "VERIFIED",
     "url": "https://datatracker.ietf.org/doc/draft-nottingham-webbotauth-use-cases/"
+   },
+   {
+    "claim": "Cloudflare's Web Bot Auth verifier documentation, updated 8 October 2026, still points operators at /.well-known/http-message-signatures-directory. @query-params and @status fail verification on that implementation.",
+    "date": "2026-10-08",
+    "label": "VERIFIED",
+    "url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/"
    }
   ],
   "form": "http-header",
@@ -3126,6 +3206,10 @@
    {
     "date": "2026-10-20",
     "note": "noted the expired use-cases memo draft-nottingham-webbotauth-use-cases-02 (2026-04-01, expired 2026-10-03); from gap scout 2026-10-20, verified against the datatracker page (via Exa) and the -02 text (IETF rsync archive)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "Cloudflare verifier note added: documentation updated 8 October 2026; @query-params and @status fail verification there"
    }
   ],
   "id": "webbotauth",
@@ -3152,7 +3236,7 @@
   "scope": "general",
   "spec_url": "https://datatracker.ietf.org/doc/draft-ietf-webbotauth-httpsig-protocol/",
   "step": "identify",
-  "summary_md": "Web Bot Auth is an IETF specification that lets an automated HTTP client (a crawler, agent, or bot) cryptographically sign its outbound requests using RFC 9421 HTTP Message Signatures, so the receiving server can verify the client's identity and intent without relying on spoofable signals like the User-Agent string or source IP [1]. A client sends a Signature-Agent header naming where its public keys can be found; the origin resolves that to a JSON Web Key Set served at a fixed well-known path and verifies the request's Signature/Signature-Input fields against it [1].\n\nIt solves bot/agent attribution at the transport layer: an origin can distinguish a signed, identity-bearing automated client from unsigned traffic, and can grant differentiated treatment (rate limits, access, billing) based on a verified identity rather than heuristics [1][3]. It does not define what a client is *authorized* to do once verified (that is left to the origin's own policy), does not cover payment, and does not itself specify how a verifier should be told which identities to trust — that is the job of the companion Signature Agent Card / registry draft.\n\nCurrent state: originally an individual submission (draft-meunier-webbotauth-httpsig-protocol, first published 2025-04, reaching -00 of the current \"httpsig-protocol\" naming on 2026-06-26 and -02 on 2026-08-18). On 2026-09-01 it was formally adopted as a document of the newly chartered IETF **webbotauth** Working Group, republished as draft-ietf-webbotauth-httpsig-protocol-00 [2]. Intended status is Standards Track; it has not reached Working Group last call.\n\nWho implements it: Cloudflare verifies Web Bot Auth signatures at the edge for its Verified Bots program and publishes an integration guide with the exact required headers and the /.well-known/http-message-signatures-directory path [3]. The draft's own appendix lists further independent implementations: a Chrome MV3 extension and Rust/TypeScript libraries from Cloudflare, a Puppeteer-based client example, a PHP Guzzle middleware, Python scripts, and server-side modules for Caddy and Apache [1]. Cloudflare previously reported signing bots from OpenAI as an early adopter (2025-05-15, per the prior seed research; not independently re-verified in this pass).\n\nDisputed or unknown: the spec's naming and draft numbering have churned repeatedly (it replaces draft-meunier-web-bot-auth-architecture and draft-meunier-webbotauth-httpsig-directory), which makes citing a stable version number difficult; always resolve to the datatracker's \"current\" redirect rather than a pinned draft-NN URL. Adoption beyond Cloudflare's own edge and the listed open-source projects has not been independently counted.",
+  "summary_md": "Web Bot Auth is an IETF specification that lets an automated HTTP client (a crawler, agent, or bot) cryptographically sign its outbound requests using RFC 9421 HTTP Message Signatures, so the receiving server can verify the client's identity and intent without relying on spoofable signals like the User-Agent string or source IP [1]. A client sends a Signature-Agent header naming where its public keys can be found; the origin resolves that to a JSON Web Key Set served at a fixed well-known path and verifies the request's Signature/Signature-Input fields against it [1].\n\nIt solves bot/agent attribution at the transport layer: an origin can distinguish a signed, identity-bearing automated client from unsigned traffic, and can grant differentiated treatment (rate limits, access, billing) based on a verified identity rather than heuristics [1][3]. It does not define what a client is *authorized* to do once verified (that is left to the origin's own policy), does not cover payment, and does not itself specify how a verifier should be told which identities to trust — that is the job of the companion Signature Agent Card / registry draft.\n\nCurrent state: originally an individual submission (draft-meunier-webbotauth-httpsig-protocol, first published 2025-04, reaching -00 of the current \"httpsig-protocol\" naming on 2026-06-26 and -02 on 2026-08-18). On 2026-09-01 it was formally adopted as a document of the newly chartered IETF **webbotauth** Working Group, republished as draft-ietf-webbotauth-httpsig-protocol-00 [2]. Intended status is Standards Track; it has not reached Working Group last call.\n\nWho implements it: Cloudflare verifies Web Bot Auth signatures at the edge for its Verified Bots program and publishes an integration guide with the exact required headers and the /.well-known/http-message-signatures-directory path [3]. The draft's own appendix lists further independent implementations: a Chrome MV3 extension and Rust/TypeScript libraries from Cloudflare, a Puppeteer-based client example, a PHP Guzzle middleware, Python scripts, and server-side modules for Caddy and Apache [1]. Cloudflare previously reported signing bots from OpenAI as an early adopter (2025-05-15, per the prior seed research; not independently re-verified in this pass).\n\nDisputed or unknown: the spec's naming and draft numbering have churned repeatedly (it replaces draft-meunier-web-bot-auth-architecture and draft-meunier-webbotauth-httpsig-directory), which makes citing a stable version number difficult; always resolve to the datatracker's \"current\" redirect rather than a pinned draft-NN URL. Adoption beyond Cloudflare's own edge and the listed open-source projects has not been independently counted.\n\nCloudflare's verifier documentation was updated on 8 October 2026 [6]. It still points operators at `GET /.well-known/http-message-signatures-directory`. That verifier does not implement every RFC 9421 component: `@query-params` and `@status` fail verification there [6].",
   "track": "ietf",
   "version": {
    "date": "2026-09-01",
@@ -6385,7 +6469,8 @@
   "analog": "OAuth profile / scoped service-account token",
   "collisions": [
    "AAP also collides with the unrelated Automated Access Point / Advanced Authoring Program acronyms in other domains",
-   "Agent Attribution Protocol (AAP)"
+   "Agent Attribution Protocol (AAP)",
+   "OpenA2A Agent Authorization Protocol (draft-fane-opena2a-aap-02), a different current individual draft recorded as opena2a-aap"
   ],
   "discovery": {
    "mechanism": "OAuth 2.0 authorization-server metadata plus structured JWT claims; no dedicated well-known file defined in the spec text reviewed",
@@ -6394,9 +6479,10 @@
   "dispute": {
    "claims": [
     "IETF Datatracker: Expired Internet-Draft (individual), IESG state Expired",
-    "aapspec/spec repository shows zero stars and no post-launch activity"
+    "aapspec/spec repository shows zero stars and no post-launch activity",
+    "draft-fane-opena2a-aap-02 (OpenA2A, A. Fane, 30 September 2026, expires 3 April 2027) is a different document and is not expired. It is recorded as opena2a-aap."
    ],
-   "summary": "The spec is an expired, single-author IETF individual submission with no working-group adoption and a stalled companion GitHub project; it is retained as a documented proposal rather than an active or governed spec."
+   "summary": "This record is the expired individual draft draft-aap-oauth-profile-01. A different document, draft-fane-opena2a-aap-02, is current through 3 April 2027 and is recorded separately as opena2a-aap. The Workload Authorization Grant, the identity-continuation assertion, and the Agent-Delegation header are further separate records."
   },
   "evidence": [
    {
@@ -6421,6 +6507,12 @@
     "http_status": 200,
     "content_sha256": "ea1eef473d7120534a99386daef2180d4de3c9a6c024d65b89dce992761da458",
     "detector": "ietf@1.0"
+   },
+   {
+    "claim": "draft-fane-opena2a-aap-02 (30 September 2026, expires 3 April 2027) is a different Internet-Draft from draft-aap-oauth-profile-01. It is a Standards Track individual submission by A. Fane, OpenA2A, and it was not expired on 2026-10-20.",
+    "date": "2026-09-30",
+    "label": "VERIFIED",
+    "url": "https://www.ietf.org/archive/id/draft-fane-opena2a-aap-02.txt"
    }
   ],
   "form": "endpoint",
@@ -6442,11 +6534,15 @@
    {
     "date": "2026-10-16",
     "note": "use-case tags (auto)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "noted that draft-fane-opena2a-aap-02 is a different, unexpired draft and is recorded as opena2a-aap; this record stays draft-aap-oauth-profile-01"
    }
   ],
   "id": "aap",
   "implementation": "prototype",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-20",
   "name": "Agent Authorization Profile",
   "native_status": "Expired Internet-Draft (expired 2026-08-11)",
   "origin": {
@@ -6468,7 +6564,7 @@
   "scope": "general",
   "spec_url": "https://www.ietf.org/archive/id/draft-aap-oauth-profile-01.html",
   "step": "permit",
-  "summary_md": "The Agent Authorization Profile (AAP) is a single-author IETF individual Internet-Draft, draft-aap-oauth-profile-01, dated 2026-02-07, proposing structured OAuth 2.0/JWT claims for autonomous AI agents [1]. It extends OAuth 2.0, JWT, RFC 8693 Token Exchange, and proof-of-possession mechanisms so that a resource server can reason about agent identity, task context, operational constraints, delegation chains, and whether human oversight is required for a given call, explicitly without introducing a new protocol [1].\n\nIt does not define a discovery mechanism beyond standard OAuth authorization-server metadata, and it does not define content-use or crawling permissions — like DAAP and AAuth, its scope is agent-to-API (M2M) authorization, not publisher content policy. Its distinguishing claim relative to those two overlapping drafts is a heavier emphasis on structured, machine-reasoned claims (delegation chains, human-oversight flags) rather than a minimal composition of existing mechanisms.\n\nAs of this verification (2026-09-06), the IETF Datatracker's own document-state field shows this draft as an 'Expired Internet-Draft (individual)', IESG state Expired, last updated 2026-08-11 with its single revision (-01) dated 2026-02-07 and no working-group affiliation — it never progressed beyond an individual submission [1]. The author's listed contact is separately flagged by the Datatracker as possibly no longer valid. A companion project exists at github.com/aapspec, including a spec repository (Apache 2.0 licensed), a claimed reference implementation, JSON Schemas, and test vectors, but the repository's own README shows an IETF-status checklist with no box beyond 'draft-00 submitted' checked, no GitHub stars, and no activity beyond the initial 2026-02-07 push found in this pass [2]. On that basis this record's phase is set to withdrawn and implementation to prototype (a reference implementation is claimed to exist, but with no evidence of independent use).\n\nWhat is unresolved: whether 'angel cruz' or another contributor intends to resubmit an active revision; whether any of AAP's specific claim names have been adopted informally by agent-framework builders outside the IETF process; and how AAP's more prescriptive claim-schema approach compares in practice to the lighter-weight DAAP profile, which explicitly avoids new claims. Given three overlapping, none-adopted individual OAuth-for-agents drafts (AAuth, DAAP, AAP) exist in this dataset, a future review should watch for which, if any, the OAuth Working Group formally adopts.",
+  "summary_md": "The Agent Authorization Profile (AAP) is a single-author IETF individual Internet-Draft, draft-aap-oauth-profile-01, dated 2026-02-07, proposing structured OAuth 2.0/JWT claims for autonomous AI agents [1]. It extends OAuth 2.0, JWT, RFC 8693 Token Exchange, and proof-of-possession mechanisms so that a resource server can reason about agent identity, task context, operational constraints, delegation chains, and whether human oversight is required for a given call, explicitly without introducing a new protocol [1].\n\nIt does not define a discovery mechanism beyond standard OAuth authorization-server metadata, and it does not define content-use or crawling permissions — like DAAP and AAuth, its scope is agent-to-API (M2M) authorization, not publisher content policy. Its distinguishing claim relative to those two overlapping drafts is a heavier emphasis on structured, machine-reasoned claims (delegation chains, human-oversight flags) rather than a minimal composition of existing mechanisms.\n\nAs of this verification (2026-09-06), the IETF Datatracker's own document-state field shows this draft as an 'Expired Internet-Draft (individual)', IESG state Expired, last updated 2026-08-11 with its single revision (-01) dated 2026-02-07 and no working-group affiliation — it never progressed beyond an individual submission [1]. The author's listed contact is separately flagged by the Datatracker as possibly no longer valid. A companion project exists at github.com/aapspec, including a spec repository (Apache 2.0 licensed), a claimed reference implementation, JSON Schemas, and test vectors, but the repository's own README shows an IETF-status checklist with no box beyond 'draft-00 submitted' checked, no GitHub stars, and no activity beyond the initial 2026-02-07 push found in this pass [2]. On that basis this record's phase is set to withdrawn and implementation to prototype (a reference implementation is claimed to exist, but with no evidence of independent use).\n\nWhat is unresolved: whether 'angel cruz' or another contributor intends to resubmit an active revision; whether any of AAP's specific claim names have been adopted informally by agent-framework builders outside the IETF process; and how AAP's more prescriptive claim-schema approach compares in practice to the lighter-weight DAAP profile, which explicitly avoids new claims. Given three overlapping, none-adopted individual OAuth-for-agents drafts (AAuth, DAAP, AAP) exist in this dataset, a future review should watch for which, if any, the OAuth Working Group formally adopts.\n\nThis expired draft is not the OpenA2A Agent Authorization Protocol. draft-fane-opena2a-aap-02, by A. Fane (OpenA2A), is dated 30 September 2026 and expires 3 April 2027. It is a Standards Track individual submission, not a working-group document, and it is recorded separately as `opena2a-aap` [4]. The Workload Authorization Grant, the identity-continuation assertion, and the Agent-Delegation header are separate records from both AAP documents.",
   "track": "community",
   "version": {
    "date": "2026-02-07",
@@ -11194,8 +11290,8 @@
   ],
   "collisions": [],
   "discovery": {
-   "mechanism": "Static JSON Server Card fetched before connecting; location defined in SEP-2127",
-   "path": null
+   "mechanism": "An AI Catalog at /.well-known/ai-catalog.json. SEP-2127 (Final 2026-10-06) is an Extensions Track charter; the normative wire format lives in the server-card extension repository (snapshot 526201bb at review). /.well-known/mcp.json is the earlier SEP-1649 shape.",
+   "path": "GET <streamable-http-url>/server-card"
   },
   "dispute": null,
   "evidence": [
@@ -11249,6 +11345,18 @@
     "date": "2026-10-20",
     "label": "VERIFIED",
     "url": "https://github.com/modelcontextprotocol/ext-server-card"
+   },
+   {
+    "claim": "SEP-2127 (MCP Server Cards) is Final on the Extensions Track. It is a charter: discovery is an AI Catalog at /.well-known/ai-catalog.json, the reserved card is GET <streamable-http-url>/server-card as application/mcp-server-card+json, and /.well-known/mcp.json is the earlier SEP-1649 shape. When the static card and live server/discover disagree, the live call wins.",
+    "date": "2026-10-06",
+    "label": "VERIFIED",
+    "url": "https://modelcontextprotocol.io/seps/2127-mcp-server-cards"
+   },
+   {
+    "claim": "The normative server-card wire format lives in the extension repository. At review it was pinned to snapshot 526201bb. SEP-2127 merged on 2026-10-06 in PR 2127.",
+    "date": "2026-10-06",
+    "label": "VERIFIED",
+    "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2127"
    }
   ],
   "form": "document-format",
@@ -11274,13 +11382,17 @@
    {
     "date": "2026-10-20",
     "note": "location per Final SEP-2127, conformant publishers, and the unofficial /.well-known/mcp/server-card.json convention recorded (gap scout 2026-10-20, every URL fetched)"
+   },
+   {
+    "date": "2026-10-20",
+    "note": "SEP-2127 recorded as an Extensions Track charter: AI Catalog discovery, server-card media type, extension-repo wire format, and the SEP-1649 /.well-known/mcp.json path"
    }
   ],
   "id": "mcp-server-cards",
   "implementation": "prototype",
   "last_verified": "2026-10-20",
   "name": "MCP Server Cards (SEP-2127)",
-  "native_status": "SEP-2127 Final (2026-10-06); the MCP Registry working group page still describes Server Cards as experimental",
+  "native_status": "SEP-2127 Final (2026-10-06), Extensions Track charter; the MCP Registry working group page still describes Server Cards as experimental",
   "origin": {
    "org": "Model Context Protocol project",
    "date": null
@@ -11300,14 +11412,14 @@
   "probe": {
    "method": "GET",
    "path": "{endpoint}/server-card",
-   "parse": "A JSON document describing the MCP server, at the location SEP-2127 (Final) reserves: GET <streamable-http-url>/server-card.",
-   "on_absent": "404 or non-JSON means no Server Card is published; the server may still be a working MCP server."
+   "parse": "A JSON document served as application/mcp-server-card+json at GET <streamable-http-url>/server-card, the location SEP-2127 (Final, Extensions Track) reserves. The card carries identity, transports, and protocol versions, and does not carry tools. The normative wire format lives in the server-card extension repository. When this static card and a live server/discover response disagree, the live call wins.",
+   "on_absent": "404 or non-JSON means no Server Card is published at the SEP-2127 location; the server may still be a working MCP server. Discovery is via /.well-known/ai-catalog.json. /.well-known/mcp.json is the earlier SEP-1649 shape."
   },
   "question": "How can a client learn what an MCP server offers before connecting to it?",
   "scope": "general",
   "spec_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2127-mcp-server-cards.md",
   "step": "discover",
-  "summary_md": "An MCP Server Card is a static JSON description of an MCP server that a client can fetch before connecting. It is specified in SEP-2127, which reached Final on 2026-10-06 [1].\n\nThe MCP Registry working group is aligning the registry's server.json schema with the Server Card [2]. SEP-2127 reserves `GET <streamable-http-url>/server-card` and leaves domain-level discovery to AI Catalog entries; GitHub (api.githubcopilot.com/mcp/server-card, linked from its AI Catalog) and Hugging Face (huggingface.co/mcp/server-card) serve conformant cards there.\n\nA different, unofficial convention has also appeared: on 2026-10-20 Zapier, Proof, Coinbase, Cloudflare, Sentry and Twilio all served JSON at `/.well-known/mcp/server-card.json`, a path the SEP does not define. None used the v1 server-card `$schema`; three were card-shaped (two following the registry's server.json) and three were ad hoc.\n\nThe working group page still calls Server Cards experimental, while the SEP is marked Final, so the status here is candidate until the specification release that includes it.",
+  "summary_md": "An MCP Server Card is a static JSON description of an MCP server that a client can fetch before connecting. It is specified in SEP-2127, which reached Final on 2026-10-06 [1].\n\nThe MCP Registry working group is aligning the registry's server.json schema with the Server Card [2]. SEP-2127 reserves `GET <streamable-http-url>/server-card` and leaves domain-level discovery to AI Catalog entries; GitHub (api.githubcopilot.com/mcp/server-card, linked from its AI Catalog) and Hugging Face (huggingface.co/mcp/server-card) serve conformant cards there.\n\nA different, unofficial convention has also appeared: on 2026-10-20 Zapier, Proof, Coinbase, Cloudflare, Sentry and Twilio all served JSON at `/.well-known/mcp/server-card.json`, a path the SEP does not define. None used the v1 server-card `$schema`; three were card-shaped (two following the registry's server.json) and three were ad hoc.\n\nThe working group page still calls Server Cards experimental, while the SEP is marked Final, so the status here is candidate until the specification release that includes it.\n\nSEP-2127 is an Extensions Track charter, merged on 2026-10-06 [7]. The SEP text is the charter. The normative wire format lives in the server-card extension repository, pinned at review to snapshot `526201bb` [8]. Discovery is an AI Catalog at `/.well-known/ai-catalog.json`. The reserved card location is `GET <streamable-http-url>/server-card`, media type `application/mcp-server-card+json`. Cards carry identity, transports, and protocol versions. They do not carry tools. `/.well-known/mcp.json` is the earlier SEP-1649 shape. When the static card and a live `server/discover` response disagree, the live call wins [7].",
   "track": "linux-foundation",
   "use_cases": [
    "discover-my-api",
@@ -15208,5 +15320,401 @@
     "doc": "draft-rescorla-anonymous-webbotauth"
    }
   ]
+ },
+ {
+  "acronym": "WAG",
+  "adoption": {
+   "by": null,
+   "level": "unmeasured",
+   "probe_run": null
+  },
+  "aliases": [
+   "WAG",
+   "draft-carleton-workload-authz-grant",
+   "Workload Authorization Grant"
+  ],
+  "analog": "A platform-issued service credential exchanged for an OAuth access token",
+  "collisions": [
+   "Workload Identity Token (WIMSE), which is a credential format rather than this grant"
+  ],
+  "discovery": {
+   "mechanism": "OAuth token request carrying a platform-signed JWT. The draft defines no well-known file.",
+   "path": null
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "draft-carleton-workload-authz-grant-01 is an Informational individual Internet-Draft dated 22 September 2026 and expiring 26 March 2027. The header says Network Working Group. Authors include people from Anthropic, OpenAI, and Okta. A platform-signed JWT lets a workload obtain a third-party access token without a per-workload administrator step. The workload identifier is opaque and is never reassigned.",
+    "date": "2026-09-22",
+    "label": "VERIFIED",
+    "url": "https://www.ietf.org/archive/id/draft-carleton-workload-authz-grant-01.txt"
+   },
+   {
+    "claim": "Datatracker document page for draft-carleton-workload-authz-grant.",
+    "date": "2026-09-22",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-carleton-workload-authz-grant/"
+   }
+  ],
+  "form": "document-format",
+  "governance": "IETF individual Internet-Draft (Informational). The header says Network Working Group. Not an OAuth working-group document.",
+  "group": null,
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from staged research 2026-10-20; header read from draft-carleton-workload-authz-grant-01"
+   }
+  ],
+  "id": "workload-authz-grant",
+  "implementation": "none-found",
+  "last_verified": "2026-10-20",
+  "name": "Workload Authorization Grant",
+  "native_status": "Internet-Draft, Intended status: Informational; draft-carleton-workload-authz-grant-01 dated 2026-09-22, expires 2027-03-26",
+  "origin": {
+   "org": "Authors from Anthropic, OpenAI, and Okta (individual submission)",
+   "date": "2026-09-22"
+  },
+  "part_of": null,
+  "parties": [
+   "agent-site"
+  ],
+  "phase": "draft",
+  "probe": {
+   "method": "n/a",
+   "path": "n/a (OAuth token request; no fixed origin artifact)",
+   "parse": "n/a. A platform-signed JWT is presented at a token endpoint. Nothing at a fixed path proves this grant.",
+   "on_absent": "No public artifact is defined, so absence at an origin is expected."
+  },
+  "question": "How can a workload, such as an AI agent, obtain an access token from a third party's authorization server without a per-workload administrator step?",
+  "scope": "general",
+  "spec_url": "https://www.ietf.org/archive/id/draft-carleton-workload-authz-grant-01.txt",
+  "step": "permit",
+  "summary_md": "The Workload Authorization Grant (WAG) is an individual IETF Internet-Draft, `draft-carleton-workload-authz-grant-01`, dated 22 September 2026 and expiring 26 March 2027 [1]. The header says Informational and Network Working Group. Authors include people from Anthropic, OpenAI, and Okta [1]. It is not an OAuth working-group document.\n\nA workload, with an AI agent as the motivating case, obtains an access token from a third party's authorization server without a per-workload administrator step. The platform signs a JWT. The workload identifier is opaque and is never reassigned [1].\n\nWAG is a separate record from the OpenA2A Agent Authorization Protocol, the identity-continuation assertion, and the Agent-Delegation header. The datatracker entry for the draft is [2].",
+  "track": "ietf",
+  "version": {
+   "label": "draft-carleton-workload-authz-grant-01",
+   "date": "2026-09-22"
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-carleton-workload-authz-grant"
+   }
+  ],
+  "use_cases": [
+   "prove-agent-identity",
+   "delegate-user-authority"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "oauth-metadata-for-agents",
+   "identity-assertion-authz-grant",
+   "oauth-id-continuation",
+   "oauth-agent-delegation",
+   "opena2a-aap"
+  ],
+  "prerequisites": []
+ },
+ {
+  "acronym": "",
+  "adoption": {
+   "by": null,
+   "level": "unmeasured",
+   "probe_run": null
+  },
+  "aliases": [
+   "draft-mcguinness-oauth-id-continuation-assertion",
+   "Identity Continuation Assertion"
+  ],
+  "analog": "A short-lived stand-in for the user, exchanged for an ID-JAG after the user has left",
+  "collisions": [],
+  "discovery": {
+   "mechanism": "OAuth 2.0 token exchange (RFC 8693). The assertion is a subject token, not a file on the origin.",
+   "path": null
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "draft-mcguinness-oauth-id-continuation-assertion-02 is a Standards Track Internet-Draft of the Web Authorization Protocol (OAuth) working group, dated 9 September 2026 and expiring 13 March 2027. It defines a short-lived sender-constrained JWT used as a token-exchange subject token so a workload can obtain an ID-JAG after the user has left.",
+    "date": "2026-09-09",
+    "label": "VERIFIED",
+    "url": "https://www.ietf.org/archive/id/draft-mcguinness-oauth-id-continuation-assertion-02.txt"
+   },
+   {
+    "claim": "Datatracker document page for draft-mcguinness-oauth-id-continuation-assertion.",
+    "date": "2026-09-09",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-mcguinness-oauth-id-continuation-assertion/"
+   }
+  ],
+  "form": "document-format",
+  "governance": "IETF OAuth Working Group (Web Authorization Protocol). Standards Track working-group draft.",
+  "group": null,
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from staged research 2026-10-20; header read from draft-mcguinness-oauth-id-continuation-assertion-02"
+   }
+  ],
+  "id": "oauth-id-continuation",
+  "implementation": "none-found",
+  "last_verified": "2026-10-20",
+  "name": "Identity Continuation Assertion for OAuth 2.0 Token Exchange",
+  "native_status": "Active Internet-Draft, OAuth WG document, Intended status: Standards Track; draft-mcguinness-oauth-id-continuation-assertion-02 dated 2026-09-09, expires 2027-03-13",
+  "origin": {
+   "org": "IETF OAuth Working Group (McGuinness and co-authors)",
+   "date": "2026-09-09"
+  },
+  "part_of": null,
+  "parties": [
+   "agent-site"
+  ],
+  "phase": "working-group",
+  "probe": {
+   "method": "n/a",
+   "path": "n/a (token-exchange subject token; no fixed origin artifact)",
+   "parse": "n/a. The assertion is presented as a subject token in a token-exchange request.",
+   "on_absent": "No public artifact is defined, so absence at an origin is expected."
+  },
+  "question": "How can a workload obtain an ID-JAG for another service after the user who started the session is no longer present?",
+  "scope": "general",
+  "spec_url": "https://www.ietf.org/archive/id/draft-mcguinness-oauth-id-continuation-assertion-02.txt",
+  "step": "permit",
+  "summary_md": "`draft-mcguinness-oauth-id-continuation-assertion-02` is a Standards Track Internet-Draft of the IETF Web Authorization Protocol (OAuth) working group, dated 9 September 2026 and expiring 13 March 2027 [1]. It defines a short-lived, sender-constrained JWT used as a token-exchange subject token, so a workload can obtain an Identity Assertion JWT Authorization Grant (ID-JAG) for another service after the user has left [1].\n\nIt extends the ID-JAG profile already tracked as `identity-assertion-authz-grant`. It is a separate record from the Workload Authorization Grant, the Agent-Delegation header, and both AAP documents. The datatracker entry for the draft is [2].",
+  "track": "ietf",
+  "version": {
+   "label": "draft-mcguinness-oauth-id-continuation-assertion-02",
+   "date": "2026-09-09"
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-mcguinness-oauth-id-continuation-assertion"
+   }
+  ],
+  "use_cases": [
+   "delegate-user-authority",
+   "prove-agent-identity"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "identity-assertion-authz-grant",
+   "oauth-metadata-for-agents",
+   "workload-authz-grant",
+   "oauth-agent-delegation"
+  ],
+  "prerequisites": [
+   "identity-assertion-authz-grant"
+  ]
+ },
+ {
+  "acronym": "",
+  "adoption": {
+   "by": null,
+   "level": "unmeasured",
+   "probe_run": null
+  },
+  "aliases": [
+   "draft-hamr-oauth-agent-delegation",
+   "Agent-Delegation header"
+  ],
+  "analog": "A signed chain of authority on an HTTP request, each hop narrower than the last",
+  "collisions": [
+   "Agent Authorization Profile (draft-aap-oauth-profile) and OpenA2A AAP, which are token models rather than this header"
+  ],
+  "discovery": {
+   "mechanism": "An Agent-Delegation HTTP header on a request signed with RFC 9421. No well-known file is defined.",
+   "path": null
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "draft-hamr-oauth-agent-delegation-02 is a Standards Track Internet-Draft of the Web Authorization Protocol (OAuth) working group, dated 19 September 2026 and expiring 23 March 2027. It defines an Agent-Delegation HTTP header on top of RFC 9421. Each link can only narrow scope, floors, and expiry. Call classes are r, w, and x.",
+    "date": "2026-09-19",
+    "label": "VERIFIED",
+    "url": "https://www.ietf.org/archive/id/draft-hamr-oauth-agent-delegation-02.txt"
+   },
+   {
+    "claim": "Datatracker document page for draft-hamr-oauth-agent-delegation.",
+    "date": "2026-09-19",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-hamr-oauth-agent-delegation/"
+   }
+  ],
+  "form": "http-header",
+  "governance": "IETF OAuth Working Group (Web Authorization Protocol). Standards Track working-group draft.",
+  "group": null,
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from staged research 2026-10-20; header read from draft-hamr-oauth-agent-delegation-02"
+   }
+  ],
+  "id": "oauth-agent-delegation",
+  "implementation": "none-found",
+  "last_verified": "2026-10-20",
+  "name": "Attenuated Delegation Profile for Automated Agents",
+  "native_status": "Active Internet-Draft, OAuth WG document, Intended status: Standards Track; draft-hamr-oauth-agent-delegation-02 dated 2026-09-19, expires 2027-03-23",
+  "origin": {
+   "org": "IETF OAuth Working Group (Hamr and co-authors)",
+   "date": "2026-09-19"
+  },
+  "part_of": null,
+  "parties": [
+   "agent-site",
+   "agent-agent"
+  ],
+  "phase": "working-group",
+  "probe": {
+   "method": "n/a",
+   "path": "n/a (Agent-Delegation request header; no fixed origin artifact)",
+   "parse": "n/a. Look for an Agent-Delegation header on a request signed under RFC 9421. Call classes are r, w, and x. Each link can only narrow scope, floors, and expiry.",
+   "on_absent": "No Agent-Delegation header on a given request means this profile was not used for that call."
+  },
+  "question": "How can an automated agent pass on a user's authority so that each hop can only narrow scope, floors, and expiry?",
+  "scope": "general",
+  "spec_url": "https://www.ietf.org/archive/id/draft-hamr-oauth-agent-delegation-02.txt",
+  "step": "permit",
+  "summary_md": "`draft-hamr-oauth-agent-delegation-02` is a Standards Track Internet-Draft of the IETF OAuth working group, dated 19 September 2026 and expiring 23 March 2027 [1]. It defines an `Agent-Delegation` HTTP header on top of RFC 9421 HTTP Message Signatures [1]. Each link in the chain can only narrow scope, floors, and expiry. Call classes are `r`, `w`, and `x` [1].\n\nIt is a separate record from the Workload Authorization Grant, the identity-continuation assertion, and both AAP documents. The datatracker entry for the draft is [2].",
+  "track": "ietf",
+  "version": {
+   "label": "draft-hamr-oauth-agent-delegation-02",
+   "date": "2026-09-19"
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-hamr-oauth-agent-delegation"
+   }
+  ],
+  "use_cases": [
+   "delegate-user-authority",
+   "audit-agent-actions",
+   "prove-agent-identity"
+  ],
+  "audience": [
+   "platform",
+   "agent-builder",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "http-message-signatures",
+   "identity-assertion-authz-grant",
+   "workload-authz-grant",
+   "oauth-id-continuation",
+   "opena2a-aap"
+  ],
+  "prerequisites": [
+   "http-message-signatures"
+  ]
+ },
+ {
+  "acronym": "AAP",
+  "adoption": {
+   "by": null,
+   "level": "unmeasured",
+   "probe_run": null
+  },
+  "aliases": [
+   "OpenA2A AAP",
+   "draft-fane-opena2a-aap",
+   "Agent Authorization Protocol (OpenA2A)"
+  ],
+  "analog": "A token that says which agent is acting, what it may do, and who delegated that authority",
+  "collisions": [
+   "Agent Authorization Profile (draft-aap-oauth-profile-01), the expired individual draft recorded as aap",
+   "Agent Attribution Protocol, an unrelated use of the AAP acronym"
+  ],
+  "discovery": {
+   "mechanism": "Token model for identity, grants, delegation, attestation, federation, and revocation. The named broker layer is not specified in this draft, and no well-known file is defined.",
+   "path": null
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "draft-fane-opena2a-aap-02, OpenA2A Agent Authorization Protocol, is a Standards Track individual submission by A. Fane (OpenA2A), dated 30 September 2026 and expiring 3 April 2027. The header says Individual Submission. It is not a working-group document. The token model covers identity, scoped grants, delegation, attestation, federation, and revocation. A companion broker layer is named and is not specified in this file.",
+    "date": "2026-09-30",
+    "label": "VERIFIED",
+    "url": "https://www.ietf.org/archive/id/draft-fane-opena2a-aap-02.txt"
+   },
+   {
+    "claim": "Datatracker document page for draft-fane-opena2a-aap.",
+    "date": "2026-09-30",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-fane-opena2a-aap/"
+   }
+  ],
+  "form": "document-format",
+  "governance": "IETF individual submission by A. Fane, OpenA2A. Standards Track intent. Not a working-group document.",
+  "group": null,
+  "history": [
+   {
+    "date": "2026-10-20",
+    "note": "added from staged research 2026-10-20; header read from draft-fane-opena2a-aap-02. Kept separate from the expired aap record (draft-aap-oauth-profile-01)."
+   }
+  ],
+  "id": "opena2a-aap",
+  "implementation": "none-found",
+  "last_verified": "2026-10-20",
+  "name": "OpenA2A Agent Authorization Protocol",
+  "native_status": "Internet-Draft, individual submission, Intended status: Standards Track; draft-fane-opena2a-aap-02 dated 2026-09-30, expires 2027-04-03",
+  "origin": {
+   "org": "A. Fane, OpenA2A",
+   "date": "2026-09-30"
+  },
+  "part_of": null,
+  "parties": [
+   "agent-agent",
+   "agent-site"
+  ],
+  "phase": "draft",
+  "probe": {
+   "method": "n/a",
+   "path": "n/a (token model; the broker layer is named and not specified)",
+   "parse": "n/a. The draft specifies a token model. It does not define a fixed path to fetch.",
+   "on_absent": "No public artifact is defined, so absence at an origin is expected."
+  },
+  "question": "How does an agent present identity, a scoped grant, a delegation, and an attestation when it calls another agent or a tool?",
+  "scope": "general",
+  "spec_url": "https://www.ietf.org/archive/id/draft-fane-opena2a-aap-02.txt",
+  "step": "permit",
+  "summary_md": "The OpenA2A Agent Authorization Protocol (AAP) is an individual IETF Internet-Draft, `draft-fane-opena2a-aap-02`, dated 30 September 2026 and expiring 3 April 2027 [1]. The header says Standards Track and Individual Submission. The author is A. Fane, OpenA2A. It is not a working-group document [1].\n\nThe draft is an authorization complement to A2A and MCP. It specifies a token model for agent identity assertion, scoped capability grants, cross-agent delegation, behavioral attestation, federation, and revocation [1]. A companion broker layer is named and is not specified in this document [1].\n\nThis is a different document from the expired `draft-aap-oauth-profile-01`, which this map records as `aap`. The -02 text was current on 2026-10-20. The Workload Authorization Grant, the identity-continuation assertion, and the Agent-Delegation header are separate records from this one. The datatracker entry for the draft is [2].",
+  "track": "ietf",
+  "version": {
+   "label": "draft-fane-opena2a-aap-02",
+   "date": "2026-09-30"
+  },
+  "watch": [
+   {
+    "type": "ietf",
+    "doc": "draft-fane-opena2a-aap"
+   }
+  ],
+  "use_cases": [
+   "delegate-user-authority",
+   "prove-agent-identity",
+   "audit-agent-actions"
+  ],
+  "audience": [
+   "agent-builder",
+   "platform",
+   "standards-body"
+  ],
+  "pairs_with": [
+   "aap",
+   "a2a",
+   "mcp",
+   "oauth-agent-delegation",
+   "workload-authz-grant"
+  ],
+  "prerequisites": []
  }
 ]
