@@ -1561,5 +1561,44 @@
   "evidence_url": "https://www.ietf.org/archive/id/draft-fane-opena2a-aap-02.txt",
   "detector": "staged-research@2026-10-20",
   "commit": null
+ },
+ {
+  "id": "q-2026-10-21-a2a-sdk-release",
+  "date": "2026-10-21",
+  "record_id": "a2a",
+  "kind": "sdk-release",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "a2a-sdk 1.2.3 published 2026-10-19",
+  "evidence_url": "https://pypi.org/project/a2a-sdk/",
+  "detector": "pypi@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-21-cloudflare-content-signals-policy-news",
+  "date": "2026-10-21",
+  "record_id": "cloudflare-content-signals-policy",
+  "kind": "news",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "feed item: Introducing full transaction detection for Cloudflare WAF",
+  "evidence_url": null,
+  "detector": null,
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-21-cloudflare-content-signals-policy-news-5",
+  "date": "2026-10-21",
+  "record_id": "cloudflare-content-signals-policy",
+  "kind": "news",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "feed item: Introducing tsrs: A port of TypeScript to Rust",
+  "evidence_url": null,
+  "detector": null,
+  "commit": null
  }
 ]

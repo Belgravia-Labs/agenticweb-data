@@ -745,5 +745,27 @@
   "kind": "candidate",
   "detector": "sonnet@candidate-record-v1",
   "confidence": 0.6
+ },
+ {
+  "date": "2026-10-20",
+  "title": "Introducing tsrs: A port of TypeScript to Rust",
+  "url": "https://blog.cloudflare.com/typescript-rust-port/",
+  "summary": "Cloudflare is collaborating on tsrs, a Rust port of TypeScript that is up to 8x faster and uses 70% less memory.",
+  "related": [
+   "cloudflare-content-signals-policy"
+  ],
+  "kind": "announcement",
+  "detector": "rules@1.0"
+ },
+ {
+  "date": "2026-10-21",
+  "title": "Introducing full transaction detection for Cloudflare WAF",
+  "url": "https://blog.cloudflare.com/full-transaction-waf/",
+  "summary": "Cloudflare's web application firewall can now correlate an HTTP request with its response. Full transaction detection helps every customer find successful exploits, data exposure, and risky misconfigurations that request-only inspection can miss.",
+  "related": [
+   "cloudflare-content-signals-policy"
+  ],
+  "kind": "announcement",
+  "detector": "rules@1.0"
  }
 ]

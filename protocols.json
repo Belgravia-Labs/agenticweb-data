@@ -142,7 +142,7 @@
   ],
   "id": "mcp",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-20",
+  "last_verified": "2026-10-21",
   "name": "Model Context Protocol",
   "native_status": "Active open specification, current dated release 2026-07-28",
   "origin": {
@@ -313,6 +313,17 @@
     "date": "2026-04-09",
     "label": "VERIFIED",
     "url": "https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year"
+   },
+   {
+    "claim": "a2a-sdk 1.2.3 published 2026-10-19",
+    "label": "REPORTED",
+    "url": "https://pypi.org/project/a2a-sdk/",
+    "date": "2026-10-19",
+    "retrieved_at": "2026-10-21T18:30:41Z",
+    "source_type": "registry",
+    "http_status": 200,
+    "content_sha256": "6474e832ccb271ae5fa68f45348fdc2a0ed36ccf7363f70c2c6a89a74a8c9674",
+    "detector": "pypi@1.0"
    }
   ],
   "form": "endpoint",
@@ -338,11 +349,15 @@
    {
     "date": "2026-10-20",
     "note": "AAIF membership (17 August 2026) added beside the Linux Foundation TSC; probe accepts v1.0 supportedInterfaces cards and legacy v0.3 cards; four card-version censuses recorded with their frames"
+   },
+   {
+    "date": "2026-10-21",
+    "note": "a2a-sdk 1.2.3 published 2026-10-19"
    }
   ],
   "id": "a2a",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-20",
+  "last_verified": "2026-10-21",
   "name": "Agent2Agent Protocol",
   "native_status": "Stable, v1.0.0",
   "origin": {
@@ -512,7 +527,7 @@
   ],
   "id": "agent-client-protocol",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-20",
+  "last_verified": "2026-10-21",
   "name": "Agent Client Protocol",
   "native_status": "v1 stable and shipping; v2 published in Draft form as of 2026-07-20",
   "origin": {
@@ -674,7 +689,7 @@
   ],
   "id": "agent-communication-protocol",
   "implementation": "deprecated",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Agent Communication Protocol",
   "native_status": "\"ACP is now part of A2A under the Linux Foundation\" (repository banner)",
   "origin": {
@@ -803,7 +818,7 @@
   ],
   "id": "agentic-commerce-protocol",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Agentic Commerce Protocol",
   "native_status": "Beta open standard, interaction model for connecting buyers, agents, and businesses",
   "origin": {
@@ -947,7 +962,7 @@
   ],
   "id": "ucp",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Universal Commerce Protocol",
   "native_status": "Open standard; specification expanding beyond Shopping into Lodging and Food",
   "origin": {
@@ -1099,7 +1114,7 @@
   ],
   "id": "ap2",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Agent Payments Protocol",
   "native_status": "Security/authorization protocol for agent-performed payments; core spec now stewarded by FIDO Alliance",
   "origin": {
@@ -1222,7 +1237,7 @@
   ],
   "id": "ap2-checkout-mandate",
   "implementation": "unknown",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "AP2 Checkout Mandate",
   "native_status": "AP2 specification component, not an independently published protocol",
   "origin": {
@@ -1364,7 +1379,7 @@
   ],
   "id": "x402",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "x402",
   "native_status": "Open, neutral standard for internet-native payments",
   "origin": {
@@ -1469,7 +1484,7 @@
   ],
   "id": "l402",
   "implementation": "shipping",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "L402",
   "native_status": "Active, registered as an HTTP Authentication scheme (RFC 7235-style)",
   "origin": {
@@ -1614,7 +1629,7 @@
   ],
   "id": "mpp",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Machine Payments Protocol",
   "native_status": "Open protocol; developer docs distinguish the normative IETF specification from the mpp.dev developer-friendly overview",
   "origin": {
@@ -2203,7 +2218,7 @@
   ],
   "id": "nlweb",
   "implementation": "prototype",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "NLWeb",
   "native_status": "\"Main reference implementation... implemented in Python\"; described by its own README as a proof-of-concept the community is invited to build alternative implementations of, not a definitive solution",
   "origin": {
@@ -2311,7 +2326,7 @@
   ],
   "id": "anthropic-agent-skills-format",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Agent Skills",
   "native_status": "Active open format, described on agentskills.io as adopted by a growing number of agent products",
   "origin": {
@@ -2482,7 +2497,7 @@
   ],
   "id": "llms-txt",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "llms.txt",
   "native_status": "\"This is v2 of the proposal\" — explicitly a community proposal open for input, not a standards-track document",
   "origin": {
@@ -2602,7 +2617,7 @@
   ],
   "id": "agents-md",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "AGENTS.md",
   "native_status": "\"An open format... regardless of which coding agent you use\"; explicitly not proprietary to any one tool",
   "origin": {
@@ -3064,7 +3079,7 @@
   ],
   "id": "cloudflare-content-signals-policy",
   "implementation": "shipping",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Content Signals Policy",
   "native_status": "Vendor-published policy convention layered on robots.txt; not submitted to a standards body as of this verification",
   "origin": {
@@ -3556,7 +3571,7 @@
   ],
   "id": "ard",
   "implementation": "shipping",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Agentic Resource Discovery",
   "native_status": "Proposal",
   "origin": {
@@ -3670,7 +3685,7 @@
   ],
   "id": "ai-catalog-well-known-file",
   "implementation": "deprecated",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "AI Catalog well-known file",
   "native_status": "Deprecated predecessor path of the ARD manifest",
   "origin": {
@@ -4046,7 +4061,7 @@
   ],
   "id": "aid",
   "implementation": "shipping",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Agent Identity and Discovery",
   "native_status": "Current normative specification",
   "origin": {
@@ -4535,7 +4550,7 @@
   ],
   "id": "oasf",
   "implementation": "shipping",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Open Agentic Schema Framework",
   "native_status": "Active, versioned schema framework",
   "origin": {
@@ -4694,7 +4709,7 @@
   ],
   "id": "a2ui",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "A2UI (Agent to UI) Protocol",
   "native_status": "Early stage public preview: v0.9.1 is the 'Current' production release, v1.0 is a release 'Candidate', v0.8 is legacy",
   "origin": {
@@ -4858,7 +4873,7 @@
   ],
   "id": "ag-ui",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Agent-User Interaction Protocol",
   "native_status": "1.0 released and frozen; JSON Schema published",
   "origin": {
@@ -5011,7 +5026,7 @@
   ],
   "id": "osi",
   "implementation": "prototype",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Apache Ossie (formerly Open Semantic Interchange)",
   "native_status": "Undergoing incubation at the Apache Software Foundation ('Apache Ossie (incubating)'); not yet a top-level ASF project. Core spec is marked DRAFT.",
   "origin": {
@@ -5121,7 +5136,7 @@
   ],
   "id": "okf",
   "implementation": "prototype",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Open Knowledge Format",
   "native_status": "\"An open specification; contributions, alternative implementations, and adoption beyond Google products are all explicitly welcomed\"",
   "origin": {
@@ -5353,7 +5368,7 @@
   ],
   "id": "aamp",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Agentic Advertising Management Protocols",
   "native_status": "Active umbrella initiative, current release AAMP 2.3, described by its own authors as 'far more than a single framework'",
   "origin": {
@@ -5468,7 +5483,7 @@
   ],
   "id": "artf",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Agentic Real Time Framework",
   "native_status": "Final v1.0 specification, published after public comment; v2.0 development already underway",
   "origin": {
@@ -5602,7 +5617,7 @@
   ],
   "id": "adcp",
   "implementation": "shipping",
-  "last_verified": "2026-10-20",
+  "last_verified": "2026-10-21",
   "name": "Ad Context Protocol",
   "native_status": "Active open protocol, documented current release 3.1.20",
   "origin": {
@@ -5753,7 +5768,7 @@
   ],
   "id": "tap",
   "implementation": "prototype",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Visa Trusted Agent Protocol",
   "native_status": "Active vendor-led merchant specification",
   "origin": {
@@ -6974,7 +6989,7 @@
   ],
   "id": "anp",
   "implementation": "shipping",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Agent Network Protocol",
   "native_status": "Released v1.1 (core suite); meta-protocol (ANP-06) remains draft/unreleased",
   "origin": {
@@ -7104,7 +7119,7 @@
   ],
   "id": "agora-protocol",
   "implementation": "prototype",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Agora Protocol",
   "native_status": "Research protocol with reference implementation and demo",
   "origin": {
@@ -7346,7 +7361,7 @@
   ],
   "id": "s402",
   "implementation": "prototype",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "s402",
   "native_status": "Archived repository (observed 2026-10-16)",
   "origin": {
@@ -7459,7 +7474,7 @@
   ],
   "id": "agent-attribution-protocol",
   "implementation": "shipping",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Agent Attribution Protocol",
   "native_status": "\"The open standard for AI agent affiliate attribution\" (vendor's own description); v1.0 spec published, centrally operated",
   "origin": {
@@ -7714,7 +7729,7 @@
   ],
   "id": "slim",
   "implementation": "shipping",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Secure Low-Latency Interactive Messaging",
   "native_status": "\"Next-generation communication framework that provides the secure, scalable transport layer for AI agent protocols like A2A and MCP\"",
   "origin": {
@@ -8038,7 +8053,7 @@
   ],
   "id": "agent-permissions-json",
   "implementation": "unknown",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "agent-permissions.json",
   "native_status": "v1.0.0, complete JSON Schema published; described by the working group's own arXiv paper as a proposal, not an adopted standard",
   "origin": {
@@ -8516,7 +8531,7 @@
   ],
   "id": "mcp-apps",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "MCP Apps",
   "native_status": "Active extension to MCP; own repo describes it as extending 'the Model Context Protocol by letting tools declare UI resources'",
   "origin": {
@@ -8793,7 +8808,7 @@
   ],
   "id": "agents-json",
   "implementation": "prototype",
-  "last_verified": "2026-10-20",
+  "last_verified": "2026-10-21",
   "name": "agents.json",
   "native_status": "Dormant: last push 2025-08-21, version 0.1.0",
   "origin": {
@@ -9284,7 +9299,7 @@
   ],
   "id": "agent-connect-protocol",
   "implementation": "deprecated",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Agent Connect Protocol (AGNTCY)",
   "native_status": "Archived repository (2026-04-11)",
   "origin": {
@@ -9427,7 +9442,7 @@
   ],
   "id": "agent-protocol-aief",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Agent Protocol",
   "native_status": "\"Common interface for interacting with AI agents. The protocol is tech stack agnostic\" (repository description); defined as an OpenAPI REST spec with two core routes, POST /ap/v1/agent/tasks and POST /ap/v1/agent/tasks/{task_id}/steps",
   "origin": {
@@ -9770,7 +9785,7 @@
   ],
   "id": "web-agent-protocol",
   "implementation": "prototype",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Web Agent Protocol (WAP)",
   "native_status": "Dormant: last commit 2025-06-03",
   "origin": {
@@ -10561,7 +10576,7 @@
   ],
   "id": "mcp-registry",
   "implementation": "developer-trial",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-21",
   "name": "Official MCP Registry",
   "native_status": "Preview; API frozen at v0.1; \"Registry API v1 GA: Ideating, no target date\"",
   "origin": {
@@ -11390,7 +11405,7 @@
   ],
   "id": "mcp-server-cards",
   "implementation": "prototype",
-  "last_verified": "2026-10-20",
+  "last_verified": "2026-10-21",
   "name": "MCP Server Cards (SEP-2127)",
   "native_status": "SEP-2127 Final (2026-10-06), Extensions Track charter; the MCP Registry working group page still describes Server Cards as experimental",
   "origin": {
@@ -13831,7 +13846,7 @@
     "date": "2026-09-11"
    }
   ],
-  "last_verified": "2026-10-20",
+  "last_verified": "2026-10-21",
   "dispute": null,
   "summary_md": "AMP is Ant International's open protocol for AI agents that shop and pay through mobile wallets on the Alipay+ network [1][3]. The person signs a Mandate in advance, either IMMEDIATE (one purchase) or AUTONOMOUS (the agent may act later within limits) [2]. An Intent Guard then checks each later step against that mandate [1].\n\nThe spec text names four checkpoints: mandate creation pre-verification, payment token, payment request and wallet debit (S1 to S4). It also defines three layers of assurance data (user identity, mandate authorization and payment token request), carried as a three-layer SD-JWT [2]. The repository has five spec documents with MUST/SHOULD requirements, under Apache-2.0 [1].\n\nAnt International launched AMP on 2026-04-28, calling it fully open-sourced and citing 40+ wallet partners, 1.8 billion accounts and 150 million merchants [3]. The public repository, however, was only created on 2026-08-17 and has no tags or releases [1]. A global rollout with 50+ mobile payment partners was reported on 2026-09-11 [4]. All adoption figures are Ant's own.\n\nAMP defines nothing at a merchant's origin, so there is no path to probe. It overlaps in purpose with AP2's mandates and the card networks' agent-payment schemes, but runs on wallet rails rather than cards.",
   "history": [
@@ -13942,7 +13957,7 @@
     "date": "2026-09-24"
    }
   ],
-  "last_verified": "2026-10-20",
+  "last_verified": "2026-10-21",
   "dispute": null,
   "summary_md": "x401 is an HTTP challenge-response pattern for proof of identity. A resource sends a PROOF-REQUEST header naming the verifiable credential it needs, and the agent answers with a PROOF-RESPONSE; the verifier sends back its own information, including any proof error, in a PROOF-RESULT header [1]. All three headers carry base64url JSON. The credential request uses OpenID4VP over the browser Digital Credentials API, with DCQL queries. An optional OAuth token exchange turns a successful proof into a reusable Verification Token [1].\n\nThe name echoes x402, and the two are meant to sit side by side. x401 does not use the HTTP status code to carry proof state, and payment stays in a separate 402 flow [1].\n\nThe spec is a Draft at version 0.2.0, edited by Proof and Circle, with the code under Apache-2.0 [1][2]. Proof launched it on 2026-06-25 and says it plans to take it to the FIDO Alliance's agentic authentication workgroup [3]. Proof names Superfluid as a live implementation [4][5]; that claim comes from Proof, not from a count.",
   "history": [
@@ -14061,7 +14076,7 @@
     "date": "2026-07-29"
    }
   ],
-  "last_verified": "2026-10-20",
+  "last_verified": "2026-10-21",
   "dispute": {
    "summary": "The spec's own status line says Stable 1.0.0 and claims ratification as a DIF standard, but DIF's posts describe a task force still developing it, and no DIF ratification notice was found.",
    "claims": [
@@ -14369,7 +14384,7 @@
     "date": "2026-04-20"
    }
   ],
-  "last_verified": "2026-10-20",
+  "last_verified": "2026-10-21",
   "dispute": null,
   "summary_md": "CoMP is IAB Tech Lab's final v1 API specification for licensed content supply to AI systems [1]. The document itself is titled \"Content Metadata Marketplace Supply Specification (MVP)\" [2]. An AI system sends a request saying who it is and how it authenticates (the listed methods include Web Bot Auth). It also states what it will use the content for, from a fixed list of functions [2]. The publisher or marketplace answers with a Package: the content scope, a `licenseurl` for terms, a `reporturl` for usage reporting, how to retrieve the content, and delivery formats that include MCP and NLWeb [2].\n\nIt sits under Permit, next to RSL, because it is about access and licence terms between AI systems and publishers. It does not settle payment itself. How an AI system finds suppliers is explicitly out of scope [2].\n\nV1 closed public comment on 2026-04-09 and was finalized on 2026-04-28 [1]. The spec is CC-BY 3.0. IAB Tech Lab runs a related AI Bot Management Guidance, which was in public comment until 2026-06-25; its later status is not known [1]. No implementations have been counted.",
   "history": [
@@ -14483,7 +14498,7 @@
     "date": "2025-05-20"
    }
   ],
-  "last_verified": "2026-10-20",
+  "last_verified": "2026-10-21",
   "dispute": null,
   "summary_md": "Agent Commerce Kit (ACK) is Catena Labs' set of open patterns for agent identity and agent payments, with reference code [1][2]. ACK-ID gives an agent a DID and verifiable credentials that trace it back to its owner [1]. ACK-Pay covers starting a payment, issuing a verifiable receipt and settling on whichever rail the parties use, card or stablecoin among them; it supports x402 [1].\n\nCatena Labs launched it in May 2025 and contributed it as MIT-licensed open source [1][3]. The docs give no version, status or date. The reference packages are tagged up to agentcommercekit@0.11.0 and the code is still active [2]. ACK defines nothing at a fixed path on an origin. Its payment half is filed under Pay; ACK-ID would also fit under Identify.",
   "history": [
@@ -14610,7 +14625,7 @@
    ],
    "summary": "The token-count header promised at launch is not in the current docs and was not returned in our check, so agents should not rely on it. The feature also attaches a permissive Content-Signal by default, which a site owner may not expect from a format-conversion switch."
   },
-  "last_verified": "2026-10-20",
+  "last_verified": "2026-10-21",
   "history": [
    {
     "date": "2026-10-20",
@@ -14714,7 +14729,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-20",
+  "last_verified": "2026-10-21",
   "history": [
    {
     "date": "2026-10-20",
