@@ -1573,7 +1573,7 @@
   "claim": "a2a-sdk 1.2.3 published 2026-10-19",
   "evidence_url": "https://pypi.org/project/a2a-sdk/",
   "detector": "pypi@1.0",
-  "commit": null
+  "commit": "2895988c1fb974d0f760b52f1ec58d2406d1404e"
  },
  {
   "id": "q-2026-10-21-cloudflare-content-signals-policy-news",
@@ -1586,7 +1586,7 @@
   "claim": "feed item: Introducing full transaction detection for Cloudflare WAF",
   "evidence_url": null,
   "detector": null,
-  "commit": null
+  "commit": "2895988c1fb974d0f760b52f1ec58d2406d1404e"
  },
  {
   "id": "q-2026-10-21-cloudflare-content-signals-policy-news-5",
@@ -1599,6 +1599,6 @@
   "claim": "feed item: Introducing tsrs: A port of TypeScript to Rust",
   "evidence_url": null,
   "detector": null,
-  "commit": null
+  "commit": "2895988c1fb974d0f760b52f1ec58d2406d1404e"
  }
 ]
