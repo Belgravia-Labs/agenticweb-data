@@ -401,8 +401,14 @@
   "note": "ACP runs between an editor and a local agent binary over stdio."
  },
  "anthropic-agent-skills-format": {
-  "skip": "client-side",
-  "note": "Skills are files in a local skills directory, not served by an origin."
+  "path": "/.well-known/agent-skills/index.json",
+  "expect": {
+   "content_type": "json",
+   "json_keys": [
+    "skills"
+   ]
+  },
+  "note": "Agent Skills Discovery RFC v0.2.0 publishes a JSON skill index with a top-level skills[] array at /.well-known/agent-skills/index.json."
  },
  "a2ui": {
   "skip": "no-fixed-path",
