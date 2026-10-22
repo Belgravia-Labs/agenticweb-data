@@ -1612,7 +1612,7 @@
   "claim": "Datatracker shows draft-ietf-wimse-http-signature-08, dated 2026-10-20 (related draft)",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-http-signature/",
   "detector": "ietf@1.0",
-  "commit": null
+  "commit": "d1694780b00398d82f303aba777eee68b5543dfc"
  },
  {
   "id": "q-2026-10-22-dawn-agent-discovery-framework-revision",
@@ -1631,7 +1631,7 @@
   "claim": "Datatracker shows draft-zhang-dawn-agent-discovery-framework-09, dated 2026-10-21, expires 2027-04-24",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-zhang-dawn-agent-discovery-framework/",
   "detector": "ietf@1.0",
-  "commit": null
+  "commit": "d1694780b00398d82f303aba777eee68b5543dfc"
  },
  {
   "id": "q-2026-10-22-jafar-expiring",
@@ -1644,6 +1644,6 @@
   "claim": "draft-illyes-webbotauth-jafar-00 expires on 2026-10-23",
   "evidence_url": "https://datatracker.ietf.org/doc/draft-illyes-webbotauth-jafar/",
   "detector": "ietf@1.0",
-  "commit": null
+  "commit": "d1694780b00398d82f303aba777eee68b5543dfc"
  }
 ]
