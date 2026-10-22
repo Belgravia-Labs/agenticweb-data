@@ -767,5 +767,16 @@
   ],
   "kind": "announcement",
   "detector": "rules@1.0"
+ },
+ {
+  "date": "2026-10-21",
+  "title": "A Framework for Agent Discovery in DAWN: revision -09 published",
+  "url": "https://datatracker.ietf.org/doc/html/draft-zhang-dawn-agent-discovery-framework-09",
+  "summary": "Datatracker shows draft-zhang-dawn-agent-discovery-framework-09, dated 2026-10-21, expires 2027-04-24",
+  "related": [
+   "dawn-agent-discovery-framework"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
  }
 ]
