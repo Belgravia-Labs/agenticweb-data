@@ -1657,6 +1657,6 @@
   "claim": "Source for watch github:otel-genai-semconv:open-telemetry/semantic-conventions-genai failed 3 consecutive polls",
   "evidence_url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md",
   "detector": "github@1.0",
-  "commit": null
+  "commit": "290fb8cef2bf71d3f9af2c4d2b945d5ef4faf91a"
  }
 ]
