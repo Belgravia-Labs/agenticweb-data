@@ -1645,5 +1645,18 @@
   "evidence_url": "https://datatracker.ietf.org/doc/draft-illyes-webbotauth-jafar/",
   "detector": "ietf@1.0",
   "commit": "d1694780b00398d82f303aba777eee68b5543dfc"
+ },
+ {
+  "id": "q-2026-10-22-otel-genai-semconv-source-unavailable",
+  "date": "2026-10-22",
+  "record_id": "otel-genai-semconv",
+  "kind": "source-unavailable",
+  "field": "freshness",
+  "from": null,
+  "to": "source-unavailable",
+  "claim": "Source for watch github:otel-genai-semconv:open-telemetry/semantic-conventions-genai failed 3 consecutive polls",
+  "evidence_url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md",
+  "detector": "github@1.0",
+  "commit": null
  }
 ]

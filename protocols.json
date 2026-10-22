@@ -10591,7 +10591,7 @@
   ],
   "id": "mcp-registry",
   "implementation": "developer-trial",
-  "last_verified": "2026-10-21",
+  "last_verified": "2026-10-22",
   "name": "Official MCP Registry",
   "native_status": "Preview; API frozen at v0.1; \"Registry API v1 GA: Ideating, no target date\"",
   "origin": {
@@ -11420,7 +11420,7 @@
   ],
   "id": "mcp-server-cards",
   "implementation": "prototype",
-  "last_verified": "2026-10-21",
+  "last_verified": "2026-10-22",
   "name": "MCP Server Cards (SEP-2127)",
   "native_status": "SEP-2127 Final (2026-10-06), Extensions Track charter; the MCP Registry working group page still describes Server Cards as experimental",
   "origin": {
@@ -13876,7 +13876,7 @@
     "date": "2026-09-11"
    }
   ],
-  "last_verified": "2026-10-21",
+  "last_verified": "2026-10-22",
   "dispute": null,
   "summary_md": "AMP is Ant International's open protocol for AI agents that shop and pay through mobile wallets on the Alipay+ network [1][3]. The person signs a Mandate in advance, either IMMEDIATE (one purchase) or AUTONOMOUS (the agent may act later within limits) [2]. An Intent Guard then checks each later step against that mandate [1].\n\nThe spec text names four checkpoints: mandate creation pre-verification, payment token, payment request and wallet debit (S1 to S4). It also defines three layers of assurance data (user identity, mandate authorization and payment token request), carried as a three-layer SD-JWT [2]. The repository has five spec documents with MUST/SHOULD requirements, under Apache-2.0 [1].\n\nAnt International launched AMP on 2026-04-28, calling it fully open-sourced and citing 40+ wallet partners, 1.8 billion accounts and 150 million merchants [3]. The public repository, however, was only created on 2026-08-17 and has no tags or releases [1]. A global rollout with 50+ mobile payment partners was reported on 2026-09-11 [4]. All adoption figures are Ant's own.\n\nAMP defines nothing at a merchant's origin, so there is no path to probe. It overlaps in purpose with AP2's mandates and the card networks' agent-payment schemes, but runs on wallet rails rather than cards.",
   "history": [
@@ -13987,7 +13987,7 @@
     "date": "2026-09-24"
    }
   ],
-  "last_verified": "2026-10-21",
+  "last_verified": "2026-10-22",
   "dispute": null,
   "summary_md": "x401 is an HTTP challenge-response pattern for proof of identity. A resource sends a PROOF-REQUEST header naming the verifiable credential it needs, and the agent answers with a PROOF-RESPONSE; the verifier sends back its own information, including any proof error, in a PROOF-RESULT header [1]. All three headers carry base64url JSON. The credential request uses OpenID4VP over the browser Digital Credentials API, with DCQL queries. An optional OAuth token exchange turns a successful proof into a reusable Verification Token [1].\n\nThe name echoes x402, and the two are meant to sit side by side. x401 does not use the HTTP status code to carry proof state, and payment stays in a separate 402 flow [1].\n\nThe spec is a Draft at version 0.2.0, edited by Proof and Circle, with the code under Apache-2.0 [1][2]. Proof launched it on 2026-06-25 and says it plans to take it to the FIDO Alliance's agentic authentication workgroup [3]. Proof names Superfluid as a live implementation [4][5]; that claim comes from Proof, not from a count.",
   "history": [
@@ -14106,7 +14106,7 @@
     "date": "2026-07-29"
    }
   ],
-  "last_verified": "2026-10-21",
+  "last_verified": "2026-10-22",
   "dispute": {
    "summary": "The spec's own status line says Stable 1.0.0 and claims ratification as a DIF standard, but DIF's posts describe a task force still developing it, and no DIF ratification notice was found.",
    "claims": [
@@ -14414,7 +14414,7 @@
     "date": "2026-04-20"
    }
   ],
-  "last_verified": "2026-10-21",
+  "last_verified": "2026-10-22",
   "dispute": null,
   "summary_md": "CoMP is IAB Tech Lab's final v1 API specification for licensed content supply to AI systems [1]. The document itself is titled \"Content Metadata Marketplace Supply Specification (MVP)\" [2]. An AI system sends a request saying who it is and how it authenticates (the listed methods include Web Bot Auth). It also states what it will use the content for, from a fixed list of functions [2]. The publisher or marketplace answers with a Package: the content scope, a `licenseurl` for terms, a `reporturl` for usage reporting, how to retrieve the content, and delivery formats that include MCP and NLWeb [2].\n\nIt sits under Permit, next to RSL, because it is about access and licence terms between AI systems and publishers. It does not settle payment itself. How an AI system finds suppliers is explicitly out of scope [2].\n\nV1 closed public comment on 2026-04-09 and was finalized on 2026-04-28 [1]. The spec is CC-BY 3.0. IAB Tech Lab runs a related AI Bot Management Guidance, which was in public comment until 2026-06-25; its later status is not known [1]. No implementations have been counted.",
   "history": [
@@ -14528,7 +14528,7 @@
     "date": "2025-05-20"
    }
   ],
-  "last_verified": "2026-10-21",
+  "last_verified": "2026-10-22",
   "dispute": null,
   "summary_md": "Agent Commerce Kit (ACK) is Catena Labs' set of open patterns for agent identity and agent payments, with reference code [1][2]. ACK-ID gives an agent a DID and verifiable credentials that trace it back to its owner [1]. ACK-Pay covers starting a payment, issuing a verifiable receipt and settling on whichever rail the parties use, card or stablecoin among them; it supports x402 [1].\n\nCatena Labs launched it in May 2025 and contributed it as MIT-licensed open source [1][3]. The docs give no version, status or date. The reference packages are tagged up to agentcommercekit@0.11.0 and the code is still active [2]. ACK defines nothing at a fixed path on an origin. Its payment half is filed under Pay; ACK-ID would also fit under Identify.",
   "history": [
@@ -14759,11 +14759,15 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-21",
+  "last_verified": "2026-10-22",
   "history": [
    {
     "date": "2026-10-20",
     "note": "added from gap scout 2026-10-20; verified against open-telemetry/semantic-conventions-genai (docs/gen-ai/gen-ai-agent-spans.md, docs/gen-ai/mcp.md, README and repository metadata)"
+   },
+   {
+    "date": "2026-10-22",
+    "note": "source github:otel-genai-semconv:open-telemetry/semantic-conventions-genai unavailable after 3 failures"
    }
   ],
   "watch": [
@@ -14785,7 +14789,8 @@
     "selector": "main",
     "cadence": "weekly"
    }
-  ]
+  ],
+  "freshness": "source-unavailable"
  },
  {
   "id": "erc-8001",
