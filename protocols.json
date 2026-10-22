@@ -5077,8 +5077,8 @@
  {
   "acronym": "OKF",
   "adoption": {
-   "by": null,
-   "level": "unmeasured",
+   "by": "Google Cloud (Knowledge Catalog and 4 sample bundles: GA4, Stack Overflow, Bitcoin, Acme Retail), OpenKnowledge (OKF linter plugin), and agenticweb.wiki (163-concept OKF v0.2 knowledge bundle at /okf/index.md)",
+   "level": "observed",
    "probe_run": null
   },
   "aliases": [],
@@ -5087,8 +5087,8 @@
    "Open Knowledge Foundation (okfn.org) — an unrelated, pre-existing nonprofit that also uses the initialism OKF"
   ],
   "discovery": {
-   "mechanism": "none — a bundle is a directory of markdown files distributed as a git repository, tarball/zip, or subdirectory of a larger repo; there is no fixed web-origin path or well-known convention for locating one",
-   "path": "none"
+   "mechanism": "Bundle root index at /okf/index.md (web origins) or root index.md of a git repository / tarball declaring okf_version",
+   "path": "/okf/index.md"
   },
   "dispute": null,
   "evidence": [
@@ -5132,11 +5132,15 @@
    {
     "date": "2026-10-16",
     "note": "use-case tags (auto)"
+   },
+   {
+    "date": "2026-10-23",
+    "note": "promoted to live GET /okf/index.md probe; recorded agenticweb.wiki 163-concept OKF v0.2 production bundle"
    }
   ],
   "id": "okf",
-  "implementation": "prototype",
-  "last_verified": "2026-10-22",
+  "implementation": "shipping",
+  "last_verified": "2026-10-23",
   "name": "Open Knowledge Format",
   "native_status": "\"An open specification; contributions, alternative implementations, and adoption beyond Google products are all explicitly welcomed\"",
   "origin": {
@@ -5149,16 +5153,16 @@
   ],
   "phase": "draft",
   "probe": {
-   "method": "N/A",
-   "on_absent": "No conformant OKF bundle at the given location; this says nothing about whether the org has other, non-OKF internal documentation",
-   "parse": "Every non-reserved `.md` file in the tree has a parseable YAML frontmatter block containing a non-empty `type` field (OKF §11 conformance); an optional root `index.md` may declare `okf_version`",
-   "path": "none — bundle location is producer-defined (git repo URL, tarball, or subdirectory path); not servable via a fixed {origin} convention"
+   "method": "GET",
+   "on_absent": "No web-served OKF bundle index at /okf/index.md; the organization may still distribute OKF bundles via git repositories or tarballs",
+   "parse": "YAML frontmatter at /okf/index.md declaring okf_version (0.1 or 0.2), linking to concept .md files whose frontmatter carries a non-empty type field (OKF §8, §11)",
+   "path": "{origin}/okf/index.md"
   },
   "question": "How can an organization package durable, structured knowledge (schemas, metrics, playbooks, runbooks) so both humans and agents can read, produce, and trust it without a bespoke SDK?",
   "scope": "general",
   "spec_url": "https://github.com/GoogleCloudPlatform/open-knowledge-format/blob/main/SPEC.md",
   "step": "read",
-  "summary_md": "The Open Knowledge Format (OKF) is a Google-originated specification for representing organizational knowledge — table schemas, metric definitions, playbooks, API references — as a directory of plain markdown files with YAML frontmatter [1][2]. Each unit of knowledge (a \"concept\") is one markdown file; the only required field is `type`, everything else (title, description, tags, and an open-ended set of trust/provenance/lifecycle fields) is optional, and unknown fields or types must be tolerated by any conformant consumer [1]. Concepts cross-link with ordinary markdown links, so a bundle forms a graph, not just a directory tree.\n\nIt solves the problem of fragmented, non-portable \"tribal knowledge\" that today lives in metadata catalogs, wikis, code comments, and senior engineers' heads, and that every organization and every catalog vendor re-solves from scratch with incompatible schemas and SDKs [2]. Because a bundle is just files, it is git-diffable, requires no proprietary API to read or write, and formalizes an already-emerging pattern (the \"LLM-wiki\": Obsidian vaults, `AGENTS.md`/`CLAUDE.md` files, ad hoc `index.md`/`log.md` conventions) rather than inventing a new one [2]. v0.2, the current version, adds first-class provenance (`sources`, with per-source credibility signals like `usage_count` and `last_modified`), trust tiers derived from `verified` events, lifecycle fields (`status`, `stale_after`), and a dedicated \"Attested Computation\" concept type that lets a value's sanctioned computation be checked against what actually ran [1].\n\nWhat it does not do: define a fixed taxonomy of concept types, prescribe any storage/serving/query infrastructure, replace domain-specific schemas such as Avro or OpenAPI (it references them, not subsumes them), or specify a packaging/invocation standard for the code an executor or attester points at [1]. It also has no discovery mechanism of its own — there is no well-known path or fixed convention for finding a bundle at a web origin; a bundle's location is whatever the producer chooses (a git repo URL, a tarball, a subdirectory).\n\nCurrent state, as of this verification (September 2026): OKF v0.1 was announced 2026-06-12 and v0.2 followed by August 2026, when the project also moved out of the `GoogleCloudPlatform/knowledge-catalog` monorepo into its own dedicated repository, `GoogleCloudPlatform/open-knowledge-format`; the old location now carries only a frozen, explicitly unmaintained snapshot [3]. The dedicated repo, created 2026-08-11, had 288 GitHub stars and 11 forks as of 2026-09-05 [4]. All shipped tooling — the reference enrichment agent (BigQuery-to-OKF) and the static HTML graph visualizer — is explicitly described by Google as a \"proof of concept,\" and the only public examples of conformant bundles are the sample datasets Google itself produced (GA4, Stack Overflow, Bitcoin, and a fourth 'Acme Retail' sample added after the initial announcement) [1][3].\n\nWhat is disputed or unknown: no adoption beyond Google's own samples and Google Cloud's Knowledge Catalog integration was found; there is no independent producer or consumer implementation, no third-party adoption count, and no evidence yet of OKF being used to back a production agent system outside Google. \"OKF\" also collides with the pre-existing Open Knowledge Foundation (okfn.org), an unrelated nonprofit; care is needed to distinguish the two in any listing.",
+  "summary_md": "The Open Knowledge Format (OKF) is a Google-originated specification for representing organizational knowledge — table schemas, metric definitions, playbooks, API references — as a directory of plain markdown files with YAML frontmatter [1][2]. Each unit of knowledge (a \"concept\") is one markdown file; the only required field is `type`, everything else (title, description, tags, and an open-ended set of trust/provenance/lifecycle fields) is optional, and unknown fields or types must be tolerated by any conformant consumer [1]. Concepts cross-link with ordinary markdown links, so a bundle forms a graph, not just a directory tree.\n\nIt solves the problem of fragmented, non-portable \"tribal knowledge\" that today lives in metadata catalogs, wikis, code comments, and senior engineers' heads, and that every organization and every catalog vendor re-solves from scratch with incompatible schemas and SDKs [2]. Because a bundle is just files, it is git-diffable, requires no proprietary API to read or write, and formalizes an already-emerging pattern (the \"LLM-wiki\": Obsidian vaults, `AGENTS.md`/`CLAUDE.md` files, ad hoc `index.md`/`log.md` conventions) rather than inventing a new one [2]. v0.2, the current version, adds first-class provenance (`sources`, with per-source credibility signals like `usage_count` and `last_modified`), trust tiers derived from `verified` events, lifecycle fields (`status`, `stale_after`), and a dedicated \"Attested Computation\" concept type that lets a value's sanctioned computation be checked against what actually ran [1].\n\nWhat it does not do: define a fixed taxonomy of concept types, prescribe any storage/serving/query infrastructure, replace domain-specific schemas such as Avro or OpenAPI (it references them, not subsumes them), or specify a packaging/invocation standard for the code an executor or attester points at [1]. While the core specification leaves bundle transport to the producer (a git repo URL, a tarball, or a subdirectory), web origins serving an OKF bundle alongside HTML/Markdown pages can expose the bundle index at `/okf/index.md` and update log at `/okf/log.md` so `/okf/index.md` does not collide with root `/index.md`.\n\nCurrent state, as of this verification (September 2026): OKF v0.1 was announced 2026-06-12 and v0.2 followed by August 2026, when the project also moved out of the `GoogleCloudPlatform/knowledge-catalog` monorepo into its own dedicated repository, `GoogleCloudPlatform/open-knowledge-format`; the old location now carries only a frozen, explicitly unmaintained snapshot [3]. The dedicated repo, created 2026-08-11, had 288 GitHub stars and 11 forks as of 2026-09-05 [4]. All shipped tooling — the reference enrichment agent (BigQuery-to-OKF) and the static HTML graph visualizer — is explicitly described by Google as a \"proof of concept,\" and the only public examples of conformant bundles are the sample datasets Google itself produced (GA4, Stack Overflow, Bitcoin, and a fourth 'Acme Retail' sample added after the initial announcement) [1][3].\n\nObserved implementations include Google Cloud's Knowledge Catalog and four sample bundles, OpenKnowledge's OKF linter plugin, and `agenticweb.wiki`'s live 163-concept OKF v0.2 bundle at `/okf/index.md`. \"OKF\" also collides with the pre-existing Open Knowledge Foundation (okfn.org), an unrelated nonprofit; care is needed to distinguish the two in any listing.",
   "track": "single-vendor",
   "version": {
    "date": "2026-08",

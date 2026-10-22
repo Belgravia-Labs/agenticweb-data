@@ -301,8 +301,11 @@
   "note": "The probe is POST /api/v1/local/session, which opens a session."
  },
  "okf": {
-  "skip": "no-fixed-path",
-  "note": "OKF bundles live wherever the producer publishes them; there is no origin path."
+  "path": "/okf/index.md",
+  "expect": {
+   "text_match": "(?m)^okf_version:\\s*\"?0\\.[12]\"?"
+  },
+  "note": "Google Open Knowledge Format (OKF v0.2) web bundle index at /okf/index.md declaring okf_version."
  },
  "vercel-agent-readability": {
   "skip": "no-fixed-path",

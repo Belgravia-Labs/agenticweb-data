@@ -5458,5 +5458,18 @@
   "date_basis": "recorded",
   "source": "https://playmcp.kakao.com/llms.txt",
   "note": "VERIFIED: fetched 2026-10-20, 200, H1 \"# PlayMCP\" (Korean)."
+ },
+ {
+  "id": "agenticweb-wiki-okf",
+  "name": "agenticweb.wiki",
+  "url": "https://agenticweb.wiki/okf/index.md",
+  "type": "site",
+  "implements": [
+   "okf"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/data/probes.json",
+  "note": "163-concept OKF v0.2 knowledge bundle (/okf/index.md, /okf/log.md, /okf/protocols/<id>.md, /okf/terms/<id>.md); checked by our own probe rules at build time (tests/test_self_probe.py)."
  }
 ]
