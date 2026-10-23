@@ -216,7 +216,7 @@
     "acronym": "A2A",
     "adoption": {
       "by": "150+ supporting organizations, claimed by the Linux Foundation on 9 April 2026 (https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year). Card-version censuses are separate measurements, kept with their frames and not averaged. Agenstry 2026-09-01 (https://agenstry.com/blog/state-of-the-agent-card): of 1,910 cards declaring protocolVersion, 65.5% (1,252) are 0.3.x and 25.5% (488) are 1.0.x. Emissar 2026-10-02 (https://emissar.ai/learn/a2a-adoption-2026): 276 cards on the Tranco top 1M (205 in v1.0 shape, 71 in v0.3 shape, 0 signed, 0 in the top 1,000 domains). APIs.io / Kin Lane 2026-09-21 (https://apievangelist.com/2026/09/21/a2a-adoption-is-421-of-27840-and-most-of-them-arrived-with-the-card/): 421 parseable cards out of 4,718 hosts probed (27,840 providers). rStation 2026-10-12 (https://rstation.ai/problems/ai_agent/papers/1): 661 cards on 2,164 x402 seller hosts (189 pass their attributed version and fail a check that assumes 1.0).",
-      "level": "claimed",
+      "level": "observed",
       "probe_run": null
     },
     "aliases": [
@@ -425,7 +425,7 @@
     "acronym": "ACP",
     "adoption": {
       "by": null,
-      "level": "unmeasured",
+      "level": "observed",
       "probe_run": null
     },
     "aliases": [],
@@ -744,7 +744,7 @@
     "acronym": "ACP",
     "adoption": {
       "by": "OpenAI and Stripe (project README)",
-      "level": "claimed",
+      "level": "observed",
       "probe_run": null
     },
     "aliases": [
@@ -874,7 +874,7 @@
     "acronym": "UCP",
     "adoption": {
       "by": "UCP project (ucp.dev launch-partner list)",
-      "level": "claimed",
+      "level": "observed",
       "probe_run": null
     },
     "aliases": [
@@ -1295,7 +1295,7 @@
     "acronym": "",
     "adoption": {
       "by": "x402 Foundation (x402.org live dashboard)",
-      "level": "claimed",
+      "level": "observed",
       "probe_run": null
     },
     "aliases": [],
@@ -1698,7 +1698,7 @@
     "acronym": "ERC-8004",
     "adoption": {
       "by": "Forbes (2026-02-05) citing community trackers; community-maintained awesome-erc8004 deployment list",
-      "level": "claimed",
+      "level": "observed",
       "probe_run": null
     },
     "aliases": [
@@ -2396,7 +2396,7 @@
     "acronym": "",
     "adoption": {
       "by": "Rankability (Tranco top-1000, June 2026: 8.7%) and SE Ranking (~300,000 domains analyzed: 10.13%) — independent third-party publisher-side counts, not our own probe",
-      "level": "claimed",
+      "level": "observed",
       "probe_run": null
     },
     "aliases": [
@@ -2575,7 +2575,7 @@
     "acronym": "",
     "adoption": {
       "by": "agents.md (site claims over 60,000 AGENTS.md files across open-source GitHub repositories, via a `path:AGENTS.md NOT is:fork NOT is:archived` code search)",
-      "level": "claimed",
+      "level": "observed",
       "probe_run": null
     },
     "aliases": [],
@@ -2906,7 +2906,7 @@
     "acronym": "TDMRep",
     "adoption": {
       "by": null,
-      "level": "unmeasured",
+      "level": "observed",
       "probe_run": null
     },
     "aliases": [],
@@ -2949,7 +2949,7 @@
       }
     ],
     "id": "tdmrep",
-    "implementation": "unknown",
+    "implementation": "shipping",
     "last_verified": "2026-10-23",
     "name": "Text and Data Mining Reservation Protocol",
     "native_status": "W3C Community Group Final Report; explicitly \"not a W3C Standard nor is it on the W3C Standards Track\"",
@@ -3006,7 +3006,7 @@
     "acronym": "",
     "adoption": {
       "by": null,
-      "level": "unmeasured",
+      "level": "observed",
       "probe_run": null
     },
     "aliases": [
@@ -3088,7 +3088,7 @@
       }
     ],
     "id": "cloudflare-content-signals-policy",
-    "implementation": "shipping",
+    "implementation": "multi-implementation",
     "last_verified": "2026-10-23",
     "name": "Content Signals Policy",
     "native_status": "Vendor-published policy convention layered on robots.txt; not submitted to a standards body as of this verification",
@@ -3507,7 +3507,7 @@
   {
     "acronym": "ARD",
     "adoption": {
-      "by": "agenticresources.dev own probe, 2026-09-04",
+      "by": "agenticweb.wiki /check/ probe (13/268 origins on /.well-known/ard.json; 43/268 on predecessor /.well-known/ai-catalog.json)",
       "level": "observed",
       "probe_run": null
     },
@@ -3576,7 +3576,7 @@
       }
     ],
     "id": "ard",
-    "implementation": "shipping",
+    "implementation": "multi-implementation",
     "last_verified": "2026-10-23",
     "name": "Agentic Resource Discovery",
     "native_status": "Proposal",
@@ -3640,8 +3640,8 @@
   {
     "acronym": "",
     "adoption": {
-      "by": null,
-      "level": "unmeasured",
+      "by": "agenticweb.wiki /check/ probe (43/268 origins still serving the legacy /.well-known/ai-catalog.json path)",
+      "level": "observed",
       "probe_run": null
     },
     "aliases": [
@@ -7837,7 +7837,7 @@
     "acronym": "RFC 9727",
     "adoption": {
       "by": null,
-      "level": "unmeasured",
+      "level": "observed",
       "probe_run": null
     },
     "aliases": [
@@ -7884,7 +7884,7 @@
       }
     ],
     "id": "api-catalog-rfc9727",
-    "implementation": "unknown",
+    "implementation": "multi-implementation",
     "last_verified": "2026-10-23",
     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs",
     "native_status": "Proposed Standard (errata exist)",
@@ -7942,7 +7942,7 @@
     "acronym": "RSL",
     "adoption": {
       "by": null,
-      "level": "unmeasured",
+      "level": "observed",
       "probe_run": null
     },
     "aliases": [],
@@ -8155,7 +8155,7 @@
     "acronym": "",
     "adoption": {
       "by": "auth-md.com, which lists Resend, Cloudflare, Firecrawl, Ora.ai, here.now, mailbox.bot, agents-txt.com, WorkOS, and Alpic as 'already supported' adopters",
-      "level": "claimed",
+      "level": "observed",
       "probe_run": null
     },
     "aliases": [],
@@ -8259,7 +8259,7 @@
     "acronym": "",
     "adoption": {
       "by": null,
-      "level": "unmeasured",
+      "level": "observed",
       "probe_run": null
     },
     "aliases": [
@@ -8915,7 +8915,7 @@
     "acronym": "",
     "adoption": {
       "by": null,
-      "level": "unmeasured",
+      "level": "observed",
       "probe_run": null
     },
     "aliases": [],
@@ -11346,7 +11346,7 @@
   {
     "acronym": "Server Card",
     "adoption": {
-      "level": "unmeasured",
+      "level": "observed",
       "by": null,
       "probe_run": null
     },
@@ -11460,7 +11460,7 @@
       }
     ],
     "id": "mcp-server-cards",
-    "implementation": "prototype",
+    "implementation": "multi-implementation",
     "last_verified": "2026-10-23",
     "name": "MCP Server Cards (SEP-2127)",
     "native_status": "SEP-2127 Final (2026-10-06), Extensions Track charter; the MCP Registry working group page still describes Server Cards as experimental",
@@ -11479,7 +11479,7 @@
     "parties": [
       "agent-site"
     ],
-    "phase": "candidate",
+    "phase": "stable",
     "probe": {
       "method": "GET",
       "path": "{endpoint}/server-card",
@@ -14181,9 +14181,9 @@
     "governance": "IETF OAuth Working Group (WG Document)",
     "native_status": "Active Internet-Draft, WG Document of the IETF oauth WG; -02 dated 2026-07-06, expires 2027-01-07; the draft header says Standards Track",
     "phase": "working-group",
-    "implementation": "unknown",
+    "implementation": "multi-implementation",
     "adoption": {
-      "level": "unmeasured",
+      "level": "observed",
       "by": null,
       "probe_run": null
     },
