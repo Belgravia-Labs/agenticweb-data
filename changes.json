@@ -1434,6 +1434,6 @@
   "claim": "v3.2.6 released 2026-10-23",
   "evidence_url": "https://github.com/adcontextprotocol/adcp/releases/tag/v3.2.6",
   "detector": "github@1.0",
-  "commit": null
+  "commit": "3aed7917ec59b79e4b79a35f75491839562c4832"
  }
 ]
