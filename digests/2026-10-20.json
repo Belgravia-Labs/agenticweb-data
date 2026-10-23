@@ -108,14 +108,6 @@
    ],
    "sources": [
     {
-     "url": "https://forkast.news/your-home-mcp-server-is-probably-unsecured-and-the-protocols-own-maker-calls-the-flaw-by-design/",
-     "title": "Your Home MCP Server Is Probably Unsecured — And the Protocol’s Own Maker Calls the Flaw ‘By Design’",
-     "publisher": "forkast.news",
-     "published": "2026-10-18",
-     "label": "REPORTED",
-     "fetched": false
-    },
-    {
      "url": "https://aimatter.in/2026/10/18/anthropic-will-not-change-mcp-command-execution-ox-security/",
      "title": "Anthropic will not change MCP command execution, OX Security finds · AI Matter",
      "publisher": "aimatter.in",
@@ -199,31 +191,6 @@
   },
   {
    "id": "2026-10-20-7",
-   "title": "AG-UI 1.0 published with a normative spec, interrupts and subagents",
-   "body": "According to a Habr article by an AG2 engineer, AG-UI released 1.0.0 packages. The release adds interrupts, where an agent pauses a run to wait for a human, along with subagents, reasoning, usage reporting, run cancellation and multimodal tool results. The author says the protocol is now versioned, its behavior is specified normatively with MUST/SHOULD language, and SDKs are generated from a JSON Schema.",
-   "why_it_matters": "Frontends that built custom approval or pause handling can map it onto the standard interrupt events. Teams on pre-1.0 SDKs should review the stricter normative behavior before upgrading.",
-   "kind": "spec",
-   "related": [
-    {
-     "id": "ag-ui",
-     "name": "Agent-User Interaction Protocol",
-     "url": "https://agenticweb.wiki/protocols/ag-ui/"
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://habr.com/ru/articles/1095968/",
-     "title": "AG‑UI 1.0: у протокола наконец появилась спецификация. Разбираем, что изменилось, на связке AG2 + CopilotKit / Хабр",
-     "publisher": "habr.com",
-     "published": "2026-10-19",
-     "label": "REPORTED",
-     "fetched": true
-    }
-   ],
-   "stats": []
-  },
-  {
-   "id": "2026-10-20-8",
    "title": "Circle and Proof to demo x401 identity paired with x402 USDC payment",
    "body": "Circle and Proof announced a collaboration. At Money20/20 in Las Vegas, they plan to demo an agent completing an identity-gated purchase. The agent presents a verified Proof credential over x401 and pays in USDC over x402 using a Circle Agent Wallet. Per the press release, x401 uses the HTTP 401 response to state the identity proof required, while x402 uses HTTP 402 to state the payment.",
    "why_it_matters": "Merchants that need both proof of authorization and payment can see how the two HTTP challenge patterns compose in one flow. So far this is a demo, not a shipped integration.",
@@ -253,7 +220,7 @@
    "stats": []
   },
   {
-   "id": "2026-10-20-9",
+   "id": "2026-10-20-8",
    "title": "Crawls: soft 404s inflate llms.txt counts; 13.6% of top sites block GPTBot",
    "body": "Technical SEO News reports an EU crawl by machinewitness.eu. A check for a 200 at /llms.txt counted 20,804 domains (16.2%), but only 7.04% of 128,315 domains served a file whose first line is a Markdown heading. Another 10,138 returned HTML, mostly error pages. Separately, ContextFetch reports that 13.6% of top sites with readable robots.txt block GPTBot site-wide. It also found that 11.6% of 7,462 sites answering /llms.txt serve one.",
    "why_it_matters": "When auditing llms.txt, check the content type and confirm the first line is a Markdown heading. A status code alone is not enough. The same soft-404 issue can affect any well-known file check.",
@@ -291,7 +258,7 @@
    "stats": []
   },
   {
-   "id": "2026-10-20-10",
+   "id": "2026-10-20-9",
    "title": "OpenA2A decoy MCP servers log 420 tool calls as connection events fall",
    "body": "According to AI.info, OpenA2A's decoy MCP servers received 420 tool calls in the 30-day window ending October 19, up from nine in the previous window. Over the same period, connection events fell. The calls came from 19 distinct fingerprints and requested tools including shell execution, secret retrieval and file reads. OpenA2A also recorded 34 resource reads.",
    "why_it_matters": "The report recommends alerting on tool calls to servers expected to be idle rather than on connection volume. Operators can apply this directly to their MCP monitoring.",

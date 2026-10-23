@@ -1,1732 +1,1420 @@
 [
-  {
-    "id": "q-2026-10-16-a2a-version",
-    "date": "2026-10-16",
-    "record_id": "a2a",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": "2026-01",
-      "label": "1.0.0"
-    },
-    "to": {
-      "label": "1.0.1",
-      "date": "2026-05-28"
-    },
-    "claim": "A2A v1.0.1 released on 2026-05-28 (v1.0.0 on 2026-03-12); governance is the Linux Foundation with a Technical Steering Committee of AWS, Cisco, Google, IBM Research, Microsoft, Salesforce, SAP and ServiceNow",
-    "evidence_url": "https://github.com/a2aproject/A2A/releases",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-ag-ui-version",
-    "date": "2026-10-16",
-    "record_id": "ag-ui",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": null,
-      "label": "protocol stable, packages versioned independently (e.g. @ag-ui/core on npm)"
-    },
-    "to": {
-      "label": "1.0",
-      "date": "2026-09-18"
-    },
-    "claim": "AG-UI 1.0 was released and frozen on 2026-09-18, with a published JSON Schema",
-    "evidence_url": "https://github.com/ag-ui-protocol/ag-ui/discussions/2792",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-mcp-apps-version",
-    "date": "2026-10-16",
-    "record_id": "mcp-apps",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": "2026-01-26",
-      "label": "npm package @modelcontextprotocol/ext-apps, spec dated 2026-01-26"
-    },
-    "to": {
-      "label": "spec 2026-01-26; SDK ext-apps v2.0.3",
-      "date": "2026-09-25"
-    },
-    "claim": "MCP Apps SDK ext-apps v2.0.3 was released on 2026-09-25 (spec dated 2026-01-26)",
-    "evidence_url": "https://github.com/modelcontextprotocol/ext-apps/releases",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-a2ui-status",
-    "date": "2026-10-16",
-    "record_id": "a2ui",
-    "kind": "status",
-    "field": "governance",
-    "from": "a2ui-project (Google-originated, open-source on GitHub; Apache-2.0)",
-    "to": "a2ui-project GitHub organisation (moved from google/A2UI)",
-    "claim": "A2UI moved from google/A2UI to the a2ui-project GitHub organisation",
-    "evidence_url": "https://github.com/a2ui-project/A2UI",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-agent-client-protocol-version",
-    "date": "2026-10-16",
-    "record_id": "agent-client-protocol",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": "2026-07-20",
-      "label": "v1 (stable); v2 draft"
-    },
-    "to": {
-      "label": "v1.11.0 (schema v1.25.0); v2 unstable",
-      "date": "2026-10-09"
-    },
-    "claim": "Agent Client Protocol v1.11.0 (schema v1.25.0) released on 2026-10-09; v2 is unstable",
-    "evidence_url": "https://github.com/agentclientprotocol/agent-client-protocol/blob/main/CHANGELOG.md",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-adcp-version",
-    "date": "2026-10-16",
-    "record_id": "adcp",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": "2026",
-      "label": "3.1.20"
-    },
-    "to": {
-      "label": "v3.2.4",
-      "date": "2026-10-12"
-    },
-    "claim": "AdCP v3.2.4 released on 2026-10-12",
-    "evidence_url": "https://github.com/adcontextprotocol/adcp/releases",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-anp-version",
-    "date": "2026-10-16",
-    "record_id": "anp",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": null,
-      "label": "1.1 (protocol document release); protocolVersion field remains 1.0.0"
-    },
-    "to": {
-      "label": "v1.2",
-      "date": "2026-09-24"
-    },
-    "claim": "Agent Network Protocol v1.2 released on 2026-09-24",
-    "evidence_url": "https://github.com/agent-network-protocol/AgentNetworkProtocol/releases",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-oasf-version",
-    "date": "2026-10-16",
-    "record_id": "oasf",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": null,
-      "label": "1.1.0 (also serving 0.7.0, 0.8.0, 1.0.0)"
-    },
-    "to": {
-      "label": "v1.1.0",
-      "date": "2026-07-10"
-    },
-    "claim": "OASF v1.1.0 released on 2026-07-10",
-    "evidence_url": "https://github.com/agntcy/oasf/releases",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-ap2-version",
-    "date": "2026-10-16",
-    "record_id": "ap2",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": null,
-      "label": "v0.2"
-    },
-    "to": {
-      "label": "v0.2.0",
-      "date": "2026-04-28"
-    },
-    "claim": "AP2 v0.2.0 released on 2026-04-28, and AP2 was donated to the FIDO Alliance (Payments TWG and Agentic Authentication TWG) the same day",
-    "evidence_url": "https://github.com/google-agentic-commerce/AP2/releases",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-x402-status",
-    "date": "2026-10-16",
-    "record_id": "x402",
-    "kind": "status",
-    "field": "governance",
-    "from": "x402 Foundation, a Series of LF Projects, LLC (Linux Foundation); operational launch announced 2026-07-14",
-    "to": "x402 Foundation, a Series of LF Projects, LLC (Linux Foundation); operational launch announced 2026-07-14; Executive Director Michael Hursta from 2026-10-01; 50+ members",
-    "claim": "The Linux Foundation appointed Michael Hursta as executive director of the x402 Foundation, effective 2026-10-01; the foundation has 50+ members",
-    "evidence_url": "https://www.linuxfoundation.org/press/linux-foundation-appoints-michael-hursta-as-executive-director-of-the-x402-foundation",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-mpp-revision",
-    "date": "2026-10-16",
-    "record_id": "mpp",
-    "kind": "revision",
-    "field": "spec_url",
-    "from": "https://mpp.dev/protocol",
-    "to": "https://datatracker.ietf.org/doc/html/draft-httpauth-payment-01",
-    "claim": "The MPP draft was renamed draft-httpauth-payment; draft-httpauth-payment-01 is dated 2026-09-09",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-httpauth-payment/",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-ucp-status",
-    "date": "2026-10-16",
-    "record_id": "ucp",
-    "kind": "status",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "UCP added a Payments Technical Council (2026-09-02), a Lodging Booking draft capability (2026-09-25) and Merchant Center cart transfer (2026-09-16)",
-    "evidence_url": "https://github.com/Universal-Commerce-Protocol/ucp/releases",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-slim-revision",
-    "date": "2026-10-16",
-    "record_id": "slim",
-    "kind": "revision",
-    "field": "version",
-    "from": {
-      "date": null,
-      "label": "IETF individual draft draft-mpsb-agntcy-slim-00; active GitHub development"
-    },
-    "to": {
-      "label": "draft-mpsb-agntcy-slim-02",
-      "date": "2026-07-19"
-    },
-    "claim": "draft-mpsb-agntcy-slim-02 is dated 2026-07-19",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-mpsb-agntcy-slim/",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-daap-revision",
-    "date": "2026-10-16",
-    "record_id": "daap",
-    "kind": "revision",
-    "field": "version",
-    "from": {
-      "date": "2026-08",
-      "label": "draft-mishra-oauth-agent-grants-02"
-    },
-    "to": {
-      "label": "draft-mishra-oauth-agent-grants-02",
-      "date": "2026-08-30"
-    },
-    "claim": "draft-mishra-oauth-agent-grants-02 is dated 2026-08-30",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-mishra-oauth-agent-grants/",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-adp-revision",
-    "date": "2026-10-16",
-    "record_id": "adp",
-    "kind": "revision",
-    "field": "version",
-    "from": {
-      "date": "2026-06-18",
-      "label": "draft-pro-adp-agent-discovery-02"
-    },
-    "to": {
-      "label": "draft-pro-adp-agent-discovery-02",
-      "date": "2026-07-24"
-    },
-    "claim": "draft-pro-adp-agent-discovery-02 is dated 2026-07-24",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-pro-adp-agent-discovery/",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-agents-json-dormant",
-    "date": "2026-10-16",
-    "record_id": "agents-json",
-    "kind": "dormant",
-    "field": "phase",
-    "from": "draft",
-    "to": "deprecated",
-    "claim": "agents.json is dormant: last push 2025-08-21, version 0.1.0",
-    "evidence_url": "https://github.com/wild-card-ai/agents-json",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-web-agent-protocol-dormant",
-    "date": "2026-10-16",
-    "record_id": "web-agent-protocol",
-    "kind": "dormant",
-    "field": "phase",
-    "from": "draft",
-    "to": "deprecated",
-    "claim": "Web Agent Protocol is dormant: last commit 2025-06-03",
-    "evidence_url": "https://github.com/OTA-Tech-AI/web-agent-protocol",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-agent-communication-protocol-status",
-    "date": "2026-10-16",
-    "record_id": "agent-communication-protocol",
-    "kind": "status",
-    "field": "phase",
-    "from": "withdrawn",
-    "to": "deprecated",
-    "claim": "IBM's Agent Communication Protocol is deprecated (merged into A2A)",
-    "evidence_url": "https://github.com/i-am-bee/acp",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-agent-connect-protocol-status",
-    "date": "2026-10-16",
-    "record_id": "agent-connect-protocol",
-    "kind": "status",
-    "field": "phase",
-    "from": "deprecated",
-    "to": "deprecated",
-    "claim": "The agntcy/acp-spec repository was archived on 2026-04-11",
-    "evidence_url": "https://github.com/agntcy/acp-spec",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-vi-status",
-    "date": "2026-10-16",
-    "record_id": "vi",
-    "kind": "status",
-    "field": "governance",
-    "from": "Maintained by Mastercard; open to multi-stakeholder contribution per the project's CONTRIBUTING.md; built on FIDO Alliance, EMVCo, IETF and W3C primitives (SD-JWT/RFC 9901, key confirmation/RFC 7800)",
-    "to": "Mastercard; contributed to the FIDO Alliance Payments TWG (2026-04-28); built on FIDO Alliance, EMVCo, IETF and W3C primitives",
-    "claim": "Mastercard contributed Verifiable Intent to the FIDO Alliance Payments TWG on 2026-04-28",
-    "evidence_url": "https://fidoalliance.org/fido-alliance-to-develop-standards-for-trusted-ai-agent-interactions/",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-tap-status",
-    "date": "2026-10-16",
-    "record_id": "tap",
-    "kind": "status",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Visa joined the KYA interoperability collaboration with Mastercard and Ant International (2026-09-10)",
-    "evidence_url": "https://www.ant-intl.com/en/news/detail/?id=ant-internationals-agentic-mobile-protocol-rolls-out-globally-with-wallets-acquirers-initiating-collaboration-on-kya-interoperability-framework-with-mastercard-and-visa",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-cloudflare-content-signals-policy-status",
-    "date": "2026-10-16",
-    "record_id": "cloudflare-content-signals-policy",
-    "kind": "status",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Cloudflare 'Disallow AI Training' and Accountable crawler designation (2026-09-15); Bot Preference Sync replaces Managed robots.txt",
-    "evidence_url": "https://blog.cloudflare.com/",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-ai-crawler-tokens-robots-status",
-    "date": "2026-10-16",
-    "record_id": "ai-crawler-tokens-robots",
-    "kind": "status",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Cloudflare 'Disallow AI Training' and Accountable crawler designation (2026-09-15); Bot Preference Sync replaces Managed robots.txt",
-    "evidence_url": "https://blog.cloudflare.com/",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-llms-txt-sdk-release",
-    "date": "2026-10-16",
-    "record_id": "llms-txt",
-    "kind": "sdk-release",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "llms-txt Python package 0.0.7 released 2026-09-24 (tooling, spec unchanged at v2)",
-    "evidence_url": "https://github.com/AnswerDotAI/llms-txt/releases",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-mcp-registry-candidate",
-    "date": "2026-10-16",
-    "record_id": "mcp-registry",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "The MCP Registry working group charter describes the official MCP Registry as in preview with its API frozen at v0.1 and lists 'Registry API v1 GA: Ideating, no target date'; the server listing endpoint is GET /v0.1/servers, and the server.json schema is being aligned with the Server Card (charter changelog entry 2026-07-30).",
-    "evidence_url": "https://modelcontextprotocol.io/community/working-groups/registry",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-wimse-aims-candidate",
-    "date": "2026-10-16",
-    "record_id": "wimse-aims",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "draft-ietf-wimse-aims-00 is a WIMSE working group document dated 2026-09-15 covering best practices for authentication and authorization of AI agent interactions; it normatively references wimse-arch, wimse-http-signature, transaction tokens and RFC 9728.",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-personal-agent-protocol-candidate",
-    "date": "2026-10-16",
-    "record_id": "personal-agent-protocol",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Sierra's announcement (2026-10-09) presents the Personal Agent Protocol draft as built on OAuth, JWT, OpenAPI and MCP, with 35+ design partners including OpenAI, Visa, Mastercard and Okta, and promises a reference implementation.",
-    "evidence_url": "https://sierra.ai/blog/poppy",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-aauth-hardt-candidate",
-    "date": "2026-10-16",
-    "record_id": "aauth-hardt",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "draft-hardt-oauth-aauth-protocol-11 is dated 2026-09-25 and expires 2027-03-29.",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-hardt-oauth-aauth-protocol/",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-cloudflare-pay-per-crawl-candidate",
-    "date": "2026-10-16",
-    "record_id": "cloudflare-pay-per-crawl",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Cloudflare's documentation says pay per crawl uses HTTP 402 with crawler-price, crawler-exact-price / crawler-max-price and crawler-charged headers, requires Web Bot Auth signing, and is in closed beta (documentation updated 2026-07-28).",
-    "evidence_url": "https://developers.cloudflare.com/ai-crawl-control/features/pay-per-crawl/what-is-pay-per-crawl/",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-wimse-agent-audit-record-candidate",
-    "date": "2026-10-16",
-    "record_id": "wimse-agent-audit-record",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "draft-gilda-wimse-agent-audit-record-02, 'An Audit Record Format for AI Agent Authorization Decisions', is dated 2026-10-05.",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-gilda-wimse-agent-audit-record/",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-mcp-server-cards-candidate",
-    "date": "2026-10-16",
-    "record_id": "mcp-server-cards",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "SEP-2127 (MCP Server Cards) is marked Final as of 2026-10-06.",
-    "evidence_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2127-mcp-server-cards.md",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-mcp-status",
-    "date": "2026-10-16",
-    "record_id": "mcp",
-    "kind": "status",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "MCP Server Cards (SEP-2127) reached Final on 2026-10-06; Skills over MCP (SEP-2640) reached Final on 2026-09-13; next spec release cadence is under discussion (SEP-3398)",
-    "evidence_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2127-mcp-server-cards.md",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-aiagent-auth-replaced",
-    "date": "2026-10-16",
-    "record_id": "aiagent-auth",
-    "kind": "replaced",
-    "field": "governance",
-    "from": "Individual IETF Internet-Draft under consideration by the IETF WIMSE working group (Applications and Real-Time Area); not yet a WG document as of 2026-09-07. Chairs of WIMSE: Justin Richer and Pieter Kasselman (a co-author of this draft, recused from chairing this specific adoption process).",
-    "to": "IETF WIMSE Working Group (adopted as draft-ietf-wimse-aims)",
-    "claim": "draft-ietf-wimse-aims-00 was published as a WIMSE working group document on 2026-09-15 and replaces draft-klrc-aiagent-auth",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-aauth-expired",
-    "date": "2026-10-16",
-    "record_id": "aauth",
-    "kind": "expired",
-    "field": "version",
-    "from": {
-      "date": "2025-10-19",
-      "label": "draft-rosenberg-oauth-aauth-00"
-    },
-    "to": {
-      "label": "draft-rosenberg-oauth-aauth-01",
-      "date": "2026-04-22"
-    },
-    "claim": "draft-rosenberg-oauth-aauth-01 (2026-04-22) expired on 2026-04-23; the active AAuth lineage is draft-hardt-oauth-aauth-protocol-11",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-rosenberg-oauth-aauth/",
-    "detector": "phase-a@2026-10-15",
-    "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
-  },
-  {
-    "id": "q-2026-10-16-aipref-vocabulary-revision",
-    "date": "2026-10-15",
-    "record_id": "aipref-vocabulary",
-    "kind": "revision",
-    "field": "version",
-    "from": {
-      "date": "2026-08-19",
-      "label": "draft-ietf-aipref-vocab-07"
-    },
-    "to": {
-      "label": "draft-ietf-aipref-vocab-08",
-      "date": "2026-09-14"
-    },
-    "claim": "Datatracker shows draft-ietf-aipref-vocab-08, dated 2026-09-14, expires 2027-03-18",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-ietf-aipref-vocab/",
-    "detector": "ietf@1.0",
-    "commit": "97432375977df65c46a270f588706a7c3817276a"
-  },
-  {
-    "id": "q-2026-10-16-ans-expired",
-    "date": "2026-10-15",
-    "record_id": "ans",
-    "kind": "expired",
-    "field": "native_status",
-    "from": "Active Internet-Draft, Intended Status: Informational",
-    "to": "Expired Internet-Draft (expired 2026-10-15)",
-    "claim": "Expired Internet-Draft (expired 2026-10-15)",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-narajala-courtney-ansv2/",
-    "detector": "ietf@1.0",
-    "commit": "97432375977df65c46a270f588706a7c3817276a"
-  },
-  {
-    "id": "q-2026-10-16-ardp-expired",
-    "date": "2026-10-15",
-    "record_id": "ardp",
-    "kind": "expired",
-    "field": "native_status",
-    "from": "Internet-Draft; work in progress",
-    "to": "Expired Internet-Draft (expired 2026-08-28)",
-    "claim": "Expired Internet-Draft (expired 2026-08-28)",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-pioli-agent-discovery/",
-    "detector": "ietf@1.0",
-    "commit": "97432375977df65c46a270f588706a7c3817276a"
-  },
-  {
-    "id": "q-2026-10-16-aauth-expired-2",
-    "date": "2026-10-15",
-    "record_id": "aauth",
-    "kind": "expired",
-    "field": "native_status",
-    "from": "Expired Internet-Draft (expired 2026-04-23); the active AAuth lineage is draft-hardt-oauth-aauth-protocol-11",
-    "to": "Expired Internet-Draft (expired 2026-04-23)",
-    "claim": "Expired Internet-Draft (expired 2026-04-23)",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-rosenberg-oauth-aauth/",
-    "detector": "ietf@1.0",
-    "commit": "97432375977df65c46a270f588706a7c3817276a"
-  },
-  {
-    "id": "q-2026-10-16-aap-expired",
-    "date": "2026-10-15",
-    "record_id": "aap",
-    "kind": "expired",
-    "field": "native_status",
-    "from": "Expired Internet-Draft (individual), per the IETF Datatracker; last updated 2026-08-11, latest revision -01 dated 2026-02-07",
-    "to": "Expired Internet-Draft (expired 2026-08-11)",
-    "claim": "Expired Internet-Draft (expired 2026-08-11)",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-aap-oauth-profile/",
-    "detector": "ietf@1.0",
-    "commit": "97432375977df65c46a270f588706a7c3817276a"
-  },
-  {
-    "id": "q-2026-10-16-agent-audit-trail-revision",
-    "date": "2026-10-15",
-    "record_id": "agent-audit-trail",
-    "kind": "revision",
-    "field": "version",
-    "from": {
-      "date": "2026-09-05",
-      "label": "draft-sharif-agent-audit-trail-03"
-    },
-    "to": {
-      "label": "draft-sharif-agent-audit-trail-08",
-      "date": "2026-10-13"
-    },
-    "claim": "Datatracker shows draft-sharif-agent-audit-trail-08, dated 2026-10-13, expires 2027-04-16",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-sharif-agent-audit-trail/",
-    "detector": "ietf@1.0",
-    "commit": "97432375977df65c46a270f588706a7c3817276a"
-  },
-  {
-    "id": "q-2026-10-16-aauth-hardt-expired",
-    "date": "2026-10-15",
-    "record_id": "aauth-hardt",
-    "kind": "expired",
-    "field": "native_status",
-    "from": "Active Internet-Draft, draft-hardt-oauth-aauth-protocol-11 (2026-09-25, expires 2027-03-29); companion draft-hardt-aauth-headers-00 (2026-10-04)",
-    "to": "Expired Internet-Draft (expired 2026-10-04)",
-    "claim": "Expired Internet-Draft (expired 2026-10-04)",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-headers/",
-    "detector": "ietf@1.0",
-    "commit": "97432375977df65c46a270f588706a7c3817276a"
-  },
-  {
-    "id": "q-2026-10-16-agent-client-protocol-version-2",
-    "date": "2026-10-15",
-    "record_id": "agent-client-protocol",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "label": "v1.11.0 (schema v1.25.0); v2 unstable",
-      "date": "2026-10-09"
-    },
-    "to": {
-      "label": "schema-v1.25.0",
-      "date": "2026-10-09"
-    },
-    "claim": "schema-v1.25.0 released 2026-10-09",
-    "evidence_url": "https://github.com/agentclientprotocol/agent-client-protocol/releases/tag/schema-v1.25.0",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-agent-communication-protocol-version",
-    "date": "2026-10-15",
-    "record_id": "agent-communication-protocol",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": "2025-08",
-      "label": "0.2.0 (final OpenAPI spec, archived)"
-    },
-    "to": {
-      "label": "v1.0.3",
-      "date": "2025-08-21"
-    },
-    "claim": "v1.0.3 released 2025-08-21",
-    "evidence_url": "https://github.com/i-am-bee/acp/releases/tag/v1.0.3",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-agent-communication-protocol-dormant",
-    "date": "2026-10-15",
-    "record_id": "agent-communication-protocol",
-    "kind": "dormant",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "No push since 2025-08-25 (over 180 days)",
-    "evidence_url": "https://github.com/i-am-bee/acp/releases/tag/v1.0.3",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-ucp-version",
-    "date": "2026-10-15",
-    "record_id": "ucp",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": "2026-08-25",
-      "label": "documentation site dated 2026-08-25; active/expanding specification (Lodging and Food detailed specs pending)"
-    },
-    "to": {
-      "label": "v2026-08-25",
-      "date": "2026-08-25"
-    },
-    "claim": "v2026-08-25 released 2026-08-25",
-    "evidence_url": "https://github.com/Universal-Commerce-Protocol/ucp/releases/tag/v2026-08-25",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-ap2-checkout-mandate-version",
-    "date": "2026-10-15",
-    "record_id": "ap2-checkout-mandate",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": null,
-      "label": "AP2 v0.2"
-    },
-    "to": {
-      "label": "v0.2.0",
-      "date": "2026-04-28"
-    },
-    "claim": "v0.2.0 released 2026-04-28",
-    "evidence_url": "https://github.com/google-agentic-commerce/AP2/releases/tag/v0.2.0",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-x402-version",
-    "date": "2026-10-15",
-    "record_id": "x402",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": null,
-      "label": "x402 protocol specification v2, transports-v2/http.md"
-    },
-    "to": {
-      "label": "v1",
-      "date": null
-    },
-    "claim": "latest tag v1",
-    "evidence_url": "https://github.com/x402-foundation/x402/releases/tag/v1",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-mpp-version",
-    "date": "2026-10-15",
-    "record_id": "mpp",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "label": "draft-httpauth-payment-01",
-      "date": "2026-09-09"
-    },
-    "to": {
-      "label": "spec-artifacts-fe0d414f3d71469d5784a2ce973aa7269ee0c8b7",
-      "date": "2026-09-09"
-    },
-    "claim": "spec-artifacts-fe0d414f3d71469d5784a2ce973aa7269ee0c8b7 released 2026-09-09",
-    "evidence_url": "https://github.com/tempoxyz/mpp-specs/releases/tag/spec-artifacts-fe0d414f3d71469d5784a2ce973aa7269ee0c8b7",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-llms-txt-version",
-    "date": "2026-10-15",
-    "record_id": "llms-txt",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": "2026-08",
-      "label": "v2"
-    },
-    "to": {
-      "label": "0.0.7",
-      "date": "2026-09-24"
-    },
-    "claim": "0.0.7 released 2026-09-24",
-    "evidence_url": "https://github.com/AnswerDotAI/llms-txt/releases/tag/0.0.7",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-aid-version",
-    "date": "2026-10-15",
-    "record_id": "aid",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": "2026-06-01",
-      "label": "v2.1.0 (aid2 wire format; aid1 legacy)"
-    },
-    "to": {
-      "label": "packages/aid-go/v2.1.1",
-      "date": "2026-06-01"
-    },
-    "claim": "packages/aid-go/v2.1.1 released 2026-06-01",
-    "evidence_url": "https://github.com/agentcommunity/agent-identity-discovery/releases/tag/packages/aid-go/v2.1.1",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-a2ui-version",
-    "date": "2026-10-15",
-    "record_id": "a2ui",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": "2026-06-08",
-      "label": "v1.0 (Candidate); v0.9.1 (Current)"
-    },
-    "to": {
-      "label": "python/a2ui-agent-sdk/v0.8.0",
-      "date": "2026-10-08"
-    },
-    "claim": "python/a2ui-agent-sdk/v0.8.0 released 2026-10-08",
-    "evidence_url": "https://github.com/a2ui-project/a2ui/releases/tag/python/a2ui-agent-sdk/v0.8.0",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-ag-ui-version-2",
-    "date": "2026-10-15",
-    "record_id": "ag-ui",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "label": "1.0",
-      "date": "2026-09-18"
-    },
-    "to": {
-      "label": "release/2026-10-13",
-      "date": "2026-10-13"
-    },
-    "claim": "release/2026-10-13 released 2026-10-13",
-    "evidence_url": "https://github.com/ag-ui-protocol/ag-ui/releases/tag/release/2026-10-13",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-osi-version",
-    "date": "2026-10-15",
-    "record_id": "osi",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": null,
-      "label": "0.2.0.dev0 (draft, in development); last tagged pre-release osi-0.1.1-rc1"
-    },
-    "to": {
-      "label": "osi-0.1.1-rc1",
-      "date": null
-    },
-    "claim": "latest tag osi-0.1.1-rc1",
-    "evidence_url": "https://github.com/apache/ossie/releases/tag/osi-0.1.1-rc1",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-tap-dormant",
-    "date": "2026-10-15",
-    "record_id": "tap",
-    "kind": "dormant",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "No push since 2025-10-28 (over 180 days)",
-    "evidence_url": "https://github.com/visa/trusted-agent-protocol",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-agora-protocol-dormant",
-    "date": "2026-10-15",
-    "record_id": "agora-protocol",
-    "kind": "dormant",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "No push since 2025-03-04 (over 180 days)",
-    "evidence_url": "https://github.com/agora-protocol/agora-protocol.github.io",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-s402-status",
-    "date": "2026-10-15",
-    "record_id": "s402",
-    "kind": "status",
-    "field": "native_status",
-    "from": "Draft wire-format specification, actively developed (commits as recent as 2026-09-04)",
-    "to": "Archived repository (observed 2026-10-16)",
-    "claim": "Repository archived by its owner",
-    "evidence_url": "https://github.com/s402-protocol/core/releases/tag/v0.8.0",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-slim-version",
-    "date": "2026-10-15",
-    "record_id": "slim",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "label": "draft-mpsb-agntcy-slim-02",
-      "date": "2026-07-19"
-    },
-    "to": {
-      "label": "slimctl-v3.4.2",
-      "date": "2026-10-15"
-    },
-    "claim": "slimctl-v3.4.2 released 2026-10-15",
-    "evidence_url": "https://github.com/agntcy/slim/releases/tag/slimctl-v3.4.2",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-agent-permissions-json-dormant",
-    "date": "2026-10-15",
-    "record_id": "agent-permissions-json",
-    "kind": "dormant",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "No push since 2025-12-10 (over 180 days)",
-    "evidence_url": "https://github.com/las-wg/agent-permissions.json",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-mcp-apps-version-2",
-    "date": "2026-10-15",
-    "record_id": "mcp-apps",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "label": "spec 2026-01-26; SDK ext-apps v2.0.3",
-      "date": "2026-09-25"
-    },
-    "to": {
-      "label": "v2.0.3",
-      "date": "2026-09-25"
-    },
-    "claim": "v2.0.3 released 2026-09-25",
-    "evidence_url": "https://github.com/modelcontextprotocol/ext-apps/releases/tag/v2.0.3",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-agents-json-version",
-    "date": "2026-10-15",
-    "record_id": "agents-json",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": "2025-03",
-      "label": "0.1.0"
-    },
-    "to": {
-      "label": "resend",
-      "date": "2025-02-09"
-    },
-    "claim": "resend released 2025-02-09",
-    "evidence_url": "https://github.com/wild-card-ai/agents-json/releases/tag/resend",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-agents-json-dormant-2",
-    "date": "2026-10-15",
-    "record_id": "agents-json",
-    "kind": "dormant",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "No push since 2025-08-21 (over 180 days)",
-    "evidence_url": "https://github.com/wild-card-ai/agents-json/releases/tag/resend",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-agent-connect-protocol-dormant",
-    "date": "2026-10-15",
-    "record_id": "agent-connect-protocol",
-    "kind": "dormant",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "No push since 2025-05-23 (over 180 days)",
-    "evidence_url": "https://github.com/agntcy/acp-spec",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-agent-protocol-aief-version",
-    "date": "2026-10-15",
-    "record_id": "agent-protocol-aief",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "date": null,
-      "label": "unversioned OpenAPI spec (schemas/openapi.yml)"
-    },
-    "to": {
-      "label": "js-sdk-v1.0.5",
-      "date": "2024-04-02"
-    },
-    "claim": "js-sdk-v1.0.5 released 2024-04-02",
-    "evidence_url": "https://github.com/agi-inc/agent-protocol/releases/tag/js-sdk-v1.0.5",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-agent-protocol-aief-dormant",
-    "date": "2026-10-15",
-    "record_id": "agent-protocol-aief",
-    "kind": "dormant",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "No push since 2025-04-08 (over 180 days)",
-    "evidence_url": "https://github.com/agi-inc/agent-protocol/releases/tag/js-sdk-v1.0.5",
-    "detector": "github@1.0",
-    "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
-  },
-  {
-    "id": "q-2026-10-16-dawn-agent-discovery-framework-candidate",
-    "date": "2026-10-15",
-    "record_id": "dawn-agent-discovery-framework",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "The draft describes a two-layer federated reference architecture (Local Discovery Plane and Federation Plane) with Federation Gateways, an Export Policy Engine and Federation Metadata Records for initial agent discovery; it is informational and defines no normative protocol formats.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-zhang-dawn-agent-discovery-framework-06",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
-  },
-  {
-    "id": "q-2026-10-16-agent-identity-document-candidate",
-    "date": "2026-10-15",
-    "record_id": "agent-identity-document",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Internet-Draft specifying a JSON Agent Identity Document at /.well-known/agent-identity.json on a provider-assigned hostname, with lifecycle status, dated expiring checks on the operator, and a request to register the well-known URI suffix; states it describes a practice in production at one provider.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-alla-agent-identity-document-01",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
-  },
-  {
-    "id": "q-2026-10-16-mcp-dns-discovery-candidate",
-    "date": "2026-10-15",
-    "record_id": "mcp-dns-discovery",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "The Internet-Draft defines three DNS TXT records (_mcp, _org-alter, _alter) for MCP server discovery, organisational identity, and a signed Ed25519 handle envelope, with Informational intended status and expiry on 12 April 2027.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
-  },
-  {
-    "id": "q-2026-10-16-agent-principal-binding-candidate",
-    "date": "2026-10-15",
-    "record_id": "agent-principal-binding",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Internet-Draft -08 published 14 October 2026, Intended Status Informational, defining a verifier-facing claim matrix format, row-outcome semantics (satisfied, unsatisfied, indeterminate, unsupported, not-evaluated, not-applicable) and dependency-closure rules for composed mappings. States it does not define a new agent protocol, token format, audit log or authorization system.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-bu-agentproto-security-principal-binding-08",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
-  },
-  {
-    "id": "q-2026-10-16-aip-delegation-chain-candidate",
-    "date": "2026-10-15",
-    "record_id": "aip-delegation-chain",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "The draft specifies AIP, a delegation chain model with an attenuation invariant, a verification algorithm, JWT-chain and Biscuit encodings, and bindings for MCP, A2A and HTTP.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-prakash-aip-02",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
-  },
-  {
-    "id": "q-2026-10-16-credential-delegation-protocol-wimse-candidate",
-    "date": "2026-10-15",
-    "record_id": "credential-delegation-protocol-wimse",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Internet-Draft draft-sweeney-wimse-credential-delegation-01, published 13 October 2026, Intended Status Standards Track, workgroup WIMSE; profiles RFC 8693, RFC 9449, RFC 9396 and OpenID CIBA for credential delegation to AI agents.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-sweeney-wimse-credential-delegation-01",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
-  },
-  {
-    "id": "q-2026-10-16-agent-delegation-receipts-candidate",
-    "date": "2026-10-15",
-    "record_id": "agent-delegation-receipts",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "The Internet-Draft defines the Agent Delegation Receipt as a signed record of what a human principal authorized an AI agent to do, using a JWS profile over JCS-canonicalized JSON and a COSE_Sign1 profile, plus scope attenuation for delegation chains and a revocation registry with cascade semantics.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-nelson-agent-delegation-receipts-11",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
-  },
-  {
-    "id": "q-2026-10-16-aauth-r3-candidate",
-    "date": "2026-10-15",
-    "record_id": "aauth-r3",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Individual-submission companion to the AAuth Protocol by Dick Hardt (Hellō); -00, marked Exploratory Draft, no known implementations. It replaces scope strings with resource-named operations in vocabularies (MCP, OpenAPI, gRPC, GraphQL, AsyncAPI, WSDL, OData), content-addressed R3 documents identified by SHA-256, and per-call proposals.",
-    "evidence_url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-09-28-aauth-rich-resource-requests",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
-  },
-  {
-    "id": "q-2026-10-16-acip-candidate",
-    "date": "2026-10-15",
-    "record_id": "acip",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Internet-Draft defines ACIP, a YAML-based format and host-resolution behavior for coding-agent context sources, with source precedence, file matching, constraint/directive/preference distinctions, and a resolution receipt.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-agarwal-acip-00",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
-  },
-  {
-    "id": "q-2026-10-16-knowledge-linkset-candidate",
-    "date": "2026-10-15",
-    "record_id": "knowledge-linkset",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Internet-Draft -01 defines the 'knowledge-linkset' well-known URI serving an RFC 9264 link set of knowledge artefacts with optional SHA-256 digests and a profile URI; intended status Informational, expires 17 April 2027.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-besleaga-agentic-knowledge-wellknown-01",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
-  },
-  {
-    "id": "q-2026-10-16-scitt-ai-agent-execution-candidate",
-    "date": "2026-10-15",
-    "record_id": "scitt-ai-agent-execution",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Internet-Draft defines the AgentInteractionRecord (AIR) as a COSE_Sign1 signed statement payload for material AI agent actions. It maps the Agent Operator to SCITT Issuer and an independent Evidence Custodian to Transparency Service, and defines registration policy, redaction receipts and regulatory mappings (EU AI Act Arts. 12/19, DORA, NIST AI RMF, MAS, PCI DSS, MiFID II).",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-emirdag-scitt-ai-agent-execution-01",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
-  },
-  {
-    "id": "q-2026-10-16-agent-channel-fan-out-candidate",
-    "date": "2026-10-15",
-    "record_id": "agent-channel-fan-out",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Internet-Draft specifies a JSON agent-channel frame with a closed catalogue of kinds, identity attribution pair, provenance block, recipient scope expansion, and per-handle Server-Sent Events delivery with subscribe-time filters.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-morrison-agent-channel-fan-out-02",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
-  },
-  {
-    "id": "q-2026-10-16-aagv-candidate",
-    "date": "2026-10-15",
-    "record_id": "aagv",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "The Internet-Draft defines AAGV, a JSON interchange profile and deterministic validation algorithm for authority roots, consequential sinks, normal paths, revocation cut sets and snapshot edge state, with outcomes INVALID, INDETERMINATE, VALID_OPEN and VALID_CLOSED.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-watts-agentic-authority-graph-validation-00",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
-  },
-  {
-    "id": "q-2026-10-16-agentic-payments-gating-model-candidate",
-    "date": "2026-10-15",
-    "record_id": "agentic-payments-gating-model",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Internet-Draft draft-king-yew-choo-agentic-payments-01 published 8 October 2026, Intended Status Informational. It defines no protocol, wire format, or conformance requirements, and presents a server-side payment/entitlement gate (g*) and task state machine for agent-initiated paid asynchronous HTTP tasks.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-king-yew-choo-agentic-payments-01",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
-  },
-  {
-    "id": "q-2026-10-16-web-agent-protocol-dormant-2",
-    "date": "2026-10-16",
-    "record_id": "web-agent-protocol",
-    "kind": "dormant",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "No push since 2025-06-19 (over 180 days)",
-    "evidence_url": "https://github.com/OTA-Tech-AI/web-agent-protocol/releases/tag/wap-replay-tool-1.0.0",
-    "detector": "github@1.0",
-    "commit": "a777470eae79c475313169f8056fc11037c20c3e"
-  },
-  {
-    "id": "q-2026-10-16-mcp-registry-version",
-    "date": "2026-10-16",
-    "record_id": "mcp-registry",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "label": "API v0.1 (frozen, preview)",
-      "date": null
-    },
-    "to": {
-      "label": "v1.8.1",
-      "date": "2026-08-06"
-    },
-    "claim": "v1.8.1 released 2026-08-06",
-    "evidence_url": "https://github.com/modelcontextprotocol/registry/releases/tag/v1.8.1",
-    "detector": "github@1.0",
-    "commit": "a777470eae79c475313169f8056fc11037c20c3e"
-  },
-  {
-    "id": "q-2026-10-16-mcp-server-cards-version",
-    "date": "2026-10-16",
-    "record_id": "mcp-server-cards",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "label": "SEP-2127 (Final)",
-      "date": "2026-10-06"
-    },
-    "to": {
-      "label": "2026-07-28",
-      "date": "2026-10-06"
-    },
-    "claim": "2026-07-28 released 2026-10-06",
-    "evidence_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/releases/tag/2026-07-28",
-    "detector": "github@1.0",
-    "commit": "a777470eae79c475313169f8056fc11037c20c3e"
-  },
-  {
-    "id": "q-2026-10-16-aauth-hardt-status",
-    "date": "2026-10-16",
-    "record_id": "aauth-hardt",
-    "kind": "status",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Companion draft draft-hardt-aauth-headers-00 expired on 2026-10-04; the record follows draft-hardt-oauth-aauth-protocol",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-headers/",
-    "detector": "ietf@1.0",
-    "commit": "055dd38ff94d85a530545304a49d32a1cd02d17c"
-  },
-  {
-    "id": "q-2026-10-16-aauth-r3-revision",
-    "date": "2026-10-16",
-    "record_id": "aauth-r3",
-    "kind": "revision",
-    "field": "version",
-    "from": {
-      "label": "-00",
-      "date": "2026-09-28"
-    },
-    "to": {
-      "label": "draft-hardt-aauth-r3-00",
-      "date": "2026-09-28"
-    },
-    "claim": "Datatracker shows draft-hardt-aauth-r3-00, dated 2026-09-28, expires 2027-04-01",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-r3/",
-    "detector": "ietf@1.0",
-    "commit": "055dd38ff94d85a530545304a49d32a1cd02d17c"
-  },
-  {
-    "id": "q-2026-10-16-ag-ui-sdk-release",
-    "date": "2026-10-16",
-    "record_id": "ag-ui",
-    "kind": "sdk-release",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "@ag-ui/core 1.0.3 published 2026-10-16",
-    "evidence_url": "https://www.npmjs.com/package/@ag-ui/core",
-    "detector": "npm@1.0",
-    "commit": "c8408d99d6f3b6d190aef664081d3f713473c2f5"
-  },
-  {
-    "id": "q-2026-10-17-adcp-version",
-    "date": "2026-10-17",
-    "record_id": "adcp",
-    "kind": "version",
-    "field": "version",
-    "from": {
-      "label": "v3.2.4",
-      "date": "2026-10-12"
-    },
-    "to": {
-      "label": "v3.2.5",
-      "date": "2026-10-16"
-    },
-    "claim": "v3.2.5 released 2026-10-16",
-    "evidence_url": "https://github.com/adcontextprotocol/adcp/releases/tag/v3.2.5",
-    "detector": "github@1.0",
-    "commit": "ce9d31135357dd56973a7446bc76d139dee8dd0d"
-  },
-  {
-    "id": "q-2026-10-17-wimse-agent-audit-record-replaced",
-    "date": "2026-10-17",
-    "record_id": "wimse-agent-audit-record",
-    "kind": "replaced",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Datatracker marks draft-gilda-wimse-agent-audit-record as replaced by draft-gilda-audit-agent-audit-record",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-gilda-wimse-agent-audit-record/",
-    "detector": "ietf@1.0",
-    "commit": "1341c0cb6376ec55a84257996c2fb68140d18b1f"
-  },
-  {
-    "id": "q-2026-10-19-idmandat-credential-candidate",
-    "date": "2026-10-19",
-    "record_id": "idmandat-credential",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Internet-Draft defining a credential file at /.well-known/idmandat.json, a DNS TXT proof record at _idmandat, and a signed Ed25519 registry lookup answer format; described as a deployed beta (version 0.3).",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-koenig-idmandat-credential-00",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "4ffb595f2efd375ae40065d117adc546e48c52fc"
-  },
-  {
-    "id": "q-2026-10-19-lws10-authn-ssi-cid-candidate",
-    "date": "2026-10-19",
-    "record_id": "lws10-authn-ssi-cid",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "W3C Working Draft of 15 October 2026 defining an authentication suite for Linked Web Storage that lets clients sign their own identity tokens (JWT) validated through W3C Controlled Identifiers documents.",
-    "evidence_url": "https://w3.org/TR/lws10-authn-ssi-cid",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "4ffb595f2efd375ae40065d117adc546e48c52fc"
-  },
-  {
-    "id": "q-2026-10-19-wimse-workload-identity-metadata-candidate",
-    "date": "2026-10-19",
-    "record_id": "wimse-workload-identity-metadata",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Internet-Draft draft-heigh-wimse-workload-identity-metadata-00 published 16 October 2026 by S. Heigh, J. Salowey (Palo Alto Networks) and Y. Rosomakho (Zscaler); specifies workload metadata attributes delivered in JWT-based credentials or via an authenticated metadata endpoint, separate from the workload identifier.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-heigh-wimse-workload-identity-metadata-00",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "4ffb595f2efd375ae40065d117adc546e48c52fc"
-  },
-  {
-    "id": "q-2026-10-19-haace-candidate",
-    "date": "2026-10-19",
-    "record_id": "haace",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "The Internet-Draft defines HAACE, a protocol-neutral profile binding an exact agent action to identity status, authorization state, policy, assurance stage, evidence state, authority epoch, revocation state and oversight requirements, with fail-closed handling and non-bearer decision and execution receipts.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-watts-high-assurance-agent-control-envelope-00",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "4ffb595f2efd375ae40065d117adc546e48c52fc"
-  },
-  {
-    "id": "q-2026-10-19-local-tool-call-proof-candidate",
-    "date": "2026-10-19",
-    "record_id": "local-tool-call-proof",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "The draft defines a per-call proof for local tool invocation: a Call Authority outside the agent process issues short-lived, single-use proofs bound to the tool name and arguments through a canonical action digest (JCS + SHA-256), and the tool server rejects invocations lacking a valid proof. It includes an MCP stdio binding.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-lee-wimse-local-tool-call-proof-01",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "4ffb595f2efd375ae40065d117adc546e48c52fc"
-  },
-  {
-    "id": "q-2026-10-19-agent-authorization-envelope-candidate",
-    "date": "2026-10-19",
-    "record_id": "agent-authorization-envelope",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "The AAE is a W3C Verifiable Credential signed as a compact JWS (EdDSA/Ed25519) with mandatory mandate, constraints and validity blocks; the key is named by a DID URL.",
-    "evidence_url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-05-21-agent-authorization-envelope-aae",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "4ffb595f2efd375ae40065d117adc546e48c52fc"
-  },
-  {
-    "id": "q-2026-10-19-a2wp-candidate",
-    "date": "2026-10-19",
-    "record_id": "a2wp",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "The Internet-Draft defines A2WP, where an AI Agent passes a credential offer or presentation request unchanged to a Wallet. The Wallet runs OpenID4VCI or OpenID4VP, and credentials, presentations and keys never reach the agent. The draft has Submit, Get and Cancel calls and an operation lifecycle of pending, completed, failed and cancelled.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-senarath-a2wp-01",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "4ffb595f2efd375ae40065d117adc546e48c52fc"
-  },
-  {
-    "id": "q-2026-10-19-agent-decision-commitment-candidate",
-    "date": "2026-10-19",
-    "record_id": "agent-decision-commitment",
-    "kind": "candidate",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Internet-Draft defines the Agent Decision Commitment: a salted hash commitment to a decision record, carried as a selectively disclosable claim in a payment mandate and registered with a transparency service, with bindings to three agent payment protocols and account-to-account credit transfers, plus a witnessed reciprocal exchange.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-milan-agent-decision-commitment-00",
-    "detector": "sonnet@candidate-record-v1",
-    "commit": "4ffb595f2efd375ae40065d117adc546e48c52fc"
-  },
-  {
-    "id": "q-2026-10-20-mcp-discover",
-    "date": "2026-10-20",
-    "record_id": "mcp",
-    "kind": "revision",
-    "field": "probe",
-    "from": "POST initialize; Server Cards described as experimental",
-    "to": "server/discover for 2026-07-28; initialize kept for 2025-11-25 and earlier; SEP-2127 card is Final",
-    "claim": "The 2026-07-28 specification retired initialize, initialized, and Mcp-Session-Id. Capabilities are read with server/discover. SEP-2127 Server Cards are Final, and the live server/discover result wins when it disagrees with the static card.",
-    "evidence_url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
-    "detector": "staged-research@2026-10-20",
-    "commit": null
-  },
-  {
-    "id": "q-2026-10-20-mcp-census",
-    "date": "2026-10-20",
-    "record_id": "mcp",
-    "kind": "status",
-    "field": "adoption",
-    "from": "claimed; no third-party census recorded",
-    "to": "measured; three registry censuses kept separate",
-    "claim": "VerifyMCP (2026-10-19) counts 47,870 logical servers. Discussion 1580 (2026-08-27) counts 82,994 version records and 25,125 distinct isLatest servers. Discussion 1548 (2026-08-19) counts 22,636 active latest registrations. The three figures are not averaged.",
-    "evidence_url": "https://verifymcp.io/stats",
-    "detector": "staged-research@2026-10-20",
-    "commit": null
-  },
-  {
-    "id": "q-2026-10-20-a2a-aaif",
-    "date": "2026-10-20",
-    "record_id": "a2a",
-    "kind": "status",
-    "field": "governance",
-    "from": "Linux Foundation Technical Steering Committee",
-    "to": "Linux Foundation TSC, and Agentic AI Foundation since 17 August 2026",
-    "claim": "A2A joined the Agentic AI Foundation on 17 August 2026. The 150-organization figure from the 9 April 2026 Linux Foundation release stays labelled claimed.",
-    "evidence_url": "https://aaif.io/blog/a2a-joins-aaif",
-    "detector": "staged-research@2026-10-20",
-    "commit": null
-  },
-  {
-    "id": "q-2026-10-20-a2a-cards",
-    "date": "2026-10-20",
-    "record_id": "a2a",
-    "kind": "revision",
-    "field": "probe",
-    "from": "parse required a top-level url",
-    "to": "accept v1.0 supportedInterfaces cards and legacy v0.3 cards",
-    "claim": "v1.0 places url, protocolBinding, and protocolVersion inside supportedInterfaces[]. Four card censuses are recorded with their frames: Agenstry (65.5% 0.3.x of 1,910), Emissar (276 on Tranco 1M), APIs.io (421 of 4,718 hosts), rStation (661 on 2,164 x402 hosts).",
-    "evidence_url": "https://a2a-protocol.org/latest/whats-new-v1/",
-    "detector": "staged-research@2026-10-20",
-    "commit": null
-  },
-  {
-    "id": "q-2026-10-20-webbotauth-verifier",
-    "date": "2026-10-20",
-    "record_id": "webbotauth",
-    "kind": "revision",
-    "field": "summary_md",
-    "from": null,
-    "to": "Cloudflare verifier limits recorded",
-    "claim": "Cloudflare's Web Bot Auth verifier documentation, updated 8 October 2026, rejects @query-params and @status.",
-    "evidence_url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/",
-    "detector": "staged-research@2026-10-20",
-    "commit": null
-  },
-  {
-    "id": "q-2026-10-20-workload-authz-grant",
-    "date": "2026-10-20",
-    "record_id": "workload-authz-grant",
-    "kind": "revision",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "draft-carleton-workload-authz-grant-01 (22 September 2026, expires 26 March 2027, Informational) lets a platform-signed JWT obtain a third-party access token for a workload. The workload id is opaque and is never reassigned.",
-    "evidence_url": "https://www.ietf.org/archive/id/draft-carleton-workload-authz-grant-01.txt",
-    "detector": "staged-research@2026-10-20",
-    "commit": null
-  },
-  {
-    "id": "q-2026-10-20-oauth-id-continuation",
-    "date": "2026-10-20",
-    "record_id": "oauth-id-continuation",
-    "kind": "revision",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "draft-mcguinness-oauth-id-continuation-assertion-02 (9 September 2026, expires 13 March 2027, Standards Track, OAuth WG) defines a short-lived sender-constrained JWT used as a token-exchange subject token so a workload can obtain an ID-JAG after the user has left.",
-    "evidence_url": "https://www.ietf.org/archive/id/draft-mcguinness-oauth-id-continuation-assertion-02.txt",
-    "detector": "staged-research@2026-10-20",
-    "commit": null
-  },
-  {
-    "id": "q-2026-10-20-oauth-agent-delegation",
-    "date": "2026-10-20",
-    "record_id": "oauth-agent-delegation",
-    "kind": "revision",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "draft-hamr-oauth-agent-delegation-02 (19 September 2026, expires 23 March 2027, Standards Track, OAuth WG) defines an Agent-Delegation header on RFC 9421. Each link can only narrow scope, floors, and expiry. Call classes are r, w, and x.",
-    "evidence_url": "https://www.ietf.org/archive/id/draft-hamr-oauth-agent-delegation-02.txt",
-    "detector": "staged-research@2026-10-20",
-    "commit": null
-  },
-  {
-    "id": "q-2026-10-20-opena2a-aap",
-    "date": "2026-10-20",
-    "record_id": "opena2a-aap",
-    "kind": "revision",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "draft-fane-opena2a-aap-02 (30 September 2026, expires 3 April 2027) is a Standards Track individual submission by A. Fane, OpenA2A. It is a different document from the expired draft-aap-oauth-profile-01.",
-    "evidence_url": "https://www.ietf.org/archive/id/draft-fane-opena2a-aap-02.txt",
-    "detector": "staged-research@2026-10-20",
-    "commit": null
-  },
-  {
-    "id": "q-2026-10-21-a2a-sdk-release",
-    "date": "2026-10-21",
-    "record_id": "a2a",
-    "kind": "sdk-release",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "a2a-sdk 1.2.3 published 2026-10-19",
-    "evidence_url": "https://pypi.org/project/a2a-sdk/",
-    "detector": "pypi@1.0",
-    "commit": "2895988c1fb974d0f760b52f1ec58d2406d1404e"
-  },
-  {
-    "id": "q-2026-10-21-cloudflare-content-signals-policy-news",
-    "date": "2026-10-21",
-    "record_id": "cloudflare-content-signals-policy",
-    "kind": "news",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "feed item: Introducing full transaction detection for Cloudflare WAF",
-    "evidence_url": null,
-    "detector": null,
-    "commit": "2895988c1fb974d0f760b52f1ec58d2406d1404e"
-  },
-  {
-    "id": "q-2026-10-21-cloudflare-content-signals-policy-news-5",
-    "date": "2026-10-21",
-    "record_id": "cloudflare-content-signals-policy",
-    "kind": "news",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "feed item: Introducing tsrs: A port of TypeScript to Rust",
-    "evidence_url": null,
-    "detector": null,
-    "commit": "2895988c1fb974d0f760b52f1ec58d2406d1404e"
-  },
-  {
-    "id": "q-2026-10-22-wimse-revision",
-    "date": "2026-10-22",
-    "record_id": "wimse",
-    "kind": "revision",
-    "field": "evidence",
-    "from": null,
-    "to": null,
-    "claim": "Datatracker shows draft-ietf-wimse-http-signature-08, dated 2026-10-20 (related draft)",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-http-signature/",
-    "detector": "ietf@1.0",
-    "commit": "d1694780b00398d82f303aba777eee68b5543dfc"
-  },
-  {
-    "id": "q-2026-10-22-dawn-agent-discovery-framework-revision",
-    "date": "2026-10-22",
-    "record_id": "dawn-agent-discovery-framework",
-    "kind": "revision",
-    "field": "version",
-    "from": {
-      "label": "draft-zhang-dawn-agent-discovery-framework-08",
-      "date": "2026-10-19"
-    },
-    "to": {
-      "label": "draft-zhang-dawn-agent-discovery-framework-09",
-      "date": "2026-10-21"
-    },
-    "claim": "Datatracker shows draft-zhang-dawn-agent-discovery-framework-09, dated 2026-10-21, expires 2027-04-24",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-zhang-dawn-agent-discovery-framework/",
-    "detector": "ietf@1.0",
-    "commit": "d1694780b00398d82f303aba777eee68b5543dfc"
-  },
-  {
-    "id": "q-2026-10-22-jafar-expiring",
-    "date": "2026-10-22",
-    "record_id": "jafar",
-    "kind": "expiring",
-    "field": "freshness",
-    "from": null,
-    "to": "review-due",
-    "claim": "draft-illyes-webbotauth-jafar-00 expires on 2026-10-23",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-illyes-webbotauth-jafar/",
-    "detector": "ietf@1.0",
-    "commit": "d1694780b00398d82f303aba777eee68b5543dfc"
-  },
-  {
-    "id": "q-2026-10-22-otel-genai-semconv-source-unavailable",
-    "date": "2026-10-22",
-    "record_id": "otel-genai-semconv",
-    "kind": "source-unavailable",
-    "field": "freshness",
-    "from": null,
-    "to": "source-unavailable",
-    "claim": "Source for watch github:otel-genai-semconv:open-telemetry/semantic-conventions-genai failed 3 consecutive polls",
-    "evidence_url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md",
-    "detector": "github@1.0",
-    "commit": "290fb8cef2bf71d3f9af2c4d2b945d5ef4faf91a"
-  },
-  {
-    "id": "q-2026-10-23-identity-assertion-authz-grant-expiring",
-    "date": "2026-10-23",
-    "record_id": "identity-assertion-authz-grant",
-    "kind": "expiring",
-    "field": "freshness",
-    "from": null,
-    "to": "review-due",
-    "claim": "draft-ietf-oauth-identity-assertion-authz-grant-04 expires on 2026-11-22",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-ietf-oauth-identity-assertion-authz-grant/",
-    "detector": "ietf@1.0",
-    "commit": "e29fb0b2e5672233e2cdf2961e1b49b945fc4f85"
-  },
-  {
-    "id": "q-2026-10-23-mcp-dns-discovery-text-change",
-    "date": "2026-10-23",
-    "record_id": "mcp-dns-discovery",
-    "kind": "text-change",
-    "field": "version",
-    "from": {
-      "label": "draft-morrison-mcp-dns-discovery-08",
-      "date": "2026-10-09"
-    },
-    "to": {
-      "label": "draft-morrison-mcp-dns-discovery-09",
-      "date": null
-    },
-    "claim": "A newer revision, draft-morrison-mcp-dns-discovery-09, now exists; the -08 page is marked as an older version of an Internet-Draft whose latest revision is Active.",
-    "evidence_url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08",
-    "detector": "sonnet@patch-v1",
-    "commit": "e29fb0b2e5672233e2cdf2961e1b49b945fc4f85"
-  },
-  {
-    "id": "q-2026-10-23-agent-delegation-receipts-revision",
-    "date": "2026-10-23",
-    "record_id": "agent-delegation-receipts",
-    "kind": "revision",
-    "field": "version",
-    "from": {
-      "label": "draft-nelson-agent-delegation-receipts-14",
-      "date": "2026-10-15"
-    },
-    "to": {
-      "label": "draft-nelson-agent-delegation-receipts-15",
-      "date": "2026-10-22"
-    },
-    "claim": "Datatracker shows draft-nelson-agent-delegation-receipts-15, dated 2026-10-22, expires 2027-04-25",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-nelson-agent-delegation-receipts/",
-    "detector": "ietf@1.0",
-    "commit": "e29fb0b2e5672233e2cdf2961e1b49b945fc4f85"
-  },
-  {
-    "id": "q-2026-10-23-jafar-revision",
-    "date": "2026-10-23",
-    "record_id": "jafar",
-    "kind": "revision",
-    "field": "freshness",
-    "from": "review-due",
-    "to": null,
-    "claim": "Datatracker shows draft-illyes-webbotauth-jafar-01, dated 2026-10-22, expires 2027-04-25",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-illyes-webbotauth-jafar/",
-    "detector": "ietf@1.0",
-    "commit": "e29fb0b2e5672233e2cdf2961e1b49b945fc4f85"
-  },
-  {
-    "id": "q-2026-10-23-oauth-agent-delegation-revision",
-    "date": "2026-10-23",
-    "record_id": "oauth-agent-delegation",
-    "kind": "revision",
-    "field": "version",
-    "from": {
-      "label": "draft-hamr-oauth-agent-delegation-02",
-      "date": "2026-09-19"
-    },
-    "to": {
-      "label": "draft-hamr-oauth-agent-delegation-03",
-      "date": "2026-10-22"
-    },
-    "claim": "Datatracker shows draft-hamr-oauth-agent-delegation-03, dated 2026-10-22, expires 2027-04-25",
-    "evidence_url": "https://datatracker.ietf.org/doc/draft-hamr-oauth-agent-delegation/",
-    "detector": "ietf@1.0",
-    "commit": "e29fb0b2e5672233e2cdf2961e1b49b945fc4f85"
-  },
-  {
-    "id": "q-2026-10-23-otel-genai-semconv-recovered",
-    "date": "2026-10-23",
-    "record_id": "otel-genai-semconv",
-    "kind": "recovered",
-    "field": "freshness",
-    "from": "source-unavailable",
-    "to": null,
-    "claim": "Source for watch github:otel-genai-semconv:open-telemetry/semantic-conventions-genai reachable again",
-    "evidence_url": "https://github.com/open-telemetry/semantic-conventions-genai",
-    "detector": "github@1.0",
-    "commit": null
-  }
+ {
+  "id": "q-2026-10-16-a2a-version",
+  "date": "2026-10-16",
+  "record_id": "a2a",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": "2026-01",
+   "label": "1.0.0"
+  },
+  "to": {
+   "label": "1.0.1",
+   "date": "2026-05-28"
+  },
+  "claim": "A2A v1.0.1 released on 2026-05-28 (v1.0.0 on 2026-03-12); governance is the Linux Foundation with a Technical Steering Committee of AWS, Cisco, Google, IBM Research, Microsoft, Salesforce, SAP and ServiceNow",
+  "evidence_url": "https://github.com/a2aproject/A2A/releases",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-ag-ui-version",
+  "date": "2026-10-16",
+  "record_id": "ag-ui",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": null,
+   "label": "protocol stable, packages versioned independently (e.g. @ag-ui/core on npm)"
+  },
+  "to": {
+   "label": "1.0",
+   "date": "2026-09-18"
+  },
+  "claim": "AG-UI 1.0 was released and frozen on 2026-09-18, with a published JSON Schema",
+  "evidence_url": "https://github.com/ag-ui-protocol/ag-ui/discussions/2792",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-mcp-apps-version",
+  "date": "2026-10-16",
+  "record_id": "mcp-apps",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": "2026-01-26",
+   "label": "npm package @modelcontextprotocol/ext-apps, spec dated 2026-01-26"
+  },
+  "to": {
+   "label": "spec 2026-01-26; SDK ext-apps v2.0.3",
+   "date": "2026-09-25"
+  },
+  "claim": "MCP Apps SDK ext-apps v2.0.3 was released on 2026-09-25 (spec dated 2026-01-26)",
+  "evidence_url": "https://github.com/modelcontextprotocol/ext-apps/releases",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-a2ui-status",
+  "date": "2026-10-16",
+  "record_id": "a2ui",
+  "kind": "status",
+  "field": "governance",
+  "from": "a2ui-project (Google-originated, open-source on GitHub; Apache-2.0)",
+  "to": "a2ui-project GitHub organisation (moved from google/A2UI)",
+  "claim": "A2UI moved from google/A2UI to the a2ui-project GitHub organisation",
+  "evidence_url": "https://github.com/a2ui-project/A2UI",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-agent-client-protocol-version",
+  "date": "2026-10-16",
+  "record_id": "agent-client-protocol",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": "2026-07-20",
+   "label": "v1 (stable); v2 draft"
+  },
+  "to": {
+   "label": "v1.11.0 (schema v1.25.0); v2 unstable",
+   "date": "2026-10-09"
+  },
+  "claim": "Agent Client Protocol v1.11.0 (schema v1.25.0) released on 2026-10-09; v2 is unstable",
+  "evidence_url": "https://github.com/agentclientprotocol/agent-client-protocol/blob/main/CHANGELOG.md",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-adcp-version",
+  "date": "2026-10-16",
+  "record_id": "adcp",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": "2026",
+   "label": "3.1.20"
+  },
+  "to": {
+   "label": "v3.2.4",
+   "date": "2026-10-12"
+  },
+  "claim": "AdCP v3.2.4 released on 2026-10-12",
+  "evidence_url": "https://github.com/adcontextprotocol/adcp/releases",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-anp-version",
+  "date": "2026-10-16",
+  "record_id": "anp",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": null,
+   "label": "1.1 (protocol document release); protocolVersion field remains 1.0.0"
+  },
+  "to": {
+   "label": "v1.2",
+   "date": "2026-09-24"
+  },
+  "claim": "Agent Network Protocol v1.2 released on 2026-09-24",
+  "evidence_url": "https://github.com/agent-network-protocol/AgentNetworkProtocol/releases",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-oasf-version",
+  "date": "2026-10-16",
+  "record_id": "oasf",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": null,
+   "label": "1.1.0 (also serving 0.7.0, 0.8.0, 1.0.0)"
+  },
+  "to": {
+   "label": "v1.1.0",
+   "date": "2026-07-10"
+  },
+  "claim": "OASF v1.1.0 released on 2026-07-10",
+  "evidence_url": "https://github.com/agntcy/oasf/releases",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-ap2-version",
+  "date": "2026-10-16",
+  "record_id": "ap2",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": null,
+   "label": "v0.2"
+  },
+  "to": {
+   "label": "v0.2.0",
+   "date": "2026-04-28"
+  },
+  "claim": "AP2 v0.2.0 released on 2026-04-28, and AP2 was donated to the FIDO Alliance (Payments TWG and Agentic Authentication TWG) the same day",
+  "evidence_url": "https://github.com/google-agentic-commerce/AP2/releases",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-x402-status",
+  "date": "2026-10-16",
+  "record_id": "x402",
+  "kind": "status",
+  "field": "governance",
+  "from": "x402 Foundation, a Series of LF Projects, LLC (Linux Foundation); operational launch announced 2026-07-14",
+  "to": "x402 Foundation, a Series of LF Projects, LLC (Linux Foundation); operational launch announced 2026-07-14; Executive Director Michael Hursta from 2026-10-01; 50+ members",
+  "claim": "The Linux Foundation appointed Michael Hursta as executive director of the x402 Foundation, effective 2026-10-01; the foundation has 50+ members",
+  "evidence_url": "https://www.linuxfoundation.org/press/linux-foundation-appoints-michael-hursta-as-executive-director-of-the-x402-foundation",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-mpp-revision",
+  "date": "2026-10-16",
+  "record_id": "mpp",
+  "kind": "revision",
+  "field": "spec_url",
+  "from": "https://mpp.dev/protocol",
+  "to": "https://datatracker.ietf.org/doc/html/draft-httpauth-payment-01",
+  "claim": "The MPP draft was renamed draft-httpauth-payment; draft-httpauth-payment-01 is dated 2026-09-09",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-httpauth-payment/",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-ucp-status",
+  "date": "2026-10-16",
+  "record_id": "ucp",
+  "kind": "status",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "UCP added a Payments Technical Council (2026-09-02), a Lodging Booking draft capability (2026-09-25) and Merchant Center cart transfer (2026-09-16)",
+  "evidence_url": "https://github.com/Universal-Commerce-Protocol/ucp/releases",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-slim-revision",
+  "date": "2026-10-16",
+  "record_id": "slim",
+  "kind": "revision",
+  "field": "version",
+  "from": {
+   "date": null,
+   "label": "IETF individual draft draft-mpsb-agntcy-slim-00; active GitHub development"
+  },
+  "to": {
+   "label": "draft-mpsb-agntcy-slim-02",
+   "date": "2026-07-19"
+  },
+  "claim": "draft-mpsb-agntcy-slim-02 is dated 2026-07-19",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-mpsb-agntcy-slim/",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-daap-revision",
+  "date": "2026-10-16",
+  "record_id": "daap",
+  "kind": "revision",
+  "field": "version",
+  "from": {
+   "date": "2026-08",
+   "label": "draft-mishra-oauth-agent-grants-02"
+  },
+  "to": {
+   "label": "draft-mishra-oauth-agent-grants-02",
+   "date": "2026-08-30"
+  },
+  "claim": "draft-mishra-oauth-agent-grants-02 is dated 2026-08-30",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-mishra-oauth-agent-grants/",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-adp-revision",
+  "date": "2026-10-16",
+  "record_id": "adp",
+  "kind": "revision",
+  "field": "version",
+  "from": {
+   "date": "2026-06-18",
+   "label": "draft-pro-adp-agent-discovery-02"
+  },
+  "to": {
+   "label": "draft-pro-adp-agent-discovery-02",
+   "date": "2026-07-24"
+  },
+  "claim": "draft-pro-adp-agent-discovery-02 is dated 2026-07-24",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-pro-adp-agent-discovery/",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-agents-json-dormant",
+  "date": "2026-10-16",
+  "record_id": "agents-json",
+  "kind": "dormant",
+  "field": "phase",
+  "from": "draft",
+  "to": "deprecated",
+  "claim": "agents.json is dormant: last push 2025-08-21, version 0.1.0",
+  "evidence_url": "https://github.com/wild-card-ai/agents-json",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-web-agent-protocol-dormant",
+  "date": "2026-10-16",
+  "record_id": "web-agent-protocol",
+  "kind": "dormant",
+  "field": "phase",
+  "from": "draft",
+  "to": "deprecated",
+  "claim": "Web Agent Protocol is dormant: last commit 2025-06-03",
+  "evidence_url": "https://github.com/OTA-Tech-AI/web-agent-protocol",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-agent-communication-protocol-status",
+  "date": "2026-10-16",
+  "record_id": "agent-communication-protocol",
+  "kind": "status",
+  "field": "phase",
+  "from": "withdrawn",
+  "to": "deprecated",
+  "claim": "IBM's Agent Communication Protocol is deprecated (merged into A2A)",
+  "evidence_url": "https://github.com/i-am-bee/acp",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-agent-connect-protocol-status",
+  "date": "2026-10-16",
+  "record_id": "agent-connect-protocol",
+  "kind": "status",
+  "field": "phase",
+  "from": "deprecated",
+  "to": "deprecated",
+  "claim": "The agntcy/acp-spec repository was archived on 2026-04-11",
+  "evidence_url": "https://github.com/agntcy/acp-spec",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-vi-status",
+  "date": "2026-10-16",
+  "record_id": "vi",
+  "kind": "status",
+  "field": "governance",
+  "from": "Maintained by Mastercard; open to multi-stakeholder contribution per the project's CONTRIBUTING.md; built on FIDO Alliance, EMVCo, IETF and W3C primitives (SD-JWT/RFC 9901, key confirmation/RFC 7800)",
+  "to": "Mastercard; contributed to the FIDO Alliance Payments TWG (2026-04-28); built on FIDO Alliance, EMVCo, IETF and W3C primitives",
+  "claim": "Mastercard contributed Verifiable Intent to the FIDO Alliance Payments TWG on 2026-04-28",
+  "evidence_url": "https://fidoalliance.org/fido-alliance-to-develop-standards-for-trusted-ai-agent-interactions/",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-tap-status",
+  "date": "2026-10-16",
+  "record_id": "tap",
+  "kind": "status",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Visa joined the KYA interoperability collaboration with Mastercard and Ant International (2026-09-10)",
+  "evidence_url": "https://www.ant-intl.com/en/news/detail/?id=ant-internationals-agentic-mobile-protocol-rolls-out-globally-with-wallets-acquirers-initiating-collaboration-on-kya-interoperability-framework-with-mastercard-and-visa",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-cloudflare-content-signals-policy-status",
+  "date": "2026-10-16",
+  "record_id": "cloudflare-content-signals-policy",
+  "kind": "status",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Cloudflare 'Disallow AI Training' and Accountable crawler designation (2026-09-15); Bot Preference Sync replaces Managed robots.txt",
+  "evidence_url": "https://blog.cloudflare.com/",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-ai-crawler-tokens-robots-status",
+  "date": "2026-10-16",
+  "record_id": "ai-crawler-tokens-robots",
+  "kind": "status",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Cloudflare 'Disallow AI Training' and Accountable crawler designation (2026-09-15); Bot Preference Sync replaces Managed robots.txt",
+  "evidence_url": "https://blog.cloudflare.com/",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-llms-txt-sdk-release",
+  "date": "2026-10-16",
+  "record_id": "llms-txt",
+  "kind": "sdk-release",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "llms-txt Python package 0.0.7 released 2026-09-24 (tooling, spec unchanged at v2)",
+  "evidence_url": "https://github.com/AnswerDotAI/llms-txt/releases",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-mcp-registry-candidate",
+  "date": "2026-10-16",
+  "record_id": "mcp-registry",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "The MCP Registry working group charter describes the official MCP Registry as in preview with its API frozen at v0.1 and lists 'Registry API v1 GA: Ideating, no target date'; the server listing endpoint is GET /v0.1/servers, and the server.json schema is being aligned with the Server Card (charter changelog entry 2026-07-30).",
+  "evidence_url": "https://modelcontextprotocol.io/community/working-groups/registry",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-wimse-aims-candidate",
+  "date": "2026-10-16",
+  "record_id": "wimse-aims",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "draft-ietf-wimse-aims-00 is a WIMSE working group document dated 2026-09-15 covering best practices for authentication and authorization of AI agent interactions; it normatively references wimse-arch, wimse-http-signature, transaction tokens and RFC 9728.",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-personal-agent-protocol-candidate",
+  "date": "2026-10-16",
+  "record_id": "personal-agent-protocol",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Sierra's announcement (2026-10-09) presents the Personal Agent Protocol draft as built on OAuth, JWT, OpenAPI and MCP, with 35+ design partners including OpenAI, Visa, Mastercard and Okta, and promises a reference implementation.",
+  "evidence_url": "https://sierra.ai/blog/poppy",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-aauth-hardt-candidate",
+  "date": "2026-10-16",
+  "record_id": "aauth-hardt",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "draft-hardt-oauth-aauth-protocol-11 is dated 2026-09-25 and expires 2027-03-29.",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-hardt-oauth-aauth-protocol/",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-cloudflare-pay-per-crawl-candidate",
+  "date": "2026-10-16",
+  "record_id": "cloudflare-pay-per-crawl",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Cloudflare's documentation says pay per crawl uses HTTP 402 with crawler-price, crawler-exact-price / crawler-max-price and crawler-charged headers, requires Web Bot Auth signing, and is in closed beta (documentation updated 2026-07-28).",
+  "evidence_url": "https://developers.cloudflare.com/ai-crawl-control/features/pay-per-crawl/what-is-pay-per-crawl/",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-wimse-agent-audit-record-candidate",
+  "date": "2026-10-16",
+  "record_id": "wimse-agent-audit-record",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "draft-gilda-wimse-agent-audit-record-02, 'An Audit Record Format for AI Agent Authorization Decisions', is dated 2026-10-05.",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-gilda-wimse-agent-audit-record/",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-mcp-server-cards-candidate",
+  "date": "2026-10-16",
+  "record_id": "mcp-server-cards",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "SEP-2127 (MCP Server Cards) is marked Final as of 2026-10-06.",
+  "evidence_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2127-mcp-server-cards.md",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-mcp-status",
+  "date": "2026-10-16",
+  "record_id": "mcp",
+  "kind": "status",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "MCP Server Cards (SEP-2127) reached Final on 2026-10-06; Skills over MCP (SEP-2640) reached Final on 2026-09-13; next spec release cadence is under discussion (SEP-3398)",
+  "evidence_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2127-mcp-server-cards.md",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-aiagent-auth-replaced",
+  "date": "2026-10-16",
+  "record_id": "aiagent-auth",
+  "kind": "replaced",
+  "field": "governance",
+  "from": "Individual IETF Internet-Draft under consideration by the IETF WIMSE working group (Applications and Real-Time Area); not yet a WG document as of 2026-09-07. Chairs of WIMSE: Justin Richer and Pieter Kasselman (a co-author of this draft, recused from chairing this specific adoption process).",
+  "to": "IETF WIMSE Working Group (adopted as draft-ietf-wimse-aims)",
+  "claim": "draft-ietf-wimse-aims-00 was published as a WIMSE working group document on 2026-09-15 and replaces draft-klrc-aiagent-auth",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-aauth-expired",
+  "date": "2026-10-16",
+  "record_id": "aauth",
+  "kind": "expired",
+  "field": "version",
+  "from": {
+   "date": "2025-10-19",
+   "label": "draft-rosenberg-oauth-aauth-00"
+  },
+  "to": {
+   "label": "draft-rosenberg-oauth-aauth-01",
+   "date": "2026-04-22"
+  },
+  "claim": "draft-rosenberg-oauth-aauth-01 (2026-04-22) expired on 2026-04-23; the active AAuth lineage is draft-hardt-oauth-aauth-protocol-11",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-rosenberg-oauth-aauth/",
+  "detector": "phase-a@2026-10-15",
+  "commit": "cc1b8ce363547aad11b3bb0bc69093a5362bfd81"
+ },
+ {
+  "id": "q-2026-10-16-aipref-vocabulary-revision",
+  "date": "2026-10-15",
+  "record_id": "aipref-vocabulary",
+  "kind": "revision",
+  "field": "version",
+  "from": {
+   "date": "2026-08-19",
+   "label": "draft-ietf-aipref-vocab-07"
+  },
+  "to": {
+   "label": "draft-ietf-aipref-vocab-08",
+   "date": "2026-09-14"
+  },
+  "claim": "Datatracker shows draft-ietf-aipref-vocab-08, dated 2026-09-14, expires 2027-03-18",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-ietf-aipref-vocab/",
+  "detector": "ietf@1.0",
+  "commit": "97432375977df65c46a270f588706a7c3817276a"
+ },
+ {
+  "id": "q-2026-10-16-ans-expired",
+  "date": "2026-10-15",
+  "record_id": "ans",
+  "kind": "expired",
+  "field": "native_status",
+  "from": "Active Internet-Draft, Intended Status: Informational",
+  "to": "Expired Internet-Draft (expired 2026-10-15)",
+  "claim": "Expired Internet-Draft (expired 2026-10-15)",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-narajala-courtney-ansv2/",
+  "detector": "ietf@1.0",
+  "commit": "97432375977df65c46a270f588706a7c3817276a"
+ },
+ {
+  "id": "q-2026-10-16-ardp-expired",
+  "date": "2026-10-15",
+  "record_id": "ardp",
+  "kind": "expired",
+  "field": "native_status",
+  "from": "Internet-Draft; work in progress",
+  "to": "Expired Internet-Draft (expired 2026-08-28)",
+  "claim": "Expired Internet-Draft (expired 2026-08-28)",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-pioli-agent-discovery/",
+  "detector": "ietf@1.0",
+  "commit": "97432375977df65c46a270f588706a7c3817276a"
+ },
+ {
+  "id": "q-2026-10-16-aap-expired",
+  "date": "2026-10-15",
+  "record_id": "aap",
+  "kind": "expired",
+  "field": "native_status",
+  "from": "Expired Internet-Draft (individual), per the IETF Datatracker; last updated 2026-08-11, latest revision -01 dated 2026-02-07",
+  "to": "Expired Internet-Draft (expired 2026-08-11)",
+  "claim": "Expired Internet-Draft (expired 2026-08-11)",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-aap-oauth-profile/",
+  "detector": "ietf@1.0",
+  "commit": "97432375977df65c46a270f588706a7c3817276a"
+ },
+ {
+  "id": "q-2026-10-16-agent-audit-trail-revision",
+  "date": "2026-10-15",
+  "record_id": "agent-audit-trail",
+  "kind": "revision",
+  "field": "version",
+  "from": {
+   "date": "2026-09-05",
+   "label": "draft-sharif-agent-audit-trail-03"
+  },
+  "to": {
+   "label": "draft-sharif-agent-audit-trail-08",
+   "date": "2026-10-13"
+  },
+  "claim": "Datatracker shows draft-sharif-agent-audit-trail-08, dated 2026-10-13, expires 2027-04-16",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-sharif-agent-audit-trail/",
+  "detector": "ietf@1.0",
+  "commit": "97432375977df65c46a270f588706a7c3817276a"
+ },
+ {
+  "id": "q-2026-10-16-agent-communication-protocol-version",
+  "date": "2026-10-15",
+  "record_id": "agent-communication-protocol",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": "2025-08",
+   "label": "0.2.0 (final OpenAPI spec, archived)"
+  },
+  "to": {
+   "label": "v1.0.3",
+   "date": "2025-08-21"
+  },
+  "claim": "v1.0.3 released 2025-08-21",
+  "evidence_url": "https://github.com/i-am-bee/acp/releases/tag/v1.0.3",
+  "detector": "github@1.0",
+  "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
+ },
+ {
+  "id": "q-2026-10-16-agent-communication-protocol-dormant",
+  "date": "2026-10-15",
+  "record_id": "agent-communication-protocol",
+  "kind": "dormant",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "No push since 2025-08-25 (over 180 days)",
+  "evidence_url": "https://github.com/i-am-bee/acp/releases/tag/v1.0.3",
+  "detector": "github@1.0",
+  "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
+ },
+ {
+  "id": "q-2026-10-16-ucp-version",
+  "date": "2026-10-15",
+  "record_id": "ucp",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": "2026-08-25",
+   "label": "documentation site dated 2026-08-25; active/expanding specification (Lodging and Food detailed specs pending)"
+  },
+  "to": {
+   "label": "v2026-08-25",
+   "date": "2026-08-25"
+  },
+  "claim": "v2026-08-25 released 2026-08-25",
+  "evidence_url": "https://github.com/Universal-Commerce-Protocol/ucp/releases/tag/v2026-08-25",
+  "detector": "github@1.0",
+  "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
+ },
+ {
+  "id": "q-2026-10-16-ap2-checkout-mandate-version",
+  "date": "2026-10-15",
+  "record_id": "ap2-checkout-mandate",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": null,
+   "label": "AP2 v0.2"
+  },
+  "to": {
+   "label": "v0.2.0",
+   "date": "2026-04-28"
+  },
+  "claim": "v0.2.0 released 2026-04-28",
+  "evidence_url": "https://github.com/google-agentic-commerce/AP2/releases/tag/v0.2.0",
+  "detector": "github@1.0",
+  "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
+ },
+ {
+  "id": "q-2026-10-16-osi-version",
+  "date": "2026-10-15",
+  "record_id": "osi",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "date": null,
+   "label": "0.2.0.dev0 (draft, in development); last tagged pre-release osi-0.1.1-rc1"
+  },
+  "to": {
+   "label": "osi-0.1.1-rc1",
+   "date": null
+  },
+  "claim": "latest tag osi-0.1.1-rc1",
+  "evidence_url": "https://github.com/apache/ossie/releases/tag/osi-0.1.1-rc1",
+  "detector": "github@1.0",
+  "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
+ },
+ {
+  "id": "q-2026-10-16-tap-dormant",
+  "date": "2026-10-15",
+  "record_id": "tap",
+  "kind": "dormant",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "No push since 2025-10-28 (over 180 days)",
+  "evidence_url": "https://github.com/visa/trusted-agent-protocol",
+  "detector": "github@1.0",
+  "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
+ },
+ {
+  "id": "q-2026-10-16-agora-protocol-dormant",
+  "date": "2026-10-15",
+  "record_id": "agora-protocol",
+  "kind": "dormant",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "No push since 2025-03-04 (over 180 days)",
+  "evidence_url": "https://github.com/agora-protocol/agora-protocol.github.io",
+  "detector": "github@1.0",
+  "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
+ },
+ {
+  "id": "q-2026-10-16-s402-status",
+  "date": "2026-10-15",
+  "record_id": "s402",
+  "kind": "status",
+  "field": "native_status",
+  "from": "Draft wire-format specification, actively developed (commits as recent as 2026-09-04)",
+  "to": "Archived repository (observed 2026-10-16)",
+  "claim": "Repository archived by its owner",
+  "evidence_url": "https://github.com/s402-protocol/core/releases/tag/v0.8.0",
+  "detector": "github@1.0",
+  "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
+ },
+ {
+  "id": "q-2026-10-16-agent-permissions-json-dormant",
+  "date": "2026-10-15",
+  "record_id": "agent-permissions-json",
+  "kind": "dormant",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "No push since 2025-12-10 (over 180 days)",
+  "evidence_url": "https://github.com/las-wg/agent-permissions.json",
+  "detector": "github@1.0",
+  "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
+ },
+ {
+  "id": "q-2026-10-16-agent-connect-protocol-dormant",
+  "date": "2026-10-15",
+  "record_id": "agent-connect-protocol",
+  "kind": "dormant",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "No push since 2025-05-23 (over 180 days)",
+  "evidence_url": "https://github.com/agntcy/acp-spec",
+  "detector": "github@1.0",
+  "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
+ },
+ {
+  "id": "q-2026-10-16-agent-protocol-aief-dormant",
+  "date": "2026-10-15",
+  "record_id": "agent-protocol-aief",
+  "kind": "dormant",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "No push since 2025-04-08 (over 180 days)",
+  "evidence_url": "https://github.com/agi-inc/agent-protocol/releases/tag/js-sdk-v1.0.5",
+  "detector": "github@1.0",
+  "commit": "dd58ba9934d5553714c012a332e1050e14ce904a"
+ },
+ {
+  "id": "q-2026-10-16-dawn-agent-discovery-framework-candidate",
+  "date": "2026-10-15",
+  "record_id": "dawn-agent-discovery-framework",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "The draft describes a two-layer federated reference architecture (Local Discovery Plane and Federation Plane) with Federation Gateways, an Export Policy Engine and Federation Metadata Records for initial agent discovery; it is informational and defines no normative protocol formats.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-zhang-dawn-agent-discovery-framework-06",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
+ },
+ {
+  "id": "q-2026-10-16-agent-identity-document-candidate",
+  "date": "2026-10-15",
+  "record_id": "agent-identity-document",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Internet-Draft specifying a JSON Agent Identity Document at /.well-known/agent-identity.json on a provider-assigned hostname, with lifecycle status, dated expiring checks on the operator, and a request to register the well-known URI suffix; states it describes a practice in production at one provider.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-alla-agent-identity-document-01",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
+ },
+ {
+  "id": "q-2026-10-16-mcp-dns-discovery-candidate",
+  "date": "2026-10-15",
+  "record_id": "mcp-dns-discovery",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "The Internet-Draft defines three DNS TXT records (_mcp, _org-alter, _alter) for MCP server discovery, organisational identity, and a signed Ed25519 handle envelope, with Informational intended status and expiry on 12 April 2027.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
+ },
+ {
+  "id": "q-2026-10-16-agent-principal-binding-candidate",
+  "date": "2026-10-15",
+  "record_id": "agent-principal-binding",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Internet-Draft -08 published 14 October 2026, Intended Status Informational, defining a verifier-facing claim matrix format, row-outcome semantics (satisfied, unsatisfied, indeterminate, unsupported, not-evaluated, not-applicable) and dependency-closure rules for composed mappings. States it does not define a new agent protocol, token format, audit log or authorization system.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-bu-agentproto-security-principal-binding-08",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
+ },
+ {
+  "id": "q-2026-10-16-aip-delegation-chain-candidate",
+  "date": "2026-10-15",
+  "record_id": "aip-delegation-chain",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "The draft specifies AIP, a delegation chain model with an attenuation invariant, a verification algorithm, JWT-chain and Biscuit encodings, and bindings for MCP, A2A and HTTP.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-prakash-aip-02",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
+ },
+ {
+  "id": "q-2026-10-16-credential-delegation-protocol-wimse-candidate",
+  "date": "2026-10-15",
+  "record_id": "credential-delegation-protocol-wimse",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Internet-Draft draft-sweeney-wimse-credential-delegation-01, published 13 October 2026, Intended Status Standards Track, workgroup WIMSE; profiles RFC 8693, RFC 9449, RFC 9396 and OpenID CIBA for credential delegation to AI agents.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-sweeney-wimse-credential-delegation-01",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
+ },
+ {
+  "id": "q-2026-10-16-agent-delegation-receipts-candidate",
+  "date": "2026-10-15",
+  "record_id": "agent-delegation-receipts",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "The Internet-Draft defines the Agent Delegation Receipt as a signed record of what a human principal authorized an AI agent to do, using a JWS profile over JCS-canonicalized JSON and a COSE_Sign1 profile, plus scope attenuation for delegation chains and a revocation registry with cascade semantics.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-nelson-agent-delegation-receipts-11",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
+ },
+ {
+  "id": "q-2026-10-16-aauth-r3-candidate",
+  "date": "2026-10-15",
+  "record_id": "aauth-r3",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Individual-submission companion to the AAuth Protocol by Dick Hardt (Hellō); -00, marked Exploratory Draft, no known implementations. It replaces scope strings with resource-named operations in vocabularies (MCP, OpenAPI, gRPC, GraphQL, AsyncAPI, WSDL, OData), content-addressed R3 documents identified by SHA-256, and per-call proposals.",
+  "evidence_url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-09-28-aauth-rich-resource-requests",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
+ },
+ {
+  "id": "q-2026-10-16-acip-candidate",
+  "date": "2026-10-15",
+  "record_id": "acip",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Internet-Draft defines ACIP, a YAML-based format and host-resolution behavior for coding-agent context sources, with source precedence, file matching, constraint/directive/preference distinctions, and a resolution receipt.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-agarwal-acip-00",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
+ },
+ {
+  "id": "q-2026-10-16-knowledge-linkset-candidate",
+  "date": "2026-10-15",
+  "record_id": "knowledge-linkset",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Internet-Draft -01 defines the 'knowledge-linkset' well-known URI serving an RFC 9264 link set of knowledge artefacts with optional SHA-256 digests and a profile URI; intended status Informational, expires 17 April 2027.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-besleaga-agentic-knowledge-wellknown-01",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
+ },
+ {
+  "id": "q-2026-10-16-scitt-ai-agent-execution-candidate",
+  "date": "2026-10-15",
+  "record_id": "scitt-ai-agent-execution",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Internet-Draft defines the AgentInteractionRecord (AIR) as a COSE_Sign1 signed statement payload for material AI agent actions. It maps the Agent Operator to SCITT Issuer and an independent Evidence Custodian to Transparency Service, and defines registration policy, redaction receipts and regulatory mappings (EU AI Act Arts. 12/19, DORA, NIST AI RMF, MAS, PCI DSS, MiFID II).",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-emirdag-scitt-ai-agent-execution-01",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
+ },
+ {
+  "id": "q-2026-10-16-agent-channel-fan-out-candidate",
+  "date": "2026-10-15",
+  "record_id": "agent-channel-fan-out",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Internet-Draft specifies a JSON agent-channel frame with a closed catalogue of kinds, identity attribution pair, provenance block, recipient scope expansion, and per-handle Server-Sent Events delivery with subscribe-time filters.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-morrison-agent-channel-fan-out-02",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
+ },
+ {
+  "id": "q-2026-10-16-aagv-candidate",
+  "date": "2026-10-15",
+  "record_id": "aagv",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "The Internet-Draft defines AAGV, a JSON interchange profile and deterministic validation algorithm for authority roots, consequential sinks, normal paths, revocation cut sets and snapshot edge state, with outcomes INVALID, INDETERMINATE, VALID_OPEN and VALID_CLOSED.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-watts-agentic-authority-graph-validation-00",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
+ },
+ {
+  "id": "q-2026-10-16-agentic-payments-gating-model-candidate",
+  "date": "2026-10-15",
+  "record_id": "agentic-payments-gating-model",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Internet-Draft draft-king-yew-choo-agentic-payments-01 published 8 October 2026, Intended Status Informational. It defines no protocol, wire format, or conformance requirements, and presents a server-side payment/entitlement gate (g*) and task state machine for agent-initiated paid asynchronous HTTP tasks.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-king-yew-choo-agentic-payments-01",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "727bf7625139a52353b701c06d4a3eb5f593d0ec"
+ },
+ {
+  "id": "q-2026-10-16-aauth-hardt-status",
+  "date": "2026-10-16",
+  "record_id": "aauth-hardt",
+  "kind": "status",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Companion draft draft-hardt-aauth-headers-00 expired on 2026-10-04; the record follows draft-hardt-oauth-aauth-protocol",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-headers/",
+  "detector": "ietf@1.0",
+  "commit": "055dd38ff94d85a530545304a49d32a1cd02d17c"
+ },
+ {
+  "id": "q-2026-10-16-aauth-r3-revision",
+  "date": "2026-10-16",
+  "record_id": "aauth-r3",
+  "kind": "revision",
+  "field": "version",
+  "from": {
+   "label": "-00",
+   "date": "2026-09-28"
+  },
+  "to": {
+   "label": "draft-hardt-aauth-r3-00",
+   "date": "2026-09-28"
+  },
+  "claim": "Datatracker shows draft-hardt-aauth-r3-00, dated 2026-09-28, expires 2027-04-01",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-r3/",
+  "detector": "ietf@1.0",
+  "commit": "055dd38ff94d85a530545304a49d32a1cd02d17c"
+ },
+ {
+  "id": "q-2026-10-16-ag-ui-sdk-release",
+  "date": "2026-10-16",
+  "record_id": "ag-ui",
+  "kind": "sdk-release",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "@ag-ui/core 1.0.3 published 2026-10-16",
+  "evidence_url": "https://www.npmjs.com/package/@ag-ui/core",
+  "detector": "npm@1.0",
+  "commit": "c8408d99d6f3b6d190aef664081d3f713473c2f5"
+ },
+ {
+  "id": "q-2026-10-17-adcp-version",
+  "date": "2026-10-17",
+  "record_id": "adcp",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "label": "v3.2.4",
+   "date": "2026-10-12"
+  },
+  "to": {
+   "label": "v3.2.5",
+   "date": "2026-10-16"
+  },
+  "claim": "v3.2.5 released 2026-10-16",
+  "evidence_url": "https://github.com/adcontextprotocol/adcp/releases/tag/v3.2.5",
+  "detector": "github@1.0",
+  "commit": "ce9d31135357dd56973a7446bc76d139dee8dd0d"
+ },
+ {
+  "id": "q-2026-10-17-wimse-agent-audit-record-replaced",
+  "date": "2026-10-17",
+  "record_id": "wimse-agent-audit-record",
+  "kind": "replaced",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Datatracker marks draft-gilda-wimse-agent-audit-record as replaced by draft-gilda-audit-agent-audit-record",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-gilda-wimse-agent-audit-record/",
+  "detector": "ietf@1.0",
+  "commit": "1341c0cb6376ec55a84257996c2fb68140d18b1f"
+ },
+ {
+  "id": "q-2026-10-19-idmandat-credential-candidate",
+  "date": "2026-10-19",
+  "record_id": "idmandat-credential",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Internet-Draft defining a credential file at /.well-known/idmandat.json, a DNS TXT proof record at _idmandat, and a signed Ed25519 registry lookup answer format; described as a deployed beta (version 0.3).",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-koenig-idmandat-credential-00",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "4ffb595f2efd375ae40065d117adc546e48c52fc"
+ },
+ {
+  "id": "q-2026-10-19-lws10-authn-ssi-cid-candidate",
+  "date": "2026-10-19",
+  "record_id": "lws10-authn-ssi-cid",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "W3C Working Draft of 15 October 2026 defining an authentication suite for Linked Web Storage that lets clients sign their own identity tokens (JWT) validated through W3C Controlled Identifiers documents.",
+  "evidence_url": "https://w3.org/TR/lws10-authn-ssi-cid",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "4ffb595f2efd375ae40065d117adc546e48c52fc"
+ },
+ {
+  "id": "q-2026-10-19-wimse-workload-identity-metadata-candidate",
+  "date": "2026-10-19",
+  "record_id": "wimse-workload-identity-metadata",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Internet-Draft draft-heigh-wimse-workload-identity-metadata-00 published 16 October 2026 by S. Heigh, J. Salowey (Palo Alto Networks) and Y. Rosomakho (Zscaler); specifies workload metadata attributes delivered in JWT-based credentials or via an authenticated metadata endpoint, separate from the workload identifier.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-heigh-wimse-workload-identity-metadata-00",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "4ffb595f2efd375ae40065d117adc546e48c52fc"
+ },
+ {
+  "id": "q-2026-10-19-haace-candidate",
+  "date": "2026-10-19",
+  "record_id": "haace",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "The Internet-Draft defines HAACE, a protocol-neutral profile binding an exact agent action to identity status, authorization state, policy, assurance stage, evidence state, authority epoch, revocation state and oversight requirements, with fail-closed handling and non-bearer decision and execution receipts.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-watts-high-assurance-agent-control-envelope-00",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "4ffb595f2efd375ae40065d117adc546e48c52fc"
+ },
+ {
+  "id": "q-2026-10-19-local-tool-call-proof-candidate",
+  "date": "2026-10-19",
+  "record_id": "local-tool-call-proof",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "The draft defines a per-call proof for local tool invocation: a Call Authority outside the agent process issues short-lived, single-use proofs bound to the tool name and arguments through a canonical action digest (JCS + SHA-256), and the tool server rejects invocations lacking a valid proof. It includes an MCP stdio binding.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-lee-wimse-local-tool-call-proof-01",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "4ffb595f2efd375ae40065d117adc546e48c52fc"
+ },
+ {
+  "id": "q-2026-10-19-agent-authorization-envelope-candidate",
+  "date": "2026-10-19",
+  "record_id": "agent-authorization-envelope",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "The AAE is a W3C Verifiable Credential signed as a compact JWS (EdDSA/Ed25519) with mandatory mandate, constraints and validity blocks; the key is named by a DID URL.",
+  "evidence_url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-05-21-agent-authorization-envelope-aae",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "4ffb595f2efd375ae40065d117adc546e48c52fc"
+ },
+ {
+  "id": "q-2026-10-19-a2wp-candidate",
+  "date": "2026-10-19",
+  "record_id": "a2wp",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "The Internet-Draft defines A2WP, where an AI Agent passes a credential offer or presentation request unchanged to a Wallet. The Wallet runs OpenID4VCI or OpenID4VP, and credentials, presentations and keys never reach the agent. The draft has Submit, Get and Cancel calls and an operation lifecycle of pending, completed, failed and cancelled.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-senarath-a2wp-01",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "4ffb595f2efd375ae40065d117adc546e48c52fc"
+ },
+ {
+  "id": "q-2026-10-19-agent-decision-commitment-candidate",
+  "date": "2026-10-19",
+  "record_id": "agent-decision-commitment",
+  "kind": "candidate",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Internet-Draft defines the Agent Decision Commitment: a salted hash commitment to a decision record, carried as a selectively disclosable claim in a payment mandate and registered with a transparency service, with bindings to three agent payment protocols and account-to-account credit transfers, plus a witnessed reciprocal exchange.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-milan-agent-decision-commitment-00",
+  "detector": "sonnet@candidate-record-v1",
+  "commit": "4ffb595f2efd375ae40065d117adc546e48c52fc"
+ },
+ {
+  "id": "q-2026-10-20-mcp-discover",
+  "date": "2026-10-20",
+  "record_id": "mcp",
+  "kind": "revision",
+  "field": "probe",
+  "from": "POST initialize; Server Cards described as experimental",
+  "to": "server/discover for 2026-07-28; initialize kept for 2025-11-25 and earlier; SEP-2127 card is Final",
+  "claim": "The 2026-07-28 specification retired initialize, initialized, and Mcp-Session-Id. Capabilities are read with server/discover. SEP-2127 Server Cards are Final, and the live server/discover result wins when it disagrees with the static card.",
+  "evidence_url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+  "detector": "staged-research@2026-10-20",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-20-mcp-census",
+  "date": "2026-10-20",
+  "record_id": "mcp",
+  "kind": "status",
+  "field": "adoption",
+  "from": "claimed; no third-party census recorded",
+  "to": "measured; three registry censuses kept separate",
+  "claim": "VerifyMCP (2026-10-19) counts 47,870 logical servers. Discussion 1580 (2026-08-27) counts 82,994 version records and 25,125 distinct isLatest servers. Discussion 1548 (2026-08-19) counts 22,636 active latest registrations. The three figures are not averaged.",
+  "evidence_url": "https://verifymcp.io/stats",
+  "detector": "staged-research@2026-10-20",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-20-a2a-aaif",
+  "date": "2026-10-20",
+  "record_id": "a2a",
+  "kind": "status",
+  "field": "governance",
+  "from": "Linux Foundation Technical Steering Committee",
+  "to": "Linux Foundation TSC, and Agentic AI Foundation since 17 August 2026",
+  "claim": "A2A joined the Agentic AI Foundation on 17 August 2026. The 150-organization figure from the 9 April 2026 Linux Foundation release stays labelled claimed.",
+  "evidence_url": "https://aaif.io/blog/a2a-joins-aaif",
+  "detector": "staged-research@2026-10-20",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-20-a2a-cards",
+  "date": "2026-10-20",
+  "record_id": "a2a",
+  "kind": "revision",
+  "field": "probe",
+  "from": "parse required a top-level url",
+  "to": "accept v1.0 supportedInterfaces cards and legacy v0.3 cards",
+  "claim": "v1.0 places url, protocolBinding, and protocolVersion inside supportedInterfaces[]. Four card censuses are recorded with their frames: Agenstry (65.5% 0.3.x of 1,910), Emissar (276 on Tranco 1M), APIs.io (421 of 4,718 hosts), rStation (661 on 2,164 x402 hosts).",
+  "evidence_url": "https://a2a-protocol.org/latest/whats-new-v1/",
+  "detector": "staged-research@2026-10-20",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-20-webbotauth-verifier",
+  "date": "2026-10-20",
+  "record_id": "webbotauth",
+  "kind": "revision",
+  "field": "summary_md",
+  "from": null,
+  "to": "Cloudflare verifier limits recorded",
+  "claim": "Cloudflare's Web Bot Auth verifier documentation, updated 8 October 2026, rejects @query-params and @status.",
+  "evidence_url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/",
+  "detector": "staged-research@2026-10-20",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-20-workload-authz-grant",
+  "date": "2026-10-20",
+  "record_id": "workload-authz-grant",
+  "kind": "revision",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "draft-carleton-workload-authz-grant-01 (22 September 2026, expires 26 March 2027, Informational) lets a platform-signed JWT obtain a third-party access token for a workload. The workload id is opaque and is never reassigned.",
+  "evidence_url": "https://www.ietf.org/archive/id/draft-carleton-workload-authz-grant-01.txt",
+  "detector": "staged-research@2026-10-20",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-20-oauth-id-continuation",
+  "date": "2026-10-20",
+  "record_id": "oauth-id-continuation",
+  "kind": "revision",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "draft-mcguinness-oauth-id-continuation-assertion-02 (9 September 2026, expires 13 March 2027, Standards Track, OAuth WG) defines a short-lived sender-constrained JWT used as a token-exchange subject token so a workload can obtain an ID-JAG after the user has left.",
+  "evidence_url": "https://www.ietf.org/archive/id/draft-mcguinness-oauth-id-continuation-assertion-02.txt",
+  "detector": "staged-research@2026-10-20",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-20-oauth-agent-delegation",
+  "date": "2026-10-20",
+  "record_id": "oauth-agent-delegation",
+  "kind": "revision",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "draft-hamr-oauth-agent-delegation-02 (19 September 2026, expires 23 March 2027, Standards Track, OAuth WG) defines an Agent-Delegation header on RFC 9421. Each link can only narrow scope, floors, and expiry. Call classes are r, w, and x.",
+  "evidence_url": "https://www.ietf.org/archive/id/draft-hamr-oauth-agent-delegation-02.txt",
+  "detector": "staged-research@2026-10-20",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-20-opena2a-aap",
+  "date": "2026-10-20",
+  "record_id": "opena2a-aap",
+  "kind": "revision",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "draft-fane-opena2a-aap-02 (30 September 2026, expires 3 April 2027) is a Standards Track individual submission by A. Fane, OpenA2A. It is a different document from the expired draft-aap-oauth-profile-01.",
+  "evidence_url": "https://www.ietf.org/archive/id/draft-fane-opena2a-aap-02.txt",
+  "detector": "staged-research@2026-10-20",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-21-a2a-sdk-release",
+  "date": "2026-10-21",
+  "record_id": "a2a",
+  "kind": "sdk-release",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "a2a-sdk 1.2.3 published 2026-10-19",
+  "evidence_url": "https://pypi.org/project/a2a-sdk/",
+  "detector": "pypi@1.0",
+  "commit": "2895988c1fb974d0f760b52f1ec58d2406d1404e"
+ },
+ {
+  "id": "q-2026-10-22-wimse-revision",
+  "date": "2026-10-22",
+  "record_id": "wimse",
+  "kind": "revision",
+  "field": "evidence",
+  "from": null,
+  "to": null,
+  "claim": "Datatracker shows draft-ietf-wimse-http-signature-08, dated 2026-10-20 (related draft)",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-http-signature/",
+  "detector": "ietf@1.0",
+  "commit": "d1694780b00398d82f303aba777eee68b5543dfc"
+ },
+ {
+  "id": "q-2026-10-22-dawn-agent-discovery-framework-revision",
+  "date": "2026-10-22",
+  "record_id": "dawn-agent-discovery-framework",
+  "kind": "revision",
+  "field": "version",
+  "from": {
+   "label": "draft-zhang-dawn-agent-discovery-framework-08",
+   "date": "2026-10-19"
+  },
+  "to": {
+   "label": "draft-zhang-dawn-agent-discovery-framework-09",
+   "date": "2026-10-21"
+  },
+  "claim": "Datatracker shows draft-zhang-dawn-agent-discovery-framework-09, dated 2026-10-21, expires 2027-04-24",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-zhang-dawn-agent-discovery-framework/",
+  "detector": "ietf@1.0",
+  "commit": "d1694780b00398d82f303aba777eee68b5543dfc"
+ },
+ {
+  "id": "q-2026-10-22-jafar-expiring",
+  "date": "2026-10-22",
+  "record_id": "jafar",
+  "kind": "expiring",
+  "field": "freshness",
+  "from": null,
+  "to": "review-due",
+  "claim": "draft-illyes-webbotauth-jafar-00 expires on 2026-10-23",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-illyes-webbotauth-jafar/",
+  "detector": "ietf@1.0",
+  "commit": "d1694780b00398d82f303aba777eee68b5543dfc"
+ },
+ {
+  "id": "q-2026-10-22-otel-genai-semconv-source-unavailable",
+  "date": "2026-10-22",
+  "record_id": "otel-genai-semconv",
+  "kind": "source-unavailable",
+  "field": "freshness",
+  "from": null,
+  "to": "source-unavailable",
+  "claim": "Source for watch github:otel-genai-semconv:open-telemetry/semantic-conventions-genai failed 3 consecutive polls",
+  "evidence_url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md",
+  "detector": "github@1.0",
+  "commit": "290fb8cef2bf71d3f9af2c4d2b945d5ef4faf91a"
+ },
+ {
+  "id": "q-2026-10-23-identity-assertion-authz-grant-expiring",
+  "date": "2026-10-23",
+  "record_id": "identity-assertion-authz-grant",
+  "kind": "expiring",
+  "field": "freshness",
+  "from": null,
+  "to": "review-due",
+  "claim": "draft-ietf-oauth-identity-assertion-authz-grant-04 expires on 2026-11-22",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-ietf-oauth-identity-assertion-authz-grant/",
+  "detector": "ietf@1.0",
+  "commit": "e29fb0b2e5672233e2cdf2961e1b49b945fc4f85"
+ },
+ {
+  "id": "q-2026-10-23-mcp-dns-discovery-text-change",
+  "date": "2026-10-23",
+  "record_id": "mcp-dns-discovery",
+  "kind": "text-change",
+  "field": "version",
+  "from": {
+   "label": "draft-morrison-mcp-dns-discovery-08",
+   "date": "2026-10-09"
+  },
+  "to": {
+   "label": "draft-morrison-mcp-dns-discovery-09",
+   "date": null
+  },
+  "claim": "A newer revision, draft-morrison-mcp-dns-discovery-09, now exists; the -08 page is marked as an older version of an Internet-Draft whose latest revision is Active.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08",
+  "detector": "sonnet@patch-v1",
+  "commit": "e29fb0b2e5672233e2cdf2961e1b49b945fc4f85"
+ },
+ {
+  "id": "q-2026-10-23-agent-delegation-receipts-revision",
+  "date": "2026-10-23",
+  "record_id": "agent-delegation-receipts",
+  "kind": "revision",
+  "field": "version",
+  "from": {
+   "label": "draft-nelson-agent-delegation-receipts-14",
+   "date": "2026-10-15"
+  },
+  "to": {
+   "label": "draft-nelson-agent-delegation-receipts-15",
+   "date": "2026-10-22"
+  },
+  "claim": "Datatracker shows draft-nelson-agent-delegation-receipts-15, dated 2026-10-22, expires 2027-04-25",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-nelson-agent-delegation-receipts/",
+  "detector": "ietf@1.0",
+  "commit": "e29fb0b2e5672233e2cdf2961e1b49b945fc4f85"
+ },
+ {
+  "id": "q-2026-10-23-jafar-revision",
+  "date": "2026-10-23",
+  "record_id": "jafar",
+  "kind": "revision",
+  "field": "freshness",
+  "from": "review-due",
+  "to": null,
+  "claim": "Datatracker shows draft-illyes-webbotauth-jafar-01, dated 2026-10-22, expires 2027-04-25",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-illyes-webbotauth-jafar/",
+  "detector": "ietf@1.0",
+  "commit": "e29fb0b2e5672233e2cdf2961e1b49b945fc4f85"
+ },
+ {
+  "id": "q-2026-10-23-oauth-agent-delegation-revision",
+  "date": "2026-10-23",
+  "record_id": "oauth-agent-delegation",
+  "kind": "revision",
+  "field": "version",
+  "from": {
+   "label": "draft-hamr-oauth-agent-delegation-02",
+   "date": "2026-09-19"
+  },
+  "to": {
+   "label": "draft-hamr-oauth-agent-delegation-03",
+   "date": "2026-10-22"
+  },
+  "claim": "Datatracker shows draft-hamr-oauth-agent-delegation-03, dated 2026-10-22, expires 2027-04-25",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-hamr-oauth-agent-delegation/",
+  "detector": "ietf@1.0",
+  "commit": "e29fb0b2e5672233e2cdf2961e1b49b945fc4f85"
+ },
+ {
+  "id": "q-2026-10-23-otel-genai-semconv-recovered",
+  "date": "2026-10-23",
+  "record_id": "otel-genai-semconv",
+  "kind": "recovered",
+  "field": "freshness",
+  "from": "source-unavailable",
+  "to": null,
+  "claim": "Source for watch github:otel-genai-semconv:open-telemetry/semantic-conventions-genai reachable again",
+  "evidence_url": "https://github.com/open-telemetry/semantic-conventions-genai",
+  "detector": "github@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-22-anthropic-agent-skills-format-governance",
+  "date": "2026-10-22",
+  "record_id": "anthropic-agent-skills-format",
+  "kind": "status",
+  "field": "track",
+  "from": "vendor",
+  "to": "linux-foundation",
+  "claim": "Anthropic donated the Agent Skills format to the Linux Foundation's Agentic AI Foundation (AAIF) on 22 October 2026",
+  "evidence_url": "https://aaif.io/press/agent-skills-joins-the-agentic-ai-foundation/",
+  "detector": "curated@2026-10-23",
+  "commit": "f5f39382be8c8004ddff61f3dbcb0ac351d5b96c"
+ }
 ]

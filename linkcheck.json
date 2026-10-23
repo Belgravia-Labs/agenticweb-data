@@ -40,8 +40,8 @@
   "status": 200
  },
  "https://aaif.io/news/agentic-ai-foundation-announces-four-new-projects": {
-  "status": 200,
-  "checked": "2026-10-23"
+  "checked": "2026-10-23",
+  "status": 200
  },
  "https://aboutus.godaddy.net/newsroom/news-releases/press-release-details/2026/Infoblox-and-GoDaddy-Support-Open-Standards-for-AI-Agent-Discovery-Identity-and-Verification-2026-0acKMntvOC/default.aspx": {
   "checked": "2026-10-23",
@@ -479,10 +479,6 @@
   "checked": "2026-10-23",
   "status": 403
  },
- "https://datatracker.ietf.org/doc/html/draft-gilda-audit-agent-audit-record": {
-  "checked": "2026-10-23",
-  "status": 403
- },
  "https://datatracker.ietf.org/doc/html/draft-hamr-oauth-agent-delegation-03": {
   "checked": "2026-10-23",
   "status": 403
@@ -520,8 +516,8 @@
   "status": 403
  },
  "https://datatracker.ietf.org/doc/html/draft-kroehl-agentic-trust-aae-02": {
-  "status": 200,
-  "checked": "2026-10-23"
+  "checked": "2026-10-23",
+  "status": 403
  },
  "https://datatracker.ietf.org/doc/html/draft-lee-wimse-local-tool-call-proof-01": {
   "checked": "2026-10-23",
@@ -548,8 +544,8 @@
   "status": 403
  },
  "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-09": {
-  "status": 200,
-  "checked": "2026-10-23"
+  "checked": "2026-10-23",
+  "status": 403
  },
  "https://datatracker.ietf.org/doc/html/draft-mozleywilliams-dnsop-dnsaid/": {
   "checked": "2026-10-23",
@@ -596,8 +592,8 @@
   "status": 403
  },
  "https://datatracker.ietf.org/doc/html/draft-singla-agent-identity-protocol-03": {
-  "status": 200,
-  "checked": "2026-10-23"
+  "checked": "2026-10-23",
+  "status": 403
  },
  "https://datatracker.ietf.org/doc/html/draft-skyfire-oauth-kyapay-token-02": {
   "checked": "2026-10-23",
@@ -689,7 +685,7 @@
  },
  "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers": {
   "checked": "2026-10-23",
-  "status": 200
+  "status": 500
  },
  "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide": {
   "checked": "2026-10-23",
@@ -1456,8 +1452,8 @@
   "status": 200
  },
  "https://github.com/personal-agent-protocol/personal-agent-protocol": {
-  "status": 200,
-  "checked": "2026-10-23"
+  "checked": "2026-10-23",
+  "status": 200
  },
  "https://github.com/proof/x401": {
   "checked": "2026-10-23",
@@ -1583,14 +1579,6 @@
   "checked": "2026-10-23",
   "status": 200
  },
- "https://insights.bostonidentity.com/research/ietf-datatracker-2026-04-17-agent-identity-protocol-aip": {
-  "checked": "2026-10-23",
-  "status": 200
- },
- "https://insights.bostonidentity.com/research/ietf-datatracker-2026-05-21-agent-authorization-envelope-aae": {
-  "checked": "2026-10-23",
-  "status": 200
- },
  "https://insights.bostonidentity.com/research/ietf-datatracker-2026-09-28-aauth-rich-resource-requests": {
   "checked": "2026-10-23",
   "status": 200
@@ -1711,21 +1699,17 @@
   "checked": "2026-10-23",
   "status": 200
  },
- "https://personalagentprotocol.org/": {
+ "https://personalagentprotocol.org/docs/0.1/spec": {
   "checked": "2026-10-23",
   "status": 200
  },
- "https://personalagentprotocol.org/docs/0.1/spec": {
-  "status": 200,
-  "checked": "2026-10-23"
- },
  "https://personalagentprotocol.org/docs/changelog": {
-  "status": 200,
-  "checked": "2026-10-23"
+  "checked": "2026-10-23",
+  "status": 200
  },
  "https://personalagentprotocol.org/docs/path-to-1": {
-  "status": 200,
-  "checked": "2026-10-23"
+  "checked": "2026-10-23",
+  "status": 200
  },
  "https://plan.modelcontextprotocol.io/releases/2": {
   "checked": "2026-10-23",
@@ -1998,10 +1982,6 @@
  "https://www.businesswire.com/news/home/20250520361792/en/": {
   "checked": "2026-10-23",
   "status": 403
- },
- "https://www.cafe24.com/newsroom/press_release/cafe24-launches-webmcp-agentic-commerce_20261022.html": {
-  "status": 200,
-  "checked": "2026-10-23"
  },
  "https://www.emvco.com/about-us/overview-of-emvco/": {
   "checked": "2026-10-23",
