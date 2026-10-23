@@ -1190,5 +1190,85 @@
     ],
     "part_of": null,
     "group": null
+  },
+  {
+    "id": "agentic-eor",
+    "group": null,
+    "part_of": null,
+    "name": "Agentic EoR (Employer / Entity of Record)",
+    "aliases": [
+      "Agentic Employer of Record",
+      "Agentic Entity of Record",
+      "Agent Liability Wrapper",
+      "Agentic Contracting Counterparty"
+    ],
+    "definition_md": "An **Agentic EoR** (Employer of Record or Entity of Record) is a legal, financial, and cryptographic intermediary that acts as the accountable legal counterparty when an autonomous software agent dispatches work, hires human contractors, enters service contracts, or settles cross-border payments [1]. Because an AI agent is not a legal person, enterprises and labor marketplaces cannot transfer statutory obligations—such as worker classification, payroll tax withholding, KYB/AML screening, or error-and-omission liability—onto an unanchored software process [1]. An Agentic EoR bridges this gap by binding an agent's cryptographic identity and delegation chain ([Know Your Agent](/terms/know-your-agent/), [ERC-8004](/protocols/erc-8004/)) to a registered legal entity, enforcing spending and compliance mandates ([ERC-8226](/protocols/erc-8226/), [Verifiable Intent](/protocols/vi/), [VCAP](/protocols/vcap/)) and executing escrow or invoice settlement ([ERC-8183](/protocols/erc-8183/), [x402](/protocols/x402/)) on behalf of the human or corporate principal [2][3].",
+    "step": "account",
+    "related_protocols": [
+      "erc-8004",
+      "erc-8183",
+      "erc-8226",
+      "vi",
+      "tap",
+      "daap",
+      "vcap"
+    ],
+    "sources": [
+      {
+        "url": "https://www.toku.com/resources/ai-agents-hiring-humans",
+        "date": "2026-03-10",
+        "label": "VERIFIED"
+      },
+      {
+        "url": "https://eips.ethereum.org/EIPS/eip-8183",
+        "date": "2026-07-02",
+        "label": "VERIFIED"
+      },
+      {
+        "url": "https://eips.ethereum.org/EIPS/eip-8226",
+        "date": "2026-07-17",
+        "label": "VERIFIED"
+      }
+    ]
+  },
+  {
+    "id": "buyer-of-record",
+    "group": null,
+    "part_of": null,
+    "name": "Buyer of Record & Merchant of Record (Agentic Commerce)",
+    "aliases": [
+      "Buyer of Record",
+      "Merchant of Record for AI Agents",
+      "Agentic BoR",
+      "Agentic MoR"
+    ],
+    "definition_md": "In agentic commerce, the **Buyer of Record (BoR)** and **Merchant of Record (MoR)** define which legal entities bear tax, chargeback, refund, and regulatory responsibility when an AI agent or harness executes a purchase on a user's behalf [1]. Neither the AI chat interface nor the wallet or card credential initially debited automatically determines MoR or BoR status: an agentic checkout flow ([Agentic Commerce Protocol](/protocols/agentic-commerce-protocol/), [Universal Commerce Protocol](/protocols/ucp/), [AP2](/protocols/ap2/)) must explicitly name the seller of record, the principal buyer of record, and the cryptographic mandate ([Verifiable Intent](/protocols/vi/), [Trusted Agent Protocol](/protocols/tap/)) authorizing the agent to accept order terms and trigger settlement [1][2][3].",
+    "step": "pay",
+    "related_protocols": [
+      "agentic-commerce-protocol",
+      "ucp",
+      "ap2",
+      "vi",
+      "tap",
+      "x402",
+      "mpp"
+    ],
+    "sources": [
+      {
+        "url": "https://gruv.ai/blog/merchant-of-record-ai-agents-buyer-of-record",
+        "date": "2026-06-01",
+        "label": "VERIFIED"
+      },
+      {
+        "url": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
+        "date": "2026-04-17",
+        "label": "VERIFIED"
+      },
+      {
+        "url": "https://ucp.dev",
+        "date": "2026-08-21",
+        "label": "VERIFIED"
+      }
+    ]
   }
 ]
