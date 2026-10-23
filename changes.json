@@ -1741,5 +1741,18 @@
   "evidence_url": "https://datatracker.ietf.org/doc/draft-hamr-oauth-agent-delegation/",
   "detector": "ietf@1.0",
   "commit": "e29fb0b2e5672233e2cdf2961e1b49b945fc4f85"
+ },
+ {
+  "id": "q-2026-10-23-otel-genai-semconv-recovered",
+  "date": "2026-10-23",
+  "record_id": "otel-genai-semconv",
+  "kind": "recovered",
+  "field": "freshness",
+  "from": "source-unavailable",
+  "to": null,
+  "claim": "Source for watch github:otel-genai-semconv:open-telemetry/semantic-conventions-genai reachable again",
+  "evidence_url": "https://github.com/open-telemetry/semantic-conventions-genai",
+  "detector": "github@1.0",
+  "commit": null
  }
 ]

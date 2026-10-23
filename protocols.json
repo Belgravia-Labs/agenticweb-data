@@ -14810,6 +14810,10 @@
    {
     "date": "2026-10-22",
     "note": "source github:otel-genai-semconv:open-telemetry/semantic-conventions-genai unavailable after 3 failures"
+   },
+   {
+    "date": "2026-10-23",
+    "note": "source reachable again"
    }
   ],
   "watch": [
@@ -14831,8 +14835,7 @@
     "selector": "main",
     "cadence": "weekly"
    }
-  ],
-  "freshness": "source-unavailable"
+  ]
  },
  {
   "id": "erc-8001",
