@@ -1416,5 +1416,24 @@
   "evidence_url": "https://aaif.io/press/agent-skills-joins-the-agentic-ai-foundation/",
   "detector": "curated@2026-10-23",
   "commit": "f5f39382be8c8004ddff61f3dbcb0ac351d5b96c"
+ },
+ {
+  "id": "q-2026-10-23-adcp-version",
+  "date": "2026-10-23",
+  "record_id": "adcp",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "label": "v3.2.5",
+   "date": "2026-10-16"
+  },
+  "to": {
+   "label": "v3.2.6",
+   "date": "2026-10-23"
+  },
+  "claim": "v3.2.6 released 2026-10-23",
+  "evidence_url": "https://github.com/adcontextprotocol/adcp/releases/tag/v3.2.6",
+  "detector": "github@1.0",
+  "commit": null
  }
 ]

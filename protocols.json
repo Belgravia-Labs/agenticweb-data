@@ -5594,6 +5594,17 @@
     "http_status": 200,
     "content_sha256": "0352e754a131435d7339da537d1930976de063842232401e2eac51d3fd923152",
     "detector": "github@1.0"
+   },
+   {
+    "claim": "v3.2.6 released 2026-10-23",
+    "label": "VERIFIED",
+    "url": "https://github.com/adcontextprotocol/adcp/releases/tag/v3.2.6",
+    "date": "2026-10-23",
+    "retrieved_at": "2026-10-23T12:32:06Z",
+    "source_type": "issuer",
+    "http_status": 200,
+    "content_sha256": "7d78cbb2094626c03cea04c9feff7de0424397c37251ef642439f824959453bd",
+    "detector": "github@1.0"
    }
   ],
   "form": "well-known-file",
@@ -5623,6 +5634,10 @@
    {
     "date": "2026-10-20",
     "note": "spec_url and page watcher moved off the pinned 3.1.20 docs to the docs home (current release v3.2.5)"
+   },
+   {
+    "date": "2026-10-23",
+    "note": "version v3.2.6 (watcher)"
    }
   ],
   "id": "adcp",
@@ -5653,8 +5668,8 @@
   "summary_md": "The Ad Context Protocol (AdCP) is an open standard, published by the industry organization AgenticAdvertising.org, that lets AI agents discover ad inventory, set up commercial relationships, plan and execute media buys, generate and distribute creative, activate targeting data, run governance checks, and report performance across many ad platforms through one set of tasks instead of a bespoke integration per platform [1]. It explicitly targets more than programmatic exchange: it covers direct deals, sponsorships, broadcast, and out-of-home, since most global ad spend still flows through non-programmatic channels [1].\n\nAdCP solves ad-tech's fragmentation problem for agentic buying: a media buyer's agent sends one natural-language brief via `get_products` to every connected seller and receives back a common schema (pricing, forecasts, targeting, creative requirements) instead of comparing incompatible dashboards; `create_media_buy` then executes across sellers in one call, and `get_media_buy_delivery` aggregates reporting the same way [1]. Publisher-side discovery runs through a well-known `adagents.json` file (analogous to `robots.txt`) declaring authorized agent endpoints and capabilities, and brand-side identity/authorization runs through `brand.json`; a hosted Registry API additionally resolves publishers and brands to their AdCP agents by capability, category, or geography for broader discovery beyond known domains [1]. Trust is handled structurally: requests are signed with RFC 9421 HTTP Message Signatures against operator-published JWKS, idempotency keys make retried writes safe, and governance approvals travel as signed JWS tokens so no intermediate agent can forge a human sign-off [1].\n\nAdCP does not itself run ad auctions or hold inventory — it is a transaction and coordination layer that sits on top of two existing agent-transport protocols, MCP (for AI-assistant tool calls) and A2A (for agent-to-agent collaboration), using the same task schemas over either transport [1]. It also does not claim every listed agent's capability claims are true by construction: the protocol ships compliance storyboards (a testable, runnable verification suite) precisely because claims otherwise would not be independently checkable [1].\n\nAs of October 2026, the current release is v3.2.5 (succeeding the v3.1.20 release verified in September 2026), with published, versioned client SDKs for JavaScript/TypeScript, Python, and Go [1]. The one open-source implementation surfaced in the docs, the Prebid Sales Agent (Python backend, TypeScript protocol layer, GAM integration), is explicitly labeled a community example built by a Prebid working group rather than a maintained reference implementation — a caveat AdCP's own documentation states outright, which this record treats as direct evidence of at least one independent, named implementer rather than as proof of broad adoption [1]. Foundation-level governance (voting classes, Board composition, spec lifecycle) is documented in a public CHARTER.md, which is more governance transparency than many single-vendor competitors in this space disclose [1][2]. What remains unverified: no independent count of publishers actually serving `adagents.json` in production, nor of live AdCP agent endpoints, was located in this pass — that would need this project's own probe run before adoption could be upgraded from `observed` to `measured`.",
   "track": "industry-body",
   "version": {
-   "label": "v3.2.5",
-   "date": "2026-10-16"
+   "label": "v3.2.6",
+   "date": "2026-10-23"
   },
   "watch": [
    {
