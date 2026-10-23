@@ -10263,8 +10263,7 @@
     ],
     "prerequisites": [
       "oauth-metadata-for-agents"
-    ],
-    "freshness": "review-due"
+    ]
   },
   {
     "acronym": "AIMS",
