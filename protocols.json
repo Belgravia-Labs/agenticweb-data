@@ -1777,7 +1777,7 @@
   ],
   "id": "erc-8004",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "ERC-8004: Trustless Agents",
   "native_status": "Draft Standards Track ERC",
   "origin": {
@@ -1890,7 +1890,7 @@
   ],
   "id": "erc-8183",
   "implementation": "prototype",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "ERC-8183: Agentic Commerce",
   "native_status": "Draft ERC — 'This specification defines the Agentic Commerce Protocol: a job with escrowed budget...'",
   "origin": {
@@ -1996,7 +1996,7 @@
   ],
   "id": "erc-8226",
   "implementation": "prototype",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "ERC-8226 Regulated Agent Mandate",
   "native_status": "Draft, Standards Track: ERC (marked ⚠️ Draft on eips.ethereum.org)",
   "origin": {
@@ -2099,7 +2099,7 @@
   ],
   "id": "webmcp",
   "implementation": "developer-trial",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "WebMCP",
   "native_status": "Draft Community Group Report, dated 4 September 2026; explicitly \"not a W3C Standard nor on the W3C Standards Track\"",
   "origin": {
@@ -2723,7 +2723,7 @@
   ],
   "id": "aipref-content-usage-attachment",
   "implementation": "unknown",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "AIPREF Content-Usage Attachment",
   "native_status": "Internet-Draft, work in progress; \"About This Document\" note says it is to be removed before publishing as an RFC",
   "origin": {
@@ -2841,7 +2841,7 @@
   ],
   "id": "aipref-vocabulary",
   "implementation": "unknown",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "AIPREF Vocabulary",
   "native_status": "Internet-Draft, work in progress; explicitly states its contents 'DO NOT REFLECT CONSENSUS of the Working Group'",
   "origin": {
@@ -3229,7 +3229,7 @@
   ],
   "id": "webbotauth",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "Web Bot Auth HTTP Message Signatures",
   "native_status": "Active Internet-Draft, WG Document, Intended Status: Standards Track; expires 5 March 2027",
   "origin": {
@@ -3340,7 +3340,7 @@
   ],
   "id": "web-bot-auth-signature-agent-card",
   "implementation": "prototype",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "Signature Agent Card (Web Bot Auth registry)",
   "native_status": "Active Internet-Draft (individual), Intended Status: Informational",
   "origin": {
@@ -3798,7 +3798,7 @@
   ],
   "id": "dns-aid",
   "implementation": "unknown",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "DNS for AI Discovery",
   "native_status": "Internet-Draft, Standards Track intended status",
   "origin": {
@@ -3926,7 +3926,7 @@
   ],
   "id": "ans",
   "implementation": "none-found",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "Agent Name Service v2 (ANS)",
   "native_status": "Expired Internet-Draft (expired 2026-10-15)",
   "origin": {
@@ -4189,7 +4189,7 @@
   ],
   "id": "adp",
   "implementation": "prototype",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "Agent Discovery Protocol",
   "native_status": "Internet-Draft; work in progress",
   "origin": {
@@ -4321,7 +4321,7 @@
   ],
   "id": "ardp",
   "implementation": "none-found",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "Agent Registration and Discovery Protocol",
   "native_status": "Expired Internet-Draft (expired 2026-08-28)",
   "origin": {
@@ -4430,7 +4430,7 @@
   ],
   "id": "ads",
   "implementation": "shipping",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "Agent Directory Service",
   "native_status": "Internet-Draft; work in progress; canonical spec tracked at spec.dir.agntcy.org",
   "origin": {
@@ -6163,7 +6163,7 @@
   ],
   "id": "wimse",
   "implementation": "prototype",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "Workload Identity in Multi System Environments (WIMSE) Architecture",
   "native_status": "Active Internet-Draft, WG Document, Intended Status: Informational",
   "origin": {
@@ -6317,7 +6317,7 @@
   ],
   "id": "aauth",
   "implementation": "none-found",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "Agent Authorization Grant",
   "native_status": "Expired Internet-Draft (expired 2026-04-23)",
   "origin": {
@@ -6438,7 +6438,7 @@
   ],
   "id": "daap",
   "implementation": "prototype",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "OAuth Profile for Delegated AI Agent Authorization",
   "native_status": "Internet-Draft, individual submission, Active",
   "origin": {
@@ -6576,7 +6576,7 @@
   ],
   "id": "aap",
   "implementation": "prototype",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "Agent Authorization Profile",
   "native_status": "Expired Internet-Draft (expired 2026-08-11)",
   "origin": {
@@ -6686,7 +6686,7 @@
   ],
   "id": "aip",
   "implementation": "none-found",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "Agent Identity Protocol (AIP)",
   "native_status": "Internet-Draft, Intended Status: Standards Track (author's stated intent; not adopted by any WG)",
   "origin": {
@@ -6787,7 +6787,7 @@
   ],
   "id": "agtp",
   "implementation": "none-found",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "Agent Transfer Protocol",
   "native_status": "Internet-Draft (work in progress), independent submission",
   "origin": {
@@ -6891,7 +6891,7 @@
   ],
   "id": "vcap",
   "implementation": "unknown",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "VCAP: Verified Commerce for Agent Protocols",
   "native_status": "Active Internet-Draft (individual); Intended RFC status: Informational",
   "origin": {
@@ -7612,7 +7612,7 @@
   ],
   "id": "agent-audit-trail",
   "implementation": "none-found",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "Agent Audit Trail",
   "native_status": "Active Internet-Draft (individual submission), Intended status: Standards Track; not a Working Group document",
   "origin": {
@@ -9067,7 +9067,7 @@
   ],
   "id": "ai-txt",
   "implementation": "prototype",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "ai.txt",
   "native_status": "IETF Internet-Draft (draft-car-ai-txt-wellknown-00) presented as a formal well-known-URI registration proposal; kaylacar/ai-txt separately claims IANA filing (#76/#77, 'under review')",
   "origin": {
@@ -10173,11 +10173,15 @@
    {
     "date": "2026-10-16",
     "note": "use-case tags (auto)"
+   },
+   {
+    "date": "2026-10-23",
+    "note": "draft-ietf-oauth-identity-assertion-authz-grant-04 expires on 2026-11-22"
    }
   ],
   "id": "identity-assertion-authz-grant",
   "implementation": "multi-implementation",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "Identity Assertion JWT Authorization Grant",
   "native_status": "Active Internet-Draft, WG Document (oauth WG); Intended status: Standards Track (per document front matter); IESG state: I-D Exists",
   "origin": {
@@ -10229,7 +10233,8 @@
   ],
   "prerequisites": [
    "oauth-metadata-for-agents"
-  ]
+  ],
+  "freshness": "review-due"
  },
  {
   "acronym": "AIMS",
@@ -10336,7 +10341,7 @@
   ],
   "id": "aiagent-auth",
   "implementation": "unknown",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "AI Agent Authentication and Authorization (AIMS)",
   "native_status": "Replaced by draft-ietf-wimse-aims-00 (WG document, 2026-09-15)",
   "origin": {
@@ -10462,7 +10467,7 @@
   ],
   "id": "dan",
   "implementation": "prototype",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "DNS-Based Agent Naming",
   "native_status": "Active Internet-Draft (individual, -00), Intended status: Standards Track; IESG state 'I-D Exists'; expires 7 December 2026",
   "origin": {
@@ -10723,7 +10728,7 @@
   ],
   "id": "wimse-aims",
   "implementation": "unknown",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "WIMSE AI Identity Management System",
   "native_status": "Working group document, draft-ietf-wimse-aims-00 (2026-09-15)",
   "origin": {
@@ -10989,7 +10994,7 @@
   ],
   "id": "aauth-hardt",
   "implementation": "unknown",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "AAuth (Hardt)",
   "native_status": "Active Internet-Draft, draft-hardt-oauth-aauth-protocol-11 (2026-09-25, expires 2027-03-29); the companion draft-hardt-aauth-headers-00 (2026-10-04) is marked Expired by the Datatracker",
   "origin": {
@@ -11253,7 +11258,7 @@
   ],
   "id": "wimse-agent-audit-record",
   "implementation": "none-found",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "An Audit Record Format for AI Agent Authorization Decisions",
   "native_status": "Internet-Draft (individual), Intended Status: Informational; expires 19 April 2027",
   "origin": {
@@ -11568,7 +11573,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-16",
@@ -11667,7 +11672,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-16",
@@ -11714,8 +11719,8 @@
    "probe_run": null
   },
   "version": {
-   "label": "draft-morrison-mcp-dns-discovery-08",
-   "date": "2026-10-09"
+   "label": "draft-morrison-mcp-dns-discovery-09",
+   "date": null
   },
   "spec_url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08",
   "discovery": {
@@ -11734,6 +11739,17 @@
     "label": "REPORTED",
     "url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08",
     "date": "2026-10-09"
+   },
+   {
+    "claim": "A newer revision, draft-morrison-mcp-dns-discovery-09, now exists; the -08 page is marked as an older version of an Internet-Draft whose latest revision is Active.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08",
+    "date": "2026-10-23",
+    "retrieved_at": "2026-10-23T05:01:05Z",
+    "source_type": "issuer",
+    "http_status": 200,
+    "content_sha256": "977014a722a3e972bbc781d08a75ade40b7d8073f245ec50978a5e8e3320fbd6",
+    "detector": "sonnet@patch-v1"
    }
   ],
   "summary_md": "This Internet-Draft defines three DNS TXT records: `_mcp.<domain>` for MCP server endpoint, transport, key and capability profile; `_org-alter.<domain>` for operator organisational identity; and `_alter.<domain>` for an Ed25519-signed ~handle envelope. DNSSEC validation is required for the envelope record, and a DANE TLSA pin is required on the MCP endpoint in some cases. It follows the DKIM, SPF, DMARC and MTA-STS precedent and discusses related DNS-based discovery drafts (AGENT-AID, DNS-AID, MDNS-AGENT).",
@@ -11760,11 +11776,15 @@
    "mcp"
   ],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-16",
     "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08)"
+   },
+   {
+    "date": "2026-10-23",
+    "note": "A newer revision, draft-morrison-mcp-dns-discovery-09, now exists; the -08 page is marked as an older version of an Internet-Draft whose latest revision is Active. (auto)"
    }
   ],
   "watch": [
@@ -11846,7 +11866,7 @@
   "pairs_with": [],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-16",
@@ -11936,7 +11956,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-16",
@@ -12033,7 +12053,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-16",
@@ -12081,10 +12101,10 @@
    "probe_run": null
   },
   "version": {
-   "label": "draft-nelson-agent-delegation-receipts-14",
-   "date": "2026-10-15"
+   "label": "draft-nelson-agent-delegation-receipts-15",
+   "date": "2026-10-22"
   },
-  "spec_url": "https://datatracker.ietf.org/doc/draft-nelson-agent-delegation-receipts/",
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-nelson-agent-delegation-receipts-15",
   "discovery": {
    "mechanism": "No discovery mechanism described in the available page text; receipts are presented by the agent to a verifier before executing an action.",
    "path": null
@@ -12107,6 +12127,17 @@
     "date": "2026-10-15",
     "label": "VERIFIED",
     "url": "https://datatracker.ietf.org/doc/draft-nelson-agent-delegation-receipts/"
+   },
+   {
+    "claim": "Datatracker shows draft-nelson-agent-delegation-receipts-15, dated 2026-10-22, expires 2027-04-25",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-nelson-agent-delegation-receipts/",
+    "date": "2026-10-22",
+    "retrieved_at": "2026-10-23T05:01:12Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "e6955f0da7f34d1d54371c3b7f59258301746bfc23baf449706575230cec0517",
+    "detector": "ietf@1.0"
    }
   ],
   "summary_md": "Defines the Agent Delegation Receipt, a signed record of the scope, hard boundaries, validity window, and operator-instruction hash that a human principal authorized for an AI agent. Version -11 uses a JWS profile (RFC 7515) over JCS-canonicalized JSON (RFC 8785) and a COSE_Sign1 profile (RFC 9052). It also specifies scope attenuation across multi-agent delegation chains and a revocation registry with cascade semantics. The draft states it is an audit and attribution layer for honest deployments, not a control against a malicious operator.",
@@ -12131,7 +12162,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-16",
@@ -12140,6 +12171,10 @@
    {
     "date": "2026-10-20",
     "note": "version -14 (2026-10-15); watcher unpinned from -11 (gap scout 2026-10-20)"
+   },
+   {
+    "date": "2026-10-23",
+    "note": "revision 14 → 15 (watcher)"
    }
   ],
   "watch": [
@@ -12238,7 +12273,7 @@
    "aauth"
   ],
   "dispute": null,
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-16",
@@ -12335,7 +12370,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-16",
@@ -12423,7 +12458,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-16",
@@ -12513,7 +12548,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-16",
@@ -12598,7 +12633,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-16",
@@ -12683,7 +12718,7 @@
   "pairs_with": [],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-16",
@@ -12775,7 +12810,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-16",
@@ -12870,7 +12905,7 @@
    "webbotauth"
   ],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-19",
@@ -12954,7 +12989,7 @@
   "pairs_with": [],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-19",
@@ -13045,7 +13080,7 @@
    "wimse"
   ],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-19",
@@ -13130,7 +13165,7 @@
   "pairs_with": [],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-19",
@@ -13221,7 +13256,7 @@
    "mcp"
   ],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-19",
@@ -13310,7 +13345,7 @@
    "wimse-aims"
   ],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-19",
@@ -13402,7 +13437,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-19",
@@ -13486,7 +13521,7 @@
   "prerequisites": [],
   "pairs_with": [],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-19",
@@ -13577,7 +13612,7 @@
    "ap2"
   ],
   "dispute": null,
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-19",
@@ -13671,7 +13706,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-19",
@@ -14229,7 +14264,7 @@
     "date": "2026-10-20"
    }
   ],
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "dispute": null,
   "summary_md": "KYAPay Token defines JWT profiles that let an agent show who it is and pay in one step [2]. There are three token types: `kya+jwt` for agent identity, `pay+jwt` for payment and `kya-pay+jwt` for both together [2]. The aim is for authorization and resource servers from different vendors to verify the agent and accept its payment without a bilateral integration. The draft lists settlement types, including card schemes such as `visa_vic` and `mastercard_scof` [2].\n\nIt is an individual Internet-Draft from Skyfire, co-authored by Michael B. Jones, and has not been adopted by an IETF working group [1]. Revision -02 is dated 2026-10-02 and replaces the earlier draft-skyfire-kyapayprofile [1][2]. Skyfire publishes live signing keys for its tokens [3]. It lives under Pay because of the combined token and settlement types, but it does Identify work too.",
   "history": [
@@ -14325,7 +14360,7 @@
     "date": "2026-07-28"
    }
   ],
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "dispute": null,
   "summary_md": "A Client ID Metadata Document lets an OAuth client use an HTTPS URL as its `client_id` and publish its metadata (name, redirect URIs, keys) at that URL [1]. An authorization server that has never seen the client fetches the URL and learns what it needs. That removes the need to register in advance or to use Dynamic Client Registration. Servers say they support it with `client_id_metadata_document_supported` in their RFC 8414 metadata [2].\n\nIt matters for agents mainly through MCP. The stable MCP revision of 2026-07-28 says clients and authorization servers SHOULD support CIMD, and it deprecates Dynamic Client Registration [2]. That spec still cites the -00 revision of the draft.\n\nThe draft is an IETF OAuth working group document, by Aaron Parecki and Emelia Smith; revision -02 is dated 2026-07-06 [1]. This site has not counted how many authorization servers advertise support.",
   "history": [
@@ -14877,7 +14912,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-20",
@@ -14986,7 +15021,7 @@
    ],
    "summary": "ERC-8126 reached Final while it depends on ERC-8004, which is still a Draft. A Final standard is meant to be frozen, but the identity and validation registries it builds on can still change, so ERC-8126 implementations may need to follow ERC-8004 revisions."
   },
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-20",
@@ -15079,7 +15114,7 @@
    "erc-8126"
   ],
   "dispute": null,
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-20",
@@ -15175,7 +15210,7 @@
    "ard"
   ],
   "dispute": null,
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-20",
@@ -15221,10 +15256,10 @@
    "probe_run": null
   },
   "version": {
-   "label": "draft-illyes-webbotauth-jafar-00",
-   "date": "2026-04-21"
+   "label": "draft-illyes-webbotauth-jafar-01",
+   "date": "2026-10-22"
   },
-  "spec_url": "https://datatracker.ietf.org/doc/draft-illyes-webbotauth-jafar/",
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-illyes-webbotauth-jafar-01",
   "discovery": {
    "mechanism": "None defined: the draft specifies only the JSON file's syntax and semantics (media type application/jafar+json), not where it is published or how it is retrieved",
    "path": null
@@ -15247,6 +15282,17 @@
     "date": "2026-04-21",
     "label": "VERIFIED",
     "url": "https://www.ietf.org/archive/id/draft-illyes-webbotauth-jafar-00.html"
+   },
+   {
+    "claim": "Datatracker shows draft-illyes-webbotauth-jafar-01, dated 2026-10-22, expires 2027-04-25",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-illyes-webbotauth-jafar/",
+    "date": "2026-10-22",
+    "retrieved_at": "2026-10-23T05:01:47Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "46472e3b25bdbf25f01591790028bff6165e85f6c053e94a0057ba36a370aee1",
+    "detector": "ietf@1.0"
    }
   ],
   "summary_md": "JAFAR defines one JSON format in which operators of crawlers, AI bots and other automated HTTP clients publish the IP address ranges they send traffic from, so site operators can recognise legitimate automated traffic without maintaining a different parser per vendor [2]. A file is a single JSON object with a creation timestamp and one array of prefixes covering both IPv4 and IPv6. Each prefix can be tagged with the publisher's own service names, and an optional sync token signals changes [2]. The draft registers `application/jafar+json`, with a version parameter for future changes, and gives caching rules for consumers [2].\n\nIt says it codifies and extends common existing practice and complements forward-confirmed reverse DNS rather than replacing it [2]. It defines only the file, not where it lives or how sites should use it, so there is nothing to probe at an origin [2]. It sits beside Web Bot Auth, which identifies a client by signature rather than by address, and the expired crawler best-practices draft by the same author listed publishing IP ranges in a standard format as one of its six practices.\n\nCurrent state: an individual draft, -00 of 2026-04-21, replacing the earlier draft-illyes-aipref-jafar. Discussion is on the aipref list despite the name [1][2]. It expires on 2026-10-23; if no -01 appears, this record should be marked expired as `ardp` was.",
@@ -15267,7 +15313,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-20",
@@ -15276,6 +15322,10 @@
    {
     "date": "2026-10-22",
     "note": "draft-illyes-webbotauth-jafar-00 expires on 2026-10-23"
+   },
+   {
+    "date": "2026-10-23",
+    "note": "revision 00 → 01 (watcher)"
    }
   ],
   "watch": [
@@ -15283,8 +15333,7 @@
     "type": "ietf",
     "doc": "draft-illyes-webbotauth-jafar"
    }
-  ],
-  "freshness": "review-due"
+  ]
  },
  {
   "id": "anonymous-bot-auth",
@@ -15366,7 +15415,7 @@
   ],
   "prerequisites": [],
   "dispute": null,
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "history": [
    {
     "date": "2026-10-20",
@@ -15426,7 +15475,7 @@
   ],
   "id": "workload-authz-grant",
   "implementation": "none-found",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "Workload Authorization Grant",
   "native_status": "Internet-Draft, Intended status: Informational; draft-carleton-workload-authz-grant-01 dated 2026-09-22, expires 2027-03-26",
   "origin": {
@@ -15521,7 +15570,7 @@
   ],
   "id": "oauth-id-continuation",
   "implementation": "none-found",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "Identity Continuation Assertion for OAuth 2.0 Token Exchange",
   "native_status": "Active Internet-Draft, OAuth WG document, Intended status: Standards Track; draft-mcguinness-oauth-id-continuation-assertion-02 dated 2026-09-09, expires 2027-03-13",
   "origin": {
@@ -15606,6 +15655,17 @@
     "date": "2026-09-19",
     "label": "VERIFIED",
     "url": "https://datatracker.ietf.org/doc/draft-hamr-oauth-agent-delegation/"
+   },
+   {
+    "claim": "Datatracker shows draft-hamr-oauth-agent-delegation-03, dated 2026-10-22, expires 2027-04-25",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-hamr-oauth-agent-delegation/",
+    "date": "2026-10-22",
+    "retrieved_at": "2026-10-23T05:01:47Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "content_sha256": "e9867e64ee766f687f475329cace19bd3799c32cbee27cb86c2fce81c33ae690",
+    "detector": "ietf@1.0"
    }
   ],
   "form": "http-header",
@@ -15615,11 +15675,15 @@
    {
     "date": "2026-10-20",
     "note": "added from staged research 2026-10-20; header read from draft-hamr-oauth-agent-delegation-02"
+   },
+   {
+    "date": "2026-10-23",
+    "note": "revision 02 → 03 (watcher)"
    }
   ],
   "id": "oauth-agent-delegation",
   "implementation": "none-found",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "Attenuated Delegation Profile for Automated Agents",
   "native_status": "Active Internet-Draft, OAuth WG document, Intended status: Standards Track; draft-hamr-oauth-agent-delegation-02 dated 2026-09-19, expires 2027-03-23",
   "origin": {
@@ -15640,13 +15704,13 @@
   },
   "question": "How can an automated agent pass on a user's authority so that each hop can only narrow scope, floors, and expiry?",
   "scope": "general",
-  "spec_url": "https://www.ietf.org/archive/id/draft-hamr-oauth-agent-delegation-02.txt",
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-hamr-oauth-agent-delegation-03",
   "step": "permit",
   "summary_md": "`draft-hamr-oauth-agent-delegation-02` is a Standards Track Internet-Draft of the IETF OAuth working group, dated 19 September 2026 and expiring 23 March 2027 [1]. It defines an `Agent-Delegation` HTTP header on top of RFC 9421 HTTP Message Signatures [1]. Each link in the chain can only narrow scope, floors, and expiry. Call classes are `r`, `w`, and `x` [1].\n\nIt is a separate record from the Workload Authorization Grant, the identity-continuation assertion, and both AAP documents. The datatracker entry for the draft is [2].",
   "track": "ietf",
   "version": {
-   "label": "draft-hamr-oauth-agent-delegation-02",
-   "date": "2026-09-19"
+   "label": "draft-hamr-oauth-agent-delegation-03",
+   "date": "2026-10-22"
   },
   "watch": [
    {
@@ -15722,7 +15786,7 @@
   ],
   "id": "opena2a-aap",
   "implementation": "none-found",
-  "last_verified": "2026-10-22",
+  "last_verified": "2026-10-23",
   "name": "OpenA2A Agent Authorization Protocol",
   "native_status": "Internet-Draft, individual submission, Intended status: Standards Track; draft-fane-opena2a-aap-02 dated 2026-09-30, expires 2027-04-03",
   "origin": {

@@ -778,5 +778,50 @@
   ],
   "kind": "version",
   "detector": "rules@1.0"
+ },
+ {
+  "date": "2026-10-22",
+  "title": "Agent Delegation Receipts: revision -15 published",
+  "url": "https://datatracker.ietf.org/doc/html/draft-nelson-agent-delegation-receipts-15",
+  "summary": "Datatracker shows draft-nelson-agent-delegation-receipts-15, dated 2026-10-22, expires 2027-04-25",
+  "related": [
+   "agent-delegation-receipts"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
+  "date": "2026-10-22",
+  "title": "JAFAR: A JSON-Based Format for Publishing IP Ranges of Automated HTTP Clients: revision -01 published",
+  "url": "https://datatracker.ietf.org/doc/html/draft-illyes-webbotauth-jafar-01",
+  "summary": "Datatracker shows draft-illyes-webbotauth-jafar-01, dated 2026-10-22, expires 2027-04-25",
+  "related": [
+   "jafar"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
+  "date": "2026-10-22",
+  "title": "Attenuated Delegation Profile for Automated Agents: revision -03 published",
+  "url": "https://datatracker.ietf.org/doc/html/draft-hamr-oauth-agent-delegation-03",
+  "summary": "Datatracker shows draft-hamr-oauth-agent-delegation-03, dated 2026-10-22, expires 2027-04-25",
+  "related": [
+   "oauth-agent-delegation"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
+ },
+ {
+  "date": "2026-10-23",
+  "title": "Discovery of Model Context Protocol Servers via DNS TXT Records: A newer revision, draft-morrison-mcp-dns-discovery-09, now exists; the -08 page is marked as an older version of an Internet-Draft whose latest revision is Active",
+  "url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08",
+  "summary": "A newer revision, draft-morrison-mcp-dns-discovery-09, now exists; the -08 page is marked as an older version of an Internet-Draft whose latest revision is Active.",
+  "related": [
+   "mcp-dns-discovery"
+  ],
+  "kind": "version",
+  "detector": "sonnet@patch-v1",
+  "confidence": 0.8
  }
 ]

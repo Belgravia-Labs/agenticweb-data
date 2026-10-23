@@ -1658,5 +1658,88 @@
   "evidence_url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md",
   "detector": "github@1.0",
   "commit": "290fb8cef2bf71d3f9af2c4d2b945d5ef4faf91a"
+ },
+ {
+  "id": "q-2026-10-23-identity-assertion-authz-grant-expiring",
+  "date": "2026-10-23",
+  "record_id": "identity-assertion-authz-grant",
+  "kind": "expiring",
+  "field": "freshness",
+  "from": null,
+  "to": "review-due",
+  "claim": "draft-ietf-oauth-identity-assertion-authz-grant-04 expires on 2026-11-22",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-ietf-oauth-identity-assertion-authz-grant/",
+  "detector": "ietf@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-23-mcp-dns-discovery-text-change",
+  "date": "2026-10-23",
+  "record_id": "mcp-dns-discovery",
+  "kind": "text-change",
+  "field": "version",
+  "from": {
+   "label": "draft-morrison-mcp-dns-discovery-08",
+   "date": "2026-10-09"
+  },
+  "to": {
+   "label": "draft-morrison-mcp-dns-discovery-09",
+   "date": null
+  },
+  "claim": "A newer revision, draft-morrison-mcp-dns-discovery-09, now exists; the -08 page is marked as an older version of an Internet-Draft whose latest revision is Active.",
+  "evidence_url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08",
+  "detector": "sonnet@patch-v1",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-23-agent-delegation-receipts-revision",
+  "date": "2026-10-23",
+  "record_id": "agent-delegation-receipts",
+  "kind": "revision",
+  "field": "version",
+  "from": {
+   "label": "draft-nelson-agent-delegation-receipts-14",
+   "date": "2026-10-15"
+  },
+  "to": {
+   "label": "draft-nelson-agent-delegation-receipts-15",
+   "date": "2026-10-22"
+  },
+  "claim": "Datatracker shows draft-nelson-agent-delegation-receipts-15, dated 2026-10-22, expires 2027-04-25",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-nelson-agent-delegation-receipts/",
+  "detector": "ietf@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-23-jafar-revision",
+  "date": "2026-10-23",
+  "record_id": "jafar",
+  "kind": "revision",
+  "field": "freshness",
+  "from": "review-due",
+  "to": null,
+  "claim": "Datatracker shows draft-illyes-webbotauth-jafar-01, dated 2026-10-22, expires 2027-04-25",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-illyes-webbotauth-jafar/",
+  "detector": "ietf@1.0",
+  "commit": null
+ },
+ {
+  "id": "q-2026-10-23-oauth-agent-delegation-revision",
+  "date": "2026-10-23",
+  "record_id": "oauth-agent-delegation",
+  "kind": "revision",
+  "field": "version",
+  "from": {
+   "label": "draft-hamr-oauth-agent-delegation-02",
+   "date": "2026-09-19"
+  },
+  "to": {
+   "label": "draft-hamr-oauth-agent-delegation-03",
+   "date": "2026-10-22"
+  },
+  "claim": "Datatracker shows draft-hamr-oauth-agent-delegation-03, dated 2026-10-22, expires 2027-04-25",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-hamr-oauth-agent-delegation/",
+  "detector": "ietf@1.0",
+  "commit": null
  }
 ]
