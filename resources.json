@@ -682,25 +682,25 @@
     "date": "2026",
     "evidence": "THIN",
     "name": "Resend demo agent",
-    "url": "https://wild-card.ai/resend"
+    "url": "https://github.com/wild-card-ai/agents-json/tree/master/agents_json/resend"
    },
    {
     "date": "2026",
     "evidence": "THIN",
     "name": "Stripe demo agent",
-    "url": "https://wild-card.ai/stripe"
+    "url": "https://github.com/wild-card-ai/agents-json/tree/master/agents_json/stripe"
    },
    {
     "date": "2026",
     "evidence": "THIN",
     "name": "Rootly demo agent",
-    "url": "https://wild-card.ai/rootly"
+    "url": "https://github.com/wild-card-ai/agents-json/tree/master/agents_json/rootly"
    },
    {
     "date": "2026",
     "evidence": "THIN",
     "name": "Google Sheets demo agent",
-    "url": "https://wild-card.ai/googlesheets"
+    "url": "https://github.com/wild-card-ai/agents-json/tree/master/agents_json/googlesheets"
    }
   ],
   "implementations": [
@@ -728,7 +728,7 @@
     "date": "2026",
     "evidence": "VERIFIED",
     "name": "openai/codex",
-    "url": "https://github.com/openai/codex/blob/-/AGENTS.md"
+    "url": "https://github.com/openai/codex/blob/main/docs/agents_md.md"
    },
    {
     "date": "2026",
@@ -2310,35 +2310,35 @@
     "evidence": "VERIFIED",
     "name": "Ossie converters: dbt",
     "note": "reference converter, part of the draft-spec monorepo, not confirmed production use",
-    "url": "https://github.com/apache/ossie/tree/main/converters/dbt"
+    "url": "https://github.com/apache/ossie-converters/tree/main/dbt"
    },
    {
     "date": "2026-09-05",
     "evidence": "VERIFIED",
     "name": "Ossie converters: Salesforce",
     "note": "reference converter",
-    "url": "https://github.com/apache/ossie/tree/main/converters/salesforce"
+    "url": "https://github.com/apache/ossie-converters/tree/main/salesforce"
    },
    {
     "date": "2026-09-05",
     "evidence": "VERIFIED",
     "name": "Ossie converters: Databricks",
     "note": "reference converter",
-    "url": "https://github.com/apache/ossie/tree/main/converters/databricks"
+    "url": "https://github.com/apache/ossie-converters/tree/main/databricks"
    },
    {
     "date": "2026-09-05",
     "evidence": "VERIFIED",
     "name": "Ossie converters: Snowflake",
     "note": "reference converter",
-    "url": "https://github.com/apache/ossie/tree/main/converters/snowflake"
+    "url": "https://github.com/apache/ossie-converters/tree/main/snowflake"
    },
    {
     "date": "2026-09-05",
     "evidence": "VERIFIED",
     "name": "Ossie converters: GoodData",
     "note": "reference converter",
-    "url": "https://github.com/apache/ossie/tree/main/converters/gooddata"
+    "url": "https://github.com/apache/ossie-converters/tree/main/gooddata"
    }
   ],
   "registries": [],

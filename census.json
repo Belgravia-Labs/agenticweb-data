@@ -4702,44 +4702,6 @@
     "llms-txt"
    ]
   },
-  "example.com": {
-   "absent": [
-    "a2a",
-    "adcp",
-    "adp",
-    "ads",
-    "agent-permissions-json",
-    "agents-json",
-    "agents-md",
-    "agents-txt",
-    "agora-protocol",
-    "ai-catalog-well-known-file",
-    "ai-crawler-tokens-robots",
-    "ai-txt",
-    "aid",
-    "aipref-content-usage-attachment",
-    "aipref-vocabulary",
-    "anp",
-    "api-catalog-rfc9727",
-    "ard",
-    "ardp",
-    "auth-md",
-    "cloudflare-content-signals-policy",
-    "erc-8004",
-    "identity-assertion-authz-grant",
-    "llms-txt",
-    "lmos",
-    "oauth-metadata-for-agents",
-    "rsl",
-    "tdmrep",
-    "ucp",
-    "vi",
-    "web-bot-auth-signature-agent-card",
-    "webbotauth"
-   ],
-   "checked": "2026-10-18T19:55:00Z",
-   "found": []
-  },
   "exchangewire.com": {
    "absent": [
     "a2a",

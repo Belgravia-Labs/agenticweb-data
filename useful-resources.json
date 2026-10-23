@@ -9,7 +9,7 @@
    "vercel-agent-readability",
    "llms-txt"
   ],
-  "last_checked": "2026-09-06"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "lumar-agentic-readiness",
@@ -22,7 +22,7 @@
    "mcp",
    "ai-crawler-tokens-robots"
   ],
-  "last_checked": "2026-09-06"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "agentswelcome-protocol-atlas",
@@ -41,7 +41,7 @@
    "rsl",
    "agents-json"
   ],
-  "last_checked": "2026-09-06"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "agent-almanac",
@@ -58,7 +58,7 @@
    "a2a",
    "mcp"
   ],
-  "last_checked": "2026-09-06"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "ardvark",
@@ -69,7 +69,7 @@
   "covers": [
    "ard"
   ],
-  "last_checked": "2026-09-06"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "neuronto-ard-publishers",
@@ -80,7 +80,7 @@
   "covers": [
    "ard"
   ],
-  "last_checked": "2026-09-06"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "mcp-registry",
@@ -91,7 +91,7 @@
   "covers": [
    "mcp"
   ],
-  "last_checked": "2026-09-06"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "x402-foundation-members",
@@ -102,7 +102,7 @@
   "covers": [
    "x402"
   ],
-  "last_checked": "2026-09-06"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "cloudflare-ai-crawl-control-bots",
@@ -113,7 +113,7 @@
   "covers": [
    "ai-crawler-tokens-robots"
   ],
-  "last_checked": "2026-09-06"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "cloudflare-web-bot-auth",
@@ -125,7 +125,7 @@
    "webbotauth",
    "http-message-signatures"
   ],
-  "last_checked": "2026-09-06"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "chromestatus-webmcp",
@@ -136,7 +136,7 @@
   "covers": [
    "webmcp"
   ],
-  "last_checked": "2026-09-06"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "ietf-webbotauth-wg",
@@ -147,7 +147,7 @@
   "covers": [
    "webbotauth"
   ],
-  "last_checked": "2026-09-06"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "ietf-aipref-wg",
@@ -159,7 +159,7 @@
    "aipref-vocabulary",
    "aipref-content-usage-attachment"
   ],
-  "last_checked": "2026-09-06"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "ietf-wimse-wg",
@@ -170,7 +170,7 @@
   "covers": [
    "wimse"
   ],
-  "last_checked": "2026-09-06"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "crawlercheck",
@@ -181,7 +181,7 @@
   "covers": [
    "ai-crawler-tokens-robots"
   ],
-  "last_checked": "2026-09-06"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "llmstxt-org",
@@ -192,7 +192,7 @@
   "covers": [
    "llms-txt"
   ],
-  "last_checked": "2026-09-06"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "agntcy-dir-spec",
@@ -204,7 +204,7 @@
    "ads",
    "oasf"
   ],
-  "last_checked": "2026-09-06"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "kakao-playmcp",
@@ -215,7 +215,7 @@
   "covers": [
    "mcp"
   ],
-  "last_checked": "2026-10-20"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "shopbot-index",
@@ -226,7 +226,7 @@
   "covers": [
    "ucp"
   ],
-  "last_checked": "2026-10-20"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "crawlindex",
@@ -239,6 +239,6 @@
    "ai-crawler-tokens-robots",
    "agents-md"
   ],
-  "last_checked": "2026-10-20"
+  "last_checked": "2026-10-23"
  }
 ]

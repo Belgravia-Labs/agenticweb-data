@@ -1640,66 +1640,66 @@
  {
   "id": "ossie-converters-databricks-osi",
   "name": "Ossie converters: Databricks",
-  "url": "https://github.com/apache/ossie/tree/main/converters/databricks",
+  "url": "https://github.com/apache/ossie-converters/tree/main/databricks",
   "type": "service",
   "implements": [
    "osi"
   ],
   "observed": "2026-09-05",
   "date_basis": "source",
-  "source": "https://github.com/apache/ossie/tree/main/converters/databricks",
+  "source": "https://github.com/apache/ossie-converters/tree/main/databricks",
   "note": "Listed as an implementation in the Apache Ossie (formerly Open Semantic Interchange) record; evidence VERIFIED."
  },
  {
   "id": "ossie-converters-dbt-osi",
   "name": "Ossie converters: dbt",
-  "url": "https://github.com/apache/ossie/tree/main/converters/dbt",
+  "url": "https://github.com/apache/ossie-converters/tree/main/dbt",
   "type": "service",
   "implements": [
    "osi"
   ],
   "observed": "2026-09-05",
   "date_basis": "source",
-  "source": "https://github.com/apache/ossie/tree/main/converters/dbt",
+  "source": "https://github.com/apache/ossie-converters/tree/main/dbt",
   "note": "Listed as an implementation in the Apache Ossie (formerly Open Semantic Interchange) record; evidence VERIFIED."
  },
  {
   "id": "ossie-converters-gooddata-osi",
   "name": "Ossie converters: GoodData",
-  "url": "https://github.com/apache/ossie/tree/main/converters/gooddata",
+  "url": "https://github.com/apache/ossie-converters/tree/main/gooddata",
   "type": "service",
   "implements": [
    "osi"
   ],
   "observed": "2026-09-05",
   "date_basis": "source",
-  "source": "https://github.com/apache/ossie/tree/main/converters/gooddata",
+  "source": "https://github.com/apache/ossie-converters/tree/main/gooddata",
   "note": "Listed as an implementation in the Apache Ossie (formerly Open Semantic Interchange) record; evidence VERIFIED."
  },
  {
   "id": "ossie-converters-salesforce-osi",
   "name": "Ossie converters: Salesforce",
-  "url": "https://github.com/apache/ossie/tree/main/converters/salesforce",
+  "url": "https://github.com/apache/ossie-converters/tree/main/salesforce",
   "type": "service",
   "implements": [
    "osi"
   ],
   "observed": "2026-09-05",
   "date_basis": "source",
-  "source": "https://github.com/apache/ossie/tree/main/converters/salesforce",
+  "source": "https://github.com/apache/ossie-converters/tree/main/salesforce",
   "note": "Listed as an implementation in the Apache Ossie (formerly Open Semantic Interchange) record; evidence VERIFIED."
  },
  {
   "id": "ossie-converters-snowflake-osi",
   "name": "Ossie converters: Snowflake",
-  "url": "https://github.com/apache/ossie/tree/main/converters/snowflake",
+  "url": "https://github.com/apache/ossie-converters/tree/main/snowflake",
   "type": "service",
   "implements": [
    "osi"
   ],
   "observed": "2026-09-05",
   "date_basis": "source",
-  "source": "https://github.com/apache/ossie/tree/main/converters/snowflake",
+  "source": "https://github.com/apache/ossie-converters/tree/main/snowflake",
   "note": "Listed as an implementation in the Apache Ossie (formerly Open Semantic Interchange) record; evidence VERIFIED."
  },
  {
@@ -2316,14 +2316,14 @@
  {
   "id": "openai-codex-agents-md",
   "name": "openai/codex",
-  "url": "https://github.com/openai/codex/blob/-/AGENTS.md",
+  "url": "https://github.com/openai/codex/blob/main/docs/agents_md.md",
   "type": "site",
   "implements": [
    "agents-md"
   ],
   "observed": "2026-09-06",
   "date_basis": "recorded",
-  "source": "https://github.com/openai/codex/blob/-/AGENTS.md",
+  "source": "https://github.com/openai/codex/blob/main/docs/agents_md.md",
   "note": "Listed as an adopter in the AGENTS.md record; evidence VERIFIED."
  },
  {
