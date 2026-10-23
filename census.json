@@ -81,7 +81,7 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T02:05:11Z",
+   "checked": "2026-10-23T13:23:21Z",
    "found": [
     "a2a",
     "agents-json",
@@ -176,6 +176,51 @@
    "checked": "2026-10-23T02:16:37Z",
    "found": []
   },
+  "aaif.io": {
+   "absent": [
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agora-protocol",
+    "ai-catalog-well-known-file",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "ardp",
+    "auth-md",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
+   ],
+   "checked": "2026-10-23T13:27:42Z",
+   "found": [
+    "agents-txt",
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
   "aembit.io": {
    "absent": [
     "a2a",
@@ -246,7 +291,7 @@
     "vi",
     "web-bot-auth-signature-agent-card"
    ],
-   "checked": "2026-10-23T08:00:23Z",
+   "checked": "2026-10-23T13:27:25Z",
    "found": [
     "a2a",
     "agent-permissions-json",
@@ -300,9 +345,10 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T08:00:12Z",
+   "checked": "2026-10-23T13:23:27Z",
    "found": [
     "a2a",
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "cloudflare-content-signals-policy",
@@ -334,6 +380,7 @@
     "kya-os",
     "lmos",
     "oauth-cimd",
+    "oauth-metadata-for-agents",
     "okf",
     "rsl",
     "tdmrep",
@@ -342,7 +389,7 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T08:00:44Z",
+   "checked": "2026-10-23T13:27:50Z",
    "found": [
     "a2a",
     "ai-catalog-well-known-file",
@@ -350,9 +397,7 @@
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "auth-md",
-    "cloudflare-markdown-for-agents",
-    "llms-txt",
-    "oauth-metadata-for-agents"
+    "llms-txt"
    ]
   },
   "agenticadvertising.org": {
@@ -480,9 +525,10 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T02:17:08Z",
+   "checked": "2026-10-23T13:27:29Z",
    "found": [
     "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
     "ard"
    ]
   },
@@ -512,7 +558,7 @@
     "ucp",
     "vi"
    ],
-   "checked": "2026-10-23T08:00:38Z",
+   "checked": "2026-10-23T13:23:29Z",
    "found": [
     "a2a",
     "agents-md",
@@ -525,6 +571,8 @@
     "cloudflare-content-signals-policy",
     "cloudflare-markdown-for-agents",
     "llms-txt",
+    "mcp",
+    "mcp-server-cards",
     "oauth-metadata-for-agents",
     "okf",
     "web-bot-auth-signature-agent-card",
@@ -654,9 +702,10 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T08:00:40Z",
+   "checked": "2026-10-23T13:27:57Z",
    "found": [
     "a2a",
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "cloudflare-content-signals-policy",
@@ -883,11 +932,46 @@
   },
   "airtable.com": {
    "absent": [
-    "ard"
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "ardp",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "llms-txt",
+    "lmos",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
    ],
-   "checked": "2026-09-04T00:00:00Z",
+   "checked": "2026-10-23T13:27:33Z",
    "found": [
-    "ai-catalog-well-known-file"
+    "ai-catalog-well-known-file",
+    "oauth-cimd"
    ]
   },
   "aitxt.ing": {
@@ -1098,7 +1182,7 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T02:37:44Z",
+   "checked": "2026-10-23T13:23:35Z",
    "found": [
     "ai-catalog-well-known-file",
     "ai-crawler-tokens-robots",
@@ -1367,17 +1451,54 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T02:18:51Z",
-   "found": []
+   "checked": "2026-10-23T13:28:01Z",
+   "found": [
+    "mcp",
+    "mcp-server-cards"
+   ]
   },
   "api.mcp.github.com": {
    "absent": [
-    "ard"
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "ardp",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "llms-txt",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
    ],
-   "checked": "2026-09-04T00:00:00Z",
-   "found": [
-    "ai-catalog-well-known-file"
-   ]
+   "checked": "2026-10-23T13:27:37Z",
+   "found": []
   },
   "api.proof.com": {
    "absent": [
@@ -1411,9 +1532,10 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T08:00:16Z",
+   "checked": "2026-10-23T13:23:40Z",
    "found": [
     "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "ard",
@@ -1455,15 +1577,18 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T02:05:13Z",
+   "checked": "2026-10-23T13:28:05Z",
    "found": [
     "agents-md",
     "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "cloudflare-content-signals-policy",
     "cloudflare-markdown-for-agents",
     "llms-txt",
+    "mcp",
+    "mcp-server-cards",
     "oauth-cimd",
     "oauth-metadata-for-agents"
    ]
@@ -1723,7 +1848,7 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T08:00:34Z",
+   "checked": "2026-10-23T13:27:43Z",
    "found": [
     "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
@@ -2025,9 +2150,10 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T02:03:07Z",
+   "checked": "2026-10-23T13:23:44Z",
    "found": [
     "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "ard",
@@ -2118,8 +2244,9 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T07:57:59Z",
+   "checked": "2026-10-23T13:28:08Z",
    "found": [
+    "ai-crawler-tokens-robots",
     "api-catalog-rfc9727",
     "cloudflare-content-signals-policy"
    ]
@@ -2253,6 +2380,50 @@
    "checked": "2026-10-23T07:58:22Z",
    "found": [
     "llms-txt"
+   ]
+  },
+  "cafe24.com": {
+   "absent": [
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "ardp",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
+   ],
+   "checked": "2026-10-23T13:27:54Z",
+   "found": [
+    "llms-txt",
+    "oauth-metadata-for-agents"
    ]
   },
   "canva.com": {
@@ -2596,14 +2767,17 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T02:17:26Z",
+   "checked": "2026-10-23T13:23:49Z",
    "found": [
     "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "cloudflare-content-signals-policy",
     "cloudflare-markdown-for-agents",
-    "llms-txt"
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
    ]
   },
   "cloud.google.com": {
@@ -2772,8 +2946,9 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T08:00:36Z",
+   "checked": "2026-10-23T13:28:13Z",
    "found": [
+    "a2a",
     "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "auth-md",
@@ -2862,7 +3037,7 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T08:00:06Z",
+   "checked": "2026-10-23T13:27:58Z",
    "found": [
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
@@ -3037,8 +3212,9 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T07:59:46Z",
+   "checked": "2026-10-23T13:23:54Z",
    "found": [
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "cloudflare-content-signals-policy",
@@ -3303,7 +3479,7 @@
     "vi",
     "web-bot-auth-signature-agent-card"
    ],
-   "checked": "2026-10-22T22:52:22Z",
+   "checked": "2026-10-23T13:28:17Z",
    "found": [
     "a2a",
     "agents-md",
@@ -3407,11 +3583,48 @@
    "found": []
   },
   "desvela.dev": {
-   "absent": [],
-   "checked": "2026-09-04T00:00:00Z",
+   "absent": [
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ardp",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
+   ],
+   "checked": "2026-10-23T13:28:00Z",
    "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
     "ard",
-    "ai-catalog-well-known-file"
+    "llms-txt"
    ]
   },
   "dev.to": {
@@ -3622,15 +3835,18 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T08:00:32Z",
+   "checked": "2026-10-23T13:23:57Z",
    "found": [
     "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "ard",
     "cloudflare-content-signals-policy",
     "cloudflare-markdown-for-agents",
-    "llms-txt"
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
    ]
   },
   "developers.google.com": {
@@ -3843,10 +4059,11 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T08:00:49Z",
+   "checked": "2026-10-23T13:28:23Z",
    "found": [
     "a2a",
     "agents-md",
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "cloudflare-content-signals-policy",
@@ -3889,9 +4106,10 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T08:00:43Z",
+   "checked": "2026-10-23T13:28:05Z",
    "found": [
     "a2a",
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "cloudflare-content-signals-policy",
@@ -3934,9 +4152,10 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T08:00:18Z",
+   "checked": "2026-10-23T13:24:39Z",
    "found": [
     "a2a",
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "cloudflare-content-signals-policy",
@@ -3978,10 +4197,11 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T07:59:52Z",
+   "checked": "2026-10-23T13:28:29Z",
    "found": [
     "a2a",
     "agents-md",
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "cloudflare-content-signals-policy",
@@ -4069,14 +4289,17 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T08:00:12Z",
+   "checked": "2026-10-23T13:28:10Z",
    "found": [
     "agents-md",
     "agents-txt",
     "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
     "cloudflare-content-signals-policy",
     "cloudflare-markdown-for-agents",
-    "llms-txt"
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
    ]
   },
   "docs.perplexity.ai": {
@@ -4113,10 +4336,11 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T08:00:21Z",
+   "checked": "2026-10-23T13:24:45Z",
    "found": [
     "a2a",
     "agents-md",
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "cloudflare-content-signals-policy",
@@ -4249,9 +4473,10 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T04:04:06Z",
+   "checked": "2026-10-23T13:28:35Z",
    "found": [
     "a2a",
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "cloudflare-content-signals-policy",
     "llms-txt"
@@ -4293,7 +4518,7 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T02:23:23Z",
+   "checked": "2026-10-23T13:28:18Z",
    "found": [
     "a2a",
     "agents-txt",
@@ -4338,9 +4563,10 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T02:23:29Z",
+   "checked": "2026-10-23T13:24:50Z",
    "found": [
     "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
     "api-catalog-rfc9727",
     "cloudflare-content-signals-policy"
    ]
@@ -4563,11 +4789,48 @@
    "found": []
   },
   "eodly.io": {
-   "absent": [],
-   "checked": "2026-09-04T00:00:00Z",
+   "absent": [
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "ardp",
+    "auth-md",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
+   ],
+   "checked": "2026-10-23T13:28:38Z",
    "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
     "ard",
-    "ai-catalog-well-known-file"
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
    ]
   },
   "ethereum-magicians.org": {
@@ -4781,7 +5044,7 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T02:24:08Z",
+   "checked": "2026-10-23T13:28:24Z",
    "found": [
     "ai-catalog-well-known-file",
     "oauth-cimd",
@@ -4958,9 +5221,53 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T02:24:25Z",
+   "checked": "2026-10-23T13:24:57Z",
    "found": [
     "llms-txt"
+   ]
+  },
+  "figma.com": {
+   "absent": [
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-catalog-well-known-file",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "ardp",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "erc-8004",
+    "erc-8444",
+    "kya-os",
+    "llms-txt",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
+   ],
+   "checked": "2026-10-23T13:28:41Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "identity-assertion-authz-grant"
    ]
   },
   "firecrawl.dev": {
@@ -5010,11 +5317,48 @@
   },
   "fly.io": {
    "absent": [
-    "ard"
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-txt",
+    "agora-protocol",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "ardp",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
    ],
-   "checked": "2026-09-04T00:00:00Z",
+   "checked": "2026-10-23T13:28:27Z",
    "found": [
-    "ai-catalog-well-known-file"
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
    ]
   },
   "getdbt.com": {
@@ -5064,11 +5408,47 @@
   },
   "getlago.com": {
    "absent": [
-    "ard"
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agora-protocol",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "ard",
+    "ardp",
+    "auth-md",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
    ],
-   "checked": "2026-09-04T00:00:00Z",
+   "checked": "2026-10-23T13:25:02Z",
    "found": [
-    "ai-catalog-well-known-file"
+    "agents-txt",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
    ]
   },
   "gitbook.com": {
@@ -5106,13 +5486,16 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T08:00:25Z",
+   "checked": "2026-10-23T13:17:56Z",
    "found": [
     "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "cloudflare-content-signals-policy",
     "cloudflare-markdown-for-agents",
     "llms-txt",
+    "mcp",
+    "mcp-server-cards",
     "oauth-metadata-for-agents"
    ]
   },
@@ -5153,7 +5536,7 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T02:25:17Z",
+   "checked": "2026-10-23T13:28:31Z",
    "found": [
     "ai-catalog-well-known-file",
     "ai-crawler-tokens-robots",
@@ -5335,11 +5718,48 @@
   },
   "gtmetrix.com": {
    "absent": [
-    "ard"
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "ardp",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "llms-txt",
+    "lmos",
+    "oauth-cimd",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
    ],
-   "checked": "2026-09-04T00:00:00Z",
+   "checked": "2026-10-23T13:25:05Z",
    "found": [
-    "ai-catalog-well-known-file"
+    "ai-catalog-well-known-file",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
    ]
   },
   "gymnasium.farama.org": {
@@ -5474,11 +5894,47 @@
   },
   "hostinger.com": {
    "absent": [
-    "ard"
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "ard",
+    "ardp",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
    ],
-   "checked": "2026-09-04T00:00:00Z",
+   "checked": "2026-10-23T13:28:45Z",
    "found": [
-    "ai-catalog-well-known-file"
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-metadata-for-agents"
    ]
   },
   "hsbc.co.uk": {
@@ -5604,10 +6060,12 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T07:58:31Z",
+   "checked": "2026-10-23T13:17:38Z",
    "found": [
     "ai-catalog-well-known-file",
     "api-catalog-rfc9727",
+    "mcp",
+    "mcp-server-cards",
     "oauth-cimd",
     "oauth-metadata-for-agents"
    ]
@@ -5657,11 +6115,47 @@
   },
   "img.ly": {
    "absent": [
-    "ard"
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "ard",
+    "ardp",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
    ],
-   "checked": "2026-09-04T00:00:00Z",
+   "checked": "2026-10-23T13:25:09Z",
    "found": [
-    "ai-catalog-well-known-file"
+    "ai-catalog-well-known-file",
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
    ]
   },
   "infoq.com": {
@@ -5969,6 +6463,50 @@
     "llms-txt"
    ]
   },
+  "kyvosinsights.com": {
+   "absent": [
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-catalog-well-known-file",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "ardp",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "llms-txt",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
+   ],
+   "checked": "2026-10-23T13:28:50Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
   "learn.microsoft.com": {
    "absent": [
     "a2a",
@@ -6101,11 +6639,49 @@
   },
   "loops.so": {
    "absent": [
-    "ard"
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "api-catalog-rfc9727",
+    "ard",
+    "ardp",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
    ],
-   "checked": "2026-09-04T00:00:00Z",
+   "checked": "2026-10-23T13:28:35Z",
    "found": [
-    "ai-catalog-well-known-file"
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
    ]
   },
   "mapsoft.com": {
@@ -6233,7 +6809,7 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T07:59:41Z",
+   "checked": "2026-10-23T13:25:12Z",
    "found": [
     "anthropic-agent-skills-format",
     "cloudflare-markdown-for-agents",
@@ -6491,7 +7067,7 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T08:00:08Z",
+   "checked": "2026-10-23T13:17:41Z",
    "found": [
     "a2a",
     "agents-md",
@@ -6502,6 +7078,8 @@
     "cloudflare-content-signals-policy",
     "cloudflare-markdown-for-agents",
     "llms-txt",
+    "mcp",
+    "mcp-server-cards",
     "oauth-metadata-for-agents"
    ]
   },
@@ -6540,9 +7118,10 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T08:00:00Z",
+   "checked": "2026-10-23T13:17:46Z",
    "found": [
     "a2a",
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "cloudflare-content-signals-policy",
@@ -6609,7 +7188,6 @@
     "aipref-content-usage-attachment",
     "aipref-vocabulary",
     "anp",
-    "anthropic-agent-skills-format",
     "ard",
     "ardp",
     "auth-md",
@@ -6628,12 +7206,14 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T02:27:33Z",
+   "checked": "2026-10-23T13:25:20Z",
    "found": [
     "agents-md",
     "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
     "llms-txt"
    ]
   },
@@ -6726,28 +7306,183 @@
   },
   "neon.com": {
    "absent": [
-    "ard"
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "ard",
+    "ardp",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
    ],
-   "checked": "2026-09-04T00:00:00Z",
+   "checked": "2026-10-23T13:28:54Z",
    "found": [
-    "ai-catalog-well-known-file"
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
    ]
   },
   "neuronto.com": {
-   "absent": [],
-   "checked": "2026-09-04T00:00:00Z",
+   "absent": [
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "ardp",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "llms-txt",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
+   ],
+   "checked": "2026-10-23T13:28:43Z",
    "found": [
-    "ard",
-    "ai-catalog-well-known-file"
+    "a2a",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "ard"
    ]
+  },
+  "next.redhat.com": {
+   "absent": [
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "ardp",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "llms-txt",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
+   ],
+   "checked": "2026-10-23T13:25:29Z",
+   "found": []
   },
   "nextjs.org": {
    "absent": [
-    "ard"
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "ardp",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
    ],
-   "checked": "2026-09-04T00:00:00Z",
+   "checked": "2026-10-23T13:28:57Z",
    "found": [
-    "ai-catalog-well-known-file"
+    "ai-catalog-well-known-file",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
    ]
   },
   "notion.so": {
@@ -7196,11 +7931,50 @@
   },
   "padlet.com": {
    "absent": [
-    "ard"
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-txt",
+    "agora-protocol",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "ard",
+    "ardp",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
    ],
-   "checked": "2026-09-04T00:00:00Z",
+   "checked": "2026-10-23T13:28:47Z",
    "found": [
-    "ai-catalog-well-known-file"
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
    ]
   },
   "paloaltonetworks.com": {
@@ -7334,6 +8108,50 @@
    "checked": "2026-10-23T07:59:10Z",
    "found": []
   },
+  "personalagentprotocol.org": {
+   "absent": [
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "ardp",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
+   ],
+   "checked": "2026-10-23T13:25:32Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
   "pitchbook.com": {
    "absent": [
     "a2a",
@@ -7415,10 +8233,12 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T02:28:50Z",
+   "checked": "2026-10-23T13:29:02Z",
    "found": [
     "ai-catalog-well-known-file",
-    "llms-txt"
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
    ]
   },
   "playmcp.kakao.com": {
@@ -7676,8 +8496,9 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T07:59:35Z",
+   "checked": "2026-10-23T13:28:52Z",
    "found": [
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "cloudflare-content-signals-policy",
     "cloudflare-markdown-for-agents",
@@ -7685,11 +8506,47 @@
    ]
   },
   "publica.la": {
-   "absent": [],
-   "checked": "2026-09-04T00:00:00Z",
+   "absent": [
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "ardp",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
+   ],
+   "checked": "2026-10-23T13:25:37Z",
    "found": [
+    "a2a",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
     "ard",
-    "ai-catalog-well-known-file"
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "llms-txt",
+    "oauth-metadata-for-agents"
    ]
   },
   "pubmatic.com": {
@@ -7781,11 +8638,48 @@
   },
   "quicknode.com": {
    "absent": [
-    "ard"
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-txt",
+    "agora-protocol",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "ard",
+    "ardp",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card"
    ],
-   "checked": "2026-09-04T00:00:00Z",
+   "checked": "2026-10-23T13:29:09Z",
    "found": [
-    "ai-catalog-well-known-file"
+    "a2a",
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "webbotauth"
    ]
   },
   "quora.com": {
@@ -7833,11 +8727,51 @@
    ]
   },
   "railway.com": {
-   "absent": [],
-   "checked": "2026-09-04T00:00:00Z",
+   "absent": [
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-txt",
+    "agora-protocol",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "ardp",
+    "auth-md",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
+   ],
+   "checked": "2026-10-23T13:28:55Z",
    "found": [
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
     "ard",
-    "ai-catalog-well-known-file"
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
    ]
   },
   "rako.sh": {
@@ -8003,25 +8937,63 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T08:00:06Z",
+   "checked": "2026-10-23T13:25:41Z",
    "found": [
     "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "cloudflare-content-signals-policy",
     "cloudflare-markdown-for-agents",
     "llms-txt",
+    "mcp",
+    "mcp-server-cards",
     "oauth-cimd",
     "oauth-metadata-for-agents"
    ]
   },
   "roboflow.com": {
    "absent": [
-    "ard"
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "ardp",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
    ],
-   "checked": "2026-09-04T00:00:00Z",
+   "checked": "2026-10-23T13:29:11Z",
    "found": [
-    "ai-catalog-well-known-file"
+    "llms-txt"
    ]
   },
   "roomote.dev": {
@@ -8157,11 +9129,46 @@
   },
   "rudderstack.com": {
    "absent": [
-    "ard"
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "ardp",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
    ],
-   "checked": "2026-09-04T00:00:00Z",
+   "checked": "2026-10-23T13:29:00Z",
    "found": [
-    "ai-catalog-well-known-file"
+    "ai-catalog-well-known-file",
+    "llms-txt"
    ]
   },
   "salesforce.com": {
@@ -8243,12 +9250,14 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T07:59:54Z",
+   "checked": "2026-10-23T13:25:46Z",
    "found": [
     "ai-catalog-well-known-file",
     "ai-crawler-tokens-robots",
     "ard",
-    "llms-txt"
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
    ]
   },
   "samsung.com": {
@@ -8505,7 +9514,7 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T07:57:21Z",
+   "checked": "2026-10-23T13:29:16Z",
    "found": [
     "agents-md",
     "agents-txt",
@@ -8780,11 +9789,48 @@
   },
   "speakeasy.com": {
    "absent": [
-    "ard"
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "ard",
+    "ardp",
+    "auth-md",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
    ],
-   "checked": "2026-09-04T00:00:00Z",
+   "checked": "2026-10-23T13:29:04Z",
    "found": [
-    "ai-catalog-well-known-file"
+    "a2a",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
    ]
   },
   "spiffe.io": {
@@ -9128,9 +10174,10 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T07:57:30Z",
+   "checked": "2026-10-23T13:25:50Z",
    "found": [
     "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
     "anthropic-agent-skills-format",
     "api-catalog-rfc9727",
     "ard",
@@ -9228,11 +10275,47 @@
   },
   "surrealdb.com": {
    "absent": [
-    "ard"
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "ard",
+    "ardp",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
    ],
-   "checked": "2026-09-04T00:00:00Z",
+   "checked": "2026-10-23T13:29:20Z",
    "found": [
-    "ai-catalog-well-known-file"
+    "a2a",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-metadata-for-agents"
    ]
   },
   "swisscom.ch": {
@@ -9410,11 +10493,49 @@
   },
   "telnyx.com": {
    "absent": [
-    "ard"
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-txt",
+    "agora-protocol",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "ard",
+    "ardp",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "vi",
+    "web-bot-auth-signature-agent-card"
    ],
-   "checked": "2026-09-04T00:00:00Z",
+   "checked": "2026-10-23T13:29:09Z",
    "found": [
-    "ai-catalog-well-known-file"
+    "a2a",
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents",
+    "ucp",
+    "webbotauth"
    ]
   },
   "tempo.xyz": {
@@ -9452,7 +10573,7 @@
     "vi",
     "web-bot-auth-signature-agent-card"
    ],
-   "checked": "2026-10-23T07:57:32Z",
+   "checked": "2026-10-23T13:25:53Z",
    "found": [
     "agents-md",
     "ai-crawler-tokens-robots",
@@ -9673,9 +10794,12 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T02:32:32Z",
+   "checked": "2026-10-23T13:29:25Z",
    "found": [
-    "cloudflare-content-signals-policy"
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "mcp",
+    "mcp-server-cards"
    ]
   },
   "ucp.dev": {
@@ -9800,7 +10924,7 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T07:57:29Z",
+   "checked": "2026-10-23T13:29:13Z",
    "found": [
     "ai-catalog-well-known-file",
     "anthropic-agent-skills-format",
@@ -10409,6 +11533,96 @@
     "cloudflare-content-signals-policy"
    ]
   },
+  "x402.org": {
+   "absent": [
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "ard",
+    "ardp",
+    "auth-md",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
+   ],
+   "checked": "2026-10-23T13:25:56Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "yahoo.com": {
+   "absent": [
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-catalog-well-known-file",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "ardp",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "llms-txt",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
+   ],
+   "checked": "2026-10-23T13:29:26Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
   "yoast.com": {
    "absent": [
     "a2a",
@@ -10486,7 +11700,7 @@
     "web-bot-auth-signature-agent-card",
     "webbotauth"
    ],
-   "checked": "2026-10-23T07:44:56Z",
+   "checked": "2026-10-23T13:29:17Z",
    "found": [
     "agents-md",
     "ai-catalog-well-known-file",
@@ -10495,6 +11709,50 @@
     "api-catalog-rfc9727",
     "cloudflare-content-signals-policy",
     "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "zed.dev": {
+   "absent": [
+    "a2a",
+    "adcp",
+    "adp",
+    "ads",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "agents-txt",
+    "agora-protocol",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "ai-txt",
+    "aid",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "anp",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "ardp",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "erc-8004",
+    "erc-8444",
+    "identity-assertion-authz-grant",
+    "kya-os",
+    "lmos",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "okf",
+    "rsl",
+    "tdmrep",
+    "ucp",
+    "vi",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
+   ],
+   "checked": "2026-10-23T13:26:03Z",
+   "found": [
     "llms-txt"
    ]
   }

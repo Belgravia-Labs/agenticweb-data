@@ -201,15 +201,15 @@
  "stats": {
   "previous": "2026-10-20",
   "panel": {
-   "domains": 212,
-   "checked": 204,
-   "errors": 8,
-   "compared": 192,
+   "domains": 240,
+   "checked": 240,
+   "errors": 0,
+   "compared": 200,
    "grades": {
-    "A+": 22,
-    "A": 15,
-    "B": 35,
-    "C": 53,
+    "A+": 44,
+    "A": 17,
+    "B": 41,
+    "C": 59,
     "D": 10,
     "F": 69
    },
@@ -217,103 +217,103 @@
     {
      "id": "llms-txt",
      "name": "llms.txt",
-     "domains": 111,
+     "domains": 140,
      "delta": 4
     },
     {
      "id": "ai-crawler-tokens-robots",
      "name": "AI Crawler User-Agent Tokens in robots.txt",
-     "domains": 66,
-     "delta": -96
+     "domains": 92,
+     "delta": -98
     },
     {
      "id": "cloudflare-markdown-for-agents",
      "name": "Markdown for Agents",
-     "domains": 40,
-     "delta": 38
+     "domains": 61,
+     "delta": 40
     },
     {
      "id": "cloudflare-content-signals-policy",
      "name": "Content Signals Policy",
-     "domains": 36,
-     "delta": 1
-    },
-    {
-     "id": "anthropic-agent-skills-format",
-     "name": "Agent Skills",
-     "domains": 27,
-     "delta": 26
+     "domains": 56,
+     "delta": 2
     },
     {
      "id": "api-catalog-rfc9727",
      "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs",
-     "domains": 23,
-     "delta": 6
+     "domains": 45,
+     "delta": 7
     },
     {
-     "id": "oauth-metadata-for-agents",
-     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)",
-     "domains": 18,
-     "delta": -2
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills",
+     "domains": 44,
+     "delta": 29
     },
     {
      "id": "ai-catalog-well-known-file",
      "name": "AI Catalog well-known file",
-     "domains": 17,
+     "domains": 42,
      "delta": 0
+    },
+    {
+     "id": "oauth-metadata-for-agents",
+     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)",
+     "domains": 27,
+     "delta": -3
     },
     {
      "id": "a2a",
      "name": "Agent2Agent Protocol",
-     "domains": 15,
+     "domains": 23,
      "delta": 1
     },
     {
      "id": "agents-md",
      "name": "AGENTS.md",
-     "domains": 13,
+     "domains": 20,
      "delta": 0
     },
     {
      "id": "mcp",
      "name": "Model Context Protocol",
-     "domains": 11,
+     "domains": 18,
      "delta": 3
     },
     {
      "id": "mcp-server-cards",
      "name": "MCP Server Cards (SEP-2127)",
-     "domains": 11,
+     "domains": 18,
      "delta": 3
     },
     {
      "id": "oauth-cimd",
      "name": "OAuth Client ID Metadata Document",
-     "domains": 10,
-     "delta": -3
+     "domains": 16,
+     "delta": -2
     },
     {
      "id": "auth-md",
      "name": "auth.md",
-     "domains": 7,
+     "domains": 14,
      "delta": 1
-    },
-    {
-     "id": "agents-txt",
-     "name": "agents.txt",
-     "domains": 6,
-     "delta": 0
     },
     {
      "id": "ard",
      "name": "Agentic Resource Discovery",
-     "domains": 6,
+     "domains": 13,
+     "delta": 0
+    },
+    {
+     "id": "agents-txt",
+     "name": "agents.txt",
+     "domains": 8,
      "delta": 0
     },
     {
      "id": "webbotauth",
      "name": "Web Bot Auth HTTP Message Signatures",
-     "domains": 4,
+     "domains": 7,
      "delta": 1
     },
     {
@@ -329,6 +329,24 @@
      "delta": 0
     },
     {
+     "id": "agents-json",
+     "name": "agents.json",
+     "domains": 2,
+     "delta": 0
+    },
+    {
+     "id": "identity-assertion-authz-grant",
+     "name": "Identity Assertion JWT Authorization Grant",
+     "domains": 2,
+     "delta": 0
+    },
+    {
+     "id": "ucp",
+     "name": "Universal Commerce Protocol",
+     "domains": 2,
+     "delta": 0
+    },
+    {
      "id": "ads",
      "name": "Agent Directory Service",
      "domains": 1,
@@ -341,20 +359,8 @@
      "delta": 0
     },
     {
-     "id": "agents-json",
-     "name": "agents.json",
-     "domains": 1,
-     "delta": 0
-    },
-    {
      "id": "agora-protocol",
      "name": "Agora Protocol",
-     "domains": 1,
-     "delta": 0
-    },
-    {
-     "id": "identity-assertion-authz-grant",
-     "name": "Identity Assertion JWT Authorization Grant",
      "domains": 1,
      "delta": 0
     },
@@ -363,12 +369,6 @@
      "name": "Open Knowledge Format",
      "domains": 1,
      "delta": 1
-    },
-    {
-     "id": "ucp",
-     "name": "Universal Commerce Protocol",
-     "domains": 1,
-     "delta": 0
     },
     {
      "id": "web-bot-auth-signature-agent-card",
@@ -412,11 +412,6 @@
      "domain": "agentcommunity.org",
      "id": "anthropic-agent-skills-format",
      "name": "Agent Skills"
-    },
-    {
-     "domain": "agentcommunity.org",
-     "id": "cloudflare-markdown-for-agents",
-     "name": "Markdown for Agents"
     },
     {
      "domain": "agenticweb.wiki",
@@ -749,6 +744,16 @@
      "name": "Markdown for Agents"
     },
     {
+     "domain": "mpp.dev",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "mpp.dev",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
      "domain": "okta.com",
      "id": "cloudflare-markdown-for-agents",
      "name": "Markdown for Agents"
@@ -859,12 +864,42 @@
      "name": "Markdown for Agents"
     },
     {
+     "domain": "vercel.com",
+     "id": "oauth-cimd",
+     "name": "OAuth Client ID Metadata Document"
+    },
+    {
      "domain": "workos.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "x402.org",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "x402.org",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "zapier.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "zapier.com",
      "id": "cloudflare-markdown-for-agents",
      "name": "Markdown for Agents"
     }
    ],
    "lost": [
+    {
+     "domain": "agentcommunity.org",
+     "id": "oauth-metadata-for-agents",
+     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)"
+    },
     {
      "domain": "agentman.ai",
      "id": "ai-crawler-tokens-robots",
@@ -944,21 +979,6 @@
      "domain": "bingx.com",
      "id": "ai-crawler-tokens-robots",
      "name": "AI Crawler User-Agent Tokens in robots.txt"
-    },
-    {
-     "domain": "blog.cloudflare.com",
-     "id": "ai-crawler-tokens-robots",
-     "name": "AI Crawler User-Agent Tokens in robots.txt"
-    },
-    {
-     "domain": "blog.cloudflare.com",
-     "id": "api-catalog-rfc9727",
-     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
-    },
-    {
-     "domain": "blog.cloudflare.com",
-     "id": "cloudflare-content-signals-policy",
-     "name": "Content Signals Policy"
     },
     {
      "domain": "byteiota.com",
@@ -1096,6 +1116,11 @@
      "name": "AI Crawler User-Agent Tokens in robots.txt"
     },
     {
+     "domain": "fidoalliance.org",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
      "domain": "google.com",
      "id": "ai-crawler-tokens-robots",
      "name": "AI Crawler User-Agent Tokens in robots.txt"
@@ -1177,6 +1202,11 @@
     },
     {
      "domain": "mozilla.org",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "next.redhat.com",
      "id": "ai-crawler-tokens-robots",
      "name": "AI Crawler User-Agent Tokens in robots.txt"
     },
@@ -1424,6 +1454,11 @@
      "domain": "yoast.com",
      "id": "ai-crawler-tokens-robots",
      "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "zed.dev",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
     }
    ],
    "grade_changes": [
@@ -1558,13 +1593,6 @@
      "from": "C",
      "to": "F",
      "score_from": 20,
-     "score_to": 0
-    },
-    {
-     "domain": "blog.cloudflare.com",
-     "from": "B",
-     "to": "F",
-     "score_from": 38,
      "score_to": 0
     },
     {
@@ -1778,6 +1806,13 @@
      "score_to": 0
     },
     {
+     "domain": "fidoalliance.org",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
      "domain": "gitbook.com",
      "from": "A",
      "to": "A+",
@@ -1884,6 +1919,20 @@
     },
     {
      "domain": "mozilla.org",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "mpp.dev",
+     "from": "A",
+     "to": "A+",
+     "score_from": 54,
+     "score_to": 65
+    },
+    {
+     "domain": "next.redhat.com",
      "from": "C",
      "to": "F",
      "score_from": 20,
@@ -2163,6 +2212,13 @@
      "score_to": 5
     },
     {
+     "domain": "vercel.com",
+     "from": "A",
+     "to": "A+",
+     "score_from": 51,
+     "score_to": 67
+    },
+    {
      "domain": "wikipedia.org",
      "from": "C",
      "to": "F",
@@ -2177,7 +2233,28 @@
      "score_to": 0
     },
     {
+     "domain": "x402.org",
+     "from": "A",
+     "to": "A+",
+     "score_from": 51,
+     "score_to": 67
+    },
+    {
      "domain": "yoast.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "zapier.com",
+     "from": "A",
+     "to": "A+",
+     "score_from": 47,
+     "score_to": 60
+    },
+    {
+     "domain": "zed.dev",
      "from": "B",
      "to": "C",
      "score_from": 35,
@@ -2239,9 +2316,9 @@
    ]
   },
   "registry": {
+   "servers": 1878,
    "since": "2026-10-22T00:00:00Z",
-   "versions": 3000,
-   "servers": 1878
+   "versions": 3000
   }
  },
  "record_changes": [
@@ -2276,6 +2353,14 @@
    "url": "https://datatracker.ietf.org/doc/draft-illyes-webbotauth-jafar/",
    "label": "VERIFIED",
    "date": "2026-04-21"
+  },
+  {
+   "record_id": "agent-channel-fan-out",
+   "name": "Agent-Channel Frame for Identity-Keyed Fan-Out Delivery to Concurrent Sessions",
+   "summary": "Datatracker shows draft-morrison-agent-channel-fan-out-03, dated 2026-10-23, expires 2027-04-26",
+   "url": "https://datatracker.ietf.org/doc/draft-morrison-agent-channel-fan-out/",
+   "label": "VERIFIED",
+   "date": "2026-10-23"
   }
  ],
  "previous": "2026-10-22",

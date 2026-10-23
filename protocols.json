@@ -12616,7 +12616,7 @@
    "date": "2026-10-09"
   },
   "governance": "Individual Internet-Draft by a single author, submitted via the IETF datatracker; not an IETF working group document.",
-  "native_status": "Internet-Draft, Intended Status: Informational; expires 12 April 2027",
+  "native_status": "Internet-Draft, Intended Status: Informational; expires 26 April 2027",
   "phase": "draft",
   "implementation": "unknown",
   "adoption": {
@@ -12625,10 +12625,10 @@
    "probe_run": null
   },
   "version": {
-   "label": "draft-morrison-agent-channel-fan-out-02",
-   "date": "2026-10-09"
+   "label": "draft-morrison-agent-channel-fan-out-03",
+   "date": "2026-10-23"
   },
-  "spec_url": "https://datatracker.ietf.org/doc/html/draft-morrison-agent-channel-fan-out-02",
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-morrison-agent-channel-fan-out-03",
   "discovery": {
    "mechanism": "Delivery substrate addressed via the discovery mechanism of draft-morrison-mcp-dns-discovery (DNS-based); per-handle SSE stream",
    "path": null
@@ -12640,6 +12640,12 @@
    "on_absent": "No public probe defined in the available text; support cannot be observed from a site without the companion discovery draft details."
   },
   "evidence": [
+   {
+    "claim": "Datatracker shows draft-morrison-agent-channel-fan-out-03, published 2026-10-23 (expires 26 April 2027), specifying the JSON agent-channel frame, identity attribution pair, inline provenance block, and SSE fan-out delivery.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-morrison-agent-channel-fan-out-03",
+    "date": "2026-10-23"
+   },
    {
     "claim": "Internet-Draft specifies a JSON agent-channel frame with a closed catalogue of kinds, identity attribution pair, provenance block, recipient scope expansion, and per-handle Server-Sent Events delivery with subscribe-time filters.",
     "label": "REPORTED",
@@ -12669,6 +12675,10 @@
    {
     "date": "2026-10-16",
     "note": "auto-drafted candidate from exa (https://datatracker.ietf.org/doc/html/draft-morrison-agent-channel-fan-out-02)"
+   },
+   {
+    "date": "2026-10-23",
+    "note": "revision 02 → 03 (watcher)"
    }
   ],
   "watch": [

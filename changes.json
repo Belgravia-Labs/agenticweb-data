@@ -1435,5 +1435,24 @@
   "evidence_url": "https://github.com/adcontextprotocol/adcp/releases/tag/v3.2.6",
   "detector": "github@1.0",
   "commit": "3aed7917ec59b79e4b79a35f75491839562c4832"
+ },
+ {
+  "id": "q-2026-10-23-agent-channel-fan-out-revision",
+  "date": "2026-10-23",
+  "record_id": "agent-channel-fan-out",
+  "kind": "version",
+  "field": "version",
+  "from": {
+   "label": "draft-morrison-agent-channel-fan-out-02",
+   "date": "2026-10-09"
+  },
+  "to": {
+   "label": "draft-morrison-agent-channel-fan-out-03",
+   "date": "2026-10-23"
+  },
+  "claim": "Datatracker shows draft-morrison-agent-channel-fan-out-03, dated 2026-10-23, expires 2027-04-26",
+  "evidence_url": "https://datatracker.ietf.org/doc/draft-morrison-agent-channel-fan-out/",
+  "detector": "ietf@1.0",
+  "commit": "406042d04e68eb6d9b6f07fa9ab9ef2661bf9872"
  }
 ]

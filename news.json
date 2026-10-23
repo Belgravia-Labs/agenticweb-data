@@ -787,5 +787,16 @@
   ],
   "kind": "version",
   "detector": "rules@1.0"
+ },
+ {
+  "date": "2026-10-23",
+  "title": "Agent-Channel Frame for Identity-Keyed Fan-Out Delivery: revision -03 published",
+  "url": "https://datatracker.ietf.org/doc/html/draft-morrison-agent-channel-fan-out-03",
+  "summary": "Datatracker shows draft-morrison-agent-channel-fan-out-03, dated 2026-10-23, expires 2027-04-26",
+  "related": [
+   "agent-channel-fan-out"
+  ],
+  "kind": "version",
+  "detector": "rules@1.0"
  }
 ]
