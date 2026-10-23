@@ -45,7 +45,7 @@
  },
  "https://aboutus.godaddy.net/newsroom/news-releases/press-release-details/2026/Infoblox-and-GoDaddy-Support-Open-Standards-for-AI-Agent-Discovery-Identity-and-Verification-2026-0acKMntvOC/default.aspx": {
   "checked": "2026-10-23",
-  "status": 200
+  "status": 429
  },
  "https://agenstry.com/blog/state-of-the-agent-card": {
   "checked": "2026-10-23",
@@ -539,6 +539,10 @@
   "checked": "2026-10-23",
   "status": 403
  },
+ "https://datatracker.ietf.org/doc/html/draft-morrison-agent-channel-fan-out-03": {
+  "checked": "2026-10-23",
+  "status": 403
+ },
  "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08": {
   "checked": "2026-10-23",
   "status": 403
@@ -685,7 +689,7 @@
  },
  "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers": {
   "checked": "2026-10-23",
-  "status": 500
+  "status": 200
  },
  "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide": {
   "checked": "2026-10-23",
@@ -1032,6 +1036,10 @@
   "status": 200
  },
  "https://github.com/adcontextprotocol/adcp/releases/tag/v3.2.5": {
+  "checked": "2026-10-23",
+  "status": 200
+ },
+ "https://github.com/adcontextprotocol/adcp/releases/tag/v3.2.6": {
   "checked": "2026-10-23",
   "status": 200
  },
