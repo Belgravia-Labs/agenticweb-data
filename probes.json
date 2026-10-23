@@ -1,690 +1,682 @@
 {
- "a2a": {
-  "path": "/.well-known/agent-card.json",
-  "expect": {
-   "content_type": "json",
-   "json_keys": [
-    "name"
-   ],
-   "text_match": "\"url\"\\s*:|supportedInterfaces"
+  "a2a": {
+    "path": "/.well-known/agent-card.json",
+    "expect": {
+      "content_type": "json",
+      "json_keys": [
+        "name"
+      ],
+      "text_match": "\"url\"\\s*:|supportedInterfaces"
+    },
+    "note": "An A2A Agent Card names the agent and where to reach it: a top-level url on a 0.3 card, or url, protocolBinding, and protocolVersion inside supportedInterfaces on a 1.0 card."
   },
-  "note": "An A2A Agent Card names the agent and where to reach it: a top-level url on a 0.3 card, or url, protocolBinding, and protocolVersion inside supportedInterfaces on a 1.0 card."
- },
- "ucp": {
-  "path": "/.well-known/ucp",
-  "expect": {
-   "content_type": "json"
+  "ucp": {
+    "path": "/.well-known/ucp",
+    "expect": {
+      "content_type": "json"
+    },
+    "note": "A UCP profile is a JSON document declaring supported capabilities; presence of JSON at the path is the signal."
   },
-  "note": "A UCP profile is a JSON document declaring supported capabilities; presence of JSON at the path is the signal."
- },
- "llms-txt": {
-  "path": "/llms.txt",
-  "expect": {
-   "text_match": "(?m)^# \\S"
+  "llms-txt": {
+    "path": "/llms.txt",
+    "expect": {
+      "text_match": "(?m)^# \\S"
+    },
+    "note": "llms.txt must begin with an H1 line."
   },
-  "note": "llms.txt must begin with an H1 line."
- },
- "agents-md": {
-  "path": "/AGENTS.md",
-  "expect": {
-   "text_match": "\\S"
+  "agents-md": {
+    "path": "/AGENTS.md",
+    "expect": {
+      "text_match": "\\S"
+    },
+    "note": "AGENTS.md has no required fields; a non-empty document at the site root is the signal."
   },
-  "note": "AGENTS.md has no required fields; a non-empty document at the site root is the signal."
- },
- "aipref-content-usage-attachment": {
-  "path": "/robots.txt",
-  "expect": {
-   "text_match": "(?im)^content-usage:"
+  "aipref-content-usage-attachment": {
+    "path": "/robots.txt",
+    "expect": {
+      "text_match": "(?im)^content-usage:"
+    },
+    "note": "A Content-Usage line in robots.txt attaches AIPREF preferences to the site."
   },
-  "note": "A Content-Usage line in robots.txt attaches AIPREF preferences to the site."
- },
- "aipref-vocabulary": {
-  "path": "/robots.txt",
-  "expect": {
-   "text_match": "(?im)^content-usage:\\s*\\S"
+  "aipref-vocabulary": {
+    "path": "/robots.txt",
+    "expect": {
+      "text_match": "(?im)^content-usage:\\s*\\S"
+    },
+    "note": "Vocabulary tokens are not validated; a non-empty Content-Usage value is the signal."
   },
-  "note": "Vocabulary tokens are not validated; a non-empty Content-Usage value is the signal."
- },
- "tdmrep": {
-  "path": "/.well-known/tdmrep.json",
-  "expect": {
-   "content_type": "json",
-   "text_match": "tdm-reservation|tdm-policy"
+  "tdmrep": {
+    "path": "/.well-known/tdmrep.json",
+    "expect": {
+      "content_type": "json",
+      "text_match": "tdm-reservation|tdm-policy"
+    },
+    "note": "A TDMRep file carries tdm-reservation or tdm-policy fields."
   },
-  "note": "A TDMRep file carries tdm-reservation or tdm-policy fields."
- },
- "cloudflare-content-signals-policy": {
-  "path": "/robots.txt",
-  "expect": {
-   "text_match": "(?im)^content-signal:"
+  "cloudflare-content-signals-policy": {
+    "path": "/robots.txt",
+    "expect": {
+      "text_match": "(?im)^content-signal:"
+    },
+    "note": "Content Signals are Content-Signal lines in robots.txt."
   },
-  "note": "Content Signals are Content-Signal lines in robots.txt."
- },
- "webbotauth": {
-  "path": "/.well-known/http-message-signatures-directory",
-  "expect": {
-   "content_type": "http-message-signatures-directory",
-   "json_keys": [
-    "keys"
-   ]
+  "webbotauth": {
+    "path": "/.well-known/http-message-signatures-directory",
+    "expect": {
+      "content_type": "http-message-signatures-directory",
+      "json_keys": [
+        "keys"
+      ]
+    },
+    "note": "A signature directory is a JWKS served with its own media type."
   },
-  "note": "A signature directory is a JWKS served with its own media type."
- },
- "web-bot-auth-signature-agent-card": {
-  "path": "/.well-known/http-message-signatures-directory",
-  "expect": {
-   "json_keys": [
-    "client_name"
-   ]
+  "web-bot-auth-signature-agent-card": {
+    "path": "/.well-known/http-message-signatures-directory",
+    "expect": {
+      "json_keys": [
+        "client_name"
+      ]
+    },
+    "note": "The Signature Agent Card adds OAuth client registration fields to the directory."
   },
-  "note": "The Signature Agent Card adds OAuth client registration fields to the directory."
- },
- "ard": {
-  "path": "/.well-known/ard.json",
-  "expect": {
-   "json_keys": [
-    "entries"
-   ]
+  "ard": {
+    "path": "/.well-known/ard.json",
+    "expect": {
+      "json_keys": [
+        "entries"
+      ]
+    },
+    "note": "An ARD manifest is JSON with a top-level entries array."
   },
-  "note": "An ARD manifest is JSON with a top-level entries array."
- },
- "ai-catalog-well-known-file": {
-  "path": "/.well-known/ai-catalog.json",
-  "expect": {
-   "json_keys": [
-    "entries"
-   ]
+  "ai-catalog-well-known-file": {
+    "path": "/.well-known/ai-catalog.json",
+    "expect": {
+      "json_keys": [
+        "entries"
+      ]
+    },
+    "note": "Deprecated predecessor path of the ARD manifest, still probed so the census can count migration."
   },
-  "note": "Deprecated predecessor path of the ARD manifest, still probed so the census can count migration."
- },
- "aid": {
-  "path": "/.well-known/agent",
-  "expect": {
-   "content_type": "json",
-   "json_keys": [
-    "uri"
-   ]
+  "aid": {
+    "path": "/.well-known/agent",
+    "expect": {
+      "content_type": "json",
+      "json_keys": [
+        "uri"
+      ]
+    },
+    "note": "The AID well-known document mirrors the DNS TXT record, including uri."
   },
-  "note": "The AID well-known document mirrors the DNS TXT record, including uri."
- },
- "adp": {
-  "path": "/.well-known/agent.json",
-  "expect": {
-   "json_keys": [
-    "identity",
-    "endpoints"
-   ]
+  "adp": {
+    "path": "/.well-known/agent.json",
+    "expect": {
+      "json_keys": [
+        "identity",
+        "endpoints"
+      ]
+    },
+    "note": "An ADP agent.json has identity and endpoints blocks."
   },
-  "note": "An ADP agent.json has identity and endpoints blocks."
- },
- "ardp": {
-  "path": "/.well-known/ardp/meta",
-  "expect": {
-   "json_keys": [
-    "ttl_min",
-    "auth_profiles"
-   ]
+  "ardp": {
+    "path": "/.well-known/ardp/meta",
+    "expect": {
+      "json_keys": [
+        "ttl_min",
+        "auth_profiles"
+      ]
+    },
+    "note": "ARDP meta declares TTL bounds and auth profiles."
   },
-  "note": "ARDP meta declares TTL bounds and auth profiles."
- },
- "ads": {
-  "path": "/v1/agents",
-  "expect": {
-   "content_type": "json"
+  "ads": {
+    "path": "/v1/agents",
+    "expect": {
+      "content_type": "json"
+    },
+    "note": "An Agent Directory Service lists catalog entries as JSON at /v1/agents."
   },
-  "note": "An Agent Directory Service lists catalog entries as JSON at /v1/agents."
- },
- "adcp": {
-  "path": "/.well-known/adagents.json",
-  "expect": {
-   "json_keys": [
-    "agents"
-   ]
+  "adcp": {
+    "path": "/.well-known/adagents.json",
+    "expect": {
+      "json_keys": [
+        "agents"
+      ]
+    },
+    "note": "adagents.json lists the publisher's authorised ad agents."
   },
-  "note": "adagents.json lists the publisher's authorised ad agents."
- },
- "anp": {
-  "path": "/.well-known/agent-descriptions",
-  "expect": {
-   "content_type": "json",
-   "text_match": "AgentDescription"
+  "anp": {
+    "path": "/.well-known/agent-descriptions",
+    "expect": {
+      "content_type": "json",
+      "text_match": "AgentDescription"
+    },
+    "note": "ANP active discovery is a JSON-LD collection of AgentDescription items."
   },
-  "note": "ANP active discovery is a JSON-LD collection of AgentDescription items."
- },
- "agora-protocol": {
-  "path": "/.wellknown",
-  "expect": {
-   "content_type": "json"
+  "agora-protocol": {
+    "path": "/.wellknown",
+    "expect": {
+      "content_type": "json"
+    },
+    "note": "Agora agents declare supported protocols as a JSON map at /.wellknown (sic)."
   },
-  "note": "Agora agents declare supported protocols as a JSON map at /.wellknown (sic)."
- },
- "api-catalog-rfc9727": {
-  "path": "/.well-known/api-catalog",
-  "expect": {
-   "content_type": "linkset",
-   "json_keys": [
-    "linkset"
-   ]
+  "api-catalog-rfc9727": {
+    "path": "/.well-known/api-catalog",
+    "expect": {
+      "content_type": "linkset",
+      "json_keys": [
+        "linkset"
+      ]
+    },
+    "note": "RFC 9727 requires application/linkset+json with a linkset array."
   },
-  "note": "RFC 9727 requires application/linkset+json with a linkset array."
- },
- "rsl": {
-  "path": "/robots.txt",
-  "expect": {
-   "text_match": "(?im)^license:\\s*\\S|rsl\\.xml"
+  "rsl": {
+    "path": "/robots.txt",
+    "expect": {
+      "text_match": "(?im)^license:\\s*\\S|rsl\\.xml"
+    },
+    "note": "RSL is referenced from robots.txt by a License line or an rsl.xml link."
   },
-  "note": "RSL is referenced from robots.txt by a License line or an rsl.xml link."
- },
- "agent-permissions-json": {
-  "path": "/.well-known/agent-permissions.json",
-  "expect": {
-   "json_keys": [
-    "metadata",
-    "strict"
-   ]
+  "agent-permissions-json": {
+    "path": "/.well-known/agent-permissions.json",
+    "expect": {
+      "json_keys": [
+        "metadata",
+        "strict"
+      ]
+    },
+    "note": "agent-permissions.json requires metadata and strict at top level."
   },
-  "note": "agent-permissions.json requires metadata and strict at top level."
- },
- "auth-md": {
-  "path": "/auth.md",
-  "expect": {
-   "text_match": "identity_assertion|service_auth|anonymous"
+  "auth-md": {
+    "path": "/auth.md",
+    "expect": {
+      "text_match": "identity_assertion|service_auth|anonymous"
+    },
+    "note": "auth.md describes one or more of the three named flows."
   },
-  "note": "auth.md describes one or more of the three named flows."
- },
- "ai-crawler-tokens-robots": {
-  "path": "/robots.txt",
-  "expect": {
-   "text_match": "(?im)^user-agent:\\s*(GPTBot|OAI-SearchBot|ClaudeBot|Claude-User|Claude-SearchBot|Google-Extended|PerplexityBot|CCBot|Applebot-Extended|meta-externalagent|Bytespider|Amazonbot)\\b"
+  "ai-crawler-tokens-robots": {
+    "path": "/robots.txt",
+    "expect": {
+      "text_match": "(?im)^user-agent:\\s*(GPTBot|OAI-SearchBot|ClaudeBot|Claude-User|Claude-SearchBot|Google-Extended|PerplexityBot|CCBot|Applebot-Extended|meta-externalagent|Bytespider|Amazonbot)\\b"
+    },
+    "note": "A robots.txt group naming a known AI crawler token."
   },
-  "note": "A robots.txt group naming a known AI crawler token."
- },
- "agents-json": {
-  "path": "/.well-known/agents.json",
-  "expect": {
-   "json_keys": [
-    "flows"
-   ]
+  "agents-json": {
+    "path": "/.well-known/agents.json",
+    "expect": {
+      "json_keys": [
+        "flows"
+      ]
+    },
+    "note": "agents.json extends OpenAPI with a flows field."
   },
-  "note": "agents.json extends OpenAPI with a flows field."
- },
- "agents-txt": {
-  "path": "/agents.txt",
-  "expect": {
-   "text_match": "\\S"
+  "agents-txt": {
+    "path": "/agents.txt",
+    "expect": {
+      "text_match": "\\S"
+    },
+    "note": "Competing agents.txt grammars share only the path; a non-empty file is the signal."
   },
-  "note": "Competing agents.txt grammars share only the path; a non-empty file is the signal."
- },
- "ai-txt": {
-  "path": "/ai.txt",
-  "expect": {
-   "text_match": "(?im)^(training|scraping|indexing|caching)\\s*:"
+  "ai-txt": {
+    "path": "/ai.txt",
+    "expect": {
+      "text_match": "(?im)^(training|scraping|indexing|caching)\\s*:"
+    },
+    "note": "ai.txt carries Training, Scraping, Indexing or Caching directives."
   },
-  "note": "ai.txt carries Training, Scraping, Indexing or Caching directives."
- },
- "lmos": {
-  "path": "/.well-known/wot-thing-description",
-  "expect": {
-   "text_match": "eclipse\\.dev/lmos"
+  "lmos": {
+    "path": "/.well-known/wot-thing-description",
+    "expect": {
+      "text_match": "eclipse\\.dev/lmos"
+    },
+    "note": "An LMOS Thing Description references the LMOS namespace."
   },
-  "note": "An LMOS Thing Description references the LMOS namespace."
- },
- "erc-8004": {
-  "path": "/.well-known/agent-registration.json",
-  "expect": {
-   "content_type": "json"
+  "erc-8004": {
+    "path": "/.well-known/agent-registration.json",
+    "expect": {
+      "content_type": "json"
+    },
+    "note": "ERC-8004 agents publish a registration file at the domain they claim."
   },
-  "note": "ERC-8004 agents publish a registration file at the domain they claim."
- },
- "vi": {
-  "path": "/.well-known/verifiable-intent",
-  "expect": {
-   "content_type": "json"
+  "vi": {
+    "path": "/.well-known/verifiable-intent",
+    "expect": {
+      "content_type": "json"
+    },
+    "note": "A merchant publishes its Verifiable Intent document at a fixed well-known path."
   },
-  "note": "A merchant publishes its Verifiable Intent document at a fixed well-known path."
- },
- "oauth-metadata-for-agents": {
-  "path": "/.well-known/oauth-protected-resource",
-  "expect": {
-   "json_keys": [
-    "resource"
-   ]
+  "oauth-metadata-for-agents": {
+    "path": "/.well-known/oauth-protected-resource",
+    "expect": {
+      "json_keys": [
+        "resource"
+      ]
+    },
+    "note": "RFC 9728 protected resource metadata requires the resource field."
   },
-  "note": "RFC 9728 protected resource metadata requires the resource field."
- },
- "mcp": {
-  "skip": "no-fixed-path",
-  "note": "MCP endpoints are not at a fixed well-known path. On 2026-07-28, capabilities are read with server/discover; initialize is the legacy handshake for 2025-11-25 and earlier. The server card is GET <endpoint>/server-card."
- },
- "agent-communication-protocol": {
-  "skip": "superseded",
-  "note": "IBM ACP was archived and merged into A2A; /agents is not expected on new deployments."
- },
- "agentic-commerce-protocol": {
-  "skip": "unsafe-post",
-  "note": "The probe is POST /checkout_sessions, which creates a checkout on the merchant; never run unauthenticated."
- },
- "x402": {
-  "skip": "no-fixed-path",
-  "note": "A 402 challenge appears only on a URL that charges; there is no fixed path to check."
- },
- "l402": {
-  "skip": "no-fixed-path",
-  "note": "L402 challenges appear only on paid URLs."
- },
- "mpp": {
-  "skip": "no-fixed-path",
-  "note": "MPP challenges appear only on paid URLs."
- },
- "s402": {
-  "skip": "no-fixed-path",
-  "note": "s402 challenges appear only on paid URLs."
- },
- "nlweb": {
-  "skip": "unsafe-post",
-  "note": "The probe is POST /ask with a question body; not run from a public tool."
- },
- "agent-connect-protocol": {
-  "skip": "unsafe-post",
-  "note": "The probe is POST /agents/search."
- },
- "agent-protocol-aief": {
-  "skip": "unsafe-post",
-  "note": "The probe is POST /ap/v1/agent/tasks, which starts a task."
- },
- "aitp": {
-  "skip": "unsafe-post",
-  "note": "The probe is POST /threads, which creates a thread."
- },
- "coral-protocol": {
-  "skip": "unsafe-post",
-  "note": "The probe is POST /api/v1/local/session, which opens a session."
- },
- "okf": {
-  "path": "/okf/index.md",
-  "expect": {
-   "text_match": "(?m)^okf_version:\\s*\"?0\\.[12]\"?"
+  "mcp": {
+    "skip": "no-fixed-path",
+    "note": "MCP endpoints are not at a fixed well-known path. On 2026-07-28, capabilities are read with server/discover; initialize is the legacy handshake for 2025-11-25 and earlier. The server card is GET <endpoint>/server-card."
   },
-  "note": "Google Open Knowledge Format (OKF v0.2) web bundle index at /okf/index.md declaring okf_version."
- },
- "vercel-agent-readability": {
-  "skip": "no-fixed-path",
-  "note": "A checklist, not a manifest; the llms-txt, agents-md, robots and sitemap checks cover its site-level items."
- },
- "daap": {
-  "skip": "no-fixed-path",
-  "note": "DAAP rides on OAuth authorization server metadata; presence of that metadata does not prove the profile."
- },
- "aap": {
-  "skip": "no-fixed-path",
-  "note": "AAP is a claims profile inside OAuth tokens; nothing at a fixed path proves it."
- },
- "aauth": {
-  "skip": "needs-credentials",
-  "note": "The Agent Authorization Grant is observed only inside a token request."
- },
- "ap2": {
-  "skip": "needs-credentials",
-  "note": "AP2 mandates are exchanged inside an authorised checkout; nothing is published at a fixed path."
- },
- "ap2-checkout-mandate": {
-  "skip": "needs-credentials",
-  "note": "A component of AP2, observable only inside a checkout."
- },
- "vcap": {
-  "skip": "needs-credentials",
-  "note": "VCAP credentials are presented during a payment, not published."
- },
- "tap": {
-  "skip": "needs-credentials",
-  "note": "Trusted Agent Protocol keys are fetched from the key service by keyID during a transaction."
- },
- "agent-attribution-protocol": {
-  "skip": "needs-credentials",
-  "note": "The probe is a vendor API call that needs an API key."
- },
- "agent-audit-trail": {
-  "skip": "needs-credentials",
-  "note": "Audit logs are exported from an operator-defined endpoint behind authentication."
- },
- "artf": {
-  "skip": "needs-credentials",
-  "note": "ARTF containers run inside the host platform; the health endpoint is internal."
- },
- "erc-8183": {
-  "skip": "not-http",
-  "note": "An Ethereum contract; observable via eth_call, not HTTP."
- },
- "erc-8226": {
-  "skip": "not-http",
-  "note": "An Ethereum contract; observable via eth_call, not HTTP."
- },
- "dns-aid": {
-  "skip": "not-http",
-  "note": "DNS SVCB records; the HTTP well-known form is covered by the aid rule."
- },
- "agtp": {
-  "skip": "not-http",
-  "note": "AGTP is its own application-layer protocol over QUIC or TCP."
- },
- "slim": {
-  "skip": "not-http",
-  "note": "SLIM is a transport operated by data-plane nodes on its own wire protocol."
- },
- "spiffe": {
-  "skip": "not-http",
-  "note": "SPIFFE identities are issued over a local socket, not published on the web."
- },
- "wimse": {
-  "skip": "not-http",
-  "note": "WIMSE is an architecture for workload identity with no origin artefact."
- },
- "http-message-signatures": {
-  "skip": "no-fixed-path",
-  "note": "Signatures appear on individual messages; the webbotauth directory rule covers the published key side."
- },
- "ans": {
-  "skip": "no-fixed-path",
-  "note": "The ANS draft defines no fixed well-known path or record type."
- },
- "aip": {
-  "skip": "client-side",
-  "note": "AIP is a client-side identity protocol with no origin artefact."
- },
- "webmcp": {
-  "skip": "client-side",
-  "note": "WebMCP is a browser API on the page; observable only by executing the page."
- },
- "web-agent-protocol": {
-  "skip": "client-side",
-  "note": "WAP records and replays browser actions; nothing is served by the site."
- },
- "agent-client-protocol": {
-  "skip": "client-side",
-  "note": "ACP runs between an editor and a local agent binary over stdio."
- },
- "anthropic-agent-skills-format": {
-  "path": "/.well-known/agent-skills/index.json",
-  "expect": {
-   "content_type": "json",
-   "json_keys": [
-    "skills"
-   ]
+  "agent-communication-protocol": {
+    "skip": "superseded",
+    "note": "IBM ACP was archived and merged into A2A; /agents is not expected on new deployments."
   },
-  "note": "Agent Skills Discovery RFC v0.2.0 publishes a JSON skill index with a top-level skills[] array at /.well-known/agent-skills/index.json."
- },
- "a2ui": {
-  "skip": "no-fixed-path",
-  "note": "A2UI is carried inside an AG-UI, A2A or MCP session; no fixed path."
- },
- "ag-ui": {
-  "skip": "no-fixed-path",
-  "note": "The AG-UI run endpoint is application-defined."
- },
- "mcp-apps": {
-  "skip": "no-fixed-path",
-  "note": "MCP Apps are declared inside an MCP server's tools/list; find the server first."
- },
- "openai-apps-sdk-manifests": {
-  "skip": "no-fixed-path",
-  "note": "Plugin manifests are registered with OpenAI, reached through the app's MCP endpoint."
- },
- "oasf": {
-  "skip": "no-fixed-path",
-  "note": "OASF schemas live on the schema host, not on the origin using them."
- },
- "aamp": {
-  "skip": "no-fixed-path",
-  "note": "AAMP registries are operated by IAB Tech Lab, not by the origin."
- },
- "agora-commerce-protocol": {
-  "skip": "no-fixed-path",
-  "note": "Agora Commerce publishes at api.agoraproto.org, not on member origins."
- },
- "osi": {
-  "skip": "no-fixed-path",
-  "note": "OSI is a schema for semantic models exchanged between tools, not an origin artefact."
- },
- "nlip": {
-  "skip": "no-fixed-path",
-  "note": "NLIP is a message envelope between agents; ECMA-430 defines no discovery artefact at an origin."
- },
- "emv-agentic-payments": {
-  "skip": "no-fixed-path",
-  "note": "A framework document for card-network payment specifications; nothing is published at an origin."
- },
- "identity-assertion-authz-grant": {
-  "path": "/.well-known/oauth-authorization-server",
-  "expect": {
-   "json_keys": [
-    "authorization_grant_profiles_supported"
-   ]
+  "agentic-commerce-protocol": {
+    "skip": "unsafe-post",
+    "note": "The probe is POST /checkout_sessions, which creates a checkout on the merchant; never run unauthenticated."
   },
-  "note": "draft-ietf-oauth-identity-assertion-authz-grant advertises the id-jag profile in authorization server metadata; the key alone shows the server publishes grant profiles, so check for urn:ietf:params:oauth:grant-profile:id-jag in the value."
- },
- "aiagent-auth": {
-  "skip": "no-fixed-path",
-  "note": "An IETF framework draft composing WIMSE, SPIFFE and OAuth flows; it defines no artefact of its own at an origin."
- },
- "dan": {
-  "skip": "not-http",
-  "note": "DNS records of types AIINDEX (65502) at _agents.<domain> and AIDISCA (65501); not reachable by HTTP GET."
- },
- "mcp-registry": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "wimse-aims": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "personal-agent-protocol": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "aauth-hardt": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "cloudflare-pay-per-crawl": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "wimse-agent-audit-record": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "mcp-server-cards": {
-  "skip": "no-fixed-path",
-  "note": "SEP-2127 reserves GET <streamable-http-url>/server-card as application/mcp-server-card+json. That URL is not one well-known path on the origin; discovery is /.well-known/ai-catalog.json."
- },
- "dawn-agent-discovery-framework": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "agent-identity-document": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "mcp-dns-discovery": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "agent-principal-binding": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "aip-delegation-chain": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "credential-delegation-protocol-wimse": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "agent-delegation-receipts": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "aauth-r3": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "acip": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "knowledge-linkset": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "scitt-ai-agent-execution": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "agent-channel-fan-out": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "aagv": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "agentic-payments-gating-model": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "idmandat-credential": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "lws10-authn-ssi-cid": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "wimse-workload-identity-metadata": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "haace": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "local-tool-call-proof": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "agent-audit-record": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "agent-authorization-envelope": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "a2wp": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "agent-decision-commitment": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "agent-identity-protocol-singla": {
-  "skip": "no-fixed-path",
-  "note": "candidate record; probe rule pending"
- },
- "gbz-185-agent-interconnection": {
-  "skip": "no-fixed-path",
-  "note": "probe rule pending: Part 5 (discovery) full text not yet read for a well-known path"
- },
- "amp-ant": {
-  "skip": "needs-credentials",
-  "note": "AMP mandates and payment tokens are exchanged inside an authorised wallet flow; nothing is published at a fixed path."
- },
- "x401": {
-  "skip": "no-fixed-path",
-  "note": "A PROOF-REQUEST header appears only on a resource that asks for proof; there is no fixed path to check."
- },
- "kya-os": {
-  "path": "/.well-known/mcp",
-  "expect": {
-   "json_keys": [
-    "serverDid"
-   ]
+  "x402": {
+    "skip": "no-fixed-path",
+    "note": "A 402 challenge appears only on a URL that charges; there is no fixed path to check."
   },
-  "note": "KYA-OS SPEC.md section 10: servers SHOULD expose /.well-known/mcp with serverDid and capabilities."
- },
- "kyapay-token": {
-  "skip": "needs-credentials",
-  "note": "KYAPay tokens are presented per request by the agent; nothing is published at a fixed path on the resource server."
- },
- "oauth-cimd": {
-  "path": "/.well-known/oauth-authorization-server",
-  "expect": {
-   "json_keys": [
-    "client_id_metadata_document_supported"
-   ]
+  "l402": {
+    "skip": "no-fixed-path",
+    "note": "L402 challenges appear only on paid URLs."
   },
-  "note": "RFC 8414 metadata advertises CIMD support with client_id_metadata_document_supported."
- },
- "iab-comp": {
-  "skip": "no-fixed-path",
-  "note": "CoMP defines request and response objects, not a fixed path; supply discovery is out of scope."
- },
- "agent-commerce-kit": {
-  "skip": "no-fixed-path",
-  "note": "ACK identity and payment objects are exchanged between parties; no fixed path is defined."
- },
- "cloudflare-markdown-for-agents": {
-  "skip": "no-fixed-path",
-  "note": "Needs an Accept: text/markdown request header on any page; the probe rule format cannot set request headers."
- },
- "otel-genai-semconv": {
-  "skip": "not-http",
-  "note": "Telemetry naming conventions inside an operator's tracing pipeline; no origin artefact."
- },
- "erc-8001": {
-  "skip": "not-http",
-  "note": "An Ethereum contract; observable via eth_call, not HTTP."
- },
- "erc-8126": {
-  "skip": "not-http",
-  "note": "An Ethereum contract; observable via eth_call, not HTTP."
- },
- "erc-8196": {
-  "skip": "not-http",
-  "note": "An Ethereum contract; observable via eth_call, not HTTP."
- },
- "erc-8444": {
-  "path": "/.well-known/ard.json",
-  "expect": {
-   "text_match": "\"value:controllers?\""
+  "mpp": {
+    "skip": "no-fixed-path",
+    "note": "MPP challenges appear only on paid URLs."
   },
-  "note": "A domain acknowledges an ERC-8444 controller address with value:controllers or value:controller in its ARD manifest."
- },
- "jafar": {
-  "skip": "no-fixed-path",
-  "note": "The draft defines the JSON format only, not where the file is published."
- },
- "anonymous-bot-auth": {
-  "skip": "no-fixed-path",
-  "note": "Anonymous credentials are presented per request; no site-side artefact is defined."
- },
- "workload-authz-grant": {
-  "skip": "needs-credentials",
-  "note": "The Workload Authorization Grant is a platform-signed JWT presented at a token endpoint; nothing is published at a fixed path."
- },
- "oauth-id-continuation": {
-  "skip": "needs-credentials",
-  "note": "The identity-continuation assertion is a token-exchange subject token; it is not published at a fixed path."
- },
- "oauth-agent-delegation": {
-  "skip": "no-fixed-path",
-  "note": "Agent-Delegation is an HTTP header on a request signed with RFC 9421; there is no fixed path to fetch."
- },
- "opena2a-aap": {
-  "skip": "no-fixed-path",
-  "note": "OpenA2A AAP is a token model. The named broker layer is not specified, and nothing is published at a fixed path."
- }
+  "s402": {
+    "skip": "no-fixed-path",
+    "note": "s402 challenges appear only on paid URLs."
+  },
+  "nlweb": {
+    "skip": "unsafe-post",
+    "note": "The probe is POST /ask with a question body; not run from a public tool."
+  },
+  "agent-connect-protocol": {
+    "skip": "unsafe-post",
+    "note": "The probe is POST /agents/search."
+  },
+  "agent-protocol-aief": {
+    "skip": "unsafe-post",
+    "note": "The probe is POST /ap/v1/agent/tasks, which starts a task."
+  },
+  "aitp": {
+    "skip": "unsafe-post",
+    "note": "The probe is POST /threads, which creates a thread."
+  },
+  "coral-protocol": {
+    "skip": "unsafe-post",
+    "note": "The probe is POST /api/v1/local/session, which opens a session."
+  },
+  "okf": {
+    "path": "/okf/index.md",
+    "expect": {
+      "text_match": "(?m)^okf_version:\\s*\"?0\\.[12]\"?"
+    },
+    "note": "Google Open Knowledge Format (OKF v0.2) web bundle index at /okf/index.md declaring okf_version."
+  },
+  "vercel-agent-readability": {
+    "skip": "no-fixed-path",
+    "note": "A checklist, not a manifest; the llms-txt, agents-md, robots and sitemap checks cover its site-level items."
+  },
+  "daap": {
+    "skip": "no-fixed-path",
+    "note": "DAAP rides on OAuth authorization server metadata; presence of that metadata does not prove the profile."
+  },
+  "aap": {
+    "skip": "no-fixed-path",
+    "note": "AAP is a claims profile inside OAuth tokens; nothing at a fixed path proves it."
+  },
+  "aauth": {
+    "skip": "needs-credentials",
+    "note": "The Agent Authorization Grant is observed only inside a token request."
+  },
+  "ap2": {
+    "skip": "needs-credentials",
+    "note": "AP2 mandates are exchanged inside an authorised checkout; nothing is published at a fixed path."
+  },
+  "ap2-checkout-mandate": {
+    "skip": "needs-credentials",
+    "note": "A component of AP2, observable only inside a checkout."
+  },
+  "vcap": {
+    "skip": "needs-credentials",
+    "note": "VCAP credentials are presented during a payment, not published."
+  },
+  "tap": {
+    "skip": "needs-credentials",
+    "note": "Trusted Agent Protocol keys are fetched from the key service by keyID during a transaction."
+  },
+  "agent-attribution-protocol": {
+    "skip": "needs-credentials",
+    "note": "The probe is a vendor API call that needs an API key."
+  },
+  "agent-audit-trail": {
+    "skip": "needs-credentials",
+    "note": "Audit logs are exported from an operator-defined endpoint behind authentication."
+  },
+  "artf": {
+    "skip": "needs-credentials",
+    "note": "ARTF containers run inside the host platform; the health endpoint is internal."
+  },
+  "erc-8183": {
+    "skip": "not-http",
+    "note": "An Ethereum contract; observable via eth_call, not HTTP."
+  },
+  "erc-8226": {
+    "skip": "not-http",
+    "note": "An Ethereum contract; observable via eth_call, not HTTP."
+  },
+  "dns-aid": {
+    "skip": "not-http",
+    "note": "DNS SVCB records; the HTTP well-known form is covered by the aid rule."
+  },
+  "agtp": {
+    "skip": "not-http",
+    "note": "AGTP is its own application-layer protocol over QUIC or TCP."
+  },
+  "slim": {
+    "skip": "not-http",
+    "note": "SLIM is a transport operated by data-plane nodes on its own wire protocol."
+  },
+  "spiffe": {
+    "skip": "not-http",
+    "note": "SPIFFE identities are issued over a local socket, not published on the web."
+  },
+  "wimse": {
+    "skip": "not-http",
+    "note": "WIMSE is an architecture for workload identity with no origin artefact."
+  },
+  "http-message-signatures": {
+    "skip": "no-fixed-path",
+    "note": "Signatures appear on individual messages; the webbotauth directory rule covers the published key side."
+  },
+  "ans": {
+    "skip": "no-fixed-path",
+    "note": "The ANS draft defines no fixed well-known path or record type."
+  },
+  "aip": {
+    "skip": "client-side",
+    "note": "AIP is a client-side identity protocol with no origin artefact."
+  },
+  "webmcp": {
+    "skip": "client-side",
+    "note": "WebMCP is a browser API on the page; observable only by executing the page."
+  },
+  "web-agent-protocol": {
+    "skip": "client-side",
+    "note": "WAP records and replays browser actions; nothing is served by the site."
+  },
+  "agent-client-protocol": {
+    "skip": "client-side",
+    "note": "ACP runs between an editor and a local agent binary over stdio."
+  },
+  "anthropic-agent-skills-format": {
+    "path": "/.well-known/agent-skills/index.json",
+    "expect": {
+      "content_type": "json",
+      "json_keys": [
+        "skills"
+      ]
+    },
+    "note": "Agent Skills Discovery RFC v0.2.0 publishes a JSON skill index with a top-level skills[] array at /.well-known/agent-skills/index.json."
+  },
+  "a2ui": {
+    "skip": "no-fixed-path",
+    "note": "A2UI is carried inside an AG-UI, A2A or MCP session; no fixed path."
+  },
+  "ag-ui": {
+    "skip": "no-fixed-path",
+    "note": "The AG-UI run endpoint is application-defined."
+  },
+  "mcp-apps": {
+    "skip": "no-fixed-path",
+    "note": "MCP Apps are declared inside an MCP server's tools/list; find the server first."
+  },
+  "openai-apps-sdk-manifests": {
+    "skip": "no-fixed-path",
+    "note": "Plugin manifests are registered with OpenAI, reached through the app's MCP endpoint."
+  },
+  "oasf": {
+    "skip": "no-fixed-path",
+    "note": "OASF schemas live on the schema host, not on the origin using them."
+  },
+  "aamp": {
+    "skip": "no-fixed-path",
+    "note": "AAMP registries are operated by IAB Tech Lab, not by the origin."
+  },
+  "agora-commerce-protocol": {
+    "skip": "no-fixed-path",
+    "note": "Agora Commerce publishes at api.agoraproto.org, not on member origins."
+  },
+  "osi": {
+    "skip": "no-fixed-path",
+    "note": "OSI is a schema for semantic models exchanged between tools, not an origin artefact."
+  },
+  "nlip": {
+    "skip": "no-fixed-path",
+    "note": "NLIP is a message envelope between agents; ECMA-430 defines no discovery artefact at an origin."
+  },
+  "emv-agentic-payments": {
+    "skip": "no-fixed-path",
+    "note": "A framework document for card-network payment specifications; nothing is published at an origin."
+  },
+  "identity-assertion-authz-grant": {
+    "path": "/.well-known/oauth-authorization-server",
+    "expect": {
+      "json_keys": [
+        "authorization_grant_profiles_supported"
+      ]
+    },
+    "note": "draft-ietf-oauth-identity-assertion-authz-grant advertises the id-jag profile in authorization server metadata; the key alone shows the server publishes grant profiles, so check for urn:ietf:params:oauth:grant-profile:id-jag in the value."
+  },
+  "aiagent-auth": {
+    "skip": "no-fixed-path",
+    "note": "An IETF framework draft composing WIMSE, SPIFFE and OAuth flows; it defines no artefact of its own at an origin."
+  },
+  "dan": {
+    "skip": "not-http",
+    "note": "DNS records of types AIINDEX (65502) at _agents.<domain> and AIDISCA (65501); not reachable by HTTP GET."
+  },
+  "mcp-registry": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "wimse-aims": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "personal-agent-protocol": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "aauth-hardt": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "cloudflare-pay-per-crawl": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "wimse-agent-audit-record": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "mcp-server-cards": {
+    "skip": "no-fixed-path",
+    "note": "SEP-2127 reserves GET <streamable-http-url>/server-card as application/mcp-server-card+json. That URL is not one well-known path on the origin; discovery is /.well-known/ai-catalog.json."
+  },
+  "dawn-agent-discovery-framework": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "agent-identity-document": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "mcp-dns-discovery": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "agent-principal-binding": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "aip-delegation-chain": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "credential-delegation-protocol-wimse": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "agent-delegation-receipts": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "aauth-r3": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "acip": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "knowledge-linkset": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "scitt-ai-agent-execution": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "agent-channel-fan-out": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "aagv": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "agentic-payments-gating-model": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "idmandat-credential": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "lws10-authn-ssi-cid": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "wimse-workload-identity-metadata": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "haace": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "local-tool-call-proof": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "agent-authorization-envelope": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "a2wp": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "agent-decision-commitment": {
+    "skip": "no-fixed-path",
+    "note": "candidate record; probe rule pending"
+  },
+  "gbz-185-agent-interconnection": {
+    "skip": "no-fixed-path",
+    "note": "probe rule pending: Part 5 (discovery) full text not yet read for a well-known path"
+  },
+  "amp-ant": {
+    "skip": "needs-credentials",
+    "note": "AMP mandates and payment tokens are exchanged inside an authorised wallet flow; nothing is published at a fixed path."
+  },
+  "x401": {
+    "skip": "no-fixed-path",
+    "note": "A PROOF-REQUEST header appears only on a resource that asks for proof; there is no fixed path to check."
+  },
+  "kya-os": {
+    "path": "/.well-known/mcp",
+    "expect": {
+      "json_keys": [
+        "serverDid"
+      ]
+    },
+    "note": "KYA-OS SPEC.md section 10: servers SHOULD expose /.well-known/mcp with serverDid and capabilities."
+  },
+  "kyapay-token": {
+    "skip": "needs-credentials",
+    "note": "KYAPay tokens are presented per request by the agent; nothing is published at a fixed path on the resource server."
+  },
+  "oauth-cimd": {
+    "path": "/.well-known/oauth-authorization-server",
+    "expect": {
+      "json_keys": [
+        "client_id_metadata_document_supported"
+      ]
+    },
+    "note": "RFC 8414 metadata advertises CIMD support with client_id_metadata_document_supported."
+  },
+  "iab-comp": {
+    "skip": "no-fixed-path",
+    "note": "CoMP defines request and response objects, not a fixed path; supply discovery is out of scope."
+  },
+  "agent-commerce-kit": {
+    "skip": "no-fixed-path",
+    "note": "ACK identity and payment objects are exchanged between parties; no fixed path is defined."
+  },
+  "cloudflare-markdown-for-agents": {
+    "skip": "no-fixed-path",
+    "note": "Needs an Accept: text/markdown request header on any page; the probe rule format cannot set request headers."
+  },
+  "otel-genai-semconv": {
+    "skip": "not-http",
+    "note": "Telemetry naming conventions inside an operator's tracing pipeline; no origin artefact."
+  },
+  "erc-8001": {
+    "skip": "not-http",
+    "note": "An Ethereum contract; observable via eth_call, not HTTP."
+  },
+  "erc-8126": {
+    "skip": "not-http",
+    "note": "An Ethereum contract; observable via eth_call, not HTTP."
+  },
+  "erc-8196": {
+    "skip": "not-http",
+    "note": "An Ethereum contract; observable via eth_call, not HTTP."
+  },
+  "erc-8444": {
+    "path": "/.well-known/ard.json",
+    "expect": {
+      "text_match": "\"value:controllers?\""
+    },
+    "note": "A domain acknowledges an ERC-8444 controller address with value:controllers or value:controller in its ARD manifest."
+  },
+  "jafar": {
+    "skip": "no-fixed-path",
+    "note": "The draft defines the JSON format only, not where the file is published."
+  },
+  "anonymous-bot-auth": {
+    "skip": "no-fixed-path",
+    "note": "Anonymous credentials are presented per request; no site-side artefact is defined."
+  },
+  "workload-authz-grant": {
+    "skip": "needs-credentials",
+    "note": "The Workload Authorization Grant is a platform-signed JWT presented at a token endpoint; nothing is published at a fixed path."
+  },
+  "oauth-id-continuation": {
+    "skip": "needs-credentials",
+    "note": "The identity-continuation assertion is a token-exchange subject token; it is not published at a fixed path."
+  },
+  "oauth-agent-delegation": {
+    "skip": "no-fixed-path",
+    "note": "Agent-Delegation is an HTTP header on a request signed with RFC 9421; there is no fixed path to fetch."
+  },
+  "opena2a-aap": {
+    "skip": "no-fixed-path",
+    "note": "OpenA2A AAP is a token model. The named broker layer is not specified, and nothing is published at a fixed path."
+  }
 }

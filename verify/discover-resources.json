@@ -1,0 +1,129 @@
+{
+ "ard": {
+  "implementations": [
+   {
+    "name": "AGNTCY Agent Directory Service (ai-catalog.json export/import)",
+    "url": "https://datatracker.ietf.org/doc/html/draft-mp-agntcy-ads-02",
+    "date": "2026-07-06",
+    "evidence": "VERIFIED",
+    "note": "Serves GET /.well-known/ai-catalog.json and exports OASF records to oasf/a2a/agent-skill/mcp-ghcopilot formats"
+   }
+  ],
+  "sdks": [],
+  "validators": [
+   {
+    "name": "ARD official conformance-test CLI (manifest, publisher-resolution, and registry-validation modes)",
+    "url": "https://raw.githubusercontent.com/ards-project/ard-spec/main/spec/ard.md",
+    "date": "2026-08-26",
+    "evidence": "VERIFIED",
+    "note": "Described in Appendix D.4 of the spec text; executable at conformance/bin/conformance-test in the ards-project/ard-spec repo"
+   }
+  ],
+  "registries": [],
+  "adopters": [
+   {
+    "name": "agenticresources.dev probe (31/50 domains serving a manifest, all on ai-catalog.json, 6 also on ard.json)",
+    "url": "https://agenticresources.dev/",
+    "date": "2026-09-04",
+    "evidence": "REPORTED",
+    "note": "External probe from a sibling project; not re-run inside this repo, so adoption is recorded as observed rather than measured here"
+   }
+  ]
+ },
+ "ai-catalog-well-known-file": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "dns-aid": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": [
+   {
+    "name": "Infoblox / GoDaddy joint support announcement",
+    "url": "https://aboutus.godaddy.net/newsroom/news-releases/press-release-details/2026/Infoblox-and-GoDaddy-Support-Open-Standards-for-AI-Agent-Discovery-Identity-and-Verification-2026-0acKMntvOC/default.aspx",
+    "date": "2026-05-14",
+    "evidence": "REPORTED",
+    "note": "Vendor support announcement, not a deployment count"
+   }
+  ]
+ },
+ "aid": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "adp": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "ardp": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "ads": {
+  "implementations": [
+   {
+    "name": "agntcy/dir (AGNTCY Directory reference implementation)",
+    "url": "https://github.com/agntcy/dir",
+    "date": "2026-07-06",
+    "evidence": "VERIFIED",
+    "note": "Named directly as the source/issue-tracker repo in the draft-mp-agntcy-ads-02 'About This Document' section"
+   }
+  ],
+  "sdks": [],
+  "validators": [],
+  "registries": [
+   {
+    "name": "spec.dir.agntcy.org (latest revision of the ADS spec / directory service)",
+    "url": "https://spec.dir.agncty.org",
+    "date": "2026-07-06",
+    "evidence": "REPORTED",
+    "note": "Named in the draft as the canonical live spec location; not independently fetched in this pass"
+   }
+  ],
+  "adopters": []
+ },
+ "oasf": {
+  "implementations": [
+   {
+    "name": "AGNTCY Agent Directory Service (native OASF record storage)",
+    "url": "https://datatracker.ietf.org/doc/html/draft-mp-agntcy-ads-02",
+    "date": "2026-07-06",
+    "evidence": "VERIFIED",
+    "note": "ADS stores agent records natively in OASF and exports to other formats"
+   }
+  ],
+  "sdks": [],
+  "validators": [
+   {
+    "name": "OASF schema browser / API documentation",
+    "url": "https://schema.oasf.outshift.com/",
+    "date": "2026-09-06",
+    "evidence": "VERIFIED",
+    "note": "Live browsable JSON Schema for versions 0.7.0-1.1.0 with linked API documentation"
+   }
+  ],
+  "registries": [],
+  "adopters": []
+ },
+ "api-catalog-rfc9727": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ }
+}

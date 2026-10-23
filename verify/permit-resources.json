@@ -1,0 +1,244 @@
+{
+ "aap": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-02-07",
+    "evidence": "REPORTED",
+    "name": "aapspec/reference-impl",
+    "note": "linked from aapspec/spec README; not independently fetched/verified as functional in this pass",
+    "url": "https://github.com/aapspec/reference-impl"
+   }
+  ],
+  "registries": [
+   {
+    "date": "2026-02-07",
+    "evidence": "REPORTED",
+    "name": "aapspec/spec (GitHub org: spec text, schemas, test-vectors)",
+    "url": "https://github.com/aapspec/spec"
+   }
+  ],
+  "sdks": [],
+  "validators": []
+ },
+ "aauth": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "agent-permissions-json": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-07-17",
+    "evidence": "VERIFIED",
+    "name": "las-wg/agent-permissions.json (JSON Schema + spec)",
+    "url": "https://github.com/las-wg/agent-permissions.json"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": [
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "Agent Ready agent-permissions.json Validator",
+    "note": "third-party validator tool, not affiliated with LAS-WG",
+    "url": "https://agent-ready.dev/agent-permissions-validator"
+   }
+  ]
+ },
+ "ai-crawler-tokens-robots": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "OpenAI crawlers (GPTBot, OAI-SearchBot, OAI-AdsBot)",
+    "url": "https://developers.openai.com/api/docs/bots"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Anthropic crawlers (ClaudeBot, Claude-User, Claude-SearchBot)",
+    "url": "https://support.claude.com/en/articles/8896518"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Google crawlers (Googlebot, Google-Extended)",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Perplexity crawlers (PerplexityBot, Perplexity-User)",
+    "url": "https://docs.perplexity.ai/guides/bots"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "aipref-content-usage-attachment": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [
+   {
+    "date": "2026-08-19",
+    "evidence": "REPORTED",
+    "name": "ietf-wg-aipref/drafts (GitHub source and issue tracker)",
+    "url": "https://www.ietf.org/archive/id/draft-ietf-aipref-attach-05.html"
+   }
+  ],
+  "sdks": [],
+  "validators": []
+ },
+ "aipref-vocabulary": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [
+   {
+    "date": "2026-08-19",
+    "evidence": "REPORTED",
+    "name": "ietf-wg-aipref/drafts (GitHub source and issue tracker)",
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-aipref-vocab-07"
+   }
+  ],
+  "sdks": [],
+  "validators": []
+ },
+ "auth-md": {
+  "adopters": [
+   {
+    "date": "2026-06",
+    "evidence": "REPORTED",
+    "name": "WorkOS",
+    "note": "linked from auth-md.com homepage; individual company URL not independently fetched in this pass",
+    "url": "https://workos.com/auth.md"
+   },
+   {
+    "date": "2026-06",
+    "evidence": "REPORTED",
+    "name": "Cloudflare",
+    "note": "linked from auth-md.com homepage; individual company URL not independently fetched in this pass",
+    "url": "https://cloudflare.com/auth.md"
+   },
+   {
+    "date": "2026-06",
+    "evidence": "REPORTED",
+    "name": "Resend",
+    "note": "linked from auth-md.com homepage; individual company URL not independently fetched in this pass",
+    "url": "https://resend.com/auth.md"
+   },
+   {
+    "date": "2026-06",
+    "evidence": "REPORTED",
+    "name": "Firecrawl",
+    "note": "linked from auth-md.com homepage; individual company URL not independently fetched in this pass",
+    "url": "https://firecrawl.dev/auth.md"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-06",
+    "evidence": "VERIFIED",
+    "name": "auth-md.com specification and reference skill",
+    "url": "https://auth-md.com/specification"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "cloudflare-content-signals-policy": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2025-09-24",
+    "evidence": "VERIFIED",
+    "name": "Cloudflare (native robots.txt content-signal management for Cloudflare-hosted zones)",
+    "url": "https://blog.cloudflare.com/content-signals-policy/"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "daap": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-08",
+    "evidence": "REPORTED",
+    "name": "Grantex (incomplete reference implementation, not required for conformance)",
+    "note": "named in the draft text; no independent repository URL located in this pass",
+    "url": "https://datatracker.ietf.org/doc/html/draft-mishra-oauth-agent-grants-02"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "erc-8226": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-04-12",
+    "evidence": "REPORTED",
+    "name": "RAMS reference implementation and test suite (IAgentMandate, IComplianceProvider, RamsGated)",
+    "note": "proposers' own reference code, linked from the EIP text; no separate repo URL isolated in this pass",
+    "url": "https://eips.ethereum.org/EIPS/eip-8226"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "oauth-metadata-for-agents": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-06",
+    "evidence": "REPORTED",
+    "name": "auth.md (chains RFC 9728 + RFC 8414 as its discovery layer)",
+    "url": "https://auth-md.com/specification"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "rsl": {
+  "adopters": [
+   {
+    "date": "2025-12-10",
+    "evidence": "VERIFIED",
+    "name": "RSL Collective editorial roster: Cond\u00e9 Nast, Ziff Davis, Yahoo, Automattic, O'Reilly Media, Fastly, Schema.org",
+    "note": "named as spec editors, which establishes institutional backing, not confirmed independent production deployment of rsl.xml files",
+    "url": "https://rslstandard.org/rsl"
+   }
+  ],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": [
+   {
+    "date": "2025-12-10",
+    "evidence": "REPORTED",
+    "name": "RSL Validate",
+    "note": "\"Validate\" listed in RSL site navigation alongside the spec; dedicated validator URL not separately fetched in this pass",
+    "url": "https://rslstandard.org/rsl"
+   }
+  ]
+ },
+ "tdmrep": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ }
+}

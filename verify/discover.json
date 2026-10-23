@@ -1,0 +1,734 @@
+[
+ {
+  "id": "ard",
+  "name": "Agentic Resource Discovery",
+  "acronym": "ARD",
+  "aliases": [
+   "AI Catalog",
+   "ai-catalog.json (predecessor path)"
+  ],
+  "collisions": [
+   "ARDP (Agent Registration and Discovery Protocol, unrelated IETF draft)",
+   "AIR (the urn:air: identifier namespace this spec defines is sometimes referred to standalone)"
+  ],
+  "step": "discover",
+  "parties": [
+   "agent-site",
+   "agent-registry"
+  ],
+  "form": "well-known-file",
+  "track": "vendor-consortium",
+  "scope": "general",
+  "question": "Where are an organization's discoverable agentic resources (MCP servers, A2A agents, skills, registries), and how can they be found by search rather than pre-installed one at a time?",
+  "analog": "sitemap plus a search engine index",
+  "origin": {
+   "org": "Google, Microsoft, Hugging Face",
+   "date": "2026-06-17"
+  },
+  "governance": "Authored by individuals at Google, Microsoft and Hugging Face (Junjie Bu, R.V. Guha, Shaun Smith); published as an open GitHub project (ards-project/ard-spec) with no formal standards body yet; contributions acknowledged from AWS, Cisco, Databricks, GitHub, GoDaddy, Nvidia, Salesforce and Snowflake",
+  "native_status": "Proposal",
+  "phase": "draft",
+  "implementation": "shipping",
+  "adoption": {
+   "level": "observed",
+   "by": "agenticresources.dev own probe, 2026-09-04",
+   "probe_run": null
+  },
+  "version": {
+   "label": "v0.91",
+   "date": "2026-08-26"
+  },
+  "spec_url": "https://raw.githubusercontent.com/ards-project/ard-spec/main/spec/ard.md",
+  "discovery": {
+   "mechanism": "well-known manifest, robots.txt Agentmap directive, HTML <link rel=\"ard\">, DNS SVCB, in-page JSON-LD",
+   "path": "/.well-known/ard.json"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "https://{origin}/.well-known/ard.json",
+   "parse": "200 response is JSON with a top-level \"entries\" array of ARD entries (each with identifier/displayName/type/url-or-data); a consumer MAY also check the predecessor /.well-known/ai-catalog.json and an HTML <link rel=\"ard\"> tag",
+   "on_absent": "Domain publishes no ARD manifest at the current canonical path; it may still publish at the deprecated predecessor path /.well-known/ai-catalog.json, which conformant consumers are not required to consult"
+  },
+  "evidence": [
+   {
+    "claim": "ARD v0.91 (26 Aug 2026), authored by Google/Microsoft/Hugging Face individuals, defines the ARD entry as a JSON-LD node and moves the canonical manifest path to /.well-known/ard.json, explicitly naming /.well-known/ai-catalog.json as the deprecated predecessor path that consumers MAY but need not consult.",
+    "label": "VERIFIED",
+    "url": "https://raw.githubusercontent.com/ards-project/ard-spec/main/spec/ard.md",
+    "date": "2026-08-26"
+   },
+   {
+    "claim": "Google announced the Agentic Resource Discovery Specification and directed publishers to a well-known catalog mechanism.",
+    "label": "REPORTED",
+    "url": "https://developers.googleblog.com/en/announcing-the-agentic-resource-discovery-specification/",
+    "date": "2026-06-17"
+   },
+   {
+    "claim": "AGNTCY's Agent Directory Service (ADS) implements AI Catalog interoperability, serving /.well-known/ai-catalog.json and exporting records to a2a/mcp/oasf formats -- one real implementation of the ARD manifest side.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-mp-agntcy-ads-02",
+    "date": "2026-07-06"
+   },
+   {
+    "claim": "An independent probe of 50 domains run 2026-09-04 found 31 serving a manifest, all 31 on the predecessor ai-catalog.json path, and only 6 of those also on the new ard.json path -- i.e. the ecosystem has not yet moved to the canonical path this v0.91 revision defines.",
+    "label": "REPORTED",
+    "url": "https://agenticresources.dev/",
+    "date": "2026-09-04"
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": {
+   "summary": "The path this specification calls canonical has changed between revisions and prior internal notes got this backwards: v0.91 (26 Aug 2026) makes /.well-known/ard.json canonical and demotes /.well-known/ai-catalog.json to an optional, non-required-to-consult predecessor path. Our own probe (2026-09-04, prior to this verification) found the entire observed deployment base still on the old ai-catalog.json path, with only 6 of 31 also serving the new path -- so real-world adoption lags the spec text by at least one full path rename. Adoption level is left as \"observed\" rather than \"measured\" here because no probe-run artifact exists inside this repository (data/) to cite by filename; the probe that produced the 31/50 figure lives in the sibling agenticresources.dev project.",
+   "claims": [
+    "v0.91 text: /.well-known/ard.json is canonical; /.well-known/ai-catalog.json is an optional predecessor",
+    "2026-09-04 probe: 100% of observed manifests are still at ai-catalog.json; only 19% also serve ard.json",
+    "Identifier form is urn:air:<publisher>:<namespace>:<agent-name>, not urn:ard as some earlier notes assumed"
+   ]
+  },
+  "summary_md": "Agentic Resource Discovery (ARD) is a specification for how agentic resources -- MCP servers, A2A agents, skills, and other callable services -- are described, discovered, and searched across a federated network of registries [1]. It is authored by individuals at Google, Microsoft and Hugging Face and published as an open GitHub project (ards-project/ard-spec) rather than through a formal standards body; the current text is version v0.91, dated 26 August 2026, and is explicitly labelled a \"Proposal\" [1].\n\nARD solves the problem of scaling tool selection beyond an LLM's context window: instead of injecting every possible tool description into a prompt, a client searches a registry's index using natural language plus structured filters, and the registry returns ranked entries [1]. Each entry is a JSON-LD node with a small set of required terms (identifier, displayName, type, and either url or data), and publishers can extend it with arbitrary namespaced terms without waiting for a spec revision [1]. Entries are advertised through a well-known manifest, robots.txt Agentmap directives, an HTML `<link rel=\"ard\">` tag, DNS SVCB records, or in-page markup; the manifest path is `/.well-known/ard.json` [1].\n\nA significant correction to earlier internal notes: the v0.91 text makes `/.well-known/ard.json` the canonical path and explicitly demotes the older `/.well-known/ai-catalog.json` path (and the `ai-catalog` link relation) to an optional predecessor that a conformant consumer is not required to consult [1]. Prior assumptions that ai-catalog.json was still canonical as of this version are wrong as of the text fetched 2026-09-06.\n\nARD does not define a signing or authentication scheme of its own (it defers to whatever trust framework a publisher's `trustManifest` declares), does not constrain artifact-specific schemas (MCP, A2A, etc. remain external), and does not define a normative way to fetch a full entry by identifier from a search result [1].\n\nImplementation exists: AGNTCY's Agent Directory Service explicitly serves `/.well-known/ai-catalog.json` and can export records into a2a, mcp, oasf and agent-skill formats, functioning as one real ARD-manifest-compatible implementation [3]. Beyond that, adoption is thin and lagging the spec's own migration: an independent probe of 50 domains run 2026-09-04 found 31 serving some manifest, all 31 still on the deprecated ai-catalog.json path, and only 6 of those also serving the new ard.json path [4] -- meaning the observed deployment base predates this very revision's path rename. Because that probe artifact is not present in this repository, adoption here is recorded as \"observed\" rather than \"measured\".\n\nWhat is disputed or unknown: whether the ecosystem migrates to ard.json before a competing discovery mechanism (DNS-AID, AID, ADP) becomes the practical default; whether any registry beyond ADS has implemented the POST /search and POST /explore REST surface this spec mandates; and how the optional `trustManifest` verification step will be operationalized across publishers who have never coordinated on a trust framework.\n\nThe record `ai-catalog-well-known-file`, which previously modelled the manifest file as a separate entity, has been folded into this record: it described the same well-known artifact that this specification now supersedes with `ard.json`, and keeping it separate obscured that the two are one lineage, not two competing formats.",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against ARD v0.91 spec text (raw.githubusercontent.com/ards-project/ard-spec/main/spec/ard.md); corrected canonical path from ai-catalog.json to ard.json; folded ai-catalog-well-known-file into this record"
+   }
+  ]
+ },
+ {
+  "id": "ai-catalog-well-known-file",
+  "name": "AI Catalog well-known file",
+  "acronym": "",
+  "aliases": [
+   "ai-catalog.json"
+  ],
+  "collisions": [],
+  "step": "discover",
+  "parties": [
+   "agent-site"
+  ],
+  "form": "well-known-file",
+  "track": "vendor-consortium",
+  "scope": "general",
+  "question": "Which AI-capable artifacts and registries does this domain publish? (superseded question -- see ard)",
+  "analog": "sitemap.xml",
+  "origin": {
+   "org": "ARD ecosystem (Google, Microsoft, Hugging Face)",
+   "date": "2026-06-17"
+  },
+  "governance": "ARD / ards-project (see ard)",
+  "native_status": "Deprecated predecessor path of the ARD manifest",
+  "phase": "withdrawn",
+  "implementation": "deprecated",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "n/a -- not a separately versioned artifact",
+   "date": null
+  },
+  "spec_url": "https://raw.githubusercontent.com/ards-project/ard-spec/main/spec/ard.md",
+  "discovery": {
+   "mechanism": "superseded -- see ard",
+   "path": "/.well-known/ai-catalog.json"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "https://{origin}/.well-known/ai-catalog.json",
+   "parse": "superseded; see the ard record's probe for the current canonical path",
+   "on_absent": "superseded; see ard"
+  },
+  "evidence": [
+   {
+    "claim": "ARD v0.91 names /.well-known/ai-catalog.json as its own predecessor path, not a separate specification: \"ARD's predecessor specified the path /.well-known/ai-catalog.json and the link relation ai-catalog; a consumer MAY additionally consult these.\"",
+    "label": "VERIFIED",
+    "url": "https://raw.githubusercontent.com/ards-project/ard-spec/main/spec/ard.md",
+    "date": "2026-08-26"
+   },
+   {
+    "claim": "Google's own launch post for ARD instructs publishers to host an ai-catalog.json file at a well-known path on their domain as step 1 of the four-phase discovery flow, confirming this well-known file is ARD's original (now-predecessor) publishing mechanism rather than a separate specification.",
+    "label": "VERIFIED",
+    "url": "https://developers.googleblog.com/en/announcing-the-agentic-resource-discovery-specification/",
+    "date": "2026-06-17"
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": null,
+  "summary_md": "This record modelled the `/.well-known/ai-catalog.json` well-known file as if it were a distinct, separately maintained artifact alongside the `ard` record. Reading the ARD v0.91 specification text directly [1] shows this is incorrect: ai-catalog.json is the *same lineage* as ARD -- it is explicitly named in the current spec as \"ARD's predecessor\" path, kept only as an optional legacy fallback that a conformant ARD consumer is not required to read. There is no independent governance, schema, or spec document for ai-catalog.json distinct from the ARD project; it is a prior version of the same well-known manifest concept, now superseded by /.well-known/ard.json.\n\nKeeping this as a separate map entry created a false impression of two competing discovery mechanisms. All content that was useful here (its role as the file most publishers currently serve, per our probe evidence) has been moved into the `ard` record's summary and dispute fields, where the version history and the adoption lag it represents can be read together. This record is marked `withdrawn` rather than deleted so the id remains resolvable and the merge history is auditable; readers of agenticweb.wiki should be pointed to `ard` instead.",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "merged into ard: confirmed via ARD v0.91 spec text that ai-catalog.json is ARD's own deprecated predecessor path, not a separate specification"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "fix round 1: added second evidence entry (Google ARD launch blog post, fetched directly) to satisfy the two-evidence gate"
+   }
+  ]
+ },
+ {
+  "id": "dns-aid",
+  "name": "DNS for AI Discovery",
+  "acronym": "DNS-AID",
+  "aliases": [],
+  "collisions": [
+   "AID (Agent Identity and Discovery, a separate, unrelated agentcommunity.org spec that also does DNS-first discovery)"
+  ],
+  "step": "discover",
+  "parties": [
+   "agent-site",
+   "agent-agent"
+  ],
+  "form": "dns-record",
+  "track": "ietf",
+  "scope": "general",
+  "question": "Given a domain, where is its agent endpoint, what protocol does it speak, and how can that be verified via DNSSEC/DANE?",
+  "analog": "DNS-based Service Discovery (DNS-SD) for agents",
+  "origin": {
+   "org": "Infoblox, with Deutsche Telekom and Amazon co-authors",
+   "date": "2026-05-27"
+  },
+  "governance": "IETF dnsop working group Internet-Draft (individual submission track, not yet WG-adopted)",
+  "native_status": "Internet-Draft, Standards Track intended status",
+  "phase": "draft",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "claimed",
+   "by": "Infoblox and GoDaddy joint press release",
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-mozleywilliams-dnsop-dnsaid-02",
+   "date": "2026-05-27"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-mozleywilliams-dnsop-dnsaid/",
+  "discovery": {
+   "mechanism": "DNS SVCB records at the agent's owner name; DNS-SD-style well-known labels _agents/_index for an organization index; optional TXT fallback and DNSSEC/DANE TLSA for trust",
+   "path": "_index._agents.<domain> (SVCB); _agent-name.<domain> (SVCB)"
+  },
+  "probe": {
+   "method": "DNS",
+   "path": "SVCB query for _index._agents.{domain}, then SVCB query for the target agent owner name it returns",
+   "parse": "SVCB RRset present with alpn/well-known/cap SvcParamKeys; absence of TargetName error and presence of at least one SvcParamKey confirms an agent record",
+   "on_absent": "Domain publishes no DNS-AID SVCB records; DNS-AID cannot be used to bootstrap discovery for this domain"
+  },
+  "evidence": [
+   {
+    "claim": "draft-mozleywilliams-dnsop-dnsaid-02 (27 May 2026, IETF dnsop, authors from Infoblox, Deutsche Telekom, Amazon) defines SVCB records at an agent's owner name plus a well-known DNS-SD-style _index._agents.<domain> organization index, with optional TXT fallback and DANE TLSA for endpoint authentication.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-mozleywilliams-dnsop-dnsaid/",
+    "date": "2026-05-27"
+   },
+   {
+    "claim": "Infoblox and GoDaddy jointly announced support for open standards for AI agent discovery, identity and verification, naming this DNS-based approach.",
+    "label": "REPORTED",
+    "url": "https://aboutus.godaddy.net/newsroom/news-releases/press-release-details/2026/Infoblox-and-GoDaddy-Support-Open-Standards-for-AI-Agent-Discovery-Identity-and-Verification-2026-0acKMntvOC/default.aspx",
+    "date": "2026-05-14"
+   },
+   {
+    "claim": "ARD v0.91 itself names DNS-AID as a candidate mechanism for federated routing (\"leveraging DNS-AID to discover authoritative registries for specific domains\"), and ADP (draft-pro-adp) explicitly delegates its DNS layer to DNS-AID.",
+    "label": "VERIFIED",
+    "url": "https://raw.githubusercontent.com/ards-project/ard-spec/main/spec/ard.md",
+    "date": "2026-08-26"
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": {
+   "summary": "Two IETF drafts now build on top of DNS-AID's SVCB mechanism (ADP explicitly, ARD's informative discussion) while a third, unrelated spec (AID, agentcommunity.org) independently chose the DNS TXT record at _agent.<domain> for the same job. The two are not compatible: DNS-AID uses SVCB records with a _agents/_index label structure; AID (agentcommunity) uses a flat TXT record. No evidence found that these projects coordinate.",
+   "claims": [
+    "DNS-AID: SVCB-based, IETF dnsop, multi-vendor (Infoblox/Deutsche Telekom/Amazon/GoDaddy)",
+    "AID: TXT-based, agentcommunity.org, unrelated authorship"
+   ]
+  },
+  "summary_md": "DNS for AI Discovery (DNS-AID) standardizes publishing AI agents in the Domain Name System so other agents can discover them, using DNS Service Binding (SVCB) records for connectivity and key metadata, a well-known DNS-SD-style entry point (`_index._agents.<domain>`) into an organization's agent index, and optionally DNSSEC and DANE TLSA records for trust [1]. It is an IETF Internet-Draft in the dnsop working group's area (individual submission, not yet WG-adopted), authored by engineers at Infoblox, Deutsche Telekom and Amazon, current revision -02 dated 27 May 2026 with intended status Standards Track [1].\n\nIt solves the \"given a domain, where is the agent and which protocol does it speak\" problem entirely within DNS, so that once a client has resolved an organization's agents once, subsequent lookups are cacheable and require no extra round trip beyond ordinary DNS resolution [1]. The mechanism defines two record shapes: an SVCB record at an individual agent's owner name carrying `TargetName`, `alpn`, `well-known` (a well-known URI path per RFC 8615) and other SvcParamKeys, and an SVCB record at the fixed label `_index._agents.<domain>` pointing to an organization-wide index [1]. A TXT-record fallback and a DNSSEC/DANE-authenticated TLSA companion record are both discussed but explicitly not the primary mechanism [1]. The document introduces no new DNS resource record types, opcodes, or response codes -- it is a usage convention over existing SVCB/TXT/TLSA record types [1].\n\nDNS-AID does not itself define authentication or authorization beyond DANE-based TLS endpoint verification, does not define the schema of the capability descriptor referenced by `well-known` (that is out of scope), and use case 3 (discovery by capability alone, with neither organization nor agent known) is explicitly out of scope for this document, though the authors note it \"can be derived\" from the spec [1].\n\nCurrent state: as of 27 May 2026 this is a dnsop-area individual Internet-Draft, expiring 28 November 2026 unless refreshed [1]. Infoblox and GoDaddy issued a joint press release on 14 May 2026 announcing support for \"open standards for AI agent discovery, identity and verification\" that names this effort [2], but that is a vendor-support announcement, not evidence of production deployments; no independent implementation count was found. Two other agentic-web specifications explicitly build on it: ADP (draft-pro-adp) delegates its entire DNS discovery layer to DNS-AID rather than duplicating it [3], and ARD's informative discussion of federated query resolution names DNS-AID as a way to \"discover authoritative registries for specific domains\" [3].\n\nWhat is disputed or unknown: whether DNS-AID's SVCB-based approach and the separately-authored AID specification's flat TXT-record approach (see `aid`) will converge, coexist, or one will win out -- no evidence of coordination between the two projects was found. Adoption is recorded as \"claimed\" (by the Infoblox/GoDaddy announcement) rather than measured, since no independent DNS probe of a domain sample was run for this record.",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against draft-mozleywilliams-dnsop-dnsaid-02 spec text via datatracker.ietf.org"
+   }
+  ]
+ },
+ {
+  "id": "aid",
+  "name": "Agent Identity and Discovery",
+  "acronym": "AID",
+  "aliases": [],
+  "collisions": [
+   "DNS-AID (unrelated IETF dnsop draft that solves the same problem with SVCB instead of TXT)",
+   "AID also collides with generic 'agent ID' usage elsewhere"
+  ],
+  "step": "discover",
+  "parties": [
+   "agent-site",
+   "agent-agent"
+  ],
+  "form": "dns-record",
+  "track": "community",
+  "scope": "general",
+  "question": "Given a domain, where is the agent and which protocol should I speak, with cryptographic proof the endpoint controls the matching key?",
+  "analog": "a DNS SRV/TXT record for agents, with a TLS-certificate-like endpoint proof bolted on",
+  "origin": {
+   "org": "Agent Community (agentcommunity.org)",
+   "date": "2026-06-01"
+  },
+  "governance": "Agent Community open-source project; editor listed as 'Agent Community'; no formal standards body, though the spec discusses composing with IETF-track work (RFC 9421, RFC 7638, RFC 9728, RFC 8414)",
+  "native_status": "Current normative specification",
+  "phase": "living",
+  "implementation": "shipping",
+  "adoption": {
+   "level": "observed",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "v2.1.0 (aid2 wire format; aid1 legacy)",
+   "date": "2026-06-01"
+  },
+  "spec_url": "https://raw.githubusercontent.com/agentcommunity/agent-identity-discovery/main/packages/docs/specification.md",
+  "discovery": {
+   "mechanism": "DNS TXT record at a fixed base name, with an HTTPS well-known fallback",
+   "path": "_agent.<domain> (DNS TXT); /.well-known/agent (HTTP fallback)"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "https://{origin}/.well-known/agent",
+   "parse": "200 response is JSON mirroring the v2 TXT record keys (version, uri, proto, auth, ...); trustSource is reported as well-known-tls rather than dns for this path",
+   "on_absent": "No well-known fallback; query DNS TXT at _agent.{domain} directly (not curl-executable) -- absence of both means the domain does not publish AID"
+  },
+  "evidence": [
+   {
+    "claim": "AID v2.1.0 (1 June 2026, agentcommunity.org) defines a DNS TXT record at the canonical base name _agent.<domain> with required keys v/u/p (version/uri/proto), an optional Ed25519 endpoint-proof key (pka/k), and a JSON .well-known/agent HTTP fallback for environments where DNS TXT record creation is restricted.",
+    "label": "VERIFIED",
+    "url": "https://raw.githubusercontent.com/agentcommunity/agent-identity-discovery/main/packages/docs/specification.md",
+    "date": "2026-06-01"
+   },
+   {
+    "claim": "The agentcommunity/agent-identity-discovery GitHub repository (47 stars, 8 forks, 5 contributors, fetched 2026-09-06) shows AID v2 shipped as published packages -- npm @agentcommunity/aid, PyPI aid-discovery, plus source-available Go/Rust/.NET/Java libraries -- an official aid-doctor CLI, a live interactive workbench at aid.agentcommunity.org, and a documented live showcase domain (supabase.agentcommunity.org) used in the README's own Go example, i.e. a real, multi-language, actively maintained implementation exists beyond the specification text alone.",
+    "label": "VERIFIED",
+    "url": "https://github.com/agentcommunity/agent-identity-discovery",
+    "date": "2026-09-06"
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": {
+   "summary": "AID (agentcommunity.org) and DNS-AID (IETF dnsop draft-mozleywilliams) both answer 'given a domain, where is the agent and which protocol' but chose incompatible DNS shapes -- a single TXT record with key=value pairs, versus an SVCB RRset with SvcParamKeys and a separate _index._agents label. No evidence either project references or coordinates with the other in the text fetched for this record.",
+   "claims": [
+    "AID: _agent.<domain> TXT record, agentcommunity.org, community-governed",
+    "DNS-AID: SVCB records at agent + _index._agents labels, IETF dnsop draft, Infoblox/Deutsche Telekom/Amazon"
+   ]
+  },
+  "summary_md": "Agent Identity & Discovery (AID) answers \"given a domain, where is the agent and which protocol should I speak?\" using a single DNS TXT record published at the fixed base name `_agent.<domain>` [1]. It is deliberately minimal: after AID resolves an endpoint and protocol token, richer protocols (MCP, A2A, OpenAPI, OAuth) take over for the actual interaction [1]. It is maintained by \"Agent Community\" as an open-source project (agentcommunity/agent-identity-discovery on GitHub) rather than through any formal standards body.\n\nThe current wire format is v2 (`aid2`), current since 1 June 2026, which supersedes a legacy `aid1` format kept only for backward compatibility during a migration window [1]. A record is a semicolon-delimited `key=value` string with required `version`/`uri`/`proto` (or their single-letter aliases `v`/`u`/`p`), and optional fields for auth hints, description, docs link, deprecation date, and an Ed25519 public key (`pka`/`k`) used for endpoint proof [1]. When a key is present, an AID client performs a PKA (Public-Key-for-Agent) handshake -- HTTP Message Signatures (RFC 9421) over a nonce challenge, keyed by an RFC 7638 JWK thumbprint -- to verify the endpoint controls the corresponding private key [1]. A newer \"domain-binding\" profile (Appendix B.7) lets the endpoint additionally attest that it consents to serve the specific queried domain, closing a gap where any domain could otherwise publish another party's endpoint and key without that endpoint's consent [1].\n\nAID is explicit about what it does not do: it does not issue credentials, grant authorization, prove human approval, define SPIFFE/WIMSE trust-domain federation, or manage cryptographic key rotation -- a key change is simply a key change, with no DNS-level provenance chain [1]. Discovery is exact-host only; clients must not walk up to parent domains, though CNAME delegation lets child hosts share a record explicitly [1]. A `.well-known/agent` HTTP fallback exists for environments (some managed DNS panels) where TXT record creation is restricted, but that path's trust rests on TLS rather than DNS, and cannot satisfy a `dnssec=require` policy [1].\n\nThe project's own GitHub repository (47 stars, 8 forks, fetched 2026-09-06) shows real shipped code: published npm (`@agentcommunity/aid`) and PyPI (`aid-discovery`) packages, source-available Go/Rust/.NET/Java libraries, an `aid-doctor` CLI, a live interactive workbench, and at least one documented live showcase domain (`supabase.agentcommunity.org`) [2] -- so implementation is recorded as shipping. No independent count of AID-publishing domains beyond that one showcase example was located, so adoption is recorded as observed rather than measured. The specification's own roadmap flags that a future major version (`aid3`) is expected to make domain-binding mandatory rather than optional-with-default, once adoption is broad enough that the switching cost is low [1].\n\nWhat is disputed: AID's DNS-TXT approach and the separately-authored, IETF-track DNS-AID specification (see `dns-aid`) solve the identical \"resolve a domain to an agent endpoint\" problem with incompatible record shapes (TXT vs. SVCB), and no evidence of coordination between the two efforts was found in the texts read for this verification.",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against AID v2.1.0 spec text via raw.githubusercontent.com"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "fix round 1: added second evidence entry (agentcommunity GitHub repo, fetched directly) showing real published multi-language packages; upgraded implementation unknown -> shipping and adoption unmeasured -> observed on that basis"
+   }
+  ]
+ },
+ {
+  "id": "adp",
+  "name": "Agent Discovery Protocol",
+  "acronym": "ADP",
+  "aliases": [],
+  "collisions": [
+   "ADP is a generic acronym also used for 'Agile Development Process' and unrelated ADP payroll/HR company; within the agentic space, distinct from ARDP (Agent Registration and Discovery Protocol) and AID/DNS-AID"
+  ],
+  "step": "discover",
+  "parties": [
+   "agent-site",
+   "agent-agent"
+  ],
+  "form": "well-known-file",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How does an agent escalate from a cheap DNS lookup, to a well-known JSON metadata document, to a real-time WebSocket session, using only as much machinery as the task needs?",
+  "analog": "a layered service-discovery stack (DNS SRV -> REST descriptor -> live connection), akin to how email escalates from MX lookup to SMTP handshake",
+  "origin": {
+   "org": "Individual IETF submission",
+   "date": "2026-06-18"
+  },
+  "governance": "IETF individual Internet-Draft; explicitly delegates its DNS layer to the separate dnsop-area DNS-AID draft rather than defining its own",
+  "native_status": "Internet-Draft; work in progress",
+  "phase": "draft",
+  "implementation": "prototype",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-pro-adp-agent-discovery-02",
+   "date": "2026-06-18"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-pro-adp-agent-discovery-02",
+  "discovery": {
+   "mechanism": "Layer 1 DNS-AID (SVCB/TLSA), Layer 2 well-known JSON metadata, Layer 3 HTML landing page + JSON-LD + WebSocket (Agent Gateway Protocol)",
+   "path": "/.well-known/agent.json"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "https://{origin}/.well-known/agent.json",
+   "parse": "200 response is a JSON document with identity/endpoints/capabilities/security top-level blocks",
+   "on_absent": "Domain does not publish ADP Layer 2 metadata; check for a DNS-AID SVCB record with a well-known SvcParamKey as a possible Layer 1-only deployment"
+  },
+  "evidence": [
+   {
+    "claim": "draft-pro-adp-agent-discovery-02 (18 June 2026) defines ADP v1.1 as a three-layer stack: Layer 1 delegates entirely to DNS-AID (SVCB records), Layer 2 defines a GET-able /.well-known/agent.json metadata document, and Layer 3 defines an HTML landing page plus a WebSocket-based Agent Gateway Protocol (AGP) with Ed25519 signature authentication for real-time messaging.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-pro-adp-agent-discovery-02",
+    "date": "2026-06-18"
+   },
+   {
+    "claim": "A reference implementation exists at github.com/harrylian8766/adp-protocol (5 stars, 1 fork, fetched 2026-09-06): a Node.js SDK (protocol identifier urn:adp:1.1) implementing SVCB-first DNS discovery, TLSA/DANE, the /.well-known/agent.json builder, HTML landing-page generation, and a CLI, explicitly version-aligned with draft-pro-adp-agent-discovery-02 and cross-referencing draft-mozleywilliams-dnsop-dnsaid for SvcParamKey usage.",
+    "label": "VERIFIED",
+    "url": "https://github.com/harrylian8766/adp-protocol",
+    "date": "2026-09-06"
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": null,
+  "summary_md": "The Agent Discovery Protocol (ADP) is a layered protocol, currently at v1.1, for discovering, verifying, and interacting with AI agents on the internet [1]. It is an individual IETF Internet-Draft (not adopted by any working group), revision -02, dated 18 June 2026 [1].\n\nADP's organizing idea is escalation: \"if SVCB answers your question, do not issue an HTTP request; if Well-Known suffices, do not open a WebSocket\" [1]. It is explicitly a three-layer stack. Layer 1 is DNS discovery, and rather than redefine it, ADP delegates entirely to the separate DNS-AID Internet-Draft (see `dns-aid`), reusing its SVCB records, its `well-known`/`cap`/`cap-sha256` SvcParamKeys, and its DANE TLSA-based endpoint authentication [1]. Layer 2 is a well-known JSON metadata document, published by default at `/.well-known/agent.json`, containing identity, capability, relationship, security-policy and endpoint-map blocks [1]. Layer 3 covers interaction endpoints: an HTML landing page at the domain root with embedded JSON-LD structured data for human-facing discovery, plus a WebSocket transport -- the Agent Gateway Protocol (AGP) -- for real-time inter-agent messaging authenticated with Ed25519 signatures [1]. A TXT+SRV fallback exists for organizations that cannot deploy SVCB records [1].\n\nADP does not itself mint a new DNS mechanism (Layer 1 is DNS-AID verbatim) and does not define the internal schema of whatever protocol Layer 3 ultimately hands off to (MCP, A2A, etc. remain external, similar to ARD's artifact-agnostic envelope) [1]. Because it explicitly reuses DNS-AID, the two drafts should be read together rather than as fully independent proposals: ADP's Layer 1 section is a summary that points back to the normative DNS-AID text.\n\nCurrent state: revision -02 was published 18 June 2026, expiring 20 December 2026 unless refreshed, and its \"Changes from -00\" section (part of the table of contents) indicates it is still actively being revised rather than stable [1]. A single-author reference implementation was located at github.com/harrylian8766/adp-protocol (5 stars, 1 fork, fetched 2026-09-06): a Node.js SDK and CLI implementing all three layers (SVCB-first DNS discovery aligned with DNS-AID's SvcParamKeys, the agent.json builder, HTML landing-page generation, and Ed25519 verification), published under a CC0 protocol license / MIT SDK license [2]. This is a solo hobbyist project rather than a vendor or standards-body implementation, so implementation is recorded as prototype rather than shipping; no independent deployment or adopter evidence was located, so adoption remains unmeasured.\n\nWhat is disputed or unknown: whether ADP's Layer 2/3 additions (the well-known JSON schema, the WebSocket AGP transport) will be adopted independently of whether DNS-AID itself is adopted, since the two are only loosely coupled (an implementer could deploy DNS-AID without ADP's higher layers, or vice versa using the TXT+SRV fallback); and how ADP's `/.well-known/agent.json` relates to the similarly-named but structurally different `/.well-known/agent` fallback defined by the unrelated AID specification (see `aid`) -- both use the word \"agent\" in a well-known path but are not the same document format.",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against draft-pro-adp-agent-discovery-02 spec text via datatracker.ietf.org"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "fix round 1: added second evidence entry (harrylian8766/adp-protocol reference implementation, fetched directly); upgraded implementation unknown -> prototype on that basis"
+   }
+  ]
+ },
+ {
+  "id": "ardp",
+  "name": "Agent Registration and Discovery Protocol",
+  "acronym": "ARDP",
+  "aliases": [],
+  "collisions": [
+   "ARD (Agentic Resource Discovery, unrelated Google/Microsoft/HF spec with a similar acronym and near-identical name)"
+  ],
+  "step": "discover",
+  "parties": [
+   "agent-site",
+   "agent-agent",
+   "agent-registry"
+  ],
+  "form": "endpoint",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can an autonomous agent register a stable identity, advertise its capabilities and current endpoints with a TTL, and be discovered by others with minimal metadata leakage?",
+  "analog": "a service registry with dynamic health/TTL semantics (like Consul or a SIP registrar), applied to agents",
+  "origin": {
+   "org": "Individual IETF submission",
+   "date": "2026-02"
+  },
+  "governance": "IETF individual Internet-Draft",
+  "native_status": "Internet-Draft; work in progress",
+  "phase": "withdrawn",
+  "implementation": "none-found",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-pioli-agent-discovery-01 (latest revision, expired)",
+   "date": "2026-02-24"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-pioli-agent-discovery-01",
+  "discovery": {
+   "mechanism": "RESOLVE/QUERY operations over an HTTPS binding, with a minimal metadata resource advertising TTL bounds and supported auth profiles",
+   "path": "/.well-known/ardp/meta"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "https://{origin}/.well-known/ardp/meta",
+   "parse": "200 response is JSON with ttl_min, ttl_max, auth_profiles and supported_protocols fields",
+   "on_absent": "Domain does not run an ARDP-compliant registration/discovery endpoint"
+  },
+  "evidence": [
+   {
+    "claim": "draft-pioli-agent-discovery-00 (February 2026) specifies ARDP, a lightweight protocol providing stable agent identities (AIDs), dynamic endpoint resolution via RESOLVE/QUERY operations, capability advertisement across MCP/A2A/HTTP/gRPC, TTL-bounded presence records, and a minimal /.well-known/ardp/meta resource; this Internet-Draft expired 5 August 2026 with no successor revision found.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-pioli-agent-discovery-00",
+    "date": "2026-02"
+   },
+   {
+    "claim": "IETF Datatracker's status page for draft-pioli-agent-discovery (fetched 2026-09-06, distinct page from the htmlized draft text) shows the document's IESG state as \"Expired\", type \"Expired Internet-Draft (individual) -- Expired & archived\", with a single author (Roberto Pioli) whose listed e-mail \"may no longer be valid\", and only one revision beyond -00 (the -01 text, latest revision dated 2026-02-24) -- independently confirming this is a lapsed, unrenewed single-author submission rather than an active track.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-pioli-agent-discovery/",
+    "date": "2026-09-06"
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": {
+   "summary": "This draft's own name and acronym (ARDP, Agent Registration and Discovery Protocol) is one character and one word away from the entirely unrelated, much more prominent ARD (Agentic Resource Discovery, ard.md) from Google/Microsoft/Hugging Face. They are independent specifications with no shared authorship or mechanism found in the texts read.",
+   "claims": [
+    "ARDP (this record): RESOLVE/QUERY over HTTPS, TTL-bound presence, single-author IETF draft, expired 5 Aug 2026 with no follow-up seen",
+    "ARD (see ard): search-first federated registry model, Google/Microsoft/HF, actively revised through v0.91 (26 Aug 2026)"
+   ]
+  },
+  "summary_md": "The Agent Registration and Discovery Protocol (ARDP) specifies a lightweight, transport-agnostic protocol for registering, discovering, and reaching autonomous agents in distributed and federated environments, providing stable agent identities, dynamic endpoint resolution, capability advertisement across MCP/A2A/HTTP/gRPC, minimal presence signaling, and a security-first discovery control plane [1]. It is a single-author IETF individual Internet-Draft; the latest text is revision -01, dated 24 February 2026 [1].\n\nIt solves agent liveness and endpoint churn using a TTL-based model: an agent registers with a server, the server assigns and enforces TTL bounds (advertised at `/.well-known/ardp/meta`, e.g. `ttl_min`/`ttl_max`/`auth_profiles`/`supported_protocols`), and clients are expected to refresh at roughly half the TTL with jitter [1]. Discovery is split into a `RESOLVE` operation (map a registered agent identifier to active endpoints and capabilities, access-controlled) and a `QUERY` operation (discover by capability or namespace, also authorized) [1]. Privacy is a first-class concern: `QUERY` responses are minimized by default to just an identifier and status, with full detail gated behind an explicit `detail=full` request parameter, and the server must mark a response `\"redacted\": true` when fields are withheld [1].\n\nARDP does not define its own transport-security handshake beyond referencing a `jws-proof-of-control` auth profile in its example metadata, and does not attempt to be a full registry federation protocol -- there is no evidence in the text read of a cross-registry query mechanism comparable to ARD's `federation` parameter [1].\n\nCurrent state: the IETF Datatracker's own status page (a separate fetch from the draft text itself) shows this document's IESG state as \"Expired -- Expired & archived\", the sole author's listed contact \"may no longer be valid\", and no revision beyond -01 [1][2]. Phase is recorded as withdrawn on the strength of that authoritative status confirmation, not \"unknown\": the document is formally lapsed and archived, not merely undocumented. No implementation, deployment, or adopter evidence was located; implementation is recorded as \"none found\" rather than unknown, since a specific negative search (checking for a follow-up draft and any linked reference implementation) turned up nothing, as distinct from simply not having looked.\n\nWhat is disputed or unknown: whether this specification is abandoned (an expired, unrenewed single-author draft is a weak signal either way, since many individual IETF drafts lapse and are later resubmitted) or quietly superseded by the author moving to a different venue; and, separately, the confusable-name risk with the unrelated, much more actively developed ARD (Agentic Resource Discovery) specification, which shares three of four words in its expansion and a similar acronym but has no connection in governance, mechanism, or authorship.",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against draft-pioli-agent-discovery-00 spec text via datatracker.ietf.org; noted draft expired 2026-08-05 with no successor found"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "fix round 1: fetched IETF Datatracker status page as second, independent evidence entry confirming Expired/archived state; corrected version/spec_url from -00 to the actual latest revision -01; set phase from unknown to withdrawn on the strength of the datatracker's own Expired status (resolves the phase-unknown gate without needing an explanatory sentence)"
+   }
+  ]
+ },
+ {
+  "id": "ads",
+  "name": "Agent Directory Service",
+  "acronym": "ADS",
+  "aliases": [
+   "AGNTCY Directory",
+   "dir"
+  ],
+  "collisions": [
+   "ADS is a generic acronym also used for Active Directory Services and Alternate Data Streams; within the agentic space, unrelated to ARDS/ARD"
+  ],
+  "step": "discover",
+  "parties": [
+   "agent-site",
+   "agent-registry"
+  ],
+  "form": "endpoint",
+  "track": "linux-foundation",
+  "scope": "general",
+  "question": "Given a required skill, which agents provide it, where are they, and how can I fetch a verifiable, content-addressed record describing them?",
+  "analog": "a distributed package registry (like npm or an OCI container registry) combined with an LDAP-style directory, applied to agents",
+  "origin": {
+   "org": "AGNTCY (Cisco Outshift-led project, now under the Linux Foundation)",
+   "date": "2026-07-06"
+  },
+  "governance": "AGNTCY project (github.com/agntcy/dir); submitted as an individual IETF Internet-Draft (draft-mp-agntcy-ads)",
+  "native_status": "Internet-Draft; work in progress; canonical spec tracked at spec.dir.agntcy.org",
+  "phase": "draft",
+  "implementation": "shipping",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-mp-agntcy-ads-02",
+   "date": "2026-07-06"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-mp-agntcy-ads-02",
+  "discovery": {
+   "mechanism": "Content-addressed OCI-artifact storage plus a DHT for global skill-based discovery; a host-local AI Finder service exposes the same records over gRPC and a REST gateway",
+   "path": "/.well-known/ai-catalog.json (host-local AI Finder); GET /v1/agents (REST API)"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "https://{origin}/v1/agents",
+   "parse": "200 response is a paginated JSON list of CatalogEntry records; a companion GET /.well-known/ai-catalog.json returns the host's WellKnownCatalog document",
+   "on_absent": "Host does not run an AGNTCY ADS AI Finder REST gateway; the record may still exist in the distributed hash table without a host-local HTTP surface"
+  },
+  "evidence": [
+   {
+    "claim": "draft-mp-agntcy-ads-02 (6 July 2026) defines ADS as a distributed directory service storing agent metadata as content-addressed OCI artifacts, discoverable via a DHT keyed on a skill taxonomy, and exposes an AI Finder service over gRPC and REST (GET /v1/agents, GET /v1/agents/{cid}, GET /v1/agents/{cid}/export, GET /.well-known/ai-catalog.json) that is explicitly interoperable with the AI Catalog / ARD ecosystem.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-mp-agntcy-ads-02",
+    "date": "2026-07-06"
+   },
+   {
+    "claim": "AGNTCY published a technical note describing AI Catalog interoperability layered over its directory service.",
+    "label": "REPORTED",
+    "url": "https://blogs.agntcy.org/technical/2026/06/17/ai-catalog-over-directory.html",
+    "date": "2026-06-17"
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": null,
+  "summary_md": "The Agent Directory Service (ADS) is a distributed directory for storing and discovering metadata about AI agent applications, structured as records that can be searched by the skills they claim to provide [1]. It originates from AGNTCY (an Outshift/Cisco-led project now positioned under the Linux Foundation) and is written up as an individual IETF Internet-Draft, revision -02, dated 6 July 2026, with its living canonical text tracked outside the IETF at spec.dir.agntcy.org and source at github.com/agntcy/dir [1].\n\nADS solves agent discovery at scale using content-addressed storage: each agent record is packaged as an OCI-compliant artifact (reusing container-registry infrastructure and its manifest/layer model) and identified by a content ID (CID) derived from a cryptographic digest [1]. Records are indexed into a distributed hash table keyed by a multi-level skill taxonomy (plus domain and module taxonomies), so a query for a capability resolves to the CIDs and peer IDs of agents that claim it, without a central registry [1]. Distribution between directory nodes happens over the OCI protocol's peer-to-peer synchronization [1].\n\nDistinct from the DHT-based global layer, ADS also runs a host-local \"AI Finder\" service, exposed over gRPC and, via a gateway, as a REST API: `GET /v1/agents` lists catalog entries with deterministic pagination, `GET /v1/agents/{cid}` retrieves one entry, `GET /v1/agents/{cid}/export` renders a stored OASF record into other ecosystems' native formats (a2a, agent-skill, mcp-ghcopilot), and `GET /.well-known/ai-catalog.json` serves the host's catalog document at the well-known URI this project explicitly designed to interoperate with the ARD/AI Catalog ecosystem [1]. The export operation is described as ADS's \"heterogeneity bridge\" -- one canonical OASF record materialized into several downstream protocols' native card formats without changing its underlying storage representation [1].\n\nADS does not define its own agent capability schema from scratch; it uses the separately-maintained Open Agentic Schema Framework (OASF, see `oasf`) as its native record format, and treats other ecosystems' formats (A2A cards, MCP server descriptors) as export targets rather than first-class stored types [1].\n\nCurrent state: the draft was published 6 July 2026 and expires 7 January 2027; it explicitly states it is \"to be removed before publishing as an RFC,\" i.e. still a working draft rather than a finished document [1]. Unlike several other records on this map, this one has a concrete, buildable open-source implementation (github.com/agntcy/dir) referenced directly from the spec text, which supports recording implementation as \"shipping\" -- but no independent count of production deployments or registered agents was located, so adoption remains unmeasured.\n\nWhat is disputed or unknown: how ADS's DHT-based global layer interacts in practice with a search-first, centralized-registry model like ARD's -- the \"AI Catalog Interoperability\" section of the draft describes projection and export, but whether third parties beyond AGNTCY's own tooling actually consume ADS-hosted records via the ai-catalog.json path was not independently verified here.",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against draft-mp-agntcy-ads-02 spec text via datatracker.ietf.org"
+   }
+  ]
+ },
+ {
+  "id": "oasf",
+  "name": "Open Agentic Schema Framework",
+  "acronym": "OASF",
+  "aliases": [],
+  "collisions": [],
+  "step": "discover",
+  "parties": [
+   "agent-registry",
+   "agent-site"
+  ],
+  "form": "document-format",
+  "track": "linux-foundation",
+  "scope": "general",
+  "question": "How can an agent's skills, domains, deployment modules and identity be described using a shared, versioned taxonomy so registries can classify and filter it consistently?",
+  "analog": "schema.org for agents, or an industry-standard product taxonomy (like GS1) applied to AI capabilities",
+  "origin": {
+   "org": "Cisco Outshift / AGNTCY",
+   "date": null
+  },
+  "governance": "AGNTCY project, published under Linux Foundation-adjacent open governance; source and issue tracker on GitHub, browsable schema at schema.oasf.outshift.com",
+  "native_status": "Active, versioned schema framework",
+  "phase": "living",
+  "implementation": "shipping",
+  "adoption": {
+   "level": "observed",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "1.1.0 (also serving 0.7.0, 0.8.0, 1.0.0)",
+   "date": null
+  },
+  "spec_url": "https://schema.oasf.outshift.com/",
+  "discovery": {
+   "mechanism": "not a discovery-path mechanism itself; consumed as the record schema underlying AGNTCY's Agent Directory Service (ADS) and its OCI-artifact export format",
+   "path": "none"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "https://schema.oasf.outshift.com/{version}/objects/{class}.json",
+   "parse": "200 response is a JSON Schema document for the requested OASF class/version, confirming which schema version a given record or registry claims to conform to",
+   "on_absent": "Not applicable at a per-domain level -- OASF is a shared taxonomy consumed by registries and records, not a well-known site artifact; absence just means a given record does not declare an OASF-conformant schema_version"
+  },
+  "evidence": [
+   {
+    "claim": "The OASF schema browser (schema.oasf.outshift.com), fetched 2026-09-06, currently serves versions 0.7.0 through 1.1.0 and defines a multi-level taxonomy of Skills (e.g. Language Processing > Language Understanding > Contextual Comprehension), Domains and Modules, plus Record Dictionary Objects and Data Types, with linked API documentation and a public GitHub contribution flow.",
+    "label": "VERIFIED",
+    "url": "https://schema.oasf.outshift.com/",
+    "date": "2026-09-06"
+   },
+   {
+    "claim": "AGNTCY's Agent Directory Service (ADS) draft names OASF explicitly as the native record format its Agent Directory Records are stored in, and as one of the export targets from its AI Finder REST API.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-mp-agntcy-ads-02",
+    "date": "2026-07-06"
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": null,
+  "summary_md": "The Open Agentic Schema Framework (OASF) is a versioned, hierarchical taxonomy and JSON Schema set for describing an AI agent's skills, domains, and deployment modules, published by Cisco Outshift's AGNTCY project [1]. Unlike most other records under Discover, OASF is not itself a discovery *mechanism* (there is no well-known path or DNS record that \"is\" OASF); it is a shared vocabulary that other discovery mechanisms use to classify what they find.\n\nIt solves a taxonomy-consistency problem: without a shared vocabulary, one registry's \"text summarization\" and another's \"document condensation\" cannot be matched by an automated filter. OASF assigns every skill, domain and module a stable numeric code within a browsable, versioned hierarchy -- for example, Language Processing [1] > Language Understanding [101] > Contextual Comprehension [10101] -- so registries and search clients can filter and aggregate on identical codes rather than free text [1]. The live schema browser at schema.oasf.outshift.com, fetched 6 September 2026, serves four schema versions concurrently (0.7.0, 0.8.0, 1.0.0, 1.1.0), each with its own Classes, Skills, Domains, Modules, Record Dictionary, Objects and Data Types sections, plus linked API documentation and a GitHub-based contribution path [1].\n\nOASF does not define transport, discovery paths, or a registry protocol of its own -- those are the job of AGNTCY's separate Agent Directory Service (ADS, see `ads`), which stores records natively in OASF and can export them into other ecosystems' formats (A2A cards, MCP server descriptors, agent-skill files) without changing the underlying OASF-tagged storage [2]. This makes OASF's own adoption hard to measure independently of ADS's: the clearest evidence of use found during this verification is that ADS's specification names OASF as its native record schema and export source, which is direct but is a single implementer's declared dependency rather than an independent count of registries or agents tagged against the taxonomy [2].\n\nCurrent state: the schema is actively versioned (four concurrent versions browsable, with a \"show deprecated items\" toggle implying an active deprecation/lifecycle process) but carries no publication date of its own on the browser page, unlike the dated IETF drafts and the ARD spec elsewhere on this map -- version history is tracked through the schema browser's version selector rather than a single canonical spec document with a title-page date [1]. Implementation is recorded as \"shipping\" on the strength of the AGNTCY/ADS dependency; adoption is recorded as \"observed\" rather than \"measured\" or \"claimed,\" since no adopter beyond AGNTCY's own tooling was independently verified and no probe was run.\n\nWhat is disputed or unknown: whether any registry or agent framework outside the AGNTCY/ADS lineage has adopted OASF as its primary skill taxonomy, versus ADS being currently its only real consumer; and how OASF's numeric skill codes relate (if at all) to ARD's free-text `capabilities` filter tokens or `representativeQueries` mechanism, which solve an adjacent classification problem without a shared taxonomy.",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against live OASF schema browser at schema.oasf.outshift.com and cross-checked against draft-mp-agntcy-ads-02"
+   }
+  ]
+ },
+ {
+  "id": "api-catalog-rfc9727",
+  "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs",
+  "acronym": "RFC 9727",
+  "aliases": [
+   "api-catalog"
+  ],
+  "collisions": [
+   "Not to be confused with the ARD ecosystem's ai-catalog.json well-known file (see ard), a different, agent-specific well-known artifact with no normative relationship to this RFC"
+  ],
+  "step": "discover",
+  "parties": [
+   "agent-site"
+  ],
+  "form": "well-known-file",
+  "track": "ietf",
+  "scope": "general",
+  "question": "Given a publisher's domain, where is the machine-readable list of the APIs it exposes?",
+  "analog": "sitemap.xml, but for APIs instead of pages",
+  "origin": {
+   "org": "Vodafone (Kevin Smith)",
+   "date": "2025-06"
+  },
+  "governance": "IETF; published as a Standards Track RFC with the IETF as change controller",
+  "native_status": "Proposed Standard (errata exist)",
+  "phase": "stable",
+  "implementation": "unknown",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "RFC 9727",
+   "date": "2025-06"
+  },
+  "spec_url": "https://www.rfc-editor.org/rfc/rfc9727.html",
+  "discovery": {
+   "mechanism": "well-known URI plus an 'api-catalog' HTTP Link header / HTML link relation",
+   "path": "/.well-known/api-catalog"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "https://{origin}/.well-known/api-catalog",
+   "parse": "200 response with Content-Type application/linkset+json, body containing a top-level \"linkset\" array whose entries carry \"item\" (or other) link relations to API endpoints; a HEAD request instead returns a Link header with rel=api-catalog",
+   "on_absent": "Publisher does not expose an RFC 9727 API catalog at the well-known location; check for an 'api-catalog' Link header or <link rel=\"api-catalog\"> on the site's root response instead, since the RFC allows the catalog to live at any URI the publisher chooses"
+  },
+  "evidence": [
+   {
+    "claim": "RFC 9727 (June 2025, Standards Track, sole author Kevin Smith/Vodafone) defines the api-catalog well-known URI and link relation; a publisher MUST resolve GET /.well-known/api-catalog to an API catalog document in the Linkset format (application/linkset+json per RFC 9264), and MAY additionally offer other formats via content negotiation or a different hosting location signposted by the api-catalog link relation.",
+    "label": "VERIFIED",
+    "url": "https://www.rfc-editor.org/rfc/rfc9727.html",
+    "date": "2025-06"
+   },
+   {
+    "claim": "IANA's Well-Known URIs registry (fetched 2026-09-06) lists \"api-catalog\" as a permanent registration, reference RFC9727, change controller IETF, registered 2024-12-23 -- independent confirmation that this well-known path is formally registered and not merely proposed in the RFC text.",
+    "label": "VERIFIED",
+    "url": "https://www.iana.org/assignments/well-known-uris/well-known-uris.xhtml",
+    "date": "2026-09-06"
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": null,
+  "summary_md": "RFC 9727 defines the \"api-catalog\" well-known URI and a matching \"api-catalog\" link relation, intended to facilitate automated discovery of a Publisher's APIs [1]. It is a Standards Track IETF RFC, published June 2025, with the IETF itself as change controller and a single named author, Kevin Smith of Vodafone [1]. It predates the current wave of agent-discovery specifications (ARD, DNS-AID, AID, ADP, ARDP, ADS) by roughly a year, and is not agent-specific: it is a general web-API discovery mechanism that this map's occupant-diff process flagged as relevant because it addresses the same \"where are this domain's machine-callable capabilities\" question the agentic-web specs are now re-solving with different formats.\n\nIt solves API discovery for a domain's own APIs: a publisher hosts a document at `/.well-known/api-catalog` (or elsewhere, pointed to by the link relation) listing hyperlinks to its API endpoints, in the mandatory Linkset format (`application/linkset+json`, itself defined by RFC 9264) [1]. A GET request must return the catalog document; a HEAD request must return a `Link` header carrying the relation [1]. The catalog can nest -- one api-catalog document can point to others via further `api-catalog`-relation links -- which the RFC recommends for publishers with APIs spread across multiple domains or too many APIs for one flat list [1]. Publishers already using a different catalog format (APIs.json, RESTdesc, HAL, or a schema.org WebAPI extension) may keep it and additionally expose a minimal Linkset-format catalog to satisfy this RFC, using content negotiation to serve either [1].\n\nIt does not mandate any particular path for the API endpoints themselves, does not require the catalog to be hosted on the same domain it describes (a publisher can point to a third party's catalog for APIs it does not control), and does not define authentication, versioning policy, or any agent-specific semantics -- it is a pure discovery/link-relation mechanism aimed at human developers and their tooling, not agents specifically [1]. Security guidance is largely operational: use TLS, avoid leaking internal/private APIs into a public catalog, and rate-limit the endpoint [1].\n\nCurrent state: RFC 9727 is a published Proposed Standard with known errata on file at the RFC Errata system, and carries no revision history beyond the original June 2025 text and its errata [1]. No independent adoption count was located during this verification pass -- the RFC's own text does not claim any deployments, and no third-party survey was found in the sources read.\n\nWhat is disputed or unknown: whether this general-purpose, agent-agnostic mechanism will be adopted, ignored, or superseded by the newer agent-specific well-known conventions (ARD's ard.json, ADP's agent.json) that solve an overlapping but not identical problem -- API discovery generically versus agentic-resource discovery specifically -- and whether any publisher serves both `/.well-known/api-catalog` and one of the newer agent-specific manifests at the same origin.",
+  "history": [
+   {
+    "date": "2026-09-06",
+    "note": "new record created from the occupant-diff candidate list; verified against RFC 9727 text via rfc-editor.org"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "fix round 1: added second evidence entry (IANA Well-Known URIs registry, fetched directly) confirming permanent registration"
+   }
+  ]
+ }
+]

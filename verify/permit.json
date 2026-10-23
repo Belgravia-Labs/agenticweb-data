@@ -1,0 +1,956 @@
+[
+ {
+  "acronym": "ERC-8226",
+  "adoption": {
+   "by": null,
+   "level": "unmeasured",
+   "probe_run": null
+  },
+  "aliases": [
+   "RAMS",
+   "Regulated Agent Mandate Standard"
+  ],
+  "analog": "Power of attorney",
+  "collisions": [],
+  "discovery": {
+   "mechanism": "EVM contract interface detection (ERC-165 supportsInterface for IAgentMandate)",
+   "path": null
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "The canonical spec text (abstract, motivation, IAgentMandate/IComplianceProvider interfaces, reference implementation) is published on eips.ethereum.org, status Draft, created 2026-04-12.",
+    "date": "2026-04-12",
+    "label": "VERIFIED",
+    "url": "https://eips.ethereum.org/EIPS/eip-8226"
+   },
+   {
+    "claim": "The EIP's discussion thread and originating pull request on the ethereum/ERCs repo record the proposal's provenance and author affiliation with Brickken.",
+    "date": "2026-05-12",
+    "label": "REPORTED",
+    "url": "https://github.com/ethereum/ERCs/pull/1844"
+   }
+  ],
+  "form": "onchain-registry",
+  "governance": "Ethereum ERC process (Ethereum Magicians discussion thread + ethereum/ERCs GitHub repo); not yet adopted by an EIP editor as Final",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against eips.ethereum.org/EIPS/eip-8226 and github.com/ethereum/ERCs/pull/1844"
+   }
+  ],
+  "id": "erc-8226",
+  "implementation": "prototype",
+  "last_verified": "2026-09-06",
+  "name": "ERC-8226 Regulated Agent Mandate",
+  "native_status": "Draft, Standards Track: ERC (marked \u26a0\ufe0f Draft on eips.ethereum.org)",
+  "origin": {
+   "date": "2026-04-12",
+   "org": "Brickken (Ludovico Rossi, Dario Lo Buglio, Thamer Dridi, Nabil El Alami Khalifi)"
+  },
+  "parties": [
+   "agent-site"
+  ],
+  "phase": "draft",
+  "probe": {
+   "method": "ETH_CALL",
+   "on_absent": "No IAgentMandate registry is deployed at the address; the asset contract carries no RAMS-conformant delegation layer",
+   "parse": "Call reverts with false/error if no active mandate exists; a successful bool return with mandate data proves an IAgentMandate registry is deployed at {contract}",
+   "path": "{contract}.canExecute(agent, principal, asset, action, amount) via eth_call against IAgentMandate"
+  },
+  "question": "What scoped, time-bounded, and financially capped authority may an on-chain agent exercise on a regulated asset holder's behalf?",
+  "scope": "commerce",
+  "spec_url": "https://eips.ethereum.org/EIPS/eip-8226",
+  "step": "permit",
+  "summary_md": "ERC-8226, also called the Regulated Agent Mandate Standard (RAMS), is a Draft Ethereum Request for Comments that defines a compliance-delegation layer for AI agents acting on tokenized regulated assets such as securities or fund units [1]. It answers the permit question for on-chain agents: what scoped, time-bounded, financially capped authority has a KYC-cleared principal granted an agent, and how does a regulated token contract check that authority before letting the agent's call through.\n\nThe spec defines two Solidity interfaces: `IAgentMandate`, a registry keyed by (agent, principal) pairs that exposes `canExecute` for pre-flight checks and `recordExecution` for logging use, and `IComplianceProvider`, which lets a token-compliance framework plug in. Mandates cap a transferred quantity (token amount for ERC-20/ERC-1155, count for ERC-721) per asset address, can be time-limited, and can be frozen (halted but not revoked) by an authorized enforcer while only the principal can revoke outright. RAMS is explicitly agnostic to the agent-identity standard used (it names ERC-8004 as a compatible example), the token standard (ERC-20/721/1155), and the regulated-token compliance framework (it names ERC-7943 and ERC-3643) [1].\n\nIt does not itself provide agent identity, KYC verification, or token-transfer-eligibility logic; those are left to the named companion standards. It does not define an off-chain permission surface (no well-known file or HTTP header) \u2014 the entire mechanism is on-chain, discoverable only by probing whether a given regulated-token deployment has wired an IAgentMandate-conformant registry into its transfer checks.\n\nAs of this verification (2026-09-06) the proposal is Draft status, created 2026-04-12 by four authors affiliated with Brickken, a tokenized real-world-asset platform, with an open Ethereum Magicians discussion thread and a merged pull request into the community ethereum/ERCs repository dated 2026-05-12 [1][2]. A reference implementation and test suite (IAgentMandate registry, IComplianceProvider, an optional IAgentExecutor forwarding interface, a RamsGated base contract, and an ERC-7943 asset that inherits it) ship alongside the spec text, but this is the proposers' own reference code, not an independent production deployment [1].\n\nWhat is unresolved: no independent implementer, regulated-asset platform, or agent-identity project has been found describing production use of RAMS; adoption is unmeasured. It is unclear whether RAMS will progress through EIP editor review toward Final status, whether it will compete with or be folded into ERC-8004's agent-identity ecosystem, and whether real KYC/regulatory infrastructure will treat an on-chain mandate as legally sufficient without off-chain paperwork.",
+  "track": "community",
+  "version": {
+   "date": "2026-04-12",
+   "label": "Draft, created 2026-04-12"
+  }
+ },
+ {
+  "acronym": "AIPREF",
+  "adoption": {
+   "by": null,
+   "level": "unmeasured",
+   "probe_run": null
+  },
+  "aliases": [
+   "draft-ietf-aipref-attach"
+  ],
+  "analog": "robots.txt plus HTTP representation metadata",
+  "collisions": [],
+  "discovery": {
+   "mechanism": "robots.txt directive and/or Content-Usage HTTP response header, both updating RFC 9309",
+   "path": "/robots.txt"
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "draft-ietf-aipref-attach-05, dated 2026-08-19, defines attachment via the Robots Exclusion Protocol and an HTTP header field, and states it updates RFC 9309.",
+    "date": "2026-08-19",
+    "label": "VERIFIED",
+    "url": "https://www.ietf.org/archive/id/draft-ietf-aipref-attach-05.html"
+   },
+   {
+    "claim": "The working document is developed on GitHub by the ietf-wg-aipref organization with an issue tracker and a rendered latest draft.",
+    "date": "2026-08-19",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-aipref-vocab-07"
+   }
+  ],
+  "form": "well-known-file",
+  "governance": "IETF AI Preferences Working Group (ai-control@ietf.org mailing list)",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against ietf.org/archive/id/draft-ietf-aipref-attach-05.html"
+   }
+  ],
+  "id": "aipref-content-usage-attachment",
+  "implementation": "unknown",
+  "last_verified": "2026-09-06",
+  "name": "AIPREF Content-Usage Attachment",
+  "native_status": "Internet-Draft, work in progress; \"About This Document\" note says it is to be removed before publishing as an RFC",
+  "origin": {
+   "date": "2025",
+   "org": "IETF AI Preferences (aipref) Working Group"
+  },
+  "parties": [
+   "agent-site"
+  ],
+  "phase": "working-group",
+  "probe": {
+   "method": "GET",
+   "on_absent": "Publisher has not attached machine-readable AI-use preferences via either attachment method; no inference can be drawn about actual policy",
+   "parse": "Presence of a 'Content-Usage' line in a robots.txt group, or a Content-Usage HTTP response header on the fetched resource itself",
+   "path": "{origin}/robots.txt"
+  },
+  "question": "How does a publisher attach its AI-use preferences to content served over HTTP, so an automated system can find them?",
+  "scope": "general",
+  "spec_url": "https://www.ietf.org/archive/id/draft-ietf-aipref-attach-05.html",
+  "step": "permit",
+  "summary_md": "The AIPREF Content-Usage Attachment draft is an IETF AI Preferences Working Group Internet-Draft that defines how a publisher attaches machine-readable AI-use preferences to HTTP-served content [1]. It solves the 'where do the preference values live' half of the AIPREF pair: it specifies two attachment mechanisms, a Robots Exclusion Protocol extension (a new directive inside robots.txt) and an HTTP response header field named Content-Usage, and states explicitly that it updates RFC 9309 (the Robots Exclusion Protocol RFC) so the two documents are read together [1].\n\nIt does not itself define the vocabulary of preference values \u2014 which use categories exist (e.g. AI training, search, input to generative answers) and how they are expressed \u2014 that is the companion AIPREF Vocabulary draft (draft-ietf-aipref-vocab), which this document's tokens reference. It also does not define enforcement: like robots.txt, compliance depends entirely on the crawler choosing to read and honour the signal.\n\nAs of this verification (2026-09-06) the current version is draft-ietf-aipref-attach-05, dated 2026-08-19, confirming the prior finding that -05 was current as of August 2026 [1]. The document is still explicitly marked as a work in progress with boilerplate noting the 'About This Document' section is to be stripped before RFC publication, and it carries no RFC number yet. Development happens in the open on GitHub under ietf-wg-aipref/drafts with a public issue tracker and mailing list (ai-control@ietf.org) [1].\n\nImplementers are not named in the draft itself; this record does not find independent evidence of shipping crawlers or CMS/CDN products emitting the Content-Usage header or the new robots.txt directive as of this verification \u2014 adoption is unmeasured rather than zero, since a systematic scan was not run for this record. What is unresolved: how this attachment mechanism will interact with the pre-existing, unrelated Cloudflare Content Signals Policy convention, which also extends robots.txt with different signal names (search/ai-input/ai-train) and predates this draft; and whether major crawler operators (Google, OpenAI, Anthropic, Perplexity) will adopt the IETF vocabulary once it reaches RFC status rather than continuing with their own per-vendor robots.txt tokens, which are already in wide use (see ai-crawler-tokens-robots).",
+  "track": "ietf",
+  "version": {
+   "date": "2026-08-19",
+   "label": "draft-ietf-aipref-attach-05"
+  }
+ },
+ {
+  "acronym": "AIPREF",
+  "adoption": {
+   "by": null,
+   "level": "unmeasured",
+   "probe_run": null
+  },
+  "aliases": [
+   "draft-ietf-aipref-vocab"
+  ],
+  "analog": "Controlled metadata vocabulary (like Dublin Core terms)",
+  "collisions": [],
+  "discovery": {
+   "mechanism": "Not independently discoverable; values are carried by the Content-Usage attachment mechanism (robots.txt directive or HTTP header)",
+   "path": null
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "draft-ietf-aipref-vocab-07, dated 2026-08-19, defines a vocabulary for expressing how automated processing systems may use digital assets, and states the document does not yet reflect working-group consensus.",
+    "date": "2026-08-19",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-aipref-vocab-07"
+   },
+   {
+    "claim": "The vocabulary draft is developed in the same ietf-wg-aipref/drafts GitHub repository and mailing list as the Content-Usage attachment draft, confirming the two are companion documents.",
+    "date": "2026-08-19",
+    "label": "REPORTED",
+    "url": "https://www.ietf.org/archive/id/draft-ietf-aipref-attach-05.html"
+   }
+  ],
+  "form": "document-format",
+  "governance": "IETF AI Preferences Working Group (ai-control@ietf.org mailing list)",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against datatracker.ietf.org/doc/html/draft-ietf-aipref-vocab-07"
+   }
+  ],
+  "id": "aipref-vocabulary",
+  "implementation": "unknown",
+  "last_verified": "2026-09-06",
+  "name": "AIPREF Vocabulary",
+  "native_status": "Internet-Draft, work in progress; explicitly states its contents 'DO NOT REFLECT CONSENSUS of the Working Group'",
+  "origin": {
+   "date": "2025",
+   "org": "IETF AI Preferences (aipref) Working Group"
+  },
+  "parties": [
+   "agent-site"
+  ],
+  "phase": "working-group",
+  "probe": {
+   "method": "GET",
+   "on_absent": "No AIPREF-vocabulary token found in the attachment surface; cannot distinguish 'no preference stated' from 'publisher uses a different vocabulary (e.g. Cloudflare Content Signals)'",
+   "parse": "Parse any Content-Usage directive value against the AIPREF controlled vocabulary tokens defined in this draft",
+   "path": "{origin}/robots.txt"
+  },
+  "question": "What controlled set of values expresses a publisher's AI-use preferences, independent of how they are attached to content?",
+  "scope": "general",
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-ietf-aipref-vocab-07",
+  "step": "permit",
+  "summary_md": "The AIPREF Vocabulary draft is the second half of the IETF AI Preferences Working Group's pair of documents. Where the Content-Usage Attachment draft defines where preference values live (robots.txt directive or HTTP header), this draft defines what those values mean: a controlled vocabulary for declaring restrictions or permissions on how digital assets may be used by automated processing systems [1]. The two are meant to be read together and are cross-referenced explicitly in the attach draft [2].\n\nIt does not define an attachment or discovery mechanism of its own \u2014 the vocabulary is inert without the Content-Usage attach draft to carry it \u2014 and it does not cover licensing, payment, or compensation terms, which are out of scope for the working group's charter as currently drafted.\n\nAs of this verification (2026-09-06), the current version is draft-ietf-aipref-vocab-07, dated 2026-08-19, matching the same publication date as the -05 attach draft, suggesting a coordinated release [1]. The document is unusually explicit about its immaturity: its own 'Note to Readers' states that presence or absence of any particular text does not indicate working-group consensus, and it is published solely as a basis for further discussion [1]. This is a stronger caveat than the boilerplate carried by most IETF drafts.\n\nGovernance is the IETF AI Preferences Working Group, with development on GitHub (ietf-wg-aipref/drafts) and discussion on the ai-control@ietf.org list. No implementer of the AIPREF vocabulary specifically (as opposed to the broader Content-Usage attachment surface) was identified in this verification pass; adoption is unmeasured. What is unresolved: the exact set of controlled vocabulary terms was not enumerated in this pass and should be checked against the rendered draft text at the GitHub Pages mirror (ietf-wg-aipref.github.io/drafts/draft-ietf-aipref-vocab.html) in a future review; whether the vocabulary will converge with, or remain distinct from, the pre-existing Cloudflare Content Signals Policy vocabulary (search/ai-input/ai-train) is also unresolved, since the two were developed independently and target overlapping use cases.",
+  "track": "ietf",
+  "version": {
+   "date": "2026-08-19",
+   "label": "draft-ietf-aipref-vocab-07"
+  }
+ },
+ {
+  "acronym": "TDMRep",
+  "adoption": {
+   "by": null,
+   "level": "unmeasured",
+   "probe_run": null
+  },
+  "aliases": [],
+  "analog": "Rights-reservation metadata (like a Creative Commons license badge)",
+  "collisions": [],
+  "discovery": {
+   "mechanism": "well-known file, HTTP response header, or embedded metadata in HTML/EPUB/PDF",
+   "path": "/.well-known/tdmrep.json"
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "The CG-FINAL report published 2024-05-10 defines the tdm-reservation and tdm-policy declarations, the /.well-known/tdmrep.json file, HTTP header, and embedded-metadata attachment surfaces, and states plainly it is a Community Group report, not a W3C Standard.",
+    "date": "2024-05-10",
+    "label": "VERIFIED",
+    "url": "https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240510/"
+   },
+   {
+    "claim": "The TDM Reservation Protocol Community Group's own charter page confirms the group's goal (a simple, practical machine-readable TDM rights-reservation solution) and links the same CG-FINAL report as its output, independently corroborating the spec's existence and governance body from a second W3C-hosted page distinct from the report itself.",
+    "date": null,
+    "label": "VERIFIED",
+    "url": "https://www.w3.org/community/tdmrep/"
+   }
+  ],
+  "form": "well-known-file",
+  "governance": "W3C Text and Data Mining Reservation Protocol Community Group",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240510/"
+   }
+  ],
+  "id": "tdmrep",
+  "implementation": "unknown",
+  "last_verified": "2026-09-06",
+  "name": "Text and Data Mining Reservation Protocol",
+  "native_status": "W3C Community Group Final Report; explicitly \"not a W3C Standard nor is it on the W3C Standards Track\"",
+  "origin": {
+   "date": "2022",
+   "org": "W3C Text and Data Mining Reservation Protocol Community Group"
+  },
+  "parties": [
+   "agent-site"
+  ],
+  "phase": "stable",
+  "probe": {
+   "method": "GET",
+   "on_absent": "No TDM reservation file at the well-known path; check per-resource HTTP headers and embedded metadata before concluding no reservation exists, per the spec's own processing-priority rules",
+   "parse": "Presence of a tdm-reservation or tdm-policy field in the returned JSON, or equivalently in the TDM-Reservation/TDM-Policy HTTP headers on the resource",
+   "path": "{origin}/.well-known/tdmrep.json"
+  },
+  "question": "Has a rights holder reserved text-and-data-mining rights over this content, and what policy governs any permitted mining?",
+  "scope": "general",
+  "spec_url": "https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240510/",
+  "step": "permit",
+  "summary_md": "TDMRep (Text and Data Mining Reservation Protocol) is a W3C Community Group Final Report, published 2024-05-10, defining a protocol for rights holders to reserve text-and-data-mining rights over otherwise lawfully accessible web content, and to make any TDM licensing policy discoverable [1]. It was created as a technical response to Article 4 of the EU Copyright in the Digital Single Market Directive, which lets rights holders opt out of the TDM exception by an 'appropriate' machine-readable means [1].\n\nThe spec defines a `tdm-reservation` declaration (1 = reserved, 0 = not reserved) and an optional `tdm-policy` pointing to a JSON-LD policy document, attachable four ways: a `/.well-known/tdmrep.json` file at the origin, an HTTP `TDM-Reservation`/`TDM-Policy` response header, or embedded metadata inside HTML, EPUB 2/3, or PDF files, with a defined processing-priority order across these surfaces when more than one is present [1]. The policy document format can express permission scope (research vs. non-research mining), a duty to contact the rights holder, and a duty to compensate financially.\n\nIt does not define an enforcement or authorization mechanism \u2014 like robots.txt, a reservation is a signal a crawler may honour or ignore \u2014 and it does not define payment rails for the compensation duty it lets a policy express. It is not on the W3C Standards Track; the report itself says so explicitly, and under the W3C Community Final Specification Agreement, different (weaker) patent and process commitments apply than for a Recommendation [1].\n\nAs of this verification (2026-09-06), the CG-FINAL-tdmrep-20240510 report confirms the prior finding of a 2024-05-10 final date, and no successor draft was found during this pass \u2014 the Community Group appears to have concluded its work with this final report. Governance now sits with the W3C TDMRep Community Group (public-tdmrep@w3.org mailing list, GitHub issues preferred for discussion) rather than an active working group.\n\nWhat is unresolved: this verification did not independently confirm which publishers or crawlers implement `/.well-known/tdmrep.json` in production; adoption is unmeasured rather than known-zero, and a dedicated probe run against a domain sample would be needed to move this to 'measured'. It is also unresolved how TDMRep's EU-directive-specific framing interacts with the more general-purpose, non-EU-specific AIPREF and Content Signals conventions that address overlapping ground.",
+  "track": "w3c",
+  "version": {
+   "date": "2024-05-10",
+   "label": "CG-FINAL-tdmrep-20240510"
+  }
+ },
+ {
+  "acronym": "",
+  "adoption": {
+   "by": null,
+   "level": "unmeasured",
+   "probe_run": null
+  },
+  "aliases": [
+   "Cloudflare Content Signals Policy"
+  ],
+  "analog": "robots.txt policy extension",
+  "collisions": [],
+  "discovery": {
+   "mechanism": "Machine-readable comment lines inside robots.txt",
+   "path": "/robots.txt"
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "Cloudflare's blog post, datePublished 2025-09-24 per its own page metadata, defines three content signals (search, ai-input, ai-train) as machine-readable comment lines inside robots.txt, each independently settable to yes/no, and frames restrictions as express reservations of rights under EU Directive 2019/790 Article 4.",
+    "date": "2025-09-24",
+    "label": "VERIFIED",
+    "url": "https://blog.cloudflare.com/content-signals-policy/"
+   },
+   {
+    "claim": "Cloudflare's own developer documentation (distinct from the announcement blog post) reproduces the exact Content Signals Policy text and confirms it ships by default in the managed robots.txt feature, and separately states this feature was already turned on for over 3.8 million domains at launch, giving an independent, dated adoption figure from Cloudflare's own materials.",
+    "date": "2025-09-24",
+    "label": "VERIFIED",
+    "url": "https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/"
+   }
+  ],
+  "form": "well-known-file",
+  "governance": "Cloudflare, developed with publisher/platform partners named in the announcement (e.g. Cond\u00e9 Nast, News/Media Alliance, Reddit, Pinterest, Quora, Yahoo)",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against blog.cloudflare.com/content-signals-policy/"
+   }
+  ],
+  "id": "cloudflare-content-signals-policy",
+  "implementation": "shipping",
+  "last_verified": "2026-09-06",
+  "name": "Content Signals Policy",
+  "native_status": "Vendor-published policy convention layered on robots.txt; not submitted to a standards body as of this verification",
+  "origin": {
+   "date": "2025-09-24",
+   "org": "Cloudflare"
+  },
+  "parties": [
+   "agent-site"
+  ],
+  "phase": "living",
+  "probe": {
+   "method": "GET",
+   "on_absent": "Website operator has not stated a content-signal preference for that use; the spec is explicit that omission means the operator neither grants nor restricts permission for that use",
+   "parse": "Look for 'content-signal: search=', 'content-signal: ai-input=', or 'content-signal: ai-train=' lines (as machine-readable comments) inside any robots.txt group",
+   "path": "{origin}/robots.txt"
+  },
+  "question": "May content fetched under a robots.txt allow rule also be used for search indexing, as live input to an AI answer, or for AI model training?",
+  "scope": "general",
+  "spec_url": "https://blog.cloudflare.com/content-signals-policy/",
+  "step": "permit",
+  "summary_md": "The Content Signals Policy is a Cloudflare-authored convention, announced 2025-09-24, that extends robots.txt with a machine-readable way for a website operator to state whether content a crawler is allowed to fetch may also be used for three specific downstream purposes: `search` (building a search index and returning links/excerpts, explicitly excluding AI-generated search summaries), `ai-input` (feeding content into an AI model at request time, e.g. retrieval-augmented generation or grounding), and `ai-train` (training or fine-tuning a model) [1]. It is a permit-layer refinement on top of the existing allow/disallow crawl decision: robots.txt still governs whether a page may be fetched at all, and content signals then govern what may be done with a page the crawler was already allowed to fetch.\n\nSignals are expressed as human-readable comment lines (so they degrade gracefully for crawlers that don't parse them) of the form `content-signal: search=yes, ai-train=no`. Per the spec text, `yes` permits the corresponding use, `no` prohibits it, and omitting a signal means the operator neither grants nor restricts permission for that use \u2014 a deliberately weaker default than an explicit prohibition [1]. Cloudflare frames any expressed restriction as an express reservation of rights under Article 4 of the EU Copyright Directive (2019/790), aligning its legal grounding with TDMRep's.\n\nIt does not define enforcement, and Cloudflare's own post frames it as advisory: compliance depends on crawler operators choosing to read and honour the signal, exactly like robots.txt itself. It has not, as of this verification, been submitted to IETF, W3C, or any other standards body \u2014 it remains a single-vendor convention, distinct from and overlapping with the IETF AIPREF Content-Usage/Vocabulary drafts, which use a different attachment surface (a dedicated header/directive) and a different vocabulary.\n\nAs of this verification (2026-09-06), the announcement date of 2025-09-24 is confirmed directly from the post's own structured-data metadata, matching the prior finding [1]. Cloudflare ships the mechanism directly into its own customer-facing robots.txt management tooling, giving it a shipping implementation by definition for any site on Cloudflare's platform, though no independent count of how many zones have set a non-default signal was found in this pass \u2014 adoption is unmeasured. What is unresolved: whether AI vendors (OpenAI, Anthropic, Google, Perplexity) formally commit to honouring these specific signal names in their own crawler documentation, as opposed to their existing per-bot robots.txt tokens (see ai-crawler-tokens-robots), was not confirmed in this pass.",
+  "track": "single-vendor",
+  "version": {
+   "date": "2025-09-24",
+   "label": "Announced 2025-09-24"
+  }
+ },
+ {
+  "acronym": "AAuth",
+  "adoption": {
+   "by": null,
+   "level": "unmeasured",
+   "probe_run": null
+  },
+  "aliases": [],
+  "analog": "OAuth Device Authorization Grant",
+  "collisions": [],
+  "discovery": {
+   "mechanism": "OAuth 2.1 extension grant flow; no well-known file defined",
+   "path": null
+  },
+  "dispute": {
+   "claims": [
+    "IETF Datatracker document state: Expired Internet-Draft"
+   ],
+   "summary": "The draft is expired per the IETF Datatracker's own document-state field, and no independent implementation was found; it is retained here as a documented proposal rather than an active spec."
+  },
+  "evidence": [
+   {
+    "claim": "draft-rosenberg-oauth-aauth defines an OAuth 2.1 extension letting an AI agent collect PII conversationally (over PSTN or texting, where redirect-based OAuth is unavailable) and exchange it for a scope-constrained access token, with an explicit goal of preventing LLM-hallucination-driven impersonation.",
+    "date": "2025-10-19",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-rosenberg-oauth-aauth"
+   },
+   {
+    "claim": "The raw draft-00 HTML text hosted at ietf.org/archive (distinct from the Datatracker's metadata/history page) confirms the same abstract, scope (PSTN/texting channels, PII-collection flow, anti-impersonation goal) and lets the Datatracker's 'Expired' state be cross-checked against the actual spec content rather than taken on the metadata page alone.",
+    "date": "2025-10-19",
+    "label": "VERIFIED",
+    "url": "https://www.ietf.org/archive/id/draft-rosenberg-oauth-aauth-00.html"
+   }
+  ],
+  "form": "endpoint",
+  "governance": "IETF individual Internet-Draft (OAuth-adjacent, not yet adopted by the OAuth Working Group as of this verification)",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against datatracker.ietf.org/doc/html/draft-rosenberg-oauth-aauth; found expired"
+   }
+  ],
+  "id": "aauth",
+  "implementation": "none-found",
+  "last_verified": "2026-09-06",
+  "name": "Agent Authorization Grant",
+  "native_status": "Internet-Draft, individual submission; page marked \"Expired\" by the IETF Datatracker",
+  "origin": {
+   "date": "2025-10",
+   "org": "IETF individual submission"
+  },
+  "parties": [
+   "agent-site"
+  ],
+  "phase": "withdrawn",
+  "probe": {
+   "method": "POST",
+   "on_absent": "Authorization server does not implement this grant; this is expected, since the draft is expired and no implementation was found",
+   "parse": "A 200 response containing an access_token issued via the collected-PII flow described in the draft",
+   "path": "{authorization_server}/token with grant_type indicating the Agent Authorization Grant (exact grant_type string not fixed in the draft text reviewed)"
+  },
+  "question": "How can a conversational AI agent, reached over a channel without browser redirect (phone, SMS), obtain a properly scoped OAuth access token without impersonating the user?",
+  "scope": "general",
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-rosenberg-oauth-aauth",
+  "step": "permit",
+  "summary_md": "The Agent Authorization Grant (AAuth) is an individual IETF Internet-Draft, draft-rosenberg-oauth-aauth-00, dated 2025-10-19, proposing an OAuth 2.1 extension for a specific class of AI agent: one reached through a channel that does not support browser-redirect OAuth flows, such as a phone call over the PSTN or SMS texting [1]. It solves a narrow but real permit-adjacent problem \u2014 authorization, not content-use permission \u2014 for voice/text-only conversational agents.\n\nIn the flow it describes, the agent collects personally identifying information from the user through natural-language conversation, then presents that collected PII to obtain an access token with an appropriately constrained scope, rather than redirecting the user to a login page it cannot render over a phone call. The draft's stated primary concern is architectural: ensuring that LLM hallucination inside the agent cannot itself cause an impersonation attack against the authorization flow [1].\n\nIt does not define a well-known discovery file, a permission vocabulary, or content-use semantics \u2014 it is purely an authorization-grant flow, adjacent to this wiki's 'identify' and 'permit' steps rather than a pure fit for either. It does not specify a concrete `grant_type` string or endpoint schema in enough detail in the sections reviewed to build an executable, generic probe; a probe would need to be implementation-specific.\n\nAs of this verification (2026-09-06), the IETF Datatracker page for this draft shows its document state as an expired Internet-Draft; IETF drafts lapse automatically after roughly six months without a new revision, and no successor version beyond -00 was found. No independent implementation, reference server, or adopting product was located during this pass, so implementation is recorded as none-found rather than prototype. Given the expired status and absence of any implementation or successor draft, this record's phase is set to withdrawn: the proposal exists as a documented idea but has not advanced and appears inactive.\n\nWhat is unresolved: whether the author (Jonathan Rosenberg) or another party intends to revive this line of work, and whether its PII-collection-then-token-exchange pattern will instead be absorbed into a more general draft such as DAAP or AAP, which address overlapping agent-authorization ground within the same OAuth ecosystem.",
+  "track": "ietf",
+  "version": {
+   "date": "2025-10-19",
+   "label": "draft-rosenberg-oauth-aauth-00"
+  }
+ },
+ {
+  "acronym": "DAAP",
+  "adoption": {
+   "by": null,
+   "level": "unmeasured",
+   "probe_run": null
+  },
+  "aliases": [
+   "Delegated Agent Authorization Protocol",
+   "draft-mishra-oauth-agent-grants"
+  ],
+  "analog": "OAuth delegated grant / consent screen",
+  "collisions": [],
+  "discovery": {
+   "mechanism": "Standard OAuth 2.0 authorization/token endpoints; discovery via RFC 8414 Authorization Server Metadata (no new endpoints defined)",
+   "path": "/.well-known/oauth-authorization-server"
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "draft-mishra-oauth-agent-grants-02 defines an OAuth profile for agent-client identification, user consent, resource-bound sender-constrained tokens, authority attenuation via RFC 8693 Token Exchange, and safe refresh-token rotation, using only existing OAuth/JOSE mechanisms and defining no new claims or endpoints.",
+    "date": "2026-08",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-mishra-oauth-agent-grants-02"
+   },
+   {
+    "claim": "The draft names 'Grantex' as an incomplete, non-conformance-required reference implementation, distinguishing it from a production deployment.",
+    "date": "2026-08",
+    "label": "REPORTED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-mishra-oauth-agent-grants-02"
+   }
+  ],
+  "form": "endpoint",
+  "governance": "IETF individual Internet-Draft (OAuth-adjacent; not yet adopted by the OAuth Working Group as of this verification)",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against datatracker.ietf.org/doc/html/draft-mishra-oauth-agent-grants-02; corrected name from seed"
+   }
+  ],
+  "id": "daap",
+  "implementation": "prototype",
+  "last_verified": "2026-09-06",
+  "name": "OAuth Profile for Delegated AI Agent Authorization",
+  "native_status": "Internet-Draft, individual submission, Active",
+  "origin": {
+   "date": "2026-02",
+   "org": "IETF individual submission"
+  },
+  "parties": [
+   "agent-site"
+  ],
+  "phase": "draft",
+  "probe": {
+   "method": "GET",
+   "on_absent": "Authorization server does not advertise the OAuth building blocks (Token Exchange, sender-constrained tokens) DAAP requires; this alone does not prove DAAP is unused, since DAAP defines no unique discoverable marker",
+   "parse": "Presence of Token Exchange (RFC 8693) grant support and sender-constraining (DPoP/mTLS) in the advertised grant_types_supported / token_endpoint_auth_methods_supported, as DAAP composes these existing mechanisms rather than adding new ones",
+   "path": "{authorization_server}/.well-known/oauth-authorization-server"
+  },
+  "question": "How can a human user delegate constrained, attenuable, revocable authority to an AI agent using standard OAuth mechanisms, with no new endpoints or claims required?",
+  "scope": "general",
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-mishra-oauth-agent-grants-02",
+  "step": "permit",
+  "summary_md": "This record, seeded under the id `daap` and the name 'Delegated Agent Authorization Protocol', is the IETF individual Internet-Draft draft-mishra-oauth-agent-grants, whose own title is 'OAuth Profile for Delegated AI Agent Authorization' \u2014 the seed's acronym and description matched a real, verifiable draft, but the name carried by the seed record does not appear in the document text itself; 'Delegated Agent Authorization Protocol' and 'DAAP' are recorded here as aliases rather than the primary name, which has been corrected to the draft's actual title [1].\n\nThe draft addresses AI agents that invoke protected APIs on behalf of a human user. It defines an OAuth profile covering: identifying an agent client instance distinctly from the user's own client, obtaining the user's authenticated consent, issuing access tokens that are both resource-bound (audience-restricted) and sender-constrained (bound to the agent's key), attenuating an agent's authority through RFC 8693 OAuth Token Exchange, and rotating refresh tokens safely [1]. Its central design constraint, stated in its own abstract, is that it 'defines no new JWT claims or OAuth endpoints' \u2014 it is explicitly a profile of composition over existing IETF mechanisms (OAuth 2.0/2.1, Token Exchange, JOSE, DPoP-style sender constraints), not a new protocol.\n\nIt explicitly places operational concerns \u2014 policy engines, audit stores, spending budgets, event streams, credential vaults \u2014 outside its interoperable core, leaving those to implementers. It does not define content-use or crawling permissions; its scope is strictly delegated API-calling authority, positioning it as a 'permit' record specifically for the agent-site API-invocation case, adjacent to AAP and AAuth.\n\nAs of this verification (2026-09-06), the current version is -02, and the Datatracker's own document-state field shows it Active (not expired) with a last-updated date in the 2026-08 range, and an expiry of 3 March 2027 \u2014 confirming it is a live, in-progress draft rather than lapsed [1]. The draft names 'Grantex' as an incomplete reference implementation, explicitly stating conformance does not require it, so implementation is recorded as prototype rather than shipping [2].\n\nWhat is unresolved: whether this draft will be adopted by the IETF OAuth Working Group as a formal work item (it is currently an individual submission), how it will be reconciled with the overlapping AAP and AAuth proposals covering similar agent-delegation ground within the same working group's orbit, and whether any production authorization server has implemented its specific attenuation/rotation profile beyond the Grantex reference code.",
+  "track": "ietf",
+  "version": {
+   "date": "2026-08",
+   "label": "draft-mishra-oauth-agent-grants-02"
+  }
+ },
+ {
+  "acronym": "AAP",
+  "adoption": {
+   "by": null,
+   "level": "unmeasured",
+   "probe_run": null
+  },
+  "aliases": [],
+  "analog": "OAuth profile / scoped service-account token",
+  "collisions": [
+   "AAP also collides with the unrelated Automated Access Point / Advanced Authoring Program acronyms in other domains"
+  ],
+  "discovery": {
+   "mechanism": "OAuth 2.0 authorization-server metadata plus structured JWT claims; no dedicated well-known file defined in the spec text reviewed",
+   "path": null
+  },
+  "dispute": {
+   "claims": [
+    "IETF Datatracker: Expired Internet-Draft (individual), IESG state Expired",
+    "aapspec/spec repository shows zero stars and no post-launch activity"
+   ],
+   "summary": "The spec is an expired, single-author IETF individual submission with no working-group adoption and a stalled companion GitHub project; it is retained as a documented proposal rather than an active or governed spec."
+  },
+  "evidence": [
+   {
+    "claim": "The IETF Datatracker's document page for draft-aap-oauth-profile shows Document Type 'Expired Internet-Draft (individual)', IESG state 'Expired', last updated 2026-08-11, author 'angel cruz' with a note that the author's listed e-mail may no longer be valid.",
+    "date": "2026-08-11",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-aap-oauth-profile/"
+   },
+   {
+    "claim": "The aapspec/spec GitHub repository hosts the same spec under an Apache 2.0 license, links a separate reference-impl repository, and its own README's IETF-status checklist shows no item beyond draft submission checked off, with zero GitHub stars and no commits after the 2026-02-07 draft date.",
+    "date": "2026-02-07",
+    "label": "REPORTED",
+    "url": "https://github.com/aapspec/spec"
+   }
+  ],
+  "form": "endpoint",
+  "governance": "No formal governance body; single individual author plus a GitHub organization (aapspec) hosting the spec text, reference implementation, schemas, and test vectors",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against datatracker.ietf.org/doc/draft-aap-oauth-profile/ and github.com/aapspec/spec; found expired"
+   }
+  ],
+  "id": "aap",
+  "implementation": "prototype",
+  "last_verified": "2026-09-06",
+  "name": "Agent Authorization Profile",
+  "native_status": "Expired Internet-Draft (individual), per the IETF Datatracker; last updated 2026-08-11, latest revision -01 dated 2026-02-07",
+  "origin": {
+   "date": "2026-02-07",
+   "org": "Individual author (\"angel cruz\"), published via IETF individual submission and the aapspec GitHub organization"
+  },
+  "parties": [
+   "agent-site"
+  ],
+  "phase": "withdrawn",
+  "probe": {
+   "method": "GET",
+   "on_absent": "No AAP claims present; given the draft's expired status this is the expected default across the ecosystem",
+   "parse": "Decode a returned access token as a JWT and check for AAP-specific claim names (agent identity, task binding, delegation chain) as documented in the aapspec/spec repository's JSON Schemas",
+   "path": "{authorization_server}/.well-known/oauth-authorization-server"
+  },
+  "question": "How can OAuth 2.0/JWT claims carry structured agent identity, task context, operational constraints, delegation chains, and human-oversight requirements for machine-to-machine agent calls?",
+  "scope": "general",
+  "spec_url": "https://www.ietf.org/archive/id/draft-aap-oauth-profile-01.html",
+  "step": "permit",
+  "summary_md": "The Agent Authorization Profile (AAP) is a single-author IETF individual Internet-Draft, draft-aap-oauth-profile-01, dated 2026-02-07, proposing structured OAuth 2.0/JWT claims for autonomous AI agents [1]. It extends OAuth 2.0, JWT, RFC 8693 Token Exchange, and proof-of-possession mechanisms so that a resource server can reason about agent identity, task context, operational constraints, delegation chains, and whether human oversight is required for a given call, explicitly without introducing a new protocol [1].\n\nIt does not define a discovery mechanism beyond standard OAuth authorization-server metadata, and it does not define content-use or crawling permissions \u2014 like DAAP and AAuth, its scope is agent-to-API (M2M) authorization, not publisher content policy. Its distinguishing claim relative to those two overlapping drafts is a heavier emphasis on structured, machine-reasoned claims (delegation chains, human-oversight flags) rather than a minimal composition of existing mechanisms.\n\nAs of this verification (2026-09-06), the IETF Datatracker's own document-state field shows this draft as an 'Expired Internet-Draft (individual)', IESG state Expired, last updated 2026-08-11 with its single revision (-01) dated 2026-02-07 and no working-group affiliation \u2014 it never progressed beyond an individual submission [1]. The author's listed contact is separately flagged by the Datatracker as possibly no longer valid. A companion project exists at github.com/aapspec, including a spec repository (Apache 2.0 licensed), a claimed reference implementation, JSON Schemas, and test vectors, but the repository's own README shows an IETF-status checklist with no box beyond 'draft-00 submitted' checked, no GitHub stars, and no activity beyond the initial 2026-02-07 push found in this pass [2]. On that basis this record's phase is set to withdrawn and implementation to prototype (a reference implementation is claimed to exist, but with no evidence of independent use).\n\nWhat is unresolved: whether 'angel cruz' or another contributor intends to resubmit an active revision; whether any of AAP's specific claim names have been adopted informally by agent-framework builders outside the IETF process; and how AAP's more prescriptive claim-schema approach compares in practice to the lighter-weight DAAP profile, which explicitly avoids new claims. Given three overlapping, none-adopted individual OAuth-for-agents drafts (AAuth, DAAP, AAP) exist in this dataset, a future review should watch for which, if any, the OAuth Working Group formally adopts.",
+  "track": "community",
+  "version": {
+   "date": "2026-02-07",
+   "label": "draft-aap-oauth-profile-01"
+  }
+ },
+ {
+  "acronym": "RSL",
+  "adoption": {
+   "by": null,
+   "level": "unmeasured",
+   "probe_run": null
+  },
+  "aliases": [],
+  "analog": "Creative Commons license badge, but machine-enforceable and priced",
+  "collisions": [],
+  "discovery": {
+   "mechanism": "robots.txt reference, HTML <link>, RSS/HTTP header, or a standalone rsl.xml file",
+   "path": "/rsl.xml"
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "The RSL 1.0 specification, Document RSL-SPEC-1.0, Category 'Industry Specification', Status 'Recommendation', was published 2025-12-10 at the canonical URI/namespace https://rslstandard.org/rsl, with editors from RSL Collective, Cond\u00e9 Nast, Ziff Davis, Schema.org, Yahoo, Automattic, O'Reilly Media, and Fastly, and an issue tracker at github.com/rslstandard/rsl.",
+    "date": "2025-12-10",
+    "label": "VERIFIED",
+    "url": "https://rslstandard.org/rsl"
+   },
+   {
+    "claim": "The rslstandard/rsl GitHub repository's README independently describes RSL as an open XML-based standard maintained by the RSL Technical Steering Committee, corroborating the spec page's own claims about scope and governance from a second, separately-hosted source, and states the specification's status as 'draft' at the repository level.",
+    "date": null,
+    "label": "VERIFIED",
+    "url": "https://github.com/rslstandard/rsl"
+   }
+  ],
+  "form": "document-format",
+  "governance": "RSL Collective, a vendor consortium; issue tracker at github.com/rslstandard/rsl",
+  "history": [
+   {
+    "date": "2026-09-06",
+    "note": "created and verified against rslstandard.org/rsl (occupant-diff candidate)"
+   }
+  ],
+  "id": "rsl",
+  "implementation": "shipping",
+  "last_verified": "2026-09-06",
+  "name": "Really Simple Licensing",
+  "native_status": "Recommendation (RSL's own maturity label, not a W3C/IETF Recommendation) \u2014 Document RSL-SPEC-1.0, Category 'Industry Specification'",
+  "origin": {
+   "date": "2025-09",
+   "org": "RSL Collective (with Cond\u00e9 Nast, Ziff Davis, Yahoo, Automattic, O'Reilly Media, Fastly, and Schema.org's RV Guha as editors)"
+  },
+  "parties": [
+   "agent-site",
+   "agent-payment"
+  ],
+  "phase": "stable",
+  "probe": {
+   "method": "GET",
+   "on_absent": "No RSL license file is referenced from any of robots.txt, HTML, RSS, or HTTP headers; the site has not published RSL terms",
+   "parse": "Look for an RSL reference line in robots.txt (pointing to an rsl.xml license file), or an HTML <link> element with an RSL relation, or a Content-License/Link HTTP header; then GET the referenced XML document and parse the <rsl> root element for <license>, <prohibits>, <permits> or <payment> children",
+   "path": "{origin}/robots.txt"
+  },
+  "question": "What machine-readable license, price, and authorization terms govern how AI systems and crawlers may access or reuse a publisher's content?",
+  "scope": "general",
+  "spec_url": "https://rslstandard.org/rsl",
+  "step": "permit",
+  "summary_md": "Really Simple Licensing (RSL) is an XML vocabulary and set of discovery/authorization mechanisms, published as RSL 1.0 (Document RSL-SPEC-1.0) on 2025-12-10 by the RSL Collective together with named editors from Cond\u00e9 Nast, Ziff Davis, Yahoo, Automattic, O'Reilly Media, Fastly, and Schema.org's RV Guha [1]. It answers the permit question at a finer grain than robots.txt or a bare AI-use preference: it lets a publisher declare not just whether AI systems and crawlers may access or process content, but under what license, for what purposes (indexing, search summaries, AI training, grounding), and at what price.\n\nThe spec bundles four pieces: the core RSL XML vocabulary for expressing usage, licensing, payment, and legal rules; the Open License Protocol (OLP), an OAuth 2.0 extension for acquiring and validating an RSL license at request time; the Crawler Authorization Protocol (CAP), an HTTP authorization scheme for crawlers holding a license; and the Encrypted Media Standard (EMS), a format for encrypting paywalled assets so unlicensed reuse is technically, not just contractually, blocked [1]. Discovery works through robots.txt references, HTML <link> elements, RSS entries, or HTTP files, pointing to an RSL XML license document; an example in the spec shows a publisher prohibiting all AI use (`<prohibits type=\"usage\">ai-all</prohibits>`) while still allowing search indexing [1].\n\nIt does not itself provide agent identity or content delivery; those integrate via OLP/CAP with whatever identity and hosting stack a publisher already runs. It is explicitly an industry specification governed by a vendor consortium (the RSL Collective), not a submission to IETF or W3C \u2014 its own document header labels it Category 'Industry Specification', Status 'Recommendation' in RSL's own maturity scale, which should not be read as a W3C/IETF Recommendation.\n\nAs of this verification (2026-09-06), RSL 1.0 is current, superseding a 0.9 version referenced from the spec page, with an active GitHub issue tracker and a published errata page \u2014 signs of a maintained, living specification rather than a one-off announcement [1]. Given the roster of major media-industry editors (Cond\u00e9 Nast, Ziff Davis, Yahoo, O'Reilly), implementation is recorded as shipping on the publisher side, though this pass did not run a probe to count adoption, so the adoption level is unmeasured rather than claimed or measured.\n\nWhat is unresolved: how many publishers have actually deployed an rsl.xml file versus simply being named as spec editors; whether any AI vendor has implemented the OLP client side to actually acquire and pay for a licensed RSL grant; and how RSL's paid-licensing model will coexist with the free, binary-only permission signals of AIPREF and Cloudflare's Content Signals Policy, which address the same robots.txt real estate with a simpler yes/no vocabulary.",
+  "track": "vendor-consortium",
+  "version": {
+   "date": "2025-12-10",
+   "label": "RSL 1.0"
+  }
+ },
+ {
+  "acronym": "",
+  "adoption": {
+   "by": null,
+   "level": "unmeasured",
+   "probe_run": null
+  },
+  "aliases": [],
+  "analog": "robots.txt, but for in-page actions rather than URL fetches",
+  "collisions": [],
+  "discovery": {
+   "mechanism": "well-known file, overridable per-page by an HTML <link rel=\"agent-permissions\"> element",
+   "path": "/.well-known/agent-permissions.json"
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "The las-wg/agent-permissions.json GitHub repository publishes a complete JSON Schema (metadata, strict default, resource_rules with an enumerated verb list including read_content/click_element/submit_form/execute_script/upload_file, action_guidelines with RFC 2119 directives, and an api block referencing OpenAPI/MCP/A2A endpoints), discoverable at /.well-known/agent-permissions.json or via a <link rel=\"agent-permissions\"> tag.",
+    "date": "2026-07-17",
+    "label": "VERIFIED",
+    "url": "https://github.com/las-wg/agent-permissions.json"
+   },
+   {
+    "claim": "An arXiv paper by the Lightweight Agent Standards Working Group, 'Permission Manifests for Web Agents,' independently describes the same manifest structure, discovery paths, and positions it against MCP/A2A and OpenAPI as complementary rather than competing.",
+    "date": "2026-01",
+    "label": "VERIFIED",
+    "url": "https://arxiv.org/html/2601.02371v2"
+   }
+  ],
+  "form": "well-known-file",
+  "governance": "Lightweight Agent Standards Working Group (LAS-WG), an open community project hosted on GitHub at las-wg/agent-permissions.json; no formal standards-body affiliation found",
+  "history": [
+   {
+    "date": "2026-09-06",
+    "note": "created and verified against github.com/las-wg/agent-permissions.json and arxiv.org/html/2601.02371v2 (occupant-diff candidate)"
+   }
+  ],
+  "id": "agent-permissions-json",
+  "implementation": "unknown",
+  "last_verified": "2026-09-06",
+  "name": "agent-permissions.json",
+  "native_status": "v1.0.0, complete JSON Schema published; described by the working group's own arXiv paper as a proposal, not an adopted standard",
+  "origin": {
+   "date": "2026-07",
+   "org": "Lightweight Agent Standards Working Group (LAS-WG)"
+  },
+  "parties": [
+   "agent-site"
+  ],
+  "phase": "candidate",
+  "probe": {
+   "method": "GET",
+   "on_absent": "No agent-permissions.json at the well-known path; also check the page's HTML for a <link rel=\"agent-permissions\"> override before concluding the site has not published page-action permissions",
+   "parse": "Valid JSON with top-level 'metadata' (schema_version, last_updated) and 'strict' boolean fields present, per the LAS-WG JSON Schema",
+   "path": "{origin}/.well-known/agent-permissions.json"
+  },
+  "question": "Which page-level interactions (clicking, form submission, file upload, media control, script execution) may an agent perform while driving a web page's UI, as opposed to just fetching it?",
+  "scope": "general",
+  "spec_url": "https://github.com/las-wg/agent-permissions.json",
+  "step": "permit",
+  "summary_md": "agent-permissions.json is a JSON manifest format, published at v1.0.0 by the Lightweight Agent Standards Working Group (LAS-WG), that lets a website declare which in-page interactions an AI agent driving its UI may or may not perform [1]. It targets a permit-layer gap that robots.txt and AIPREF/Content-Signals leave open: those govern whether a URL may be fetched and what a fetched page's content may be used for, but say nothing about what an agent already on the page is allowed to click, type into, submit, upload, or execute once it is rendering and interacting with the DOM directly, as browser-using agents increasingly do [2].\n\nThe schema, fully published in the repository, defines a top-level `strict` boolean setting the default posture (forbid-by-default vs. allow-by-default), an array of `resource_rules` scoping specific verbs (from a fixed enum including read_content, click_element, submit_form, execute_script, upload_file, and others) to CSS selectors with optional rate-limit/time-window/human-in-the-loop modifiers, a set of `action_guidelines` expressed as RFC 2119 MUST/SHOULD directives for behaviours too fuzzy to capture as selector rules, and an `api` block that points an agent toward an OpenAPI, MCP, or A2A endpoint as a preferred alternative to driving the UI at all [1][2]. It is discoverable at the fixed path `/.well-known/agent-permissions.json` or overridden per-page via an HTML `<link rel=\"agent-permissions\">` tag.\n\nIt does not govern whether a URL may be crawled in the first place (robots.txt's job), does not define content-use-after-fetch permissions (AIPREF/Content Signals' job), and does not define authentication or payment. Governance is informal: LAS-WG presents itself as an open working group with a GitHub org and a companion arXiv paper, not a submission to IETF, W3C, or any chartered standards body, and no version history beyond 1.0.0 (published 2026-07-17) was found in this pass.\n\nAs of this verification (2026-09-06), the spec text and JSON Schema are complete and internally consistent across both the GitHub repository and the independently-hosted arXiv paper, which is enough for two independent primary sources; however, this pass found no production website actually serving a live agent-permissions.json file, and no browser-agent product (e.g. a computer-use or browsing agent framework) documented as consuming it, so implementation is recorded as unknown rather than shipping or none-found. What is unresolved: whether LAS-WG has any institutional backing beyond its own GitHub organization; whether any of the browser-driving agent vendors (OpenAI Operator-style agents, Anthropic computer use, browser extensions) have committed to reading this file; and how it will interact with the pre-existing, differently-scoped `agents.json` API-discovery convention it explicitly distinguishes itself from in its own comparison table.",
+  "track": "community",
+  "version": {
+   "date": "2026-07-17",
+   "label": "1.0.0"
+  }
+ },
+ {
+  "acronym": "",
+  "adoption": {
+   "by": "auth-md.com, which lists Resend, Cloudflare, Firecrawl, Ora.ai, here.now, mailbox.bot, agents-txt.com, WorkOS, and Alpic as 'already supported' adopters",
+   "level": "claimed",
+   "probe_run": null
+  },
+  "aliases": [],
+  "analog": "Self-service sign-up form",
+  "collisions": [
+   "Not to be confused with the unrelated ACT-AUTH.md convention published in the actcore/act-spec repository, which addresses similar ground independently"
+  ],
+  "discovery": {
+   "mechanism": "A markdown convention file at the site root, cross-referenced with RFC 9728 Protected Resource Metadata for the actual OAuth exchange",
+   "path": "/auth.md"
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "auth-md.com's own specification page defines three registration flows (identity_assertion + ID-JAG, service_auth, anonymous), a discovery sequence built on RFC 9728 Protected Resource Metadata and RFC 8414 Authorization Server Metadata, and states the protocol was launched at MCP Night 4 / AI Engineer World's Fair 2026.",
+    "date": "2026-06",
+    "label": "VERIFIED",
+    "url": "https://auth-md.com/specification"
+   },
+   {
+    "claim": "The auth-md.com homepage names Resend, Cloudflare, Firecrawl, Ora.ai, here.now, mailbox.bot, agents-txt.com, WorkOS, and Alpic as parties already publishing an auth.md file, each linked to that company's own /auth.md URL.",
+    "date": "2026-06",
+    "label": "REPORTED",
+    "url": "https://auth-md.com/"
+   }
+  ],
+  "form": "document-format",
+  "governance": "Single vendor (auth-md.com, associated with WorkOS and founder Fabricio Telles); adopted by several named third parties (Resend, Cloudflare, Firecrawl, Alpic, here.now, mailbox.bot) who each publish their own auth.md file",
+  "history": [
+   {
+    "date": "2026-09-06",
+    "note": "created and verified against auth-md.com/specification and auth-md.com (occupant-diff candidate)"
+   }
+  ],
+  "id": "auth-md",
+  "implementation": "multi-implementation",
+  "last_verified": "2026-09-06",
+  "name": "auth.md",
+  "native_status": "Published protocol specification at auth-md.com/specification; not submitted to IETF, W3C, or any standards body",
+  "origin": {
+   "date": "2026-06",
+   "org": "WorkOS (auth-md.com), publicly launched at MCP Night 4 / AI Engineer World's Fair 2026"
+  },
+  "parties": [
+   "agent-site"
+  ],
+  "phase": "draft",
+  "probe": {
+   "method": "GET",
+   "on_absent": "No auth.md file at the site root; the service has not published an agent self-registration convention",
+   "parse": "A markdown document describing one or more of the three named flows (identity_assertion, service_auth, anonymous) and referencing /.well-known/oauth-protected-resource and /.well-known/oauth-authorization-server per RFC 9728/8414",
+   "path": "{origin}/auth.md"
+  },
+  "question": "How does an AI agent register a new account for its user on a service, without a human filling out a sign-up form or an OAuth redirect flow existing to authorize it?",
+  "scope": "general",
+  "spec_url": "https://auth-md.com/specification",
+  "step": "permit",
+  "summary_md": "auth.md is a single-vendor protocol, launched by WorkOS-affiliated auth-md.com at MCP Night 4 during the AI Engineer World's Fair 2026, that lets an AI agent register a new user account on a service directly, without a human filling out a sign-up form or an existing OAuth client registration [1]. It targets a specific gap in the permit space: existing OAuth flows assume a client and a resource server already have a trust relationship (a registered client_id); auth.md instead lets a never-before-seen agent discover how to create that relationship in the first place.\n\nThe published specification defines three registration flows: an 'identity_assertion' flow where the agent's own identity provider vouches for the user via an ID-JAG (an emerging IETF identity-assertion mechanism) and registration completes with no human present; a 'service_auth' flow; and an 'anonymous' flow using an OTP the human reads back to the agent to bind the new account to the right person [1]. auth.md is explicitly built as a thin composition layer on top of two existing IETF specs rather than a replacement for OAuth: discovery starts from a 401 response whose `WWW-Authenticate` header points to RFC 9728 Protected Resource Metadata at `/.well-known/oauth-protected-resource`, which in turn points to RFC 8414 Authorization Server Metadata [1].\n\nIt does not define payment (the vendor's own materials pair it with x402 for that), and it does not define content-use permissions \u2014 its scope is strictly account creation. It is not on any standards track; auth-md.com is a commercial site operated in connection with WorkOS and credits an individual founder, Fabricio Telles.\n\nAs of this verification (2026-09-06), the specification text is published and internally coherent, and the vendor's own homepage names nine companies as already serving their own auth.md file (Resend, Cloudflare, Firecrawl, Ora.ai, here.now, mailbox.bot, agents-txt.com, WorkOS, and Alpic), each linked to that company's specific URL [2]. Because this adoption count is self-reported by auth-md.com rather than independently measured by this wiki's own probe, the adoption level is recorded as claimed (by auth-md.com), not measured; implementation is recorded as multi-implementation on the strength of multiple named, independent adopting companies, though this pass did not fetch each named company's individual /auth.md file to confirm live service.\n\nWhat is unresolved: whether ID-JAG, the identity-assertion mechanism the strongest flow depends on, is itself standardized enough to interoperate across identity providers (it is described here as 'an emerging IETF draft'); how widely auth.md is adopted beyond the launch partners named on its own site; and how it will be distinguished in practice from the unrelated, independently-developed ACT-AUTH.md convention found in the actcore/act-spec repository, which addresses similar agent-credential ground under the same filename pattern.",
+  "track": "single-vendor",
+  "version": {
+   "date": "2026-06",
+   "label": "Launched 2026-06, current spec undated beyond launch"
+  }
+ },
+ {
+  "acronym": "",
+  "adoption": {
+   "by": null,
+   "level": "unmeasured",
+   "probe_run": null
+  },
+  "aliases": [
+   "RFC 9728",
+   "RFC 8414",
+   "PRM",
+   "AS Metadata"
+  ],
+  "analog": "A site's published API documentation entry point, made machine-readable",
+  "collisions": [],
+  "discovery": {
+   "mechanism": "well-known files at the resource server and the authorization server, chained by a WWW-Authenticate challenge",
+   "path": "/.well-known/oauth-protected-resource"
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "RFC 9728, 'OAuth 2.0 Protected Resource Metadata,' is an Internet Standards Track document representing IETF consensus, defining a metadata format an OAuth 2.0 client or authorization server uses to learn how to interact with a protected resource.",
+    "date": "2025",
+    "label": "VERIFIED",
+    "url": "https://www.rfc-editor.org/rfc/rfc9728.html"
+   },
+   {
+    "claim": "RFC 8414, 'OAuth 2.0 Authorization Server Metadata,' published June 2018, is an Internet Standards Track document defining the companion metadata format for an authorization server's own endpoints and capabilities.",
+    "date": "2018-06",
+    "label": "VERIFIED",
+    "url": "https://www.rfc-editor.org/rfc/rfc8414.html"
+   },
+   {
+    "claim": "The auth.md specification (a distinct, single-vendor agent-registration protocol) documents both RFCs being chained together in a live agent-discovery flow: a 401's WWW-Authenticate header points to RFC 9728 Protected Resource Metadata, which points to RFC 8414 Authorization Server Metadata.",
+    "date": "2026-06",
+    "label": "REPORTED",
+    "url": "https://auth-md.com/specification"
+   }
+  ],
+  "form": "well-known-file",
+  "governance": "IETF OAuth Working Group; both are Internet Standards Track RFCs with IETF/IESG consensus",
+  "history": [
+   {
+    "date": "2026-09-06",
+    "note": "created and verified against rfc-editor.org/rfc/rfc9728.html and rfc-editor.org/rfc/rfc8414.html (occupant-diff candidate)"
+   }
+  ],
+  "id": "oauth-metadata-for-agents",
+  "implementation": "multi-implementation",
+  "last_verified": "2026-09-06",
+  "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)",
+  "native_status": "Internet Standard (RFC 8414, published June 2018) and Internet Standard (RFC 9728, published 2025); both are products of IETF consensus, not works in progress",
+  "origin": {
+   "date": "2018-06",
+   "org": "IETF OAuth Working Group"
+  },
+  "parties": [
+   "agent-site"
+  ],
+  "phase": "stable",
+  "probe": {
+   "method": "GET",
+   "on_absent": "Resource server does not publish RFC 9728 Protected Resource Metadata; an agent must fall back to a 401 response's WWW-Authenticate header (if present) or vendor-specific documentation to find the authorization server",
+   "parse": "A JSON document per RFC 9728 with a 'resource' field and an 'authorization_servers' array; follow the first authorization_servers entry to {authorization_server}/.well-known/oauth-authorization-server per RFC 8414 to fetch endpoint and capability metadata",
+   "path": "{resource_server}/.well-known/oauth-protected-resource"
+  },
+  "question": "How does an agent (or an MCP client acting for it) discover which authorization server protects a resource, and what that authorization server's endpoints and capabilities are, before requesting access?",
+  "scope": "general",
+  "spec_url": "https://www.rfc-editor.org/rfc/rfc9728.html",
+  "step": "permit",
+  "summary_md": "This record covers the pairing of RFC 8414 (OAuth 2.0 Authorization Server Metadata, published June 2018) and RFC 9728 (OAuth 2.0 Protected Resource Metadata, published 2025), as they are increasingly cited together as the discovery backbone for AI agent authorization, including by the MCP authorization specification and by newer conventions such as auth.md [1][2][3]. Both are mature, Internet Standards Track IETF RFCs, not agent-specific drafts \u2014 this record exists because their combination has become a de facto permit-discovery mechanism for the agentic web, not because either RFC was written with agents specifically in mind.\n\nRFC 8414 defines a JSON metadata document, conventionally at `/.well-known/oauth-authorization-server`, listing an authorization server's endpoints (authorization, token, etc.) and supported capabilities (grant types, scopes, PKCE support, and so on) so a client can configure itself without hardcoded assumptions [2]. RFC 9728, the newer companion, defines the resource-server side: a JSON document, conventionally at `/.well-known/oauth-protected-resource`, naming which authorization server(s) protect a given resource and what scopes it supports, closing the gap where a client encountering an unfamiliar API had no standard way to learn which authorization server to talk to [1]. Chained together \u2014 typically triggered by a 401 response whose `WWW-Authenticate` header names the Protected Resource Metadata URL \u2014 an agent can go from 'I got denied access to this API' to 'here is the authorization server and its capabilities' with two GET requests and no prior configuration [3].\n\nNeither RFC defines agent identity, delegation semantics, or content-use permissions; they are pure discovery/metadata mechanisms that any OAuth 2.0 client, human-driven or agentic, can use. This is why several of the newer, more agent-specific drafts in this dataset (auth.md, and indirectly DAAP and AAP, which build on standard OAuth server metadata rather than defining their own) lean on these two RFCs as their discovery layer rather than reinventing one.\n\nAs of this verification (2026-09-06), both documents are final, numbered RFCs on the Standards Track, so phase is stable and there is no version-in-flux to track. Implementation is recorded as multi-implementation on the strength of RFC 8414's seven-plus years of adoption across the OAuth ecosystem (essentially every major identity provider implements it) and RFC 9728's growing adoption for resource servers, including its explicit use in the MCP authorization specification. What is unresolved: this record does not independently measure what fraction of AI-agent-facing APIs specifically (as opposed to OAuth generally) publish RFC 9728 metadata; that would require a dedicated probe run against a domain sample of agent-facing services.",
+  "track": "ietf",
+  "version": {
+   "date": "2025",
+   "label": "RFC 8414 (2018-06) and RFC 9728 (2025)"
+  }
+ },
+ {
+  "acronym": "",
+  "adoption": {
+   "by": null,
+   "level": "observed",
+   "probe_run": null
+  },
+  "aliases": [],
+  "analog": "The original robots.txt User-agent convention, extended per-vendor for AI",
+  "collisions": [],
+  "discovery": {
+   "mechanism": "User-agent group directives inside robots.txt, one group per named crawler token",
+   "path": "/robots.txt"
+  },
+  "dispute": null,
+  "evidence": [
+   {
+    "claim": "OpenAI's own bot documentation (developers.openai.com/api/docs/bots) names OAI-SearchBot, OAI-AdsBot, and GPTBot with distinct user-agent strings and published IP ranges, and recommends site owners control each via robots.txt.",
+    "date": "2026",
+    "label": "VERIFIED",
+    "url": "https://developers.openai.com/api/docs/bots"
+   },
+   {
+    "claim": "Anthropic's support article names three distinct robots \u2014 ClaudeBot (training), Claude-User (user-triggered access), and Claude-SearchBot (search quality) \u2014 and documents what disabling each one via robots.txt does.",
+    "date": "2026",
+    "label": "VERIFIED",
+    "url": "https://support.claude.com/en/articles/8896518"
+   },
+   {
+    "claim": "Google's documentation states that Google-Extended is a standalone robots.txt product token controlling only Gemini model training/grounding and Vertex AI, and explicitly states it has no effect on Google Search or other Google products, confirming it is distinct from the Googlebot token.",
+    "date": "2026",
+    "label": "VERIFIED",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers"
+   },
+   {
+    "claim": "Perplexity's crawler documentation names PerplexityBot (crawling/training) and Perplexity-User (live user-query-triggered fetches, explicitly not used for crawling or training) as separate tokens with separate published IP ranges.",
+    "date": "2026",
+    "label": "VERIFIED",
+    "url": "https://docs.perplexity.ai/guides/bots"
+   }
+  ],
+  "form": "well-known-file",
+  "governance": "No single governing body; each vendor unilaterally defines and documents its own token(s); RFC 9309 (IETF, Standards Track) governs the underlying robots.txt syntax all of them use",
+  "history": [
+   {
+    "date": "2026-09-06",
+    "note": "created and verified against developers.openai.com/api/docs/bots, support.claude.com/en/articles/8896518, developers.google.com/search/docs/crawling-indexing/google-common-crawlers, docs.perplexity.ai/guides/bots (occupant-diff candidate)"
+   }
+  ],
+  "id": "ai-crawler-tokens-robots",
+  "implementation": "multi-implementation",
+  "last_verified": "2026-09-06",
+  "name": "AI Crawler User-Agent Tokens in robots.txt",
+  "native_status": "A convention, not a formal spec; each vendor's documentation is normative only for that vendor's own crawler",
+  "origin": {
+   "date": "2023",
+   "org": "Multiple vendors (OpenAI, Anthropic, Google, Perplexity, and others), each publishing independently, built on the RFC 9309 Robots Exclusion Protocol"
+  },
+  "parties": [
+   "agent-site"
+  ],
+  "phase": "living",
+  "probe": {
+   "method": "GET",
+   "on_absent": "No group for a given token means that crawler applies its default (documented per-vendor, typically full access) rather than an explicit restriction",
+   "parse": "Look for User-agent groups matching known tokens: GPTBot, OAI-SearchBot, OAI-AdsBot (OpenAI); ClaudeBot, Claude-User, Claude-SearchBot (Anthropic); Googlebot, Google-Extended (Google); PerplexityBot, Perplexity-User (Perplexity); then read the allow/disallow rules in that group",
+   "path": "{origin}/robots.txt"
+  },
+  "question": "Which named AI crawler or agent user-agent tokens may a website allow or disallow in robots.txt, and what does each token actually control (search indexing, AI training, or live user-triggered fetches)?",
+  "scope": "general",
+  "spec_url": "https://www.rfc-editor.org/rfc/rfc9309.html",
+  "step": "permit",
+  "summary_md": "This record covers the most widely deployed permit mechanism on the web today: a family of vendor-specific user-agent tokens that AI companies define for use inside a site's existing robots.txt file, built on the IETF's RFC 9309 Robots Exclusion Protocol syntax. It is not a single spec but a convention each vendor documents and maintains independently, unified only by shared syntax (User-agent groups with allow/disallow rules) [OpenAI, Anthropic, Google, Perplexity docs below].\n\nFour major vendors were checked directly for this record. OpenAI documents GPTBot (training data collection), OAI-SearchBot (search indexing), and OAI-AdsBot (ad-related validation), each with its own user-agent string and published IP range for verification [1]. Anthropic documents ClaudeBot (training-data collection), Claude-User (fetches triggered by a live user question to Claude), and Claude-SearchBot (search-quality crawling), explaining separately what disabling each one via robots.txt does to a site's treatment [2]. Google documents the long-standing Googlebot token alongside the AI-specific Google-Extended token, and is explicit that Google-Extended controls only training data for Gemini models and Vertex AI grounding, with 'no effect on Google Search or other products' \u2014 confirming, directly from Google's own text, the prior finding that Google-Extended does not control Search or AI Overviews [3]. Perplexity documents PerplexityBot (crawling for its models) and Perplexity-User, which it states explicitly 'is not used for web crawling or to collect content for training AI foundation models' but instead fetches pages live in response to a user's question [4].\n\nThe pattern across all four vendors is the same: a 'bulk crawling / training' token and a separate 'live, user-triggered fetch' token, plus sometimes a third 'search index' token, each independently blockable. This granularity is exactly the gap the IETF AIPREF drafts and Cloudflare's Content Signals Policy are trying to standardize into a single, vendor-neutral vocabulary \u2014 today, a publisher who wants to block AI training but keep search visibility must maintain a separate robots.txt group per vendor, using each vendor's own token names, rather than one general-purpose signal.\n\nAs of this verification (2026-09-06), all four vendor documentation pages were live and internally consistent with each other's pattern. No unified registry of every AI crawler token across every vendor (beyond each vendor's own page) was checked in this pass; adoption is recorded as observed, since the tokens themselves are demonstrably deployed by name-brand vendors and honoured by a large fraction of the web's robots.txt files, but no systematic probe run counted that fraction for this record. What is unresolved: whether the IETF AIPREF or Cloudflare Content Signals conventions will eventually consolidate these per-vendor tokens into one general vocabulary, or whether new AI companies will simply keep adding their own named tokens to this already-fragmented list.",
+  "track": "vendor-consortium",
+  "version": {
+   "date": null,
+   "label": "Ongoing; tokens and their scopes are updated by each vendor independently"
+  }
+ }
+]

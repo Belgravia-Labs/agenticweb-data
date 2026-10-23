@@ -1,0 +1,22 @@
+{
+ "aiagent-auth": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [
+   {
+    "name": "PieterKas/agent2agent-auth-framework (draft source repository and issue tracker, not an implementation)",
+    "url": "https://github.com/PieterKas/agent2agent-auth-framework",
+    "date": "2026-07-06",
+    "evidence": "VERIFIED"
+   },
+   {
+    "name": "IETF WIMSE Working Group (adoption process venue)",
+    "url": "https://datatracker.ietf.org/wg/wimse/about/",
+    "date": "2026-09-07",
+    "evidence": "VERIFIED"
+   }
+  ],
+  "adopters": []
+ }
+}

@@ -1,0 +1,121 @@
+{
+  "llms-txt": {
+    "implementations": [
+      {"name": "Mintlify (auto-generates llms.txt and markdown page twins for hosted docs sites)", "url": "https://www.mintlify.com/docs/ai/llmstxt", "date": "2026", "evidence": "REPORTED"},
+      {"name": "GitBook (serves an llms.txt for published docs sites)", "url": "https://www.gitbook.com/blog/what-is-llms-txt", "date": "2026", "evidence": "REPORTED"},
+      {"name": "Wix (generates an llms.txt for every Wix site)", "url": "https://support.wix.com/en/article/understanding-your-sites-llmstxt-file", "date": "2026", "evidence": "REPORTED"},
+      {"name": "Yoast SEO (WordPress plugin, generates and maintains llms.txt)", "url": "https://yoast.com/features/llms-txt/", "date": "2026", "evidence": "REPORTED"},
+      {"name": "AIOSEO (WordPress plugin with an llms.txt generator)", "url": "https://aioseo.com/features/llms-txt/", "date": "2026", "evidence": "REPORTED"},
+      {"name": "OpenAI developer docs llms.txt", "url": "https://developers.openai.com/llms.txt", "date": "2026", "evidence": "REPORTED"},
+      {"name": "Anthropic docs llms.txt", "url": "https://docs.anthropic.com/llms.txt", "date": "2026", "evidence": "REPORTED"},
+      {"name": "Google Gemini API docs llms.txt", "url": "https://ai.google.dev/gemini-api/docs/llms.txt", "date": "2026", "evidence": "REPORTED"}
+    ],
+    "sdks": [
+      {"name": "vitepress-plugin-llms", "url": "https://github.com/okineadev/vitepress-plugin-llms", "date": "2026", "evidence": "THIN"},
+      {"name": "docusaurus-plugin-llms", "url": "https://github.com/rachfop/docusaurus-plugin-llms", "date": "2026", "evidence": "THIN"},
+      {"name": "llms-txt-php", "url": "https://github.com/raphaelstolt/llms-txt-php", "date": "2026", "evidence": "THIN"},
+      {"name": "server-llm-txt (MCP server that fetches/searches llms.txt files)", "url": "https://github.com/mcp-get/community-servers/tree/main/src/server-llm-txt", "date": "2026", "evidence": "THIN"}
+    ],
+    "validators": [],
+    "registries": [
+      {"name": "llmstxt.site", "url": "https://llmstxt.site/", "date": "2026", "evidence": "THIN"},
+      {"name": "directory.llmstxt.cloud", "url": "https://directory.llmstxt.cloud/", "date": "2026", "evidence": "THIN"},
+      {"name": "llmstxthub.com", "url": "https://llmstxthub.com/", "date": "2026", "evidence": "THIN"}
+    ],
+    "adopters": [
+      {"name": "FastHTML / Answer.AI docs (reference implementation cited by the spec itself)", "url": "https://www.fastht.ml/docs/llms.txt", "date": "2026", "evidence": "VERIFIED"}
+    ]
+  },
+  "agents-md": {
+    "implementations": [
+      {"name": "OpenAI Codex", "url": "https://openai.com/codex/", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Amp", "url": "https://ampcode.com/", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Google Jules", "url": "https://jules.google/", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Cursor", "url": "https://cursor.com/", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Factory", "url": "https://factory.ai/", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Devin (Cognition)", "url": "https://devin.ai/", "date": "2026", "evidence": "REPORTED"},
+      {"name": "Aider", "url": "https://aider.chat/docs/usage/conventions.html#always-load-conventions", "date": "2026", "evidence": "REPORTED"},
+      {"name": "goose (Block)", "url": "https://github.com/block/goose", "date": "2026", "evidence": "REPORTED"},
+      {"name": "VS Code", "url": "https://code.visualstudio.com/docs/editor/artificial-intelligence", "date": "2026", "evidence": "REPORTED"},
+      {"name": "Zed", "url": "https://zed.dev/docs/ai/rules", "date": "2026", "evidence": "REPORTED"},
+      {"name": "Windsurf (Cognition)", "url": "https://windsurf.com/", "date": "2026", "evidence": "REPORTED"},
+      {"name": "GitHub Copilot coding agent", "url": "https://gh.io/coding-agent-docs", "date": "2026", "evidence": "REPORTED"},
+      {"name": "Warp", "url": "https://docs.warp.dev/knowledge-and-collaboration/rules#project-scoped-rules-1", "date": "2026", "evidence": "REPORTED"},
+      {"name": "JetBrains Junie", "url": "https://jetbrains.com/junie", "date": "2026", "evidence": "REPORTED"},
+      {"name": "RooCode", "url": "https://roocode.com/", "date": "2026", "evidence": "REPORTED"},
+      {"name": "Augment Code", "url": "https://docs.augmentcode.com/cli/overview", "date": "2026", "evidence": "REPORTED"},
+      {"name": "Kilo Code", "url": "https://kilocode.ai/", "date": "2026", "evidence": "REPORTED"},
+      {"name": "opencode", "url": "https://opencode.ai/docs/rules/", "date": "2026", "evidence": "REPORTED"}
+    ],
+    "sdks": [],
+    "validators": [],
+    "registries": [
+      {"name": "GitHub code search (path:AGENTS.md NOT is:fork NOT is:archived) — self-reported 60k+ results", "url": "https://github.com/search?q=path%3AAGENTS.md+NOT+is%3Afork+NOT+is%3Aarchived&type=code", "date": "2026", "evidence": "REPORTED"}
+    ],
+    "adopters": [
+      {"name": "openai/codex", "url": "https://github.com/openai/codex/blob/-/AGENTS.md", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "apache/airflow", "url": "https://github.com/apache/airflow/blob/-/AGENTS.md", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "temporalio/sdk-java", "url": "https://github.com/temporalio/sdk-java/blob/-/AGENTS.md", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "PlutoLang/Pluto", "url": "https://github.com/PlutoLang/Pluto/blob/-/AGENTS.md", "date": "2026", "evidence": "VERIFIED"}
+    ]
+  },
+  "okf": {
+    "implementations": [
+      {"name": "Google Cloud Knowledge Catalog (updated to ingest and serve OKF to agents)", "url": "https://cloud.google.com/blog/products/data-analytics/introducing-the-google-cloud-knowledge-catalog", "date": "2026", "evidence": "REPORTED"},
+      {"name": "Reference enrichment agent (BigQuery-to-OKF, proof of concept)", "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format", "date": "2026-08", "evidence": "VERIFIED"},
+      {"name": "Static HTML graph visualizer (Cytoscape.js + marked, proof of concept)", "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format", "date": "2026-08", "evidence": "VERIFIED"}
+    ],
+    "sdks": [],
+    "validators": [],
+    "registries": [],
+    "adopters": [
+      {"name": "GA4 e-commerce sample bundle (Google-produced)", "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format", "date": "2026-08", "evidence": "VERIFIED"},
+      {"name": "Stack Overflow sample bundle (Google-produced)", "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format", "date": "2026-08", "evidence": "VERIFIED"},
+      {"name": "Bitcoin public-dataset sample bundle (Google-produced)", "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format", "date": "2026-08", "evidence": "VERIFIED"}
+    ]
+  },
+  "vercel-agent-readability": {
+    "implementations": [
+      {"name": "agent-ready.dev (scores sites against the Vercel Agent Readability Spec and llmstxt.org)", "url": "https://agent-ready.dev/", "date": "2026", "evidence": "REPORTED"},
+      {"name": "is-agentic.com (separate agent-readiness scoring API referenced in Vercel's own follow-up guide)", "url": "https://vercel.com/kb/guide/make-your-site-readable-by-ai-agents", "date": "2026", "evidence": "THIN"}
+    ],
+    "sdks": [],
+    "validators": [],
+    "registries": [],
+    "adopters": []
+  },
+  "agents-json": {
+    "implementations": [
+      {"name": "Wildcard Bridge (Python reference runtime: load, parse, run agents.json flows)", "url": "https://github.com/wild-card-ai/agents-json", "date": "2026-08", "evidence": "VERIFIED"}
+    ],
+    "sdks": [
+      {"name": "Wildcard Bridge Python package", "url": "https://github.com/wild-card-ai/agents-json", "date": "2026-08", "evidence": "VERIFIED"}
+    ],
+    "validators": [],
+    "registries": [
+      {"name": "Wildcard agents.json registry (discretionary listing maintained by Wildcard)", "url": "https://wild-card.ai/registry", "date": "2026", "evidence": "THIN"}
+    ],
+    "adopters": [
+      {"name": "Resend demo agent", "url": "https://demo.wild-card.ai/resend", "date": "2026", "evidence": "THIN"},
+      {"name": "Stripe demo agent", "url": "https://demo.wild-card.ai/stripe", "date": "2026", "evidence": "THIN"},
+      {"name": "Rootly demo agent", "url": "https://demo.wild-card.ai/rootly", "date": "2026", "evidence": "THIN"},
+      {"name": "Google Sheets demo agent", "url": "https://demo.wild-card.ai/googlesheets", "date": "2026", "evidence": "THIN"}
+    ]
+  },
+  "agents-txt": {
+    "implementations": [],
+    "sdks": [],
+    "validators": [],
+    "registries": [],
+    "adopters": []
+  },
+  "ai-txt": {
+    "implementations": [
+      {"name": "aitxt.ing (unrelated content-description product using the same filename)", "url": "https://aitxt.ing/", "date": "2026", "evidence": "THIN"}
+    ],
+    "sdks": [],
+    "validators": [],
+    "registries": [],
+    "adopters": []
+  }
+}

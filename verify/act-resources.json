@@ -1,0 +1,140 @@
+{
+  "mcp": {
+    "implementations": [
+      {"name": "Claude / Claude Desktop (Anthropic)", "url": "https://modelcontextprotocol.io/docs/extensions/apps", "date": "2026", "evidence": "VERIFIED", "note": "Listed as a supporting host for the MCP Apps extension"},
+      {"name": "VS Code GitHub Copilot", "url": "https://modelcontextprotocol.io/docs/extensions/apps", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Microsoft 365 Copilot", "url": "https://modelcontextprotocol.io/docs/extensions/apps", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "OpenAI ChatGPT / Codex (Plugins, formerly Apps SDK)", "url": "https://developers.openai.com/plugins/concepts/mcp-server", "date": "2026", "evidence": "VERIFIED"}
+    ],
+    "sdks": [
+      {"name": "TypeScript SDK (Tier 1)", "url": "https://github.com/modelcontextprotocol/typescript-sdk", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Python SDK (Tier 1)", "url": "https://github.com/modelcontextprotocol/python-sdk", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "C# SDK (Tier 1)", "url": "https://github.com/modelcontextprotocol/csharp-sdk", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Go SDK (Tier 1)", "url": "https://github.com/modelcontextprotocol/go-sdk", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Rust SDK (Tier 1)", "url": "https://github.com/modelcontextprotocol/rust-sdk", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Java SDK (Tier 2)", "url": "https://github.com/modelcontextprotocol/java-sdk", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Ruby SDK (Tier 2)", "url": "https://github.com/modelcontextprotocol/ruby-sdk", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Swift SDK (Tier 3)", "url": "https://github.com/modelcontextprotocol/swift-sdk", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "PHP SDK (Tier 3)", "url": "https://github.com/modelcontextprotocol/php-sdk", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Kotlin SDK (Tier 3)", "url": "https://github.com/modelcontextprotocol/kotlin-sdk", "date": "2026", "evidence": "VERIFIED"}
+    ],
+    "validators": [
+      {"name": "MCP Inspector", "url": "https://modelcontextprotocol.io/docs/extensions/apps", "date": "2026", "evidence": "THIN", "note": "Referenced across MCP docs as the standard debugging/inspection tool for MCP servers; not independently fetched in this pass"}
+    ],
+    "registries": [
+      {"name": "MCP Registry (official)", "url": "https://github.com/modelcontextprotocol/registry", "date": "2026-09", "evidence": "VERIFIED", "note": "7.2k GitHub stars, 979 forks at time of check"}
+    ],
+    "adopters": [
+      {"name": "OpenAI (ChatGPT desktop app, then ChatGPT apps)", "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol", "date": "2025-03", "evidence": "VERIFIED"},
+      {"name": "Google DeepMind", "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol", "date": "2025", "evidence": "REPORTED"},
+      {"name": "Microsoft (Semantic Kernel, Azure OpenAI integration)", "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol", "date": "2026", "evidence": "REPORTED"}
+    ]
+  },
+  "agent-client-protocol": {
+    "implementations": [
+      {"name": "Zed editor", "url": "https://agentclientprotocol.com/get-started/introduction", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "JetBrains IDEs", "url": "https://agentclientprotocol.com/updates", "date": "2026-02-18", "evidence": "VERIFIED", "note": "JetBrains' Sergey Ignatov joined as Lead Maintainer, reflecting Zed/JetBrains collaboration on ACP"},
+      {"name": "Goose (Block)", "url": "https://agentclientprotocol.com/updates", "date": "2026-04-22", "evidence": "REPORTED", "note": "Alex Hancock (Block/Goose) co-leads the Transports Working Group"}
+    ],
+    "sdks": [
+      {"name": "Rust SDK (v1.0)", "url": "https://agentclientprotocol.com/updates", "date": "2026-06-25", "evidence": "VERIFIED"},
+      {"name": "TypeScript SDK (v1.0)", "url": "https://agentclientprotocol.com/updates", "date": "2026-06-25", "evidence": "VERIFIED"}
+    ],
+    "validators": [],
+    "registries": [
+      {"name": "ACP Registry", "url": "https://agentclientprotocol.com/updates", "date": "2026-03-09", "evidence": "VERIFIED", "note": "Standard way for ACP clients to discover, install, and configure compatible agents"}
+    ],
+    "adopters": []
+  },
+  "webmcp": {
+    "implementations": [
+      {"name": "Google Chrome (origin trial, from Chrome 149)", "url": "https://developer.chrome.com/docs/ai/webmcp", "date": "2026-08-07", "evidence": "VERIFIED"}
+    ],
+    "sdks": [],
+    "validators": [
+      {"name": "Model Context Tool Inspector (Chrome extension)", "url": "https://developer.chrome.com/docs/ai/webmcp", "date": "2026-08-07", "evidence": "VERIFIED", "note": "Lets developers imitate agent chat and manually call/verify WebMCP tools on a page"}
+    ],
+    "registries": [],
+    "adopters": [
+      {"name": "GoogleChromeLabs demo suite (webmcp-tools)", "url": "https://developer.chrome.com/docs/ai/webmcp", "date": "2026-08-07", "evidence": "VERIFIED", "note": "Pizza maker, React flight-search, and French bistro demo apps"}
+    ]
+  },
+  "nlweb": {
+    "implementations": [
+      {"name": "NLWeb reference implementation (Python)", "url": "https://github.com/nlweb-ai/NLWeb", "date": "2026", "evidence": "VERIFIED"}
+    ],
+    "sdks": [],
+    "validators": [],
+    "registries": [
+      {"name": "AgentFinder (agent discovery service within the NLWeb repo)", "url": "https://github.com/nlweb-ai/NLWeb", "date": "2026", "evidence": "THIN", "note": "Listed as a repository module; not independently verified as a live, hosted registry"}
+    ],
+    "adopters": []
+  },
+  "anthropic-agent-skills-format": {
+    "implementations": [
+      {"name": "Claude Code", "url": "https://agentskills.io", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Claude.ai", "url": "https://agentskills.io", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Cursor", "url": "https://agentskills.io", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "GitHub Copilot", "url": "https://agentskills.io", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "VS Code", "url": "https://agentskills.io", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Gemini CLI", "url": "https://agentskills.io", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "ChatGPT & Codex", "url": "https://agentskills.io", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "JetBrains Junie", "url": "https://agentskills.io", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Amp", "url": "https://agentskills.io", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "OpenHands", "url": "https://agentskills.io", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Goose (Block)", "url": "https://agentskills.io", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Roo Code", "url": "https://agentskills.io", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "OpenCode", "url": "https://agentskills.io", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Factory", "url": "https://agentskills.io", "date": "2026", "evidence": "VERIFIED"}
+    ],
+    "sdks": [],
+    "validators": [
+      {"name": "skills-ref", "url": "https://agentskills.io/specification", "date": "2026", "evidence": "VERIFIED", "note": "Reference validation library; `skills-ref validate ./my-skill` checks frontmatter and naming conventions"}
+    ],
+    "registries": [],
+    "adopters": [
+      {"name": "Snowflake Cortex Code", "url": "https://agentskills.io", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Databricks Genie Code", "url": "https://agentskills.io", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "Spring AI", "url": "https://agentskills.io", "date": "2026", "evidence": "VERIFIED"}
+    ]
+  },
+  "openai-apps-sdk-manifests": {
+    "implementations": [
+      {"name": "OpenAI ChatGPT (Plugins)", "url": "https://developers.openai.com/plugins/concepts/mcp-server", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "OpenAI Codex", "url": "https://developers.openai.com/plugins", "date": "2026", "evidence": "VERIFIED"}
+    ],
+    "sdks": [
+      {"name": "MCP Python SDK (recommended)", "url": "https://github.com/modelcontextprotocol/python-sdk", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "MCP TypeScript SDK (recommended)", "url": "https://github.com/modelcontextprotocol/typescript-sdk", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "@openai/apps-sdk-ui (optional component library)", "url": "https://openai.github.io/apps-sdk-ui/", "date": "2026", "evidence": "REPORTED", "note": "Linked from developers.openai.com/plugins/build/chatgpt-ui; not independently fetched"}
+    ],
+    "validators": [],
+    "registries": [
+      {"name": "ChatGPT plugin directory (submission/review)", "url": "https://developers.openai.com/plugins/deploy/submission", "date": "2026", "evidence": "THIN"}
+    ],
+    "adopters": [
+      {"name": "openai-apps-sdk-examples (Pizzaz component gallery)", "url": "https://developers.openai.com/plugins/build/chatgpt-ui", "date": "2026", "evidence": "REPORTED", "note": "OpenAI's own example repository, referenced but not independently fetched"}
+    ]
+  },
+  "adcp": {
+    "implementations": [
+      {"name": "Prebid Sales Agent (community example, Prebid working group)", "url": "https://docs.adcontextprotocol.org/", "date": "2026", "evidence": "VERIFIED", "note": "Explicitly labeled a community example, not a maintained reference implementation, per AdCP's own docs"}
+    ],
+    "sdks": [
+      {"name": "@adcp/sdk (JavaScript/TypeScript, npm)", "url": "https://docs.adcontextprotocol.org/", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "adcp (Python, PyPI)", "url": "https://docs.adcontextprotocol.org/", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "adcp-go (Go)", "url": "https://docs.adcontextprotocol.org/", "date": "2026", "evidence": "VERIFIED"}
+    ],
+    "validators": [
+      {"name": "Addie (chat-based protocol tester)", "url": "https://docs.adcontextprotocol.org/", "date": "2026", "evidence": "VERIFIED", "note": "adcontextprotocol.org/chat — ask questions and test AdCP tasks with no code"},
+      {"name": "Brand.json builder", "url": "https://docs.adcontextprotocol.org/", "date": "2026", "evidence": "VERIFIED"},
+      {"name": "AdAgents.json builder/validator", "url": "https://docs.adcontextprotocol.org/", "date": "2026", "evidence": "VERIFIED"}
+    ],
+    "registries": [
+      {"name": "AgenticAdvertising.org Registry", "url": "https://docs.adcontextprotocol.org/", "date": "2026", "evidence": "VERIFIED", "note": "Resolves brands/publishers to AdCP agent endpoints by capability, category, or geography"}
+    ],
+    "adopters": [
+      {"name": "StreamHaus (illustrative example publisher in AdCP's own walkthrough docs)", "url": "https://docs.adcontextprotocol.org/", "date": "2026", "evidence": "THIN", "note": "Used only as a narrative example in the documentation walkthrough; not confirmed as a real production adopter"}
+    ]
+  }
+}

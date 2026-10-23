@@ -7,8 +7,8 @@
   "from": "2026-10-20T21:30:57Z",
   "to": "2026-10-21T21:00:00Z"
  },
- "headline": "IETF DAWN Agent Discovery Framework reaches revision -09; Cloudflare introduces full-transaction WAF inspection",
- "lede": "At the IETF, the DAWN Agent Discovery Framework published draft revision -09 extending expiration to 24 April 2027, while the Python a2a-sdk shipped v1.2.3 on PyPI. Cloudflare also announced full-transaction WAF detection correlating HTTP requests with origin responses.",
+ "headline": "IETF DAWN Agent Discovery Framework reaches revision -09",
+ "lede": "At the IETF, the DAWN Agent Discovery Framework published draft revision -09 extending its active review window to 24 April 2027, while the Python a2a-sdk shipped v1.2.3 on PyPI.",
  "items": [
   {
    "id": "2026-10-21-1",
@@ -28,31 +28,6 @@
      "url": "https://datatracker.ietf.org/doc/html/draft-zhang-dawn-agent-discovery-framework-09",
      "title": "draft-zhang-dawn-agent-discovery-framework-09 - IETF Datatracker",
      "publisher": "datatracker.ietf.org",
-     "published": "2026-10-21",
-     "label": "VERIFIED",
-     "fetched": true
-    }
-   ],
-   "stats": []
-  },
-  {
-   "id": "2026-10-21-2",
-   "title": "Cloudflare introduces full-transaction WAF detection across requests and responses",
-   "body": "Cloudflare announced full-transaction detection in its Web Application Firewall, correlating inbound HTTP requests with outbound origin responses to detect data exposure and misconfigurations that request-only inspection misses.",
-   "why_it_matters": "Origins serving agent manifests and MCP endpoints behind Cloudflare WAF should verify that response-correlated rules do not false-positive on structured JSON-RPC or Markdown twin payloads.",
-   "kind": "security",
-   "related": [
-    {
-     "id": "cloudflare-content-signals-policy",
-     "name": "Cloudflare Content Signals Policy",
-     "url": "https://agenticweb.wiki/protocols/cloudflare-content-signals-policy/"
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://blog.cloudflare.com/full-transaction-waf/",
-     "title": "Introducing full transaction detection for Cloudflare WAF",
-     "publisher": "blog.cloudflare.com",
      "published": "2026-10-21",
      "label": "VERIFIED",
      "fetched": true

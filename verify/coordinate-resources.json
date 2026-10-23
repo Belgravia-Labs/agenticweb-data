@@ -1,0 +1,88 @@
+{
+  "a2a": {
+    "implementations": [
+      {"name": "a2a-python (reference SDK)", "url": "https://github.com/a2aproject/a2a-python", "date": "2026-09-05", "evidence": "VERIFIED"},
+      {"name": "a2a-go", "url": "https://github.com/a2aproject/a2a-go", "date": "2026-09-05", "evidence": "VERIFIED"},
+      {"name": "a2a-js", "url": "https://github.com/a2aproject/a2a-js", "date": "2026-09-05", "evidence": "VERIFIED"},
+      {"name": "a2a-java", "url": "https://github.com/a2aproject/a2a-java", "date": "2026-09-05", "evidence": "VERIFIED"},
+      {"name": "a2a-dotnet", "url": "https://github.com/a2aproject/a2a-dotnet", "date": "2026-09-05", "evidence": "VERIFIED"},
+      {"name": "a2a-rs (Rust)", "url": "https://github.com/a2aproject/a2a-rs", "date": "2026-09-05", "evidence": "VERIFIED"}
+    ],
+    "sdks": [
+      {"name": "a2a-sdk (PyPI)", "url": "https://pypi.org/project/a2a-sdk", "date": "2026-09-05", "evidence": "VERIFIED"},
+      {"name": "@a2a-js/sdk (npm)", "url": "https://github.com/a2aproject/a2a-js", "date": "2026-09-05", "evidence": "VERIFIED"},
+      {"name": "A2A (.NET NuGet)", "url": "https://www.nuget.org/packages/A2A", "date": "2026-09-05", "evidence": "REPORTED"}
+    ],
+    "validators": [],
+    "registries": [],
+    "adopters": [
+      {"name": "150+ supporting organizations (claimed by the A2A project at its one-year mark)", "url": "https://www.prnewswire.com/news-releases/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year-302737641.html", "date": "2026-04-09", "evidence": "VERIFIED", "note": "Named landing partners include major cloud platforms per the release; this is a claimed count, not an independently measured probe."}
+    ]
+  },
+  "agent-communication-protocol": {
+    "implementations": [
+      {"name": "i-am-bee/acp (archived reference server)", "url": "https://github.com/i-am-bee/acp", "date": "2026-09-05", "evidence": "VERIFIED"}
+    ],
+    "sdks": [
+      {"name": "acp-sdk (PyPI)", "url": "https://pypi.org/project/acp-sdk", "date": "2026-09-05", "evidence": "REPORTED"},
+      {"name": "acp-sdk (npm)", "url": "https://www.npmjs.com/package/acp-sdk", "date": "2026-09-05", "evidence": "REPORTED"}
+    ],
+    "validators": [],
+    "registries": [],
+    "adopters": [
+      {"name": "IBM BeeAI Platform (historical, prior to migration to A2A)", "url": "https://github.com/i-am-bee/beeai-platform", "date": "2026-09-05", "evidence": "REPORTED"}
+    ]
+  },
+  "agtp": {
+    "implementations": [],
+    "sdks": [],
+    "validators": [],
+    "registries": [],
+    "adopters": []
+  },
+  "anp": {
+    "implementations": [
+      {"name": "agent-network-protocol/AgentNetworkProtocol (specification repository)", "url": "https://github.com/agent-network-protocol/AgentNetworkProtocol", "date": "2026-09-05", "evidence": "VERIFIED"}
+    ],
+    "sdks": [],
+    "validators": [],
+    "registries": [],
+    "adopters": []
+  },
+  "agora-protocol": {
+    "implementations": [
+      {"name": "agora-protocol/paper-demo (original paper demo, 100-agent network)", "url": "https://github.com/agora-protocol/paper-demo", "date": "2026-09-05", "evidence": "VERIFIED"},
+      {"name": "agora-protocol/python (Python library)", "url": "https://raw.githubusercontent.com/agora-protocol/paper-demo/main/README.md", "date": "2026-09-05", "evidence": "REPORTED", "note": "Referenced from paper-demo README as 'our Python library'; repo itself not independently fetched."}
+    ],
+    "sdks": [],
+    "validators": [],
+    "registries": [],
+    "adopters": []
+  },
+  "agora-commerce-protocol": {
+    "implementations": [
+      {"name": "Agora API (agoraproto.org, testnet)", "url": "https://api.agoraproto.org/v1/openapi.json", "date": "2026-05-25", "evidence": "VERIFIED"}
+    ],
+    "sdks": [],
+    "validators": [
+      {"name": "AgoraEscrow.sol V1 external security audit (2026-05-27, self-disclosed weaknesses)", "url": "https://api.agoraproto.org/.well-known/ai-services.json", "date": "2026-05-27", "evidence": "VERIFIED", "note": "Audit report referenced as /contracts/SECURITY_REVIEW.md in the project's own manifest; the manifest itself, not the underlying report file, was fetched."}
+    ],
+    "registries": [],
+    "adopters": []
+  },
+  "slim": {
+    "implementations": [
+      {"name": "agntcy/slim (Rust core, data plane / session layer / control plane)", "url": "https://github.com/agntcy/slim", "date": "2026-09-05", "evidence": "VERIFIED"}
+    ],
+    "sdks": [
+      {"name": "slim-bindings (Python, Go, .NET, Java, Kotlin)", "url": "https://github.com/agntcy/slim-bindings", "date": "2026-09-05", "evidence": "REPORTED"},
+      {"name": "slim-a2a-python (A2A-over-SLIM integration)", "url": "https://raw.githubusercontent.com/agntcy/slim/main/README.md", "date": "2026-09-05", "evidence": "REPORTED"},
+      {"name": "slim-mcp-python (MCP-over-SLIM integration)", "url": "https://raw.githubusercontent.com/agntcy/slim/main/README.md", "date": "2026-09-05", "evidence": "REPORTED"}
+    ],
+    "validators": [],
+    "registries": [],
+    "adopters": [
+      {"name": "AGNTCY formative members: Cisco, Dell Technologies, Google Cloud, Oracle, Red Hat", "url": "https://www.techzine.eu/blogs/infrastructure/133408/cisco-donates-agntcy-to-linux-foundation-internet-of-agents-on-its-way/", "date": "2026-09-05", "evidence": "REPORTED", "note": "Reported by secondary tech press coverage of the Linux Foundation welcome announcement, not the LF press release itself (that URL returned no crawlable body in this session)."}
+    ]
+  }
+}

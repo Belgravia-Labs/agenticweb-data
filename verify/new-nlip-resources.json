@@ -1,0 +1,67 @@
+{
+ "nlip": {
+  "implementations": [
+   {
+    "name": "nlip_server (Python, FastAPI-based reference server implementation)",
+    "url": "https://github.com/nlip-project/nlip_server",
+    "date": null,
+    "evidence": "VERIFIED"
+   },
+   {
+    "name": "nlip_sdk (Python, message/submessage abstractions and factory)",
+    "url": "https://github.com/nlip-project/nlip_sdk",
+    "date": null,
+    "evidence": "VERIFIED"
+   },
+   {
+    "name": "nlip_soln (Python, example chatbot and integrator server solutions built on nlip_server)",
+    "url": "https://github.com/nlip-project/nlip_soln",
+    "date": null,
+    "evidence": "VERIFIED"
+   },
+   {
+    "name": "nlip_web (Python/FastAPI + JavaScript demo web server and client for product search and chat)",
+    "url": "https://github.com/nlip-project/nlip_web",
+    "date": "2025-12-02",
+    "evidence": "VERIFIED"
+   }
+  ],
+  "sdks": [
+   {
+    "name": "nlip_sdk (PyPI package, message model)",
+    "url": "https://pypi.org/project/nlip_sdk/",
+    "date": "2026-06-24",
+    "evidence": "VERIFIED"
+   },
+   {
+    "name": "nlip-server (PyPI package, FastAPI server abstractions)",
+    "url": "https://pypi.org/project/nlip-server/",
+    "date": "2026-06-24",
+    "evidence": "VERIFIED"
+   }
+  ],
+  "validators": [],
+  "registries": [
+   {
+    "name": "nlip-project GitHub organisation (21 public repos, incl. ecma_draft, documents, security_guidelines, nlip_spec)",
+    "url": "https://github.com/nlip-project",
+    "date": null,
+    "evidence": "VERIFIED"
+   }
+  ],
+  "adopters": [
+   {
+    "name": "Enterprise Neurosystem (incubating community; states its members will use NLIP in production deployments)",
+    "url": "https://medium.com/the-enterprise-neurosystem-blog/exciting-news-for-the-natural-language-interaction-protocol-nlip-and-its-impact-on-implementing-b7e673ac4713",
+    "date": "2026-01-05",
+    "evidence": "VERIFIED"
+   },
+   {
+    "name": "Red Hat (Sanjay Aiyagari, Telco CTO Office) - proposed NLIP-based security approach for IoT devices, NDSS Symposium session",
+    "url": "https://www.ndss-symposium.org/ndss-paper/auto-draft-732/",
+    "date": "2026-02-19",
+    "evidence": "REPORTED"
+   }
+  ]
+ }
+}

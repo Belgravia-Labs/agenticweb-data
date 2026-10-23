@@ -1,0 +1,716 @@
+[
+ {
+  "id": "erc-8004",
+  "name": "ERC-8004: Trustless Agents",
+  "acronym": "ERC-8004",
+  "aliases": [
+   "Trustless Agents"
+  ],
+  "collisions": [],
+  "step": "identify",
+  "parties": [
+   "agent-registry",
+   "agent-agent"
+  ],
+  "form": "onchain-registry",
+  "track": "community",
+  "scope": "general",
+  "question": "Who is an agent, and what onchain identity, reputation and validation record does it carry?",
+  "analog": "DNS plus a public review/reputation ledger",
+  "origin": {
+   "org": "Ethereum community (De Rossi, Crapis, Ellis, Reppel)",
+   "date": "2025-08-13"
+  },
+  "governance": "Ethereum EIP process; no formal steward until finalized",
+  "native_status": "Draft Standards Track ERC",
+  "phase": "draft",
+  "implementation": "multi-implementation",
+  "adoption": {
+   "level": "claimed",
+   "by": "Forbes (2026-02-05) citing community trackers; community-maintained awesome-erc8004 deployment list",
+   "probe_run": null
+  },
+  "version": {
+   "label": "Draft ERC, created 2025-08-13; Identity and Reputation Registries live on Ethereum mainnet since 2026-01-29",
+   "date": "2025-08-13"
+  },
+  "spec_url": "https://eips.ethereum.org/EIPS/eip-8004",
+  "discovery": {
+   "mechanism": "ERC-721 Identity Registry token (agentId) resolves via agentURI to a JSON agent registration file; optional HTTPS domain proof at a fixed well-known path",
+   "path": "/.well-known/agent-registration.json"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "https://{endpoint-domain}/.well-known/agent-registration.json",
+   "parse": "JSON body has a registrations[] entry whose agentRegistry (eip155:{chainId}:{identityRegistry}) and agentId match the onchain agent being checked",
+   "on_absent": "Endpoint-domain control is not proven by this optional file; the agent's core identity may still be valid via the onchain agentURI directly (a JSON file at any URI scheme, not necessarily HTTPS at this path)"
+  },
+  "evidence": [
+   {
+    "claim": "EIP-8004 defines three per-chain singleton registries (Identity, Reputation, Validation) and the JSON agent registration file format, including the optional /.well-known/agent-registration.json domain-verification file",
+    "label": "VERIFIED",
+    "url": "https://eips.ethereum.org/EIPS/eip-8004",
+    "date": "2025-08-13"
+   },
+   {
+    "claim": "Identity Registry (0x8004A169FB4a3325136EB29fA0ceB6D2e539a432) and Reputation Registry (0x8004BAa17C55a88189AE136b182e5fdA19dE9b63) deployed at identical addresses on Ethereum mainnet since 29 Jan 2026, after ~3 months of testnet use (10,000+ agents, 20,000+ feedback entries reported)",
+    "label": "VERIFIED",
+    "url": "https://www.forbes.com/sites/digital-assets/2026/02/05/ai-agents-gain-trust-via-ethereum-erc-8004-on-mainnet/",
+    "date": "2026-02-05"
+   },
+   {
+    "claim": "Community-maintained tracker lists the same two contract addresses deployed identically across 16+ EVM chains (Base, Arbitrum, Optimism, Polygon, etc.) and documents the Validation Registry as still under active revision, unlike the finalized Identity/Reputation contracts",
+    "label": "REPORTED",
+    "url": "https://github.com/sudeepb02/awesome-erc8004",
+    "date": null
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": {
+   "summary": "The Validation Registry (stake/zkML/TEE-backed independent checking) is not finalized while Identity and Reputation are; adoption is reported by trackers and press, not independently counted by us.",
+   "claims": [
+    "Forbes and community trackers describe mainnet deployment as of 2026-01-29, but this is not an IETF/W3C-style finalized standard \u2014 it remains a Draft ERC.",
+    "getSummary() reputation reads require an explicit non-empty clientAddresses filter specifically because unfiltered aggregation is vulnerable to Sybil/spam feedback, per the spec's own Security Considerations."
+   ]
+  },
+  "summary_md": "ERC-8004 (\"Trustless Agents\") is a draft Ethereum standard that gives autonomous agents a portable, onchain identity plus pluggable trust signals, so that agents from different organizations can discover and transact with one another without a pre-existing relationship [1]. It defines three per-chain singleton registries: an Identity Registry (an ERC-721 token whose tokenURI, here called agentURI, points to a JSON registration file listing the agent's name, description and service endpoints \u2014 A2A agent cards, MCP endpoints, ENS names, DIDs, wallets); a Reputation Registry (a standard interface for clients to post signed numeric feedback, with onchain filtering by reviewer and tag to blunt Sybil attacks); and a Validation Registry (generic hooks for requesting and recording independent checks of an agent's work, e.g. by staked re-execution, zkML proofs, or TEE attestations) [1].\n\nIt solves discovery-plus-trust for cross-organizational agent economies: MCP and A2A cover how an agent is invoked and how it advertises skills, but neither defines a portable identity an unrelated party can look up and score [1]. ERC-8004 does not itself define payments (it notes x402 as a complementary, orthogonal protocol), does not prescribe how validation is actually computed (that is left to competing validator networks), and \u2014 by the authors' own admission \u2014 cannot cryptographically guarantee that an agent's advertised capabilities are functional or non-malicious; it only anchors identity and makes trust signals public and structured [1].\n\nCurrent state: still a Draft ERC (no EIP number finalization; created 2025-08-13) [1]. The Identity and Reputation Registry contracts went live on Ethereum mainnet on 2026-01-29 at deterministic addresses (0x8004A169... and 0x8004BAa1...), following roughly three months of testnet activity reported at over 10,000 registered agents and 20,000 feedback entries [2]. A community-maintained tracker shows the same two contracts redeployed at identical addresses across at least 16 EVM chains (Base, Arbitrum, Optimism, Polygon, Avalanche, and others), while listing the Validation Registry as still under active revision rather than finalized [3]. Reference implementations and a client-side verification dApp (AtlasNexus Verify) are cited by the same tracker [3].\n\nImplementers: the reference implementation repository (erc8004/reference-implementation), the coordinating site 8004.org, and independent tooling such as AtlasNexus Verify [2][3]. The EIP requires EIP-155, EIP-712, EIP-721 and EIP-1271 as building blocks [1].\n\nDisputed or unknown: adoption figures (10,000+ agents, 20,000+ feedback entries) come from press and community trackers, not a probe we ran ourselves, so we label them claimed rather than measured. It is also unresolved whether the Validation Registry will ship as specified or be substantially revised, and whether reputation aggregation across chains will be standardized or remain ad hoc per aggregator [1][3].",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against EIP-8004 primary text, Forbes mainnet-launch report (2026-02-05), and community deployment tracker (awesome-erc8004)"
+   }
+  ]
+ },
+ {
+  "id": "webbotauth",
+  "name": "Web Bot Auth HTTP Message Signatures",
+  "acronym": "WebBotAuth",
+  "aliases": [
+   "Web Bot Auth",
+   "HTTP Message Signatures for automated traffic"
+  ],
+  "collisions": [],
+  "step": "identify",
+  "parties": [
+   "agent-site"
+  ],
+  "form": "http-header",
+  "track": "ietf",
+  "scope": "general",
+  "question": "Which automated client made this HTTP request, and can the origin verify it cryptographically?",
+  "analog": "Signed User-Agent / client authentication",
+  "origin": {
+   "org": "Thibault Meunier (Cloudflare), Sandor Major (Google)",
+   "date": "2025-04"
+  },
+  "governance": "IETF webbotauth Working Group (chartered; document adopted as a WG item 2026-09-01)",
+  "native_status": "Active Internet-Draft, WG Document, Intended Status: Informational",
+  "phase": "working-group",
+  "implementation": "multi-implementation",
+  "adoption": {
+   "level": "observed",
+   "by": "Cloudflare (edge verification, verified-bots program) and independent client/server implementations listed in the draft's own appendix",
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-ietf-webbotauth-httpsig-protocol-00, adopted by the webbotauth WG, last updated 2026-09-01 (supersedes the individual draft-meunier-webbotauth-httpsig-protocol-00 of 2026-06-26)",
+   "date": "2026-09-01"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/draft-ietf-webbotauth-httpsig-protocol/",
+  "discovery": {
+   "mechanism": "Signature-Agent HTTP header points to a key directory; the directory is fetched from a fixed well-known path",
+   "path": "/.well-known/http-message-signatures-directory"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "https://{origin}/.well-known/http-message-signatures-directory",
+   "parse": "200 response with Content-Type: application/http-message-signatures-directory+json and a JWKS body ({\"keys\":[...]}), itself signed with a Signature/Signature-Input pair tagged http-message-signatures-directory",
+   "on_absent": "No published key directory; the origin cannot verify Web Bot Auth signatures from this Signature-Agent identity"
+  },
+  "evidence": [
+   {
+    "claim": "The protocol defines the Signature-Agent header (profiling RFC 9421's Signature-Input/Signature fields) for in-band key discovery, and a well-known URI serving a JWKS-based key directory",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-meunier-webbotauth-httpsig-protocol-00",
+    "date": "2026-06-26"
+   },
+   {
+    "claim": "As of 2026-09-01 the document was adopted by the IETF webbotauth Working Group as draft-ietf-webbotauth-httpsig-protocol-00, superseding the individual submission",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-ietf-webbotauth-httpsig-protocol/",
+    "date": "2026-09-01"
+   },
+   {
+    "claim": "Cloudflare verifies Web Bot Auth signatures at the edge as part of its Verified Bots program, requiring the key directory at /.well-known/http-message-signatures-directory and specific Signature-Input parameters (tag=web-bot-auth, keyid, created, expires)",
+    "label": "VERIFIED",
+    "url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/",
+    "date": "2026-07-01"
+   },
+   {
+    "claim": "The draft's own appendix lists independent public client implementations (Chrome MV3 and Cloudflare Workers/Rust libraries by Cloudflare, a Puppeteer example, a Guzzle/PHP middleware, Python scripts) and server implementations (Cloudflare Workers, a Caddy plugin, an Apache module)",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-meunier-webbotauth-httpsig-protocol-00",
+    "date": "2026-06-26"
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": null,
+  "summary_md": "Web Bot Auth is an IETF specification that lets an automated HTTP client (a crawler, agent, or bot) cryptographically sign its outbound requests using RFC 9421 HTTP Message Signatures, so the receiving server can verify the client's identity and intent without relying on spoofable signals like the User-Agent string or source IP [1]. A client sends a Signature-Agent header naming where its public keys can be found; the origin resolves that to a JSON Web Key Set served at a fixed well-known path and verifies the request's Signature/Signature-Input fields against it [1].\n\nIt solves bot/agent attribution at the transport layer: an origin can distinguish a signed, identity-bearing automated client from unsigned traffic, and can grant differentiated treatment (rate limits, access, billing) based on a verified identity rather than heuristics [1][3]. It does not define what a client is *authorized* to do once verified (that is left to the origin's own policy), does not cover payment, and does not itself specify how a verifier should be told which identities to trust \u2014 that is the job of the companion Signature Agent Card / registry draft.\n\nCurrent state: originally an individual submission (draft-meunier-webbotauth-httpsig-protocol, first published 2025-04, reaching -00 of the current \"httpsig-protocol\" naming on 2026-06-26). On 2026-09-01 it was formally adopted as a document of the newly chartered IETF **webbotauth** Working Group, republished as draft-ietf-webbotauth-httpsig-protocol-00 [2]. Intended status is Informational, not yet a Working Group last call or RFC.\n\nWho implements it: Cloudflare verifies Web Bot Auth signatures at the edge for its Verified Bots program and publishes an integration guide with the exact required headers and the /.well-known/http-message-signatures-directory path [3]. The draft's own appendix lists further independent implementations: a Chrome MV3 extension and Rust/TypeScript libraries from Cloudflare, a Puppeteer-based client example, a PHP Guzzle middleware, Python scripts, and server-side modules for Caddy and Apache [4]. Cloudflare previously reported signing bots from OpenAI as an early adopter (2025-05-15, per the prior seed research; not independently re-verified in this pass).\n\nDisputed or unknown: the spec's naming and draft numbering have churned repeatedly (it replaces draft-meunier-web-bot-auth-architecture and draft-meunier-webbotauth-httpsig-directory), which makes citing a stable version number difficult; always resolve to the datatracker's \"current\" redirect rather than a pinned draft-NN URL. Adoption beyond Cloudflare's own edge and the listed open-source projects has not been independently counted.",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against draft-meunier-webbotauth-httpsig-protocol-00, its WG-adopted successor draft-ietf-webbotauth-httpsig-protocol-00 (2026-09-01), and Cloudflare's Web Bot Auth integration docs"
+   }
+  ]
+ },
+ {
+  "id": "web-bot-auth-signature-agent-card",
+  "name": "Signature Agent Card (Web Bot Auth registry)",
+  "acronym": "",
+  "aliases": [
+   "Signature Agent Card",
+   "Registry and Signature Agent card for Web bot auth"
+  ],
+  "collisions": [],
+  "step": "identify",
+  "parties": [
+   "agent-site"
+  ],
+  "form": "document-format",
+  "track": "ietf",
+  "scope": "general",
+  "question": "What identity, purpose, rate expectations and cryptographic keys belong to a signed bot?",
+  "analog": "OAuth Dynamic Client Registration metadata / client_id document",
+  "origin": {
+   "org": "Maxime Guerreiro (Cloudflare), Ulas Kirazci (Amazon), Thibault Meunier (Cloudflare)",
+   "date": "2025-09"
+  },
+  "governance": "IETF individual draft, discussed on the web-bot-auth@ietf.org list; not yet adopted by the webbotauth WG (unlike the sibling httpsig-protocol draft)",
+  "native_status": "Active Internet-Draft (individual), Intended Status: Informational",
+  "phase": "draft",
+  "implementation": "prototype",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-meunier-webbotauth-registry-03, 2026-06-26",
+   "date": "2026-06-26"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/draft-meunier-webbotauth-registry/",
+  "discovery": {
+   "mechanism": "jwks_uri client-metadata field (or a plain client_id JSON document) resolvable at a well-known path",
+   "path": "/.well-known/http-message-signatures-directory"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "https://{origin}/.well-known/http-message-signatures-directory",
+   "parse": "JSON object with OAuth Dynamic Client Registration fields (client_id, client_name, client_uri, jwks_uri or jwks, contacts) plus a web_bot_auth extension object (e.g. expected-user-agent, rfc9309-product, trigger, purpose)",
+   "on_absent": "No Signature Agent Card is published; a verifier can still validate the raw signature via the plain key directory but has no machine-readable identity, purpose or rate-limit metadata for the signer"
+  },
+  "evidence": [
+   {
+    "claim": "The draft defines the Signature Agent Card as a JSON metadata document reusing OAuth Dynamic Client Registration Metadata fields extended with a single web_bot_auth object, and registers that object with IANA",
+    "label": "VERIFIED",
+    "url": "https://www.ietf.org/archive/id/draft-meunier-webbotauth-registry-03.html",
+    "date": "2026-06-26"
+   },
+   {
+    "claim": "As of this check the document remains an individual submission (not yet a webbotauth WG document), unlike the sibling httpsig-protocol draft which was WG-adopted on 2026-09-01",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-meunier-webbotauth-registry/",
+    "date": "2026-09-06"
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": {
+   "summary": "The seed record's name implied this was the identity card format only; the draft text shows it also functions as the IANA registry establishment document for the web_bot_auth metadata namespace, and its examples show operators listing multiple bot/platform cards (crawlers, gateways) at a shared discovery path, not just one card per origin.",
+   "claims": [
+    "Whether this draft will be adopted by the webbotauth WG (as its sibling httpsig-protocol draft was) or superseded is not yet resolved."
+   ]
+  },
+  "summary_md": "This draft defines the \"Signature Agent Card\": a JSON metadata document that a Web Bot Auth signer (a crawler, agent, or bot operator) publishes to describe itself \u2014 its identity, purpose, expected request rate, and cryptographic keys [1]. Rather than inventing a new schema, it reuses the OAuth Dynamic Client Registration Metadata field set (client_id, client_name, client_uri, logo_uri, contacts, jwks_uri/jwks) and extends it with a single `web_bot_auth` object (fields observed in the spec include expected-user-agent, an RFC 9309 robots.txt product token, a trigger type such as \"fetcher\", and a purpose such as \"tdm\" for text-and-data-mining) [1]. The same document also formally establishes an IANA registry for that `web_bot_auth` object's members, so third parties can register new fields.\n\nIt solves the metadata gap left by the base Web Bot Auth signature protocol: RFC 9421 signatures and the Signature-Agent header prove *that* a request was signed by a given key, but not *who* holds that key, *why* they are crawling, or *how fast* they intend to request \u2014 this card supplies that context in a machine-readable form at the same well-known path used for the key directory [1]. It does not itself carry the cryptographic proof (that is RFC 9421 plus the base Web Bot Auth protocol) and does not define enforcement \u2014 a site is free to ignore the declared purpose or rate.\n\nCurrent state: an individual Internet-Draft, draft-meunier-webbotauth-registry-03, published 2026-06-26, authored by engineers at Cloudflare and Amazon [1]. As of this check (2026-09-06) it has not been adopted by the newly chartered IETF webbotauth Working Group, unlike its sibling protocol draft, which was adopted as a WG document on 2026-09-01 [2]. Its examples show the same well-known path (/.well-known/http-message-signatures-directory) can list multiple signer cards \u2014 individual bots as well as \"platform\" gateways that sign on behalf of several downstream operators.\n\nImplementers: as an Informational registry-and-schema draft rather than a running protocol, no dedicated client/server implementations beyond the base Web Bot Auth signing/verifying stack (Cloudflare's libraries, see the sibling httpsig-protocol record) were found in this pass; none is claimed in the draft itself.\n\nDisputed or unknown: whether this draft will be folded into the WG's adopted protocol document or remain a separate track, and how much of the `web_bot_auth` extension object will change before any WG adoption, are both open.",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against draft-meunier-webbotauth-registry-03 primary text and its current datatracker status page"
+   }
+  ]
+ },
+ {
+  "id": "http-message-signatures",
+  "name": "HTTP Message Signatures",
+  "acronym": "",
+  "aliases": [],
+  "collisions": [],
+  "step": "identify",
+  "parties": [
+   "agent-site"
+  ],
+  "form": "http-header",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How can HTTP messages carry end-to-end component integrity and proof of possession, independent of transport-layer security?",
+  "analog": "JWS for HTTP components",
+  "origin": {
+   "org": "A. Backman, J. Richer, M. Sporny (IETF httpbis Working Group)",
+   "date": "2024-02"
+  },
+  "governance": "IETF",
+  "native_status": "Proposed Standard",
+  "phase": "stable",
+  "implementation": "multi-implementation",
+  "adoption": {
+   "level": "observed",
+   "by": "Multiple libraries and at least one profile in production use (Web Bot Auth / Cloudflare); RFC 9421 is a general-purpose base standard, not agent-specific",
+   "probe_run": null
+  },
+  "version": {
+   "label": "RFC 9421, February 2024, Proposed Standard",
+   "date": "2024-02"
+  },
+  "spec_url": "https://www.rfc-editor.org/info/rfc9421",
+  "discovery": {
+   "mechanism": "Signature and Signature-Input HTTP fields carried directly on the message; no fixed discovery path of its own",
+   "path": "none"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "n/a \u2014 inspect response/request headers on any HTTP exchange",
+   "parse": "Presence of Signature and Signature-Input HTTP fields (or their Content-Digest/Signature-related trailers) conforming to RFC 9421's structured-field syntax",
+   "on_absent": "The message carries no RFC 9421 signature; any profile built on it (e.g. Web Bot Auth) cannot be verified"
+  },
+  "evidence": [
+   {
+    "claim": "RFC 9421 is a Proposed Standard published by the IETF (2024) defining a mechanism for creating, encoding and verifying signatures over HTTP message components, including a means to request that a signature be applied to a subsequent message",
+    "label": "VERIFIED",
+    "url": "https://www.rfc-editor.org/info/rfc9421",
+    "date": "2024-02"
+   },
+   {
+    "claim": "Web Bot Auth's protocol draft explicitly builds its Agent/Origin signature exchange on top of RFC 9421's Signature and Signature-Input fields, adding the Signature-Agent field as an RFC 9421 signature component",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-meunier-webbotauth-httpsig-protocol-00",
+    "date": "2026-06-26"
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": null,
+  "summary_md": "RFC 9421 (HTTP Message Signatures) is a general-purpose IETF Proposed Standard, not specific to agents. It defines how to create, encode and verify digital signatures or message authentication codes over selected components of an HTTP message (headers, derived components like @authority or @method, and optionally the body), so that a signature survives intermediaries that might otherwise alter or drop parts of the message [1]. It also defines how to request that a future message in an ongoing exchange be signed [1].\n\nIt solves message-level integrity and proof-of-possession for HTTP independent of transport security (TLS terminates at intermediaries; RFC 9421 signatures do not) [1]. It does not define identity discovery, key distribution, or any notion of \"bot\" or \"agent\" \u2014 those are added by profiles built on top of it. In this map, it is the base standard that Web Bot Auth (see the `webbotauth` record) profiles: Web Bot Auth adds the Signature-Agent header as a signed component and defines a specific key-discovery mechanism (a well-known JWKS directory), while RFC 9421 itself stays agnostic to what a signature proves or where keys come from [2].\n\nCurrent state: published as a Proposed Standard in February 2024 and stable since; it is not itself under active revision as far as this check found.\n\nWho implements it: general HTTP signing libraries exist across languages (this check did not re-survey the full ecosystem); its most visible agent-relevant use is as the substrate for Web Bot Auth, which Cloudflare verifies at the edge [2].\n\nDisputed or unknown: none specific to the base standard found in this pass. Because RFC 9421 is general and widely referenced, this record exists mainly to anchor the agent-specific profiles (Web Bot Auth, and potentially others) that depend on it; it should not be read as agent-specific adoption evidence on its own.",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against RFC 9421 primary source and confirmed as the base standard profiled by Web Bot Auth"
+   }
+  ]
+ },
+ {
+  "id": "ans",
+  "name": "Agent Name Service v2 (ANS)",
+  "acronym": "ANS",
+  "aliases": [
+   "Agent Name Service"
+  ],
+  "collisions": [],
+  "step": "identify",
+  "parties": [
+   "agent-agent",
+   "agent-registry"
+  ],
+  "form": "dns-record",
+  "track": "community",
+  "scope": "general",
+  "question": "What domain-anchored identity belongs to an autonomous agent, and at what assurance tier can that identity be trusted?",
+  "analog": "DNS/DNSSEC name plus certificate transparency log",
+  "origin": {
+   "org": "Scott Courtney (GoDaddy), Vineeth Sai Narajala (OWASP), Ken Huang, Idan Habler, Akram Sheriff (Cisco) \u2014 Independent Submission",
+   "date": "2025-05"
+  },
+  "governance": "IETF Independent Submission (individual draft; not sponsored by a chartered WG); replaces the authors' earlier draft-narajala-ans",
+  "native_status": "Active Internet-Draft, Intended Status: Informational",
+  "phase": "draft",
+  "implementation": "none-found",
+  "adoption": {
+   "level": "claimed",
+   "by": "GoDaddy/Infoblox joint press release (2026-05-14) announcing support for the underlying open standards",
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-narajala-courtney-ansv2-01, last updated 2026-04-15 (replaces draft-narajala-ans, first published 2025-05)",
+   "date": "2026-04-15"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/draft-narajala-courtney-ansv2/",
+  "discovery": {
+   "mechanism": "A Registration Authority verifies domain ownership via ACME and issues a dual certificate (public-CA Server Certificate + private-CA Identity Certificate binding a version-specific ANSName); lifecycle events are sealed into an append-only SCITT-aligned Transparency Log",
+   "path": "none"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "unverified \u2014 no fixed well-known path or DNS record type is defined in the draft text reviewed",
+   "parse": "Resolve the ANSName's Identity Certificate chain and check the Transparency Log for a matching sealed registration event",
+   "on_absent": "No ANS identity is bound to the domain; the agent cannot be verified at any of ANS's three assurance tiers (Bronze/Silver/Gold)"
+  },
+  "evidence": [
+   {
+    "claim": "ANS v2 anchors every agent identity to a DNS domain name, issues dual PKI certificates via an ACME-verified Registration Authority, seals lifecycle events into a SCITT-aligned Transparency Log, and defines three assurance tiers (Bronze: PKI; Silver: PKI+DANE; Gold: PKI+DANE+Transparency Log)",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-narajala-courtney-ansv2/",
+    "date": "2026-04-15"
+   },
+   {
+    "claim": "GoDaddy and Infoblox announced joint support for open standards for AI-agent discovery, identity and verification",
+    "label": "REPORTED",
+    "url": "https://aboutus.godaddy.net/newsroom/news-releases/press-release-details/2026/Infoblox-and-GoDaddy-Support-Open-Standards-for-AI-Agent-Discovery-Identity-and-Verification-2026-0acKMntvOC/default.aspx",
+    "date": "2026-05-14"
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": {
+   "summary": "This is an Independent Submission with no IETF working-group sponsorship and no implementation found in this pass; the GoDaddy/Infoblox press release announces support for standards in this space generally and should not be read as confirmation that ANS v2 specifically has been deployed.",
+   "claims": [
+    "Whether GoDaddy's announced support targets this exact draft (v2, replacing draft-narajala-ans) or the agentic-identity space in general is not established by the press release alone."
+   ]
+  },
+  "summary_md": "Agent Name Service v2 (ANS) is a proposed identity architecture that anchors every autonomous agent's identity to a DNS domain name it controls, rather than to a platform-specific account or an unverified self-asserted name [1]. A Registration Authority (RA) verifies domain ownership via the ACME protocol (the same mechanism Let's Encrypt uses for TLS certificates) and then issues two certificates: a Server Certificate from a public Certificate Authority, and an Identity Certificate from a private CA binding a version-specific \"ANSName\" to that domain [1]. Every lifecycle event (issuance, rotation, revocation) is sealed into an append-only Transparency Log aligned with the IETF's SCITT (Supply Chain Integrity, Transparency, and Trust) work, and clients can pick from three assurance tiers \u2014 Bronze (PKI only), Silver (PKI plus DANE), or Gold (PKI plus DANE plus the Transparency Log) \u2014 matched to how much a given transaction has at risk [1].\n\nIt solves domain-anchored, auditable agent identity where the party relying on the identity did not provision it. Its design explicitly decouples identity issuance (owned by the RA) from discovery (left to independent, competing Discovery Services that index the sealed events), and separates a three-layer trust model: Layer 1 foundational identity (this protocol), Layer 2 operational-maturity attestation by third-party assessors, and Layer 3 real-time behavioral reputation scoring \u2014 only Layer 1 is specified here [1]. It does not itself define reputation scoring, message formats for agent-to-agent communication, or any fixed DNS record type or well-known HTTP path we could locate in the text reviewed; those remain open or left to Discovery Services.\n\nCurrent state: an Independent Submission Internet-Draft \u2014 not sponsored by any IETF working group \u2014 first published as draft-narajala-ans in May 2025 and renamed/rewritten as draft-narajala-courtney-ansv2, currently at revision -01 (last updated 2026-04-15) [1]. Authors span GoDaddy, OWASP, and Cisco.\n\nWho implements it: no running implementation, reference code, or deployed Registration Authority was found in this pass. GoDaddy and Infoblox issued a joint press release in May 2026 announcing support for open standards for AI-agent discovery, identity and verification, but this is a statement of intent about the space rather than confirmed evidence that ANS v2 specifically is deployed [2].\n\nDisputed or unknown: whether GoDaddy's announced support is for this exact spec version; whether any Registration Authority or Discovery Service exists yet; and how the fixed discovery mechanics (DNS record type, well-known path) will be finalized are all open.",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against draft-narajala-courtney-ansv2-01 primary text and the GoDaddy/Infoblox press release"
+   }
+  ]
+ },
+ {
+  "id": "tap",
+  "name": "Visa Trusted Agent Protocol",
+  "acronym": "TAP",
+  "aliases": [
+   "Trusted Agent Protocol"
+  ],
+  "collisions": [],
+  "step": "identify",
+  "parties": [
+   "agent-site",
+   "agent-payment"
+  ],
+  "form": "http-header",
+  "track": "single-vendor",
+  "scope": "commerce",
+  "question": "How does a merchant recognize that an approved commerce agent, rather than a crawler or fraudulent bot, is interacting with its site or API?",
+  "analog": "Signed merchant/client verification layered on card-network trust",
+  "origin": {
+   "org": "Visa (with Cloudflare as an early ecosystem participant)",
+   "date": "2025-10"
+  },
+  "governance": "Visa (single-vendor specification, published for merchant/developer adoption)",
+  "native_status": "Active vendor-led merchant specification",
+  "phase": "candidate",
+  "implementation": "prototype",
+  "adoption": {
+   "level": "claimed",
+   "by": "Visa's own launch announcement, naming ecosystem participants including Cloudflare",
+   "probe_run": null
+  },
+  "version": {
+   "label": "Current merchant specification, 2026, published on Visa Developer",
+   "date": null
+  },
+  "spec_url": "https://developer.visa.com/capabilities/trusted-agent-protocol/trusted-agent-protocol-specifications",
+  "discovery": {
+   "mechanism": "Signed HTTP headers/body during browsing and payment interactions, verified against Visa's Public Keys Retrieval Service",
+   "path": "/keys"
+  },
+  "probe": {
+   "method": "GET",
+   "path": "https://{tap-key-service}/keys?keyID={kid}",
+   "parse": "200 response body is a JWK object (kty, kid, use, alg, and RSA/EC key material) matching the keyID used to sign the agent's request or the Visa-issued ID Token",
+   "on_absent": "The referenced key cannot be retrieved, so the agent-recognition signature or Visa ID Token cannot be verified"
+  },
+  "evidence": [
+   {
+    "claim": "Visa's launch announcement introduces the Trusted Agent Protocol as an ecosystem-led framework for AI commerce, naming participating partners",
+    "label": "VERIFIED",
+    "url": "https://investor.visa.com/news/news-details/2025/Visa-Introduces-Trusted-Agent-Protocol-An-Ecosystem-Led-Framework-for-AI-Commerce/default.aspx",
+    "date": "2025-10-14"
+   },
+   {
+    "claim": "Visa's merchant specification defines a Public Key Retrieval operation (GET /keys with a keyID parameter, returning a JWK) used to verify agent-recognition signatures and a Visa-signed ID Token compliant with RFC 7519/7515",
+    "label": "VERIFIED",
+    "url": "https://developer.visa.com/capabilities/trusted-agent-protocol/trusted-agent-protocol-specifications",
+    "date": "2026-09-06"
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": {
+   "summary": "TAP is a single-vendor (Visa) specification, not an open standard; it is designed for the two-sided scenario where the agent is initially unknown to the merchant, and is explicitly scoped to commerce (browsing and payment interactions), unlike the general-purpose Web Bot Auth.",
+   "claims": [
+    "Visa's own text frames TAP as complementary to, not a replacement for, bilateral merchant-agent agreements and other bot-detection signals (user-agent headers, IP allow-listing, registries)."
+   ]
+  },
+  "summary_md": "Visa's Trusted Agent Protocol (TAP) lets a merchant recognize that an \"approved agent with commerce intent\" \u2014 rather than a scraper, reseller bot, or attacker \u2014 is interacting with its website or API, and lets the merchant request additional information (payment, consumer email) back from that agent [1]. It is designed specifically for the case where the agent is not already known to the merchant through a bilateral agreement: instead of user-agent strings, IP allow-lists, approved-agent registries, or shared keys, TAP carries linked, verifiable, purpose-identifying, time-bound signed credentials in the request headers or body [2].\n\nIt solves agent recognition across two specific interaction types: a browsing interaction (an agent, acting for a consumer with commerce intent, checks product availability, size/color and final cost) and a payment interaction (the agent supplies everything needed to complete a purchase or gain paid access to a merchant resource) [2]. Verification relies on a Visa-run Public Keys Retrieval Service (`GET /keys`, returning a JWK by keyID) and a Visa-issued ID Token \u2014 a JWT compliant with RFC 7519, signed per RFC 7515, carrying standard and Visa-private claims [2]. It does not replace existing bot-detection signals \u2014 Visa's own text frames it as one more, more efficient, signal merchants can choose to check, and any of these signatures can simply be ignored by merchants that have not adopted TAP [2]. It is also explicitly scoped to commerce, unlike the general-purpose Web Bot Auth; the two overlap conceptually (both sign HTTP requests to prove client identity) but serve different scopes and are governed by different parties.\n\nCurrent state: launched by Visa on 2025-10-14 as an \"ecosystem-led framework for AI commerce,\" naming early partners [1]. As of this check (2026-09-06) Visa Developer publishes a full merchant specification covering the trust model, agent recognition signature, consumer recognition, contextual data, payment object, card metadata, credential hashing, and the ID Token format [2] \u2014 this is a live, vendor-maintained document rather than a versioned, dated standard.\n\nWho implements it: Visa (issuer of the ID Token and key service) and named ecosystem participants from the 2025 launch, including Cloudflare per the earlier seed research (not independently re-verified as an implementer of this exact spec in this pass). No independent, non-Visa implementation was confirmed here.\n\nDisputed or unknown: because this is a single-vendor specification without a formal versioning scheme visible on the page, dating a specific \"current version\" is not possible from the page alone; whether other card networks will adopt a compatible or competing scheme is unresolved.",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against Visa's live merchant specification page and the 2025-10-14 launch announcement"
+   }
+  ]
+ },
+ {
+  "id": "spiffe",
+  "name": "SPIFFE (Secure Production Identity Framework for Everyone)",
+  "acronym": "SPIFFE",
+  "aliases": [
+   "Secure Production Identity Framework for Everyone"
+  ],
+  "collisions": [],
+  "step": "identify",
+  "parties": [
+   "agent-site"
+  ],
+  "form": "endpoint",
+  "track": "linux-foundation",
+  "scope": "general",
+  "question": "Which workload instance \u2014 potentially including an AI agent process \u2014 is making this request, verifiable independent of network location?",
+  "analog": "Workload-scoped X.509/mTLS or JWT identity, analogous to per-service TLS certs",
+  "origin": {
+   "org": "SPIFFE project (CNCF-graduated); AI-agent application profiled separately by IETF individual draft authors",
+   "date": null
+  },
+  "governance": "CNCF (SPIFFE is a graduated CNCF project); the AI-agent profile is governed separately as an IETF individual draft, not by the SPIFFE project itself",
+  "native_status": "Active, stable open-source specification set (SPIFFE/SPIRE); SPIFFE itself makes no agent-specific claims",
+  "phase": "stable",
+  "implementation": "multi-implementation",
+  "adoption": {
+   "level": "observed",
+   "by": "SPIFFE's own ecosystem page lists SPIRE, cert-manager, Consul, Dapr, Istio as open-source implementers and GCP, Teleport, Palo Alto Networks/Idira, Red Hat, Defakto, Cofide and Greymatter.io as commercial implementers \u2014 none of this is agent-specific adoption",
+   "probe_run": null
+  },
+  "version": {
+   "label": "SPIFFE core specs (SPIFFE ID, X509-SVID, JWT-SVID, Workload API) are stable and versioned independently; the AI-agent profile is draft-klrc-aiagent-auth-03, published 2026-07-06",
+   "date": null
+  },
+  "spec_url": "https://spiffe.io/docs/latest/spiffe-about/overview/",
+  "discovery": {
+   "mechanism": "Local Workload API (a Unix domain socket, not a network-reachable endpoint) issues short-lived X.509-SVID or JWT-SVID identity documents to an attested workload",
+   "path": "none"
+  },
+  "probe": {
+   "method": "n/a (local IPC, not remotely probable)",
+   "path": "unix:///run/spire/sockets/agent.sock (SPIRE's default; not part of the SPIFFE spec itself)",
+   "parse": "Workload API FetchX509SVID/FetchJWTSVID response contains a SPIFFE ID (spiffe://trust-domain/path) and a short-lived SVID",
+   "on_absent": "No SPIFFE identity is available to the workload; it cannot present an SVID for mTLS or JWT-based authentication"
+  },
+  "evidence": [
+   {
+    "claim": "SPIFFE is a CNCF set of open-source specifications for issuing short-lived cryptographic workload identities (SVIDs) via a local Workload API; its own overview and ecosystem pages describe general workload identity for services, not AI agents specifically",
+    "label": "VERIFIED",
+    "url": "https://spiffe.io/docs/latest/spiffe-about/overview/",
+    "date": null
+   },
+   {
+    "claim": "The IETF individual draft \"AI Agent Authentication and Authorization\" (draft-klrc-aiagent-auth-03, authored by engineers from Defakto, AWS, Zscaler, Ping Identity, OpenAI and Okta) proposes applying SPIFFE/WIMSE and OAuth 2.0 to AI-agent authentication, rather than defining new protocols",
+    "label": "VERIFIED",
+    "url": "https://www.ietf.org/ietf-ftp/internet-drafts/draft-klrc-aiagent-auth-03.html",
+    "date": "2026-07-06"
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": {
+   "summary": "SPIFFE itself is not an agent-specific standard \u2014 it is a general workload-identity framework. Its relevance to this map comes entirely from a separate, non-SPIFFE-governed IETF individual draft that proposes profiling SPIFFE (and WIMSE) for AI agents.",
+   "claims": [
+    "It is not yet established whether the SPIFFE project itself will adopt an agent-specific profile, or whether this remains solely the proposal of the outside aiagent-auth draft."
+   ]
+  },
+  "summary_md": "SPIFFE (Secure Production Identity Framework for Everyone) is a CNCF-graduated set of open-source specifications for issuing short-lived, cryptographic identity documents (SVIDs \u2014 SPIFFE Verifiable Identity Documents, either X.509 or JWT) to software workloads via a local Workload API, so that services can mutually authenticate across dynamic, heterogeneous infrastructure without relying on network location [1]. It is included in this map's Identify layer because an active IETF individual draft proposes applying it \u2014 alongside WIMSE and OAuth 2.0 \u2014 to AI-agent authentication specifically [2].\n\nIt solves workload-to-workload mutual authentication at scale: instead of IP-based network policies, each workload instance attests to a SPIRE server (or another SPIFFE-compliant issuer) and receives a short-lived, automatically rotated identity bound to a `spiffe://trust-domain/path` name [1]. What it does not do is anything agent-specific by itself: the SPIFFE specification and its own documentation make no claims about AI agents, delegation from a human principal, or any of the semantics an autonomous-agent identity system would need beyond \"this is workload X.\" That gap is what the separate draft-klrc-aiagent-auth draft (co-authored by engineers from Defakto, AWS, Zscaler, Ping Identity, OpenAI and Okta) attempts to address by describing how SPIFFE and WIMSE identities, combined with OAuth 2.0 token exchange, could carry an agent's identity and a delegation chain from its human or organizational principal \u2014 without SPIFFE itself defining any new protocol for this [2].\n\nCurrent state: SPIFFE's core specifications (SPIFFE ID, X509-SVID, JWT-SVID, Workload API, Federation) are stable and have been for years; SPIFFE and its reference implementation SPIRE are both CNCF-graduated projects. The AI-agent application is at draft-klrc-aiagent-auth-03 (July 2026), an Informational individual draft under the IETF Network Working Group umbrella, not a SPIFFE-project deliverable [2].\n\nWho implements it: SPIFFE's own ecosystem page lists SPIRE, cert-manager, Consul, Dapr and Istio as open-source implementers, and GCP, Teleport, Palo Alto Networks (Idira), Red Hat, Defakto, Cofide and Greymatter.io as commercial implementers of the general workload-identity spec [1] \u2014 none of this reflects AI-agent-specific deployment.\n\nDisputed or unknown: whether SPIFFE will formally adopt an agent identity profile, versus this remaining an outside proposal layered on top of it, is unresolved. No production system was found in this pass actually issuing SPIFFE SVIDs to AI agents specifically (as opposed to conventional microservice workloads).",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against spiffe.io's own overview/ecosystem page and draft-klrc-aiagent-auth-03; corrected framing to make clear SPIFFE itself is agent-agnostic and the agent application is an outside proposal"
+   }
+  ]
+ },
+ {
+  "id": "wimse",
+  "name": "Workload Identity in Multi System Environments (WIMSE) Architecture",
+  "acronym": "WIMSE",
+  "aliases": [
+   "Workload Identity in a Multi System Environment"
+  ],
+  "collisions": [],
+  "step": "identify",
+  "parties": [
+   "agent-site"
+  ],
+  "form": "endpoint",
+  "track": "ietf",
+  "scope": "general",
+  "question": "How do workloads \u2014 including, per a related draft, AI agents \u2014 authenticate to each other and to services across platforms and trust domains?",
+  "analog": "Cross-domain workload identity and token-exchange architecture",
+  "origin": {
+   "org": "J. Salowey (Palo Alto Networks), Y. Rosomakho (Zscaler), H. Tschofenig (UniBw M.)",
+   "date": "2024-03"
+  },
+  "governance": "IETF wimse Working Group (chartered WG; RFC stream IETF)",
+  "native_status": "Active Internet-Draft, WG Document, Intended Status: Informational",
+  "phase": "working-group",
+  "implementation": "prototype",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-ietf-wimse-arch-08, last updated 2026-07-06 (supersedes draft-salowey-wimse-arch, first published 2024-03)",
+   "date": "2026-07-06"
+  },
+  "spec_url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-arch/",
+  "discovery": {
+   "mechanism": "Workload identity issuance and cross-trust-domain token exchange (architecture defines roles and flows; concrete wire mechanics are in sibling WIMSE WG documents)",
+   "path": "none"
+  },
+  "probe": {
+   "method": "n/a",
+   "path": "unverified \u2014 this document is an architecture/overview draft; concrete, probeable endpoints belong to sibling WIMSE WG specifications (e.g. token issuance/exchange documents) not reviewed in this pass",
+   "parse": "n/a",
+   "on_absent": "n/a"
+  },
+  "evidence": [
+   {
+    "claim": "WIMSE architecture draft-ietf-wimse-arch is an active WG Document of the IETF wimse Working Group, RFC stream IETF, currently at revision -08 (last updated 2026-07-06), replacing the earlier individual draft-salowey-wimse-arch",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-arch/08/",
+    "date": "2026-07-06"
+   },
+   {
+    "claim": "The IETF individual draft on AI-agent authentication (draft-klrc-aiagent-auth-03) explicitly proposes using the WIMSE architecture, alongside SPIFFE and OAuth 2.0, as the basis for agent authentication rather than defining new protocols",
+    "label": "VERIFIED",
+    "url": "https://www.ietf.org/ietf-ftp/internet-drafts/draft-klrc-aiagent-auth-03.html",
+    "date": "2026-07-06"
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": {
+   "summary": "Like SPIFFE, WIMSE is a general workload-identity architecture; its relevance to agent identity comes from a separate, unaffiliated IETF individual draft that proposes applying it to AI agents. Unlike the Signature Agent Card, WIMSE IS a chartered-WG document, giving it a firmer governance footing than several other records in this step.",
+   "claims": [
+    "This architecture document alone does not define a probeable wire protocol; the concrete mechanics live in sibling WIMSE WG drafts not reviewed here."
+   ]
+  },
+  "summary_md": "WIMSE (Workload Identity in Multi System Environments) is an IETF architecture for how software workloads authenticate to each other and to services when they span multiple platforms, cloud providers, or trust domains \u2014 a scope broader than SPIFFE's original single-organization workload identity model [1]. It is relevant to the Identify layer of this map because a separate IETF individual draft on AI-agent authentication explicitly proposes using WIMSE (together with SPIFFE and OAuth 2.0) as the basis for how an agent authenticates, rather than inventing a new agent-specific protocol [2].\n\nIt solves cross-domain workload authentication architecture: defining the roles, trust relationships and token-exchange flows needed when a workload in one organization's environment needs to prove its identity to a service in another's. It does not itself define a single concrete wire protocol usable end to end \u2014 as an architecture document, its concrete mechanics (issuance formats, token exchange endpoints) are specified in sibling documents produced by the same WIMSE Working Group, which this pass did not review in depth. It also makes no agent-specific claims on its own; \"AI agent\" does not appear to be native vocabulary of the WIMSE WG's charter as reviewed here \u2014 the agent application again comes from the outside aiagent-auth draft.\n\nCurrent state: this is a genuine chartered IETF Working Group document \u2014 draft-ietf-wimse-arch, currently at revision -08, last updated 2026-07-06, on the IETF RFC stream \u2014 which gives it firmer standards-track footing than several of the individual-submission drafts elsewhere in this map [1]. It replaces the authors' earlier individual submission, draft-salowey-wimse-arch, first published in March 2024 [1].\n\nWho implements it: no concrete implementation was verified in this pass; the wimse WG maintains its work in a public GitHub organization (ietf-wg-wimse) referenced from the datatracker page [1], but this check did not survey deployed implementations.\n\nDisputed or unknown: whether or when WIMSE will produce a companion document specifically profiling AI agents (as opposed to the outside aiagent-auth draft doing so unofficially), and what concrete, probeable endpoint the architecture resolves to in practice, are both open.",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against draft-ietf-wimse-arch-08's datatracker status page, confirming chartered WG status and 2026-07-06 update"
+   }
+  ]
+ },
+ {
+  "id": "aip",
+  "name": "Agent Identity Protocol (AIP)",
+  "acronym": "AIP",
+  "aliases": [],
+  "collisions": [
+   "Agent Interaction Protocol (unrelated proposals sometimes use the same AIP initialism)"
+  ],
+  "step": "identify",
+  "parties": [
+   "agent-agent"
+  ],
+  "form": "endpoint",
+  "track": "community",
+  "scope": "general",
+  "question": "How can an autonomous agent prove a decentralized identity and a verifiable chain of delegated authority from its human or organizational principal?",
+  "analog": "W3C DID plus a delegated-capability credential chain",
+  "origin": {
+   "org": "Paras Singla (Independent)",
+   "date": "2026-06-10"
+  },
+  "governance": "IETF individual draft; sole author, no working group",
+  "native_status": "Internet-Draft, Intended Status: Standards Track (author's stated intent; not adopted by any WG)",
+  "phase": "draft",
+  "implementation": "none-found",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "draft-singla-agent-identity-protocol-03, published 2026-06-10",
+   "date": "2026-06-10"
+  },
+  "spec_url": "https://www.ietf.org/archive/id/draft-singla-agent-identity-protocol-03.html",
+  "discovery": {
+   "mechanism": "W3C Decentralized Identifier (DID) resolution plus cryptographic delegation-chain verification",
+   "path": "none"
+  },
+  "probe": {
+   "method": "n/a",
+   "path": "unverified \u2014 the fetched excerpt (abstract and introduction) does not specify a fixed resolvable path or endpoint; full protocol mechanics were not reviewed in this pass",
+   "parse": "n/a",
+   "on_absent": "n/a"
+  },
+  "evidence": [
+   {
+    "claim": "AIP defines a decentralized identity, delegation and authorization framework for autonomous AI agents combining W3C DIDs, capability-based authorization, cryptographic delegation chains and deterministic validation, aiming to avoid reliance on centralized identity providers",
+    "label": "VERIFIED",
+    "url": "https://www.ietf.org/archive/id/draft-singla-agent-identity-protocol-03.html",
+    "date": "2026-06-10"
+   },
+   {
+    "claim": "The draft is a sole-author Internet-Draft (Paras Singla, Independent) with Standards Track as the author's intended status, and no working-group sponsorship, as shown on its datatracker/ietf.org archive header",
+    "label": "VERIFIED",
+    "url": "https://www.ietf.org/archive/id/draft-singla-agent-identity-protocol-03.html",
+    "date": "2026-06-10"
+   }
+  ],
+  "last_verified": "2026-09-06",
+  "dispute": {
+   "summary": "This is a single-author draft with an author-stated Standards Track intent but no WG sponsorship and no located implementation; the acronym AIP is also used elsewhere for unrelated agent-interaction proposals, which is a collision worth flagging to readers.",
+   "claims": [
+    "Author-declared 'Intended Status: Standards Track' does not itself confer IETF consensus or WG adoption; treat as aspirational until a WG picks it up."
+   ]
+  },
+  "summary_md": "The Agent Identity Protocol (AIP) is a proposed decentralized identity, delegation, and authorization framework for autonomous AI agents. It combines W3C Decentralized Identifiers (DIDs), capability-based authorization, cryptographic delegation chains, and deterministic validation, explicitly aiming to let multi-agent workflows be secure and auditable without depending on a centralized identity provider [1].\n\nIt targets the \"identity gap\" the author identifies: when an autonomous agent \u2014 which may send emails, book appointments, make purchases, access file systems, spawn child agents, or act across multiple platforms without per-action human approval \u2014 presents itself to an API, a payment processor, or another agent, there is today no standard way to establish the agent's persistent identity across interactions, which human or organization it acts on behalf of, or exactly which actions it is authorized to take [1]. AIP is not a working, deployed system: this pass reviewed the draft's abstract and introduction and did not verify the full delegation-chain wire format, so claims about a specific probeable endpoint or resolvable path cannot be made honestly at this time.\n\nCurrent state: draft-singla-agent-identity-protocol-03, published 2026-06-10, a sole-author IETF Internet-Draft under the Network Working Group umbrella (not a chartered WG) [2]. The author lists \"Standards Track\" as the intended status, but this is the author's own stated intent, not an indication of IETF working-group consensus or adoption \u2014 no WG has taken up this document as far as this check found [2].\n\nWho implements it: no implementation, reference library, or deployment was located in this pass.\n\nDisputed or unknown: whether AIP will be picked up by any chartered WG or remain an individual proposal; how it relates to, competes with, or could compose with ERC-8004's onchain identity model or ANS's DNS-anchored model (both also in this Identify layer) is not addressed in the reviewed text. The AIP acronym also collides with other unrelated agent-interaction proposals circulating in the same space, so readers should confirm they mean this specific draft.",
+  "history": [
+   {
+    "date": "2026-09-05",
+    "note": "seeded from Exa Agent research run"
+   },
+   {
+    "date": "2026-09-06",
+    "note": "verified against draft-singla-agent-identity-protocol-03's abstract, introduction and document header; flagged limited depth of review and the AIP acronym collision"
+   }
+  ]
+ }
+]

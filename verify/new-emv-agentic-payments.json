@@ -1,0 +1,90 @@
+[
+ {
+  "id": "emv-agentic-payments",
+  "name": "EMV Agentic Payments – Framework for Specifications",
+  "acronym": "EMV Agentic Payments",
+  "aliases": [
+   "EMVCo Agentic Payments Framework",
+   "EMV Agentic Payments Framework for Specifications"
+  ],
+  "collisions": [
+   "AP2 (Google's Agent Payments Protocol, also card/mandate-oriented)",
+   "ACP (Agentic Commerce Protocol, OpenAI/Stripe)",
+   "UCP (Universal Commerce Protocol, Google)"
+  ],
+  "step": "pay",
+  "parties": [
+   "agent-payment"
+  ],
+  "form": "document-format",
+  "track": "industry-body",
+  "scope": "payments",
+  "question": "When a card network, issuer, merchant, or wallet sees an AI-agent-initiated card payment, how do they consistently find out what the consumer actually authorised — recurring purchase, spending cap, post-transaction change — rather than each building a bespoke, one-off signal?",
+  "analog": "A shared authorisation-hold / standing-order ledger that every party in a card transaction can consult, rather than 3-D Secure's single point-in-time challenge",
+  "origin": {
+   "org": "EMVCo (jointly owned by American Express, Discover, JCB, Mastercard, UnionPay and Visa), via its newly formed Agentic Payments Task Force chaired by Clinton Allen",
+   "date": "2026-09-01"
+  },
+  "governance": "EMVCo, the technical body jointly owned by American Express, Discover, JCB, Mastercard, UnionPay and Visa, which creates and manages the EMV Specifications; this framework is being developed by EMVCo's dedicated Agentic Payments Task Force with input from EMVCo Associates and Subscribers, and in collaboration with the FIDO Alliance, the OpenID Foundation, the OpenWallet Foundation and W3C",
+  "native_status": "Draft v1.0, released for public review and comment; EMVCo describes it as ‘a foundation for further industry engagement and potential specification development’, not itself a finished specification",
+  "phase": "draft",
+  "implementation": "none-found",
+  "adoption": {
+   "level": "unmeasured",
+   "by": null,
+   "probe_run": null
+  },
+  "version": {
+   "label": "EMV® Agentic Payments – Framework for Specifications, v1.0 DRAFT",
+   "date": "2026-08-31"
+  },
+  "spec_url": "https://www.emvco.com/resources/emv-agentic-payments-framework-for-specifications-v1-0-draft-comment-period-ends-30-sept-2026/",
+  "discovery": {
+   "mechanism": "none published — the draft is a conceptual/organisational framework (roles, data fields, an ‘Intent Services’ concept) for a future specification; it defines no fixed well-known path, header, or endpoint an agent or origin could probe for today",
+   "path": "none"
+  },
+  "probe": {
+   "method": "none",
+   "path": "none",
+   "parse": "not applicable — this is a draft framework document, not a deployed protocol; there is no wire format, endpoint, or file to fetch, matching how other pre-implementation pay-step drafts (e.g. vcap) are recorded",
+   "on_absent": "No probe exists; EMVCo has not yet published a technical specification, so absence of any signal cannot be distinguished from the framework simply not having reached implementation yet"
+  },
+  "evidence": [
+   {
+    "claim": "On 1 September 2026 EMVCo – described as ‘the technical body that creates and manages EMV® Specifications and programmes’ – released a draft framework, EMV® Agentic Payments – Framework for Specifications v1.0, for public comment through 30 September 2026, focused on card-based agentic payment scenarios (recurring purchases, cumulative budgets, post-transaction activity) where consumer intent must be managed over time; it introduces the concept of ‘Intent Services’, a shared interoperable layer letting payment participants register, reference, retrieve and manage consumer-authorised intent before, during and after a transaction.",
+    "label": "VERIFIED",
+    "url": "https://www.emvco.com/news/emvco-requests-feedback-on-framework-for-secure-interoperable-and-scalable-card-based-agentic-payments/",
+    "date": "2026-09-01"
+   },
+   {
+    "claim": "Clinton Allen, Chair of the EMVCo Agentic Payments Task Force, explains the framework centres on use-cases where a consumer delegates card-payment authority to an AI agent; it is meant to complement cryptographic assurance from existing solutions such as Verifiable Intent with a common coordination point; it may inform future enhancements to EMV 3-D Secure, EMV Payment Tokenisation, EMV Secure Remote Commerce and the EMV Digital Payment Credential, and EMVCo may pursue future work on Know Your Agent (KYA) and Agentic Transaction Indicators; EMVCo is collaborating with the FIDO Alliance, OpenID Foundation, OpenWallet Foundation and W3C to avoid ecosystem fragmentation.",
+    "label": "VERIFIED",
+    "url": "https://www.emvco.com/knowledge-hub/how-emvco-is-working-to-enable-secure-interoperable-and-scalable-card-based-agentic-payments/",
+    "date": "2026-09-01"
+   },
+   {
+    "claim": "Independent trade press confirms the framework was developed by EMVCo's newly formed Agentic Payments Task Force (chaired by Clinton Allen), covers card-based payments where consumers authorise recurring purchases or spending limits for an AI agent, and introduces Intent Services as an interoperable layer for registering and tracking authorised purchasing intent across the transaction lifecycle, working alongside cryptographic technologies such as Verifiable Intent.",
+    "label": "VERIFIED",
+    "url": "https://fintech.global/2026/09/04/emvco-drafts-framework-for-agentic-card-payments/",
+    "date": "2026-09-04"
+   },
+   {
+    "claim": "EMVCo's stated mission is 'to facilitate the worldwide interoperability of secure payment transactions by developing and publishing the EMV Specifications and their related testing processes'; EMVCo itself does not mandate or enforce implementation — that is left to payment networks, issuers, merchants and acquirers.",
+    "label": "VERIFIED",
+    "url": "https://www.emvco.com/about-us/overview-of-emvco/",
+    "date": null
+   }
+  ],
+  "last_verified": "2026-09-07",
+  "dispute": null,
+  "summary_md": "EMV Agentic Payments – Framework for Specifications is a draft document, not yet a technical specification, published on 1 September 2026 by EMVCo – the technical body jointly owned by American Express, Discover, JCB, Mastercard, UnionPay and Visa that creates and manages the EMV Specifications used for card payments worldwide [4]. It was produced by EMVCo's newly formed Agentic Payments Task Force, chaired by Clinton Allen, and opened for public comment through 30 September 2026 [1][3].\n\nWhat it solves: it addresses a specific gap in card-based agentic commerce — how the parties in a card transaction (issuer, network, merchant, acquirer) consistently determine what a consumer actually authorised an AI agent to do, particularly for scenarios where authority persists over time rather than being exercised once, such as recurring purchases, cumulative spending budgets, and actions after the initial transaction (returns, disputes, modifications) [1][2]. Its central proposal is 'Intent Services': a shared, interoperable layer where participants can register, reference, retrieve and manage a consumer's authorised intent as a persistent state object, rather than each party inferring intent independently. EMVCo frames this as complementary to, not a replacement for, cryptographic intent-assurance mechanisms already in the market (it names 'Verifiable Intent' without further specifying whose) — Intent Services is positioned as a coordination point on top of that cryptographic layer [1][2].\n\nWhat it does not do: as of this verification, the document is a framework — it describes ecosystem roles and the categories of data fields Intent Services would need, not a wire protocol, message schema, API surface, or well-known discovery path. It defines no endpoint, header, or file that could be probed today. It explicitly scopes itself to card-based payments only, so it does not address bank-transfer, stablecoin, or other rails covered by protocols like x402 or ACP. It also does not yet define Know Your Agent (KYA) or 'Agentic Transaction Indicators' for flagging that a transaction was agent-initiated — EMVCo says it 'may consider' these in future publications, but they are not part of this draft [1][2].\n\nCurrent state: this is v1.0 DRAFT, released 2026-08-31/09-01, under public comment until 2026-09-30; EMVCo describes it as a foundation for further industry engagement and potential specification development, i.e. a pre-specification stage document. No implementation, pilot, or conformance programme exists yet, and none is claimed by EMVCo or any third party. EMVCo says it is collaborating with the FIDO Alliance, OpenID Foundation, OpenWallet Foundation and W3C to keep the framework interoperable with adjacent identity/credential work rather than fragmenting it [2].\n\nHow it relates to other pay-step records on this site: it overlaps in problem space with Google's AP2 (which also formalises consumer-authorised purchase intent as signed Mandates) and with UCP and OpenAI/Stripe's ACP (which define merchant-facing commerce/checkout flows an agent can invoke); EMVCo positions its work as complementary rather than competing — a card-network-side intent-coordination layer that other protocols' payment steps could plug into — but as of this draft there is no published mapping of how an AP2 Payment Mandate, a UCP Payment Token Exchange, or an ACP checkout would concretely interact with an EMVCo Intent Service. What is unresolved: whether Intent Services will be specified as an EMVCo-hosted API, a shared registry, or a set of data-field requirements that networks implement individually; how 'Verifiable Intent' (the cryptographic layer EMVCo says it complements) is itself specified and by whom; and whether this becomes a formal EMV Specification (with EMVCo's usual compliance/testing programme) or remains a lighter-weight framework.",
+  "history": [
+   {
+    "date": "2026-09-07",
+    "note": "created and verified against EMVCo's 2026-09-01 news release, the companion EMV Insights article by Clinton Allen, independent trade press (fintech.global, 2026-09-04), and the EMVCo overview page"
+   }
+  ],
+  "part_of": null,
+  "group": null
+ }
+]

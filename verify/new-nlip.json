@@ -1,0 +1,101 @@
+[
+ {
+  "acronym": "NLIP",
+  "adoption": {
+   "by": "NLIP project / Enterprise Neurosystem (self-reported: PyPI nlip_sdk/nlip-server downloads ~300-420/month as of 2026-06; production use claimed by Enterprise Neurosystem member Kove; incubation partners CUNY and IBM)",
+   "level": "claimed",
+   "probe_run": null
+  },
+  "aliases": [
+   "Natural Language Interaction Protocol",
+   "ECMA-430"
+  ],
+  "analog": "none; closest classic-web analog is a generic RPC envelope (e.g. SOAP) but for natural-language, multi-modal agent messages",
+  "collisions": [
+   "NLIP (unrelated: various unrelated \"NLIP\" acronym collisions in older NLP literature, e.g. \"Natural Language and Information Processing\"); also collides informally with NLI (Natural Language Interface) as a category name"
+  ],
+  "discovery": {
+   "mechanism": "none; NLIP does not define a discovery mechanism of its own. An NLIP endpoint is reached by a URL/address exchanged out of band or via another discovery layer; the protocol only defines the message envelope and transport bindings once an endpoint is known",
+   "path": "none"
+  },
+  "dispute": {
+   "summary": "The project's own materials describe NLIP as both a settled Ecma standard (\"ECMA-430\", ratified 10 December 2025) and as an early-stage, low-adoption proof-of-concept (all reference SDKs are pre-1.0, PyPI download counts are in the low hundreds per month, and the GitHub org's most-starred repo has 14 stars). Public production deployments beyond the incubating Enterprise Neurosystem/IBM/CUNY circle are not independently documented as of 2026-09-07. The August 2026 LinkedIn framing of NLIP as \"the ODBC of agent protocols\" that sits above/adapts MCP, A2A, ANP, ACP, AGNTCY, AP2 and UCP is a forward-looking claim from project contributors, not yet demonstrated by third-party adapters.",
+   "claims": [
+    "Project site and contributor posts (nlip-project.org, LinkedIn Aug 2026): NLIP is a general-purpose interoperability hub across MCP/A2A/ANP/ACP/AGNTCY/AP2/UCP.",
+    "Observed (this verification pass): no third-party (non-NLIP-project) adapter or bridge implementation between NLIP and MCP/A2A was found; the arXiv paper describes the relationship to MCP and A2A conceptually rather than showing a shipped bridge."
+   ]
+  },
+  "evidence": [
+   {
+    "claim": "ECMA-430 (Natural Language Interaction Protocol) is a Standard defining an application-level communication protocol between AI agents or between a human and an AI agent, published by Ecma International Technical Committee TC56, 1st edition, December 2025.",
+    "label": "VERIFIED",
+    "url": "https://ecma-international.org/publications-and-standards/standards/ecma-430/",
+    "date": "2025-12"
+   },
+   {
+    "claim": "NLIP is developed by researchers and practitioners across companies and universities and standardized by Ecma International; it defines a lightweight semantic message envelope carried over transports including HTTP/HTTPS, WebSocket, and AMQP, and the paper covers its message model, transport bindings, security-by-design considerations, reference implementation, adoption signals, and relationship to MCP and A2A. Accepted by ACM AI Summit 2026, submitted 3 September 2026.",
+    "label": "VERIFIED",
+    "url": "https://arxiv.org/abs/2609.04135",
+    "date": "2026-09-03"
+   },
+   {
+    "claim": "The NLIP project site lists the full standards suite ratified by Ecma: ECMA-430 (core protocol), ECMA-431 (HTTP/HTTPS binding), ECMA-432 (WebSocket binding), ECMA-433 (AMQP binding), ECMA-434 (security profiles), and ECMA TR/113 (explanatory technical report); the envelope is a JSON object whose first sub-message carries format/subformat/content, is transport-agnostic, multi-modal (text, image, structured, location, generic), and hot-extensible; governance is via Ecma TC-56 and the NLIP community; code is Apache 2.0.",
+    "label": "VERIFIED",
+    "url": "https://nlip-project.org",
+    "date": "2026-09-07"
+   },
+   {
+    "claim": "NLIP was incubated by the Enterprise Neurosystem, led by Dinesh Verma (IBM Fellow), with development/implementation work at the University of Delaware sponsored by Enterprise Neurosystem supporter Kove; recognised as a family of standards by Ecma International; Enterprise Neurosystem states its community will use the protocol in production deployments going forward.",
+    "label": "VERIFIED",
+    "url": "https://medium.com/the-enterprise-neurosystem-blog/exciting-news-for-the-natural-language-interaction-protocol-nlip-and-its-impact-on-implementing-b7e673ac4713",
+    "date": "2026-01-05"
+   },
+   {
+    "claim": "The nlip-project GitHub organisation (created 2024-09-20, 65 followers, 21 public repos as of this check) hosts the reference implementation split into nlip_sdk (message/submessage abstractions), nlip_client (httpx-based client transport), nlip_server (FastAPI-based server abstractions: NLIPApplication/NLIPSession), plus nlip_soln (example chatbot/integrator solutions), nlip_web (JS/FastAPI demo app), and nlip_swarm; PyPI packages nlip_sdk and nlip-server are published (v0.1.3 as of 2026-06-24, author Dinesh Verma) with reported last-month download counts around 300-420.",
+    "label": "VERIFIED",
+    "url": "https://github.com/nlip-project/nlip_server",
+    "date": "2026-09-07"
+   }
+  ],
+  "form": "document-format",
+  "governance": "Ecma International Technical Committee TC56 (NLIP), with an ISO ballot in progress as of mid-2026 per contributor reports; incubated and supported by the Enterprise Neurosystem community",
+  "group": null,
+  "history": [
+   {
+    "date": "2026-09-07",
+    "note": "created and verified against Ecma International ECMA-430 standard page, the NLIP arXiv paper (2609.04135, Sept 2026), nlip-project.org, an Enterprise Neurosystem blog post on Ecma recognition, and the nlip-project GitHub org's reference implementation repos"
+   }
+  ],
+  "id": "nlip",
+  "implementation": "multi-implementation",
+  "last_verified": "2026-09-07",
+  "name": "Natural Language Interaction Protocol",
+  "native_status": "Ecma International Standard, 1st edition, published 10 December 2025 (ECMA-430 core spec, plus companion ECMA-431/432/433 transport bindings, ECMA-434 security profiles, and ECMA TR/113 explanatory report); an ISO standardisation ballot was reported in progress by project contributors as of August 2026",
+  "origin": {
+   "org": "Enterprise Neurosystem community (led by Dinesh Verma, IBM Fellow), with contributors from IBM, Purdue (Elisa Bertino), Indiana University (Luyi Xing), Red Hat, and others, standardized by Ecma International TC56",
+   "date": "2025-12"
+  },
+  "part_of": null,
+  "parties": [
+   "agent-agent",
+   "agent-human"
+  ],
+  "phase": "stable",
+  "probe": {
+   "method": "POST",
+   "on_absent": "A non-2xx response, a connection refusal, or a body that does not parse as an NLIP envelope means the origin does not run an NLIP endpoint at that address; NLIP has no well-known discovery path, so absence at a guessed path is not conclusive proof the origin lacks NLIP support",
+   "parse": "A 200 response whose JSON body is (or contains) an NLIP message: an object with a first sub-message carrying format/subformat/content fields (e.g. {\"format\":\"text\",\"subformat\":\"english\",\"content\":\"...\"}), per the ECMA-430 envelope and the ECMA-431 HTTP/HTTPS binding",
+   "path": "https://{endpoint}/nlip/"
+  },
+  "question": "Can this agent or service exchange natural-language, multi-modal messages using a shared, vendor-neutral envelope instead of a bespoke API?",
+  "scope": "general",
+  "spec_url": "https://ecma-international.org/publications-and-standards/standards/ecma-430/",
+  "step": "coordinate",
+  "summary_md": "The Natural Language Interaction Protocol (NLIP) is an application-layer message envelope for exchanges between AI agents, and between a human and an AI agent, standardized by Ecma International as ECMA-430 (1st edition, published 10 December 2025) under Technical Committee TC56 [1][3]. It ships as a family of six documents: ECMA-430 defines the core multimodal message format (a JSON envelope whose first sub-message carries `format`, `subformat`, `content`, with optional sub-messages for images, policy tokens, or control directives); ECMA-431, -432 and -433 bind that envelope to HTTP/HTTPS, WebSocket, and AMQP transports respectively; ECMA-434 defines security profiles; and ECMA TR/113 is an explanatory technical report covering motivation and example exchanges [1][3].\n\nWhat it solves: today, every AI agent framework and vendor invents its own JSON dialect, auth scheme, and rate-limit convention, so connecting N agent platforms to M backends requires bespoke glue for every pair. NLIP proposes a single grammar and set of control frames so any NLIP-compliant agent can exchange multi-modal, natural-language messages (text, image, structured data, location, or other binary content) with any other, regardless of the underlying LLM, framework, or transport [3]. Contributors describe the ambition as comparable to what TCP/IP did for networks or HTTP did for documents: a common wiring layer, with adapters positioning NLIP as an interchange hub across other agent protocols such as MCP, A2A, ANP, ACP, and AGNTCY [3][5].\n\nWhat it does not do: NLIP explicitly excludes direct interoperability with existing proprietary systems (that requires an adapter) and excludes building end-user applications — it is protocol-and-specification only [3]. It does not define a discovery mechanism (no well-known path or DNS convention); an NLIP endpoint address must be learned out of band or via another protocol. It does not itself provide identity, payment, or content-permission semantics beyond carrying policy/authentication tokens inside the envelope.\n\nCurrent state: the specification suite reached Ecma International Standard status on 10 December 2025, and as of mid-2026 project contributors reported a positive ISO member-country ballot toward international standardization, though ISO ratification was not yet confirmed as complete at the time of this check [1][2]. The NLIP GitHub organisation (created September 2024, 65 followers, 21 public repositories) hosts a Python reference implementation split into `nlip_sdk` (message model), `nlip_client` (httpx-based client), and `nlip_server` (FastAPI-based server abstractions), plus example solutions (`nlip_soln`, `nlip_web`, `nlip_swarm`) [5]. The `nlip_sdk` and `nlip-server` PyPI packages are published (v0.1.3, June 2026) under Dinesh Verma's authorship, with reported monthly download counts in the low hundreds — evidence of a working, installable proof-of-concept rather than broad production adoption [5].\n\nWho implements it: the project was incubated by the Enterprise Neurosystem community, led by Dinesh Verma (IBM Fellow), with contributions from Purdue's Elisa Bertino, Indiana University's Luyi Xing, Red Hat's Sanjay Aiyagari, and others across IBM, CUNY, and the University of Delaware (implementation work there sponsored by Enterprise Neurosystem member Kove) [4][5]. Enterprise Neurosystem states its own community intends to use NLIP in production going forward, and Red Hat's Sanjay Aiyagari has proposed NLIP as a security layer for IoT devices at NDSS 2026, but no independently verified third-party production deployment outside this incubating circle was found in this pass.\n\nDisputed or unknown: whether NLIP will function as a genuine interoperability hub across MCP/A2A/other agent protocols, as claimed in an August 2026 LinkedIn post by project contributors (\"the ODBC of agent protocols\"), is a forward-looking claim not yet demonstrated by any shipped third-party bridge or adapter found in this research pass. Broader third-party (non-incubator) adoption numbers are not published anywhere found; this record's adoption level is therefore \"claimed\", not \"measured\".",
+  "track": "industry-body",
+  "version": {
+   "label": "ECMA-430, 1st edition",
+   "date": "2025-12-10"
+  }
+ }
+]

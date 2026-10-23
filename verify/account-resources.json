@@ -1,0 +1,259 @@
+{
+ "osi": {
+  "implementations": [
+   {
+    "name": "Ossie converters: dbt",
+    "url": "https://github.com/apache/ossie/tree/main/converters/dbt",
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "note": "reference converter, part of the draft-spec monorepo, not confirmed production use"
+   },
+   {
+    "name": "Ossie converters: Salesforce",
+    "url": "https://github.com/apache/ossie/tree/main/converters/salesforce",
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "note": "reference converter"
+   },
+   {
+    "name": "Ossie converters: Databricks",
+    "url": "https://github.com/apache/ossie/tree/main/converters/databricks",
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "note": "reference converter"
+   },
+   {
+    "name": "Ossie converters: Snowflake",
+    "url": "https://github.com/apache/ossie/tree/main/converters/snowflake",
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "note": "reference converter"
+   },
+   {
+    "name": "Ossie converters: GoodData",
+    "url": "https://github.com/apache/ossie/tree/main/converters/gooddata",
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "note": "reference converter"
+   }
+  ],
+  "sdks": [],
+  "validators": [
+   {
+    "name": "Ossie schema validation tooling",
+    "url": "https://github.com/apache/ossie/tree/main/validation",
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "note": "validates semantic-model documents against ossie-schema.json"
+   }
+  ],
+  "registries": [],
+  "adopters": [
+   {
+    "name": "Snowflake, Salesforce, dbt Labs, BlackRock, RelationalAI (co-leading partners)",
+    "url": "https://www.snowflake.com/en/news/press-releases/snowflake-salesforce-dbt-labs-and-more-revolutionize-data-readiness-for-ai-with-open-semantic-interchange-initiative/",
+    "date": "2025-09-23",
+    "evidence": "VERIFIED",
+    "note": "coalition/working-group membership, not confirmed as production spec adoption"
+   }
+  ]
+ },
+ "artf": {
+  "implementations": [
+   {
+    "name": "IAB Tech Lab ARTF Go reference implementation",
+    "url": "https://github.com/IABTechLab/agentic-real-time-framework",
+    "date": "2026-07-20",
+    "evidence": "VERIFIED",
+    "note": "gRPC + MCP + web UI + Kubernetes health endpoints"
+   }
+  ],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": [
+   {
+    "name": "IAB Tech Lab claim: 'used in production by a number of companies' (unnamed)",
+    "url": "https://iabtechlab.com/a-milestone-for-the-agentic-advertising-ecosystem/",
+    "date": "2026-08-12",
+    "evidence": "REPORTED",
+    "note": "no specific company named as live in production in the fetched source"
+   },
+   {
+    "name": "Index Exchange (design/implementation quote)",
+    "url": "https://iabtechlab.com/press-releases/iab-tech-lab-announces-agentic-rtb-framework-artf-v1-0-for-public-comment/",
+    "date": "2025-11-13",
+    "evidence": "REPORTED",
+    "note": "quoted at v1.0 public-comment launch, not confirmed production"
+   },
+   {
+    "name": "The Trade Desk (design/implementation quote)",
+    "url": "https://iabtechlab.com/press-releases/iab-tech-lab-announces-agentic-rtb-framework-artf-v1-0-for-public-comment/",
+    "date": "2025-11-13",
+    "evidence": "REPORTED",
+    "note": "quote says 'looking to implement... in the near future', not yet live at time of quote"
+   }
+  ]
+ },
+ "aamp": {
+  "implementations": [
+   {
+    "name": "AAMP GitHub hub (5 constituent repos)",
+    "url": "https://github.com/IABTechLab/AAMP",
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "note": "links Agentic Direct, Buyer Agent, Seller Agent, Registry Agent example, and ARTF"
+   },
+   {
+    "name": "Agentic Direct reference implementation",
+    "url": "https://github.com/IABTechLab/agentic-direct",
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "note": "core orchestration/communication layer"
+   },
+   {
+    "name": "Buyer Agent SDK",
+    "url": "https://github.com/IABTechLab/buyer-agent",
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "note": "reference demand-side agent"
+   },
+   {
+    "name": "Seller Agent SDK",
+    "url": "https://github.com/IABTechLab/seller-agent",
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "note": "reference supply-side agent"
+   },
+   {
+    "name": "Agentic Audiences (formerly LiveRamp UCP donation)",
+    "url": "https://github.com/IABTechLab/agentic-audiences",
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "note": "audience activation component"
+   }
+  ],
+  "sdks": [],
+  "validators": [],
+  "registries": [
+   {
+    "name": "IAB Tech Lab Agent Registry",
+    "url": "https://registry.iabtechlab.ai/",
+    "date": "2026-08-12",
+    "evidence": "VERIFIED",
+    "note": "AAMP's 'Trust and Transparency' pillar; free, open to members and non-members"
+   }
+  ],
+  "adopters": [
+   {
+    "name": "Amazon Web Services (Bedrock AgentCore deployment support)",
+    "url": "https://iabtechlab.com/press-releases/iab-tech-lab-releases-aamp-2-3-bringing-enterprise-grade-infrastructure-and-privacy-diligence-to-agentic-advertising/",
+    "date": "2026-07-30",
+    "evidence": "VERIFIED",
+    "note": "named executive quote (Stephanie Layser, AWS)"
+   },
+   {
+    "name": "HyperMindZ (Deals Sync MCP Server contribution)",
+    "url": "https://iabtechlab.com/press-releases/iab-tech-lab-releases-aamp-2-3-bringing-enterprise-grade-infrastructure-and-privacy-diligence-to-agentic-advertising/",
+    "date": "2026-07-30",
+    "evidence": "VERIFIED",
+    "note": "named executive quote (Mano Pillai, CEO)"
+   },
+   {
+    "name": "Mixpeek (Content Taxonomy Parser contribution)",
+    "url": "https://iabtechlab.com/press-releases/iab-tech-lab-releases-aamp-2-3-bringing-enterprise-grade-infrastructure-and-privacy-diligence-to-agentic-advertising/",
+    "date": "2026-07-30",
+    "evidence": "VERIFIED",
+    "note": "named executive quote (Ethan Steininger, CEO)"
+   },
+   {
+    "name": "SafeGuard Privacy (Diligence Platform integration)",
+    "url": "https://iabtechlab.com/press-releases/iab-tech-lab-releases-aamp-2-3-bringing-enterprise-grade-infrastructure-and-privacy-diligence-to-agentic-advertising/",
+    "date": "2026-07-30",
+    "evidence": "VERIFIED",
+    "note": "named executive quote (Richy Glassberg, CEO)"
+   },
+   {
+    "name": "Adform (agent workflow controls)",
+    "url": "https://iabtechlab.com/press-releases/iab-tech-lab-releases-aamp-2-3-bringing-enterprise-grade-infrastructure-and-privacy-diligence-to-agentic-advertising/",
+    "date": "2026-07-30",
+    "evidence": "VERIFIED",
+    "note": "named executive quote (Jochen Schlosser, CTO)"
+   }
+  ]
+ },
+ "vi": {
+  "implementations": [
+   {
+    "name": "Mastercard Verifiable Intent reference implementation",
+    "url": "https://github.com/agent-intent/verifiable-intent",
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "note": "Apache-2.0 spec repo with an initial reference implementation per Mastercard's own announcement"
+   }
+  ],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": [
+   {
+    "name": "Google (co-developer, AP2/UCP alignment)",
+    "url": "https://www.mastercard.com/global/en/news-and-trends/stories/2026/verifiable-intent.html",
+    "date": "2026-03-05",
+    "evidence": "VERIFIED",
+    "note": "named quote from Stavan Parikh, VP/GM Payments, Google"
+   },
+   {
+    "name": "Adyen, Basis Theory, Checkout.com, Getnet, Fiserv, IBM, Worldpay/Global Payments (alignment/planned integration quotes)",
+    "url": "https://www.mastercard.com/global/en/news-and-trends/stories/2026/verifiable-intent.html",
+    "date": "2026-03-05",
+    "evidence": "REPORTED",
+    "note": "named executive quotes describing support/alignment, not confirmed live integrations"
+   }
+  ]
+ },
+ "agent-attribution-protocol": {
+  "implementations": [
+   {
+    "name": "Rako AAP platform (api.rako.sh)",
+    "url": "https://rako.sh/docs",
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "note": "the only known implementation; single-vendor, centrally operated"
+   }
+  ],
+  "sdks": [
+   {
+    "name": "@rakohq/sdk (npm, JS/TS)",
+    "url": "https://www.npmjs.com/package/@rakohq/sdk",
+    "date": "2026-09-05",
+    "evidence": "REPORTED",
+    "note": "linked from rako.sh/docs; package registry page not independently fetched"
+   },
+   {
+    "name": "agent-attribution-protocol (PyPI, Python)",
+    "url": "https://pypi.org/project/agent-attribution-protocol/",
+    "date": "2026-09-05",
+    "evidence": "REPORTED",
+    "note": "linked from rako.sh/docs; package registry page not independently fetched"
+   },
+   {
+    "name": "@rakohq/mcp (MCP server)",
+    "url": "https://rako.sh/docs",
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "note": "documented MCP integration for Claude Desktop/Cursor-style clients"
+   }
+  ],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "agent-audit-trail": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ }
+}

@@ -1,0 +1,244 @@
+{
+ "erc-8004": {
+  "implementations": [
+   {
+    "name": "ERC-8004 reference implementation (Identity/Reputation/Validation registries)",
+    "url": "https://github.com/erc8004/reference-implementation",
+    "date": null,
+    "evidence": "REPORTED"
+   },
+   {
+    "name": "Identity Registry (mainnet + 16 chains)",
+    "url": "https://etherscan.io/address/0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+    "date": "2026-01-29",
+    "evidence": "VERIFIED"
+   },
+   {
+    "name": "Reputation Registry (mainnet + 16 chains)",
+    "url": "https://etherscan.io/address/0x8004BAa17C55a88189AE136b182e5fdA19dE9b63",
+    "date": "2026-01-29",
+    "evidence": "VERIFIED"
+   }
+  ],
+  "sdks": [],
+  "validators": [
+   {
+    "name": "AtlasNexus Verify (client-side identity verification dApp)",
+    "url": "https://atlasnexus.tech/verify/",
+    "date": null,
+    "evidence": "REPORTED"
+   }
+  ],
+  "registries": [
+   {
+    "name": "awesome-erc8004 community deployment tracker",
+    "url": "https://github.com/sudeepb02/awesome-erc8004",
+    "date": null,
+    "evidence": "REPORTED"
+   }
+  ],
+  "adopters": [
+   {
+    "name": "8004.org project site",
+    "url": "https://www.8004.org/blog/welcome-to-8004",
+    "date": "2026-01-29",
+    "evidence": "REPORTED"
+   }
+  ]
+ },
+ "webbotauth": {
+  "implementations": [
+   {
+    "name": "cloudflare/web-bot-auth (Chrome MV3, Cloudflare Workers, Rust binaries, server verifier)",
+    "url": "https://github.com/cloudflare/web-bot-auth",
+    "date": null,
+    "evidence": "VERIFIED"
+   },
+   {
+    "name": "web-bot-auth-example (Puppeteer script)",
+    "url": "https://github.com/stytchauth/web-bot-auth-example",
+    "date": null,
+    "evidence": "REPORTED"
+   },
+   {
+    "name": "guzzle-web-bot-auth-middleware (PHP)",
+    "url": "https://github.com/olipayne/guzzle-web-bot-auth-middleware",
+    "date": null,
+    "evidence": "REPORTED"
+   },
+   {
+    "name": "web-bot-auth-apache (Apache module, C)",
+    "url": "https://github.com/garyillyes/web-bot-auth-apache",
+    "date": null,
+    "evidence": "REPORTED"
+   },
+   {
+    "name": "Bot-Authentication (Python)",
+    "url": "https://github.com/cyberstormdotmu/bot-authentication",
+    "date": null,
+    "evidence": "REPORTED"
+   }
+  ],
+  "sdks": [
+   {
+    "name": "web-bot-auth npm package (TypeScript)",
+    "url": "https://www.npmjs.com/package/web-bot-auth",
+    "date": null,
+    "evidence": "REPORTED"
+   },
+   {
+    "name": "web-bot-auth crate (Rust)",
+    "url": "https://crates.io/crates/web-bot-auth",
+    "date": null,
+    "evidence": "REPORTED"
+   },
+   {
+    "name": "http-signature-directory CLI (validate a key directory)",
+    "url": "https://crates.io/crates/http-signature-directory",
+    "date": null,
+    "evidence": "REPORTED"
+   }
+  ],
+  "validators": [
+   {
+    "name": "Cloudflare Web Bot Auth edge verification (Verified Bots program)",
+    "url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/",
+    "date": "2026-07-01",
+    "evidence": "VERIFIED"
+   }
+  ],
+  "registries": [
+   {
+    "name": "IETF webbotauth Working Group",
+    "url": "https://datatracker.ietf.org/wg/webbotauth/about/",
+    "date": null,
+    "evidence": "REPORTED"
+   }
+  ],
+  "adopters": [
+   {
+    "name": "Cloudflare (edge verifier and Verified Bots program)",
+    "url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/",
+    "date": "2026-07-01",
+    "evidence": "VERIFIED"
+   }
+  ]
+ },
+ "web-bot-auth-signature-agent-card": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [
+   {
+    "name": "draft-meunier-webbotauth-registry IANA web_bot_auth registry (proposed)",
+    "url": "https://www.ietf.org/archive/id/draft-meunier-webbotauth-registry-03.html",
+    "date": "2026-06-26",
+    "evidence": "VERIFIED"
+   }
+  ],
+  "adopters": []
+ },
+ "http-message-signatures": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": [
+   {
+    "name": "Web Bot Auth (profiles RFC 9421 Signature/Signature-Input fields)",
+    "url": "https://datatracker.ietf.org/doc/html/draft-meunier-webbotauth-httpsig-protocol-00",
+    "date": "2026-06-26",
+    "evidence": "VERIFIED"
+   }
+  ]
+ },
+ "ans": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": [
+   {
+    "name": "GoDaddy / Infoblox joint standards-support announcement",
+    "url": "https://aboutus.godaddy.net/newsroom/news-releases/press-release-details/2026/Infoblox-and-GoDaddy-Support-Open-Standards-for-AI-Agent-Discovery-Identity-and-Verification-2026-0acKMntvOC/default.aspx",
+    "date": "2026-05-14",
+    "evidence": "REPORTED"
+   }
+  ]
+ },
+ "tap": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [
+   {
+    "name": "Visa Public Keys Retrieval Service (GET /keys)",
+    "url": "https://developer.visa.com/capabilities/trusted-agent-protocol/trusted-agent-protocol-specifications",
+    "date": null,
+    "evidence": "VERIFIED"
+   }
+  ],
+  "registries": [],
+  "adopters": [
+   {
+    "name": "Visa Trusted Agent Protocol launch announcement",
+    "url": "https://investor.visa.com/news/news-details/2025/Visa-Introduces-Trusted-Agent-Protocol-An-Ecosystem-Led-Framework-for-AI-Commerce/default.aspx",
+    "date": "2025-10-14",
+    "evidence": "VERIFIED"
+   }
+  ]
+ },
+ "spiffe": {
+  "implementations": [
+   {
+    "name": "SPIRE",
+    "url": "https://spiffe.io/docs/latest/spiffe-about/overview/",
+    "date": null,
+    "evidence": "VERIFIED"
+   },
+   {
+    "name": "cert-manager",
+    "url": "https://spiffe.io/docs/latest/spiffe-about/overview/",
+    "date": null,
+    "evidence": "VERIFIED"
+   },
+   {
+    "name": "Istio",
+    "url": "https://spiffe.io/docs/latest/spiffe-about/overview/",
+    "date": null,
+    "evidence": "VERIFIED"
+   }
+  ],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": [
+   {
+    "name": "draft-klrc-aiagent-auth-03 (proposes SPIFFE for AI-agent authentication)",
+    "url": "https://www.ietf.org/ietf-ftp/internet-drafts/draft-klrc-aiagent-auth-03.html",
+    "date": "2026-07-06",
+    "evidence": "VERIFIED"
+   }
+  ]
+ },
+ "wimse": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": [
+   {
+    "name": "draft-klrc-aiagent-auth-03 (proposes WIMSE for AI-agent authentication)",
+    "url": "https://www.ietf.org/ietf-ftp/internet-drafts/draft-klrc-aiagent-auth-03.html",
+    "date": "2026-07-06",
+    "evidence": "VERIFIED"
+   }
+  ]
+ },
+ "aip": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ }
+}
