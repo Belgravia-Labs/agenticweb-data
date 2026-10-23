@@ -8,7 +8,7 @@
   "to": "2026-10-23T02:16:30Z"
  },
  "headline": "Anthropic donates Agent Skills to the Agentic AI Foundation",
- "lede": "Anthropic is donating the Agent Skills standard to the Agentic AI Foundation, which says it now hosts 10 projects, including MCP and A2A. Separately, Cloudflare's MCP servers stopped serving /sse, and press coverage says a v0.1 draft of Meta and Sierra's Personal Agent Protocol is due.",
+ "lede": "Anthropic donated the Agent Skills standard (agentskills.io) to the Linux Foundation's Agentic AI Foundation alongside Open Responses, OpenEnv, and OpenSandbox. Separately, Cloudflare MCP servers retired /sse in favor of /mcp, and four IETF agent-identity and delegation drafts published new revisions.",
  "items": [
   {
    "id": "2026-10-23-1",
@@ -44,7 +44,7 @@
      "title": "Agentic AI Foundation Announces Four New Projects: Agent Skills, Open Responses, OpenEnv, and OpenSandbox - Agentic AI Foundation (AAIF)",
      "publisher": "aaif.io",
      "published": "2026-10-22",
-     "label": "REPORTED",
+     "label": "VERIFIED",
      "fetched": true
     },
     {
@@ -52,7 +52,7 @@
      "title": "Donating Agent Skills to the Agentic AI Foundation \\ Anthropic",
      "publisher": "anthropic.com",
      "published": "2026-10-22",
-     "label": "REPORTED",
+     "label": "VERIFIED",
      "fetched": true
     }
    ],
@@ -60,42 +60,9 @@
   },
   {
    "id": "2026-10-23-2",
-   "title": "Meta and Sierra announce Personal Agent Protocol for agent-to-business connections",
-   "body": "Sierra says it and Meta are developing Personal Agent Protocol, an open standard for how personal agents interact with businesses. Industry partners are Genesys, Instinct, Rocket, Shopify, Stripe and Walmart. Sierra says it is designed to handle authentication and to give companies visibility into what agents do through their websites, APIs or company agents. According to Tilt, a v0.1 specification is due later this month with OAuth-based sessions and read-only agent access by default.",
-   "why_it_matters": "This is a proposed direct channel to replace agents clicking through pages. Businesses evaluating agent access should review the v0.1 draft once it is published.",
-   "kind": "launch",
-   "related": [
-    {
-     "id": "personal-agent-protocol",
-     "name": "Personal Agent Protocol (Poppy)",
-     "url": "https://agenticweb.wiki/protocols/personal-agent-protocol/"
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://sierra.ai/blog/introducing-personal-agent-protocol",
-     "title": "Personal Agent Protocol",
-     "publisher": "sierra.ai",
-     "published": "2026-10-22",
-     "label": "VERIFIED",
-     "fetched": true
-    },
-    {
-     "url": "https://tilt.now/news/story/3fa13c9e-efde-565d-b646-26c69a679eca",
-     "title": "Tilt | AI-Powered Custom Indexing",
-     "publisher": "tilt.now",
-     "published": "2026-10-22",
-     "label": "REPORTED",
-     "fetched": true
-    }
-   ],
-   "stats": []
-  },
-  {
-   "id": "2026-10-23-3",
    "title": "Cloudflare MCP servers drop /sse; clients must switch to /mcp",
    "body": "Cloudflare says its product-specific MCP servers now serve only /mcp. A request to /sse returns 410 Gone with the server's /mcp URL. Clients configured with an /sse URL must change it to /mcp. Users who signed in through /sse will be asked to sign in again.",
-   "why_it_matters": "Check MCP client configurations that point at Cloudflare /sse endpoints and update them. Connections already on /mcp are unaffected.",
+   "why_it_matters": "Check MCP client configurations that point at Cloudflare /sse endpoints and update them to Streamable HTTP at /mcp.",
    "kind": "adoption",
    "related": [
     {
@@ -110,19 +77,24 @@
      "title": "Cloudflare MCP servers no longer serve /sse · Changelog",
      "publisher": "developers.cloudflare.com",
      "published": "2026-10-22",
-     "label": "REPORTED",
+     "label": "VERIFIED",
      "fetched": true
     }
    ],
    "stats": []
   },
   {
-   "id": "2026-10-23-4",
-   "title": "MCP 2026-07-28 removes the initialize handshake, per a server-author walkthrough",
-   "body": "A dev.to post summarizes the official spec pages for MCP 2026-07-28 for authors of 2025-11-25 servers. The initialize handshake is gone. Every request carries io.modelcontextprotocol/protocolVersion and io.modelcontextprotocol/clientCapabilities in _meta, and servers MUST reject requests missing them with error -32602, which is a 400 on HTTP. The changelog also removes ping, logging/setLevel and notifications/roots/list_changed.",
-   "why_it_matters": "Server authors upgrading need to stop relying on session setup and validate _meta on every request. The post's authors say they read the pages and did not run a conformance suite.",
+   "id": "2026-10-23-3",
+   "title": "Personal Agent Protocol (Poppy) advances Draft 0.2 changelog on top of frozen v0.1 spec",
+   "body": "Following the October 9 publication of Personal Agent Protocol Version 0.1 at /docs/0.1/spec, the protocol's official changelog tracks breaking changes in Draft 0.2 (/docs/0.2/spec). Draft 0.2 requires a single OAuth issuer per company, sets both client and session assertion aud claims to auth.issuer, assigns a distinct ES256 DPoP key pair per User ID, and specifies DPoP Session Tokens for MCP servers that advertise dpop_signing_alg_values_supported.",
+   "why_it_matters": "Implementers building against the frozen 0.1 specification should review the Draft 0.2 breaking changes around DPoP key isolation and single-company OAuth issuers.",
    "kind": "spec",
    "related": [
+    {
+     "id": "personal-agent-protocol",
+     "name": "Personal Agent Protocol (Poppy)",
+     "url": "https://agenticweb.wiki/protocols/personal-agent-protocol/"
+    },
     {
      "id": "mcp",
      "name": "Model Context Protocol",
@@ -131,21 +103,21 @@
    ],
    "sources": [
     {
-     "url": "https://dev.to/sbhorus/what-changed-in-mcp-2026-07-28-for-server-authors-stateless-requests-and-serverdiscover-57j3",
-     "title": "What changed in MCP 2026-07-28 for server authors: stateless requests and server/discover - DEV Community",
-     "publisher": "dev.to",
+     "url": "https://personalagentprotocol.org/docs/changelog",
+     "title": "Personal Agent Protocol: Changelog (Draft 0.2 & Version 0.1)",
+     "publisher": "personalagentprotocol.org",
      "published": "2026-10-22",
-     "label": "REPORTED",
+     "label": "VERIFIED",
      "fetched": true
     }
    ],
    "stats": []
   },
   {
-   "id": "2026-10-23-5",
-   "title": "WebMCP switched on at platform scale by Commerce.com and Cafe24",
-   "body": "According to WebProNews, Commerce.com is using Cloudflare's edge WebMCP beta to expose tools such as search_products across its storefronts, with a per-merchant opt-out. Commerce.com runs almost 100,000 domains on Cloudflare. Cafe24 says it applied WebMCP to all its shopping malls with 11 functions, from product search to cart and order lookup. Login and final payment stay with the user. Cafe24 says the feature works in the ChatGPT desktop app's built-in browser.",
-   "why_it_matters": "WebMCP is reaching merchants through platforms rather than one site at a time. Agent builders can test tool calls on these storefronts. Both rollouts leave checkout to the shopper.",
+   "id": "2026-10-23-4",
+   "title": "Cafe24 rolls out WebMCP across its e-commerce malls",
+   "body": "Cafe24 announced that it has applied WebMCP across its e-commerce shopping malls with 11 functions covering product search, cart management and order lookup, while keeping login and final payment checkout with the human shopper.",
+   "why_it_matters": "Platform-level WebMCP rollouts expose structured browser tools across merchant storefronts without per-site custom engineering.",
    "kind": "adoption",
    "related": [
     {
@@ -156,16 +128,8 @@
    ],
    "sources": [
     {
-     "url": "https://www.webpronews.com/commerce-com-cloudflare-webmcp-storefronts-ai-shopping-agents/",
-     "title": "Commerce.com Turns On WebMCP for Nearly 100,000 Stores Through Cloudflare's Edge",
-     "publisher": "webpronews.com",
-     "published": "2026-10-22",
-     "label": "REPORTED",
-     "fetched": false
-    },
-    {
      "url": "https://www.cafe24.com/newsroom/press_release/cafe24-launches-webmcp-agentic-commerce_20261022.html",
-     "title": "카페24",
+     "title": "Cafe24 launches WebMCP for agentic commerce",
      "publisher": "cafe24.com",
      "published": "2026-10-22",
      "label": "REPORTED",
@@ -175,119 +139,21 @@
    "stats": []
   },
   {
-   "id": "2026-10-23-6",
-   "title": "x402 payment demos from Mastercard and from Proof with Circle",
-   "body": "AI Tamer reports that Mastercard showed Agent Pay for Machines on 20 October and opened early access to buyer- and seller-side APIs. Mastercard says the service builds on x402, with agents issuing signed payment vouchers within a set budget. Forkast reports that Proof and Circle demoed an identity-gated purchase. In that flow a merchant returns an x401 request, the agent presents a selectively disclosed credential, and settlement runs over x402 using USDC.",
-   "why_it_matters": "Both vendors pair x402 with an extra layer for spending authority or identity. Implementers should check which layer a counterparty expects before integrating.",
-   "kind": "adoption",
-   "related": [
-    {
-     "id": "x402",
-     "name": "x402",
-     "url": "https://agenticweb.wiki/protocols/x402/"
-    },
-    {
-     "id": "x401",
-     "name": "x401: HTTP Proof Requirement Protocol",
-     "url": "https://agenticweb.wiki/protocols/x401/"
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://aitamer.news/posts/mastercard-agent-pay-for-machines-x402-cloudflare/",
-     "title": "Mastercard opens early access to Agent Pay for Machines, built on x402 · AI Tamer",
-     "publisher": "aitamer.news",
-     "published": "2026-10-21",
-     "label": "REPORTED",
-     "fetched": true
-    },
-    {
-     "url": "https://forkast.news/proof-and-circle-demonstrate-end-to-end-agentic-commerce-the-x401-x402-handshake/",
-     "title": "Proof and Circle Demonstrate End-to-End Agentic Commerce: The x401/x402 Handshake – Forkast",
-     "publisher": "forkast.news",
-     "published": "2026-10-21",
-     "label": "REPORTED",
-     "fetched": true
-    }
-   ],
-   "stats": []
-  },
-  {
-   "id": "2026-10-23-7",
-   "title": "Study questions how much x402 volume on Base reflects real services",
-   "body": "EconoTimes reports on an arXiv paper that counted 136,708,672 x402 settlements worth $44,121,383.81 on Base. The authors classified 21.20% as fictitious and found $187,861.35 reached an advertised catalog service. They note this is a floor, not proof of misconduct. The same report says AWS Bedrock AgentCore payments support x402 and MPP, with per-session budgets and expiration times.",
-   "why_it_matters": "x402 itself does not set spending authority or confirm off-chain delivery. Treat raw settlement counts with caution and add budget controls on the agent side.",
-   "kind": "research",
-   "related": [
-    {
-     "id": "x402",
-     "name": "x402",
-     "url": "https://agenticweb.wiki/protocols/x402/"
-    },
-    {
-     "id": "mpp",
-     "name": "Machine Payments Protocol",
-     "url": "https://agenticweb.wiki/protocols/mpp/"
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://econotimes.com/AWS-Adds-Agent-Spending-Caps-as-Study-Finds-Base-Payments-Cannot-Verify-Service-Delivery-1760208",
-     "title": "AWS Adds Agent Spending Caps as Study Finds Base Payments Cannot Verify Service Delivery | EconoTimes",
-     "publisher": "econotimes.com",
-     "published": "2026-10-22",
-     "label": "REPORTED",
-     "fetched": true
-    }
-   ],
-   "stats": []
-  },
-  {
-   "id": "2026-10-23-8",
-   "title": "Data suggests llms.txt is rarely read unless linked",
-   "body": "getmind.io says that over 27 days of logs covering 218,657 requests, no major AI crawler requested /llms.txt. Over the same period, 2,386 requests asked for pages as Markdown via Accept: text/markdown. According to WebPulse, Ora's research presented on Vercel's show found agents reached llms.txt in 32% of cases, and 86% of those visits came through a link on the site. Our panel shows llms.txt on 111 of 204 domains.",
-   "why_it_matters": "If you publish llms.txt, link to it from your pages. Serving Markdown on request may matter more than the file itself.",
-   "kind": "research",
-   "related": [
-    {
-     "id": "llms-txt",
-     "name": "llms.txt",
-     "url": "https://agenticweb.wiki/protocols/llms-txt/"
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://getmind.io/blog/what-is-llms-txt/",
-     "title": "What Is llms.txt? What the File Does and Doesn't Do, Measured in 27 Days of Server Logs (2026)",
-     "publisher": "getmind.io",
-     "published": "2026-10-22",
-     "label": "REPORTED",
-     "fetched": true
-    },
-    {
-     "url": "https://pulse.adyog.com/insights/agents-search-and-fetch-live-pages-which-ora-says-has-a-lot-of-impact-",
-     "title": "Do AI agents follow llms.txt? A Vercel guest's data",
-     "publisher": "pulse.adyog.com",
-     "published": "2026-10-22",
-     "label": "REPORTED",
-     "fetched": true
-    }
-   ],
-   "stats": [
-    "llms.txt (llms-txt) is published by 111 of 204 panel domains (+4 since 2026-10-20)."
-   ]
-  },
-  {
-   "id": "2026-10-23-9",
-   "title": "New IETF drafts on agent delegation, OIDC agent claims and continuity records",
-   "body": "draft-hamr-oauth-agent-delegation-03 builds on RFC 9421. It defines an Agent-Delegation header carrying a chain of links, each of which can only narrow scope and expiry. draft-sharif-openid-agent-identity-02 profiles OpenID Connect Core 1.0 with claims for agent ownership, trust posture and sanctions screening. draft-watts-agent-continuity-evidence-00 proposes experimental signed records that track agents across sessions and delegations. All three are individual drafts.",
-   "why_it_matters": "These are early, unadopted proposals. They are worth reading if you sign agent requests with HTTP Message Signatures and need to express who the agent acts for.",
+   "id": "2026-10-23-5",
+   "title": "New IETF draft revisions on agent delegation, OIDC agent claims, MCP DNS discovery and continuity records",
+   "body": "draft-hamr-oauth-agent-delegation-03 builds on RFC 9421 to define an Agent-Delegation header carrying a chain of scope-narrowing links. draft-morrison-mcp-dns-discovery-09 updates the _mcp, _org-alter and _alter DNS TXT discovery specification. draft-sharif-openid-agent-identity-02 profiles OpenID Connect Core 1.0 with agent ownership and trust claims, and draft-watts-agent-continuity-evidence-00 proposes signed continuity records across sessions.",
+   "why_it_matters": "Implementers tracking IETF individual submissions for agent identity, delegation and DNS discovery should reference the updated -03, -09 and -02 draft revisions.",
    "kind": "spec",
    "related": [
     {
      "id": "oauth-agent-delegation",
      "name": "Attenuated Delegation Profile for Automated Agents",
      "url": "https://agenticweb.wiki/protocols/oauth-agent-delegation/"
+    },
+    {
+     "id": "mcp-dns-discovery",
+     "name": "Discovery of Model Context Protocol Servers via DNS TXT Records",
+     "url": "https://agenticweb.wiki/protocols/mcp-dns-discovery/"
     },
     {
      "id": "http-message-signatures",
@@ -297,7 +163,7 @@
    ],
    "sources": [
     {
-     "url": "https://datatracker.ietf.org/doc/html/draft-hamr-oauth-agent-delegation",
+     "url": "https://datatracker.ietf.org/doc/html/draft-hamr-oauth-agent-delegation-03",
      "title": "draft-hamr-oauth-agent-delegation-03",
      "publisher": "datatracker.ietf.org",
      "published": "2026-10-22",
@@ -305,10 +171,10 @@
      "fetched": true
     },
     {
-     "url": "https://datatracker.ietf.org/doc/draft-sharif-openid-agent-identity/",
-     "title": "OpenID Connect Agent Identity Claims for Autonomous AI ...",
+     "url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-09",
+     "title": "draft-morrison-mcp-dns-discovery-09",
      "publisher": "datatracker.ietf.org",
-     "published": "2026-10-21",
+     "published": "2026-10-22",
      "label": "VERIFIED",
      "fetched": true
     },
@@ -330,37 +196,6 @@
     }
    ],
    "stats": []
-  },
-  {
-   "id": "2026-10-23-10",
-   "title": "Panel: large swings in Markdown for Agents, Agent Skills and robots.txt AI tokens",
-   "body": "Our checks covered 204 of 212 panel domains today. Markdown for Agents is published by 40 of 204 (+38 since 2026-10-20), and Agent Skills by 27 of 204 (+26 since 2026-10-20). AI crawler user-agent tokens in robots.txt fell to 66 of 204 (-96 since 2026-10-20). Today's grades were A+ 22, A 15, B 35, C 53, D 10, F 69.",
-   "why_it_matters": "Moves this large in two days on a fixed panel affect many site grades. Site owners should recheck their own pages before drawing conclusions.",
-   "kind": "adoption",
-   "related": [
-    {
-     "id": "cloudflare-markdown-for-agents",
-     "name": "Markdown for Agents",
-     "url": "https://agenticweb.wiki/protocols/cloudflare-markdown-for-agents/"
-    },
-    {
-     "id": "anthropic-agent-skills-format",
-     "name": "Agent Skills",
-     "url": "https://agenticweb.wiki/protocols/anthropic-agent-skills-format/"
-    },
-    {
-     "id": "ai-crawler-tokens-robots",
-     "name": "AI Crawler User-Agent Tokens in robots.txt",
-     "url": "https://agenticweb.wiki/protocols/ai-crawler-tokens-robots/"
-    }
-   ],
-   "sources": [],
-   "stats": [
-    "204 of 212 panel domains were checked today; grades: A+ 22, A 15, B 35, C 53, D 10, F 69.",
-    "AI Crawler User-Agent Tokens in robots.txt (ai-crawler-tokens-robots) is published by 66 of 204 panel domains (-96 since 2026-10-20).",
-    "Markdown for Agents (cloudflare-markdown-for-agents) is published by 40 of 204 panel domains (+38 since 2026-10-20).",
-    "Agent Skills (anthropic-agent-skills-format) is published by 27 of 204 panel domains (+26 since 2026-10-20)."
-   ]
   }
  ],
  "stats": {
@@ -2419,14 +2254,6 @@
    "date": "2026-10-19"
   },
   {
-   "record_id": "otel-genai-semconv",
-   "name": "OpenTelemetry GenAI Semantic Conventions (agents and MCP)",
-   "summary": "Source for watch github:otel-genai-semconv:open-telemetry/semantic-conventions-genai failed 3 consecutive polls",
-   "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md",
-   "label": "THIN",
-   "date": "2026-10-22"
-  },
-  {
    "record_id": "dawn-agent-discovery-framework",
    "name": "A Framework for Agent Discovery in DAWN",
    "summary": "Datatracker shows draft-zhang-dawn-agent-discovery-framework-09, dated 2026-10-21, expires 2027-04-24",
@@ -2467,7 +2294,7 @@
   "kept": 37,
   "fetched": 34,
   "models": {
-   "triage": "claude-haiku-5-5",
+   "triage": "claude-opus-5-5",
    "writer": "claude-opus-5-5"
   },
   "facts": 30,

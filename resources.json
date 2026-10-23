@@ -104,6 +104,13 @@
   ],
   "validators": []
  },
+ "a2wp": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
  "aagv": {
   "implementations": [],
   "sdks": [],
@@ -443,7 +450,21 @@
   ],
   "validators": []
  },
+ "agent-audit-record": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
  "agent-audit-trail": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "agent-authorization-envelope": {
   "adopters": [],
   "implementations": [],
   "registries": [],
@@ -506,6 +527,13 @@
   ],
   "validators": []
  },
+ "agent-commerce-kit": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
  "agent-communication-protocol": {
   "adopters": [
    {
@@ -554,6 +582,13 @@
   "sdks": [],
   "validators": []
  },
+ "agent-decision-commitment": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
  "agent-delegation-receipts": {
   "implementations": [],
   "sdks": [],
@@ -567,6 +602,13 @@
   "validators": [],
   "registries": [],
   "adopters": []
+ },
+ "agent-identity-protocol-singla": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
  },
  "agent-permissions-json": {
   "adopters": [],
@@ -1064,6 +1106,27 @@
   ],
   "validators": []
  },
+ "amp-ant": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-10-20",
+    "evidence": "VERIFIED",
+    "name": "ant-intl/AMP: specification and reference code (Apache-2.0)",
+    "url": "https://github.com/ant-intl/AMP"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "anonymous-bot-auth": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
  "anp": {
   "adopters": [],
   "implementations": [
@@ -1391,6 +1454,13 @@
   "sdks": [],
   "validators": []
  },
+ "cloudflare-markdown-for-agents": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
  "cloudflare-pay-per-crawl": {
   "implementations": [],
   "sdks": [],
@@ -1490,6 +1560,13 @@
   "sdks": [],
   "validators": []
  },
+ "erc-8001": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
  "erc-8004": {
   "adopters": [
    {
@@ -1537,6 +1614,13 @@
    }
   ]
  },
+ "erc-8126": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
  "erc-8183": {
   "adopters": [],
   "implementations": [
@@ -1558,6 +1642,13 @@
   "sdks": [],
   "validators": []
  },
+ "erc-8196": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
  "erc-8226": {
   "adopters": [],
   "implementations": [
@@ -1573,6 +1664,27 @@
   "sdks": [],
   "validators": []
  },
+ "erc-8444": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "gbz-185-agent-interconnection": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "haace": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
  "http-message-signatures": {
   "adopters": [
    {
@@ -1582,6 +1694,13 @@
     "url": "https://datatracker.ietf.org/doc/html/draft-meunier-webbotauth-httpsig-protocol-00"
    }
   ],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "iab-comp": {
+  "adopters": [],
   "implementations": [],
   "registries": [],
   "sdks": [],
@@ -1640,12 +1759,47 @@
    }
   ]
  },
+ "idmandat-credential": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "jafar": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
  "knowledge-linkset": {
   "implementations": [],
   "sdks": [],
   "validators": [],
   "registries": [],
   "adopters": []
+ },
+ "kya-os": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-10-20",
+    "evidence": "VERIFIED",
+    "name": "KYA-OS reference implementation and documentation",
+    "url": "https://modelcontextprotocol-identity.io"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "kyapay-token": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
  },
  "l402": {
   "adopters": [
@@ -1814,6 +1968,20 @@
     "url": "https://github.com/eclipse-lmos/arc"
    }
   ],
+  "validators": []
+ },
+ "local-tool-call-proof": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "lws10-authn-ssi-cid": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
   "validators": []
  },
  "mcp": {
@@ -2180,6 +2348,27 @@
    }
   ]
  },
+ "oauth-agent-delegation": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "oauth-cimd": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "oauth-id-continuation": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
  "oauth-metadata-for-agents": {
   "adopters": [],
   "implementations": [
@@ -2235,6 +2424,13 @@
     "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format"
    }
   ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "opena2a-aap": {
+  "adopters": [],
+  "implementations": [],
   "registries": [],
   "sdks": [],
   "validators": []
@@ -2353,12 +2549,42 @@
    }
   ]
  },
- "personal-agent-protocol": {
+ "otel-genai-semconv": {
+  "adopters": [],
   "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "personal-agent-protocol": {
+  "implementations": [
+   {
+    "name": "Personal Agent Protocol Specification & Implementation Kit",
+    "url": "https://github.com/personal-agent-protocol/personal-agent-protocol",
+    "date": "2026-10-09",
+    "evidence": "VERIFIED",
+    "note": "Official repository and implementation kit referenced on personalagentprotocol.org"
+   }
+  ],
   "sdks": [],
   "validators": [],
   "registries": [],
-  "adopters": []
+  "adopters": [
+   {
+    "name": "Sierra, Meta, OpenAI, Instinct (personal agent & co-author design partners)",
+    "url": "https://personalagentprotocol.org/docs/path-to-1",
+    "date": "2026-10-09",
+    "evidence": "VERIFIED",
+    "note": "Listed under Design Partners on personalagentprotocol.org/docs/path-to-1"
+   },
+   {
+    "name": "Cloudflare, Shopify, Stripe, Visa, Mastercard, Okta, 1Password, PayPal/Venmo, Walmart, Target, United Airlines (design partners)",
+    "url": "https://personalagentprotocol.org/docs/path-to-1",
+    "date": "2026-10-09",
+    "evidence": "VERIFIED",
+    "note": "Listed under Companies and Technology Providers on personalagentprotocol.org/docs/path-to-1"
+   }
+  ]
  },
  "rsl": {
   "adopters": [
@@ -2773,6 +2999,27 @@
   "registries": [],
   "adopters": []
  },
+ "wimse-workload-identity-metadata": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "workload-authz-grant": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "x401": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
  "x402": {
   "adopters": [
    {
@@ -2788,230 +3035,6 @@
     "url": "https://x402.org"
    }
   ],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "a2wp": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "agent-audit-record": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "agent-authorization-envelope": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "agent-commerce-kit": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "agent-decision-commitment": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "agent-identity-protocol-singla": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "amp-ant": {
-  "adopters": [],
-  "implementations": [
-   {
-    "date": "2026-10-20",
-    "evidence": "VERIFIED",
-    "name": "ant-intl/AMP: specification and reference code (Apache-2.0)",
-    "url": "https://github.com/ant-intl/AMP"
-   }
-  ],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "anonymous-bot-auth": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "cloudflare-markdown-for-agents": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "erc-8001": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "erc-8126": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "erc-8196": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "erc-8444": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "gbz-185-agent-interconnection": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "haace": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "iab-comp": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "idmandat-credential": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "jafar": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "kya-os": {
-  "adopters": [],
-  "implementations": [
-   {
-    "date": "2026-10-20",
-    "evidence": "VERIFIED",
-    "name": "KYA-OS reference implementation and documentation",
-    "url": "https://modelcontextprotocol-identity.io"
-   }
-  ],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "kyapay-token": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "local-tool-call-proof": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "lws10-authn-ssi-cid": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "oauth-cimd": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "otel-genai-semconv": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "wimse-workload-identity-metadata": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "x401": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "workload-authz-grant": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "oauth-id-continuation": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "oauth-agent-delegation": {
-  "adopters": [],
-  "implementations": [],
-  "registries": [],
-  "sdks": [],
-  "validators": []
- },
- "opena2a-aap": {
-  "adopters": [],
   "implementations": [],
   "registries": [],
   "sdks": [],

@@ -10807,14 +10807,14 @@
   "dispute": null,
   "evidence": [
    {
-    "claim": "personalagentprotocol.org describes the protocol: personal agents discover participating companies, sign users in, and get things done through APIs, web pages and company agents.",
+    "claim": "personalagentprotocol.org publishes the frozen Version 0.1 specification (/docs/0.1/spec, published 2026-10-09) and the in-progress Draft 0.2 changelog (/docs/changelog) under Apache-2.0.",
     "label": "VERIFIED",
-    "url": "https://personalagentprotocol.org/",
+    "url": "https://personalagentprotocol.org/docs/changelog",
     "date": "2026-10-09",
-    "retrieved_at": "2026-10-16T10:30:00Z",
+    "retrieved_at": "2026-10-23T10:08:00Z",
     "source_type": "issuer",
     "http_status": 200,
-    "detector": "phase-a-fix@2026-10-16"
+    "detector": "opus@canonical-audit"
    },
    {
     "claim": "Sierra's announcement (2026-10-09) presents the Personal Agent Protocol draft as built on OAuth, JWT, OpenAPI and MCP, with 35+ design partners including OpenAI, Visa, Mastercard and Okta, and promises a reference implementation. Discovery is one file at /.well-known/poppy.json; sessions, OAuth sign-in and one token across APIs, website and company agent are the other building blocks.",
@@ -10829,7 +10829,7 @@
    }
   ],
   "form": "endpoint",
-  "governance": "Sierra with design partners including OpenAI, Visa, Mastercard and Okta; no standards body named",
+  "governance": "Sierra and Meta with 35+ design partners (Apache-2.0); no standards body named",
   "group": null,
   "history": [
    {
@@ -10849,7 +10849,7 @@
   "implementation": "none-found",
   "last_verified": "2026-10-23",
   "name": "Personal Agent Protocol (Poppy)",
-  "native_status": "Draft published 2026-10-09; reference implementation promised",
+  "native_status": "Version 0.1 published 2026-10-09; Draft 0.2 in progress",
   "origin": {
    "org": "Sierra, with Meta and others",
    "date": "2026-10-09"
@@ -10868,9 +10868,9 @@
   },
   "question": "How does a customer's personal agent identify itself to a business and show it has the customer's permission to act?",
   "scope": "general",
-  "spec_url": "https://sierra.ai/blog/poppy",
+  "spec_url": "https://personalagentprotocol.org/docs/0.1/spec",
   "step": "identify",
-  "summary_md": "The Personal Agent Protocol, nicknamed Poppy, is a draft from Sierra with Meta and others for how a customer's personal agent identifies itself to a business and receives the customer's permission [1]. Companies publish one discovery file at `/.well-known/poppy.json`; Sierra says the protocol is built on OAuth, JWT, OpenAPI and MCP and names 35+ design partners including OpenAI, Visa, Mastercard and Okta [1].\n\nThe draft was published on 2026-10-09 and a reference implementation is promised, not yet seen [1]. No standards body is named. The step placement is a judgement: it covers both identification and permission, and sits at identify here.\n\nEverything above is Sierra's own account in a single announcement.",
+  "summary_md": "The Personal Agent Protocol, nicknamed Poppy, is an open protocol (Apache-2.0) from Sierra and Meta with 35+ design partners for how a customer's personal agent identifies itself to a business and receives the customer's permission [1]. Companies publish a discovery file at `/.well-known/poppy.json`; the protocol builds on OAuth, JWT, DPoP, OpenAPI and MCP [1].\n\nVersion 0.1 was published on 2026-10-09 and is frozen at `/docs/0.1/spec`, while Draft 0.2 is in progress at `/docs/0.2/spec` and in the `personal-agent-protocol/personal-agent-protocol` repository (adding per-User-ID DPoP keys, DPoP Session Tokens at MCP servers, and single-company OAuth issuers) [2]. No standards body is named.",
   "track": "vendor-consortium",
   "use_cases": [
    "prove-agent-identity",
@@ -10878,13 +10878,13 @@
    "discover-my-api"
   ],
   "version": {
-   "label": "draft",
+   "label": "0.1 (Draft 0.2 in progress)",
    "date": "2026-10-09"
   },
   "watch": [
    {
     "type": "page",
-    "url": "https://sierra.ai/blog/poppy",
+    "url": "https://personalagentprotocol.org/docs/changelog",
     "selector": "main",
     "cadence": "weekly"
    }
@@ -11684,8 +11684,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-alla-agent-identity-document-01"
+    "type": "ietf",
+    "doc": "draft-alla-agent-identity-document"
    }
   ]
  },
@@ -11713,7 +11713,7 @@
    "date": null
   },
   "governance": "Individual Internet-Draft by a single author; not adopted by an IETF working group per the page text (Network Working Group, Intended Status: Informational).",
-  "native_status": "Internet-Draft, Intended Status: Informational; expires 12 April 2027",
+  "native_status": "Active Internet-Draft (-09, Informational; expires 2027-04-25)",
   "phase": "draft",
   "implementation": "unknown",
   "adoption": {
@@ -11723,9 +11723,9 @@
   },
   "version": {
    "label": "draft-morrison-mcp-dns-discovery-09",
-   "date": null
+   "date": "2026-10-22"
   },
-  "spec_url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08",
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-09",
   "discovery": {
    "mechanism": "DNS TXT records at _mcp.<domain>, _org-alter.<domain> and _alter.<domain>; DNSSEC required for the envelope record, DANE TLSA pin on the MCP endpoint where required",
    "path": "_mcp.<domain>"
@@ -11744,15 +11744,14 @@
     "date": "2026-10-09"
    },
    {
-    "claim": "A newer revision, draft-morrison-mcp-dns-discovery-09, now exists; the -08 page is marked as an older version of an Internet-Draft whose latest revision is Active.",
+    "claim": "Datatracker shows draft-morrison-mcp-dns-discovery-09, dated 2026-10-22, expires 2027-04-25.",
     "label": "VERIFIED",
-    "url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08",
-    "date": "2026-10-23",
-    "retrieved_at": "2026-10-23T05:01:05Z",
-    "source_type": "issuer",
+    "url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-09",
+    "date": "2026-10-22",
+    "retrieved_at": "2026-10-23T10:16:00Z",
+    "source_type": "standards-body",
     "http_status": 200,
-    "content_sha256": "977014a722a3e972bbc781d08a75ade40b7d8073f245ec50978a5e8e3320fbd6",
-    "detector": "sonnet@patch-v1"
+    "detector": "ietf@1.0"
    }
   ],
   "summary_md": "This Internet-Draft defines three DNS TXT records: `_mcp.<domain>` for MCP server endpoint, transport, key and capability profile; `_org-alter.<domain>` for operator organisational identity; and `_alter.<domain>` for an Ed25519-signed ~handle envelope. DNSSEC validation is required for the envelope record, and a DANE TLSA pin is required on the MCP endpoint in some cases. It follows the DKIM, SPF, DMARC and MTA-STS precedent and discusses related DNS-based discovery drafts (AGENT-AID, DNS-AID, MDNS-AGENT).",
@@ -11792,8 +11791,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08"
+    "type": "ietf",
+    "doc": "draft-morrison-mcp-dns-discovery"
    }
   ]
  },
@@ -11878,8 +11877,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-bu-agentproto-security-principal-binding-08"
+    "type": "ietf",
+    "doc": "draft-bu-agentproto-security-principal-binding"
    }
   ]
  },
@@ -11968,8 +11967,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-prakash-aip-02"
+    "type": "ietf",
+    "doc": "draft-prakash-aip"
    }
   ]
  },
@@ -12065,8 +12064,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-sweeney-wimse-credential-delegation-01"
+    "type": "ietf",
+    "doc": "draft-sweeney-wimse-credential-delegation"
    }
   ]
  },
@@ -12382,8 +12381,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-agarwal-acip-00"
+    "type": "ietf",
+    "doc": "draft-agarwal-acip"
    }
   ]
  },
@@ -12470,8 +12469,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-besleaga-agentic-knowledge-wellknown-01"
+    "type": "ietf",
+    "doc": "draft-besleaga-agentic-knowledge-wellknown"
    }
   ]
  },
@@ -12560,8 +12559,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-emirdag-scitt-ai-agent-execution-01"
+    "type": "ietf",
+    "doc": "draft-emirdag-scitt-ai-agent-execution"
    }
   ]
  },
@@ -12645,8 +12644,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-morrison-agent-channel-fan-out-02"
+    "type": "ietf",
+    "doc": "draft-morrison-agent-channel-fan-out"
    }
   ]
  },
@@ -12730,8 +12729,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-watts-agentic-authority-graph-validation-00"
+    "type": "ietf",
+    "doc": "draft-watts-agentic-authority-graph-validation"
    }
   ]
  },
@@ -12822,8 +12821,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-king-yew-choo-agentic-payments-01"
+    "type": "ietf",
+    "doc": "draft-king-yew-choo-agentic-payments"
    }
   ]
  },
@@ -12917,8 +12916,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-koenig-idmandat-credential-00"
+    "type": "ietf",
+    "doc": "draft-koenig-idmandat-credential"
    }
   ]
  },
@@ -13092,8 +13091,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-heigh-wimse-workload-identity-metadata-00"
+    "type": "ietf",
+    "doc": "draft-heigh-wimse-workload-identity-metadata"
    }
   ]
  },
@@ -13177,8 +13176,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-watts-high-assurance-agent-control-envelope-00"
+    "type": "ietf",
+    "doc": "draft-watts-high-assurance-agent-control-envelope"
    }
   ]
  },
@@ -13268,8 +13267,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-lee-wimse-local-tool-call-proof-01"
+    "type": "ietf",
+    "doc": "draft-lee-wimse-local-tool-call-proof"
    }
   ]
  },
@@ -13357,8 +13356,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-gilda-audit-agent-audit-record"
+    "type": "ietf",
+    "doc": "draft-gilda-audit-agent-audit-record"
    }
   ]
  },
@@ -13382,7 +13381,7 @@
    "date": "2026-05-21"
   },
   "governance": "Individual Internet-Draft submitted to the IETF datatracker by a single author; not adopted by a working group per the page.",
-  "native_status": "Individual Internet-Draft",
+  "native_status": "Active Internet-Draft (-02, expires 2027-03-10)",
   "phase": "draft",
   "implementation": "unknown",
   "adoption": {
@@ -13391,10 +13390,10 @@
    "probe_run": null
   },
   "version": {
-   "label": "Individual Internet-Draft (May 2026)",
-   "date": "2026-05-21"
+   "label": "draft-kroehl-agentic-trust-aae-02",
+   "date": "2026-09-06"
   },
-  "spec_url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-05-21-agent-authorization-envelope-aae",
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-kroehl-agentic-trust-aae-02",
   "discovery": {
    "mechanism": "Envelope presented by the agent to the relying party; no discovery path is described. The optional revocation endpoint is named inside the envelope.",
    "path": null
@@ -13407,16 +13406,14 @@
   },
   "evidence": [
    {
-    "claim": "The AAE is a W3C Verifiable Credential signed as a compact JWS (EdDSA/Ed25519) with mandatory mandate, constraints and validity blocks; the key is named by a DID URL.",
-    "label": "REPORTED",
-    "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-05-21-agent-authorization-envelope-aae",
-    "date": "2026-05-21"
-   },
-   {
-    "claim": "A relying party MUST reject an AAE if any required constraint is unrecognized or cannot be evaluated; delegated envelopes may only narrow the parent's grant, with a maximum delegation depth.",
-    "label": "REPORTED",
-    "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-05-21-agent-authorization-envelope-aae",
-    "date": "2026-05-21"
+    "claim": "Datatracker shows draft-kroehl-agentic-trust-aae-02 (Agent Authorization Envelope: A Machine-Evaluable Authorization Structure for Autonomous AI Agents), dated 2026-09-06.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-kroehl-agentic-trust-aae-02",
+    "date": "2026-09-06",
+    "retrieved_at": "2026-10-23T10:16:00Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "detector": "ietf@1.0"
    }
   ],
   "summary_md": "The Agent Authorization Envelope (AAE) is an individual IETF Internet-Draft by Lars Kersten Kroehl of CryptoKRI GmbH. It defines a JWS-secured W3C Verifiable Credential carrying a mandate, constraints and a validity block for an agent acting under delegated authority. Relying parties run nine ordered checks, including proof of key possession, revocation and delegation-chain narrowing, and refuse when a required constraint or revocation status cannot be checked. Delegated envelopes may only narrow the parent's actions, caps, allowlists and validity window.",
@@ -13449,8 +13446,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-05-21-agent-authorization-envelope-aae"
+    "type": "ietf",
+    "doc": "draft-kroehl-agentic-trust-aae"
    }
   ]
  },
@@ -13533,8 +13530,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-senarath-a2wp-01"
+    "type": "ietf",
+    "doc": "draft-senarath-a2wp"
    }
   ]
  },
@@ -13624,8 +13621,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://datatracker.ietf.org/doc/html/draft-milan-agent-decision-commitment-00"
+    "type": "ietf",
+    "doc": "draft-milan-agent-decision-commitment"
    }
   ]
  },
@@ -13657,7 +13654,7 @@
    "date": "2026-04-17"
   },
   "governance": "Individual author's IETF Internet-Draft; no working group adoption stated on the page",
-  "native_status": "Internet-Draft; the did:aip DID method is \"requested for registration\" with status Draft (Section 22.1)",
+  "native_status": "Active Internet-Draft (-03, expires 2026-12-12)",
   "phase": "draft",
   "implementation": "none-found",
   "adoption": {
@@ -13666,10 +13663,10 @@
    "probe_run": null
   },
   "version": {
-   "label": "Draft (version not stated; before v1.0 minor versions may break compatibility)",
-   "date": null
+   "label": "draft-singla-agent-identity-protocol-03",
+   "date": "2026-06-10"
   },
-  "spec_url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-04-17-agent-identity-protocol-aip",
+  "spec_url": "https://datatracker.ietf.org/doc/html/draft-singla-agent-identity-protocol-03",
   "discovery": {
    "mechanism": "A principal's did:aip DID document names its Registry; the Registry holds a versioned Trust Record and issues credential tokens",
    "path": null
@@ -13682,10 +13679,14 @@
   },
   "evidence": [
    {
-    "claim": "Boston Identity's IAM Insights briefing reports that the draft defines did:aip identifiers, a Registry, Capability Manifests, EdDSA-signed Credential Tokens, delegation chains with attenuation, an AIP-GRANT ceremony and Approval Envelopes. It also reports that no deployment or implementation is named, and that the draft's claim of W3C did:aip registration conflicts with its IANA-section statement that registration is only requested.",
-    "label": "REPORTED",
-    "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-04-17-agent-identity-protocol-aip",
-    "date": "2026-10-16"
+    "claim": "Datatracker shows draft-singla-agent-identity-protocol-03 (Agent Identity Protocol: Decentralized Identity and Delegation for AI Agents), dated 2026-06-10.",
+    "label": "VERIFIED",
+    "url": "https://datatracker.ietf.org/doc/html/draft-singla-agent-identity-protocol-03",
+    "date": "2026-06-10",
+    "retrieved_at": "2026-10-23T10:16:00Z",
+    "source_type": "standards-body",
+    "http_status": 200,
+    "detector": "ietf@1.0"
    }
   ],
   "summary_md": "Draft by Paras Singla that defines did:aip, a DID method whose identifiers derive from an agent's Ed25519 key, with a Registry that issues short-lived signed Credential Tokens. It also covers Capability Manifests, delegation chains with scope attenuation (default depth 3, hard cap 10), revocation and an AIP-GRANT consent ceremony. For MCP servers the Registry acts as an OAuth server and issues DPoP-bound tokens by RFC 8693 token exchange. A third-party briefing reports that Tier 2 scopes require live Registry revocation checks, and that the did:aip name collides with another project's registered method.",
@@ -13718,8 +13719,8 @@
   ],
   "watch": [
    {
-    "type": "page",
-    "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-04-17-agent-identity-protocol-aip"
+    "type": "ietf",
+    "doc": "draft-singla-agent-identity-protocol"
    }
   ]
  },
