@@ -3,7 +3,7 @@
     "acronym": "MCP",
     "adoption": {
       "level": "measured",
-      "by": "Three independent registry censuses, kept separate and not averaged. VerifyMCP as of 2026-10-19 (https://verifymcp.io/stats): 47,870 logical servers (45,953 active, 601 deprecated, 1,316 deleted; 31,337 remote; 30,842 Streamable HTTP; among handshook components, 20,031 on 2025-11-25 and 6,571 on 2026-07-28). Registry Discussion 1580 as of 2026-08-27 (https://github.com/modelcontextprotocol/registry/discussions/1580): a cursor walk of 82,994 version records yielding 25,125 distinct isLatest servers across 15,468 publishers (13,279 Streamable HTTP remotes). Registry Discussion 1548 as of 2026-08-19 (https://github.com/modelcontextprotocol/registry/discussions/1548): 22,636 active latest registrations (12,077 declaring an HTTPS remote).",
+      "by": "Three independent registry censuses, kept separate and not averaged. VerifyMCP as of 2026-10-19 (https://verifymcp.io/stats, embedded in <script id=\"stats-charts-data\"> time-series JSON; HTML hero card reflects latest daily snapshot): 47,870 logical servers (45,953 active, 601 deprecated, 1,316 deleted; 31,337 remote; 30,842 Streamable HTTP; among handshook components, 20,031 on 2025-11-25 and 6,571 on 2026-07-28). Registry Discussion 1580 as of 2026-08-27 (https://github.com/modelcontextprotocol/registry/discussions/1580): a cursor walk of 82,994 version records yielding 25,125 distinct isLatest servers across 15,468 publishers (13,279 Streamable HTTP remotes). Registry Discussion 1548 as of 2026-08-19 (https://github.com/modelcontextprotocol/registry/discussions/1548): 22,636 active latest registrations (12,077 declaring an HTTPS remote).",
       "probe_run": null
     },
     "aliases": [],
@@ -89,7 +89,7 @@
         "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/"
       },
       {
-        "claim": "VerifyMCP's hourly recount of the official registry, as of 2026-10-19: 47,870 logical servers (45,953 active, 601 deprecated, 1,316 deleted); 31,337 remote; 30,842 Streamable HTTP; among handshook components, 20,031 on 2025-11-25 and 6,571 on 2026-07-28.",
+        "claim": "VerifyMCP's hourly recount of the official registry, as of 2026-10-19 (published in the page's <script id=\"stats-charts-data\" type=\"application/json\"> time-series payload; the visible HTML summary card updates daily): 47,870 logical servers (45,953 active, 601 deprecated, 1,316 deleted); 31,337 remote; 30,842 Streamable HTTP; among handshook components, 20,031 on 2025-11-25 and 6,571 on 2026-07-28.",
         "date": "2026-10-19",
         "label": "VERIFIED",
         "url": "https://verifymcp.io/stats"

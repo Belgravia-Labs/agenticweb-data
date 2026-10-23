@@ -276,7 +276,7 @@
     "id": "official-mcp-registry",
     "name": "MCP Registry",
     "aliases": [],
-    "definition_md": "The official catalogue and API of public MCP servers, run by the MCP Registry Working Group. Sub-registries can mirror it. Clients list servers with `GET /v0.1/servers`.",
+    "definition_md": "The **Official MCP Registry** (`modelcontextprotocol/registry`) is the community-governed catalogue and HTTP API of public Model Context Protocol servers, maintained by the MCP Registry Working Group under the Linux Foundation AAIF. It acts as an upstream metadata index (storing server names, versions, package coordinates, and remote Streamable HTTP endpoint URLs) rather than hosting server binaries itself; downstream sub-registries and IDE marketplaces mirror its feed via `GET /v0.1/servers`. Publishers authenticate namespace ownership via GitHub or DNS verification before publishing `server.json` descriptors. Used by: mcp-registry, mcp.",
     "step": "discover",
     "related_protocols": [
       "mcp-registry",
@@ -329,7 +329,7 @@
     "id": "workload-identity",
     "name": "Workload identity",
     "aliases": [],
-    "definition_md": "A cryptographic identity for software, such as a service or an agent, rather than for a person. WIMSE and SPIFFE define how workloads obtain and present such identities.",
+    "definition_md": "**Workload identity** is a cryptographic identity issued to a software process—such as a microservice, container, or autonomous AI agent—rather than to a human user. Instead of sharing long-lived static API keys, workloads obtain short-lived, automatically rotated credentials (such as SPIFFE SVIDs over X.509 or JWT, or WIMSE Workload Identity Tokens) from an attestation authority that verifies the runtime environment. In the agentic web, workload identity binds an agent run to a verifiable cryptographic principal before it signs outbound HTTP requests or exchanges OAuth tokens on a user's behalf. Used by: wimse, spiffe.",
     "step": "identify",
     "related_protocols": [
       "wimse",
@@ -351,7 +351,7 @@
     "aliases": [
       "RFC 9421"
     ],
-    "definition_md": "A way to sign chosen components of an HTTP message so a server can verify the sender, defined in RFC 9421. Web Bot Auth uses it to let a crawler or agent prove who it is.",
+    "definition_md": "**HTTP Message Signatures** (RFC 9421, published February 2024 by the IETF HTTP Working Group) define a standard mechanism for creating, encoding, and verifying digital signatures or MACs over selected components of an HTTP message. A sender declares which headers, method, target URI, or body digest are covered in a `Signature-Input` field and attaches the cryptographic signature in `Signature`, allowing a server or CDN to verify authenticity and message integrity without relying on network-layer IP allowlists. In the agentic web, RFC 9421 is the cryptographic foundation for **Web Bot Auth**, Visa **Trusted Agent Protocol (TAP)**, and signed agent-to-origin requests. Used by: http-message-signatures, webbotauth.",
     "step": "identify",
     "related_protocols": [
       "http-message-signatures",
@@ -375,7 +375,7 @@
       "agent authentication",
       "bot authentication"
     ],
-    "definition_md": "Cloudflare's term for a verified agent that signs its requests, as distinct from a crawler. Signing uses Web Bot Auth.",
+    "definition_md": "A **signed agent** is an automated HTTP client or AI agent that cryptographically signs its outbound requests using **RFC 9421 HTTP Message Signatures** and publishes its public verification keys at a discoverable key directory (such as `/.well-known/http-message-signatures-directory`), allowing origins and CDNs to verify the agent's identity independent of IP address or spoofable `User-Agent` strings. Cloudflare's **Web Bot Auth** and **Pay Per Crawl** programs distinguish verified signed agents from anonymous scrapers so publishers can grant authenticated read access, enforce per-agent rate limits, or meter HTTP 402 micropayments. Used by: webbotauth, http-message-signatures, auth-md, oauth-metadata-for-agents.",
     "step": "identify",
     "related_protocols": [
       "webbotauth",
@@ -397,7 +397,7 @@
     "id": "content-usage-preference",
     "name": "Content usage preference",
     "aliases": [],
-    "definition_md": "A machine-readable statement of how content may be used, for example whether it may be used for AI training. The IETF AIPREF working group defines a vocabulary for these statements and ways to attach them to content.",
+    "definition_md": "A **content usage preference** is a machine-readable declaration by a publisher stating how automated systems may use a resource—for example, permitting search indexing and live user-triggered grounding while prohibiting foundation-model training. The IETF **AIPREF** (AI Preferences) working group standardizes both the controlled vocabulary (`draft-ietf-aipref-vocab`, distinguishing `train-ai`, `train-genai`, and search/retrieval categories) and the attachment mechanisms (`draft-ietf-aipref-attach`, binding preferences via `robots.txt`, HTTP `Content-Usage` headers, or HTML metadata). Used by: aipref-vocabulary, aipref-content-usage-attachment.",
     "step": "permit",
     "related_protocols": [
       "aipref-vocabulary",
@@ -442,7 +442,7 @@
       "MCP Authorization",
       "MCP OAuth"
     ],
-    "definition_md": "An OAuth document, defined in RFC 9728, that tells a client which authorization server protects a resource.",
+    "definition_md": "**OAuth 2.0 Protected Resource Metadata** (RFC 9728, published April 2025) is a discovery document served at `/.well-known/oauth-protected-resource` that tells an OAuth client or AI agent which authorization server(s) protect an API or MCP server, which `scopes_supported` apply, and how bearer tokens must be presented. In the **Model Context Protocol (MCP) Authorization** flow (`mcp.auth`), an unauthenticated request to a protected MCP server returns `HTTP 401 Unauthorized` with a `WWW-Authenticate` header pointing to `/.well-known/oauth-protected-resource`, allowing the agent host to discover the authorization server (`/.well-known/oauth-authorization-server`, RFC 8414), register or present a Client ID Metadata Document, and complete PKCE token exchange without hardcoding OAuth endpoints. Used by: oauth-metadata-for-agents, auth-md, mcp.",
     "step": "permit",
     "related_protocols": [
       "oauth-metadata-for-agents",
@@ -463,7 +463,7 @@
     "id": "llms-txt-file",
     "name": "llms.txt",
     "aliases": [],
-    "definition_md": "A Markdown file at `/llms.txt` that points language models to a site's key content.",
+    "definition_md": "**`llms.txt`** is a Markdown index file placed at `/llms.txt` (with an optional expanded companion at `/llms-full.txt`) proposed by Jeremy Howard (Answer.AI) in September 2024 to give language models and coding agents a concise, token-efficient map of a website's most important documentation and canonical URLs. A conforming `/llms.txt` begins with an H1 site title, a blockquote summary (`> ...`), optional prose context, and H2-grouped lists of Markdown links (`- [Title](url): description`) pointing to clean `.md` twins rather than script-heavy HTML pages. Used by: llms-txt.",
     "step": "read",
     "related_protocols": [
       "llms-txt"
@@ -484,9 +484,12 @@
     "aliases": [
       "Markdown for agents"
     ],
-    "definition_md": "A Markdown version of an HTML page, served for agents. This site publishes one for each page, for example at `/index.md`, and also answers `Accept: text/markdown`.",
+    "definition_md": "A **Markdown twin** is a clean `text/markdown` representation of an HTML web page served either at a predictable sibling URL (such as `/path/index.md` or `/page.md`) or via HTTP content negotiation when an agent sends `Accept: text/markdown`. Serving Markdown twins strips navigation chrome, inline scripts, and layout markup—reducing token consumption by 70–90% while preserving headings, tables, code blocks, and canonical links, often paired with the `Content-Signal` and `x-markdown-tokens` response headers. Used by: llms-txt, cloudflare-markdown-for-agents.",
     "step": "read",
-    "related_protocols": [],
+    "related_protocols": [
+      "llms-txt",
+      "cloudflare-markdown-for-agents"
+    ],
     "sources": [
       {
         "url": "https://agenticweb.wiki/AGENTS.md",
@@ -503,7 +506,7 @@
     "aliases": [
       "MCP tool"
     ],
-    "definition_md": "In MCP, a named, schema-described function that a server exposes for a model to call.",
+    "definition_md": "In the **Model Context Protocol (MCP)**, a **tool** is a named, JSON-Schema-typed function exposed by an MCP server (`tools/list` and `tools/call`) that a host application allows a language model to invoke to inspect external state or perform side effects. Each tool descriptor declares a `name`, human-readable `description`, `inputSchema` (JSON Schema), optional `outputSchema`, and behavioral `annotations` (`readOnlyHint`, `destructiveHint`, `idempotentHint`, `openWorldHint`) so the host can decide whether to require human confirmation before execution. Used by: mcp.",
     "step": "act",
     "related_protocols": [
       "mcp"
@@ -524,10 +527,11 @@
     "aliases": [
       "skill"
     ],
-    "definition_md": "A folder of instructions and resources that an agent loads on demand.",
+    "definition_md": "An **Agent Skill** is a portable, self-contained folder of domain instructions, workflow rules, and helper scripts—anchored by a `SKILL.md` file with YAML frontmatter (`name`, `description`)—that an AI coding or research agent discovers at startup and loads on demand when a task matches its description. Standardized by Anthropic's **Agent Skills** specification (`agentskills.io`) and extended to remote servers via **Skills over MCP (SEP-2640)**, skills keep specialized procedural knowledge out of the baseline system prompt until needed. Used by: anthropic-agent-skills-format, mcp.",
     "step": "act",
     "related_protocols": [
-      "anthropic-agent-skills-format"
+      "anthropic-agent-skills-format",
+      "mcp"
     ],
     "sources": [
       {
@@ -545,10 +549,12 @@
     "aliases": [
       "Model Context Protocol"
     ],
-    "definition_md": "Model Context Protocol: JSON-RPC between AI hosts and tool servers. A server exposes tools, resources and prompts, and a host connects a model to them.",
+    "definition_md": "The **Model Context Protocol (MCP)** is an open JSON-RPC 2.0 standard—originated by Anthropic in November 2024 and stewarded under the Linux Foundation Agentic AI Foundation (AAIF)—that connects AI host applications (IDEs, chat desktops, autonomous runtimes) to external tool and context servers. An MCP server exposes three primary primitives to the host: **Tools** (model-invoked functions with JSON Schema inputs), **Resources** (URI-addressed context data), and **Prompts** (parameterized templates), while the client host can expose **Roots**, **Sampling**, and **Elicitation** back to the server. As of the **2026-07-28** specification, remote MCP servers communicate over stateless **Streamable HTTP** (`MCP-Protocol-Version`, `Mcp-Method`, `Mcp-Name` headers without mandatory `initialize` session handshakes), advertise metadata via **SEP-2127 Server Cards** (`/mcp/server-card`), and handle authorization via OAuth 2.1 Protected Resource Metadata (**RFC 9728**). Used by: mcp, mcp-server-cards, mcp-registry.",
     "step": "act",
     "related_protocols": [
-      "mcp"
+      "mcp",
+      "mcp-server-cards",
+      "mcp-registry"
     ],
     "sources": [
       {
@@ -564,10 +570,11 @@
     "id": "subagent",
     "name": "Subagent",
     "aliases": [],
-    "definition_md": "An agent run delegated by another agent, with its own lifecycle and attribution.",
+    "definition_md": "A **subagent** is an isolated child agent invocation spawned by a parent orchestrator agent to execute a bounded subtask in its own context window, returning a synthesized result rather than polluting the parent's trajectory with raw intermediate tool outputs. Across protocols, subagent delegation appears both within a single host runtime (local worker subagents) and across network boundaries via **A2A** (peer agent tasks) and **AG-UI** (which tracks nested subagent lifecycle events and attribution in user-facing streams). Used by: ag-ui, a2a.",
     "step": "coordinate",
     "related_protocols": [
-      "ag-ui"
+      "ag-ui",
+      "a2a"
     ],
     "sources": [
       {
@@ -585,7 +592,7 @@
     "aliases": [
       "402"
     ],
-    "definition_md": "An HTTP status code reserved for payment since early HTTP and now reused by x402, MPP and Cloudflare pay per crawl.",
+    "definition_md": "**HTTP 402 Payment Required** is a standard HTTP status code (reserved since HTTP/1.1 and defined in RFC 9110 §15.5.3) indicating that a request cannot be fulfilled until the client makes a payment. Long dormant on the human web, HTTP 402 is the core signaling primitive for machine-to-machine micropayments on the agentic web: an origin returns `402 Payment Required` with payment terms in headers or body, and the agent retries the request with a cryptographic payment proof under **x402**, Stripe/Tempo **MPP**, or **Cloudflare Pay Per Crawl**. Used by: x402, mpp, cloudflare-pay-per-crawl.",
     "step": "pay",
     "related_protocols": [
       "x402",
@@ -606,10 +613,11 @@
     "id": "human-not-present",
     "name": "Human Not Present",
     "aliases": [],
-    "definition_md": "An AP2 mode in which an agent pays autonomously under constraints the user authorised in advance.",
+    "definition_md": "**Human Not Present (HNP)** is an execution mode in Google's **Agent Payments Protocol (AP2)** and FIDO-aligned agentic commerce frameworks in which an autonomous agent completes a purchase when the user is offline or not actively viewing a checkout screen. Because the merchant cannot prompt the user in real time, HNP transactions require a pre-signed cryptographic **Intent Mandate** specifying strict bounds (maximum price, merchant allowlist, expiration window, and item constraints) that the payment network and merchant verify before settlement. Used by: ap2, vi.",
     "step": "pay",
     "related_protocols": [
-      "ap2"
+      "ap2",
+      "vi"
     ],
     "sources": [
       {
@@ -625,10 +633,12 @@
     "id": "pay-per-crawl",
     "name": "Pay per crawl",
     "aliases": [],
-    "definition_md": "Charging AI crawlers per request using HTTP 402 and price headers. Cloudflare's version is in closed beta and requires Web Bot Auth signing.",
+    "definition_md": "**Pay per crawl** is an HTTP monetization model where web publishers charge AI crawlers and retrieval agents per request using **HTTP 402 Payment Required** headers rather than blocking them outright in `robots.txt` or serving them for free. In Cloudflare's Pay Per Crawl implementation, an AI crawler must first authenticate its identity using **Web Bot Auth** (RFC 9421 HTTP Message Signatures) and can then either inspect pricing via `402` response headers or authorize automatic per-fetch settlement. Used by: cloudflare-pay-per-crawl, webbotauth, x402.",
     "step": "pay",
     "related_protocols": [
-      "cloudflare-pay-per-crawl"
+      "cloudflare-pay-per-crawl",
+      "webbotauth",
+      "x402"
     ],
     "sources": [
       {
@@ -644,7 +654,7 @@
     "id": "interrupt",
     "name": "Interrupt",
     "aliases": [],
-    "definition_md": "In AG-UI, ending a run to ask the user for input, then resuming it.",
+    "definition_md": "In **AG-UI** (Agent-User Interaction Protocol) and stateful agent runtimes, an **interrupt** is a structured lifecycle event where an agent pauses an in-flight execution run to request human confirmation, disambiguation, or credentials (human-in-the-loop), and then resumes the run from its checkpointed state once the user responds. Used by: ag-ui.",
     "step": "present",
     "related_protocols": [
       "ag-ui"
@@ -663,10 +673,12 @@
     "id": "generative-ui",
     "name": "Generative UI",
     "aliases": [],
-    "definition_md": "An agent sending a description of a user interface for the client to render. A2UI is one such format.",
+    "definition_md": "**Generative UI** is an interaction pattern in which an AI agent returns structured, declarative user-interface components—such as interactive forms, data tables, comparison cards, or sandboxed views—rather than plain text or Markdown. Standards in this layer include **A2UI** (declarative JSON component trees rendered natively by the client's widget catalog), **AG-UI** (streaming UI state and lifecycle events), and **MCP Apps** (`ext-apps`, which embeds sandboxed interactive iframes inside MCP hosts). Used by: a2ui, ag-ui, mcp-apps.",
     "step": "present",
     "related_protocols": [
-      "a2ui"
+      "a2ui",
+      "ag-ui",
+      "mcp-apps"
     ],
     "sources": [
       {
@@ -682,7 +694,7 @@
     "id": "audit-record",
     "name": "Audit record",
     "aliases": [],
-    "definition_md": "A tamper-evident log entry of what an agent did and under what authority.",
+    "definition_md": "An **audit record** in the agentic web is a structured, tamper-evident log entry capturing what action an agent took, which tool or endpoint it invoked, which upstream principal or mandate authorized the call, and the cryptographic trace context (`traceparent` / WIMSE Wit) linking the causal chain across multi-agent hops. Used by: wimse-agent-audit-record, agent-audit-trail.",
     "step": "account",
     "related_protocols": [
       "wimse-agent-audit-record",
@@ -702,15 +714,477 @@
     "id": "verifiable-intent",
     "name": "Verifiable Intent",
     "aliases": [],
-    "definition_md": "Chained SD-JWT credentials that prove what a user authorised an agent to buy. Mastercard contributed the specification to the FIDO Alliance Payments TWG on 2026-04-28.",
+    "definition_md": "**Verifiable Intent** is a cryptographic trust specification—developed by Mastercard and contributed to the FIDO Alliance Payments Technical Working Group in April 2026—that uses chained **SD-JWT** (Selective Disclosure JSON Web Token) credentials to prove what a human user authorized an AI agent to purchase. By selectively disclosing only the required mandate claims to each party (merchant, payment processor, issuer), Verifiable Intent prevents an agent from tampering with cart totals or merchant identities while preserving user privacy. Used by: vi, ap2.",
     "step": "account",
     "related_protocols": [
-      "vi"
+      "vi",
+      "ap2"
     ],
     "sources": [
       {
         "url": "https://fidoalliance.org/fido-alliance-to-develop-standards-for-trusted-ai-agent-interactions/",
         "date": "2026-10-15",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "streamable-http",
+    "name": "Streamable HTTP",
+    "aliases": [
+      "MCP Streamable HTTP",
+      "HTTP+SSE transport"
+    ],
+    "definition_md": "**Streamable HTTP** is the primary remote transport for the **Model Context Protocol (MCP)**, replacing the early dual-endpoint `HTTP+SSE` transport from the 2024-11-05 specification. Under Streamable HTTP, an MCP server exposes a single HTTP endpoint (commonly `/mcp`) that accepts JSON-RPC 2.0 `POST` requests and can respond either with a single `application/json` body or an upgraded `text/event-stream` (SSE) stream when streaming notifications or progress. As of the **2026-07-28** MCP release, Streamable HTTP operates statelessly by default using `MCP-Protocol-Version`, `Mcp-Method`, and `Mcp-Name` headers without requiring a sticky session handshake. Used by: mcp.",
+    "step": "act",
+    "related_protocols": [
+      "mcp"
+    ],
+    "sources": [
+      {
+        "url": "https://modelcontextprotocol.io/specification/2026-07-28/index",
+        "date": "2026-07-28",
+        "label": "VERIFIED"
+      },
+      {
+        "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+        "date": "2026-07-28",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "elicitation",
+    "name": "Elicitation",
+    "aliases": [
+      "MCP elicitation",
+      "elicitation/create"
+    ],
+    "definition_md": "**Elicitation** (`elicitation/create`) is a capability in the **Model Context Protocol (MCP)** that lets an MCP server pause mid-execution and ask the human user—via the client host—for structured additional information validated against a flat JSON Schema, or direct the user to an external URL for out-of-band confirmation. Unlike OAuth authorization (which grants credentials before or outside a tool call), elicitation gathers task-specific runtime parameters (such as confirming a deployment target or choosing among options) without forcing the model to guess. Used by: mcp.",
+    "step": "act",
+    "related_protocols": [
+      "mcp"
+    ],
+    "sources": [
+      {
+        "url": "https://modelcontextprotocol.io/specification/2026-07-28/index",
+        "date": "2026-07-28",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "sampling",
+    "name": "Sampling",
+    "aliases": [
+      "MCP sampling",
+      "sampling/createMessage"
+    ],
+    "definition_md": "**Sampling** (`sampling/createMessage`) is a client-exposed capability in the **Model Context Protocol (MCP)** that allows an MCP server to request an LLM completion from the host application rather than bundling its own model API keys. This keeps model selection, token billing, privacy guardrails, and human-in-the-loop approval under the control of the user's host while enabling recursive agentic behaviors inside MCP servers. Used by: mcp.",
+    "step": "act",
+    "related_protocols": [
+      "mcp"
+    ],
+    "sources": [
+      {
+        "url": "https://modelcontextprotocol.io/specification/2026-07-28/index",
+        "date": "2026-07-28",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "roots",
+    "name": "Roots",
+    "aliases": [
+      "MCP roots",
+      "roots/list"
+    ],
+    "definition_md": "**Roots** (`roots/list`) in the **Model Context Protocol (MCP)** are URI boundaries—typically `file://` workspace directories or repository paths—that an MCP client host advertises to a connected server to define which filesystem trees or resource scopes the server is expected to operate within. While advisory rather than an OS sandbox, roots let IDE and desktop hosts coordinate workspace boundaries across multiple local and remote MCP servers. Used by: mcp.",
+    "step": "permit",
+    "related_protocols": [
+      "mcp"
+    ],
+    "sources": [
+      {
+        "url": "https://modelcontextprotocol.io/specification/2026-07-28/index",
+        "date": "2026-07-28",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "mcp-resource",
+    "name": "MCP Resource",
+    "aliases": [
+      "resources/list",
+      "resources/read",
+      "MCP resources"
+    ],
+    "definition_md": "An **MCP Resource** is a URI-addressed piece of read-only context data—such as a file, database record, documentation page, or live telemetry snapshot—that an MCP server exposes via `resources/list`, `resources/templates/list`, and `resources/read`. Unlike **Tools** (which are model-invoked actions), resources are application-driven or user-attached context objects carrying explicit MIME types (`text/markdown`, `application/json`) and optional change notifications (`notifications/resources/updated`). Used by: mcp.",
+    "step": "read",
+    "related_protocols": [
+      "mcp"
+    ],
+    "sources": [
+      {
+        "url": "https://modelcontextprotocol.io/specification/2026-07-28/index",
+        "date": "2026-07-28",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "mcp-prompt",
+    "name": "MCP Prompt",
+    "aliases": [
+      "prompts/list",
+      "prompts/get",
+      "MCP prompts"
+    ],
+    "definition_md": "An **MCP Prompt** is a reusable, parameterized prompt template or workflow slash-command exposed by an MCP server via `prompts/list` and `prompts/get`. Hosts typically surface MCP prompts directly to users as slash commands or structured workflow starters that pre-populate messages and embedded **MCP Resources** for the language model. Used by: mcp.",
+    "step": "act",
+    "related_protocols": [
+      "mcp"
+    ],
+    "sources": [
+      {
+        "url": "https://modelcontextprotocol.io/specification/2026-07-28/index",
+        "date": "2026-07-28",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "agent-to-agent",
+    "name": "Agent2Agent (A2A)",
+    "aliases": [
+      "Agent2Agent",
+      "A2A protocol"
+    ],
+    "definition_md": "**Agent2Agent (A2A)** is an open protocol—launched by Google in April 2025 and stewarded by the Linux Foundation Agentic AI Foundation (AAIF)—for peer-to-peer communication and task delegation between opaque autonomous agents across organizational boundaries. Where **MCP** connects a host model to tools and data sources (Step 5: Act), **A2A** coordinates multi-turn, potentially long-running **Tasks** between independent agents (Step 6: Coordinate) that discover each other via `/.well-known/agent-card.json`, exchange typed `Part` messages and output `Artifact` objects, and stream updates over SSE or webhook push notifications without exposing internal memory or prompts. Used by: a2a.",
+    "step": "coordinate",
+    "related_protocols": [
+      "a2a",
+      "mcp"
+    ],
+    "sources": [
+      {
+        "url": "https://a2a-protocol.org/latest/specification/",
+        "date": "2026-09-05",
+        "label": "VERIFIED"
+      },
+      {
+        "url": "https://aaif.io/blog/a2a-joins-aaif",
+        "date": "2026-09-05",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "a2a-task",
+    "name": "A2A Task",
+    "aliases": [
+      "Task lifecycle",
+      "A2A Artifact"
+    ],
+    "definition_md": "An **A2A Task** is the core stateful unit of work in the **Agent2Agent (A2A)** protocol. When a client agent sends a message to a remote agent, the server tracks execution through a deterministic state machine (`submitted`, `working`, `input-required`, `auth-required`, `completed`, `failed`, `canceled`, `rejected`), streaming incremental status events and emitting immutable output **Artifacts** composed of typed content `Part` objects. Used by: a2a.",
+    "step": "coordinate",
+    "related_protocols": [
+      "a2a"
+    ],
+    "sources": [
+      {
+        "url": "https://a2a-protocol.org/latest/specification/",
+        "date": "2026-09-05",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "dynamic-client-registration",
+    "name": "Dynamic Client Registration & Client ID Metadata",
+    "aliases": [
+      "RFC 7591",
+      "Client ID Metadata Document",
+      "DCR"
+    ],
+    "definition_md": "**Dynamic Client Registration (DCR, RFC 7591)** and **OAuth Client ID Metadata Documents** allow an AI agent or MCP host to authenticate with a newly discovered authorization server without a human developer manually pre-registering a `client_id` on that site first. In the **MCP Authorization** specification (`2026-07-28`), an agent host can present an HTTPS URL as its `client_id` pointing to a JSON metadata document it controls (Client ID Metadata Document) or register dynamically via RFC 7591 after discovering endpoints through **RFC 9728 Protected Resource Metadata**. Used by: mcp, oauth-metadata-for-agents.",
+    "step": "permit",
+    "related_protocols": [
+      "mcp",
+      "oauth-metadata-for-agents"
+    ],
+    "sources": [
+      {
+        "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization/client-registration",
+        "date": "2026-07-28",
+        "label": "VERIFIED"
+      },
+      {
+        "url": "https://www.rfc-editor.org/rfc/rfc9728",
+        "date": "2026-09-05",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "content-signal",
+    "name": "Content-Signal directive",
+    "aliases": [
+      "Content-Signal",
+      "ai-train",
+      "ai-input"
+    ],
+    "definition_md": "**`Content-Signal`** is a machine-readable policy directive introduced by Cloudflare's Content Signals Policy that publishers place in `robots.txt` or HTTP response headers (`Content-Signal: search=yes, ai-input=yes, ai-train=no`) to express separate permissions for search indexing (`search`), live RAG/grounding retrieval (`ai-input`), and foundation model training (`ai-train`). It complements per-bot `User-agent` rules (`GPTBot`, `ClaudeBot`, `OAI-SearchBot`) and aligns with the IETF AIPREF vocabulary effort. Used by: cloudflare-content-signals-policy, ai-crawler-tokens-robots.",
+    "step": "permit",
+    "related_protocols": [
+      "cloudflare-content-signals-policy",
+      "ai-crawler-tokens-robots"
+    ],
+    "sources": [
+      {
+        "url": "https://blog.cloudflare.com/content-signals-policy/",
+        "date": "2026-09-05",
+        "label": "VERIFIED"
+      },
+      {
+        "url": "https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/",
+        "date": "2026-09-05",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "context-compaction",
+    "name": "Context compaction",
+    "aliases": [
+      "compaction",
+      "trajectory folding",
+      "compact mode"
+    ],
+    "definition_md": "**Context compaction** is the set of protocol and runtime patterns used to keep an AI agent's working context window bounded across multi-turn tool invocations—preventing attention degradation and redundant token spend. On the network side, agentic protocols support compaction by serving **Markdown twins** (`Accept: text/markdown` instead of raw DOM HTML), exposing `compact: true` projections on verbose discovery/probe tools, and isolating noisy exploratory searches inside disposable **subagents** that return only structured summaries to the parent trajectory. Used by: mcp, llms-txt, cloudflare-markdown-for-agents.",
+    "step": "read",
+    "related_protocols": [
+      "mcp",
+      "llms-txt",
+      "cloudflare-markdown-for-agents"
+    ],
+    "sources": [
+      {
+        "url": "https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/",
+        "date": "2026-09-05",
+        "label": "VERIFIED"
+      },
+      {
+        "url": "https://agenticweb.wiki/AGENTS.md",
+        "date": "2026-10-15",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "idempotency-key",
+    "name": "Idempotency-Key header",
+    "aliases": [
+      "Idempotency-Key",
+      "idempotent tool call"
+    ],
+    "definition_md": "An **`Idempotency-Key`** is a unique client-generated token attached to an HTTP `POST`/`PATCH` request or agent payment invocation so that if an agent retries after a network timeout, the server recognizes the duplicate and returns the original result rather than executing the action or charging the user twice. It is standard across **Agentic Commerce Protocol**, **x402** / **MPP** payment retries, and non-idempotent MCP tool annotations (`idempotentHint: false`). Used by: agentic-commerce-protocol, mpp.",
+    "step": "act",
+    "related_protocols": [
+      "agentic-commerce-protocol",
+      "mpp"
+    ],
+    "sources": [
+      {
+        "url": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
+        "date": "2026-04-17",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "web-bot-auth",
+    "name": "Web Bot Auth",
+    "aliases": [
+      "http-message-signatures-directory",
+      "verified bot signing"
+    ],
+    "definition_md": "**Web Bot Auth** is Cloudflare and IETF-draft profile of **RFC 9421 HTTP Message Signatures** whereby an AI crawler or agent signs its outbound HTTP requests with an Ed25519 private key and advertises its public key set (JWKS) at `/.well-known/http-message-signatures-directory` via a `Signature-Agent` header. Edge proxies and origin servers verify the signature cryptographically to confirm the agent's operator without relying on easily spoofed `User-Agent` strings or static IP lists. Used by: webbotauth, http-message-signatures, cloudflare-pay-per-crawl.",
+    "step": "identify",
+    "related_protocols": [
+      "webbotauth",
+      "http-message-signatures",
+      "cloudflare-pay-per-crawl"
+    ],
+    "sources": [
+      {
+        "url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/",
+        "date": "2026-09-05",
+        "label": "VERIFIED"
+      },
+      {
+        "url": "https://github.com/cloudflare/web-bot-auth",
+        "date": "2026-09-05",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "x402-payment-payload",
+    "name": "x402 Payment Payload",
+    "aliases": [
+      "X-PAYMENT",
+      "PAYMENT-REQUIRED",
+      "PAYMENT-RESPONSE"
+    ],
+    "definition_md": "An **x402 Payment Payload** is the base64-encoded JSON credential carried in the HTTP `X-PAYMENT` (v1) or `PAYMENT-SIGNATURE` (v2) request header when an agent pays for an **HTTP 402 Payment Required** resource under the **x402** protocol. After receiving the server's pricing challenge (`paymentRequirements` specifying scheme, network, asset, amount, and recipient), the agent signs an EIP-3009 `TransferWithAuthorization` or Permit2 authorization and attaches it to the retried HTTP request, which the server or a **Facilitator** verifies and settles before returning the response and `PAYMENT-RESPONSE` receipt. Used by: x402.",
+    "step": "pay",
+    "related_protocols": [
+      "x402"
+    ],
+    "sources": [
+      {
+        "url": "https://github.com/x402-foundation/x402/blob/main/specs/transports-v2/http.md",
+        "date": "2026-09-05",
+        "label": "VERIFIED"
+      },
+      {
+        "url": "https://x402.org/wp-content/uploads/sites/10/2026/06/x402-whitepaper.pdf",
+        "date": "2025-05-06",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "api-catalog",
+    "name": "API Catalog (RFC 9727)",
+    "aliases": [
+      "RFC 9727",
+      "/.well-known/api-catalog",
+      "linkset"
+    ],
+    "definition_md": "**`api-catalog`** (RFC 9727, published June 2025) is an IANA-registered well-known URI (`/.well-known/api-catalog`) and HTTP link relation (`rel=\"api-catalog\"`) that returns an RFC 9264 `application/linkset+json` document listing a publisher's machine-readable APIs, OpenAPI specifications (`service-desc`), documentation (`service-doc`), and status endpoints (`status`). In the agentic web, RFC 9727 provides the standards-track IETF foundation for domain-level API discovery alongside `/.well-known/ard.json`. Used by: api-catalog-rfc9727, ard.",
+    "step": "discover",
+    "related_protocols": [
+      "api-catalog-rfc9727",
+      "ard"
+    ],
+    "sources": [
+      {
+        "url": "https://www.rfc-editor.org/rfc/rfc9727.html",
+        "date": "2025-06",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "skill-md",
+    "name": "SKILL.md",
+    "aliases": [
+      "SKILL.md file",
+      "agentskills.io"
+    ],
+    "definition_md": "**`SKILL.md`** is the entrypoint manifest of an **Agent Skill** folder (`agentskills.io`). It combines a strict YAML frontmatter block (`name` and `description`, loaded into the agent's context at startup so the router knows when the skill applies) with a Markdown body of step-by-step instructions, tool usage rules, and relative links to bundled `scripts/`, `references/`, and `assets/` that are read into context only when the skill is activated. Used by: anthropic-agent-skills-format.",
+    "step": "act",
+    "related_protocols": [
+      "anthropic-agent-skills-format"
+    ],
+    "sources": [
+      {
+        "url": "https://agentskills.io/specification",
+        "date": "2026-09-05",
+        "label": "VERIFIED"
+      },
+      {
+        "url": "https://github.com/agentskills/agentskills",
+        "date": "2026-10-15",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "coding-agent-instructions",
+    "name": "Coding agent instruction files",
+    "aliases": [
+      "CLAUDE.md",
+      "GEMINI.md",
+      ".cursorrules"
+    ],
+    "definition_md": "**`AGENTS.md`** is an open repository and origin convention (`agents.md`, stewarded under the Linux Foundation AAIF) for placing machine-targeted instructions—build commands, test runners, architectural invariants, and endpoint conventions—at the root of a git repository or website (`/AGENTS.md`). While `README.md` is written for human contributors and `/llms.txt` is an index of documentation pages, `AGENTS.md` (alongside tool-specific files such as `CLAUDE.md` and `GEMINI.md`) acts as the procedural constitution for coding and web agents operating against that codebase or domain. Used by: agents-md.",
+    "step": "read",
+    "related_protocols": [
+      "agents-md",
+      "llms-txt"
+    ],
+    "sources": [
+      {
+        "url": "https://agents.md",
+        "date": "2026-09-05",
+        "label": "VERIFIED"
+      },
+      {
+        "url": "https://agenticweb.wiki/AGENTS.md",
+        "date": "2026-10-15",
+        "label": "VERIFIED"
+      }
+    ],
+    "part_of": null,
+    "group": null
+  },
+  {
+    "id": "ard-manifest",
+    "name": "Agentic Resource Discovery (ARD) manifest",
+    "aliases": [
+      "ard.json",
+      "/.well-known/ard.json",
+      "ai-catalog.json"
+    ],
+    "definition_md": "An **ARD manifest** (`/.well-known/ard.json`, superseding `/.well-known/ai-catalog.json` in ARD v0.91) is a JSON document published at an origin's well-known path that inventories every agent-facing resource on that domain in a single fetch: MCP endpoints, **SEP-2127 Server Cards**, **A2A Agent Cards**, OpenAPI specifications, `/llms.txt`, and payment/auth metadata. It solves the multi-probe discovery problem by giving agents one canonical directory at Step 1 (Discover). Used by: ard, ai-catalog-well-known-file.",
+    "step": "discover",
+    "related_protocols": [
+      "ard",
+      "ai-catalog-well-known-file"
+    ],
+    "sources": [
+      {
+        "url": "https://agenticresourcediscovery.org/spec/",
+        "date": "2026-08-26",
         "label": "VERIFIED"
       }
     ],
