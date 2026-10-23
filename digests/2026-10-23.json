@@ -1,0 +1,2478 @@
+{
+ "version": 1,
+ "date": "2026-10-23",
+ "url": "https://agenticweb.wiki/digest/2026-10-23/",
+ "generated_at": "2026-10-23T02:45:42Z",
+ "window": {
+  "from": "2026-10-21T18:00:00Z",
+  "to": "2026-10-23T02:16:30Z"
+ },
+ "headline": "Anthropic donates Agent Skills to the Agentic AI Foundation",
+ "lede": "Anthropic is donating the Agent Skills standard to the Agentic AI Foundation, which says it now hosts 10 projects, including MCP and A2A. Separately, Cloudflare's MCP servers stopped serving /sse, and press coverage says a v0.1 draft of Meta and Sierra's Personal Agent Protocol is due.",
+ "items": [
+  {
+   "id": "2026-10-23-1",
+   "title": "Agent Skills moves to the Agentic AI Foundation",
+   "body": "Anthropic says it is donating Agent Skills to the Agentic AI Foundation (AAIF) under the Linux Foundation. The donation includes the name, logo, GitHub organization and agentskills.io domain. AAIF says the addition, alongside Open Responses from OpenAI, OpenEnv from Hugging Face and OpenSandbox from Alibaba, brings it to 10 hosted projects. Anthropic says more than 70 agent platforms have integrated Agent Skills since it was published in December 2025, and that contributors do not need to join AAIF.",
+   "why_it_matters": "Agent Skills now sits under the same foundation as MCP, A2A and AGENTS.md. Implementers should watch the agentskills.io repository for changes to the governance and maintainer process.",
+   "kind": "governance",
+   "related": [
+    {
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills",
+     "url": "https://agenticweb.wiki/protocols/anthropic-agent-skills-format/"
+    },
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    },
+    {
+     "id": "a2a",
+     "name": "Agent2Agent Protocol",
+     "url": "https://agenticweb.wiki/protocols/a2a/"
+    },
+    {
+     "id": "agents-md",
+     "name": "AGENTS.md",
+     "url": "https://agenticweb.wiki/protocols/agents-md/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://aaif.io/news/agentic-ai-foundation-announces-four-new-projects",
+     "title": "Agentic AI Foundation Announces Four New Projects: Agent Skills, Open Responses, OpenEnv, and OpenSandbox - Agentic AI Foundation (AAIF)",
+     "publisher": "aaif.io",
+     "published": "2026-10-22",
+     "label": "REPORTED",
+     "fetched": true
+    },
+    {
+     "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+     "title": "Donating Agent Skills to the Agentic AI Foundation \\ Anthropic",
+     "publisher": "anthropic.com",
+     "published": "2026-10-22",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-23-2",
+   "title": "Meta and Sierra announce Personal Agent Protocol for agent-to-business connections",
+   "body": "Sierra says it and Meta are developing Personal Agent Protocol, an open standard for how personal agents interact with businesses. Industry partners are Genesys, Instinct, Rocket, Shopify, Stripe and Walmart. Sierra says it is designed to handle authentication and to give companies visibility into what agents do through their websites, APIs or company agents. According to Tilt, a v0.1 specification is due later this month with OAuth-based sessions and read-only agent access by default.",
+   "why_it_matters": "This is a proposed direct channel to replace agents clicking through pages. Businesses evaluating agent access should review the v0.1 draft once it is published.",
+   "kind": "launch",
+   "related": [
+    {
+     "id": "personal-agent-protocol",
+     "name": "Personal Agent Protocol (Poppy)",
+     "url": "https://agenticweb.wiki/protocols/personal-agent-protocol/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://sierra.ai/blog/introducing-personal-agent-protocol",
+     "title": "Personal Agent Protocol",
+     "publisher": "sierra.ai",
+     "published": "2026-10-22",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://tilt.now/news/story/3fa13c9e-efde-565d-b646-26c69a679eca",
+     "title": "Tilt | AI-Powered Custom Indexing",
+     "publisher": "tilt.now",
+     "published": "2026-10-22",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-23-3",
+   "title": "Cloudflare MCP servers drop /sse; clients must switch to /mcp",
+   "body": "Cloudflare says its product-specific MCP servers now serve only /mcp. A request to /sse returns 410 Gone with the server's /mcp URL. Clients configured with an /sse URL must change it to /mcp. Users who signed in through /sse will be asked to sign in again.",
+   "why_it_matters": "Check MCP client configurations that point at Cloudflare /sse endpoints and update them. Connections already on /mcp are unaffected.",
+   "kind": "adoption",
+   "related": [
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://developers.cloudflare.com/changelog/post/2026-10-22-cloudflare-mcp-servers-retire-sse/",
+     "title": "Cloudflare MCP servers no longer serve /sse · Changelog",
+     "publisher": "developers.cloudflare.com",
+     "published": "2026-10-22",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-23-4",
+   "title": "MCP 2026-07-28 removes the initialize handshake, per a server-author walkthrough",
+   "body": "A dev.to post summarizes the official spec pages for MCP 2026-07-28 for authors of 2025-11-25 servers. The initialize handshake is gone. Every request carries io.modelcontextprotocol/protocolVersion and io.modelcontextprotocol/clientCapabilities in _meta, and servers MUST reject requests missing them with error -32602, which is a 400 on HTTP. The changelog also removes ping, logging/setLevel and notifications/roots/list_changed.",
+   "why_it_matters": "Server authors upgrading need to stop relying on session setup and validate _meta on every request. The post's authors say they read the pages and did not run a conformance suite.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://dev.to/sbhorus/what-changed-in-mcp-2026-07-28-for-server-authors-stateless-requests-and-serverdiscover-57j3",
+     "title": "What changed in MCP 2026-07-28 for server authors: stateless requests and server/discover - DEV Community",
+     "publisher": "dev.to",
+     "published": "2026-10-22",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-23-5",
+   "title": "WebMCP switched on at platform scale by Commerce.com and Cafe24",
+   "body": "According to WebProNews, Commerce.com is using Cloudflare's edge WebMCP beta to expose tools such as search_products across its storefronts, with a per-merchant opt-out. Commerce.com runs almost 100,000 domains on Cloudflare. Cafe24 says it applied WebMCP to all its shopping malls with 11 functions, from product search to cart and order lookup. Login and final payment stay with the user. Cafe24 says the feature works in the ChatGPT desktop app's built-in browser.",
+   "why_it_matters": "WebMCP is reaching merchants through platforms rather than one site at a time. Agent builders can test tool calls on these storefronts. Both rollouts leave checkout to the shopper.",
+   "kind": "adoption",
+   "related": [
+    {
+     "id": "webmcp",
+     "name": "WebMCP",
+     "url": "https://agenticweb.wiki/protocols/webmcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.webpronews.com/commerce-com-cloudflare-webmcp-storefronts-ai-shopping-agents/",
+     "title": "Commerce.com Turns On WebMCP for Nearly 100,000 Stores Through Cloudflare's Edge",
+     "publisher": "webpronews.com",
+     "published": "2026-10-22",
+     "label": "REPORTED",
+     "fetched": false
+    },
+    {
+     "url": "https://www.cafe24.com/newsroom/press_release/cafe24-launches-webmcp-agentic-commerce_20261022.html",
+     "title": "카페24",
+     "publisher": "cafe24.com",
+     "published": "2026-10-22",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-23-6",
+   "title": "x402 payment demos from Mastercard and from Proof with Circle",
+   "body": "AI Tamer reports that Mastercard showed Agent Pay for Machines on 20 October and opened early access to buyer- and seller-side APIs. Mastercard says the service builds on x402, with agents issuing signed payment vouchers within a set budget. Forkast reports that Proof and Circle demoed an identity-gated purchase. In that flow a merchant returns an x401 request, the agent presents a selectively disclosed credential, and settlement runs over x402 using USDC.",
+   "why_it_matters": "Both vendors pair x402 with an extra layer for spending authority or identity. Implementers should check which layer a counterparty expects before integrating.",
+   "kind": "adoption",
+   "related": [
+    {
+     "id": "x402",
+     "name": "x402",
+     "url": "https://agenticweb.wiki/protocols/x402/"
+    },
+    {
+     "id": "x401",
+     "name": "x401: HTTP Proof Requirement Protocol",
+     "url": "https://agenticweb.wiki/protocols/x401/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://aitamer.news/posts/mastercard-agent-pay-for-machines-x402-cloudflare/",
+     "title": "Mastercard opens early access to Agent Pay for Machines, built on x402 · AI Tamer",
+     "publisher": "aitamer.news",
+     "published": "2026-10-21",
+     "label": "REPORTED",
+     "fetched": true
+    },
+    {
+     "url": "https://forkast.news/proof-and-circle-demonstrate-end-to-end-agentic-commerce-the-x401-x402-handshake/",
+     "title": "Proof and Circle Demonstrate End-to-End Agentic Commerce: The x401/x402 Handshake – Forkast",
+     "publisher": "forkast.news",
+     "published": "2026-10-21",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-23-7",
+   "title": "Study questions how much x402 volume on Base reflects real services",
+   "body": "EconoTimes reports on an arXiv paper that counted 136,708,672 x402 settlements worth $44,121,383.81 on Base. The authors classified 21.20% as fictitious and found $187,861.35 reached an advertised catalog service. They note this is a floor, not proof of misconduct. The same report says AWS Bedrock AgentCore payments support x402 and MPP, with per-session budgets and expiration times.",
+   "why_it_matters": "x402 itself does not set spending authority or confirm off-chain delivery. Treat raw settlement counts with caution and add budget controls on the agent side.",
+   "kind": "research",
+   "related": [
+    {
+     "id": "x402",
+     "name": "x402",
+     "url": "https://agenticweb.wiki/protocols/x402/"
+    },
+    {
+     "id": "mpp",
+     "name": "Machine Payments Protocol",
+     "url": "https://agenticweb.wiki/protocols/mpp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://econotimes.com/AWS-Adds-Agent-Spending-Caps-as-Study-Finds-Base-Payments-Cannot-Verify-Service-Delivery-1760208",
+     "title": "AWS Adds Agent Spending Caps as Study Finds Base Payments Cannot Verify Service Delivery | EconoTimes",
+     "publisher": "econotimes.com",
+     "published": "2026-10-22",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-23-8",
+   "title": "Data suggests llms.txt is rarely read unless linked",
+   "body": "getmind.io says that over 27 days of logs covering 218,657 requests, no major AI crawler requested /llms.txt. Over the same period, 2,386 requests asked for pages as Markdown via Accept: text/markdown. According to WebPulse, Ora's research presented on Vercel's show found agents reached llms.txt in 32% of cases, and 86% of those visits came through a link on the site. Our panel shows llms.txt on 111 of 204 domains.",
+   "why_it_matters": "If you publish llms.txt, link to it from your pages. Serving Markdown on request may matter more than the file itself.",
+   "kind": "research",
+   "related": [
+    {
+     "id": "llms-txt",
+     "name": "llms.txt",
+     "url": "https://agenticweb.wiki/protocols/llms-txt/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://getmind.io/blog/what-is-llms-txt/",
+     "title": "What Is llms.txt? What the File Does and Doesn't Do, Measured in 27 Days of Server Logs (2026)",
+     "publisher": "getmind.io",
+     "published": "2026-10-22",
+     "label": "REPORTED",
+     "fetched": true
+    },
+    {
+     "url": "https://pulse.adyog.com/insights/agents-search-and-fetch-live-pages-which-ora-says-has-a-lot-of-impact-",
+     "title": "Do AI agents follow llms.txt? A Vercel guest's data",
+     "publisher": "pulse.adyog.com",
+     "published": "2026-10-22",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": [
+    "llms.txt (llms-txt) is published by 111 of 204 panel domains (+4 since 2026-10-20)."
+   ]
+  },
+  {
+   "id": "2026-10-23-9",
+   "title": "New IETF drafts on agent delegation, OIDC agent claims and continuity records",
+   "body": "draft-hamr-oauth-agent-delegation-03 builds on RFC 9421. It defines an Agent-Delegation header carrying a chain of links, each of which can only narrow scope and expiry. draft-sharif-openid-agent-identity-02 profiles OpenID Connect Core 1.0 with claims for agent ownership, trust posture and sanctions screening. draft-watts-agent-continuity-evidence-00 proposes experimental signed records that track agents across sessions and delegations. All three are individual drafts.",
+   "why_it_matters": "These are early, unadopted proposals. They are worth reading if you sign agent requests with HTTP Message Signatures and need to express who the agent acts for.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "oauth-agent-delegation",
+     "name": "Attenuated Delegation Profile for Automated Agents",
+     "url": "https://agenticweb.wiki/protocols/oauth-agent-delegation/"
+    },
+    {
+     "id": "http-message-signatures",
+     "name": "HTTP Message Signatures",
+     "url": "https://agenticweb.wiki/protocols/http-message-signatures/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://datatracker.ietf.org/doc/html/draft-hamr-oauth-agent-delegation",
+     "title": "draft-hamr-oauth-agent-delegation-03",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-22",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-sharif-openid-agent-identity/",
+     "title": "OpenID Connect Agent Identity Claims for Autonomous AI ...",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-21",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-sharif-openid-agent-identity/02/",
+     "title": "OpenID Connect Agent Identity Claims for Autonomous AI Agents — draft-02",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-21",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-watts-agent-continuity-evidence/",
+     "title": "Continuity Evidence Records for Delegated Agent Systems",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-22",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-23-10",
+   "title": "Panel: large swings in Markdown for Agents, Agent Skills and robots.txt AI tokens",
+   "body": "Our checks covered 204 of 212 panel domains today. Markdown for Agents is published by 40 of 204 (+38 since 2026-10-20), and Agent Skills by 27 of 204 (+26 since 2026-10-20). AI crawler user-agent tokens in robots.txt fell to 66 of 204 (-96 since 2026-10-20). Today's grades were A+ 22, A 15, B 35, C 53, D 10, F 69.",
+   "why_it_matters": "Moves this large in two days on a fixed panel affect many site grades. Site owners should recheck their own pages before drawing conclusions.",
+   "kind": "adoption",
+   "related": [
+    {
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents",
+     "url": "https://agenticweb.wiki/protocols/cloudflare-markdown-for-agents/"
+    },
+    {
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills",
+     "url": "https://agenticweb.wiki/protocols/anthropic-agent-skills-format/"
+    },
+    {
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt",
+     "url": "https://agenticweb.wiki/protocols/ai-crawler-tokens-robots/"
+    }
+   ],
+   "sources": [],
+   "stats": [
+    "204 of 212 panel domains were checked today; grades: A+ 22, A 15, B 35, C 53, D 10, F 69.",
+    "AI Crawler User-Agent Tokens in robots.txt (ai-crawler-tokens-robots) is published by 66 of 204 panel domains (-96 since 2026-10-20).",
+    "Markdown for Agents (cloudflare-markdown-for-agents) is published by 40 of 204 panel domains (+38 since 2026-10-20).",
+    "Agent Skills (anthropic-agent-skills-format) is published by 27 of 204 panel domains (+26 since 2026-10-20)."
+   ]
+  }
+ ],
+ "stats": {
+  "previous": "2026-10-20",
+  "panel": {
+   "domains": 212,
+   "checked": 204,
+   "errors": 8,
+   "compared": 192,
+   "grades": {
+    "A+": 22,
+    "A": 15,
+    "B": 35,
+    "C": 53,
+    "D": 10,
+    "F": 69
+   },
+   "adoption": [
+    {
+     "id": "llms-txt",
+     "name": "llms.txt",
+     "domains": 111,
+     "delta": 4
+    },
+    {
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt",
+     "domains": 66,
+     "delta": -96
+    },
+    {
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents",
+     "domains": 40,
+     "delta": 38
+    },
+    {
+     "id": "cloudflare-content-signals-policy",
+     "name": "Content Signals Policy",
+     "domains": 36,
+     "delta": 1
+    },
+    {
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills",
+     "domains": 27,
+     "delta": 26
+    },
+    {
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs",
+     "domains": 23,
+     "delta": 6
+    },
+    {
+     "id": "oauth-metadata-for-agents",
+     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)",
+     "domains": 18,
+     "delta": -2
+    },
+    {
+     "id": "ai-catalog-well-known-file",
+     "name": "AI Catalog well-known file",
+     "domains": 17,
+     "delta": 0
+    },
+    {
+     "id": "a2a",
+     "name": "Agent2Agent Protocol",
+     "domains": 15,
+     "delta": 1
+    },
+    {
+     "id": "agents-md",
+     "name": "AGENTS.md",
+     "domains": 13,
+     "delta": 0
+    },
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "domains": 11,
+     "delta": 3
+    },
+    {
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)",
+     "domains": 11,
+     "delta": 3
+    },
+    {
+     "id": "oauth-cimd",
+     "name": "OAuth Client ID Metadata Document",
+     "domains": 10,
+     "delta": -3
+    },
+    {
+     "id": "auth-md",
+     "name": "auth.md",
+     "domains": 7,
+     "delta": 1
+    },
+    {
+     "id": "agents-txt",
+     "name": "agents.txt",
+     "domains": 6,
+     "delta": 0
+    },
+    {
+     "id": "ard",
+     "name": "Agentic Resource Discovery",
+     "domains": 6,
+     "delta": 0
+    },
+    {
+     "id": "webbotauth",
+     "name": "Web Bot Auth HTTP Message Signatures",
+     "domains": 4,
+     "delta": 1
+    },
+    {
+     "id": "rsl",
+     "name": "Really Simple Licensing",
+     "domains": 3,
+     "delta": 0
+    },
+    {
+     "id": "tdmrep",
+     "name": "Text and Data Mining Reservation Protocol",
+     "domains": 3,
+     "delta": 0
+    },
+    {
+     "id": "ads",
+     "name": "Agent Directory Service",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "agent-permissions-json",
+     "name": "agent-permissions.json",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "agents-json",
+     "name": "agents.json",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "agora-protocol",
+     "name": "Agora Protocol",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "identity-assertion-authz-grant",
+     "name": "Identity Assertion JWT Authorization Grant",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "okf",
+     "name": "Open Knowledge Format",
+     "domains": 1,
+     "delta": 1
+    },
+    {
+     "id": "ucp",
+     "name": "Universal Commerce Protocol",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "web-bot-auth-signature-agent-card",
+     "name": "Signature Agent Card (Web Bot Auth registry)",
+     "domains": 1,
+     "delta": 1
+    }
+   ],
+   "gained": [
+    {
+     "domain": "0g.ai",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "agent-ready.dev",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "agent-ready.dev",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "agentclientprotocol.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "agentclientprotocol.com",
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
+    },
+    {
+     "domain": "agentclientprotocol.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "agentcommunity.org",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "agentcommunity.org",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "agenticweb.wiki",
+     "id": "a2a",
+     "name": "Agent2Agent Protocol"
+    },
+    {
+     "domain": "agenticweb.wiki",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "agenticweb.wiki",
+     "id": "auth-md",
+     "name": "auth.md"
+    },
+    {
+     "domain": "agenticweb.wiki",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "agenticweb.wiki",
+     "id": "oauth-metadata-for-agents",
+     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)"
+    },
+    {
+     "domain": "agenticweb.wiki",
+     "id": "okf",
+     "name": "Open Knowledge Format"
+    },
+    {
+     "domain": "agenticweb.wiki",
+     "id": "web-bot-auth-signature-agent-card",
+     "name": "Signature Agent Card (Web Bot Auth registry)"
+    },
+    {
+     "domain": "agenticweb.wiki",
+     "id": "webbotauth",
+     "name": "Web Bot Auth HTTP Message Signatures"
+    },
+    {
+     "domain": "agentskills.io",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "agentskills.io",
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
+    },
+    {
+     "domain": "agentskills.io",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "ant-intl.com",
+     "id": "llms-txt",
+     "name": "llms.txt"
+    },
+    {
+     "domain": "api.proof.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "asana.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "atlan.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "auth-md.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "auth-md.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "auth-md.com",
+     "id": "cloudflare-content-signals-policy",
+     "name": "Content Signals Policy"
+    },
+    {
+     "domain": "auth-md.com",
+     "id": "llms-txt",
+     "name": "llms.txt"
+    },
+    {
+     "domain": "cloudflare.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "cloudflare.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "coinbase.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "crewai.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "crewai.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "developers.cloudflare.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "developers.cloudflare.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "devin.ai",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "docs.adcontextprotocol.org",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "docs.adcontextprotocol.org",
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
+    },
+    {
+     "domain": "docs.adcontextprotocol.org",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "docs.ag-ui.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "docs.ag-ui.com",
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
+    },
+    {
+     "domain": "docs.ag-ui.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "docs.augmentcode.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "docs.augmentcode.com",
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
+    },
+    {
+     "domain": "docs.augmentcode.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "docs.cdp.coinbase.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "docs.cdp.coinbase.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "docs.cdp.coinbase.com",
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
+    },
+    {
+     "domain": "docs.cdp.coinbase.com",
+     "id": "cloudflare-content-signals-policy",
+     "name": "Content Signals Policy"
+    },
+    {
+     "domain": "docs.cdp.coinbase.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "docs.n8n.io",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "docs.n8n.io",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "docs.n8n.io",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "docs.perplexity.ai",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "docs.perplexity.ai",
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
+    },
+    {
+     "domain": "docs.perplexity.ai",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "docs.stripe.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "elsevier.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "etherscan.io",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "firecrawl.dev",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "getdbt.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "gitbook.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "gitbook.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "gitbook.com",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "gitbook.com",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "mastra.ai",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "mastra.ai",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "mintlify.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "mnemom.ai",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "mnemom.ai",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "mnemom.ai",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "mnemom.ai",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "modelcontextprotocol.io",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "modelcontextprotocol.io",
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
+    },
+    {
+     "domain": "modelcontextprotocol.io",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "okta.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "opencode.ai",
+     "id": "llms-txt",
+     "name": "llms.txt"
+    },
+    {
+     "domain": "openknowledge.ai",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "proof.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "proof.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "resend.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "resend.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "salespeak.ai",
+     "id": "ai-catalog-well-known-file",
+     "name": "AI Catalog well-known file"
+    },
+    {
+     "domain": "salespeak.ai",
+     "id": "ard",
+     "name": "Agentic Resource Discovery"
+    },
+    {
+     "domain": "salespeak.ai",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "salespeak.ai",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "samsung.com",
+     "id": "llms-txt",
+     "name": "llms.txt"
+    },
+    {
+     "domain": "sentry.io",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "sentry.io",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "sunilprakash.com",
+     "id": "llms-txt",
+     "name": "llms.txt"
+    },
+    {
+     "domain": "supabase.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "supabase.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "taskade.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "tempo.xyz",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "tempo.xyz",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "vercel.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "vercel.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "workos.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    }
+   ],
+   "lost": [
+    {
+     "domain": "agentman.ai",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "agntcy.org",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "ai.google.dev",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "aioseo.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "alibabacloud.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "ampcode.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "angulararchitects.io",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "anthropic.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "asana.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "atlassian.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "atscale.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "auth0.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "aws.amazon.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "azure.microsoft.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "benstone-ai.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "bingx.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "blog.cloudflare.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "blog.cloudflare.com",
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
+    },
+    {
+     "domain": "blog.cloudflare.com",
+     "id": "cloudflare-content-signals-policy",
+     "name": "Content Signals Policy"
+    },
+    {
+     "domain": "byteiota.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "chrishood.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "claude.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "cloud.google.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "cloud.tencent.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "code.visualstudio.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "coinbase.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "comcastadvertising.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "comcastadvertising.com",
+     "id": "llms-txt",
+     "name": "llms.txt"
+    },
+    {
+     "domain": "comcastadvertising.com",
+     "id": "oauth-cimd",
+     "name": "OAuth Client ID Metadata Document"
+    },
+    {
+     "domain": "comcastadvertising.com",
+     "id": "oauth-metadata-for-agents",
+     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)"
+    },
+    {
+     "domain": "copilotkit.ai",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "crawlytics.app",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "cursor.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "danads.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "danilchenko.dev",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "datatracker.ietf.org",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "dev.to",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "developer.chrome.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "developers.google.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "developers.openai.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "drupal.org",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "edakrong.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "elsevier.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "ethereum-magicians.org",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "etsy.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "exchangewire.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "google.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "hsbc.co.uk",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "hubspot.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "huggingface.co",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "iabtechlab.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "infoq.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "jetbrains.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "juliamaehler.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "karangoyal.cc",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "linear.app",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "linuxfoundation.org",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "mapsoft.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "mastra.ai",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "mcp.sentry.dev",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "microsoft.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "mintlify.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "mozilla.org",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "notion.so",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "okta.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "openai.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "opencode.ai",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "openknowledge.ai",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "openrsl.org",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "outshift.cisco.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "packalyst.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "paypal.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "perplexity.ai",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "pmg.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "ppc.land",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "prnewswire.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "proof.com",
+     "id": "ai-catalog-well-known-file",
+     "name": "AI Catalog well-known file"
+    },
+    {
+     "domain": "proof.com",
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
+    },
+    {
+     "domain": "proof.com",
+     "id": "ard",
+     "name": "Agentic Resource Discovery"
+    },
+    {
+     "domain": "proof.com",
+     "id": "oauth-cimd",
+     "name": "OAuth Client ID Metadata Document"
+    },
+    {
+     "domain": "proof.com",
+     "id": "oauth-metadata-for-agents",
+     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)"
+    },
+    {
+     "domain": "qail.ai",
+     "id": "oauth-cimd",
+     "name": "OAuth Client ID Metadata Document"
+    },
+    {
+     "domain": "qail.ai",
+     "id": "oauth-metadata-for-agents",
+     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)"
+    },
+    {
+     "domain": "reddit.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "rslstandard.org",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "rtblint.org",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "salesforce.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "satgate.io",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "shopify.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "slack.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "snowflake.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "springernature.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "stm-assoc.org",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "stripe.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "stytch.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "sunilprakash.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "support.claude.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "support.wix.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "taskade.com",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "taskade.com",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "techradar.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "techzine.eu",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "theguardian.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "thewaltdisneycompany.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "trendshift.io",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "ucpregistry.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "vercel.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "webhooks.cc",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "wikipedia.org",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "workos.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "wppmedia.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "yoast.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    }
+   ],
+   "grade_changes": [
+    {
+     "domain": "agentclientprotocol.com",
+     "from": "A",
+     "to": "A+",
+     "score_from": 46,
+     "score_to": 75
+    },
+    {
+     "domain": "agentman.ai",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "agentskills.io",
+     "from": "B",
+     "to": "A+",
+     "score_from": 41,
+     "score_to": 70
+    },
+    {
+     "domain": "agntcy.org",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "ai.google.dev",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "aioseo.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "alibabacloud.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "angulararchitects.io",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "ant-intl.com",
+     "from": "F",
+     "to": "C",
+     "score_from": 0,
+     "score_to": 20
+    },
+    {
+     "domain": "anthropic.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "asana.com",
+     "from": "C",
+     "to": "D",
+     "score_from": 20,
+     "score_to": 10
+    },
+    {
+     "domain": "atlassian.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "atscale.com",
+     "from": "C",
+     "to": "D",
+     "score_from": 20,
+     "score_to": 10
+    },
+    {
+     "domain": "auth-md.com",
+     "from": "F",
+     "to": "A",
+     "score_from": 0,
+     "score_to": 46
+    },
+    {
+     "domain": "auth0.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "aws.amazon.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "azure.microsoft.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "benstone-ai.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "bingx.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "blog.cloudflare.com",
+     "from": "B",
+     "to": "F",
+     "score_from": 38,
+     "score_to": 0
+    },
+    {
+     "domain": "byteiota.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "chrishood.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "claude.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "cloud.google.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "cloud.tencent.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "cloudflare.com",
+     "from": "A",
+     "to": "A+",
+     "score_from": 49,
+     "score_to": 60
+    },
+    {
+     "domain": "code.visualstudio.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "comcastadvertising.com",
+     "from": "B",
+     "to": "F",
+     "score_from": 41,
+     "score_to": 0
+    },
+    {
+     "domain": "copilotkit.ai",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "crawlytics.app",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "crewai.com",
+     "from": "A",
+     "to": "A+",
+     "score_from": 54,
+     "score_to": 65
+    },
+    {
+     "domain": "cursor.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "danads.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "danilchenko.dev",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "datatracker.ietf.org",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "dev.to",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "developer.chrome.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "developers.google.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "developers.openai.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "docs.adcontextprotocol.org",
+     "from": "A",
+     "to": "A+",
+     "score_from": 49,
+     "score_to": 75
+    },
+    {
+     "domain": "docs.ag-ui.com",
+     "from": "B",
+     "to": "A+",
+     "score_from": 41,
+     "score_to": 70
+    },
+    {
+     "domain": "docs.augmentcode.com",
+     "from": "B",
+     "to": "A+",
+     "score_from": 41,
+     "score_to": 70
+    },
+    {
+     "domain": "docs.cdp.coinbase.com",
+     "from": "C",
+     "to": "A+",
+     "score_from": 28,
+     "score_to": 70
+    },
+    {
+     "domain": "docs.n8n.io",
+     "from": "A",
+     "to": "A+",
+     "score_from": 52,
+     "score_to": 60
+    },
+    {
+     "domain": "docs.perplexity.ai",
+     "from": "A",
+     "to": "A+",
+     "score_from": 49,
+     "score_to": 75
+    },
+    {
+     "domain": "drupal.org",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "edakrong.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "ethereum-magicians.org",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "etsy.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "exchangewire.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "gitbook.com",
+     "from": "A",
+     "to": "A+",
+     "score_from": 49,
+     "score_to": 65
+    },
+    {
+     "domain": "google.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "hsbc.co.uk",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "hubspot.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "huggingface.co",
+     "from": "A+",
+     "to": "A",
+     "score_from": 60,
+     "score_to": 57
+    },
+    {
+     "domain": "iabtechlab.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "infoq.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "jetbrains.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "juliamaehler.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "karangoyal.cc",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "linear.app",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "linuxfoundation.org",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "mapsoft.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "microsoft.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "modelcontextprotocol.io",
+     "from": "B",
+     "to": "A+",
+     "score_from": 41,
+     "score_to": 70
+    },
+    {
+     "domain": "mozilla.org",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "notion.so",
+     "from": "D",
+     "to": "F",
+     "score_from": 15,
+     "score_to": 5
+    },
+    {
+     "domain": "okta.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "openai.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "openknowledge.ai",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "openrsl.org",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "outshift.cisco.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "packalyst.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "paypal.com",
+     "from": "A",
+     "to": "B",
+     "score_from": 48,
+     "score_to": 30
+    },
+    {
+     "domain": "perplexity.ai",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "pmg.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "ppc.land",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "prnewswire.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "proof.com",
+     "from": "A+",
+     "to": "A",
+     "score_from": 60,
+     "score_to": 49
+    },
+    {
+     "domain": "reddit.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "rslstandard.org",
+     "from": "C",
+     "to": "D",
+     "score_from": 20,
+     "score_to": 10
+    },
+    {
+     "domain": "rtblint.org",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "salesforce.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 5
+    },
+    {
+     "domain": "salespeak.ai",
+     "from": "B",
+     "to": "A+",
+     "score_from": 35,
+     "score_to": 67
+    },
+    {
+     "domain": "samsung.com",
+     "from": "C",
+     "to": "B",
+     "score_from": 20,
+     "score_to": 35
+    },
+    {
+     "domain": "satgate.io",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "sentry.io",
+     "from": "B",
+     "to": "A",
+     "score_from": 44,
+     "score_to": 55
+    },
+    {
+     "domain": "shopify.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "slack.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "snowflake.com",
+     "from": "C",
+     "to": "D",
+     "score_from": 23,
+     "score_to": 10
+    },
+    {
+     "domain": "springernature.com",
+     "from": "C",
+     "to": "D",
+     "score_from": 20,
+     "score_to": 10
+    },
+    {
+     "domain": "stm-assoc.org",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "stripe.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "stytch.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "supabase.com",
+     "from": "A",
+     "to": "A+",
+     "score_from": 52,
+     "score_to": 65
+    },
+    {
+     "domain": "support.claude.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    },
+    {
+     "domain": "support.wix.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "taskade.com",
+     "from": "A+",
+     "to": "B",
+     "score_from": 64,
+     "score_to": 36
+    },
+    {
+     "domain": "techradar.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "techzine.eu",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "tempo.xyz",
+     "from": "A",
+     "to": "A+",
+     "score_from": 51,
+     "score_to": 67
+    },
+    {
+     "domain": "theguardian.com",
+     "from": "C",
+     "to": "D",
+     "score_from": 20,
+     "score_to": 10
+    },
+    {
+     "domain": "thewaltdisneycompany.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "trendshift.io",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "ucpregistry.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 5
+    },
+    {
+     "domain": "wikipedia.org",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "wppmedia.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "yoast.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 35,
+     "score_to": 20
+    }
+   ]
+  },
+  "repos": {
+   "tracked": 78,
+   "movers": [
+    {
+     "repo": "agentskills/agentskills",
+     "stars": 26438,
+     "delta": 123,
+     "pct": 0.5
+    },
+    {
+     "repo": "block/goose",
+     "stars": 55546,
+     "delta": 85,
+     "pct": 0.2
+    },
+    {
+     "repo": "ag-ui-protocol/ag-ui",
+     "stars": 16772,
+     "delta": 47,
+     "pct": 0.3
+    },
+    {
+     "repo": "copilotkit/copilotkit",
+     "stars": 38185,
+     "delta": 45,
+     "pct": 0.1
+    },
+    {
+     "repo": "agentsmd/agents.md",
+     "stars": 25054,
+     "delta": 39,
+     "pct": 0.2
+    },
+    {
+     "repo": "a2aproject/a2a",
+     "stars": 26260,
+     "delta": 34,
+     "pct": 0.1
+    },
+    {
+     "repo": "a2ui-project/a2ui",
+     "stars": 16786,
+     "delta": 32,
+     "pct": 0.2
+    },
+    {
+     "repo": "googlecloudplatform/open-knowledge-format",
+     "stars": 1068,
+     "delta": 29,
+     "pct": 2.8
+    }
+   ]
+  },
+  "registry": {
+   "since": "2026-10-22T00:00:00Z",
+   "versions": 3000,
+   "servers": 1878
+  }
+ },
+ "record_changes": [
+  {
+   "record_id": "a2a",
+   "name": "Agent2Agent Protocol",
+   "summary": "a2a-sdk 1.2.3 published 2026-10-19",
+   "url": "https://pypi.org/project/a2a-sdk/",
+   "label": "REPORTED",
+   "date": "2026-10-19"
+  },
+  {
+   "record_id": "otel-genai-semconv",
+   "name": "OpenTelemetry GenAI Semantic Conventions (agents and MCP)",
+   "summary": "Source for watch github:otel-genai-semconv:open-telemetry/semantic-conventions-genai failed 3 consecutive polls",
+   "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md",
+   "label": "THIN",
+   "date": "2026-10-22"
+  },
+  {
+   "record_id": "dawn-agent-discovery-framework",
+   "name": "A Framework for Agent Discovery in DAWN",
+   "summary": "Datatracker shows draft-zhang-dawn-agent-discovery-framework-09, dated 2026-10-21, expires 2027-04-24",
+   "url": "https://datatracker.ietf.org/doc/draft-zhang-dawn-agent-discovery-framework/",
+   "label": "VERIFIED",
+   "date": "2026-10-21"
+  },
+  {
+   "record_id": "wimse",
+   "name": "Workload Identity in Multi System Environments (WIMSE) Architecture",
+   "summary": "Datatracker shows draft-ietf-wimse-http-signature-08, dated 2026-10-20 (related draft)",
+   "url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-http-signature/",
+   "label": "VERIFIED",
+   "date": "2026-10-20"
+  },
+  {
+   "record_id": "jafar",
+   "name": "JAFAR: A JSON-Based Format for Publishing IP Ranges of Automated HTTP Clients",
+   "summary": "draft-illyes-webbotauth-jafar-00 expires on 2026-10-23",
+   "url": "https://datatracker.ietf.org/doc/draft-illyes-webbotauth-jafar/",
+   "label": "VERIFIED",
+   "date": "2026-04-21"
+  }
+ ],
+ "previous": "2026-10-20",
+ "method": {
+  "sources": {
+   "feeds": 3,
+   "datatracker": 0,
+   "hn": 1,
+   "arxiv": 0,
+   "exa": 103,
+   "parallel": 7,
+   "tips": 0
+  },
+  "candidates": 114,
+  "after_dedupe": 97,
+  "kept": 37,
+  "fetched": 34,
+  "models": {
+   "triage": "claude-haiku-5-5",
+   "writer": "claude-opus-5-5"
+  },
+  "facts": 30,
+  "notes": [],
+  "rules": "Items are written only from the cited sources and our own measurements; every number in an item appears in a source it cites. VERIFIED = fetched from the standard's issuer or a standards body; REPORTED = a claim by press or a third party."
+ },
+ "license": "CC BY 4.0"
+}
