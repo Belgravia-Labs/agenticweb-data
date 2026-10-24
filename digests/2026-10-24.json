@@ -1,0 +1,801 @@
+{
+ "version": 1,
+ "date": "2026-10-24",
+ "url": "https://agenticweb.wiki/digest/2026-10-24/",
+ "generated_at": "2026-10-24T07:57:08Z",
+ "window": {
+  "from": "2026-10-22T18:00:00Z",
+  "to": "2026-10-24T07:30:35Z"
+ },
+ "headline": "Agentic AI Foundation adds Agent Skills, Open Responses, OpenEnv and OpenSandbox",
+ "lede": "The Linux Foundation's Agentic AI Foundation says it now hosts 10 projects, including Agent Skills contributed by Anthropic. Mastercard has reportedly opened early access to an x402-based agent payment system, and Google's Gary Illyes revised a draft that adds URL-level controls to the Robots Exclusion Protocol.",
+ "items": [
+  {
+   "id": "2026-10-24-1",
+   "title": "Agentic AI Foundation adds four projects, including Agent Skills",
+   "body": "The Agentic AI Foundation (AAIF) announced four new projects on Oct. 22, 2026: Agent Skills, contributed by Anthropic; Open Responses, contributed by OpenAI; OpenEnv, contributed by Hugging Face; and OpenSandbox, contributed by Alibaba. According to the Linux Foundation, this brings AAIF to 10 hosted projects, up from its three launch projects in December 2025. The new projects join A2A, Agent Router, agentgateway, AGENTS.md, goose and MCP. Our panel check finds Agent Skills published by 46 of 210 panel domains.",
+   "why_it_matters": "Agent Skills, MCP, A2A and AGENTS.md now sit under one foundation. Implementers relying on them should follow AAIF channels for future spec and governance changes.",
+   "kind": "governance",
+   "related": [
+    {
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills",
+     "url": "https://agenticweb.wiki/protocols/anthropic-agent-skills-format/"
+    },
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    },
+    {
+     "id": "a2a",
+     "name": "Agent2Agent Protocol",
+     "url": "https://agenticweb.wiki/protocols/a2a/"
+    },
+    {
+     "id": "agents-md",
+     "name": "AGENTS.md",
+     "url": "https://agenticweb.wiki/protocols/agents-md/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.linuxfoundation.org/press/agentic-ai-foundation-announces-four-new-projects-agent-skills-open-responses-openenv-and-opensandbox",
+     "title": "Agentic AI Foundation Announces Four New Projects: Agent Skills, Open Responses, OpenEnv, and OpenSandbox",
+     "publisher": "linuxfoundation.org",
+     "published": "2026-10-22",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": [
+    "Agent Skills (anthropic-agent-skills-format) is published by 46 of 210 panel domains."
+   ]
+  },
+  {
+   "id": "2026-10-24-2",
+   "title": "Mastercard reportedly opens early access to x402-based Agent Pay for Machines",
+   "body": "According to GenZ NewZ, in an AI-assisted article that cites PYMNTS, Mastercard opened early access to Agent Pay for Machines on October 20. The report describes it as built on x402, letting AI agents discover digital services, agree to terms and pay for them inside spending limits set by a human. This is press coverage, not a verified finding.",
+   "why_it_matters": "If confirmed, a card network would be using x402. Services that accept x402 payments should check Mastercard's own materials for any network-specific requirements before integrating.",
+   "kind": "adoption",
+   "related": [
+    {
+     "id": "x402",
+     "name": "x402",
+     "url": "https://agenticweb.wiki/protocols/x402/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://genznewz.com/mastercard-launches-agent-pay-for-machines-for-ai-agent-payments",
+     "title": "Mastercard Launches Agent Pay for Machines for AI Agent Payments | GenZ NewZ",
+     "publisher": "genznewz.com",
+     "published": "2026-10-22",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-24-3",
+   "title": "Robots Exclusion Protocol extension for URL-level control revised as draft-illyes-repext-04",
+   "body": "Gary Illyes of Google published draft-illyes-repext-04, an Informational Internet-Draft that extends RFC9309 with URL-level controls. The controls can be set through an HTTP response header and through HTML meta tags. The revision moves the header out of the experimental \"X-\" header space and defines how multiple headers combine.",
+   "why_it_matters": "Sites and crawler operators that use per-URL directives should track the header name change and the new rules for combining multiple headers.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt",
+     "url": "https://agenticweb.wiki/protocols/ai-crawler-tokens-robots/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://datatracker.ietf.org/doc/html/draft-illyes-repext-04",
+     "title": "draft-illyes-repext-04",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-22",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-24-4",
+   "title": "Draft proposes an IANA registry for MCP tool surface names",
+   "body": "draft-morrison-mcp-tool-surface-names-registry-03, an individual Informational draft, asks IANA to create a registry for Model Context Protocol tool surface names. A tool surface name is the wire-level identifier a client uses to invoke a typed capability on an MCP server. The registry would use the Specification Required policy of RFC 8126 with a Designated Expert pool. Its initial contents are four names, one Active and three Provisional.",
+   "why_it_matters": "This is an individual draft with no IETF standing. MCP server authors who want to avoid tool-name collisions can comment on it, but nothing changes in the MCP spec itself.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-morrison-mcp-tool-surface-names-registry/",
+     "title": "An IANA Registry for Model Context Protocol Tool Surface Names",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-22",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-24-5",
+   "title": "New draft defines verifiable mandates for agents acting across domains",
+   "body": "draft-hulea-wimse-agent-mandate-00, an individual draft with Intended status Standards Track, defines how a relying party in one administrative domain validates the mandate under which an agent acts for a principal in another domain. It separates evidence of the delegator's authority from the statement that the mandate was granted. It also specifies a deterministic validation procedure driven by an explicit validation profile.",
+   "why_it_matters": "Relying parties that accept delegated agent actions across organizations can compare this model with other WIMSE and OAuth delegation drafts. It is not a WG document.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "wimse",
+     "name": "Workload Identity in Multi System Environments (WIMSE) Architecture",
+     "url": "https://agenticweb.wiki/protocols/wimse/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-hulea-wimse-agent-mandate/",
+     "title": "Verifiable Mandates for Agents Acting Across Administrative Domains",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-24",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-24-6",
+   "title": "Ad Context Protocol v3.2.6 released",
+   "body": "The Ad Context Protocol project tagged v3.2.6 on GitHub, released 2026-10-23.",
+   "why_it_matters": "AdCP implementers should review the v3.2.6 release notes before upgrading.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "adcp",
+     "name": "Ad Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/adcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/adcontextprotocol/adcp/releases/tag/v3.2.6",
+     "title": "Ad Context Protocol: v3.2.6 released 2026-10-23",
+     "publisher": "github.com",
+     "published": "2026-10-23",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-24-7",
+   "title": "W3C publishes Linked Web Storage Protocol 1.0 Working Draft",
+   "body": "The Linked Web Storage Working Group published Linked Web Storage Protocol 1.0 as a W3C Working Draft dated 23 October 2026, on the Recommendation track. The spec aims to give applications secure, permissioned access to externally stored data in an interoperable way. W3C notes that a Working Draft does not imply endorsement.",
+   "why_it_matters": "This is the core protocol that the LWS authentication suites build on. Teams evaluating LWS-based storage for agents should read it together with those suites.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "lws10-authn-ssi-cid",
+     "name": "LWS 1.0 Authentication Suite: Self-signed Identity using Controlled Identifiers",
+     "url": "https://agenticweb.wiki/protocols/lws10-authn-ssi-cid/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.w3.org/TR/lws10-core/",
+     "title": "Linked Web Storage Protocol 1.0",
+     "publisher": "w3.org",
+     "published": "2026-10-23",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-24-8",
+   "title": "Draft revisions: MCP DNS discovery, JAFAR, OAuth agent delegation, delegation receipts",
+   "body": "Datatracker shows several new revisions: draft-morrison-mcp-dns-discovery-09, draft-illyes-webbotauth-jafar-01 (dated 2026-10-22), draft-hamr-oauth-agent-delegation-03 (dated 2026-10-22) and draft-nelson-agent-delegation-receipts-15 (dated 2026-10-22). Separately, draft-ietf-oauth-identity-assertion-authz-grant-04 expires on 2026-11-22.",
+   "why_it_matters": "Implementers tracking these drafts should diff against the prior revisions. Anyone citing the identity assertion grant should watch whether a new revision appears before 2026-11-22.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "mcp-dns-discovery",
+     "name": "Discovery of Model Context Protocol Servers via DNS TXT Records",
+     "url": "https://agenticweb.wiki/protocols/mcp-dns-discovery/"
+    },
+    {
+     "id": "jafar",
+     "name": "JAFAR: A JSON-Based Format for Publishing IP Ranges of Automated HTTP Clients",
+     "url": "https://agenticweb.wiki/protocols/jafar/"
+    },
+    {
+     "id": "oauth-agent-delegation",
+     "name": "Attenuated Delegation Profile for Automated Agents",
+     "url": "https://agenticweb.wiki/protocols/oauth-agent-delegation/"
+    },
+    {
+     "id": "agent-delegation-receipts",
+     "name": "Agent Delegation Receipts",
+     "url": "https://agenticweb.wiki/protocols/agent-delegation-receipts/"
+    },
+    {
+     "id": "identity-assertion-authz-grant",
+     "name": "Identity Assertion JWT Authorization Grant",
+     "url": "https://agenticweb.wiki/protocols/identity-assertion-authz-grant/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08",
+     "title": "Discovery of Model Context Protocol Servers via DNS TXT Records: A newer revision, draft-morrison-mcp-dns-discovery-09, now exists; the -08 page is marked as an older version of an Internet-Draft whose latest revision is Active.",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-23",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-nelson-agent-delegation-receipts/",
+     "title": "Agent Delegation Receipts: Datatracker shows draft-nelson-agent-delegation-receipts-15, dated 2026-10-22, expires 2027-04-25",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-22",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-illyes-webbotauth-jafar/",
+     "title": "JAFAR: A JSON-Based Format for Publishing IP Ranges of Automated HTTP Clients: Datatracker shows draft-illyes-webbotauth-jafar-01, dated 2026-10-22, expires 2027-04-25",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-22",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-hamr-oauth-agent-delegation/",
+     "title": "Attenuated Delegation Profile for Automated Agents: Datatracker shows draft-hamr-oauth-agent-delegation-03, dated 2026-10-22, expires 2027-04-25",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-22",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-ietf-oauth-identity-assertion-authz-grant/",
+     "title": "Identity Assertion JWT Authorization Grant: draft-ietf-oauth-identity-assertion-authz-grant-04 expires on 2026-11-22",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-05-21",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-24-9",
+   "title": "More individual drafts on signed receipts for agent actions",
+   "body": "Several individual Informational drafts on recording agent actions were revised. draft-chueayen-attestation-receipts-04 adds an action record, signed with Ed25519 by the enforcement point rather than the agent. draft-zambo-aer1-26 defines execution receipts for tool calls. draft-etcheverry-action-ref-04 derives a deterministic action identifier using RFC 8785 JCS. draft-oga-musubi-settlement-02 recomputes whether recorded acts stayed within a signed grant.",
+   "why_it_matters": "These overlapping proposals have no IETF standing. Teams building audit trails should treat them as input rather than settled formats.",
+   "kind": "security",
+   "related": [],
+   "sources": [
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-chueayen-attestation-receipts/",
+     "title": "Enforcement Attestation Receipts for AI Inference and Agent Action Decisions",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-24",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-zambo-aer1/",
+     "title": "AER-1: A Portable Execution Receipt for AI Agent Tool Calls",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-23",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-etcheverry-action-ref/",
+     "title": "Action Reference: A Deterministic Identifier for Agent Actions",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-23",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-oga-musubi-settlement/",
+     "title": "MUSUBI Settlement: Recomputing Whether an Agent Acted Within a Signed Grant",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-23",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-24-10",
+   "title": "Panel check: llms.txt at 143 domains, mpp.dev drops to grade B",
+   "body": "Our checks covered 210 of 211 panel domains today. llms.txt is published by 143 of 210 (+1 since 2026-10-23). mpp.dev no longer publishes Agent Skills, api-catalog or Markdown for Agents, and it moved from grade A+ (65) to B (41). Separately, 2058 servers (3000 versions) were published or updated on the official MCP Registry since 2026-10-23.",
+   "why_it_matters": "Site-level signals can disappear between daily checks, so verify current files before relying on a domain's published capabilities.",
+   "kind": "adoption",
+   "related": [
+    {
+     "id": "llms-txt",
+     "name": "llms.txt",
+     "url": "https://agenticweb.wiki/protocols/llms-txt/"
+    },
+    {
+     "id": "mcp-registry",
+     "name": "Official MCP Registry",
+     "url": "https://agenticweb.wiki/protocols/mcp-registry/"
+    },
+    {
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills",
+     "url": "https://agenticweb.wiki/protocols/anthropic-agent-skills-format/"
+    },
+    {
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs",
+     "url": "https://agenticweb.wiki/protocols/api-catalog-rfc9727/"
+    },
+    {
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents",
+     "url": "https://agenticweb.wiki/protocols/cloudflare-markdown-for-agents/"
+    }
+   ],
+   "sources": [],
+   "stats": [
+    "210 of 211 panel domains were checked today; grades: A+ 46, A 15, B 42, C 60, D 12, F 35.",
+    "llms.txt (llms-txt) is published by 143 of 210 panel domains (+1 since 2026-10-23).",
+    "mpp.dev no longer publishes Agent Skills (anthropic-agent-skills-format); it did on 2026-10-23.",
+    "mpp.dev no longer publishes api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs (api-catalog-rfc9727); it did on 2026-10-23.",
+    "mpp.dev no longer publishes Markdown for Agents (cloudflare-markdown-for-agents); it did on 2026-10-23.",
+    "mpp.dev moved from grade A+ (65) to B (41).",
+    "2058 servers (3000 versions) were published or updated on the official MCP Registry since 2026-10-23."
+   ]
+  }
+ ],
+ "stats": {
+  "previous": "2026-10-23",
+  "panel": {
+   "domains": 211,
+   "checked": 210,
+   "errors": 1,
+   "compared": 198,
+   "grades": {
+    "A+": 46,
+    "A": 15,
+    "B": 42,
+    "C": 60,
+    "D": 12,
+    "F": 35
+   },
+   "adoption": [
+    {
+     "id": "llms-txt",
+     "name": "llms.txt",
+     "domains": 143,
+     "delta": 1
+    },
+    {
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt",
+     "domains": 94,
+     "delta": -1
+    },
+    {
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents",
+     "domains": 63,
+     "delta": -1
+    },
+    {
+     "id": "cloudflare-content-signals-policy",
+     "name": "Content Signals Policy",
+     "domains": 57,
+     "delta": 0
+    },
+    {
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills",
+     "domains": 46,
+     "delta": 0
+    },
+    {
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs",
+     "domains": 45,
+     "delta": -1
+    },
+    {
+     "id": "ai-catalog-well-known-file",
+     "name": "AI Catalog well-known file",
+     "domains": 43,
+     "delta": 0
+    },
+    {
+     "id": "oauth-metadata-for-agents",
+     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)",
+     "domains": 28,
+     "delta": 1
+    },
+    {
+     "id": "a2a",
+     "name": "Agent2Agent Protocol",
+     "domains": 24,
+     "delta": 0
+    },
+    {
+     "id": "agents-md",
+     "name": "AGENTS.md",
+     "domains": 20,
+     "delta": 0
+    },
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "domains": 19,
+     "delta": 0
+    },
+    {
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)",
+     "domains": 19,
+     "delta": 0
+    },
+    {
+     "id": "oauth-cimd",
+     "name": "OAuth Client ID Metadata Document",
+     "domains": 16,
+     "delta": 0
+    },
+    {
+     "id": "auth-md",
+     "name": "auth.md",
+     "domains": 15,
+     "delta": 1
+    },
+    {
+     "id": "ard",
+     "name": "Agentic Resource Discovery",
+     "domains": 13,
+     "delta": 0
+    },
+    {
+     "id": "agents-txt",
+     "name": "agents.txt",
+     "domains": 7,
+     "delta": -1
+    },
+    {
+     "id": "webbotauth",
+     "name": "Web Bot Auth HTTP Message Signatures",
+     "domains": 7,
+     "delta": 0
+    },
+    {
+     "id": "rsl",
+     "name": "Really Simple Licensing",
+     "domains": 4,
+     "delta": 0
+    },
+    {
+     "id": "tdmrep",
+     "name": "Text and Data Mining Reservation Protocol",
+     "domains": 3,
+     "delta": 0
+    },
+    {
+     "id": "agents-json",
+     "name": "agents.json",
+     "domains": 2,
+     "delta": 0
+    },
+    {
+     "id": "identity-assertion-authz-grant",
+     "name": "Identity Assertion JWT Authorization Grant",
+     "domains": 2,
+     "delta": 0
+    },
+    {
+     "id": "ucp",
+     "name": "Universal Commerce Protocol",
+     "domains": 2,
+     "delta": 0
+    },
+    {
+     "id": "ads",
+     "name": "Agent Directory Service",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "agent-permissions-json",
+     "name": "agent-permissions.json",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "okf",
+     "name": "Open Knowledge Format",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "web-bot-auth-signature-agent-card",
+     "name": "Signature Agent Card (Web Bot Auth registry)",
+     "domains": 1,
+     "delta": 0
+    }
+   ],
+   "gained": [
+    {
+     "domain": "agentcommunity.org",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "agentcommunity.org",
+     "id": "oauth-metadata-for-agents",
+     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)"
+    },
+    {
+     "domain": "mintlify.com",
+     "id": "auth-md",
+     "name": "auth.md"
+    },
+    {
+     "domain": "neuronto.com",
+     "id": "llms-txt",
+     "name": "llms.txt"
+    },
+    {
+     "domain": "taskade.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    }
+   ],
+   "lost": [
+    {
+     "domain": "aaif.io",
+     "id": "agents-txt",
+     "name": "agents.txt"
+    },
+    {
+     "domain": "aaif.io",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "kyvosinsights.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "mpp.dev",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "mpp.dev",
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
+    },
+    {
+     "domain": "mpp.dev",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "paypal.com",
+     "id": "agora-protocol",
+     "name": "Agora Protocol"
+    }
+   ],
+   "grade_changes": [
+    {
+     "domain": "aaif.io",
+     "from": "A",
+     "to": "B",
+     "score_from": 54,
+     "score_to": 38
+    },
+    {
+     "domain": "kyvosinsights.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "mpp.dev",
+     "from": "A+",
+     "to": "B",
+     "score_from": 65,
+     "score_to": 41
+    },
+    {
+     "domain": "neuronto.com",
+     "from": "A",
+     "to": "A+",
+     "score_from": 49,
+     "score_to": 62
+    },
+    {
+     "domain": "paypal.com",
+     "from": "B",
+     "to": "C",
+     "score_from": 30,
+     "score_to": 20
+    },
+    {
+     "domain": "taskade.com",
+     "from": "B",
+     "to": "A",
+     "score_from": 36,
+     "score_to": 49
+    }
+   ]
+  },
+  "repos": {
+   "tracked": 58,
+   "movers": [
+    {
+     "repo": "agentskills/agentskills",
+     "stars": 26542,
+     "delta": 104,
+     "pct": 0.4
+    },
+    {
+     "repo": "block/goose",
+     "stars": 55612,
+     "delta": 66,
+     "pct": 0.1
+    },
+    {
+     "repo": "agentsmd/agents.md",
+     "stars": 25077,
+     "delta": 23,
+     "pct": 0.1
+    },
+    {
+     "repo": "googlecloudplatform/open-knowledge-format",
+     "stars": 1090,
+     "delta": 22,
+     "pct": 2.1
+    },
+    {
+     "repo": "a2ui-project/a2ui",
+     "stars": 16806,
+     "delta": 20,
+     "pct": 0.1
+    },
+    {
+     "repo": "ag-ui-protocol/ag-ui",
+     "stars": 16790,
+     "delta": 18,
+     "pct": 0.1
+    },
+    {
+     "repo": "a2aproject/a2a",
+     "stars": 26277,
+     "delta": 17,
+     "pct": 0.1
+    },
+    {
+     "repo": "copilotkit/copilotkit",
+     "stars": 38200,
+     "delta": 15,
+     "pct": 0.0
+    }
+   ]
+  },
+  "registry": {
+   "since": "2026-10-23T00:00:00Z",
+   "versions": 3000,
+   "servers": 2058
+  }
+ },
+ "record_changes": [
+  {
+   "record_id": "otel-genai-semconv",
+   "name": "OpenTelemetry GenAI Semantic Conventions (agents and MCP)",
+   "summary": "Source for watch github:otel-genai-semconv:open-telemetry/semantic-conventions-genai failed 3 consecutive polls",
+   "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md",
+   "label": "THIN",
+   "date": "2026-10-22"
+  },
+  {
+   "record_id": "otel-genai-semconv",
+   "name": "OpenTelemetry GenAI Semantic Conventions (agents and MCP)",
+   "summary": "Source for watch github:otel-genai-semconv:open-telemetry/semantic-conventions-genai reachable again",
+   "url": "https://github.com/open-telemetry/semantic-conventions-genai",
+   "label": "THIN",
+   "date": "2026-10-23"
+  },
+  {
+   "record_id": "identity-assertion-authz-grant",
+   "name": "Identity Assertion JWT Authorization Grant",
+   "summary": "draft-ietf-oauth-identity-assertion-authz-grant-04 expires on 2026-11-22",
+   "url": "https://datatracker.ietf.org/doc/draft-ietf-oauth-identity-assertion-authz-grant/",
+   "label": "VERIFIED",
+   "date": "2026-05-21"
+  },
+  {
+   "record_id": "mcp-dns-discovery",
+   "name": "Discovery of Model Context Protocol Servers via DNS TXT Records",
+   "summary": "A newer revision, draft-morrison-mcp-dns-discovery-09, now exists; the -08 page is marked as an older version of an Internet-Draft whose latest revision is Active.",
+   "url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08",
+   "label": "VERIFIED",
+   "date": "2026-10-23"
+  },
+  {
+   "record_id": "agent-delegation-receipts",
+   "name": "Agent Delegation Receipts",
+   "summary": "Datatracker shows draft-nelson-agent-delegation-receipts-15, dated 2026-10-22, expires 2027-04-25",
+   "url": "https://datatracker.ietf.org/doc/draft-nelson-agent-delegation-receipts/",
+   "label": "VERIFIED",
+   "date": "2026-10-22"
+  },
+  {
+   "record_id": "jafar",
+   "name": "JAFAR: A JSON-Based Format for Publishing IP Ranges of Automated HTTP Clients",
+   "summary": "Datatracker shows draft-illyes-webbotauth-jafar-01, dated 2026-10-22, expires 2027-04-25",
+   "url": "https://datatracker.ietf.org/doc/draft-illyes-webbotauth-jafar/",
+   "label": "VERIFIED",
+   "date": "2026-10-22"
+  },
+  {
+   "record_id": "oauth-agent-delegation",
+   "name": "Attenuated Delegation Profile for Automated Agents",
+   "summary": "Datatracker shows draft-hamr-oauth-agent-delegation-03, dated 2026-10-22, expires 2027-04-25",
+   "url": "https://datatracker.ietf.org/doc/draft-hamr-oauth-agent-delegation/",
+   "label": "VERIFIED",
+   "date": "2026-10-22"
+  },
+  {
+   "record_id": "adcp",
+   "name": "Ad Context Protocol",
+   "summary": "v3.2.6 released 2026-10-23",
+   "url": "https://github.com/adcontextprotocol/adcp/releases/tag/v3.2.6",
+   "label": "VERIFIED",
+   "date": "2026-10-23"
+  }
+ ],
+ "previous": "2026-10-23",
+ "method": {
+  "sources": {
+   "feeds": 0,
+   "datatracker": 37,
+   "hn": 1,
+   "arxiv": 3,
+   "exa": 101,
+   "parallel": 5,
+   "tips": 0
+  },
+  "candidates": 147,
+  "after_dedupe": 123,
+  "kept": 39,
+  "fetched": 35,
+  "models": {
+   "triage": "claude-opus-5-5",
+   "writer": "claude-opus-5-5"
+  },
+  "facts": 30,
+  "notes": [],
+  "rules": "Items are written only from the cited sources and our own measurements; every number in an item appears in a source it cites. VERIFIED = fetched from the standard's issuer or a standards body; REPORTED = a claim by press or a third party."
+ },
+ "license": "CC BY 4.0"
+}

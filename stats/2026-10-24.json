@@ -1,0 +1,6694 @@
+{
+ "date": "2026-10-24",
+ "panel": {
+  "0g.ai": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://0g.ai/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://0g.ai/"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 41
+  },
+  "2s.io": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "agent.knowledge-delta",
+      "agriculture.drought",
+      "agriculture.stats",
+      "ai.chat",
+      "ai.classify",
+      "ai.council",
+      "ai.describe-image",
+      "ai.entities",
+      "ai.extract",
+      "ai.image",
+      "ai.moderate",
+      "ai.ocr",
+      "ai.pii",
+      "ai.research",
+      "ai.screenshot",
+      "ai.sentiment",
+      "ai.summarize",
+      "ai.translate",
+      "ai.web-answer",
+      "airport.lookup"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://2s.io/mcp"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "Discover 2s endpoints"
+     ],
+     "transport_or_type": "0.3.0",
+     "url": "https://2s.io/a2a"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent.json",
+     "status": "valid_legacy",
+     "transport_or_type": null,
+     "url": "https://2s.io"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json;version=3.1",
+     "url": "https://2s.io/openapi.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://2s.io/apis.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://2s.io/.well-known/ai-plugin.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json;version=3.1",
+     "url": "https://2s.io/api/openapi?group=agent"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json;version=3.1",
+     "url": "https://2s.io/api/openapi?group=agriculture"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json;version=3.1",
+     "url": "https://2s.io/api/openapi?group=ai"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json;version=3.1",
+     "url": "https://2s.io/api/openapi?group=airport"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json;version=3.1",
+     "url": "https://2s.io/api/openapi?group=aviation"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json;version=3.1",
+     "url": "https://2s.io/api/openapi?group=bank"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://2s.io/llms.txt"
+    }
+   ],
+   "found": [
+    "a2a",
+    "agents-json",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 64
+  },
+  "8004.org": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "aaif.io": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://aaif.io/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 38
+  },
+  "aembit.io": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://aembit.io/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 35
+  },
+  "agent-ready.dev": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.agent-ready.dev/mcp"
+    },
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "scan_site",
+      "get_scan",
+      "ask"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://agent-ready.dev/api/apps/mcp"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "Scan a site",
+      "Get a scan by id",
+      "Ask Agent Ready"
+     ],
+     "transport_or_type": "1.0",
+     "url": "https://agent-ready.dev/api/v1/a2a"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/openapi+json;version=3.1",
+     "url": "https://agent-ready.dev/api/v1/openapi.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "scan-agent-readiness",
+      "agent-ready-api",
+      "agent-ready-mcp",
+      "agent-ready-cli"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://agent-ready.dev/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://agent-ready.dev/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://agent-ready.dev/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://agent-ready.dev/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://agent-ready.dev/api/v1/mcp"
+    },
+    {
+     "kind": "auth",
+     "source": "/auth.md",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://agent-ready.dev/auth.md"
+    }
+   ],
+   "found": [
+    "a2a",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-metadata-for-agents",
+    "ucp",
+    "webbotauth"
+   ],
+   "grade": "A+",
+   "score": 95
+  },
+  "agentclientprotocol.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "search_agent_client_protocol",
+      "query_docs_filesystem_agent_client_protocol"
+     ],
+     "transport_or_type": "http",
+     "url": "https://agentclientprotocol.com/mcp"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "acp"
+     ],
+     "transport_or_type": "0.3",
+     "url": "https://agentclientprotocol.com/"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "acp"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://agentclientprotocol.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://agentclientprotocol.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://agentclientprotocol.com/"
+    }
+   ],
+   "found": [
+    "a2a",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 75
+  },
+  "agentcommunity.org": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "lookup_member",
+      "get_community_stats",
+      "register_agent",
+      "verify_certificate"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://agentcommunity.org/mcp"
+    },
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp-docs/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "search_docs",
+      "get_doc"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://agentcommunity.org/mcp/docs"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "Look up member",
+      "Get community stats",
+      "Pre-register .agent name",
+      "Verify DMV certificate"
+     ],
+     "transport_or_type": "0.3.0",
+     "url": "https://agentcommunity.org/a2a"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json;version=3.1",
+     "url": "https://agentcommunity.org/openapi.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://agentcommunity.org/.well-known/mcp-docs.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "aid",
+      "dmv",
+      "member-lookup",
+      "community-stats",
+      "verify-certificate"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://agentcommunity.org/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://agentcommunity.org/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://agentcommunity.org/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://agentcommunity.org/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://agentcommunity.org"
+    },
+    {
+     "kind": "auth",
+     "source": "/auth.md",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://agentcommunity.org/auth.md"
+    }
+   ],
+   "found": [
+    "a2a",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "A+",
+   "score": 75
+  },
+  "agenticadvertising.org": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://agenticadvertising.org/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 35
+  },
+  "agenticresources.dev": {
+   "callable_endpoints": [
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://agenticresources.dev/.well-known/ard.json"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://agenticresources.dev/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "ard"
+   ],
+   "grade": "B",
+   "score": 38
+  },
+  "agenticweb.wiki": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/mcp/server-card",
+     "status": "valid",
+     "tools_or_skills": [
+      "define",
+      "get",
+      "search",
+      "has",
+      "probe",
+      "changes",
+      "stale",
+      "validate_manifest",
+      "template",
+      "ask",
+      "digest"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://agenticweb.wiki/mcp"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "Validate domain agent readiness",
+      "Look up agentic-web standard",
+      "Generate spec-compliant manifest boilerplate"
+     ],
+     "transport_or_type": "1.0",
+     "url": "https://agenticweb.wiki/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/openapi+json",
+     "url": "https://agenticweb.wiki/openapi.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "agentic-web"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://agenticweb.wiki/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://agenticweb.wiki/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://agenticweb.wiki/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://agenticweb.wiki/.well-known/ard.json"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://agenticweb.wiki/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://agenticweb.wiki"
+    },
+    {
+     "kind": "auth",
+     "source": "/auth.md",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://agenticweb.wiki/auth.md"
+    }
+   ],
+   "found": [
+    "a2a",
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents",
+    "okf",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
+   ],
+   "grade": "A+",
+   "score": 90
+  },
+  "agentman.ai": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://agentman.ai/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "agents.coinbase.com": {
+   "callable_endpoints": [
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://agents.coinbase.com/mcp"
+    }
+   ],
+   "found": [
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "D",
+   "score": 10
+  },
+  "agentskills.io": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "search_agent_skills",
+      "query_docs_filesystem_agent_skills"
+     ],
+     "transport_or_type": "http",
+     "url": "https://agentskills.io/mcp"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "Agent"
+     ],
+     "transport_or_type": "0.3",
+     "url": "https://agentskills.io/"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "agent"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://agentskills.io/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://agentskills.io/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://agentskills.io/"
+    }
+   ],
+   "found": [
+    "a2a",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 70
+  },
+  "agntcy.org": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "agoralabs.ai": {
+   "error": "http 400"
+  },
+  "agoraproto.org": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://agoraproto.org/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 35
+  },
+  "aider.chat": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "aioseo.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://aioseo.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "airtable.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.airtable.com/mcp"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "Agent Activity Log Skill",
+      "Airtable CLI Skill",
+      "Airtable Filters Skill",
+      "Airtable Platform Overview Skill",
+      "Airtable Marketing Ops Skill",
+      "Airtable Product Ops Skill",
+      "Airtable Sales Ops Skill",
+      "Airtable Link Display Skill"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://github.com/airtable/skills/tree/main/plugins/airtable/skills/agent-activity-log"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://airtable.com/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "oauth-cimd"
+   ],
+   "grade": "B",
+   "score": 30
+  },
+  "aitp.dev": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "aitxt.ing": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://aitxt.ing/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 38
+  },
+  "ampcode.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://ampcode.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt",
+    "oauth-cimd"
+   ],
+   "grade": "B",
+   "score": 30
+  },
+  "amplitude.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.amplitude.com/mcp"
+    },
+    {
+     "kind": "mcp",
+     "source": "/.well-known/ai-catalog.json#urn:air:amplitude.com:mcp:analytics",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.eu.amplitude.com/mcp"
+    },
+    {
+     "kind": "mcp",
+     "source": "/.well-known/ai-catalog.json#urn:air:amplitude.com:mcp:docs",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://amplitude.com/docs/api/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json",
+     "url": "https://amplitude.com/openapi.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "Amplitude MCP Server",
+      "Amplitude Docs MCP Server",
+      "Amplitude Public APIs",
+      "Amplitude MCP Marketplace",
+      "Amplitude Builder Skills",
+      "Amplitude setup entry"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://amplitude.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://amplitude.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://amplitude.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://amplitude.com/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 60
+  },
+  "ant-intl.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://ant-intl.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "anthropic.com": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "ap.org": {
+   "callable_endpoints": [],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "api.agoraproto.org": {
+   "callable_endpoints": [],
+   "found": [
+    "ads"
+   ],
+   "grade": "D",
+   "score": 10
+  },
+  "api.githubcopilot.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/mcp/server-card",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://api.githubcopilot.com/mcp/"
+    }
+   ],
+   "found": [
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "grade": "B",
+   "score": 30
+  },
+  "api.proof.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.proof.com/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/openapi+json",
+     "url": "https://dev.proof.com/openapi/proof-business-api-specification.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/openapi+json",
+     "url": "https://dev.proof.com/openapi/proof-real-estate-api-specification.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/openapi+json",
+     "url": "https://dev.proof.com/openapi/verifiable-credentials-api.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/openapi+json",
+     "url": "https://dev.proof.com/openapi/oauth-api.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/openapi+json",
+     "url": "https://dev.proof.com/openapi/proof-scim-api-specification.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/openapi+json",
+     "url": "https://dev.proof.com/openapi/proof-logs-api-specification.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/openapi+json",
+     "url": "https://dev.proof.com/openapi/organization-certificates-openapi-specification.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "proof-mcp-best-practices",
+      "proof-mcp-for-muse",
+      "setup-x401-verifier"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://api.proof.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://api.proof.com/llms.txt"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://api.proof.com/.well-known/ard.json"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://api.proof.com/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://api.proof.com"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-content-signals-policy",
+    "llms-txt",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "A+",
+   "score": 70
+  },
+  "apify.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.apify.com/mcp"
+    },
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "search-actors",
+      "fetch-actor-details",
+      "call-actor",
+      "get-actor-run",
+      "get-dataset-items",
+      "get-key-value-store-record",
+      "abort-actor-run",
+      "search-apify-docs",
+      "fetch-apify-docs"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.apify.com/"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://apify.com/openapi.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://docs.apify.com/api/openapi.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://api.apify.com/v2/openapi.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "apify-actor-development",
+      "apify-actorization",
+      "apify-generate-output-schema",
+      "apify-integration-development",
+      "apify-ultimate-scraper"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://apify.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://apify.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://apify.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://apify.com/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://mcp.apify.com"
+    }
+   ],
+   "found": [
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "A+",
+   "score": 65
+  },
+  "asana.com": {
+   "callable_endpoints": [
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://asana.com/"
+    }
+   ],
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ],
+   "grade": "D",
+   "score": 10
+  },
+  "atlan.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://atlan.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://atlan.com/"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 36
+  },
+  "atlassian.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://atlassian.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "atscale.com": {
+   "callable_endpoints": [
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://www.atscale.com"
+    }
+   ],
+   "found": [
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "D",
+   "score": 10
+  },
+  "auth-md.com": {
+   "callable_endpoints": [
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "auth-md"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://auth-md.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://auth-md.com/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ],
+   "grade": "A",
+   "score": 46
+  },
+  "auth0.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://auth0.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "bird.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "email_send",
+      "email_send_batch",
+      "email_get",
+      "email_list",
+      "email_cancel",
+      "email_health",
+      "email_stats_query",
+      "email_stats_summary",
+      "email_stats_daily",
+      "email_stats_hourly",
+      "email_stats_by_tag",
+      "email_stats_by_category",
+      "email_stats_by_sending_ip",
+      "email_stats_by_sending_domain",
+      "email_stats_by_recipient_domain",
+      "email_stats_by_mailbox_provider",
+      "email_stats_by_mailbox_provider_region",
+      "email_stats_by_template",
+      "email_stats_by_location",
+      "email_stats_by_client"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://github.com/messagebird/bird-ai"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json",
+     "url": "https://bird.com/openapi.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/yaml",
+     "url": "https://bird.com/openapi.yaml"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "bird-cli",
+      "email-audit"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://bird.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://bird.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://bird.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://bird.com/.well-known/ard.json"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://bird.com/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 60
+  },
+  "blakecrosley.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://blakecrosley.com/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 35
+  },
+  "blog.cloudflare.com": {
+   "callable_endpoints": [],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy"
+   ],
+   "grade": "B",
+   "score": 38
+  },
+  "bmdpat.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://bmdpat.com/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 35
+  },
+  "bnbchain.org": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "byteiota.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://byteiota.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "cafe24.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://cafe24.com/llms.txt"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://eckorea24.cafe24api.com/api/mcp"
+    }
+   ],
+   "found": [
+    "llms-txt",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "B",
+   "score": 30
+  },
+  "canva.com": {
+   "callable_endpoints": [],
+   "found": [
+    "ai-crawler-tokens-robots"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "chatgpt.com": {
+   "callable_endpoints": [],
+   "found": [
+    "webbotauth"
+   ],
+   "grade": "D",
+   "score": 10
+  },
+  "chrishood.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://chrishood.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "circle.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://circle.com/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 38
+  },
+  "cleverbridge.com": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "clickhouse.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.clickhouse.cloud/mcp"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "clickhouse",
+      "clickhouse-best-practices",
+      "clickhouse-architecture-advisor",
+      "clickhouse-js-node-troubleshooting",
+      "chdb-datastore",
+      "chdb-sql",
+      "infra-clickhouse",
+      "infra-postgres",
+      "clickstack-otel-collector",
+      "ClickHouse getting-started skill"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://clickhouse.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://clickhouse.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://clickhouse.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://clickhouse.com/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "grade": "A+",
+   "score": 70
+  },
+  "cloud.google.com": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "cloud.tencent.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://cloud.tencent.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "cloudandsre.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://cloudandsre.com/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 35
+  },
+  "cloudflare.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://docs.mcp.cloudflare.com/mcp"
+    },
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://blog.mcp.cloudflare.com/mcp"
+    },
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.cloudflare.com/mcp"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "Site Context",
+      "Page Markdown"
+     ],
+     "transport_or_type": null,
+     "url": "https://www.cloudflare.com/.well-known/agent.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "agents-sdk",
+      "basin",
+      "cf-cli",
+      "cloudflare",
+      "cloudflare-email-service",
+      "cloudflare-one",
+      "cloudflare-one-migrations",
+      "durable-objects",
+      "gateway-workers",
+      "k2",
+      "nextjs-on-cloudflare",
+      "sandbox-migrate-to-next",
+      "sandbox-next",
+      "sandbox-stable",
+      "turnstile-spin",
+      "web-perf",
+      "workers-best-practices",
+      "workers-profiling",
+      "wrangler"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://cloudflare.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://cloudflare.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://cloudflare.com/"
+    },
+    {
+     "kind": "auth",
+     "source": "/auth.md",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://cloudflare.com/auth.md"
+    }
+   ],
+   "found": [
+    "a2a",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 60
+  },
+  "code.visualstudio.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://code.visualstudio.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "coinbase.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "transport_or_type": "http",
+     "url": "https://agents.coinbase.com/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/yaml",
+     "url": "https://docs.cdp.coinbase.com/api-reference/v2/cdp-api-v2.yaml"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "coinbase-agent-skill",
+      "x402-auth-capture-skill"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://coinbase.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://coinbase.com/llms.txt"
+    }
+   ],
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "llms-txt",
+    "oauth-cimd"
+   ],
+   "grade": "A",
+   "score": 56
+  },
+  "copilotkit.ai": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://copilotkit.ai/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "crawlytics.app": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://crawlytics.app/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "crewai.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://crewai.com/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json;version=3.1",
+     "url": "https://crewai.com/openapi.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "site-explorer"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://crewai.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://crewai.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://crewai.com/"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://crewai.com"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "A+",
+   "score": 65
+  },
+  "cursor.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://cursor.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "danads.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://danads.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "danilchenko.dev": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://danilchenko.dev/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "datatracker.ietf.org": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "dchub.cloud": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://dchub.cloud/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json",
+     "url": "https://dchub.cloud/openapi.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "dchub"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://dchub.cloud/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://dchub.cloud/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://dchub.cloud/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://dchub.cloud/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://dchub.cloud"
+    }
+   ],
+   "found": [
+    "a2a",
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "webbotauth"
+   ],
+   "grade": "A+",
+   "score": 75
+  },
+  "deepmind.google": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://deepmind.google/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "desvela.dev": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://registry.desvela.dev/mcp"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://desvela.dev/llms.txt"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://desvela.dev/.well-known/ard.json"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://desvela.dev/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "ard",
+    "llms-txt"
+   ],
+   "grade": "A",
+   "score": 51
+  },
+  "dev.to": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://dev.to/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "developer.chrome.com": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "developer.visa.com": {
+   "callable_endpoints": [
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://developer.visa.com"
+    }
+   ],
+   "found": [
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "D",
+   "score": 10
+  },
+  "developers.cloudflare.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.cloudflare.com/mcp"
+    },
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://docs.mcp.cloudflare.com/mcp"
+    },
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://containers.mcp.cloudflare.com/mcp"
+    },
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://browser.mcp.cloudflare.com/mcp"
+    },
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://dex.mcp.cloudflare.com/mcp"
+    },
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://casb.mcp.cloudflare.com/mcp"
+    },
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://blog.mcp.cloudflare.com/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://developers.cloudflare.com/openapi.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "agents-sdk",
+      "basin",
+      "cf-cli",
+      "cloudflare",
+      "cloudflare-email-service",
+      "cloudflare-one",
+      "cloudflare-one-migrations",
+      "durable-objects",
+      "gateway-workers",
+      "k2",
+      "nextjs-on-cloudflare",
+      "sandbox-migrate-to-next",
+      "sandbox-next",
+      "sandbox-stable",
+      "turnstile-spin",
+      "web-perf",
+      "workers-best-practices",
+      "workers-profiling",
+      "wrangler",
+      "Cloudflare Agent Skills Index"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://developers.cloudflare.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://developers.cloudflare.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://developers.cloudflare.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://developers.cloudflare.com/.well-known/ard.json"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://developers.cloudflare.com/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "grade": "A+",
+   "score": 70
+  },
+  "developers.openai.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://developers.openai.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "devin.ai": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.devin.ai/mcp"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://devin.ai/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://devin.ai/"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 33
+  },
+  "devtoollab.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://devtoollab.com/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 35
+  },
+  "docs.adcontextprotocol.org": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "search_ad_cp_ad_context_protocol",
+      "query_docs_filesystem_ad_cp_ad_context_protocol"
+     ],
+     "transport_or_type": "http",
+     "url": "https://docs.adcontextprotocol.org/mcp"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "adcp"
+     ],
+     "transport_or_type": "0.3",
+     "url": "https://docs.adcontextprotocol.org/"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "adcp"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://docs.adcontextprotocol.org/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.adcontextprotocol.org/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.adcontextprotocol.org/"
+    }
+   ],
+   "found": [
+    "a2a",
+    "agents-md",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 75
+  },
+  "docs.ag-ui.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "search_agent_user_interaction",
+      "query_docs_filesystem_agent_user_interaction"
+     ],
+     "transport_or_type": "http",
+     "url": "https://docs.ag-ui.com/mcp"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "tawkitai"
+     ],
+     "transport_or_type": "0.3",
+     "url": "https://docs.ag-ui.com/"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "tawkitai"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://docs.ag-ui.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.ag-ui.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.ag-ui.com/"
+    }
+   ],
+   "found": [
+    "a2a",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 70
+  },
+  "docs.augmentcode.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "search_augment",
+      "query_docs_filesystem_augment"
+     ],
+     "transport_or_type": "http",
+     "url": "https://docs.augmentcode.com/mcp"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "augment"
+     ],
+     "transport_or_type": "0.3",
+     "url": "https://docs.augmentcode.com/"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "augment"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://docs.augmentcode.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.augmentcode.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.augmentcode.com/"
+    }
+   ],
+   "found": [
+    "a2a",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 70
+  },
+  "docs.cdp.coinbase.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "search_coinbase_developer",
+      "query_docs_filesystem_coinbase_developer"
+     ],
+     "transport_or_type": "http",
+     "url": "https://docs.cdp.coinbase.com/mcp"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "Coinbase"
+     ],
+     "transport_or_type": "0.3",
+     "url": "https://docs.cdp.coinbase.com/"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "coinbase"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://docs.cdp.coinbase.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.cdp.coinbase.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.cdp.coinbase.com/"
+    }
+   ],
+   "found": [
+    "a2a",
+    "agents-md",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 70
+  },
+  "docs.github.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.github.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.github.com/"
+    }
+   ],
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "docs.lightning.engineering": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "searchDocumentation",
+      "getPage",
+      "askQuestion",
+      "sendFeedback"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://docs.lightning.engineering/~gitbook/mcp"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.lightning.engineering/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.lightning.engineering/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://docs.lightning.engineering/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "agents-md",
+    "agents-txt",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "grade": "A+",
+   "score": 60
+  },
+  "docs.n8n.io": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "searchDocumentation",
+      "getPage",
+      "sendFeedback"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://docs.n8n.io/~gitbook/mcp"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.n8n.io/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.n8n.io/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://docs.n8n.io/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "agents-md",
+    "agents-txt",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "grade": "A+",
+   "score": 60
+  },
+  "docs.nevermined.app": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "docs.perplexity.ai": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "search_perplexity",
+      "query_docs_filesystem_perplexity"
+     ],
+     "transport_or_type": "http",
+     "url": "https://docs.perplexity.ai/mcp"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "perplexity"
+     ],
+     "transport_or_type": "0.3",
+     "url": "https://docs.perplexity.ai/"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "perplexity"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://docs.perplexity.ai/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.perplexity.ai/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.perplexity.ai/"
+    }
+   ],
+   "found": [
+    "a2a",
+    "agents-md",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 75
+  },
+  "docs.stripe.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.stripe.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.stripe.com/"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 41
+  },
+  "docs.warp.dev": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp.json",
+     "status": "valid_legacy",
+     "transport_or_type": null,
+     "url": "https://warp.mcp.kapa.ai"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.warp.dev/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 33
+  },
+  "docs.windsurf.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "search_windsurf_docs",
+      "query_docs_filesystem_windsurf_docs"
+     ],
+     "transport_or_type": "http",
+     "url": "https://docs.windsurf.com/mcp"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "Codeium"
+     ],
+     "transport_or_type": "0.3",
+     "url": "https://docs.windsurf.com/"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "codeium"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://docs.windsurf.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://docs.windsurf.com/llms.txt"
+    }
+   ],
+   "found": [
+    "a2a",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ],
+   "grade": "A",
+   "score": 54
+  },
+  "dreaming.press": {
+   "callable_endpoints": [
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "Read the feed",
+      "Search the archive",
+      "Model Context Protocol (read-only)",
+      "Read an article as markdown",
+      "Submit an article",
+      "Subscribe (webhook or poll)"
+     ],
+     "transport_or_type": null,
+     "url": "https://dreaming.press"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://dreaming.press/llms.txt"
+    }
+   ],
+   "found": [
+    "a2a",
+    "agents-txt",
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "A",
+   "score": 56
+  },
+  "dri.es": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/ai-catalog.json#urn:air:dri.es:mcp",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "find_albums",
+      "find_images",
+      "get_image",
+      "find_posts"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://dri.es/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/openapi+json",
+     "url": "https://dri.es/openapi.json"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://dri.es/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy"
+   ],
+   "grade": "B",
+   "score": 41
+  },
+  "drupal.org": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "eclipse.dev": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "eips.ethereum.org": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "elsevier.com": {
+   "callable_endpoints": [
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://elsevier.com/"
+    }
+   ],
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "tdmrep"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "eodly.io": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "whoami",
+      "list_reports",
+      "get_report",
+      "list_team"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://eodly.io/api/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json",
+     "url": "https://eodly.io/openapi.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "eodly-end-of-day-report",
+      "eodly-team-roster"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://eodly.io/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://eodly.io/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://eodly.io/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://eodly.io/.well-known/ard.json"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://eodly.io/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://eodly.io/mcp"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "A+",
+   "score": 60
+  },
+  "etsy.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://etsy.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "facilitator.live.nevermined.app": {
+   "callable_endpoints": [
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://facilitator.live.nevermined.app/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://api.live.nevermined.app"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "B",
+   "score": 33
+  },
+  "factory.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://factory.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://factory.com/"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 38
+  },
+  "fidoalliance.org": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://fidoalliance.org/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "figma.com": {
+   "callable_endpoints": [],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "identity-assertion-authz-grant"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "firecrawl.dev": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "firecrawl_search",
+      "firecrawl_scrape",
+      "firecrawl_crawl",
+      "firecrawl_map",
+      "firecrawl_parse",
+      "firecrawl_agent",
+      "firecrawl_interact",
+      "firecrawl_research_*",
+      "firecrawl_developer_search",
+      "firecrawl_monitor_*"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.firecrawl.dev/v2/mcp"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://firecrawl.dev/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://firecrawl.dev/"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://api.firecrawl.dev/"
+    },
+    {
+     "kind": "auth",
+     "source": "/auth.md",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://firecrawl.dev/auth.md"
+    }
+   ],
+   "found": [
+    "agents-md",
+    "ai-crawler-tokens-robots",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "A",
+   "score": 45
+  },
+  "fly.io": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "list_sprites",
+      "create_sprite",
+      "destroy_sprite",
+      "exec_list",
+      "exec",
+      "exec_kill",
+      "checkpoint_create",
+      "checkpoint_list",
+      "checkpoint_get",
+      "checkpoint_restore",
+      "policy_network_get",
+      "policy_network_update",
+      "service_list",
+      "service_get",
+      "service_create",
+      "service_start",
+      "service_stop",
+      "service_logs",
+      "file_read",
+      "file_write"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://sprites.dev/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json",
+     "url": "https://docs.fly.io/api/machines/openapi.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://api.sprites.dev/openapi.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "fly-machines-api",
+      "sprites-quickstart"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://fly.io/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://fly.io/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://fly.io/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://fly.io/.well-known/ard.json"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://fly.io/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/auth.md",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://fly.io/auth.md"
+    }
+   ],
+   "found": [
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 65
+  },
+  "getdbt.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://getdbt.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://getdbt.com/"
+    }
+   ],
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "getlago.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "find_lago_resource",
+      "get_lago_capabilities"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://getlago.com/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json;version=3.1",
+     "url": "https://getlago.com/openapi.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/yaml",
+     "url": "https://getlago.com/api/openapi.yaml"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "lago-billing",
+      "Integrate with Lago Billing"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://getlago.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://getlago.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://getlago.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://getlago.com/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "agents-txt",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 60
+  },
+  "gitbook.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "list_sites",
+      "get_site_structure",
+      "list_site_topics",
+      "get_page",
+      "create_change_request",
+      "submit_or_merge_change_request",
+      "get_subscription_information",
+      "get_usage_guide",
+      "report_tool_feedback",
+      "search",
+      "describe_operation",
+      "invoke_operation"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.gitbook.com/mcp"
+    },
+    {
+     "kind": "mcp",
+     "source": "/docs/~gitbook/mcp/server-card",
+     "status": "valid",
+     "tools_or_skills": [
+      "searchDocumentation",
+      "getPage",
+      "askQuestion",
+      "sendFeedback"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://gitbook.com/docs/~gitbook/mcp"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "gitbook",
+      "gitbook-write-docs",
+      "gitbook-configure-site",
+      "gitbook-write-openapi",
+      "gitbook-create-change-request",
+      "gitbook-review-change-request",
+      "gitbook-build-integration"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://gitbook.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://gitbook.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://gitbook.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://gitbook.com/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://mcp.gitbook.com"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "A+",
+   "score": 65
+  },
+  "github.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://api.githubcopilot.com/mcp"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://github.com/llms.txt"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://github.com/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "A",
+   "score": 48
+  },
+  "google.com": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "google.github.io": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "goplausible.com": {
+   "callable_endpoints": [],
+   "found": [
+    "ai-crawler-tokens-robots"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "gtmetrix.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://gtmetrix.com/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/vnd.oai.openapi+json",
+     "url": "https://gtmetrix.com/api/gtmetrix-openapi-v2.0.json"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://gtmetrix.com/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://gtmetrix.com/mcp"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "A",
+   "score": 51
+  },
+  "honeyb.ai": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://honeyb.ai/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 35
+  },
+  "hostinger.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.hostinger.com"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json",
+     "url": "https://developers.hostinger.com/openapi/openapi.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json",
+     "url": "https://api.mail.hostinger.com/openapi/openapi.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "hostinger-headless"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://hostinger.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://hostinger.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://hostinger.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://hostinger.com/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://www.hostinger.com"
+    },
+    {
+     "kind": "auth",
+     "source": "/auth.md",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://hostinger.com/auth.md"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "A+",
+   "score": 65
+  },
+  "hsbc.co.uk": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "hubspot.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://hubspot.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "huggingface.co": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/mcp/server-card",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://huggingface.co/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://huggingface.co/.well-known/openapi.json"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://huggingface.co/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://huggingface.co/mcp"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "api-catalog-rfc9727",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "A",
+   "score": 57
+  },
+  "iabtechlab.com": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "img.ly": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "request_quote"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://img.ly/codesign/server.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://img.ly/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://img.ly/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://img.ly/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 41
+  },
+  "jetbrains.com": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "jules.google": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "juliamaehler.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://juliamaehler.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "karangoyal.cc": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://karangoyal.cc/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "kilo.ai": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://kilo.ai/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "kochava.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://kochava.com/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 35
+  },
+  "kyvosinsights.com": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "langchain-ai.github.io": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "linear.app": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://linear.app/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "loops.so": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.loops.so"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid_legacy",
+     "transport_or_type": "application/json",
+     "url": "https://app.loops.so/openapi.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "loops-api",
+      "loops-cli",
+      "loops-email-sending-best-practices",
+      "loops-lmx"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://loops.so/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://loops.so/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://loops.so/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://loops.so/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://mcp.loops.so"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "A+",
+   "score": 60
+  },
+  "mapsoft.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://mapsoft.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "mastercard.com": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "mastra.ai": {
+   "callable_endpoints": [
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "mastra",
+      "mastra-factory"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://mastra.ai/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://mastra.ai/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://mastra.ai/"
+    }
+   ],
+   "found": [
+    "anthropic-agent-skills-format",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 38
+  },
+  "mcp.sentry.dev": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://mcp.sentry.dev/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt",
+    "oauth-cimd"
+   ],
+   "grade": "B",
+   "score": 30
+  },
+  "medium.com": {
+   "callable_endpoints": [],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "rsl"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "metricspot.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://metricspot.com/llms.txt"
+    }
+   ],
+   "found": [
+    "agents-md",
+    "agents-txt",
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "A",
+   "score": 46
+  },
+  "microsoft.com": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "mintlify.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://mintlify.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://mintlify.com/"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://mcp.mintlify.com"
+    },
+    {
+     "kind": "auth",
+     "source": "/auth.md",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://mintlify.com/auth.md"
+    }
+   ],
+   "found": [
+    "auth-md",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "B",
+   "score": 41
+  },
+  "mnemom.ai": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "acknowledge_governance_signal",
+      "assign_posture",
+      "claim_agent",
+      "clone_posture",
+      "create_api_key",
+      "create_governance_destination",
+      "create_governance_escalation_rule",
+      "create_posture",
+      "create_webhook_endpoint",
+      "delete_governance_destination",
+      "delete_governance_escalation_rule",
+      "delete_posture",
+      "delete_webhook_endpoint",
+      "diff_posture_revisions",
+      "dismiss_governance_signal",
+      "get_agent",
+      "get_alignment_by_agent",
+      "get_governance_signal",
+      "get_integrity_score",
+      "get_my_personal_org"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://api.mnemom.ai/mcp"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "Value catalog",
+      "Agent card lookup"
+     ],
+     "transport_or_type": "0.3.0",
+     "url": "https://api.mnemom.ai/v1"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://www.mnemom.ai/openapi.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "service-desc",
+     "url": "https://mnemom.ai/openapi.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "Fetch Mnemom Value Catalog",
+      "Fetch AAP JWKS",
+      "Lookup A2A Agent Card"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://mnemom.ai/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://mnemom.ai/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://mnemom.ai/"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://www.mnemom.ai"
+    }
+   ],
+   "found": [
+    "a2a",
+    "agents-md",
+    "agents-txt",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "A+",
+   "score": 70
+  },
+  "modelcontextprotocol.io": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "search_model_context_protocol",
+      "query_docs_filesystem_model_context_protocol"
+     ],
+     "transport_or_type": "http",
+     "url": "https://modelcontextprotocol.io/mcp"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "draft-sep",
+      "search-mcp-github"
+     ],
+     "transport_or_type": "0.3",
+     "url": "https://modelcontextprotocol.io/"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "draft-sep",
+      "search-mcp-github"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://modelcontextprotocol.io/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://modelcontextprotocol.io/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://modelcontextprotocol.io/"
+    }
+   ],
+   "found": [
+    "a2a",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 70
+  },
+  "mozilla.org": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "mpp.dev": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://mpp.dev/llms.txt"
+    }
+   ],
+   "found": [
+    "agents-md",
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 41
+  },
+  "mvnrepository.com": {
+   "callable_endpoints": [],
+   "found": [
+    "ai-crawler-tokens-robots"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "neon.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.neon.tech/mcp"
+    },
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/docs-server-card.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://neon.com/docs/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://neon.com/api_spec/release/v2.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "neon-postgres",
+      "neon-postgres-egress-optimizer",
+      "neon-postgres-branches",
+      "neon",
+      "neon-auth",
+      "neon-postgres-agent-platforms",
+      "neon-object-storage",
+      "neon-ai-gateway",
+      "neon-functions",
+      "neon-realtime",
+      "Lakebase Postgres",
+      "Postgres Egress Optimizer",
+      "Lakebase Postgres Branching",
+      "Neon",
+      "Neon Auth",
+      "Neon AI Agent Program",
+      "Neon Object Storage",
+      "Neon AI Gateway",
+      "Neon Functions",
+      "Neon Realtime"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://neon.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://neon.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://neon.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://neon.com/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/auth.md",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://neon.com/auth.md"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "grade": "A+",
+   "score": 70
+  },
+  "neuronto.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "find_resource",
+      "find_tool",
+      "publish_resource",
+      "registry_stats"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://neuronto.com/mcp"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "Find an agentic resource",
+      "Find a specific tool",
+      "Registry statistics"
+     ],
+     "transport_or_type": "0.3",
+     "url": "https://neuronto.com/a2a"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://neuronto.com/openapi.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://neuronto.com/apis.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://neuronto.com/llms.txt"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://neuronto.com/.well-known/ard.json"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://neuronto.com/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "a2a",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "ard",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 62
+  },
+  "nextjs.org": {
+   "callable_endpoints": [
+    {
+     "kind": "openapi",
+     "source": "/",
+     "status": "valid_legacy",
+     "transport_or_type": "service-desc",
+     "url": "https://nextjs.org/openapi.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://nextjs.org/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://nextjs.org/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://nextjs.org/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 38
+  },
+  "notion.so": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp.json",
+     "status": "valid_legacy",
+     "transport_or_type": null,
+     "url": "https://mcp.notion.com/mcp"
+    }
+   ],
+   "found": [],
+   "grade": "F",
+   "score": 5
+  },
+  "okta.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://okta.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://okta.com/"
+    }
+   ],
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "openai.com": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "opencode.ai": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://opencode.ai/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "openfort.io": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://www.openfort.io/api/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://www.openfort.io/docs/openapi.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "openfort-backend-wallet-setup",
+      "openfort-embedded-wallet-setup",
+      "openfort-js",
+      "openfort-backend-wallets",
+      "openfort-react-native",
+      "openfort-react",
+      "openfort-swift",
+      "openfort-unity"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://openfort.io/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://openfort.io/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://openfort.io/"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 62
+  },
+  "openknowledge.ai": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://openknowledge.ai/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://openknowledge.ai/"
+    }
+   ],
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "oreilly.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://oreilly.com/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 35
+  },
+  "packalyst.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://packalyst.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "paloaltonetworks.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://paloaltonetworks.com/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "pay.sh": {
+   "callable_endpoints": [
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "pay"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://pay.sh/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://pay.sh/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://pay.sh/"
+    }
+   ],
+   "found": [
+    "anthropic-agent-skills-format",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 28
+  },
+  "paypal.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://paypal.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "perplexity.ai": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "personalagentprotocol.org": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://personalagentprotocol.org/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "platform.claude.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://platform.claude.com/docs/mcp"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://platform.claude.com/llms.txt"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://platform.claude.com/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "grade": "A",
+   "score": 51
+  },
+  "playmcp.kakao.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://playmcp.kakao.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "pmg.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://pmg.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "privy.io": {
+   "callable_endpoints": [
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://privy.io/"
+    }
+   ],
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ],
+   "grade": "D",
+   "score": 10
+  },
+  "proof.com": {
+   "callable_endpoints": [
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "proof-mcp-best-practices",
+      "setup-x401-verifier"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://proof.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://proof.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://proof.com/"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A",
+   "score": 49
+  },
+  "publica.la": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://docs.publica.la/mcp"
+    },
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "search_site_content",
+      "get_blog_post",
+      "list_changelog_entries",
+      "get_pricing_plans",
+      "get_platform_overview"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://publica.la/mcp"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "publica.la site guide"
+     ],
+     "transport_or_type": "0.3.0",
+     "url": "https://publica.la/api/a2a"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://publica.la/openapi.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "publicala"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://publica.la/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://publica.la/llms.txt"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://publica.la/.well-known/ard.json"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://publica.la/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://publica.la"
+    },
+    {
+     "kind": "auth",
+     "source": "/auth.md",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://publica.la/auth.md"
+    }
+   ],
+   "found": [
+    "a2a",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "llms-txt",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "A+",
+   "score": 75
+  },
+  "qail.ai": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://qail.ai/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 35
+  },
+  "quicknode.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "list-endpoints",
+      "get-endpoint",
+      "create-endpoint",
+      "delete-endpoint",
+      "get-endpoint-metrics",
+      "list-endpoint-logs",
+      "get-endpoint-log-details",
+      "update-endpoint-rate-limits",
+      "list-endpoint-method-rate-limits",
+      "create-endpoint-method-rate-limit",
+      "update-endpoint-method-rate-limit",
+      "delete-endpoint-method-rate-limit",
+      "list-endpoint-security",
+      "update-endpoint-security-options",
+      "create-security-rule",
+      "delete-security-rule",
+      "get-rpc-usage",
+      "get-billing",
+      "list-chains"
+     ],
+     "transport_or_type": "http",
+     "url": "https://mcp.quicknode.com/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/openapi+json",
+     "url": "https://www.quicknode.com/openapi.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/vnd.oai.openapi+json;version=3.0",
+     "url": "https://www.quicknode.com/api-docs/v0/swagger.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://www.quicknode.com/.well-known/x402.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "agents",
+      "create-endpoint",
+      "agents-overview"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://quicknode.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://quicknode.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://quicknode.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://quicknode.com/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/auth.md",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://quicknode.com/auth.md"
+    }
+   ],
+   "found": [
+    "a2a",
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "webbotauth"
+   ],
+   "grade": "A+",
+   "score": 80
+  },
+  "quora.com": {
+   "callable_endpoints": [],
+   "found": [
+    "ai-crawler-tokens-robots"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "railway.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.railway.com"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/graphql-response+json",
+     "url": "https://backboard.railway.com/graphql/v2"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/openapi+json",
+     "url": "https://railway.com/openapi.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://railway.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://railway.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://railway.com/.well-known/ard.json"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://railway.com/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "grade": "A+",
+   "score": 65
+  },
+  "rako.sh": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://rako.sh/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 35
+  },
+  "registry.modelcontextprotocol.io": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "resend.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/mcp/server-card",
+     "status": "valid",
+     "tools_or_skills": [
+      "emails",
+      "received-emails",
+      "contacts",
+      "broadcasts",
+      "domains",
+      "segments",
+      "topics",
+      "contact-properties",
+      "api-keys",
+      "templates",
+      "logs",
+      "webhooks"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.resend.com/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/openapi+yaml",
+     "url": "https://resend.com/openapi.yaml"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "resend",
+      "react-email",
+      "agent-email-inbox",
+      "email-best-practices",
+      "resend-cli"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://resend.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://resend.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://resend.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://resend.com/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://api.resend.com"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "A+",
+   "score": 65
+  },
+  "rslcollective.org": {
+   "callable_endpoints": [],
+   "found": [
+    "rsl"
+   ],
+   "grade": "D",
+   "score": 10
+  },
+  "rslstandard.org": {
+   "callable_endpoints": [],
+   "found": [
+    "rsl"
+   ],
+   "grade": "D",
+   "score": 10
+  },
+  "rtblint.org": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://rtblint.org/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "rudderstack.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.rudderstack.com/mcp"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://rudderstack.com/llms.txt"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://rudderstack.com/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 35
+  },
+  "salespeak.ai": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "ask_question"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://salespeak.ai/agent/sse"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://salespeak.ai/llms.txt"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://salespeak.ai/.well-known/ard.json"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://salespeak.ai/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "ard",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "grade": "A+",
+   "score": 67
+  },
+  "samsung.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://samsung.com/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 35
+  },
+  "sap.com": {
+   "callable_endpoints": [],
+   "found": [
+    "ai-crawler-tokens-robots"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "satgate.io": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://satgate.io/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "sentry.io": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "transport_or_type": null,
+     "url": "https://mcp.sentry.dev/mcp"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://sentry.io/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://sentry.io/"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://sentry.io"
+    }
+   ],
+   "found": [
+    "agents-md",
+    "agents-txt",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "A",
+   "score": 55
+  },
+  "shopify.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://shopify.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "slack.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://slack.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "sleeknova.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://sleeknova.com/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt",
+    "tdmrep"
+   ],
+   "grade": "B",
+   "score": 38
+  },
+  "snowflake.com": {
+   "callable_endpoints": [
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://www.snowflake.com/wp-json/mcp/mcp-oauth-server"
+    }
+   ],
+   "found": [
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "D",
+   "score": 10
+  },
+  "spawning.ai": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "speakeasy.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "search_docs",
+      "get_doc",
+      "give_feedback"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://ai.speakeasy.com/platform-mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/openapi+yaml",
+     "url": "https://www.speakeasy.com/openapi.yaml"
+    },
+    {
+     "kind": "openapi",
+     "source": "/",
+     "status": "valid_legacy",
+     "transport_or_type": "service-desc",
+     "url": "https://speakeasy.com/openapi.yaml"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "Speakeasy Agent Skills"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://skills.sh/speakeasy-api"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://speakeasy.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://speakeasy.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://speakeasy.com/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "a2a",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 60
+  },
+  "spiffe.io": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "springernature.com": {
+   "callable_endpoints": [],
+   "found": [
+    "tdmrep"
+   ],
+   "grade": "D",
+   "score": 10
+  },
+  "stm-assoc.org": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://stm-assoc.org/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "strandsagents.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://strandsagents.com/llms.txt"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 35
+  },
+  "stripe.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://stripe.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "stytch.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://stytch.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "sunilprakash.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://sunilprakash.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "supabase.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.supabase.com/mcp"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/openapi+json",
+     "url": "https://api.supabase.com/api/v1-json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "supabase",
+      "supabase-postgres-best-practices"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://supabase.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://supabase.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://supabase.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ard.json",
+     "status": "valid",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://supabase.com/.well-known/ard.json"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://supabase.com/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 65
+  },
+  "support.claude.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://support.claude.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "surrealdb.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.surrealdb.com"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "Cloud instance management",
+      "SurrealQL query execution",
+      "Schema and catalogue inspection",
+      "Instance monitoring and diagnostics",
+      "Organisation and access management",
+      "Billing, usage and cost estimation",
+      "Agent memory with Spectron"
+     ],
+     "transport_or_type": "1.0",
+     "url": "https://mcp.surrealdb.com"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "text/yaml",
+     "url": "https://api.surrealdb.com/openapi/public.yaml"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://surrealdb.com/openapi.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "surrealdb-agent-memory-docs",
+      "surrealdb-cli",
+      "surrealdb-docs",
+      "surrealdb-js",
+      "surrealdb-python",
+      "surrealdb-vector",
+      "surrealkit",
+      "surrealql-functions",
+      "surrealql-performance",
+      "surrealql"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://surrealdb.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://surrealdb.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://surrealdb.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://surrealdb.com/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://surrealdb.com"
+    },
+    {
+     "kind": "auth",
+     "source": "/auth.md",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://surrealdb.com/auth.md"
+    }
+   ],
+   "found": [
+    "a2a",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "A+",
+   "score": 75
+  },
+  "swarmsync.ai": {
+   "callable_endpoints": [
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid_legacy",
+     "transport_or_type": null,
+     "url": "https://swarmsync.ai"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "Escrow-Protected Payment Demo",
+      "SwarmScore Trust Badge Demo",
+      "Task Verification Demo"
+     ],
+     "transport_or_type": "0.3.0",
+     "url": "https://swarmsync-agents.onrender.com/a2a"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://swarmsync.ai/llms.txt"
+    }
+   ],
+   "found": [
+    "a2a",
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "grade": "B",
+   "score": 38
+  },
+  "taskade.com": {
+   "callable_endpoints": [
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "taskade"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://taskade.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://taskade.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://taskade.com/"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A",
+   "score": 49
+  },
+  "telnyx.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "list_api_endpoints",
+      "get_api_endpoint_schema",
+      "invoke_api_endpoint",
+      "open_number_intelligence",
+      "open_usage_cost_explorer",
+      "open_voice_monitor"
+     ],
+     "transport_or_type": "streamable-http",
+     "url": "https://api.telnyx.com/v2/mcp"
+    },
+    {
+     "kind": "a2a",
+     "source": "/.well-known/agent-card.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "Evaluate Infrastructure",
+      "Compare with Competitor",
+      "Get Benchmarks",
+      "Get Pricing",
+      "List Capabilities"
+     ],
+     "transport_or_type": "0.2.0",
+     "url": "https://telnyx.com"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://telnyx.com/openapi.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "tools_or_skills": [
+      "Telnyx Agent Skills Index"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://telnyx.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://telnyx.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://telnyx.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://telnyx.com/.well-known/ai-catalog.json"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://telnyx.com"
+    },
+    {
+     "kind": "auth",
+     "source": "/auth.md",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://telnyx.com/auth.md"
+    }
+   ],
+   "found": [
+    "a2a",
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents",
+    "ucp",
+    "webbotauth"
+   ],
+   "grade": "A+",
+   "score": 95
+  },
+  "tempo.xyz": {
+   "callable_endpoints": [
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "docs",
+      "mercator",
+      "mercator-setup",
+      "wallet"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://tempo.xyz/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://tempo.xyz/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://tempo.xyz/"
+    }
+   ],
+   "found": [
+    "agents-md",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "webbotauth"
+   ],
+   "grade": "A+",
+   "score": 67
+  },
+  "theguardian.com": {
+   "callable_endpoints": [],
+   "found": [
+    "rsl"
+   ],
+   "grade": "D",
+   "score": 10
+  },
+  "tollbit.com": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "twilio.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid",
+     "transport_or_type": "streamable-http",
+     "url": "https://www.twilio.com/.well-known/mcp"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "grade": "A",
+   "score": 46
+  },
+  "ucp.dev": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://ucp.dev/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "ucpregistry.com": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 5
+  },
+  "vercel.com": {
+   "callable_endpoints": [
+    {
+     "kind": "openapi",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/json",
+     "url": "https://vercel.com/openapi.json"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "application/json",
+     "url": "https://openapi.vercel.sh/"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "deploy-to-vercel",
+      "vercel-cli-with-tokens",
+      "vercel-composition-patterns",
+      "vercel-optimize",
+      "vercel-react-best-practices",
+      "vercel-react-native-skills",
+      "vercel-react-view-transitions",
+      "web-design-guidelines",
+      "writing-guidelines"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://vercel.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://vercel.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://vercel.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://vercel.com/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-cimd"
+   ],
+   "grade": "A+",
+   "score": 67
+  },
+  "webhooks.cc": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://webhooks.cc/llms.txt"
+    },
+    {
+     "kind": "auth",
+     "source": "/.well-known/oauth-protected-resource",
+     "status": "valid",
+     "transport_or_type": "oauth-protected-resource",
+     "url": "https://webhooks.cc/api/"
+    },
+    {
+     "kind": "auth",
+     "source": "/auth.md",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://webhooks.cc/auth.md"
+    }
+   ],
+   "found": [
+    "auth-md",
+    "llms-txt",
+    "oauth-metadata-for-agents"
+   ],
+   "grade": "B",
+   "score": 38
+  },
+  "wikipedia.org": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "wild-card.ai": {
+   "callable_endpoints": [],
+   "found": [],
+   "grade": "F",
+   "score": 0
+  },
+  "workos.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp.json",
+     "status": "valid_legacy",
+     "transport_or_type": null,
+     "url": "https://mcp.workos.com/mcp"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://workos.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://workos.com/"
+    },
+    {
+     "kind": "auth",
+     "source": "/auth.md",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://workos.com/auth.md"
+    }
+   ],
+   "found": [
+    "auth-md",
+    "cloudflare-markdown-for-agents",
+    "identity-assertion-authz-grant",
+    "llms-txt",
+    "oauth-cimd"
+   ],
+   "grade": "B",
+   "score": 39
+  },
+  "x.ai": {
+   "callable_endpoints": [],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "x402.org": {
+   "callable_endpoints": [
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "service-desc",
+     "url": "https://x402.org/wp-json/"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "llms-txt",
+      "content-signals",
+      "markdown-negotiation",
+      "api-catalog"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://x402.org/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://x402.org/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://x402.org/"
+    }
+   ],
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 67
+  },
+  "yahoo.com": {
+   "callable_endpoints": [],
+   "found": [
+    "ai-crawler-tokens-robots"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "yoast.com": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://yoast.com/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  },
+  "zapier.com": {
+   "callable_endpoints": [
+    {
+     "kind": "mcp",
+     "source": "/.well-known/mcp/server-card.json",
+     "status": "valid_legacy",
+     "transport_or_type": "streamable-http",
+     "url": "https://mcp.zapier.com/api/v1/connect"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/vnd.oai.openapi",
+     "url": "https://api.zapier.com/schema"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "text/yaml",
+     "url": "https://docs.zapier.com/api-reference/specs/actions.yaml"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "text/yaml",
+     "url": "https://docs.zapier.com/api-reference/specs/connections.yaml"
+    },
+    {
+     "kind": "openapi",
+     "source": "/.well-known/api-catalog",
+     "status": "valid",
+     "transport_or_type": "text/yaml",
+     "url": "https://docs.zapier.com/api-reference/specs/trigger-inbox.yaml"
+    },
+    {
+     "kind": "openapi",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "service-desc",
+     "url": "https://actions.zapier.com/api/v1/dynamic/openapi.json"
+    },
+    {
+     "kind": "agent_skills",
+     "source": "/.well-known/agent-skills/index.json",
+     "status": "valid",
+     "tools_or_skills": [
+      "zapier-mcp",
+      "zapier-sdk",
+      "zapier-embed-mcp",
+      "zapier-platform-cli",
+      "algolia",
+      "alpaca",
+      "clay",
+      "dataforseo",
+      "discord",
+      "dropbox",
+      "elevenlabs",
+      "firecrawl",
+      "gitlab",
+      "google-ads",
+      "google-analytics",
+      "google-calendar",
+      "google-contacts",
+      "google-docs",
+      "google-sheets",
+      "google-tasks"
+     ],
+     "transport_or_type": "application/json",
+     "url": "https://zapier.com/.well-known/agent-skills/index.json"
+    },
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://zapier.com/llms.txt"
+    },
+    {
+     "kind": "markdown",
+     "source": "/",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://zapier.com/"
+    },
+    {
+     "kind": "catalog",
+     "source": "/.well-known/ai-catalog.json",
+     "status": "valid_legacy",
+     "transport_or_type": "application/ai-catalog+json",
+     "url": "https://zapier.com/.well-known/ai-catalog.json"
+    }
+   ],
+   "found": [
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "grade": "A+",
+   "score": 60
+  },
+  "zed.dev": {
+   "callable_endpoints": [
+    {
+     "kind": "llms_txt",
+     "source": "/llms.txt",
+     "status": "valid",
+     "transport_or_type": "text/markdown",
+     "url": "https://zed.dev/llms.txt"
+    }
+   ],
+   "found": [
+    "llms-txt"
+   ],
+   "grade": "C",
+   "score": 20
+  }
+ },
+ "registry": {
+  "servers": 2058,
+  "since": "2026-10-23T00:00:00Z",
+  "versions": 3000
+ },
+ "repos": {
+  "a2aproject/a2a": 26277,
+  "a2aproject/a2a-dotnet": 267,
+  "a2aproject/a2a-go": 490,
+  "a2aproject/a2a-java": 506,
+  "a2aproject/a2a-js": 647,
+  "a2aproject/a2a-python": 2212,
+  "a2aproject/a2a-rs": 96,
+  "a2ui-project/a2ui": 16806,
+  "aapspec/reference-impl": 0,
+  "adcontextprotocol/adcp": 257,
+  "ag-ui-protocol/ag-ui": 16790,
+  "agent-intent/verifiable-intent": 101,
+  "agent-network-protocol/agentnetworkprotocol": 1458,
+  "agentclientprotocol/agent-client-protocol": 4493,
+  "agentcommercekit/ack": 158,
+  "agentcommunity/agent-identity-discovery": 48,
+  "agentic-commerce-protocol/agentic-commerce-protocol": 1587,
+  "agentskills/agentskills": 26542,
+  "agentsmd/agents.md": 25077,
+  "agntcy/acp-spec": 169,
+  "agntcy/dir": 199,
+  "agntcy/oasf": 339,
+  "agntcy/slim": 231,
+  "agora-protocol/agora-protocol.github.io": 1,
+  "agora-protocol/paper-demo": 184,
+  "ai-engineer-foundation/agent-protocol": 1460,
+  "answerdotai/llms-txt": 2668,
+  "ant-intl/amp": 110,
+  "apache/ossie": 2535,
+  "ards-project/ard-spec": 486,
+  "block/goose": 55612,
+  "cloudflare/web-bot-auth": 173,
+  "copilotkit/copilotkit": 38200,
+  "coral-protocol/coral-server": 253,
+  "coral-protocol/coralizer": 3,
+  "cyberstormdotmu/bot-authentication": 1,
+  "decentralized-identity/kya-os-mcp": 32,
+  "eclipse-lmos/lmos-operator": 36,
+  "eclipse-lmos/lmos-router": 42,
+  "eclipse-lmos/lmos-runtime": 47,
+  "erc-8004/erc-8004-contracts": 238,
+  "garyillyes/web-bot-auth-apache": 2,
+  "google-agentic-commerce/ap2": 3245,
+  "googlecloudplatform/open-knowledge-format": 1090,
+  "i-am-bee/acp": 1019,
+  "iabtechlab/aamp": 24,
+  "iabtechlab/agentic-audiences": 51,
+  "iabtechlab/agentic-direct": 11,
+  "iabtechlab/agentic-real-time-framework": 31,
+  "iabtechlab/buyer-agent": 28,
+  "iabtechlab/comp": 6,
+  "iabtechlab/seller-agent": 27,
+  "las-wg/agent-permissions.json": 9,
+  "lightninglabs/aperture": 271,
+  "lightninglabs/l402": 91,
+  "mcp-ui-org/mcp-ui": 5230,
+  "modelcontextprotocol/ext-apps": 3005,
+  "modelcontextprotocol/modelcontextprotocol": 9524
+ }
+}
