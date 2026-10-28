@@ -1,0 +1,3050 @@
+{
+ "a2a": {
+  "adopters": [
+   {
+    "date": "2026-04-09",
+    "evidence": "VERIFIED",
+    "name": "150+ supporting organizations (claimed by the A2A project at its one-year mark)",
+    "note": "Named landing partners include major cloud platforms per the release; this is a claimed count, not an independently measured probe.",
+    "url": "https://www.prnewswire.com/news-releases/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year-302737641.html"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "a2a-python (reference SDK)",
+    "url": "https://github.com/a2aproject/a2a-python"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "a2a-go",
+    "url": "https://github.com/a2aproject/a2a-go"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "a2a-js",
+    "url": "https://github.com/a2aproject/a2a-js"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "a2a-java",
+    "url": "https://github.com/a2aproject/a2a-java"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "a2a-dotnet",
+    "url": "https://github.com/a2aproject/a2a-dotnet"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "a2a-rs (Rust)",
+    "url": "https://github.com/a2aproject/a2a-rs"
+   }
+  ],
+  "registries": [],
+  "sdks": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "a2a-sdk (PyPI)",
+    "url": "https://pypi.org/project/a2a-sdk"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "@a2a-js/sdk (npm)",
+    "url": "https://github.com/a2aproject/a2a-js"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "REPORTED",
+    "name": "A2A (.NET NuGet)",
+    "url": "https://www.nuget.org/packages/A2A"
+   }
+  ],
+  "validators": []
+ },
+ "a2ui": {
+  "adopters": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "AG-UI / CopilotKit (names AG-UI as A2UI's standard transport binding; ships an a2ui-toolkit package and catalog-forwarding integration)",
+    "url": "https://docs.ag-ui.com/introduction"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-09-05",
+    "evidence": "REPORTED",
+    "name": "A2UI Composer (visual JSON editor)",
+    "url": "https://a2ui-project.github.io/composer/"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "REPORTED",
+    "name": "A2UI Theater (Lit/React/Angular streaming demo renderers)",
+    "url": "https://a2ui-composer.ag-ui.com/theater"
+   }
+  ],
+  "registries": [],
+  "sdks": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "a2ui-project/a2ui reference SDK (Flutter and web/Lit renderers)",
+    "url": "https://github.com/a2ui-project/a2ui"
+   }
+  ],
+  "validators": []
+ },
+ "a2wp": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "aagv": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "aamp": {
+  "adopters": [
+   {
+    "date": "2026-07-30",
+    "evidence": "VERIFIED",
+    "name": "Amazon Web Services (Bedrock AgentCore deployment support)",
+    "note": "named executive quote (Stephanie Layser, AWS)",
+    "url": "https://iabtechlab.com/press-releases/iab-tech-lab-releases-aamp-2-3-bringing-enterprise-grade-infrastructure-and-privacy-diligence-to-agentic-advertising/"
+   },
+   {
+    "date": "2026-07-30",
+    "evidence": "VERIFIED",
+    "name": "HyperMindZ (Deals Sync MCP Server contribution)",
+    "note": "named executive quote (Mano Pillai, CEO)",
+    "url": "https://iabtechlab.com/press-releases/iab-tech-lab-releases-aamp-2-3-bringing-enterprise-grade-infrastructure-and-privacy-diligence-to-agentic-advertising/"
+   },
+   {
+    "date": "2026-07-30",
+    "evidence": "VERIFIED",
+    "name": "Mixpeek (Content Taxonomy Parser contribution)",
+    "note": "named executive quote (Ethan Steininger, CEO)",
+    "url": "https://iabtechlab.com/press-releases/iab-tech-lab-releases-aamp-2-3-bringing-enterprise-grade-infrastructure-and-privacy-diligence-to-agentic-advertising/"
+   },
+   {
+    "date": "2026-07-30",
+    "evidence": "VERIFIED",
+    "name": "SafeGuard Privacy (Diligence Platform integration)",
+    "note": "named executive quote (Richy Glassberg, CEO)",
+    "url": "https://iabtechlab.com/press-releases/iab-tech-lab-releases-aamp-2-3-bringing-enterprise-grade-infrastructure-and-privacy-diligence-to-agentic-advertising/"
+   },
+   {
+    "date": "2026-07-30",
+    "evidence": "VERIFIED",
+    "name": "Adform (agent workflow controls)",
+    "note": "named executive quote (Jochen Schlosser, CTO)",
+    "url": "https://iabtechlab.com/press-releases/iab-tech-lab-releases-aamp-2-3-bringing-enterprise-grade-infrastructure-and-privacy-diligence-to-agentic-advertising/"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "AAMP GitHub hub (5 constituent repos)",
+    "note": "links Agentic Direct, Buyer Agent, Seller Agent, Registry Agent example, and ARTF",
+    "url": "https://github.com/IABTechLab/AAMP"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "Agentic Direct reference implementation",
+    "note": "core orchestration/communication layer",
+    "url": "https://github.com/IABTechLab/agentic-direct"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "Buyer Agent SDK",
+    "note": "reference demand-side agent",
+    "url": "https://github.com/IABTechLab/buyer-agent"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "Seller Agent SDK",
+    "note": "reference supply-side agent",
+    "url": "https://github.com/IABTechLab/seller-agent"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "Agentic Audiences (formerly LiveRamp UCP donation)",
+    "note": "audience activation component",
+    "url": "https://github.com/IABTechLab/agentic-audiences"
+   }
+  ],
+  "registries": [
+   {
+    "date": "2026-08-12",
+    "evidence": "VERIFIED",
+    "name": "IAB Tech Lab Agent Registry",
+    "note": "AAMP's 'Trust and Transparency' pillar; free, open to members and non-members",
+    "url": "https://registry.iabtechlab.ai/"
+   }
+  ],
+  "sdks": [],
+  "validators": []
+ },
+ "aap": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-02-07",
+    "evidence": "REPORTED",
+    "name": "aapspec/reference-impl",
+    "note": "linked from aapspec/spec README; not independently fetched/verified as functional",
+    "url": "https://github.com/aapspec/reference-impl"
+   }
+  ],
+  "registries": [
+   {
+    "date": "2026-02-07",
+    "evidence": "REPORTED",
+    "name": "aapspec/spec (GitHub org: spec text, schemas, test-vectors)",
+    "url": "https://github.com/aapspec/spec"
+   }
+  ],
+  "sdks": [],
+  "validators": []
+ },
+ "aauth": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "aauth-hardt": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "aauth-r3": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "acip": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "adcp": {
+  "adopters": [
+   {
+    "date": "2026",
+    "evidence": "THIN",
+    "name": "StreamHaus (illustrative example publisher in AdCP's own walkthrough docs)",
+    "note": "Used only as a narrative example in the documentation walkthrough; not confirmed as a real production adopter",
+    "url": "https://docs.adcontextprotocol.org/"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Prebid Sales Agent (community example, Prebid working group)",
+    "note": "Explicitly labeled a community example, not a maintained reference implementation, per AdCP's own docs",
+    "url": "https://docs.adcontextprotocol.org/"
+   }
+  ],
+  "registries": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "AgenticAdvertising.org Registry",
+    "note": "Resolves brands/publishers to AdCP agent endpoints by capability, category, or geography",
+    "url": "https://docs.adcontextprotocol.org/"
+   }
+  ],
+  "sdks": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "@adcp/sdk (JavaScript/TypeScript, npm)",
+    "url": "https://docs.adcontextprotocol.org/"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "adcp (Python, PyPI)",
+    "url": "https://docs.adcontextprotocol.org/"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "adcp-go (Go)",
+    "url": "https://docs.adcontextprotocol.org/"
+   }
+  ],
+  "validators": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Addie (chat-based protocol tester)",
+    "note": "adcontextprotocol.org/chat — ask questions and test AdCP tasks with no code",
+    "url": "https://docs.adcontextprotocol.org/"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Brand.json builder",
+    "url": "https://docs.adcontextprotocol.org/"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "AdAgents.json builder/validator",
+    "url": "https://docs.adcontextprotocol.org/"
+   }
+  ]
+ },
+ "adp": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "ads": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-07-06",
+    "evidence": "VERIFIED",
+    "name": "agntcy/dir (AGNTCY Directory reference implementation)",
+    "note": "Named directly as the source/issue-tracker repo in the draft-mp-agntcy-ads-02 'About This Document' section",
+    "url": "https://github.com/agntcy/dir"
+   }
+  ],
+  "registries": [
+   {
+    "date": "2026-07-06",
+    "evidence": "REPORTED",
+    "name": "spec.dir.agntcy.org (latest revision of the ADS spec / directory service)",
+    "note": "Named in the draft as the canonical live spec location; not independently fetched",
+    "url": "https://spec.dir.agntcy.org"
+   }
+  ],
+  "sdks": [],
+  "validators": []
+ },
+ "ag-ui": {
+  "adopters": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "Microsoft Agent Framework (1st party)",
+    "url": "https://docs.ag-ui.com/introduction"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "Google ADK (1st party)",
+    "url": "https://docs.ag-ui.com/introduction"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "AWS Strands Agents / AWS Bedrock AgentCore (1st party)",
+    "url": "https://docs.ag-ui.com/introduction"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "LangChain / LangGraph and CrewAI (launch partnerships)",
+    "url": "https://github.com/ag-ui-protocol/ag-ui"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "CopilotKit (reference/1st-party client)",
+    "url": "https://github.com/CopilotKit/CopilotKit"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "REPORTED",
+    "name": "AG-UI Dojo (building-blocks demo viewer across all supported frameworks)",
+    "url": "https://dojo.ag-ui.com/"
+   }
+  ],
+  "registries": [],
+  "sdks": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "@ag-ui/core and related TypeScript packages (core, client, encoder, proto, cli)",
+    "url": "https://github.com/ag-ui-protocol/ag-ui"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "Community SDKs: Kotlin, Go, Dart, Java, Rust, Ruby, C++, .NET",
+    "url": "https://docs.ag-ui.com/introduction"
+   }
+  ],
+  "validators": []
+ },
+ "agent-attribution-protocol": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "Rako AAP platform (api.rako.sh)",
+    "note": "the only known implementation; single-vendor, centrally operated",
+    "url": "https://rako.sh/docs"
+   }
+  ],
+  "registries": [],
+  "sdks": [
+   {
+    "date": "2026-09-05",
+    "evidence": "REPORTED",
+    "name": "@rakohq/sdk (npm, JS/TS)",
+    "note": "linked from rako.sh/docs; package registry page not independently fetched",
+    "url": "https://www.npmjs.com/package/@rakohq/sdk"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "REPORTED",
+    "name": "agent-attribution-protocol (PyPI, Python)",
+    "note": "linked from rako.sh/docs; package registry page not independently fetched",
+    "url": "https://pypi.org/project/agent-attribution-protocol/"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "@rakohq/mcp (MCP server)",
+    "note": "documented MCP integration for Claude Desktop/Cursor-style clients",
+    "url": "https://rako.sh/docs"
+   }
+  ],
+  "validators": []
+ },
+ "agent-audit-trail": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "agent-authorization-envelope": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "agent-channel-fan-out": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "agent-client-protocol": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Zed editor",
+    "url": "https://agentclientprotocol.com/get-started/introduction"
+   },
+   {
+    "date": "2026-02-18",
+    "evidence": "VERIFIED",
+    "name": "JetBrains IDEs",
+    "note": "JetBrains' Sergey Ignatov joined as Lead Maintainer, reflecting Zed/JetBrains collaboration on ACP",
+    "url": "https://agentclientprotocol.com/updates"
+   },
+   {
+    "date": "2026-04-22",
+    "evidence": "REPORTED",
+    "name": "Goose (Block)",
+    "note": "Alex Hancock (Block/Goose) co-leads the Transports Working Group",
+    "url": "https://agentclientprotocol.com/updates"
+   }
+  ],
+  "registries": [
+   {
+    "date": "2026-03-09",
+    "evidence": "VERIFIED",
+    "name": "ACP Registry",
+    "note": "Standard way for ACP clients to discover, install, and configure compatible agents",
+    "url": "https://agentclientprotocol.com/updates"
+   }
+  ],
+  "sdks": [
+   {
+    "date": "2026-06-25",
+    "evidence": "VERIFIED",
+    "name": "Rust SDK (v1.0)",
+    "url": "https://agentclientprotocol.com/updates"
+   },
+   {
+    "date": "2026-06-25",
+    "evidence": "VERIFIED",
+    "name": "TypeScript SDK (v1.0)",
+    "url": "https://agentclientprotocol.com/updates"
+   }
+  ],
+  "validators": []
+ },
+ "agent-commerce-kit": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "agent-communication-protocol": {
+  "adopters": [
+   {
+    "date": "2026-09-05",
+    "evidence": "REPORTED",
+    "name": "IBM BeeAI Platform (historical, prior to migration to A2A)",
+    "url": "https://github.com/i-am-bee/beeai-platform"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "i-am-bee/acp (archived reference server)",
+    "url": "https://github.com/i-am-bee/acp"
+   }
+  ],
+  "registries": [],
+  "sdks": [
+   {
+    "date": "2026-09-05",
+    "evidence": "REPORTED",
+    "name": "acp-sdk (PyPI)",
+    "url": "https://pypi.org/project/acp-sdk"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "REPORTED",
+    "name": "acp-sdk (npm)",
+    "url": "https://www.npmjs.com/package/acp-sdk"
+   }
+  ],
+  "validators": []
+ },
+ "agent-connect-protocol": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-09-06",
+    "evidence": "VERIFIED",
+    "name": "acp-spec reference OpenAPI schema",
+    "url": "https://github.com/agntcy/acp-spec"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "agent-decision-commitment": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "agent-delegation-receipts": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "agent-identity-document": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "agent-permissions-json": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-07-17",
+    "evidence": "VERIFIED",
+    "name": "las-wg/agent-permissions.json (JSON Schema + spec)",
+    "url": "https://github.com/las-wg/agent-permissions.json"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": [
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "Agent Ready agent-permissions.json Validator",
+    "note": "third-party validator tool, not affiliated with LAS-WG",
+    "url": "https://agent-ready.dev/agent-permissions-validator"
+   }
+  ]
+ },
+ "agent-principal-binding": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "agent-protocol-aief": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-09-06",
+    "evidence": "REPORTED",
+    "name": "Auto-GPT (merged PR)",
+    "url": "https://github.com/Significant-Gravitas/Auto-GPT/pull/5044"
+   },
+   {
+    "date": "2026-09-06",
+    "evidence": "REPORTED",
+    "name": "Auto-GPT-Forge",
+    "url": "https://github.com/Significant-Gravitas/Auto-GPT-Forge"
+   },
+   {
+    "date": "2026-09-06",
+    "evidence": "REPORTED",
+    "name": "smol developer (merged PR)",
+    "url": "https://github.com/smol-ai/developer/pull/123"
+   }
+  ],
+  "registries": [],
+  "sdks": [
+   {
+    "date": "2026-09-06",
+    "evidence": "VERIFIED",
+    "name": "agent-protocol SDK/client packages",
+    "url": "https://github.com/AI-Engineer-Foundation/agent-protocol"
+   }
+  ],
+  "validators": []
+ },
+ "agentic-commerce-protocol": {
+  "adopters": [
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "OpenAI (Founding Maintainer)",
+    "url": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/blob/main/MAINTAINERS.md"
+   },
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "Stripe (Founding Maintainer)",
+    "url": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/blob/main/MAINTAINERS.md"
+   },
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "Meta (Lead Maintainer)",
+    "url": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/blob/main/MAINTAINERS.md"
+   }
+  ],
+  "implementations": [
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "OpenAI Commerce (ChatGPT checkout)",
+    "url": "https://developers.openai.com/commerce/"
+   },
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "Stripe Agentic Commerce",
+    "url": "https://docs.stripe.com/agentic-commerce"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "agentic-payments-gating-model": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "agents-json": {
+  "adopters": [
+   {
+    "date": "2026",
+    "evidence": "THIN",
+    "name": "Resend demo agent",
+    "url": "https://github.com/wild-card-ai/agents-json/tree/master/agents_json/resend"
+   },
+   {
+    "date": "2026",
+    "evidence": "THIN",
+    "name": "Stripe demo agent",
+    "url": "https://github.com/wild-card-ai/agents-json/tree/master/agents_json/stripe"
+   },
+   {
+    "date": "2026",
+    "evidence": "THIN",
+    "name": "Rootly demo agent",
+    "url": "https://github.com/wild-card-ai/agents-json/tree/master/agents_json/rootly"
+   },
+   {
+    "date": "2026",
+    "evidence": "THIN",
+    "name": "Google Sheets demo agent",
+    "url": "https://github.com/wild-card-ai/agents-json/tree/master/agents_json/googlesheets"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-08",
+    "evidence": "VERIFIED",
+    "name": "Wildcard Bridge (Python reference runtime: load, parse, run agents.json flows)",
+    "url": "https://github.com/wild-card-ai/agents-json"
+   }
+  ],
+  "registries": [],
+  "sdks": [
+   {
+    "date": "2026-08",
+    "evidence": "VERIFIED",
+    "name": "Wildcard Bridge Python package",
+    "url": "https://github.com/wild-card-ai/agents-json"
+   }
+  ],
+  "validators": []
+ },
+ "agents-md": {
+  "adopters": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "openai/codex",
+    "url": "https://github.com/openai/codex/blob/main/docs/agents_md.md"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "apache/airflow",
+    "url": "https://github.com/apache/airflow/blob/-/AGENTS.md"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "temporalio/sdk-java",
+    "url": "https://github.com/temporalio/sdk-java/blob/-/AGENTS.md"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "OpenAI Codex",
+    "url": "https://openai.com/codex/"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Amp",
+    "url": "https://ampcode.com/"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Google Jules",
+    "url": "https://jules.google/"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Cursor",
+    "url": "https://cursor.com/"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Factory",
+    "url": "https://factory.com/"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "Devin (Cognition)",
+    "url": "https://devin.ai/"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "Aider",
+    "url": "https://aider.chat/docs/usage/conventions.html#always-load-conventions"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "goose (Block)",
+    "url": "https://github.com/block/goose"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "VS Code",
+    "url": "https://code.visualstudio.com/docs/editor/artificial-intelligence"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "Zed",
+    "url": "https://zed.dev/docs/ai/instructions"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "Windsurf (Cognition)",
+    "url": "https://docs.windsurf.com/"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "GitHub Copilot coding agent",
+    "url": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "Warp",
+    "url": "https://docs.warp.dev/knowledge-and-collaboration/rules#project-scoped-rules-1"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "JetBrains Junie",
+    "url": "https://jetbrains.com/junie"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "RooCode",
+    "url": "https://roomote.dev/"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "Augment Code",
+    "url": "https://docs.augmentcode.com/cli/overview"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "Kilo Code",
+    "url": "https://kilo.ai/"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "opencode",
+    "url": "https://opencode.ai/docs/rules/"
+   }
+  ],
+  "registries": [
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "GitHub code search (path:AGENTS.md NOT is:fork NOT is:archived) — self-reported 60k+ results",
+    "url": "https://github.com/search?q=path%3AAGENTS.md+NOT+is%3Afork+NOT+is%3Aarchived&type=code"
+   }
+  ],
+  "sdks": [],
+  "validators": []
+ },
+ "agents-txt": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "agora-commerce-protocol": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-05-25",
+    "evidence": "VERIFIED",
+    "name": "Agora API (agoraproto.org, testnet)",
+    "url": "https://api.agoraproto.org/v1/openapi.json"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": [
+   {
+    "date": "2026-05-27",
+    "evidence": "VERIFIED",
+    "name": "AgoraEscrow.sol V1 external security audit (2026-05-27, self-disclosed weaknesses)",
+    "note": "Audit report referenced as /contracts/SECURITY_REVIEW.md in the project's own manifest; the manifest itself, not the underlying report file, was fetched.",
+    "url": "https://api.agoraproto.org/.well-known/ai-services.json"
+   }
+  ]
+ },
+ "agora-protocol": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "agora-protocol/paper-demo (original paper demo, 100-agent network)",
+    "url": "https://github.com/agora-protocol/paper-demo"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "REPORTED",
+    "name": "agora-protocol/python (Python library)",
+    "note": "Referenced from paper-demo README as 'our Python library'; repo itself not independently fetched.",
+    "url": "https://raw.githubusercontent.com/agora-protocol/paper-demo/main/README.md"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "agtp": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "ai-catalog-well-known-file": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "ai-crawler-tokens-robots": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "OpenAI crawlers (GPTBot, OAI-SearchBot, OAI-AdsBot)",
+    "url": "https://developers.openai.com/api/docs/bots"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Anthropic crawlers (ClaudeBot, Claude-User, Claude-SearchBot)",
+    "url": "https://support.claude.com/en/articles/8896518"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Google crawlers (Googlebot, Google-Extended)",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Perplexity crawlers (PerplexityBot, Perplexity-User)",
+    "url": "https://docs.perplexity.ai/guides/bots"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "ai-txt": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026",
+    "evidence": "THIN",
+    "name": "aitxt.ing (unrelated content-description product using the same filename)",
+    "url": "https://aitxt.ing/"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "aiagent-auth": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [
+   {
+    "date": "2026-07-06",
+    "evidence": "VERIFIED",
+    "name": "PieterKas/agent2agent-auth-framework (draft source repository and issue tracker, not an implementation)",
+    "url": "https://github.com/PieterKas/agent2agent-auth-framework"
+   },
+   {
+    "date": "2026-09-07",
+    "evidence": "VERIFIED",
+    "name": "IETF WIMSE Working Group (adoption process venue)",
+    "url": "https://datatracker.ietf.org/wg/wimse/about/"
+   }
+  ],
+  "sdks": [],
+  "validators": []
+ },
+ "aid": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "aip": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "aip-delegation-chain": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "aipref-content-usage-attachment": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [
+   {
+    "date": "2026-08-19",
+    "evidence": "REPORTED",
+    "name": "ietf-wg-aipref/drafts (GitHub source and issue tracker)",
+    "url": "https://www.ietf.org/archive/id/draft-ietf-aipref-attach-05.html"
+   }
+  ],
+  "sdks": [],
+  "validators": []
+ },
+ "aipref-vocabulary": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [
+   {
+    "date": "2026-08-19",
+    "evidence": "REPORTED",
+    "name": "ietf-wg-aipref/drafts (GitHub source and issue tracker)",
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-aipref-vocab-07"
+   }
+  ],
+  "sdks": [],
+  "validators": []
+ },
+ "aitp": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-09-06",
+    "evidence": "REPORTED",
+    "name": "NEAR AI Hub agents",
+    "url": "https://app.near.ai/agents"
+   }
+  ],
+  "registries": [],
+  "sdks": [
+   {
+    "date": "2026-09-06",
+    "evidence": "VERIFIED",
+    "name": "aitp-py",
+    "url": "https://github.com/nearai/aitp"
+   }
+  ],
+  "validators": []
+ },
+ "amp-ant": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-10-20",
+    "evidence": "VERIFIED",
+    "name": "ant-intl/AMP: specification and reference code (Apache-2.0)",
+    "url": "https://github.com/ant-intl/AMP"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "anonymous-bot-auth": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "anp": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "agent-network-protocol/AgentNetworkProtocol (specification repository)",
+    "url": "https://github.com/agent-network-protocol/AgentNetworkProtocol"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "ans": {
+  "adopters": [
+   {
+    "date": "2026-05-14",
+    "evidence": "REPORTED",
+    "name": "GoDaddy / Infoblox joint standards-support announcement",
+    "url": "https://aboutus.godaddy.net/newsroom/news-releases/press-release-details/2026/Infoblox-and-GoDaddy-Support-Open-Standards-for-AI-Agent-Discovery-Identity-and-Verification-2026-0acKMntvOC/default.aspx"
+   }
+  ],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "anthropic-agent-skills-format": {
+  "adopters": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Snowflake Cortex Code",
+    "url": "https://agentskills.io"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Databricks Genie Code",
+    "url": "https://agentskills.io"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Spring AI",
+    "url": "https://agentskills.io"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Claude Code",
+    "url": "https://agentskills.io"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Claude.ai",
+    "url": "https://agentskills.io"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Cursor",
+    "url": "https://agentskills.io"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "GitHub Copilot",
+    "url": "https://agentskills.io"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "VS Code",
+    "url": "https://agentskills.io"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Gemini CLI",
+    "url": "https://agentskills.io"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "ChatGPT & Codex",
+    "url": "https://agentskills.io"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "JetBrains Junie",
+    "url": "https://agentskills.io"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Amp",
+    "url": "https://agentskills.io"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "OpenHands",
+    "url": "https://agentskills.io"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Goose (Block)",
+    "url": "https://agentskills.io"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Roo Code",
+    "url": "https://agentskills.io"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "OpenCode",
+    "url": "https://agentskills.io"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Factory",
+    "url": "https://agentskills.io"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "skills-ref",
+    "note": "Reference validation library; `skills-ref validate ./my-skill` checks frontmatter and naming conventions",
+    "url": "https://agentskills.io/specification"
+   }
+  ]
+ },
+ "ap2": {
+  "adopters": [
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "FIDO Alliance (specification steward)",
+    "url": "https://raw.githubusercontent.com/google-agentic-commerce/AP2/main/CONTRIBUTING.md"
+   },
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "Universal Commerce Protocol (designed for compatibility)",
+    "url": "https://raw.githubusercontent.com/google-agentic-commerce/AP2/main/docs/ap2/specification.md"
+   }
+  ],
+  "implementations": [
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "AP2 SDK + samples (Python, Go, Android) using Google ADK",
+    "url": "https://raw.githubusercontent.com/google-agentic-commerce/AP2/main/README.md"
+   }
+  ],
+  "registries": [],
+  "sdks": [
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "code/sdk/python/ap2 (Python AP2 SDK)",
+    "url": "https://api.github.com/repos/google-agentic-commerce/AP2/contents/code/sdk/python/ap2"
+   }
+  ],
+  "validators": []
+ },
+ "ap2-checkout-mandate": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "api-catalog-rfc9727": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "ard": {
+  "adopters": [
+   {
+    "date": "2026-09-04",
+    "evidence": "REPORTED",
+    "name": "agenticresources.dev probe (31/50 domains serving a manifest, all on ai-catalog.json, 6 also on ard.json)",
+    "note": "External probe from a sibling project; not re-run inside this repo, so adoption is recorded as observed rather than measured here",
+    "url": "https://agenticresources.dev/"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-07-06",
+    "evidence": "VERIFIED",
+    "name": "AGNTCY Agent Directory Service (ai-catalog.json export/import)",
+    "note": "Serves GET /.well-known/ai-catalog.json and exports OASF records to oasf/a2a/agent-skill/mcp-ghcopilot formats",
+    "url": "https://datatracker.ietf.org/doc/html/draft-mp-agntcy-ads-02"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": [
+   {
+    "date": "2026-08-26",
+    "evidence": "VERIFIED",
+    "name": "ARD official conformance-test CLI (manifest, publisher-resolution, and registry-validation modes)",
+    "note": "Described in Appendix D.4 of the spec text; executable at conformance/bin/conformance-test in the ards-project/ard-spec repo",
+    "url": "https://raw.githubusercontent.com/ards-project/ard-spec/main/spec/ard.md"
+   }
+  ]
+ },
+ "ardp": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "artf": {
+  "adopters": [
+   {
+    "date": "2026-08-12",
+    "evidence": "REPORTED",
+    "name": "IAB Tech Lab claim: 'used in production by a number of companies' (unnamed)",
+    "note": "no specific company named as live in production in the fetched source",
+    "url": "https://iabtechlab.com/a-milestone-for-the-agentic-advertising-ecosystem/"
+   },
+   {
+    "date": "2025-11-13",
+    "evidence": "REPORTED",
+    "name": "Index Exchange (design/implementation quote)",
+    "note": "quoted at v1.0 public-comment launch, not confirmed production",
+    "url": "https://iabtechlab.com/press-releases/iab-tech-lab-announces-agentic-rtb-framework-artf-v1-0-for-public-comment/"
+   },
+   {
+    "date": "2025-11-13",
+    "evidence": "REPORTED",
+    "name": "The Trade Desk (design/implementation quote)",
+    "note": "quote says 'looking to implement... in the near future', not yet live at time of quote",
+    "url": "https://iabtechlab.com/press-releases/iab-tech-lab-announces-agentic-rtb-framework-artf-v1-0-for-public-comment/"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-07-20",
+    "evidence": "VERIFIED",
+    "name": "IAB Tech Lab ARTF Go reference implementation",
+    "note": "gRPC + MCP + web UI + Kubernetes health endpoints",
+    "url": "https://github.com/IABTechLab/agentic-real-time-framework"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "auth-md": {
+  "adopters": [
+   {
+    "date": "2026-06",
+    "evidence": "REPORTED",
+    "name": "WorkOS",
+    "note": "linked from auth-md.com homepage; individual company URL not independently fetched",
+    "url": "https://workos.com/auth.md"
+   },
+   {
+    "date": "2026-06",
+    "evidence": "REPORTED",
+    "name": "Cloudflare",
+    "note": "linked from auth-md.com homepage; individual company URL not independently fetched",
+    "url": "https://cloudflare.com/auth.md"
+   },
+   {
+    "date": "2026-06",
+    "evidence": "REPORTED",
+    "name": "Resend",
+    "note": "linked from auth-md.com homepage; individual company URL not independently fetched",
+    "url": "https://resend.com/auth.md"
+   },
+   {
+    "date": "2026-06",
+    "evidence": "REPORTED",
+    "name": "Firecrawl",
+    "note": "linked from auth-md.com homepage; individual company URL not independently fetched",
+    "url": "https://firecrawl.dev/auth.md"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-06",
+    "evidence": "VERIFIED",
+    "name": "auth-md.com specification and reference skill",
+    "url": "https://auth-md.com/specification"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "cloudflare-content-signals-policy": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2025-09-24",
+    "evidence": "VERIFIED",
+    "name": "Cloudflare (native robots.txt content-signal management for Cloudflare-hosted zones)",
+    "url": "https://blog.cloudflare.com/content-signals-policy/"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "cloudflare-markdown-for-agents": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "cloudflare-pay-per-crawl": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "coral-protocol": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-09-06",
+    "evidence": "VERIFIED",
+    "name": "Coral Server",
+    "url": "https://github.com/Coral-Protocol/coral-server"
+   },
+   {
+    "date": "2026-09-06",
+    "evidence": "VERIFIED",
+    "name": "Coralizer (MCP-server-to-agent wrapper)",
+    "url": "https://github.com/Coral-Protocol/coralizer"
+   }
+  ],
+  "registries": [
+   {
+    "date": "2026-09-06",
+    "evidence": "VERIFIED",
+    "name": "Coral Marketplace",
+    "url": "https://docs.coralos.ai/concepts/marketplace"
+   }
+  ],
+  "sdks": [],
+  "validators": []
+ },
+ "credential-delegation-protocol-wimse": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "daap": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-08",
+    "evidence": "REPORTED",
+    "name": "Grantex (incomplete reference implementation, not required for conformance)",
+    "note": "named in the draft text; no independent repository URL located",
+    "url": "https://datatracker.ietf.org/doc/html/draft-mishra-oauth-agent-grants-02"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "dan": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-07-18",
+    "evidence": "VERIFIED",
+    "name": "verisign/dan (PoC: dan-gen.py, dan-discover.py)",
+    "url": "https://github.com/verisign/dan"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "dawn-agent-discovery-framework": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "dns-aid": {
+  "adopters": [
+   {
+    "date": "2026-05-14",
+    "evidence": "REPORTED",
+    "name": "Infoblox / GoDaddy joint support announcement",
+    "note": "Vendor support announcement, not a deployment count",
+    "url": "https://aboutus.godaddy.net/newsroom/news-releases/press-release-details/2026/Infoblox-and-GoDaddy-Support-Open-Standards-for-AI-Agent-Discovery-Identity-and-Verification-2026-0acKMntvOC/default.aspx"
+   }
+  ],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "emv-agentic-payments": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "erc-8001": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "erc-8004": {
+  "adopters": [
+   {
+    "date": "2026-01-29",
+    "evidence": "REPORTED",
+    "name": "8004.org project site",
+    "url": "https://www.8004.org/blog/welcome-to-8004"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2025-10-08",
+    "evidence": "VERIFIED",
+    "name": "ERC-8004 registry contracts, curated by the 8004 team (Solidity + TypeScript, mainnet/Base/Sepolia addresses)",
+    "url": "https://github.com/erc-8004/erc-8004-contracts"
+   },
+   {
+    "date": "2026-01-29",
+    "evidence": "VERIFIED",
+    "name": "Identity Registry (mainnet + 16 chains)",
+    "url": "https://etherscan.io/address/0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
+   },
+   {
+    "date": "2026-01-29",
+    "evidence": "VERIFIED",
+    "name": "Reputation Registry (mainnet + 16 chains)",
+    "url": "https://etherscan.io/address/0x8004BAa17C55a88189AE136b182e5fdA19dE9b63"
+   }
+  ],
+  "registries": [
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "awesome-erc8004 community deployment tracker",
+    "url": "https://github.com/sudeepb02/awesome-erc8004"
+   }
+  ],
+  "sdks": [],
+  "validators": [
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "AtlasNexus Verify (client-side identity verification dApp)",
+    "url": "https://atlasnexus.tech/verify/"
+   }
+  ]
+ },
+ "erc-8126": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "erc-8183": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-02-25",
+    "evidence": "VERIFIED",
+    "name": "AgenticCommerce.sol / IACPHook.sol (reference implementation in the EIP text)",
+    "url": "https://eips.ethereum.org/EIPS/eip-8183"
+   },
+   {
+    "name": "Virtuals ACP (Agent Commerce Protocol, EconomyOS)",
+    "url": "https://os.virtuals.io/acp/overview/",
+    "date": "2026-10-20",
+    "evidence": "VERIFIED",
+    "note": "Virtuals' own docs call ACP the reference implementation of ERC-8183 and list ACP Core 0x238E541BfefD82238730D00a2208E5497F1832E0 on Base Mainnet and the SDK @virtuals-protocol/acp-node-v2; the contract was not checked on-chain."
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "erc-8196": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "erc-8226": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-04-12",
+    "evidence": "REPORTED",
+    "name": "RAMS reference implementation and test suite (IAgentMandate, IComplianceProvider, RamsGated)",
+    "note": "proposers' own reference code, linked from the EIP text; no separate repo URL isolated",
+    "url": "https://eips.ethereum.org/EIPS/eip-8226"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "erc-8444": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "gbz-185-agent-interconnection": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "haace": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "http-message-signatures": {
+  "adopters": [
+   {
+    "date": "2026-06-26",
+    "evidence": "VERIFIED",
+    "name": "Web Bot Auth (profiles RFC 9421 Signature/Signature-Input fields)",
+    "url": "https://datatracker.ietf.org/doc/html/draft-meunier-webbotauth-httpsig-protocol-00"
+   }
+  ],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "iab-comp": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "identity-assertion-authz-grant": {
+  "adopters": [
+   {
+    "date": "2026-08-06",
+    "evidence": "REPORTED",
+    "name": "Okta Integration Network partners named as expected XAA/Cross-App-Access ecosystem integrations from 2026-08-24 (Anthropic/Claude, Asana, Canva, Cloudflare, Cursor, Datadog, Docker, Figma, VS Code, Zoom), per Auth0's own blog post",
+    "url": "https://auth0.com/blog/xaa-protocol-auth0-ai-agents/"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-08-21",
+    "evidence": "REPORTED",
+    "name": "Okta (Identity Provider Authorization Server, Resource Authorization Server support)",
+    "url": "https://developer.okta.com/blog/2026/08/21/xaa-oidc-requesting"
+   },
+   {
+    "date": "2026-08-06",
+    "evidence": "REPORTED",
+    "name": "Auth0 (Resource App / Resource Authorization Server support for MCP servers)",
+    "url": "https://auth0.com/blog/xaa-protocol-auth0-ai-agents/"
+   },
+   {
+    "date": "2026-09-01",
+    "evidence": "REPORTED",
+    "name": "Descope Agentic Identity Hub (ID-JAG issuance and validation)",
+    "url": "https://martechseries.com/sales-marketing/id-mgmt/descope-unveils-cross-app-access-xaa-support-letting-enterprises-manage-ai-agent-access-with-their-existing-identity-providers/"
+   },
+   {
+    "date": "2026-01-31",
+    "evidence": "REPORTED",
+    "name": "oktadev/okta-cross-app-access-mcp (open-source reference implementation: Agent0 requesting app, Todo0 resource app, authorization-server package)",
+    "url": "https://deepwiki.com/oktadev/okta-cross-app-access-mcp/2.2-identity-assertion-authorization-grant"
+   }
+  ],
+  "registries": [
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "IETF OAuth (Web Authorization Protocol) Working Group",
+    "url": "https://datatracker.ietf.org/wg/oauth/about/"
+   }
+  ],
+  "sdks": [],
+  "validators": [
+   {
+    "date": "2026-09-07",
+    "evidence": "VERIFIED",
+    "name": "xaa.dev (Okta Developer sandbox: live end-to-end ID-JAG flow, requesting-app and resource-app test harness)",
+    "url": "https://xaa.dev"
+   }
+  ]
+ },
+ "idmandat-credential": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "jafar": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "knowledge-linkset": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "kya-os": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-10-20",
+    "evidence": "VERIFIED",
+    "name": "KYA-OS reference implementation and documentation",
+    "url": "https://modelcontextprotocol-identity.io"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "kyapay-token": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "l402": {
+  "adopters": [
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "Lightning Labs (steward)",
+    "url": "https://raw.githubusercontent.com/lightninglabs/L402/master/README.md"
+   }
+  ],
+  "implementations": [
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "Aperture (Lightning Labs reverse-proxy L402 gateway)",
+    "url": "https://github.com/lightninglabs/aperture"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "llms-txt": {
+  "adopters": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "FastHTML / Answer.AI docs (reference implementation cited by the spec itself)",
+    "url": "https://www.fastht.ml/docs/llms.txt"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "Mintlify (auto-generates llms.txt and markdown page twins for hosted docs sites)",
+    "url": "https://www.mintlify.com/docs/ai/llmstxt"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "GitBook (serves an llms.txt for published docs sites)",
+    "url": "https://www.gitbook.com/blog/what-is-llms-txt"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "Wix (generates an llms.txt for every Wix site)",
+    "url": "https://support.wix.com/en/article/understanding-your-sites-llmstxt-file"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "Yoast SEO (WordPress plugin, generates and maintains llms.txt)",
+    "url": "https://yoast.com/features/llms-txt/"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "AIOSEO (WordPress plugin with an llms.txt generator)",
+    "url": "https://aioseo.com/features/llms-txt/"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "OpenAI developer docs llms.txt",
+    "url": "https://developers.openai.com/llms.txt"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "Anthropic docs llms.txt",
+    "url": "https://platform.claude.com/llms.txt"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "Google Gemini API docs llms.txt",
+    "url": "https://ai.google.dev/gemini-api/docs/llms.txt"
+   }
+  ],
+  "registries": [
+   {
+    "date": "2026",
+    "evidence": "THIN",
+    "name": "llmstxt.site",
+    "url": "https://llmstxt.site/"
+   },
+   {
+    "date": "2026",
+    "evidence": "THIN",
+    "name": "directory.llmstxt.cloud",
+    "url": "https://directory.llmstxt.cloud/"
+   },
+   {
+    "date": "2026",
+    "evidence": "THIN",
+    "name": "llmstxthub.com",
+    "url": "https://llmstxthub.com/"
+   }
+  ],
+  "sdks": [
+   {
+    "date": "2026",
+    "evidence": "THIN",
+    "name": "vitepress-plugin-llms",
+    "url": "https://github.com/okineadev/vitepress-plugin-llms"
+   },
+   {
+    "date": "2026",
+    "evidence": "THIN",
+    "name": "docusaurus-plugin-llms",
+    "url": "https://github.com/rachfop/docusaurus-plugin-llms"
+   },
+   {
+    "date": "2026",
+    "evidence": "THIN",
+    "name": "llms-txt-php",
+    "url": "https://github.com/raphaelstolt/llms-txt-php"
+   },
+   {
+    "date": "2026",
+    "evidence": "THIN",
+    "name": "server-llm-txt (MCP server that fetches/searches llms.txt files)",
+    "url": "https://github.com/mcp-get/community-servers/tree/main/src/server-llm-txt"
+   }
+  ],
+  "validators": []
+ },
+ "lmos": {
+  "adopters": [
+   {
+    "date": "2026-09-06",
+    "evidence": "THIN",
+    "name": "Deutsche Telekom (engineering lineage of top committers; unconfirmed as a named production adopter)",
+    "note": "Inferred from committer affiliation, not a named-adopter claim by the project itself.",
+    "url": "https://github.com/eclipse-lmos"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-09-06",
+    "evidence": "VERIFIED",
+    "name": "LMOS Runtime",
+    "url": "https://github.com/eclipse-lmos/lmos-runtime"
+   },
+   {
+    "date": "2026-09-06",
+    "evidence": "VERIFIED",
+    "name": "LMOS Operator (Kubernetes operator)",
+    "url": "https://github.com/eclipse-lmos/lmos-operator"
+   },
+   {
+    "date": "2026-09-06",
+    "evidence": "VERIFIED",
+    "name": "LMOS Router",
+    "url": "https://github.com/eclipse-lmos/lmos-router"
+   }
+  ],
+  "registries": [],
+  "sdks": [
+   {
+    "date": "2026-09-06",
+    "evidence": "VERIFIED",
+    "name": "Arc (Kotlin DSL agent framework)",
+    "url": "https://github.com/eclipse-lmos/arc"
+   }
+  ],
+  "validators": []
+ },
+ "local-tool-call-proof": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "lws10-authn-ssi-cid": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "mcp": {
+  "adopters": [
+   {
+    "date": "2025-03",
+    "evidence": "VERIFIED",
+    "name": "OpenAI (ChatGPT desktop app, then ChatGPT apps)",
+    "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol"
+   },
+   {
+    "date": "2025",
+    "evidence": "REPORTED",
+    "name": "Google DeepMind",
+    "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "Microsoft (Semantic Kernel, Azure OpenAI integration)",
+    "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Claude / Claude Desktop (Anthropic)",
+    "note": "Listed as a supporting host for the MCP Apps extension",
+    "url": "https://modelcontextprotocol.io/docs/extensions/apps"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "VS Code GitHub Copilot",
+    "url": "https://modelcontextprotocol.io/docs/extensions/apps"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Microsoft 365 Copilot",
+    "url": "https://modelcontextprotocol.io/docs/extensions/apps"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "OpenAI ChatGPT / Codex (Plugins, formerly Apps SDK)",
+    "url": "https://developers.openai.com/plugins/concepts/mcp-server"
+   }
+  ],
+  "registries": [
+   {
+    "date": "2026-09",
+    "evidence": "VERIFIED",
+    "name": "MCP Registry (official)",
+    "note": "7.2k GitHub stars, 979 forks at time of check",
+    "url": "https://github.com/modelcontextprotocol/registry"
+   }
+  ],
+  "sdks": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "TypeScript SDK (Tier 1)",
+    "url": "https://github.com/modelcontextprotocol/typescript-sdk"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Python SDK (Tier 1)",
+    "url": "https://github.com/modelcontextprotocol/python-sdk"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "C# SDK (Tier 1)",
+    "url": "https://github.com/modelcontextprotocol/csharp-sdk"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Go SDK (Tier 1)",
+    "url": "https://github.com/modelcontextprotocol/go-sdk"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Rust SDK (Tier 1)",
+    "url": "https://github.com/modelcontextprotocol/rust-sdk"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Java SDK (Tier 2)",
+    "url": "https://github.com/modelcontextprotocol/java-sdk"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Ruby SDK (Tier 2)",
+    "url": "https://github.com/modelcontextprotocol/ruby-sdk"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Swift SDK (Tier 3)",
+    "url": "https://github.com/modelcontextprotocol/swift-sdk"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "PHP SDK (Tier 3)",
+    "url": "https://github.com/modelcontextprotocol/php-sdk"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "Kotlin SDK (Tier 3)",
+    "url": "https://github.com/modelcontextprotocol/kotlin-sdk"
+   }
+  ],
+  "validators": [
+   {
+    "date": "2026",
+    "evidence": "THIN",
+    "name": "MCP Inspector",
+    "note": "Referenced across MCP docs as the standard debugging/inspection tool for MCP servers; not independently fetched",
+    "url": "https://modelcontextprotocol.io/docs/extensions/apps"
+   }
+  ]
+ },
+ "mcp-apps": {
+  "adopters": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "ChatGPT (supported client, first-party docs)",
+    "url": "https://developers.openai.com/apps-sdk/mcp-apps-in-chatgpt/"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "Claude (supported client, first-party docs)",
+    "url": "https://claude.com/docs/connectors/building/mcp-apps/getting-started"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "examples/basic-host (reference host example in the ext-apps repo)",
+    "url": "https://github.com/modelcontextprotocol/ext-apps"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "MCP-UI client (@mcp-ui/client, AppRenderer — full MCP Apps framework used by several hosts)",
+    "url": "https://github.com/MCP-UI-Org/mcp-ui"
+   }
+  ],
+  "registries": [],
+  "sdks": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "@modelcontextprotocol/ext-apps (app, react, app-bridge, server packages)",
+    "url": "https://github.com/modelcontextprotocol/ext-apps"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "mcp-ui-server (Python) and mcp_ui_server (Ruby)",
+    "url": "https://github.com/MCP-UI-Org/mcp-ui"
+   }
+  ],
+  "validators": []
+ },
+ "mcp-dns-discovery": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "mcp-registry": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "mcp-server-cards": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "mpp": {
+  "adopters": [
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "Tempo (co-author)",
+    "url": "https://mpp.dev/governance"
+   },
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "Stripe (co-author)",
+    "url": "https://mpp.dev/governance"
+   }
+  ],
+  "implementations": [
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "mppx (TypeScript)",
+    "url": "https://mpp.dev"
+   },
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "MPP-go (Go)",
+    "url": "https://mpp.dev"
+   },
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "MPP-rb (Ruby)",
+    "url": "https://mpp.dev"
+   },
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "MPP-rs (Rust)",
+    "url": "https://mpp.dev"
+   },
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "PyMPP (Python)",
+    "url": "https://mpp.dev"
+   }
+  ],
+  "registries": [],
+  "sdks": [
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "mppx",
+    "url": "https://mpp.dev"
+   }
+  ],
+  "validators": []
+ },
+ "nlip": {
+  "adopters": [
+   {
+    "date": "2026-01-05",
+    "evidence": "VERIFIED",
+    "name": "Enterprise Neurosystem (incubating community; states its members will use NLIP in production deployments)",
+    "url": "https://medium.com/the-enterprise-neurosystem-blog/exciting-news-for-the-natural-language-interaction-protocol-nlip-and-its-impact-on-implementing-b7e673ac4713"
+   },
+   {
+    "date": "2026-02-19",
+    "evidence": "REPORTED",
+    "name": "Red Hat (Sanjay Aiyagari, Telco CTO Office) - proposed NLIP-based security approach for IoT devices, NDSS Symposium session",
+    "url": "https://www.ndss-symposium.org/ndss-paper/auto-draft-732/"
+   }
+  ],
+  "implementations": [
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "nlip_server (Python, FastAPI-based reference server implementation)",
+    "url": "https://github.com/nlip-project/nlip_server"
+   },
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "nlip_sdk (Python, message/submessage abstractions and factory)",
+    "url": "https://github.com/nlip-project/nlip_sdk"
+   },
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "nlip_soln (Python, example chatbot and integrator server solutions built on nlip_server)",
+    "url": "https://github.com/nlip-project/nlip_soln"
+   },
+   {
+    "date": "2025-12-02",
+    "evidence": "VERIFIED",
+    "name": "nlip_web (Python/FastAPI + JavaScript demo web server and client for product search and chat)",
+    "url": "https://github.com/nlip-project/nlip_web"
+   }
+  ],
+  "registries": [
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "nlip-project GitHub organisation (21 public repos, incl. ecma_draft, documents, security_guidelines, nlip_spec)",
+    "url": "https://github.com/nlip-project"
+   }
+  ],
+  "sdks": [
+   {
+    "date": "2026-06-24",
+    "evidence": "VERIFIED",
+    "name": "nlip_sdk (PyPI package, message model)",
+    "url": "https://pypi.org/project/nlip_sdk/"
+   },
+   {
+    "date": "2026-06-24",
+    "evidence": "VERIFIED",
+    "name": "nlip-server (PyPI package, FastAPI server abstractions)",
+    "url": "https://pypi.org/project/nlip-server/"
+   }
+  ],
+  "validators": []
+ },
+ "nlweb": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "NLWeb reference implementation (Python)",
+    "url": "https://github.com/nlweb-ai/NLWeb"
+   }
+  ],
+  "registries": [
+   {
+    "date": "2026",
+    "evidence": "THIN",
+    "name": "AgentFinder (agent discovery service within the NLWeb repo)",
+    "note": "Listed as a repository module; not independently verified as a live, hosted registry",
+    "url": "https://github.com/nlweb-ai/NLWeb"
+   }
+  ],
+  "sdks": [],
+  "validators": []
+ },
+ "oasf": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-07-06",
+    "evidence": "VERIFIED",
+    "name": "AGNTCY Agent Directory Service (native OASF record storage)",
+    "note": "ADS stores agent records natively in OASF and exports to other formats",
+    "url": "https://datatracker.ietf.org/doc/html/draft-mp-agntcy-ads-02"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": [
+   {
+    "date": "2026-09-06",
+    "evidence": "VERIFIED",
+    "name": "OASF schema browser / API documentation",
+    "note": "Live browsable JSON Schema for versions 0.7.0-1.1.0 with linked API documentation",
+    "url": "https://schema.oasf.outshift.com/"
+   }
+  ]
+ },
+ "oauth-agent-delegation": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "oauth-cimd": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "oauth-id-continuation": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "oauth-metadata-for-agents": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-06",
+    "evidence": "REPORTED",
+    "name": "auth.md (chains RFC 9728 + RFC 8414 as its discovery layer)",
+    "url": "https://auth-md.com/specification"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "okf": {
+  "adopters": [
+   {
+    "date": "2026-08",
+    "evidence": "VERIFIED",
+    "name": "GA4 e-commerce sample bundle (Google-produced)",
+    "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format"
+   },
+   {
+    "date": "2026-08",
+    "evidence": "VERIFIED",
+    "name": "Stack Overflow sample bundle (Google-produced)",
+    "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format"
+   },
+   {
+    "date": "2026-08",
+    "evidence": "VERIFIED",
+    "name": "Bitcoin public-dataset sample bundle (Google-produced)",
+    "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "Google Cloud Knowledge Catalog (updated to ingest and serve OKF to agents)",
+    "url": "https://cloud.google.com/blog/products/data-analytics/introducing-the-google-cloud-knowledge-catalog"
+   },
+   {
+    "date": "2026-08",
+    "evidence": "VERIFIED",
+    "name": "Reference enrichment agent (BigQuery-to-OKF, proof of concept)",
+    "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format"
+   },
+   {
+    "date": "2026-08",
+    "evidence": "VERIFIED",
+    "name": "Static HTML graph visualizer (Cytoscape.js + marked, proof of concept)",
+    "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "opena2a-aap": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "openai-apps-sdk-manifests": {
+  "adopters": [
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "openai-apps-sdk-examples (Pizzaz component gallery)",
+    "note": "OpenAI's own example repository, referenced but not independently fetched",
+    "url": "https://developers.openai.com/plugins/build/chatgpt-ui"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "OpenAI ChatGPT (Plugins)",
+    "url": "https://developers.openai.com/plugins/concepts/mcp-server"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "OpenAI Codex",
+    "url": "https://developers.openai.com/plugins"
+   }
+  ],
+  "registries": [
+   {
+    "date": "2026",
+    "evidence": "THIN",
+    "name": "ChatGPT plugin directory (submission/review)",
+    "url": "https://developers.openai.com/plugins/deploy/submission"
+   }
+  ],
+  "sdks": [
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "MCP Python SDK (recommended)",
+    "url": "https://github.com/modelcontextprotocol/python-sdk"
+   },
+   {
+    "date": "2026",
+    "evidence": "VERIFIED",
+    "name": "MCP TypeScript SDK (recommended)",
+    "url": "https://github.com/modelcontextprotocol/typescript-sdk"
+   },
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "@openai/apps-sdk-ui (optional component library)",
+    "note": "Linked from developers.openai.com/plugins/build/chatgpt-ui; not independently fetched",
+    "url": "https://openai.github.io/apps-sdk-ui/"
+   }
+  ],
+  "validators": []
+ },
+ "osi": {
+  "adopters": [
+   {
+    "date": "2025-09-23",
+    "evidence": "VERIFIED",
+    "name": "Snowflake, Salesforce, dbt Labs, BlackRock, RelationalAI (co-leading partners)",
+    "note": "coalition/working-group membership, not confirmed as production spec adoption",
+    "url": "https://www.snowflake.com/en/news/press-releases/snowflake-salesforce-dbt-labs-and-more-revolutionize-data-readiness-for-ai-with-open-semantic-interchange-initiative/"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "Ossie converters: dbt",
+    "note": "reference converter, part of the draft-spec monorepo, not confirmed production use",
+    "url": "https://github.com/apache/ossie-converters/tree/main/dbt"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "Ossie converters: Salesforce",
+    "note": "reference converter",
+    "url": "https://github.com/apache/ossie-converters/tree/main/salesforce"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "Ossie converters: Databricks",
+    "note": "reference converter",
+    "url": "https://github.com/apache/ossie-converters/tree/main/databricks"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "Ossie converters: Snowflake",
+    "note": "reference converter",
+    "url": "https://github.com/apache/ossie-converters/tree/main/snowflake"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "Ossie converters: GoodData",
+    "note": "reference converter",
+    "url": "https://github.com/apache/ossie-converters/tree/main/gooddata"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "Ossie schema validation tooling",
+    "note": "validates semantic-model documents against ossie-schema.json",
+    "url": "https://github.com/apache/ossie/tree/main/validation"
+   }
+  ]
+ },
+ "otel-genai-semconv": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "personal-agent-protocol": {
+  "implementations": [
+   {
+    "name": "Personal Agent Protocol Specification & Implementation Kit",
+    "url": "https://github.com/personal-agent-protocol/personal-agent-protocol",
+    "date": "2026-10-09",
+    "evidence": "VERIFIED",
+    "note": "Official repository and implementation kit referenced on personalagentprotocol.org"
+   }
+  ],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": [
+   {
+    "name": "Sierra, Meta, OpenAI, Instinct (personal agent & co-author design partners)",
+    "url": "https://personalagentprotocol.org/docs/path-to-1",
+    "date": "2026-10-09",
+    "evidence": "VERIFIED",
+    "note": "Listed under Design Partners on personalagentprotocol.org/docs/path-to-1"
+   },
+   {
+    "name": "Cloudflare, Shopify, Stripe, Visa, Mastercard, Okta, 1Password, PayPal/Venmo, Walmart, Target, United Airlines (design partners)",
+    "url": "https://personalagentprotocol.org/docs/path-to-1",
+    "date": "2026-10-09",
+    "evidence": "VERIFIED",
+    "note": "Listed under Companies and Technology Providers on personalagentprotocol.org/docs/path-to-1"
+   }
+  ]
+ },
+ "rsl": {
+  "adopters": [
+   {
+    "date": "2025-12-10",
+    "evidence": "VERIFIED",
+    "name": "RSL Collective editorial roster: Condé Nast, Ziff Davis, Yahoo, Automattic, O'Reilly Media, Fastly, Schema.org",
+    "note": "named as spec editors, which establishes institutional backing, not confirmed independent production deployment of rsl.xml files",
+    "url": "https://rslstandard.org/rsl"
+   }
+  ],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": [
+   {
+    "date": "2025-12-10",
+    "evidence": "REPORTED",
+    "name": "RSL Validate",
+    "note": "\"Validate\" listed in RSL site navigation alongside the spec; dedicated validator URL not separately fetched",
+    "url": "https://rslstandard.org/rsl"
+   }
+  ]
+ },
+ "s402": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-09-04",
+    "evidence": "VERIFIED",
+    "name": "s402-protocol/core (TypeScript reference, npm package s402)",
+    "url": "https://github.com/s402-protocol/core"
+   },
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "@sweefi/sui (Sui chain binding / reference implementation)",
+    "url": "https://raw.githubusercontent.com/s402-protocol/core/main/README.md"
+   }
+  ],
+  "registries": [],
+  "sdks": [
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "s402 (npm package)",
+    "url": "https://raw.githubusercontent.com/s402-protocol/core/main/README.md"
+   }
+  ],
+  "validators": [
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "167 published conformance vectors (s402 demo)",
+    "url": "https://raw.githubusercontent.com/s402-protocol/core/main/README.md"
+   }
+  ]
+ },
+ "scitt-ai-agent-execution": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "slim": {
+  "adopters": [
+   {
+    "date": "2026-09-05",
+    "evidence": "REPORTED",
+    "name": "AGNTCY formative members: Cisco, Dell Technologies, Google Cloud, Oracle, Red Hat",
+    "note": "Reported by secondary tech press coverage of the Linux Foundation welcome announcement, not the LF press release itself (that URL returned no crawlable body in this session).",
+    "url": "https://www.techzine.eu/blogs/infrastructure/133408/cisco-donates-agntcy-to-linux-foundation-internet-of-agents-on-its-way/"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "agntcy/slim (Rust core, data plane / session layer / control plane)",
+    "url": "https://github.com/agntcy/slim"
+   }
+  ],
+  "registries": [],
+  "sdks": [
+   {
+    "date": "2026-09-05",
+    "evidence": "REPORTED",
+    "name": "slim-bindings (Python, Go, .NET, Java, Kotlin)",
+    "url": "https://github.com/agntcy/slim-bindings"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "REPORTED",
+    "name": "slim-a2a-python (A2A-over-SLIM integration)",
+    "url": "https://raw.githubusercontent.com/agntcy/slim/main/README.md"
+   },
+   {
+    "date": "2026-09-05",
+    "evidence": "REPORTED",
+    "name": "slim-mcp-python (MCP-over-SLIM integration)",
+    "url": "https://raw.githubusercontent.com/agntcy/slim/main/README.md"
+   }
+  ],
+  "validators": []
+ },
+ "spiffe": {
+  "adopters": [
+   {
+    "date": "2026-07-06",
+    "evidence": "VERIFIED",
+    "name": "draft-klrc-aiagent-auth-03 (proposes SPIFFE for AI-agent authentication)",
+    "url": "https://www.ietf.org/ietf-ftp/internet-drafts/draft-klrc-aiagent-auth-03.html"
+   }
+  ],
+  "implementations": [
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "SPIRE",
+    "url": "https://spiffe.io/docs/latest/spiffe-about/overview/"
+   },
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "cert-manager",
+    "url": "https://spiffe.io/docs/latest/spiffe-about/overview/"
+   },
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "Istio",
+    "url": "https://spiffe.io/docs/latest/spiffe-about/overview/"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "tap": {
+  "adopters": [
+   {
+    "date": "2025-10-14",
+    "evidence": "VERIFIED",
+    "name": "Visa Trusted Agent Protocol launch announcement",
+    "url": "https://investor.visa.com/news/news-details/2025/Visa-Introduces-Trusted-Agent-Protocol-An-Ecosystem-Led-Framework-for-AI-Commerce/default.aspx"
+   }
+  ],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": [
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "Visa Public Keys Retrieval Service (GET /keys)",
+    "url": "https://developer.visa.com/capabilities/trusted-agent-protocol/trusted-agent-protocol-specifications"
+   }
+  ]
+ },
+ "tdmrep": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "ucp": {
+  "adopters": [
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "Google, Shopify, Etsy, Wayfair, Target, Walmart, Amazon, Microsoft, Meta, Salesforce, Stripe (Shopping)",
+    "url": "https://ucp.dev"
+   },
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "Amadeus, Booking.com, Expedia Group, Google, Hilton, Marriott, Trip.com (Lodging)",
+    "url": "https://ucp.dev"
+   },
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "DoorDash, Google, Square, Toast, Uber Eats (Food)",
+    "url": "https://ucp.dev"
+   },
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "Shopping Tech Council seat-holders (Google, Shopify, Etsy, Meta, Amazon, Microsoft, Target, Stripe, Salesforce, Wayfair)",
+    "url": "https://raw.githubusercontent.com/Universal-Commerce-Protocol/.github/main/MAINTAINERS.md"
+   },
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "Food Tech Council seat-holders (Google, Square, Toast, DoorDash, Uber Eats)",
+    "url": "https://raw.githubusercontent.com/Universal-Commerce-Protocol/.github/main/MAINTAINERS.md"
+   }
+  ],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "vcap": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "vercel-agent-readability": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026",
+    "evidence": "REPORTED",
+    "name": "agent-ready.dev (scores sites against the Vercel Agent Readability Spec and llmstxt.org)",
+    "url": "https://agent-ready.dev/"
+   },
+   {
+    "date": "2026",
+    "evidence": "THIN",
+    "name": "is-agentic.com (separate agent-readiness scoring API referenced in Vercel's own follow-up guide)",
+    "url": "https://vercel.com/kb/guide/make-your-site-readable-by-ai-agents"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "vi": {
+  "adopters": [
+   {
+    "date": "2026-03-05",
+    "evidence": "VERIFIED",
+    "name": "Google (co-developer, AP2/UCP alignment)",
+    "note": "named quote from Stavan Parikh, VP/GM Payments, Google",
+    "url": "https://www.mastercard.com/global/en/news-and-trends/stories/2026/verifiable-intent.html"
+   },
+   {
+    "date": "2026-03-05",
+    "evidence": "REPORTED",
+    "name": "Adyen, Basis Theory, Checkout.com, Getnet, Fiserv, IBM, Worldpay/Global Payments (alignment/planned integration quotes)",
+    "note": "named executive quotes describing support/alignment, not confirmed live integrations",
+    "url": "https://www.mastercard.com/global/en/news-and-trends/stories/2026/verifiable-intent.html"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-09-05",
+    "evidence": "VERIFIED",
+    "name": "Mastercard Verifiable Intent reference implementation",
+    "note": "Apache-2.0 spec repo with an initial reference implementation per Mastercard's own announcement",
+    "url": "https://github.com/agent-intent/verifiable-intent"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "web-agent-protocol": {
+  "adopters": [],
+  "implementations": [
+   {
+    "date": "2026-09-06",
+    "evidence": "VERIFIED",
+    "name": "OTA-WAP Chrome extension + Python SDK",
+    "url": "https://github.com/OTA-Tech-AI/web-agent-protocol"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "web-bot-auth-signature-agent-card": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [
+   {
+    "date": "2026-06-26",
+    "evidence": "VERIFIED",
+    "name": "draft-meunier-webbotauth-registry IANA web_bot_auth registry (proposed)",
+    "url": "https://www.ietf.org/archive/id/draft-meunier-webbotauth-registry-03.html"
+   }
+  ],
+  "sdks": [],
+  "validators": []
+ },
+ "webbotauth": {
+  "adopters": [
+   {
+    "date": "2026-07-01",
+    "evidence": "VERIFIED",
+    "name": "Cloudflare (edge verifier and Verified Bots program)",
+    "url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/"
+   }
+  ],
+  "implementations": [
+   {
+    "date": null,
+    "evidence": "VERIFIED",
+    "name": "cloudflare/web-bot-auth (Chrome MV3, Cloudflare Workers, Rust binaries, server verifier)",
+    "url": "https://github.com/cloudflare/web-bot-auth"
+   },
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "web-bot-auth-example (Puppeteer script)",
+    "url": "https://github.com/stytchauth/web-bot-auth-example"
+   },
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "guzzle-web-bot-auth-middleware (PHP)",
+    "url": "https://github.com/olipayne/guzzle-web-bot-auth-middleware"
+   },
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "web-bot-auth-apache (Apache module, C)",
+    "url": "https://github.com/garyillyes/web-bot-auth-apache"
+   },
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "Bot-Authentication (Python)",
+    "url": "https://github.com/cyberstormdotmu/bot-authentication"
+   }
+  ],
+  "registries": [
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "IETF webbotauth Working Group",
+    "url": "https://datatracker.ietf.org/wg/webbotauth/about/"
+   }
+  ],
+  "sdks": [
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "web-bot-auth npm package (TypeScript)",
+    "url": "https://www.npmjs.com/package/web-bot-auth"
+   }
+  ],
+  "validators": [
+   {
+    "date": "2026-07-01",
+    "evidence": "VERIFIED",
+    "name": "Cloudflare Web Bot Auth edge verification (Verified Bots program)",
+    "url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/"
+   }
+  ]
+ },
+ "webmcp": {
+  "adopters": [
+   {
+    "date": "2026-08-07",
+    "evidence": "VERIFIED",
+    "name": "GoogleChromeLabs demo suite (webmcp-tools)",
+    "note": "Pizza maker, React flight-search, and French bistro demo apps",
+    "url": "https://developer.chrome.com/docs/ai/webmcp"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-08-07",
+    "evidence": "VERIFIED",
+    "name": "Google Chrome (origin trial, from Chrome 149)",
+    "url": "https://developer.chrome.com/docs/ai/webmcp"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": [
+   {
+    "date": "2026-08-07",
+    "evidence": "VERIFIED",
+    "name": "Model Context Tool Inspector (Chrome extension)",
+    "note": "Lets developers imitate agent chat and manually call/verify WebMCP tools on a page",
+    "url": "https://developer.chrome.com/docs/ai/webmcp"
+   }
+  ]
+ },
+ "wimse": {
+  "adopters": [
+   {
+    "date": "2026-07-06",
+    "evidence": "VERIFIED",
+    "name": "draft-klrc-aiagent-auth-03 (proposes WIMSE for AI-agent authentication)",
+    "url": "https://www.ietf.org/ietf-ftp/internet-drafts/draft-klrc-aiagent-auth-03.html"
+   }
+  ],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "wimse-agent-audit-record": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "wimse-aims": {
+  "implementations": [],
+  "sdks": [],
+  "validators": [],
+  "registries": [],
+  "adopters": []
+ },
+ "wimse-workload-identity-metadata": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "workload-authz-grant": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "x401": {
+  "adopters": [],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "x402": {
+  "adopters": [
+   {
+    "date": "2026-07-14",
+    "evidence": "VERIFIED",
+    "name": "x402 Foundation (Linux Foundation, LF Projects LLC)",
+    "url": "https://x402.org/announcement"
+   },
+   {
+    "date": null,
+    "evidence": "REPORTED",
+    "name": "Coinbase (originator)",
+    "url": "https://x402.org"
+   }
+  ],
+  "implementations": [],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ },
+ "open-responses": {
+  "adopters": [
+   {
+    "date": "2026-01-15",
+    "evidence": "VERIFIED",
+    "name": "OpenAI, Hugging Face, Vercel, OpenRouter, Ollama, vLLM, SGLang, LM Studio",
+    "url": "https://www.openresponses.org/specification"
+   }
+  ],
+  "implementations": [
+   {
+    "date": "2026-01-15",
+    "evidence": "VERIFIED",
+    "name": "openresponses/openresponses (reference OpenAPI 3.1 schema & compliance runner)",
+    "url": "https://github.com/openresponses/openresponses"
+   }
+  ],
+  "registries": [],
+  "sdks": [],
+  "validators": []
+ }
+}

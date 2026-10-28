@@ -1,0 +1,480 @@
+{
+ "version": 1,
+ "date": "2026-10-20",
+ "url": "https://agenticweb.wiki/digest/2026-10-20/",
+ "generated_at": "2026-10-20T21:57:07Z",
+ "window": {
+  "from": "2026-10-18T18:00:00Z",
+  "to": "2026-10-20T21:30:57Z"
+ },
+ "headline": "OASIS opens 30-day public review of MCP over AMQP 1.0 transport binding",
+ "lede": "The OASIS AMQP TC put two Committee Specification Drafts out for public review: one carries JSON-RPC 2.0 over AMQP 1.0, the other defines an AMQP 1.0 transport for MCP. Comments close 18 Nov. In payments, Mastercard opened early access to an x402-based agent payment system, and Visa, BILL and Billtrust started a live pilot built on Visa's Trusted Agent Protocol.",
+ "items": [
+  {
+   "id": "2026-10-20-1",
+   "title": "OASIS public review: JSON-RPC 2.0 over AMQP 1.0 and MCP over AMQP 1.0 binding specs",
+   "body": "OASIS and its AMQP TC opened public review of two Committee Specification Draft 01 documents. JSON-RPC 2.0 over AMQP 1.0 covers message bodies, request and reply properties, notifications, batches and correlation. MCP over AMQP 1.0 builds on it to define a transport for MCP version 2026-07-28. It covers message exchange, link topology, cancellation and ordering for direct, brokered and routed connections. The 30-day review started 19 Oct and ends 18 Nov. After the ballots closed, the TC chair merged one further change.",
+   "why_it_matters": "Teams running MCP through message brokers now have a draft standard transport to evaluate. The draft targets MCP version 2026-07-28, so check your protocol version first. Comments must be filed by 18 Nov.",
+   "kind": "governance",
+   "related": [
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.oasis-open.org/2026/10/20/invitation-to-comment-on-json-rpc-2-0-over-amqp-1-0-and-mcp-over-amqp-1-0-csd01-ends-18-nov/",
+     "title": "Invitation to comment on JSON-RPC 2.0 over AMQP 1.0 and MCP over AMQP 1.0 CSD01, ends 18 Nov - OASIS Open",
+     "publisher": "oasis-open.org",
+     "published": "2026-10-20",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-20-2",
+   "title": "Mastercard opens early access to Agent Pay for Machines, built on x402",
+   "body": "According to CoinMarketCap, Mastercard opened early access to Agent Pay for Machines. The program gives developers the first version of buyer- and seller-side APIs, a toolkit, a sandbox and documentation. Mastercard says the system builds on x402 and was piloted end to end with Cloudflare, Ant International, AIsa, Base, BVNK, Coinbase and Hype. In the pilot, Coinbase Developer Platform supplied wallet infrastructure, Base handled on-chain settlement, and BVNK acted as the agent wallet, settling in fiat or stablecoins.",
+   "why_it_matters": "A card network is now offering x402 seller-side APIs and a sandbox, giving x402 implementers another counterparty to test against. Early access is the first version, so expect the interfaces to change.",
+   "kind": "launch",
+   "related": [
+    {
+     "id": "x402",
+     "name": "x402",
+     "url": "https://agenticweb.wiki/protocols/x402/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://coinmarketcap.com/academy/article/mastercard-agent-pay-machines-early-access",
+     "title": "Mastercard Opens AI Agent Payments to Developers After Coinbase, Base Pilots | CoinMarketCap",
+     "publisher": "coinmarketcap.com",
+     "published": "2026-10-20",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-20-3",
+   "title": "Visa, BILL and Billtrust start live pilot of agent invoice payments using Trusted Agent Protocol",
+   "body": "Visa, BILL and Billtrust announced what they call the first live pilot in which AI agents pay approved buyer invoices end to end through supplier portals. According to the companies, the BILL Payment Agent is registered with Visa's Trusted Agent Protocol and Agentic Directory and pays with tokenized credentials. Billtrust uses Trusted Agent Protocol to recognize, authenticate and grant portal access to the authorized agent, so the agent does not need shared logins.",
+   "why_it_matters": "This is a vendor-announced production use of Trusted Agent Protocol for authenticating agents to credentialed portals. Portal operators weighing agent access can compare it with signature-based bot identification.",
+   "kind": "adoption",
+   "related": [
+    {
+     "id": "tap",
+     "name": "Visa Trusted Agent Protocol",
+     "url": "https://agenticweb.wiki/protocols/tap/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.22856.html",
+     "title": "Visa, BILL and Billtrust Launch First Live Pilot for Trusted AI Agent Payments Between Buyer and Supplier Platforms",
+     "publisher": "usa.visa.com",
+     "published": "2026-10-20",
+     "label": "REPORTED",
+     "fetched": true
+    },
+    {
+     "url": "https://www.billtrust.com/news/news-visa-bill-billtrust-launch-ai-agents-for-payments",
+     "title": "AI Agents for Payments: Visa, BILL & Billtrust Partnership",
+     "publisher": "billtrust.com",
+     "published": "2026-10-20",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-20-4",
+   "title": "OX Security: MCP STDIO transport runs commands verbatim; Anthropic says this is by design",
+   "body": "According to Forkast and AI Matter, OX Security scanned 15,465 public MCP servers across five registries and found about 0.45% running on personal or home machines, often exposed through tunnels such as ngrok. The report says Anthropic's MCP SDKs for Python, TypeScript, Java, and Rust execute the STDIO 'command' parameter verbatim without sanitization. Anthropic reportedly confirmed this is by design and declined protocol-level changes.",
+   "why_it_matters": "If your host launches MCP servers from a command parameter, you are responsible for sanitizing that input. Do not expose locally tunneled servers unless they need external access.",
+   "kind": "security",
+   "related": [
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://aimatter.in/2026/10/18/anthropic-will-not-change-mcp-command-execution-ox-security/",
+     "title": "Anthropic will not change MCP command execution, OX Security finds · AI Matter",
+     "publisher": "aimatter.in",
+     "published": "2026-10-18",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-20-5",
+   "title": "Web Bot Auth: stricter RFC 9421 checks in Cloudflare's repo; behavior-based trust bands for Verified bots",
+   "body": "Crawler Policy reports two changes to Cloudflare's Web Bot Auth repository. The first rejects signatures that repeat a component identifier in Signature-Input, per RFC 9421 Section 2.5. The second requires any alg parameter to name a registered algorithm that matches the resolved key. Separately, write-ups by Innflows and remio say Cloudflare introduced continuous accountability for Verified bots on October 16. The system scores observed behavior, such as respect for robots.txt and response to rate-limiting, into a trust band.",
+   "why_it_matters": "Verifiers should apply the same duplicate-identifier and alg-matching checks, or signatures may verify inconsistently across implementations. Bot operators should expect robots.txt and HTTP 429 compliance to affect verified status.",
+   "kind": "security",
+   "related": [
+    {
+     "id": "webbotauth",
+     "name": "Web Bot Auth HTTP Message Signatures",
+     "url": "https://agenticweb.wiki/protocols/webbotauth/"
+    },
+    {
+     "id": "http-message-signatures",
+     "name": "HTTP Message Signatures",
+     "url": "https://agenticweb.wiki/protocols/http-message-signatures/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://crawlerpolicy.com/",
+     "title": "The AI × web ecosystem · Crawler Policy",
+     "publisher": "crawlerpolicy.com",
+     "published": "2026-10-19",
+     "label": "REPORTED",
+     "fetched": true
+    },
+    {
+     "url": "https://www.innflows.com/blog/ai-ml/web-bot-auth-crawler-trust-bands",
+     "title": "Web Bot Auth and Crawler Trust Bands: What Changes for Sites",
+     "publisher": "innflows.com",
+     "published": "2026-10-19",
+     "label": "REPORTED",
+     "fetched": true
+    },
+    {
+     "url": "https://www.remio.ai/post/cloudflares-continuous-accountability-for-verified-bots-turns-identity-into-an-o",
+     "title": "Cloudflare’s Continuous Accountability for Verified Bots Turns Identity Into an Ongoing Test",
+     "publisher": "remio.ai",
+     "published": "2026-10-20",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-20-6",
+   "title": "Cloudflare API MCP server adds step-up authorization",
+   "body": "Cloudflare says its API MCP server now supports step-up authorization. Users can grant minimal scopes at connect time and approve more when a task needs them. When a tool call needs an ungranted scope, the server returns an insufficient_scope challenge naming it, and the MCP client asks the user to approve. Scopes already granted are kept.",
+   "why_it_matters": "This is a working server-side example of incremental scope consent in MCP. Client developers should confirm they handle insufficient_scope challenges, since the feature only works in clients that support step-up.",
+   "kind": "adoption",
+   "related": [
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://developers.cloudflare.com/changelog/post/2026-10-19-cloudflare-mcp-step-up/",
+     "title": "Cloudflare API MCP server now supports step-up authorization · Changelog",
+     "publisher": "developers.cloudflare.com",
+     "published": "2026-10-19",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-20-7",
+   "title": "Circle and Proof to demo x401 identity paired with x402 USDC payment",
+   "body": "Circle and Proof announced a collaboration. At Money20/20 in Las Vegas, they plan to demo an agent completing an identity-gated purchase. The agent presents a verified Proof credential over x401 and pays in USDC over x402 using a Circle Agent Wallet. Per the press release, x401 uses the HTTP 401 response to state the identity proof required, while x402 uses HTTP 402 to state the payment.",
+   "why_it_matters": "Merchants that need both proof of authorization and payment can see how the two HTTP challenge patterns compose in one flow. So far this is a demo, not a shipped integration.",
+   "kind": "launch",
+   "related": [
+    {
+     "id": "x401",
+     "name": "x401: HTTP Proof Requirement Protocol",
+     "url": "https://agenticweb.wiki/protocols/x401/"
+    },
+    {
+     "id": "x402",
+     "name": "x402",
+     "url": "https://agenticweb.wiki/protocols/x402/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://marketchameleon.com/articles/b/2026/10/20/crcl-circle-proof-x401-x402-ai-agents-usdc-payments",
+     "title": "Circle teams with Proof to pair verified AI agent identity (x401)...",
+     "publisher": "marketchameleon.com",
+     "published": "2026-10-20",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-20-8",
+   "title": "Crawls: soft 404s inflate llms.txt counts; 13.6% of top sites block GPTBot",
+   "body": "Technical SEO News reports an EU crawl by machinewitness.eu. A check for a 200 at /llms.txt counted 20,804 domains (16.2%), but only 7.04% of 128,315 domains served a file whose first line is a Markdown heading. Another 10,138 returned HTML, mostly error pages. Separately, ContextFetch reports that 13.6% of top sites with readable robots.txt block GPTBot site-wide. It also found that 11.6% of 7,462 sites answering /llms.txt serve one.",
+   "why_it_matters": "When auditing llms.txt, check the content type and confirm the first line is a Markdown heading. A status code alone is not enough. The same soft-404 issue can affect any well-known file check.",
+   "kind": "research",
+   "related": [
+    {
+     "id": "llms-txt",
+     "name": "llms.txt",
+     "url": "https://agenticweb.wiki/protocols/llms-txt/"
+    },
+    {
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt",
+     "url": "https://agenticweb.wiki/protocols/ai-crawler-tokens-robots/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://technicalseonews.com/latest/llms-txt-status-200-check-doubles-real-adoption-count",
+     "title": "Nearly half of llms.txt files a status check finds are error pages",
+     "publisher": "technicalseonews.com",
+     "published": "2026-10-18",
+     "label": "REPORTED",
+     "fetched": true
+    },
+    {
+     "url": "https://contextfetch.dev/ai-crawlers",
+     "title": "Who blocks AI crawlers: the top 10,000 sites, checked | ContextFetch",
+     "publisher": "contextfetch.dev",
+     "published": "2026-10-19",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-20-9",
+   "title": "OpenA2A decoy MCP servers log 420 tool calls as connection events fall",
+   "body": "According to AI.info, OpenA2A's decoy MCP servers received 420 tool calls in the 30-day window ending October 19, up from nine in the previous window. Over the same period, connection events fell. The calls came from 19 distinct fingerprints and requested tools including shell execution, secret retrieval and file reads. OpenA2A also recorded 34 resource reads.",
+   "why_it_matters": "The report recommends alerting on tool calls to servers expected to be idle rather than on connection volume. Operators can apply this directly to their MCP monitoring.",
+   "kind": "security",
+   "related": [
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://ai.info/news/opena2a-420-decoy-mcp-tool-calls",
+     "title": "OpenA2A Records 420 Calls to Decoy MCP Servers | AI.info",
+     "publisher": "ai.info",
+     "published": "2026-10-19",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  }
+ ],
+ "stats": {
+  "previous": null,
+  "panel": {
+   "domains": 219,
+   "checked": 218,
+   "errors": 1,
+   "compared": 0,
+   "grades": {
+    "A+": 10,
+    "A": 21,
+    "B": 76,
+    "C": 70,
+    "D": 6,
+    "F": 35
+   },
+   "adoption": [
+    {
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt",
+     "domains": 173,
+     "delta": null
+    },
+    {
+     "id": "llms-txt",
+     "name": "llms.txt",
+     "domains": 105,
+     "delta": null
+    },
+    {
+     "id": "cloudflare-content-signals-policy",
+     "name": "Content Signals Policy",
+     "domains": 36,
+     "delta": null
+    },
+    {
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs",
+     "domains": 19,
+     "delta": null
+    },
+    {
+     "id": "oauth-metadata-for-agents",
+     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)",
+     "domains": 19,
+     "delta": null
+    },
+    {
+     "id": "ai-catalog-well-known-file",
+     "name": "AI Catalog well-known file",
+     "domains": 17,
+     "delta": null
+    },
+    {
+     "id": "agents-md",
+     "name": "AGENTS.md",
+     "domains": 14,
+     "delta": null
+    },
+    {
+     "id": "a2a",
+     "name": "Agent2Agent Protocol",
+     "domains": 13,
+     "delta": null
+    },
+    {
+     "id": "oauth-cimd",
+     "name": "OAuth Client ID Metadata Document",
+     "domains": 13,
+     "delta": null
+    },
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "domains": 7,
+     "delta": null
+    },
+    {
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)",
+     "domains": 7,
+     "delta": null
+    },
+    {
+     "id": "agents-txt",
+     "name": "agents.txt",
+     "domains": 6,
+     "delta": null
+    },
+    {
+     "id": "ard",
+     "name": "Agentic Resource Discovery",
+     "domains": 6,
+     "delta": null
+    },
+    {
+     "id": "auth-md",
+     "name": "auth.md",
+     "domains": 6,
+     "delta": null
+    },
+    {
+     "id": "rsl",
+     "name": "Really Simple Licensing",
+     "domains": 3,
+     "delta": null
+    },
+    {
+     "id": "tdmrep",
+     "name": "Text and Data Mining Reservation Protocol",
+     "domains": 3,
+     "delta": null
+    },
+    {
+     "id": "webbotauth",
+     "name": "Web Bot Auth HTTP Message Signatures",
+     "domains": 3,
+     "delta": null
+    },
+    {
+     "id": "identity-assertion-authz-grant",
+     "name": "Identity Assertion JWT Authorization Grant",
+     "domains": 2,
+     "delta": null
+    },
+    {
+     "id": "ads",
+     "name": "Agent Directory Service",
+     "domains": 1,
+     "delta": null
+    },
+    {
+     "id": "agent-permissions-json",
+     "name": "agent-permissions.json",
+     "domains": 1,
+     "delta": null
+    },
+    {
+     "id": "agents-json",
+     "name": "agents.json",
+     "domains": 1,
+     "delta": null
+    },
+    {
+     "id": "agora-protocol",
+     "name": "Agora Protocol",
+     "domains": 1,
+     "delta": null
+    },
+    {
+     "id": "ucp",
+     "name": "Universal Commerce Protocol",
+     "domains": 1,
+     "delta": null
+    }
+   ],
+   "gained": [],
+   "lost": [],
+   "grade_changes": []
+  },
+  "repos": {
+   "tracked": 58,
+   "movers": []
+  },
+  "registry": {
+   "since": "2026-10-19T00:00:00Z",
+   "versions": 3000,
+   "servers": 1708
+  }
+ },
+ "record_changes": [],
+ "previous": null,
+ "method": {
+  "sources": {
+   "feeds": 0,
+   "datatracker": 0,
+   "hn": 0,
+   "arxiv": 12,
+   "exa": 107,
+   "parallel": 5,
+   "tips": 19
+  },
+  "candidates": 143,
+  "after_dedupe": 130,
+  "kept": 49,
+  "fetched": 38,
+  "models": {
+   "triage": "claude-haiku-5-5",
+   "writer": "claude-opus-5-5"
+  },
+  "facts": 30,
+  "notes": [],
+  "rules": "Items are written only from the cited sources and our own measurements; every number in an item appears in a source it cites. VERIFIED = fetched from the standard's issuer or a standards body; REPORTED = a claim by press or a third party."
+ },
+ "license": "CC BY 4.0"
+}

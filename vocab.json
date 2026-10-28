@@ -1,0 +1,108 @@
+{
+  "steps": [
+    {"id":"discover","order":1,"label":"Discover","question":"What is here, and where?","analog":"sitemap, .well-known","definition":"How an agent learns that a resource, tool or agent exists at an origin, and where to find its description."},
+    {"id":"identify","order":2,"label":"Identify","question":"Who is this agent? Who is this site?","analog":"TLS certificate, WHOIS","definition":"How an agent proves who it is to a site, and how a site or another agent proves who it is back."},
+    {"id":"permit","order":3,"label":"Permit","question":"What may the agent do here?","analog":"robots.txt, terms of use","definition":"How a site states what agents may read, train on, or do, and how agents obtain authorisation to act."},
+    {"id":"read","order":4,"label":"Read","question":"Give me the content","analog":"HTML, RSS","definition":"Representations of a site's content made for machine readers rather than browsers."},
+    {"id":"act","order":5,"label":"Act","question":"Do something for me","analog":"forms, REST APIs","definition":"How an agent invokes a capability a site or tool exposes."},
+    {"id":"coordinate","order":6,"label":"Coordinate","question":"Talk to another agent","analog":"none; agent-to-agent is new","definition":"How agents delegate to, negotiate with, and message other agents."},
+    {"id":"pay","order":7,"label":"Pay","question":"Settle the bill","analog":"HTTP 402, finally used","definition":"How an agent pays for a resource, authorises a payment on a person's behalf, or completes a purchase."},
+    {"id":"present","order":8,"label":"Present","question":"Show a human the result","analog":"the browser","definition":"How an agent renders output or a live interaction to a person."},
+    {"id":"account","order":9,"label":"Account","question":"Prove what happened; be judged","analog":"logs, audit trails","definition":"How actions are recorded, verified after the fact, attributed and measured."}
+  ],
+  "parties": [
+    {"id":"agent-site","label":"agent ↔ site","definition":"An agent interacting with a website or API origin."},
+    {"id":"agent-agent","label":"agent ↔ agent","definition":"Two agents interacting directly."},
+    {"id":"agent-human","label":"agent ↔ human","definition":"An agent presenting to, or taking instruction from, a person."},
+    {"id":"agent-payment","label":"agent ↔ payment network","definition":"An agent and a payment rail, wallet, or card network."},
+    {"id":"agent-registry","label":"agent ↔ registry","definition":"An agent and a third-party index or registry."}
+  ],
+  "form": [
+    {"id":"well-known-file","label":"well-known file","definition":"A fixed-path file under /.well-known/ or the site root."},
+    {"id":"http-header","label":"HTTP header","definition":"A request or response header."},
+    {"id":"endpoint","label":"endpoint","definition":"An HTTP or RPC endpoint with a defined message format."},
+    {"id":"dns-record","label":"DNS record","definition":"A record type or name convention in DNS."},
+    {"id":"onchain-registry","label":"on-chain registry","definition":"A smart contract acting as a registry."},
+    {"id":"document-format","label":"document format","definition":"A file format or document convention."},
+    {"id":"browser-api","label":"browser API","definition":"A JavaScript API available to pages in a browser."}
+  ],
+  "track": [
+    {"id":"ietf","label":"IETF","definition":"Internet Engineering Task Force draft or RFC."},
+    {"id":"w3c","label":"W3C","definition":"W3C working or community group output."},
+    {"id":"linux-foundation","label":"Linux Foundation","definition":"A Linux Foundation project or sub-foundation."},
+    {"id":"industry-body","label":"industry body","definition":"A trade association such as IAB Tech Lab."},
+    {"id":"vendor-consortium","label":"vendor consortium","definition":"Several vendors publishing jointly without a standards body."},
+    {"id":"single-vendor","label":"single vendor","definition":"One company controls the specification."},
+    {"id":"community","label":"community","definition":"Open community project with no formal governance."},
+    {"id":"academic","label":"academic","definition":"Research output without a standards process."}
+  ],
+  "scope": [
+    {"id":"general","label":"general","definition":"Applies to any site or agent."},
+    {"id":"commerce","label":"commerce","definition":"Buying and selling goods or services."},
+    {"id":"advertising","label":"advertising","definition":"Ad buying, measurement, or attribution."},
+    {"id":"payments","label":"payments","definition":"Moving money."},
+    {"id":"coding-tools","label":"coding tools","definition":"Developer tooling and editors."}
+  ],
+  "phase": [
+    {"id":"idea","label":"idea","definition":"Proposed, no specification text."},
+    {"id":"draft","label":"draft","definition":"Specification text exists and is changing."},
+    {"id":"working-group","label":"working group","definition":"Adopted by a standards working group."},
+    {"id":"review","label":"review","definition":"In formal review or last call."},
+    {"id":"candidate","label":"candidate","definition":"Feature-complete, seeking implementations."},
+    {"id":"stable","label":"stable","definition":"Published as stable or final."},
+    {"id":"living","label":"living","definition":"Continuously updated with no versioned finals."},
+    {"id":"deprecated","label":"deprecated","definition":"Superseded or discouraged by its issuer."},
+    {"id":"withdrawn","label":"withdrawn","definition":"Withdrawn or archived."},
+    {"id":"unknown","label":"unknown","definition":"Not established."}
+  ],
+  "implementation": [
+    {"id":"none-found","label":"none found","definition":"No implementation located."},
+    {"id":"prototype","label":"prototype","definition":"Reference or experimental implementation only."},
+    {"id":"developer-trial","label":"developer trial","definition":"Behind a flag or origin trial."},
+    {"id":"shipping","label":"shipping","definition":"At least one production implementation."},
+    {"id":"multi-implementation","label":"multi-implementation","definition":"Independent production implementations from more than one party."},
+    {"id":"deprecated","label":"deprecated","definition":"Implementations being removed."},
+    {"id":"unknown","label":"unknown","definition":"Not established."}
+  ],
+  "adoption": [
+    {"id":"unmeasured","label":"unmeasured","definition":"Nobody has published a count."},
+    {"id":"claimed","label":"claimed","definition":"A party asserts adoption; the claimant is named."},
+    {"id":"observed","label":"observed","definition":"We or a third party have seen instances but not counted systematically."},
+    {"id":"measured","label":"measured","definition":"Counted by a documented probe run."},
+    {"id":"unknown","label":"unknown","definition":"Not established."}
+  ],
+  "evidence": [
+    {"id":"VERIFIED","label":"verified","definition":"Primary source, or two independent secondary sources, checked by us."},
+    {"id":"REPORTED","label":"reported","definition":"One secondary source."},
+    {"id":"THIN","label":"thin","definition":"Existence established; detail not."}
+  ],
+  "freshness": [
+    {"id":"current","label":"current","definition":"Verified within the review cadence."},
+    {"id":"review-due","label":"review due","definition":"Past cadence; not yet re-checked."},
+    {"id":"stale","label":"stale","definition":"Past twice the cadence."},
+    {"id":"source-unavailable","label":"source unavailable","definition":"Primary source no longer resolves."}
+  ],
+  "use_cases": [
+    {"id":"discover-my-api","label":"Let agents discover my API or service","definition":"Publish where an agent can find what an origin offers."},
+    {"id":"expose-tools-to-agents","label":"Expose tools to agents","definition":"Let a model call functions or actions you host."},
+    {"id":"let-agents-act-on-my-site","label":"Let agents act on my website","definition":"Forms, bookings and tasks performed by agents in a browser or via a page-level API."},
+    {"id":"serve-content-to-agents","label":"Serve readable content to agents","definition":"Give agents a machine-friendly version of pages and documents."},
+    {"id":"prove-agent-identity","label":"Prove an agent's identity","definition":"Let a server verify which agent, operator or workload is calling."},
+    {"id":"delegate-user-authority","label":"Delegate a user's authority to an agent","definition":"Scoped, revocable permission for an agent to act for a person."},
+    {"id":"control-ai-crawling","label":"Control AI crawling and training use","definition":"State what automated systems may do with your content."},
+    {"id":"accept-agent-payments","label":"Accept payments from agents","definition":"Charge an agent per request or per purchase."},
+    {"id":"agent-checkout","label":"Let agents buy on behalf of a person","definition":"Mandates, carts and checkout flows for agent purchases."},
+    {"id":"agent-to-agent-messaging","label":"Let agents talk to other agents","definition":"Discover, message and delegate between independent agents."},
+    {"id":"agent-naming","label":"Name and resolve agents","definition":"Stable names or records that resolve to an agent's endpoint."},
+    {"id":"render-agent-ui","label":"Render agent output as a user interface","definition":"Structured UI that a client renders from an agent."},
+    {"id":"audit-agent-actions","label":"Audit what an agent did","definition":"Tamper-evident records of actions and the authority behind them."},
+    {"id":"attribute-agent-traffic","label":"Attribute and measure agent traffic","definition":"Know which agents visited and what they did."},
+    {"id":"describe-agent-capabilities","label":"Describe an agent's capabilities","definition":"Cards, manifests and schemas that say what an agent can do."}
+  ],
+  "audience": [
+    {"id":"site-owner","label":"Site or API owner","definition":"Runs a website, API or shop that agents will use."},
+    {"id":"agent-builder","label":"Agent builder","definition":"Builds agents or the frameworks they run on."},
+    {"id":"platform","label":"Platform or infrastructure","definition":"CDNs, identity providers, payment networks, registries."},
+    {"id":"standards-body","label":"Standards and policy","definition":"People shaping or tracking the specifications themselves."}
+  ]
+}

@@ -1,0 +1,5297 @@
+[
+ {
+  "id": "aembit-iam",
+  "name": "Aembit Workload and Agent IAM",
+  "url": "https://aembit.io",
+  "type": "authority",
+  "implements": [
+   "spiffe"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://aembit.io",
+  "note": "Non-human workload identity authority brokering secretless Agent OAuth (AAuth), SPIFFE SVIDs, and RFC 9728 credentials for autonomous agents."
+ },
+ {
+  "id": "agent-community-aid",
+  "name": "Agent Community / Open Agent Registry (AID)",
+  "url": "https://agentcommunity.org",
+  "type": "venue",
+  "implements": [
+   "aid",
+   "a2a"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agentcommunity.org/blog/aid-v2",
+  "note": "Public registry for Agent Identity and Discovery (AID) DNS _agent TXT records, publishing its own live A2A Agent Card, ai-catalog.json, and auth.md."
+ },
+ {
+  "id": "agent-ready-agent",
+  "name": "agent-ready.dev Conformance Scanner Agent",
+  "url": "https://agent-ready.dev",
+  "type": "agent",
+  "implements": [
+   "a2a",
+   "agent-permissions-json",
+   "agents-json",
+   "agents-md",
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "auth-md",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "oauth-metadata-for-agents",
+   "ucp",
+   "webbotauth"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/agent-ready.dev/",
+  "note": "Origin publishing 15 machine-native manifests (Agent2Agent Protocol, agent-permissions.json, agents.json, AGENTS.md (+11 more)), measured by /check/agent-ready.dev/ on 2026-10-23."
+ },
+ {
+  "id": "agentconnect-anp",
+  "name": "AgentConnect (ANP DID:WBA Agent Node)",
+  "url": "https://github.com/agent-network-protocol/AgentConnect",
+  "type": "agent",
+  "implements": [
+   "anp"
+  ],
+  "observed": "2026-07-23",
+  "date_basis": "source",
+  "source": "https://github.com/agent-network-protocol/AgentConnect",
+  "note": "Reference peer-to-peer agent node implementing Agent Network Protocol (ANP) did:wba authentication and JSON-LD capability negotiation."
+ },
+ {
+  "id": "agentic-advertising-adcp",
+  "name": "AgenticAdvertising.org (AdCP Clearinghouse)",
+  "url": "https://agenticadvertising.org",
+  "type": "venue",
+  "implements": [
+   "adcp"
+  ],
+  "observed": "2026-06-15",
+  "date_basis": "source",
+  "source": "https://agenticadvertising.org",
+  "note": "Open advertising industry venue standardizing media buying, audience activation, and brand context over Ad Context Protocol (/.well-known/adagents.json)."
+ },
+ {
+  "id": "agenticweb-wiki-agent",
+  "name": "agenticweb.wiki Reference Agent and MCP Server",
+  "url": "https://agenticweb.wiki",
+  "type": "agent",
+  "implements": [
+   "a2a",
+   "agents-md",
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "ard",
+   "auth-md",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents",
+   "okf",
+   "web-bot-auth-signature-agent-card",
+   "webbotauth"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/agenticweb.wiki/",
+  "note": "Origin publishing 17 machine-native manifests (Agent2Agent Protocol, AGENTS.md, AI Catalog well-known file, AI Crawler User-Agent Tokens in robots.txt (+13 more)), measured by /check/agenticweb.wiki/ on 2026-10-23."
+ },
+ {
+  "id": "agntcy-directory",
+  "name": "AGNTCY Agent Directory Service (Linux Foundation)",
+  "url": "https://agntcy.org",
+  "type": "venue",
+  "implements": [
+   "oasf",
+   "slim",
+   "a2a",
+   "mcp"
+  ],
+  "observed": "2026-07-23",
+  "date_basis": "source",
+  "source": "https://agntcy.org",
+  "note": "OCI and Kademlia DHT content-addressed agent directory service storing OASF capability records and exporting ai-catalog.json manifests."
+ },
+ {
+  "id": "agora-marketplace",
+  "name": "Agora Marketplace",
+  "url": "https://agoraproto.org",
+  "type": "venue",
+  "implements": [
+   "agora-commerce-protocol"
+  ],
+  "observed": "2026-03-09",
+  "date_basis": "source",
+  "source": "https://agoraproto.org",
+  "note": "Cross-merchant product discovery and structured agentic checkout aggregator built on the Agora Commerce Protocol (api.agoraproto.org)."
+ },
+ {
+  "id": "aider",
+  "name": "Aider",
+  "url": "https://aider.chat/docs/usage/conventions.html",
+  "type": "harness",
+  "implements": [
+   "agents-md"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://agents.md/",
+  "note": "Terminal AI pair-programming harness supporting AGENTS.md repository conventions and llms.txt documentation context loading."
+ },
+ {
+  "id": "amp-sourcegraph",
+  "name": "Amp",
+  "url": "https://ampcode.com",
+  "type": "harness",
+  "implements": [
+   "agents-md"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://agents.md/",
+  "note": "Terminal and IDE coding harness natively consuming AGENTS.md, SKILL.md agent skills, and OAuth CIMD / MCP tool servers."
+ },
+ {
+  "id": "block-goose",
+  "name": "Goose (Block)",
+  "url": "https://github.com/block/goose",
+  "type": "harness",
+  "implements": [
+   "mcp",
+   "agents-md",
+   "anthropic-agent-skills-format"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://github.com/block/goose",
+  "note": "Block's open-source local machine agent harness built natively on Model Context Protocol tool servers, MCP Apps, Agent Client Protocol (ACP), and AGENTS.md."
+ },
+ {
+  "id": "bnbchain-bnbagent",
+  "name": "BNB Chain BNBAgent SDK and Identity Authority",
+  "url": "https://bnbchain.org",
+  "type": "authority",
+  "implements": [
+   "erc-8004",
+   "x402"
+  ],
+  "observed": "2026-07-02",
+  "date_basis": "source",
+  "source": "https://www.bnbchain.org/en/blog/bnbagent-sdk-onchain-id-reputation-and-commerce-for-autonomous-ai-agents",
+  "note": "On-chain identity (ERC-8004), job escrow (ERC-8183), and x402 settlement SDK for autonomous agents on BNB Smart Chain and opBNB."
+ },
+ {
+  "id": "brickken-rams-erc8226",
+  "name": "Brickken RAMS (ERC-8226 RWA Agent Mandate Authority)",
+  "url": "https://eips.ethereum.org/EIPS/eip-8226",
+  "type": "authority",
+  "implements": [
+   "erc-8226"
+  ],
+  "observed": "2026-07-17",
+  "date_basis": "source",
+  "source": "https://eips.ethereum.org/EIPS/eip-8226",
+  "note": "Reference mandate and compliance authority (IAgentMandate, IComplianceProvider) governing autonomous agent operations over tokenized real-world assets."
+ },
+ {
+  "id": "chrome-webmcp",
+  "name": "Google Chrome (WebMCP Early Preview)",
+  "url": "https://developer.chrome.com/blog/webmcp-epp",
+  "type": "harness",
+  "implements": [
+   "webmcp"
+  ],
+  "observed": "2026-02-18",
+  "date_basis": "source",
+  "source": "https://developer.chrome.com/blog/webmcp-epp",
+  "note": "Browser runtime shipping navigator.modelContext (provideContext and registerTool) from Chrome 146 behind the WebMCP for Testing flag so in-page scripts expose structured tools to browser agents."
+ },
+ {
+  "id": "circle-agent-stack",
+  "name": "Circle Agent Stack and Programmable Wallets",
+  "url": "https://www.circle.com",
+  "type": "authority",
+  "implements": [
+   "x402"
+  ],
+  "observed": "2026-04-08",
+  "date_basis": "source",
+  "source": "https://www.circle.com/blog/autonomous-payments-using-circle-wallets-usdc-and-x402",
+  "note": "Developer wallet authority providing policy-controlled USDC wallets, ERC-8004 identity registration, and automated x402/MPP payment signing for agents."
+ },
+ {
+  "id": "circle-x402-facilitator",
+  "name": "Circle x402 Facilitator and Agent Marketplace",
+  "url": "https://www.circle.com/blog/autonomous-payments-using-circle-wallets-usdc-and-x402",
+  "type": "venue",
+  "implements": [
+   "x402"
+  ],
+  "observed": "2026-04-08",
+  "date_basis": "source",
+  "source": "https://www.circle.com/blog/autonomous-payments-using-circle-wallets-usdc-and-x402",
+  "note": "Circle's hosted x402 v2 facilitator (x402.circle.com), gasless nanopayment batching settlement engine, and autonomous agent service marketplace."
+ },
+ {
+  "id": "claude-code",
+  "name": "Claude Code (Anthropic)",
+  "url": "https://platform.claude.com/docs/en/agents-and-tools/claude-code/overview",
+  "type": "harness",
+  "implements": [
+   "anthropic-agent-skills-format"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://agentskills.io",
+  "note": "Anthropic's terminal and IDE coding harness; natively discovers SKILL.md agent skills, project CLAUDE.md and AGENTS.md instructions, and local or remote Streamable HTTP MCP servers."
+ },
+ {
+  "id": "cloudflare-pay-per-crawl-venue",
+  "name": "Cloudflare Pay Per Crawl and x402 Edge Clearinghouse",
+  "url": "https://blog.cloudflare.com/introducing-pay-per-crawl/",
+  "type": "venue",
+  "implements": [
+   "cloudflare-pay-per-crawl",
+   "webbotauth"
+  ],
+  "observed": "2026-07-01",
+  "date_basis": "source",
+  "source": "https://blog.cloudflare.com/introducing-pay-per-crawl/",
+  "note": "Cloudflare's edge monetization clearinghouse gating AI crawler fetches with HTTP 402 pricing headers, Web Bot Auth cryptographic verification, and per-request settlement."
+ },
+ {
+  "id": "cloudflare-webbotauth-authority",
+  "name": "Cloudflare Web Bot Auth Key Directory",
+  "url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/",
+  "type": "authority",
+  "implements": [
+   "webbotauth",
+   "web-bot-auth-signature-agent-card"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/",
+  "note": "Edge verification authority validating /.well-known/http-message-signatures-directory JWKS keys, Signature-Agent cards, and RFC 9421 bot signatures."
+ },
+ {
+  "id": "coinbase-agentkit",
+  "name": "Coinbase AgentKit and CDP Server Wallets",
+  "url": "https://github.com/coinbase/agentkit",
+  "type": "authority",
+  "implements": [
+   "x402",
+   "mcp"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://github.com/coinbase/agentkit",
+  "note": "Programmable MPC wallet authority and policy engine equipping autonomous agents with on-chain identities, spending policies, and automatic x402 signing."
+ },
+ {
+  "id": "coinbase-cdp-x402-facilitator",
+  "name": "Coinbase CDP x402 Facilitator and Bazaar",
+  "url": "https://docs.cdp.coinbase.com/x402/welcome",
+  "type": "venue",
+  "implements": [
+   "x402"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://docs.cdp.coinbase.com/x402/welcome",
+  "note": "Coinbase Developer Platform's hosted HTTP 402 payment verification and USDC settlement facilitator on Base and Solana, paired with the x402 Bazaar discovery index."
+ },
+ {
+  "id": "copilotkit",
+  "name": "CopilotKit",
+  "url": "https://www.copilotkit.ai",
+  "type": "harness",
+  "implements": [
+   "ag-ui",
+   "a2ui",
+   "mcp-apps",
+   "a2a",
+   "mcp"
+  ],
+  "observed": "2026-08-14",
+  "date_basis": "source",
+  "source": "https://docs.ag-ui.com/concepts/architecture",
+  "note": "Full-stack agentic UI client and React harness co-authoring AG-UI and natively rendering A2UI surfaces, MCP Apps (ui://), and A2A or MCP agent streams."
+ },
+ {
+  "id": "coralsec-copilot-coral-protocol",
+  "name": "CoralSec Copilot",
+  "url": "https://dev.to/codewithmehru/how-i-built-coralsec-copilot-a-unified-enterprise-soc-with-coral-nextjs-in-4-days-235o",
+  "type": "agent",
+  "implements": [
+   "coral-protocol"
+  ],
+  "observed": "2026-05-30",
+  "date_basis": "source",
+  "source": "https://dev.to/codewithmehru/how-i-built-coralsec-copilot-a-unified-enterprise-soc-with-coral-nextjs-in-4-days-235o",
+  "note": "Unified enterprise SOC agent built on Coral Protocol's MCP and Coral SQL layer joining GitHub, Sentry, Slack, and Vercel security telemetry."
+ },
+ {
+  "id": "coralteams-coral-protocol",
+  "name": "CoralTeams",
+  "url": "https://dev.to/shrutik0101/building-coralteams-an-ai-powered-operational-intelligence-platform-with-coral-28l9",
+  "type": "agent",
+  "implements": [
+   "coral-protocol"
+  ],
+  "observed": "2026-05-31",
+  "date_basis": "source",
+  "source": "https://dev.to/shrutik0101/building-coralteams-an-ai-powered-operational-intelligence-platform-with-coral-28l9",
+  "note": "Multi-agent operational intelligence system built on Coral Protocol unifying GitHub and Slack incident monitoring."
+ },
+ {
+  "id": "crawlytics-ai-crawler-registry",
+  "name": "Crawlytics AI Crawler Directory",
+  "url": "https://crawlytics.app/resources/ai-bots-list/",
+  "type": "venue",
+  "implements": [
+   "ai-crawler-tokens-robots"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://crawlytics.app/resources/ai-bots-list/",
+  "note": "Public registry tracking AI crawler User-Agent tokens, operator verification rules, and robots.txt policies."
+ },
+ {
+  "id": "cursor",
+  "name": "Cursor",
+  "url": "https://cursor.com",
+  "type": "harness",
+  "implements": [
+   "agents-md"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://agents.md/",
+  "note": "AI code editor and agent harness natively reading repository AGENTS.md conventions, SKILL.md bundles, and Model Context Protocol tool servers and MCP Apps."
+ },
+ {
+  "id": "deutsche-telekom-lmos",
+  "name": "Deutsche Telekom Frag Magenta (Eclipse LMOS Agent)",
+  "url": "https://eclipse.dev/lmos/",
+  "type": "agent",
+  "implements": [
+   "lmos"
+  ],
+  "observed": "2026-07-15",
+  "date_basis": "source",
+  "source": "https://eclipse.dev/lmos/",
+  "note": "Production multi-agent customer-service system at Deutsche Telekom routing across specialized domain agents over Eclipse LMOS (Language Model Operating System)."
+ },
+ {
+  "id": "devin-cognition",
+  "name": "Devin (Cognition)",
+  "url": "https://devin.ai",
+  "type": "harness",
+  "implements": [
+   "agents-md"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://agents.md/",
+  "note": "Autonomous software engineering agent harness supporting repository AGENTS.md rules and Model Context Protocol tool servers."
+ },
+ {
+  "id": "elemen-agtp-browser",
+  "name": "Elemen (AGTP Browser)",
+  "url": "https://chrishood.com/introducing-elemen-the-worlds-first-browser-for-the-agent-web/",
+  "type": "harness",
+  "implements": [
+   "agtp"
+  ],
+  "observed": "2026-06-05",
+  "date_basis": "source",
+  "source": "https://chrishood.com/introducing-elemen-the-worlds-first-browser-for-the-agent-web/",
+  "note": "Desktop browser harness that resolves and renders AGTP-registered agents as interactive identity and capability cards."
+ },
+ {
+  "id": "erc-8004-canonical-contracts",
+  "name": "ERC-8004 Canonical Registry Contracts (Mainnet and 16 Chains)",
+  "url": "https://github.com/erc-8004/erc-8004-contracts",
+  "type": "authority",
+  "implements": [
+   "erc-8004"
+  ],
+  "observed": "2026-01-29",
+  "date_basis": "source",
+  "source": "https://github.com/erc-8004/erc-8004-contracts",
+  "note": "Singleton on-chain Identity (0x8004A169...) and Reputation (0x8004BAa1...) Registry contracts anchoring portable agent DIDs across Ethereum mainnet and 16 EVM chains."
+ },
+ {
+  "id": "erc-8004-explorer",
+  "name": "8004.org / ERC-8004 Trustless Agents Registry",
+  "url": "https://www.8004.org",
+  "type": "venue",
+  "implements": [
+   "erc-8004",
+   "a2a",
+   "mcp",
+   "x402"
+  ],
+  "observed": "2026-08-13",
+  "date_basis": "source",
+  "source": "https://eips.ethereum.org/EIPS/eip-8004",
+  "note": "Multi-chain discovery venue indexing on-chain ERC-8004 agent registrations, A2A Agent Cards, MCP endpoints, and x402 payment support."
+ },
+ {
+  "id": "fido-alliance",
+  "name": "FIDO Alliance (Verifiable Intent and AP2 Working Group)",
+  "url": "https://fidoalliance.org",
+  "type": "authority",
+  "implements": [
+   "ap2"
+  ],
+  "observed": "2026-07-31",
+  "date_basis": "source",
+  "source": "https://fidoalliance.org/fido-alliance-to-develop-standards-for-trusted-ai-agent-interactions/",
+  "note": "Cryptographic standards authority hosting the Verifiable Intent working group and stewarding the Agent Payments Protocol (AP2)."
+ },
+ {
+  "id": "github-copilot-agent",
+  "name": "GitHub Copilot Coding Agent",
+  "url": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents",
+  "type": "harness",
+  "implements": [
+   "agents-md",
+   "mcp"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents",
+  "note": "GitHub's repository and IDE coding agent harness reading AGENTS.md, SKILL.md bundles, and remote or local MCP tool servers."
+ },
+ {
+  "id": "godaddy-ans",
+  "name": "GoDaddy Agent Name Service (ANS) Authority",
+  "url": "https://github.com/godaddy/ans",
+  "type": "authority",
+  "implements": [
+   "ans",
+   "a2a",
+   "mcp"
+  ],
+  "observed": "2026-07-15",
+  "date_basis": "source",
+  "source": "https://github.com/godaddy/ans",
+  "note": "DNSSEC and X.509 Certificate Transparency naming authority binding versioned ans:// agent identifiers to public keys and capability manifests."
+ },
+ {
+  "id": "google-adk",
+  "name": "Google Agent Development Kit (ADK)",
+  "url": "https://google.github.io/adk-docs/",
+  "type": "harness",
+  "implements": [
+   "a2a",
+   "mcp",
+   "ag-ui"
+  ],
+  "observed": "2026-07-31",
+  "date_basis": "source",
+  "source": "https://docs.ag-ui.com/concepts/architecture",
+  "note": "Google's open-source agent runtime and client harness with first-party support for A2A Agent Cards, MCP tool servers, AG-UI/A2UI rendering, and AP2 payment mandates."
+ },
+ {
+  "id": "google-jules",
+  "name": "Google Jules",
+  "url": "https://jules.google",
+  "type": "harness",
+  "implements": [
+   "agents-md"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://agents.md/",
+  "note": "Google's asynchronous coding agent reading repository AGENTS.md conventions and SKILL.md bundles."
+ },
+ {
+  "id": "goplausible-bazaar",
+  "name": "GoPlausible x402 Bazaar and Open Facilitator",
+  "url": "https://goplausible.com",
+  "type": "venue",
+  "implements": [
+   "x402"
+  ],
+  "observed": "2026-07-07",
+  "date_basis": "source",
+  "source": "https://goplausible.com",
+  "note": "Multi-network open x402 facilitator and machine-payable service bazaar supporting Algorand, Base, and EVM settlement."
+ },
+ {
+  "id": "grantex-daap",
+  "name": "Grantex Delegated Agent Authorization Protocol (DAAP)",
+  "url": "https://datatracker.ietf.org/doc/html/draft-mishra-oauth-agent-grants-00",
+  "type": "authority",
+  "implements": [
+   "daap"
+  ],
+  "observed": "2026-06-15",
+  "date_basis": "source",
+  "source": "https://datatracker.ietf.org/doc/html/draft-mishra-oauth-agent-grants-00",
+  "note": "Reference OAuth 2.0 delegated grant authority implementing the draft-mishra-oauth-agent-grants specification."
+ },
+ {
+  "id": "ibm-beeai-acp",
+  "name": "IBM BeeAI Multi-Agent Runtime",
+  "url": "https://github.com/i-am-bee/beeai-platform",
+  "type": "agent",
+  "implements": [
+   "agent-communication-protocol",
+   "a2a",
+   "mcp"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://github.com/i-am-bee/beeai-platform",
+  "note": "Originating multi-agent runtime for the Agent Communication Protocol (ACP-IBM), now merged with Linux Foundation A2A."
+ },
+ {
+  "id": "infoblox-dns-aid",
+  "name": "Infoblox DNS-AID Registry (Linux Foundation)",
+  "url": "https://github.com/infobloxopen/dns-aid-core",
+  "type": "venue",
+  "implements": [
+   "dns-aid",
+   "a2a",
+   "mcp"
+  ],
+  "observed": "2026-07-15",
+  "date_basis": "source",
+  "source": "https://github.com/infobloxopen/dns-aid-core",
+  "note": "Reference DNS SVCB (_agents._DNS-AID) discovery publisher and resolver donated to the Linux Foundation by Infoblox."
+ },
+ {
+  "id": "jetbrains-acp",
+  "name": "JetBrains IDEs (AI Assistant and Junie)",
+  "url": "https://www.jetbrains.com/ai/",
+  "type": "harness",
+  "implements": [
+   "agent-client-protocol"
+  ],
+  "observed": "2026-08-24",
+  "date_basis": "source",
+  "source": "https://agentclientprotocol.com/",
+  "note": "Co-author of the Agent Client Protocol (ACP) with Zed; supports ACP agent backends, MCP tool servers, AGENTS.md, and SKILL.md in JetBrains IDEs."
+ },
+ {
+  "id": "langchain-langgraph-agent",
+  "name": "LangChain LangGraph Platform Agent Server",
+  "url": "https://langchain-ai.github.io/langgraph/",
+  "type": "agent",
+  "implements": [
+   "agent-protocol-aief"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://github.com/agi-inc/agent-protocol",
+  "note": "Stateful agent server implementing the AI Engineer Foundation Agent Protocol (/runs, /threads, /store) alongside MCP and AG-UI streaming."
+ },
+ {
+  "id": "lightning-labs-l402",
+  "name": "Lightning Labs Aperture L402 Facilitator Proxy",
+  "url": "https://docs.lightning.engineering/the-lightning-network/l402",
+  "type": "venue",
+  "implements": [
+   "l402"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://docs.lightning.engineering/the-lightning-network/l402",
+  "note": "Reference L402 reverse proxy (Aperture) issuing Macaroon + Lightning invoice HTTP 402 challenges to meter API and agent requests."
+ },
+ {
+  "id": "mastercard-verifiable-intent",
+  "name": "Mastercard Agent Pay and Verifiable Intent",
+  "url": "https://www.mastercard.com/global/en/business/artificial-intelligence/mastercard-agent-pay.html",
+  "type": "authority",
+  "implements": [
+   "vi"
+  ],
+  "observed": "2026-03-05",
+  "date_basis": "source",
+  "source": "https://www.verifiableintent.dev",
+  "note": "Mastercard and Google's SD-JWT cryptographic intent authority binding user passkey approvals and EMV payment tokens to autonomous agent actions."
+ },
+ {
+  "id": "mcp-registry-official",
+  "name": "Official MCP Registry",
+  "url": "https://registry.modelcontextprotocol.io",
+  "type": "venue",
+  "implements": [
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://registry.modelcontextprotocol.io",
+  "note": "Canonical community-maintained metadata registry for publicly accessible and installable Model Context Protocol servers."
+ },
+ {
+  "id": "microsoft-edge-webmcp",
+  "name": "Microsoft Edge (WebMCP)",
+  "url": "https://github.com/webmachinelearning/webmcp",
+  "type": "harness",
+  "implements": [
+   "webmcp"
+  ],
+  "observed": "2026-02-18",
+  "date_basis": "source",
+  "source": "https://github.com/webmachinelearning/webmcp",
+  "note": "Co-authored W3C Web Machine Learning Community Group specification for navigator.modelContext in Chromium browser runtimes."
+ },
+ {
+  "id": "mnemom-trust",
+  "name": "Mnemom Cryptographic Agent Trust Service",
+  "url": "https://mnemom.ai",
+  "type": "authority",
+  "implements": [
+   "a2a",
+   "mcp"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://mnemom.ai/.well-known/agent-card.json",
+  "note": "Cryptographic behavioral attestation and agent integrity authority publishing 12 verified manifests including A2A Agent Card, MCP Server Card, and agents.txt."
+ },
+ {
+  "id": "near-ai-shade-workers-aitp",
+  "name": "NEAR AI Shade Workers (AITP Agent Runtime)",
+  "url": "https://aitp.dev",
+  "type": "agent",
+  "implements": [
+   "aitp"
+  ],
+  "observed": "2026-02-25",
+  "date_basis": "source",
+  "source": "https://aitp.dev",
+  "note": "TEE-hosted autonomous agent runtime implementing the Agent Interaction and Transaction Protocol (AITP) for cross-boundary structured threads and payments."
+ },
+ {
+  "id": "neuronto-registry",
+  "name": "Neuronto Agentic Web Index",
+  "url": "https://neuronto.com",
+  "type": "venue",
+  "implements": [
+   "a2a",
+   "ai-catalog-well-known-file",
+   "api-catalog-rfc9727",
+   "ard",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/neuronto.com/",
+  "note": "Origin publishing 5 machine-native manifests (Agent2Agent Protocol, AI Catalog well-known file, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Agentic Resource Discovery (+1 more)), measured by /check/neuronto.com/ on 2026-10-23."
+ },
+ {
+  "id": "nevermined-facilitator",
+  "name": "Nevermined x402 Facilitator and Metering Clearinghouse",
+  "url": "https://docs.nevermined.app",
+  "type": "venue",
+  "implements": [
+   "x402",
+   "a2a",
+   "mcp"
+  ],
+  "observed": "2026-07-23",
+  "date_basis": "source",
+  "source": "https://docs.nevermined.app",
+  "note": "Usage-metering and settlement facilitator supporting ERC-4337 session keys, credit burning, and x402 payment extensions for A2A and MCP services."
+ },
+ {
+  "id": "okta-auth0-xaa",
+  "name": "Okta and Auth0 Cross App Access (XAA)",
+  "url": "https://auth0.com",
+  "type": "authority",
+  "implements": [
+   "identity-assertion-authz-grant"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://datatracker.ietf.org/doc/draft-ietf-oauth-identity-assertion-authz-grant/",
+  "note": "Enterprise Identity Provider issuing Identity Assertion Authorization Grants (XAA / ID-JAG) and OAuth 2.1 tokens for agent-to-SaaS and MCP delegation."
+ },
+ {
+  "id": "opena2a-aap-authority",
+  "name": "OpenA2A Agent Authorization Protocol (AAP) Authority",
+  "url": "https://github.com/opena2a-standards/agent-authorization-protocol",
+  "type": "authority",
+  "implements": [
+   "aap",
+   "a2a",
+   "mcp"
+  ],
+  "observed": "2026-07-02",
+  "date_basis": "source",
+  "source": "https://github.com/opena2a-standards/agent-authorization-protocol",
+  "note": "Reference OAuth 2.0 profile and token claim authority (agent_identity, task_binding, delegation_chain, oversight_requirements) for multi-hop agent delegation."
+ },
+ {
+  "id": "openai-codex",
+  "name": "OpenAI Codex and ChatGPT Connectors",
+  "url": "https://developers.openai.com",
+  "type": "harness",
+  "implements": [
+   "agents-md"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://agents.md/",
+  "note": "OpenAI's coding harness and ChatGPT client runtime; co-steward of AGENTS.md, native consumer of SKILL.md, remote MCP servers, MCP Apps, and ACP Instant Checkout."
+ },
+ {
+  "id": "opencode",
+  "name": "OpenCode",
+  "url": "https://opencode.ai",
+  "type": "harness",
+  "implements": [
+   "agents-md"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://opencode.ai/docs/rules/",
+  "note": "Open-source terminal coding harness natively reading AGENTS.md, SKILL.md bundles, and MCP/ACP servers."
+ },
+ {
+  "id": "openfort-wallets",
+  "name": "Openfort Agentic Wallets",
+  "url": "https://www.openfort.io",
+  "type": "authority",
+  "implements": [
+   "erc-8004",
+   "x402"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://www.openfort.io",
+  "note": "Non-custodial ERC-4337 smart account and session-key authority with native ERC-8004 agent identity registration and x402 spending guardrails."
+ },
+ {
+  "id": "origin-0g-ai",
+  "name": "0G Labs (0g.ai)",
+  "url": "https://0g.ai/",
+  "type": "origin",
+  "implements": [
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/0g.ai/",
+  "note": "Origin publishing 3 machine-native manifests (Content Signals Policy, Markdown for Agents, llms.txt), measured by /check/0g.ai/ on 2026-10-23."
+ },
+ {
+  "id": "origin-2s-io",
+  "name": "2s.io",
+  "url": "https://2s.io/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "agents-json",
+   "ai-crawler-tokens-robots",
+   "api-catalog-rfc9727",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/2s.io/",
+  "note": "Origin publishing 7 machine-native manifests (Agent2Agent Protocol, agents.json, AI Crawler User-Agent Tokens in robots.txt, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs (+3 more)), measured by /check/2s.io/ on 2026-10-25."
+ },
+ {
+  "id": "origin-aaif-io",
+  "name": "Agentic AI Foundation (aaif.io)",
+  "url": "https://aaif.io/",
+  "type": "origin",
+  "implements": [
+   "agents-txt",
+   "ai-crawler-tokens-robots",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/aaif.io/",
+  "note": "Origin publishing 5 machine-native manifests (agents.txt, AI Crawler User-Agent Tokens in robots.txt, Content Signals Policy, Markdown for Agents (+1 more)), measured by /check/aaif.io/ on 2026-10-23."
+ },
+ {
+  "id": "origin-agentclientprotocol-com",
+  "name": "Agent Client Protocol (agentclientprotocol.com)",
+  "url": "https://agentclientprotocol.com/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/agentclientprotocol.com/",
+  "note": "Origin publishing 6 machine-native manifests (Agent2Agent Protocol, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Content Signals Policy (+2 more)), measured by /check/agentclientprotocol.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-agenticresources-dev",
+  "name": "Agentic Resources (agenticresources.dev)",
+  "url": "https://agenticresources.dev/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "ard"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/agenticresources.dev/",
+  "note": "Origin publishing 2 machine-native manifests (AI Catalog well-known file, Agentic Resource Discovery), measured by /check/agenticresources.dev/ on 2026-10-23."
+ },
+ {
+  "id": "origin-agentman-ai",
+  "name": "Agentman (agentman.ai)",
+  "url": "https://agentman.ai/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/agentman.ai/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/agentman.ai/ on 2026-10-23."
+ },
+ {
+  "id": "origin-agentskills-io",
+  "name": "Agent Skills Specification (agentskills.io)",
+  "url": "https://agentskills.io/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/agentskills.io/",
+  "note": "Origin publishing 8 machine-native manifests (Agent2Agent Protocol, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Content Signals Policy (+4 more)), measured by /check/agentskills.io/ on 2026-10-25."
+ },
+ {
+  "id": "origin-aioseo-com",
+  "name": "All in One SEO (aioseo.com)",
+  "url": "https://aioseo.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/aioseo.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/aioseo.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-airtable-com",
+  "name": "Airtable (airtable.com)",
+  "url": "https://airtable.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "oauth-cimd"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/airtable.com/",
+  "note": "Origin publishing 2 machine-native manifests (AI Catalog well-known file, OAuth Client ID Metadata Document), measured by /check/airtable.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-aitxt-ing",
+  "name": "aitxt.ing",
+  "url": "https://aitxt.ing/",
+  "type": "origin",
+  "implements": [
+   "cloudflare-content-signals-policy",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/aitxt.ing/",
+  "note": "Origin publishing 2 machine-native manifests (Content Signals Policy, llms.txt), measured by /check/aitxt.ing/ on 2026-10-23."
+ },
+ {
+  "id": "origin-amplitude-com",
+  "name": "Amplitude (amplitude.com)",
+  "url": "https://amplitude.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/amplitude.com/",
+  "note": "Origin publishing 7 machine-native manifests (AI Catalog well-known file, AI Crawler User-Agent Tokens in robots.txt, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs (+3 more)), measured by /check/amplitude.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-ant-intl-com",
+  "name": "Ant International (ant-intl.com)",
+  "url": "https://ant-intl.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/ant-intl.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/ant-intl.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-ap-org",
+  "name": "Associated Press (ap.org)",
+  "url": "https://ap.org/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "cloudflare-content-signals-policy"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/ap.org/",
+  "note": "Origin publishing 2 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, Content Signals Policy), measured by /check/ap.org/ on 2026-10-23."
+ },
+ {
+  "id": "origin-api-agoraproto-org",
+  "name": "Agora Protocol API (api.agoraproto.org)",
+  "url": "https://api.agoraproto.org/",
+  "type": "origin",
+  "implements": [
+   "ads"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/api.agoraproto.org/",
+  "note": "Origin publishing 1 machine-native manifest (Agent Directory Service), measured by /check/api.agoraproto.org/ on 2026-10-23."
+ },
+ {
+  "id": "origin-api-githubcopilot-com",
+  "name": "GitHub Copilot MCP API (api.githubcopilot.com)",
+  "url": "https://api.githubcopilot.com/mcp/server-card",
+  "type": "origin",
+  "implements": [
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/api.githubcopilot.com/",
+  "note": "Origin publishing 2 machine-native manifests (Model Context Protocol, MCP Server Cards (SEP-2127)), measured by /check/api.githubcopilot.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-api-proof-com",
+  "name": "Proof API (api.proof.com)",
+  "url": "https://api.proof.com/.well-known/ard.json",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "ard",
+   "cloudflare-content-signals-policy",
+   "llms-txt",
+   "mcp",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/api.proof.com/",
+  "note": "Origin publishing 8 machine-native manifests (AI Catalog well-known file, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Agentic Resource Discovery (+4 more)), measured by /check/api.proof.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-apideck-com",
+  "name": "Apideck Unified API (apideck.com)",
+  "url": "https://apideck.com/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/apideck.com/",
+  "note": "Origin publishing 9 machine-native manifests (Streamable HTTP MCP server at https://mcp.apideck.dev/mcp, SEP-2127 server card, A2A agent card, RFC 9727 API catalog, and Agent Skills index), verified via /check/apideck.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-apify-com",
+  "name": "Apify (apify.com)",
+  "url": "https://apify.com/",
+  "type": "origin",
+  "implements": [
+   "agents-md",
+   "ai-catalog-well-known-file",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/apify.com/",
+  "note": "Origin publishing 11 machine-native manifests (AGENTS.md, AI Catalog well-known file, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs (+7 more)), measured by /check/apify.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-appwrite-io",
+  "name": "Appwrite Backend Platform (appwrite.io)",
+  "url": "https://appwrite.io/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/appwrite.io/",
+  "note": "Origin publishing 6 machine-native manifests (Streamable HTTP MCP server at https://mcp.appwrite.io, SEP-2127 server card, Agent Skills index, and llms.txt), verified via /check/appwrite.io/ on 2026-10-25."
+ },
+ {
+  "id": "origin-arcade-dev",
+  "name": "Arcade AI Tool-Calling Runtime (arcade.dev)",
+  "url": "https://arcade.dev/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "api-catalog-rfc9727",
+   "ard",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/arcade.dev/",
+  "note": "Origin publishing 9 machine-native manifests (Streamable HTTP MCP server at https://www.arcade.dev/mcp, SEP-2127 server card, ARD catalog, RFC 9727 API catalog, and Markdown for Agents), verified via /check/arcade.dev/ on 2026-10-25."
+ },
+ {
+  "id": "origin-asana-com",
+  "name": "Asana (asana.com)",
+  "url": "https://asana.com/",
+  "type": "origin",
+  "implements": [
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/asana.com/",
+  "note": "Origin publishing 2 machine-native manifests (Markdown for Agents, llms.txt), measured by /check/asana.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-atlan-com",
+  "name": "Atlan (atlan.com)",
+  "url": "https://atlan.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/atlan.com/",
+  "note": "Origin publishing 4 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, Content Signals Policy, Markdown for Agents, llms.txt), measured by /check/atlan.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-atlassian-com",
+  "name": "Atlassian (atlassian.com)",
+  "url": "https://atlassian.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/atlassian.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/atlassian.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-atscale-com",
+  "name": "AtScale (atscale.com)",
+  "url": "https://atscale.com/",
+  "type": "origin",
+  "implements": [
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/atscale.com/",
+  "note": "Origin publishing 1 machine-native manifest (OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)), measured by /check/atscale.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-auth-md-com",
+  "name": "auth.md Specification Origin (auth-md.com)",
+  "url": "https://auth-md.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "cloudflare-content-signals-policy",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/auth-md.com/",
+  "note": "Origin publishing 4 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, Agent Skills, Content Signals Policy, llms.txt), measured by /check/auth-md.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-beehiiv-com",
+  "name": "beehiiv Newsletter Platform (beehiiv.com)",
+  "url": "https://beehiiv.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/beehiiv.com/",
+  "note": "Origin publishing 9 machine-native manifests (Streamable HTTP MCP server at https://www.beehiiv.com/api/mcp, SEP-2127 server card, RFC 9727 API catalog, and llms.txt), verified via /check/beehiiv.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-betterstack-com",
+  "name": "Better Stack Observability (betterstack.com)",
+  "url": "https://betterstack.com/",
+  "type": "origin",
+  "implements": [
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/betterstack.com/",
+  "note": "Origin publishing 5 machine-native manifests (Streamable HTTP MCP server at https://mcp.betterstack.com, SEP-2127 server card, RFC 9727 API catalog, and Markdown for Agents), verified via /check/betterstack.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-bird-com",
+  "name": "Bird (bird.com)",
+  "url": "https://bird.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "ard",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/bird.com/",
+  "note": "Origin publishing 9 machine-native manifests (AI Catalog well-known file, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Agentic Resource Discovery (+5 more)), measured by /check/bird.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-blakecrosley-com",
+  "name": "blakecrosley.com",
+  "url": "https://blakecrosley.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/blakecrosley.com/",
+  "note": "Origin publishing 2 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, llms.txt), measured by /check/blakecrosley.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-blog-cloudflare-com",
+  "name": "blog.cloudflare.com",
+  "url": "https://blog.cloudflare.com/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/blog.cloudflare.com/",
+  "note": "Origin publishing 7 machine-native manifests (Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Content Signals Policy, Markdown for Agents (+3 more)), measured by /check/blog.cloudflare.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-bmdpat-com",
+  "name": "bmdpat.com",
+  "url": "https://bmdpat.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/bmdpat.com/",
+  "note": "Origin publishing 2 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, llms.txt), measured by /check/bmdpat.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-browser-use-com",
+  "name": "Browser Use Web Agent Runtime (browser-use.com)",
+  "url": "https://browser-use.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "cloudflare-content-signals-policy",
+   "llms-txt",
+   "mcp",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/browser-use.com/",
+  "note": "Origin publishing 5 machine-native manifests (Streamable HTTP MCP server at https://api.browser-use.com/mcp and llms.txt), verified via /check/browser-use.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-byteiota-com",
+  "name": "byteiota.com",
+  "url": "https://byteiota.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/byteiota.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/byteiota.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-cafe24-com",
+  "name": "cafe24.com",
+  "url": "https://www.cafe24.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt",
+   "mcp",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/cafe24.com/",
+  "note": "Origin publishing 2 machine-native manifests (llms.txt, OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)), measured by /check/cafe24.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-cal-com",
+  "name": "Cal.com Scheduling Infrastructure (cal.com)",
+  "url": "https://cal.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/cal.com/",
+  "note": "Origin publishing 9 machine-native manifests (Streamable HTTP MCP server at https://mcp.cal.com/mcp, SEP-2127 server card, RFC 9727 API catalog, Agent Skills index, and llms.txt), verified via /check/cal.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-canva-com",
+  "name": "Canva (canva.com)",
+  "url": "https://canva.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/canva.com/",
+  "note": "Origin publishing 1 machine-native manifest (AI Crawler User-Agent Tokens in robots.txt), measured by /check/canva.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-cerebrium-ai",
+  "name": "Cerebrium Serverless AI (cerebrium.ai)",
+  "url": "https://cerebrium.ai/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/cerebrium.ai/",
+  "note": "Origin publishing 6 machine-native manifests (Streamable HTTP MCP server at https://cerebrium.ai/docs/mcp, SEP-2127 server card, A2A agent card, Agent Skills index, and llms.txt), verified via /check/cerebrium.ai/ on 2026-10-25."
+ },
+ {
+  "id": "origin-chatgpt-com",
+  "name": "chatgpt.com",
+  "url": "https://chatgpt.com/",
+  "type": "origin",
+  "implements": [
+   "webbotauth"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/chatgpt.com/",
+  "note": "Origin publishing 1 machine-native manifest (Web Bot Auth HTTP Message Signatures), measured by /check/chatgpt.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-checklyhq-com",
+  "name": "Checkly Synthetic Monitoring (checklyhq.com)",
+  "url": "https://checklyhq.com/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/checklyhq.com/",
+  "note": "Origin publishing 5 machine-native manifests (Streamable HTTP MCP server at https://api.checklyhq.com/mcp, SEP-2127 server card, Agent Skills index, and llms.txt), verified via /check/checklyhq.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-chrishood-com",
+  "name": "Chris Hood (chrishood.com)",
+  "url": "https://chrishood.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/chrishood.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/chrishood.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-circle-com",
+  "name": "circle.com",
+  "url": "https://circle.com/",
+  "type": "origin",
+  "implements": [
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/circle.com/",
+  "note": "Origin publishing 3 machine-native manifests (Content Signals Policy, Markdown for Agents, llms.txt), measured by /check/circle.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-clickhouse-com",
+  "name": "ClickHouse (clickhouse.com)",
+  "url": "https://clickhouse.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/clickhouse.com/",
+  "note": "Origin publishing 8 machine-native manifests (AI Catalog well-known file, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Content Signals Policy (+4 more)), measured by /check/clickhouse.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-cloud-tencent-com",
+  "name": "cloud.tencent.com",
+  "url": "https://cloud.tencent.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/cloud.tencent.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/cloud.tencent.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-cloudandsre-com",
+  "name": "cloudandsre.com",
+  "url": "https://cloudandsre.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/cloudandsre.com/",
+  "note": "Origin publishing 2 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, llms.txt), measured by /check/cloudandsre.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-cloudflare-com",
+  "name": "Cloudflare (cloudflare.com)",
+  "url": "https://cloudflare.com/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "auth-md",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/cloudflare.com/",
+  "note": "Origin publishing 7 machine-native manifests (Agent2Agent Protocol, AI Crawler User-Agent Tokens in robots.txt, Agent Skills, auth.md (+3 more)), measured by /check/cloudflare.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-code-visualstudio-com",
+  "name": "code.visualstudio.com",
+  "url": "https://code.visualstudio.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/code.visualstudio.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/code.visualstudio.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-coinbase-com",
+  "name": "Coinbase (coinbase.com)",
+  "url": "https://coinbase.com/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-cimd"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/coinbase.com/",
+  "note": "Origin publishing 4 machine-native manifests (Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, llms.txt, OAuth Client ID Metadata Document), measured by /check/coinbase.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-convex-dev",
+  "name": "Convex Reactive Backend (convex.dev)",
+  "url": "https://convex.dev/",
+  "type": "origin",
+  "implements": [
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/convex.dev/",
+  "note": "Origin publishing 4 machine-native manifests (RFC 9727 API catalog (https://api.convex.dev/v1/openapi.json), Markdown for Agents, and llms.txt), verified via /check/convex.dev/ on 2026-10-25."
+ },
+ {
+  "id": "origin-copilotkit-ai",
+  "name": "copilotkit.ai",
+  "url": "https://copilotkit.ai/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/copilotkit.ai/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/copilotkit.ai/ on 2026-10-23."
+ },
+ {
+  "id": "origin-crawlytics-app",
+  "name": "crawlytics.app",
+  "url": "https://crawlytics.app/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/crawlytics.app/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/crawlytics.app/ on 2026-10-23."
+ },
+ {
+  "id": "origin-crewai-com",
+  "name": "crewai.com",
+  "url": "https://crewai.com/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/crewai.com/",
+  "note": "Origin publishing 8 machine-native manifests (Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Content Signals Policy, Markdown for Agents (+4 more)), measured by /check/crewai.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-cursor-com",
+  "name": "Cursor Origin (cursor.com)",
+  "url": "https://cursor.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/cursor.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/cursor.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-danads-com",
+  "name": "danads.com",
+  "url": "https://danads.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/danads.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/danads.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-danilchenko-dev",
+  "name": "danilchenko.dev",
+  "url": "https://danilchenko.dev/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/danilchenko.dev/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/danilchenko.dev/ on 2026-10-23."
+ },
+ {
+  "id": "origin-datafa-st",
+  "name": "DataFast Analytics (datafa.st)",
+  "url": "https://datafa.st/",
+  "type": "origin",
+  "implements": [
+   "llms-txt",
+   "mcp",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/datafa.st/",
+  "note": "Origin publishing 4 machine-native manifests (Streamable HTTP MCP server at https://datafa.st/api/mcp and llms.txt), verified via /check/datafa.st/ on 2026-10-25."
+ },
+ {
+  "id": "origin-dchub-cloud",
+  "name": "DC Hub (dchub.cloud)",
+  "url": "https://dchub.cloud/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "agents-md",
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-cimd",
+   "oauth-metadata-for-agents",
+   "webbotauth"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/dchub.cloud/",
+  "note": "Origin publishing 14 machine-native manifests (Agent2Agent Protocol, AGENTS.md, AI Catalog well-known file, AI Crawler User-Agent Tokens in robots.txt (+10 more)), measured by /check/dchub.cloud/ on 2026-10-25."
+ },
+ {
+  "id": "origin-deepmind-google",
+  "name": "deepmind.google",
+  "url": "https://deepmind.google/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/deepmind.google/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/deepmind.google/ on 2026-10-23."
+ },
+ {
+  "id": "origin-descope-com",
+  "name": "Descope Identity & Agent Auth (descope.com)",
+  "url": "https://descope.com/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/descope.com/",
+  "note": "Origin publishing 6 machine-native manifests (Streamable HTTP MCP server at https://mcp.descope.com, SEP-2127 server card, Agent Skills index, and Markdown for Agents), verified via /check/descope.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-desvela-dev",
+  "name": "Desvela (desvela.dev)",
+  "url": "https://desvela.dev/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "ard",
+   "llms-txt",
+   "mcp"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/desvela.dev/",
+  "note": "Origin publishing 4 machine-native manifests (AI Catalog well-known file, Agentic Resource Discovery, llms.txt, Model Context Protocol), measured by /check/desvela.dev/ on 2026-10-25."
+ },
+ {
+  "id": "origin-dev-to",
+  "name": "dev.to",
+  "url": "https://dev.to/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/dev.to/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/dev.to/ on 2026-10-23."
+ },
+ {
+  "id": "origin-developer-visa-com",
+  "name": "Visa Developer Center (developer.visa.com)",
+  "url": "https://developer.visa.com/",
+  "type": "origin",
+  "implements": [
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/developer.visa.com/",
+  "note": "Origin publishing 1 machine-native manifest (OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)), measured by /check/developer.visa.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-developers-openai-com",
+  "name": "OpenAI Developer Docs (developers.openai.com)",
+  "url": "https://developers.openai.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/developers.openai.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/developers.openai.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-devin-ai",
+  "name": "Devin Origin (devin.ai)",
+  "url": "https://devin.ai/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/devin.ai/",
+  "note": "Origin publishing 3 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, Markdown for Agents, llms.txt), measured by /check/devin.ai/ on 2026-10-23."
+ },
+ {
+  "id": "origin-devtoollab-com",
+  "name": "devtoollab.com",
+  "url": "https://devtoollab.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/devtoollab.com/",
+  "note": "Origin publishing 2 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, llms.txt), measured by /check/devtoollab.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-docs-adcontextprotocol-org",
+  "name": "Ad Context Protocol Docs (docs.adcontextprotocol.org)",
+  "url": "https://docs.adcontextprotocol.org/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "agents-md",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.adcontextprotocol.org/",
+  "note": "Origin publishing 7 machine-native manifests (Agent2Agent Protocol, AGENTS.md, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs (+3 more)), measured by /check/docs.adcontextprotocol.org/ on 2026-10-23."
+ },
+ {
+  "id": "origin-docs-ag-ui-com",
+  "name": "AG-UI Documentation Origin (docs.ag-ui.com)",
+  "url": "https://docs.ag-ui.com/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.ag-ui.com/",
+  "note": "Origin publishing 6 machine-native manifests (Agent2Agent Protocol, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Content Signals Policy (+2 more)), measured by /check/docs.ag-ui.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-docs-augmentcode-com",
+  "name": "Augment Code Docs (docs.augmentcode.com)",
+  "url": "https://docs.augmentcode.com/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.augmentcode.com/",
+  "note": "Origin publishing 6 machine-native manifests (Agent2Agent Protocol, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Content Signals Policy (+2 more)), measured by /check/docs.augmentcode.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-docs-github-com",
+  "name": "docs.github.com",
+  "url": "https://docs.github.com/",
+  "type": "origin",
+  "implements": [
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.github.com/",
+  "note": "Origin publishing 2 machine-native manifests (Markdown for Agents, llms.txt), measured by /check/docs.github.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-docs-n8n-io",
+  "name": "n8n Documentation Origin (docs.n8n.io)",
+  "url": "https://docs.n8n.io/",
+  "type": "origin",
+  "implements": [
+   "agents-md",
+   "ai-catalog-well-known-file",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.n8n.io/",
+  "note": "Origin publishing 7 machine-native manifests (AGENTS.md, AI Catalog well-known file, Content Signals Policy, Markdown for Agents (+3 more)), measured by /check/docs.n8n.io/ on 2026-10-23."
+ },
+ {
+  "id": "origin-docs-perplexity-ai",
+  "name": "Perplexity API Docs (docs.perplexity.ai)",
+  "url": "https://docs.perplexity.ai/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "agents-md",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.perplexity.ai/",
+  "note": "Origin publishing 7 machine-native manifests (Agent2Agent Protocol, AGENTS.md, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs (+3 more)), measured by /check/docs.perplexity.ai/ on 2026-10-23."
+ },
+ {
+  "id": "origin-docs-stripe-com",
+  "name": "Stripe Documentation (docs.stripe.com)",
+  "url": "https://docs.stripe.com/",
+  "type": "origin",
+  "implements": [
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.stripe.com/",
+  "note": "Origin publishing 3 machine-native manifests (Content Signals Policy, Markdown for Agents, llms.txt), measured by /check/docs.stripe.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-docs-warp-dev",
+  "name": "docs.warp.dev",
+  "url": "https://docs.warp.dev/",
+  "type": "origin",
+  "implements": [
+   "cloudflare-content-signals-policy",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.warp.dev/",
+  "note": "Origin publishing 2 machine-native manifests (Content Signals Policy, llms.txt), measured by /check/docs.warp.dev/ on 2026-10-23."
+ },
+ {
+  "id": "origin-dreaming-press",
+  "name": "Dreaming Press (dreaming.press)",
+  "url": "https://dreaming.press/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "agents-txt",
+   "ai-crawler-tokens-robots",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/dreaming.press/",
+  "note": "Origin publishing 4 machine-native manifests (Agent2Agent Protocol, agents.txt, AI Crawler User-Agent Tokens in robots.txt, llms.txt), measured by /check/dreaming.press/ on 2026-10-23."
+ },
+ {
+  "id": "origin-dri-es",
+  "name": "Dries Buytaert (dri.es)",
+  "url": "https://dri.es/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "aipref-content-usage-attachment",
+   "aipref-vocabulary",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "mcp"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/dri.es/",
+  "note": "Origin publishing 5 machine-native manifests (AI Catalog well-known file, AIPREF Content-Usage Attachment, AIPREF Vocabulary, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs (+1 more)), measured by /check/dri.es/ on 2026-10-23."
+ },
+ {
+  "id": "origin-drupal-agtp",
+  "name": "Drupal AGTP Module",
+  "url": "https://www.drupal.org/project/agtp",
+  "type": "origin",
+  "implements": [
+   "agtp"
+  ],
+  "observed": "2026-06-05",
+  "date_basis": "source",
+  "source": "https://www.drupal.org/project/agtp",
+  "note": "Official Drupal module exposing site identity and agent capability manifests over the Agent Transfer Protocol (AGTP)."
+ },
+ {
+  "id": "origin-elsevier-com",
+  "name": "Elsevier (elsevier.com)",
+  "url": "https://elsevier.com/",
+  "type": "origin",
+  "implements": [
+   "cloudflare-markdown-for-agents",
+   "tdmrep"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/elsevier.com/",
+  "note": "Origin publishing 2 machine-native manifests (Markdown for Agents, Text and Data Mining Reservation Protocol), measured by /check/elsevier.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-eodly-io",
+  "name": "Eodly (eodly.io)",
+  "url": "https://eodly.io/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "ard",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/eodly.io/",
+  "note": "Origin publishing 12 machine-native manifests (AI Catalog well-known file, AI Crawler User-Agent Tokens in robots.txt, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs (+8 more)), measured by /check/eodly.io/ on 2026-10-25."
+ },
+ {
+  "id": "origin-etsy-com",
+  "name": "etsy.com",
+  "url": "https://etsy.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/etsy.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/etsy.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-facilitator-live-nevermined-app",
+  "name": "facilitator.live.nevermined.app",
+  "url": "https://facilitator.live.nevermined.app/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/facilitator.live.nevermined.app/",
+  "note": "Origin publishing 3 machine-native manifests (AI Catalog well-known file, OAuth Client ID Metadata Document, OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)), measured by /check/facilitator.live.nevermined.app/ on 2026-10-23."
+ },
+ {
+  "id": "origin-factory-com",
+  "name": "factory.com",
+  "url": "https://factory.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/factory.com/",
+  "note": "Origin publishing 3 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, Markdown for Agents, llms.txt), measured by /check/factory.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-figma-com",
+  "name": "Figma (figma.com)",
+  "url": "https://figma.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "identity-assertion-authz-grant"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/figma.com/",
+  "note": "Origin publishing 2 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, Identity Assertion JWT Authorization Grant), measured by /check/figma.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-firecrawl-dev",
+  "name": "Firecrawl (firecrawl.dev)",
+  "url": "https://firecrawl.dev/",
+  "type": "origin",
+  "implements": [
+   "auth-md",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/firecrawl.dev/",
+  "note": "Origin publishing 6 machine-native manifests (auth.md, Content Signals Policy, Markdown for Agents, llms.txt (+2 more)), measured by /check/firecrawl.dev/ on 2026-10-23."
+ },
+ {
+  "id": "origin-fly-io",
+  "name": "Fly.io (fly.io)",
+  "url": "https://fly.io/",
+  "type": "origin",
+  "implements": [
+   "agents-md",
+   "ai-catalog-well-known-file",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "ard",
+   "auth-md",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/fly.io/",
+  "note": "Origin publishing 9 machine-native manifests (AGENTS.md, AI Catalog well-known file, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs (+5 more)), measured by /check/fly.io/ on 2026-10-23."
+ },
+ {
+  "id": "origin-getdbt-com",
+  "name": "getdbt.com",
+  "url": "https://getdbt.com/",
+  "type": "origin",
+  "implements": [
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/getdbt.com/",
+  "note": "Origin publishing 2 machine-native manifests (Markdown for Agents, llms.txt), measured by /check/getdbt.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-getlago-com",
+  "name": "Lago (getlago.com)",
+  "url": "https://getlago.com/",
+  "type": "origin",
+  "implements": [
+   "agents-txt",
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/getlago.com/",
+  "note": "Origin publishing 10 machine-native manifests (agents.txt, AI Catalog well-known file, AI Crawler User-Agent Tokens in robots.txt, Agent Skills (+6 more)), measured by /check/getlago.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-getzep-com",
+  "name": "Zep Long-Term Agent Memory (getzep.com)",
+  "url": "https://getzep.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/getzep.com/",
+  "note": "Origin publishing 7 machine-native manifests (Streamable HTTP MCP server at https://docs-mcp.getzep.com/mcp, SEP-2127 server card, RFC 9727 API catalog, and llms.txt), verified via /check/getzep.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-gitbook-com",
+  "name": "GitBook (gitbook.com)",
+  "url": "https://gitbook.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/gitbook.com/",
+  "note": "Origin publishing 5 machine-native manifests (AI Catalog well-known file, Content Signals Policy, Markdown for Agents, llms.txt (+1 more)), measured by /check/gitbook.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-github-com",
+  "name": "GitHub (github.com)",
+  "url": "https://github.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/github.com/",
+  "note": "Origin publishing 3 machine-native manifests (AI Catalog well-known file, AI Crawler User-Agent Tokens in robots.txt, llms.txt), measured by /check/github.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-glama-ai",
+  "name": "Glama MCP Gateway & Directory (glama.ai)",
+  "url": "https://glama.ai/",
+  "type": "origin",
+  "implements": [
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "llms-txt",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/glama.ai/",
+  "note": "Origin publishing 4 machine-native manifests (RFC 9727 API catalog (https://glama.ai/api/mcp/openapi.json) and llms.txt), verified via /check/glama.ai/ on 2026-10-25."
+ },
+ {
+  "id": "origin-google-cloud-okf",
+  "name": "Google Cloud Open Knowledge Format (OKF) Bundles",
+  "url": "https://cloud.google.com/blog/products/data-analytics/introducing-open-knowledge-format",
+  "type": "origin",
+  "implements": [
+   "okf"
+  ],
+  "observed": "2026-08-15",
+  "date_basis": "source",
+  "source": "https://github.com/GoogleCloudPlatform/open-knowledge-format",
+  "note": "Google Cloud Knowledge Catalog and BigQuery sample bundles published in Open Knowledge Format (OKF v0.2)."
+ },
+ {
+  "id": "origin-graphlit-com",
+  "name": "Graphlit Knowledge Retrieval Platform (graphlit.com)",
+  "url": "https://graphlit.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt",
+   "mcp",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/graphlit.com/",
+  "note": "Origin publishing 4 machine-native manifests (Streamable HTTP MCP server at https://graphlit.com/mcp and llms.txt), verified via /check/graphlit.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-gtmetrix-com",
+  "name": "GTmetrix (gtmetrix.com)",
+  "url": "https://gtmetrix.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/gtmetrix.com/",
+  "note": "Origin publishing 4 machine-native manifests (AI Catalog well-known file, Model Context Protocol, MCP Server Cards (SEP-2127), OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)), measured by /check/gtmetrix.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-gumroad-com",
+  "name": "Gumroad Creator Commerce (gumroad.com)",
+  "url": "https://gumroad.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt",
+   "mcp",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/gumroad.com/",
+  "note": "Origin publishing 3 machine-native manifests (Streamable HTTP MCP server at https://gumroad.com/muse/v1/mcp, OAuth Protected Resource metadata, and llms.txt), verified via /check/gumroad.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-honeyb-ai",
+  "name": "Honeycomb AI (honeyb.ai)",
+  "url": "https://honeyb.ai/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/honeyb.ai/",
+  "note": "Origin publishing 2 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, llms.txt), measured by /check/honeyb.ai/ on 2026-10-23."
+ },
+ {
+  "id": "origin-hostinger-com",
+  "name": "Hostinger (hostinger.com)",
+  "url": "https://hostinger.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "auth-md",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/hostinger.com/",
+  "note": "Origin publishing 11 machine-native manifests (AI Catalog well-known file, AI Crawler User-Agent Tokens in robots.txt, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs (+7 more)), measured by /check/hostinger.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-hubspot-com",
+  "name": "HubSpot (hubspot.com)",
+  "url": "https://hubspot.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/hubspot.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/hubspot.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-huggingface-co",
+  "name": "Hugging Face (huggingface.co)",
+  "url": "https://huggingface.co/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "api-catalog-rfc9727",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/huggingface.co/",
+  "note": "Origin publishing 6 machine-native manifests (AI Catalog well-known file, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Model Context Protocol, MCP Server Cards (SEP-2127) (+2 more)), measured by /check/huggingface.co/ on 2026-10-23."
+ },
+ {
+  "id": "origin-hyperbrowser-ai",
+  "name": "Hyperbrowser Cloud Browser for Agents (hyperbrowser.ai)",
+  "url": "https://hyperbrowser.ai/",
+  "type": "origin",
+  "implements": [
+   "llms-txt",
+   "webbotauth"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/hyperbrowser.ai/",
+  "note": "Origin publishing 2 machine-native manifests (RFC 9421 Web Bot Auth cryptographic signature headers and llms.txt), verified via /check/hyperbrowser.ai/ on 2026-10-25."
+ },
+ {
+  "id": "origin-img-ly",
+  "name": "IMG.LY (img.ly)",
+  "url": "https://img.ly/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "api-catalog-rfc9727",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/img.ly/",
+  "note": "Origin publishing 4 machine-native manifests (AI Catalog well-known file, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Markdown for Agents, llms.txt), measured by /check/img.ly/ on 2026-10-23."
+ },
+ {
+  "id": "origin-infisical-com",
+  "name": "Infisical Secrets Management (infisical.com)",
+  "url": "https://infisical.com/",
+  "type": "origin",
+  "implements": [
+   "api-catalog-rfc9727",
+   "ard",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/infisical.com/",
+  "note": "Origin publishing 5 machine-native manifests (SEP-2127 server card, ARD catalog, RFC 9727 API catalog, Markdown for Agents, and llms.txt), verified via /check/infisical.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-juliamaehler-com",
+  "name": "juliamaehler.com",
+  "url": "https://juliamaehler.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/juliamaehler.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/juliamaehler.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-karangoyal-cc",
+  "name": "karangoyal.cc",
+  "url": "https://karangoyal.cc/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/karangoyal.cc/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/karangoyal.cc/ on 2026-10-23."
+ },
+ {
+  "id": "origin-kentcdodds-com",
+  "name": "Kent C. Dodds (kentcdodds.com)",
+  "url": "https://kentcdodds.com/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/kentcdodds.com/",
+  "note": "Origin publishing 8 machine-native manifests (Streamable HTTP MCP server at https://kentcdodds.com/mcp, SEP-2127 server card, OAuth CIMD, OAuth Protected Resource metadata, RFC 9727 API catalog, and Agent Skills index), verified via /check/kentcdodds.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-kilo-ai",
+  "name": "kilo.ai",
+  "url": "https://kilo.ai/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/kilo.ai/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/kilo.ai/ on 2026-10-23."
+ },
+ {
+  "id": "origin-kochava-com",
+  "name": "kochava.com",
+  "url": "https://kochava.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/kochava.com/",
+  "note": "Origin publishing 3 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, llms.txt, OAuth Client ID Metadata Document), measured by /check/kochava.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-librechat-ai",
+  "name": "LibreChat Open-Source AI Workspace (librechat.ai)",
+  "url": "https://librechat.ai/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "llms-txt",
+   "webbotauth"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/librechat.ai/",
+  "note": "Origin publishing 5 machine-native manifests (Agent Skills index, RFC 9727 API catalog, and llms.txt), verified via /check/librechat.ai/ on 2026-10-25."
+ },
+ {
+  "id": "origin-linear-app",
+  "name": "Linear (linear.app)",
+  "url": "https://linear.app/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/linear.app/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/linear.app/ on 2026-10-23."
+ },
+ {
+  "id": "origin-loops-so",
+  "name": "Loops (loops.so)",
+  "url": "https://loops.so/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "anthropic-agent-skills-format",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/loops.so/",
+  "note": "Origin publishing 8 machine-native manifests (AI Catalog well-known file, Agent Skills, Markdown for Agents, llms.txt (+4 more)), measured by /check/loops.so/ on 2026-10-23."
+ },
+ {
+  "id": "origin-lovable-dev",
+  "name": "Lovable AI Full-Stack Builder (lovable.dev)",
+  "url": "https://lovable.dev/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "identity-assertion-authz-grant",
+   "llms-txt",
+   "oauth-cimd"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/lovable.dev/",
+  "note": "Origin publishing 4 machine-native manifests (OAuth Client ID Metadata Document (CIMD), Identity Assertion Authorization Grant, AI Crawler tokens in robots.txt, and llms.txt), verified via /check/lovable.dev/ on 2026-10-25."
+ },
+ {
+  "id": "origin-mapsoft-com",
+  "name": "mapsoft.com",
+  "url": "https://mapsoft.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/mapsoft.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/mapsoft.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-mastra-ai",
+  "name": "mastra.ai",
+  "url": "https://mastra.ai/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/mastra.ai/",
+  "note": "Origin publishing 3 machine-native manifests (Agent Skills, Markdown for Agents, llms.txt), measured by /check/mastra.ai/ on 2026-10-23."
+ },
+ {
+  "id": "origin-mcp-sentry-dev",
+  "name": "mcp.sentry.dev",
+  "url": "https://mcp.sentry.dev/",
+  "type": "origin",
+  "implements": [
+   "llms-txt",
+   "oauth-cimd"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/mcp.sentry.dev/",
+  "note": "Origin publishing 2 machine-native manifests (llms.txt, OAuth Client ID Metadata Document), measured by /check/mcp.sentry.dev/ on 2026-10-23."
+ },
+ {
+  "id": "origin-medium-com",
+  "name": "medium.com",
+  "url": "https://medium.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "rsl"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/medium.com/",
+  "note": "Origin publishing 2 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, Really Simple Licensing), measured by /check/medium.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-metricspot-com",
+  "name": "MetricSpot (metricspot.com)",
+  "url": "https://metricspot.com/",
+  "type": "origin",
+  "implements": [
+   "agents-md",
+   "agents-txt",
+   "ai-crawler-tokens-robots",
+   "api-catalog-rfc9727",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/metricspot.com/",
+  "note": "Origin publishing 4 machine-native manifests (AGENTS.md, agents.txt, AI Crawler User-Agent Tokens in robots.txt, llms.txt), measured by /check/metricspot.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-mintlify-com",
+  "name": "Mintlify (mintlify.com)",
+  "url": "https://mintlify.com/",
+  "type": "origin",
+  "implements": [
+   "auth-md",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/mintlify.com/",
+  "note": "Origin publishing 5 machine-native manifests (auth.md, Markdown for Agents, llms.txt, Model Context Protocol (+1 more)), measured by /check/mintlify.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-modelcontextprotocol-io",
+  "name": "Model Context Protocol Docs (modelcontextprotocol.io)",
+  "url": "https://modelcontextprotocol.io/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/modelcontextprotocol.io/",
+  "note": "Origin publishing 8 machine-native manifests (Agent2Agent Protocol, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Content Signals Policy (+4 more)), measured by /check/modelcontextprotocol.io/ on 2026-10-25."
+ },
+ {
+  "id": "origin-morphllm-com",
+  "name": "Morph Fast Apply LLM (morphllm.com)",
+  "url": "https://morphllm.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/morphllm.com/",
+  "note": "Origin publishing 8 machine-native manifests (SEP-2127 package server card (@morphllm/morphmcp), RFC 9727 API catalog, Agent Skills index, and Markdown for Agents), verified via /check/morphllm.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-motherduck-com",
+  "name": "MotherDuck Serverless DuckDB (motherduck.com)",
+  "url": "https://motherduck.com/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/motherduck.com/",
+  "note": "Origin publishing 6 machine-native manifests (Streamable HTTP MCP server at https://api.motherduck.com/mcp, SEP-2127 server card, Agent Skills index, and llms.txt), verified via /check/motherduck.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-mvnrepository-com",
+  "name": "mvnrepository.com",
+  "url": "https://mvnrepository.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/mvnrepository.com/",
+  "note": "Origin publishing 1 machine-native manifest (AI Crawler User-Agent Tokens in robots.txt), measured by /check/mvnrepository.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-neon-com",
+  "name": "Neon Serverless Postgres (neon.com)",
+  "url": "https://neon.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "auth-md",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/neon.com/",
+  "note": "Origin publishing 9 machine-native manifests (AI Catalog well-known file, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, auth.md (+5 more)), measured by /check/neon.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-nextjs-org",
+  "name": "Next.js (nextjs.org)",
+  "url": "https://nextjs.org/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/nextjs.org/",
+  "note": "Origin publishing 3 machine-native manifests (AI Catalog well-known file, Markdown for Agents, llms.txt), measured by /check/nextjs.org/ on 2026-10-23."
+ },
+ {
+  "id": "origin-nomads-com",
+  "name": "Nomads.com (nomads.com)",
+  "url": "https://nomads.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/nomads.com/",
+  "note": "Origin publishing 3 machine-native manifests (Streamable HTTP MCP server at https://nomads.com/mcp, SEP-2127 server card, and llms.txt), verified via /check/nomads.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-novita-ai",
+  "name": "Novita AI (novita.ai)",
+  "url": "https://novita.ai/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/novita.ai/",
+  "note": "Origin publishing 9 machine-native manifests (Streamable HTTP MCP server at https://novita.ai/mcp, SEP-2127 server card, A2A agent card, RFC 9727 API catalog, and Agent Skills index), verified via /check/novita.ai/ on 2026-10-25."
+ },
+ {
+  "id": "origin-okta-com",
+  "name": "okta.com",
+  "url": "https://okta.com/",
+  "type": "origin",
+  "implements": [
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/okta.com/",
+  "note": "Origin publishing 2 machine-native manifests (Markdown for Agents, llms.txt), measured by /check/okta.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-openknowledge-ai",
+  "name": "openknowledge.ai",
+  "url": "https://openknowledge.ai/",
+  "type": "origin",
+  "implements": [
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/openknowledge.ai/",
+  "note": "Origin publishing 2 machine-native manifests (Markdown for Agents, llms.txt), measured by /check/openknowledge.ai/ on 2026-10-23."
+ },
+ {
+  "id": "origin-openstatus-dev",
+  "name": "OpenStatus (openstatus.dev)",
+  "url": "https://openstatus.dev/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/openstatus.dev/",
+  "note": "Origin publishing 7 machine-native manifests (Streamable HTTP MCP server at https://api.openstatus.dev/mcp, SEP-2127 server card, RFC 9727 API catalog, and Agent Skills index), verified via /check/openstatus.dev/ on 2026-10-25."
+ },
+ {
+  "id": "origin-oreilly-com",
+  "name": "oreilly.com",
+  "url": "https://oreilly.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/oreilly.com/",
+  "note": "Origin publishing 2 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, llms.txt), measured by /check/oreilly.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-packalyst-com",
+  "name": "packalyst.com",
+  "url": "https://packalyst.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/packalyst.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/packalyst.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-papermark-io",
+  "name": "Papermark Open-Source DocSend (papermark.io)",
+  "url": "https://papermark.io/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/papermark.io/",
+  "note": "Origin publishing 4 machine-native manifests (Streamable HTTP MCP server at https://mcp.papermark.com/mcp, SEP-2127 server card, Agent Skills index, and llms.txt), verified via /check/papermark.io/ on 2026-10-25."
+ },
+ {
+  "id": "origin-platform-claude-com",
+  "name": "Anthropic Claude Platform (platform.claude.com)",
+  "url": "https://platform.claude.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/platform.claude.com/",
+  "note": "Origin publishing 4 machine-native manifests (AI Catalog well-known file, llms.txt, Model Context Protocol, MCP Server Cards (SEP-2127)), measured by /check/platform.claude.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-pmg-com",
+  "name": "pmg.com",
+  "url": "https://pmg.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/pmg.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/pmg.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-podscan-fm",
+  "name": "Podscan Podcast Intelligence API (podscan.fm)",
+  "url": "https://podscan.fm/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/podscan.fm/",
+  "note": "Origin publishing 9 machine-native manifests (Streamable HTTP MCP server at https://podscan.fm/mcp, SEP-2127 server card, RFC 9727 API catalog, OAuth Protected Resource metadata, and Agent Skills index), verified via /check/podscan.fm/ on 2026-10-25."
+ },
+ {
+  "id": "origin-prisma-io",
+  "name": "Prisma ORM & Postgres (prisma.io)",
+  "url": "https://prisma.io/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/prisma.io/",
+  "note": "Origin publishing 5 machine-native manifests (Streamable HTTP MCP server at https://mcp.prisma.io/mcp, SEP-2127 server card, Agent Skills index, and llms.txt), verified via /check/prisma.io/ on 2026-10-25."
+ },
+ {
+  "id": "origin-proof-com",
+  "name": "Proof (proof.com)",
+  "url": "https://proof.com/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/proof.com/",
+  "note": "Origin publishing 4 machine-native manifests (Agent Skills, Content Signals Policy, Markdown for Agents, llms.txt), measured by /check/proof.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-publica-la",
+  "name": "Publica.la (publica.la)",
+  "url": "https://publica.la/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "ard",
+   "auth-md",
+   "cloudflare-content-signals-policy",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/publica.la/",
+  "note": "Origin publishing 12 machine-native manifests (Agent2Agent Protocol, AI Catalog well-known file, AI Crawler User-Agent Tokens in robots.txt, Agent Skills (+8 more)), measured by /check/publica.la/ on 2026-10-25."
+ },
+ {
+  "id": "origin-pydantic-dev",
+  "name": "Pydantic & Logfire (pydantic.dev)",
+  "url": "https://pydantic.dev/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "ard",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/pydantic.dev/",
+  "note": "Origin publishing 11 machine-native manifests (Streamable HTTP MCP server at https://logfire-us.pydantic.dev/mcp, SEP-2127 server card, A2A agent card, ARD catalog, RFC 9727 API catalog, and Agent Skills index), verified via /check/pydantic.dev/ on 2026-10-25."
+ },
+ {
+  "id": "origin-qail-ai",
+  "name": "QAIL (qail.ai)",
+  "url": "https://qail.ai/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/qail.ai/",
+  "note": "Origin publishing 2 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, llms.txt), measured by /check/qail.ai/ on 2026-10-23."
+ },
+ {
+  "id": "origin-quicknode-com",
+  "name": "QuickNode (quicknode.com)",
+  "url": "https://quicknode.com/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "agents-md",
+   "ai-catalog-well-known-file",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "auth-md",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "webbotauth"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/quicknode.com/",
+  "note": "Origin publishing 10 machine-native manifests (Agent2Agent Protocol, AGENTS.md, AI Catalog well-known file, Agent Skills (+6 more)), measured by /check/quicknode.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-quora-com",
+  "name": "quora.com",
+  "url": "https://quora.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/quora.com/",
+  "note": "Origin publishing 1 machine-native manifest (AI Crawler User-Agent Tokens in robots.txt), measured by /check/quora.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-railway-com",
+  "name": "Railway (railway.com)",
+  "url": "https://railway.com/",
+  "type": "origin",
+  "implements": [
+   "agents-md",
+   "ai-catalog-well-known-file",
+   "api-catalog-rfc9727",
+   "ard",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/railway.com/",
+  "note": "Origin publishing 9 machine-native manifests (AGENTS.md, AI Catalog well-known file, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Agentic Resource Discovery (+5 more)), measured by /check/railway.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-react-email",
+  "name": "React Email by Resend (react.email)",
+  "url": "https://react.email/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/react.email/",
+  "note": "Origin publishing 5 machine-native manifests (Agent Skills index, Content Signals Policy, AI Crawler tokens in robots.txt, Markdown for Agents, and llms.txt), verified via /check/react.email/ on 2026-10-25."
+ },
+ {
+  "id": "origin-reducto-ai",
+  "name": "Reducto Document AI (reducto.ai)",
+  "url": "https://reducto.ai/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/reducto.ai/",
+  "note": "Origin publishing 10 machine-native manifests (Streamable HTTP MCP server at https://mcp.reducto.ai/mcp, SEP-2127 server card, A2A agent card, RFC 9727 API catalog, and Agent Skills index), verified via /check/reducto.ai/ on 2026-10-25."
+ },
+ {
+  "id": "origin-replicate-com",
+  "name": "Replicate (replicate.com)",
+  "url": "https://replicate.com/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/replicate.com/",
+  "note": "Origin publishing 7 machine-native manifests (Hosted MCP endpoint at https://mcp.replicate.com/sse, SEP-2127 server card, RFC 9727 API catalog, Agent Skills index, and llms.txt), verified via /check/replicate.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-resend-com",
+  "name": "Resend (resend.com)",
+  "url": "https://resend.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/resend.com/",
+  "note": "Origin publishing 10 machine-native manifests (AI Catalog well-known file, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Content Signals Policy (+6 more)), measured by /check/resend.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-revid-ai",
+  "name": "Revid AI Video Platform (revid.ai)",
+  "url": "https://revid.ai/",
+  "type": "origin",
+  "implements": [
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/revid.ai/",
+  "note": "Origin publishing 4 machine-native manifests (Streamable HTTP MCP server at https://www.revid.ai/api/mcp, SEP-2127 server card, OAuth Protected Resource metadata, and llms.txt), verified via /check/revid.ai/ on 2026-10-25."
+ },
+ {
+  "id": "origin-rslstandard-org",
+  "name": "rslstandard.org",
+  "url": "https://rslstandard.org/",
+  "type": "origin",
+  "implements": [
+   "rsl"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/rslstandard.org/",
+  "note": "Origin publishing 1 machine-native manifest (Really Simple Licensing), measured by /check/rslstandard.org/ on 2026-10-23."
+ },
+ {
+  "id": "origin-rtblint-org",
+  "name": "rtblint.org",
+  "url": "https://rtblint.org/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/rtblint.org/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/rtblint.org/ on 2026-10-23."
+ },
+ {
+  "id": "origin-rudderstack-com",
+  "name": "RudderStack (rudderstack.com)",
+  "url": "https://rudderstack.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/rudderstack.com/",
+  "note": "Origin publishing 2 machine-native manifests (AI Catalog well-known file, llms.txt), measured by /check/rudderstack.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-runpod-io",
+  "name": "RunPod GPU Cloud (runpod.io)",
+  "url": "https://runpod.io/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/runpod.io/",
+  "note": "Origin publishing 5 machine-native manifests (Agent Skills index, RFC 9727 API catalog, Markdown for Agents, and llms.txt), verified via /check/runpod.io/ on 2026-10-25."
+ },
+ {
+  "id": "origin-samsung-com",
+  "name": "Samsung (samsung.com)",
+  "url": "https://samsung.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/samsung.com/",
+  "note": "Origin publishing 2 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, llms.txt), measured by /check/samsung.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-sanity-io",
+  "name": "Sanity Content Operating System (sanity.io)",
+  "url": "https://sanity.io/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/sanity.io/",
+  "note": "Origin publishing 5 machine-native manifests (Agent Skills index, RFC 9727 API catalog, Markdown for Agents, and llms.txt), verified via /check/sanity.io/ on 2026-10-25."
+ },
+ {
+  "id": "origin-sap-com",
+  "name": "SAP (sap.com)",
+  "url": "https://sap.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/sap.com/",
+  "note": "Origin publishing 2 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, llms.txt), measured by /check/sap.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-scalar-com",
+  "name": "Scalar API Platform (scalar.com)",
+  "url": "https://scalar.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "ard",
+   "auth-md",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-cimd"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/scalar.com/",
+  "note": "Origin publishing 11 machine-native manifests (Streamable HTTP MCP server at https://scalar.com/mcp, SEP-2127 server card, ARD catalog, RFC 9727 API catalog, and Agent Skills index), verified via /check/scalar.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-sentry-io",
+  "name": "Sentry (sentry.io)",
+  "url": "https://sentry.io/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/sentry.io/",
+  "note": "Origin publishing 6 machine-native manifests (Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Content Signals Policy, Markdown for Agents (+2 more)), measured by /check/sentry.io/ on 2026-10-23."
+ },
+ {
+  "id": "origin-shopify-com",
+  "name": "shopify.com",
+  "url": "https://shopify.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/shopify.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/shopify.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-skyvern-com",
+  "name": "Skyvern Browser Automation Agent (skyvern.com)",
+  "url": "https://skyvern.com/",
+  "type": "origin",
+  "implements": [
+   "api-catalog-rfc9727",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/skyvern.com/",
+  "note": "Origin publishing 6 machine-native manifests (Streamable HTTP MCP server at https://api.skyvern.com/mcp, SEP-2127 server card, RFC 9727 API catalog, and llms.txt), verified via /check/skyvern.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-slack-com",
+  "name": "Slack (slack.com)",
+  "url": "https://slack.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/slack.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/slack.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-sleeknova-com",
+  "name": "SleekNova (sleeknova.com)",
+  "url": "https://sleeknova.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "llms-txt",
+   "tdmrep"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/sleeknova.com/",
+  "note": "Origin publishing 3 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, llms.txt, Text and Data Mining Reservation Protocol), measured by /check/sleeknova.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-snowflake-com",
+  "name": "Snowflake (snowflake.com)",
+  "url": "https://snowflake.com/",
+  "type": "origin",
+  "implements": [
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/snowflake.com/",
+  "note": "Origin publishing 2 machine-native manifests (OAuth Client ID Metadata Document, OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)), measured by /check/snowflake.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-spawning-ai-txt",
+  "name": "Spawning AI (ai.txt Origin Steward)",
+  "url": "https://spawning.ai/ai-txt",
+  "type": "origin",
+  "implements": [
+   "ai-txt",
+   "tdmrep"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://spawning.ai/ai-txt",
+  "note": "Origin steward and generator for root /ai.txt and W3C TDM Reservation Protocol machine-readable opt-out files."
+ },
+ {
+  "id": "origin-speakeasy-com",
+  "name": "Speakeasy (speakeasy.com)",
+  "url": "https://speakeasy.com/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/speakeasy.com/",
+  "note": "Origin publishing 8 machine-native manifests (Agent2Agent Protocol, AI Catalog well-known file, AI Crawler User-Agent Tokens in robots.txt, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs (+4 more)), measured by /check/speakeasy.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-springernature-com",
+  "name": "Springer Nature (springernature.com)",
+  "url": "https://springernature.com/",
+  "type": "origin",
+  "implements": [
+   "tdmrep"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/springernature.com/",
+  "note": "Origin publishing 1 machine-native manifest (Text and Data Mining Reservation Protocol), measured by /check/springernature.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-stackone-com",
+  "name": "StackOne Agentic Integration Hub (stackone.com)",
+  "url": "https://stackone.com/",
+  "type": "origin",
+  "implements": [
+   "api-catalog-rfc9727",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/stackone.com/",
+  "note": "Origin publishing 3 machine-native manifests (RFC 9727 API catalog (https://www.stackone.com/openapi.json), Markdown for Agents, and llms.txt), verified via /check/stackone.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-stm-assoc-org",
+  "name": "STM Association (stm-assoc.org)",
+  "url": "https://stm-assoc.org/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/stm-assoc.org/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/stm-assoc.org/ on 2026-10-23."
+ },
+ {
+  "id": "origin-strandsagents-com",
+  "name": "AWS Strands Agents (strandsagents.com)",
+  "url": "https://strandsagents.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/strandsagents.com/",
+  "note": "Origin publishing 2 machine-native manifests (AI Crawler User-Agent Tokens in robots.txt, llms.txt), measured by /check/strandsagents.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-stripe-com",
+  "name": "Stripe (stripe.com)",
+  "url": "https://stripe.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/stripe.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/stripe.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-sunilprakash-com",
+  "name": "Sunil Prakash / AIP (sunilprakash.com)",
+  "url": "https://sunilprakash.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/sunilprakash.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/sunilprakash.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-supabase-com",
+  "name": "Supabase (supabase.com)",
+  "url": "https://supabase.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "ard",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/supabase.com/",
+  "note": "Origin publishing 7 machine-native manifests (AI Catalog well-known file, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Agentic Resource Discovery (+3 more)), measured by /check/supabase.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-supermemory-ai",
+  "name": "Supermemory (supermemory.ai)",
+  "url": "https://supermemory.ai/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/supermemory.ai/",
+  "note": "Origin publishing 8 machine-native manifests (Streamable HTTP MCP server at https://mcp.supermemory.ai/mcp, SEP-2127 server card, RFC 9727 API catalog, and Agent Skills index), verified via /check/supermemory.ai/ on 2026-10-25."
+ },
+ {
+  "id": "origin-support-claude-com",
+  "name": "Anthropic Support (support.claude.com)",
+  "url": "https://support.claude.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/support.claude.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/support.claude.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-surrealdb-com",
+  "name": "SurrealDB (surrealdb.com)",
+  "url": "https://surrealdb.com/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "auth-md",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/surrealdb.com/",
+  "note": "Origin publishing 12 machine-native manifests (Agent2Agent Protocol, AI Catalog well-known file, AI Crawler User-Agent Tokens in robots.txt, Agent Skills (+8 more)), measured by /check/surrealdb.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-taskade-com",
+  "name": "Taskade (taskade.com)",
+  "url": "https://taskade.com/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/taskade.com/",
+  "note": "Origin publishing 4 machine-native manifests (Agent Skills, Content Signals Policy, Markdown for Agents, llms.txt), measured by /check/taskade.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-telnyx-com",
+  "name": "Telnyx (telnyx.com)",
+  "url": "https://telnyx.com/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "agents-md",
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "api-catalog-rfc9727",
+   "auth-md",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents",
+   "ucp",
+   "webbotauth"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/telnyx.com/",
+  "note": "Origin publishing 14 machine-native manifests (Agent2Agent Protocol, AGENTS.md, AI Catalog well-known file, AI Crawler User-Agent Tokens in robots.txt (+10 more)), measured by /check/telnyx.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-tempo-xyz",
+  "name": "Tempo (tempo.xyz)",
+  "url": "https://tempo.xyz/",
+  "type": "origin",
+  "implements": [
+   "agents-md",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "webbotauth"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/tempo.xyz/",
+  "note": "Origin publishing 6 machine-native manifests (AGENTS.md, AI Crawler User-Agent Tokens in robots.txt, Agent Skills, Markdown for Agents (+2 more)), measured by /check/tempo.xyz/ on 2026-10-23."
+ },
+ {
+  "id": "origin-theguardian-com",
+  "name": "The Guardian (theguardian.com)",
+  "url": "https://theguardian.com/",
+  "type": "origin",
+  "implements": [
+   "rsl"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/theguardian.com/",
+  "note": "Origin publishing 1 machine-native manifest (Really Simple Licensing), measured by /check/theguardian.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-tldraw-com",
+  "name": "tldraw Infinite Canvas SDK (tldraw.com)",
+  "url": "https://tldraw.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "api-catalog-rfc9727",
+   "auth-md",
+   "cloudflare-content-signals-policy",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/tldraw.com/",
+  "note": "Origin publishing 7 machine-native manifests (Streamable HTTP MCP server at https://www.tldraw.com/api/app/mcp, SEP-2127 server card, and RFC 9727 API catalog), verified via /check/tldraw.com/ on 2026-10-25."
+ },
+ {
+  "id": "origin-twilio-com",
+  "name": "Twilio (twilio.com)",
+  "url": "https://twilio.com/",
+  "type": "origin",
+  "implements": [
+   "cloudflare-content-signals-policy",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/twilio.com/",
+  "note": "Origin publishing 3 machine-native manifests (Content Signals Policy, Model Context Protocol, MCP Server Cards (SEP-2127)), measured by /check/twilio.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-ucp-dev",
+  "name": "Universal Commerce Protocol Spec (ucp.dev)",
+  "url": "https://ucp.dev/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/ucp.dev/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/ucp.dev/ on 2026-10-23."
+ },
+ {
+  "id": "origin-v0-app",
+  "name": "Vercel v0 Generative UI (v0.app)",
+  "url": "https://v0.app/",
+  "type": "origin",
+  "implements": [
+   "cloudflare-markdown-for-agents",
+   "mcp",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/v0.app/",
+  "note": "Origin publishing 3 machine-native manifests (Streamable HTTP MCP server at https://v0.app/api/mcp, OAuth Protected Resource metadata, and Markdown for Agents), verified via /check/v0.app/ on 2026-10-25."
+ },
+ {
+  "id": "origin-vellum-ai",
+  "name": "Vellum AI Workflow Platform (vellum.ai)",
+  "url": "https://vellum.ai/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/vellum.ai/",
+  "note": "Origin publishing 5 machine-native manifests (RFC 9727 API catalog, Markdown for Agents, and llms.txt), verified via /check/vellum.ai/ on 2026-10-25."
+ },
+ {
+  "id": "origin-vercel-com",
+  "name": "Vercel (vercel.com)",
+  "url": "https://vercel.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "oauth-cimd"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/vercel.com/",
+  "note": "Origin publishing 6 machine-native manifests (AI Catalog well-known file, Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Markdown for Agents (+2 more)), measured by /check/vercel.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-warp-dev",
+  "name": "Warp Agentic Terminal (warp.dev)",
+  "url": "https://warp.dev/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "api-catalog-rfc9727",
+   "ard",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/warp.dev/",
+  "note": "Origin publishing 6 machine-native manifests (Hosted Kapa MCP endpoint at https://warp.mcp.kapa.ai, SEP-2127 server card, ARD catalog, RFC 9727 API catalog, and llms.txt), verified via /check/warp.dev/ on 2026-10-25."
+ },
+ {
+  "id": "origin-webhooks-cc",
+  "name": "Webhooks.cc (webhooks.cc)",
+  "url": "https://webhooks.cc/",
+  "type": "origin",
+  "implements": [
+   "auth-md",
+   "llms-txt",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/webhooks.cc/",
+  "note": "Origin publishing 3 machine-native manifests (auth.md, llms.txt, OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)), measured by /check/webhooks.cc/ on 2026-10-23."
+ },
+ {
+  "id": "origin-x-ai",
+  "name": "xAI (x.ai)",
+  "url": "https://x.ai/",
+  "type": "origin",
+  "implements": [
+   "cloudflare-content-signals-policy"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/x.ai/",
+  "note": "Origin publishing 1 machine-native manifest (Content Signals Policy), measured by /check/x.ai/ on 2026-10-23."
+ },
+ {
+  "id": "origin-x402-org",
+  "name": "x402 Foundation Spec Origin (x402.org)",
+  "url": "https://x402.org/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/x402.org/",
+  "note": "Origin publishing 5 machine-native manifests (Agent Skills, api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs, Content Signals Policy, Markdown for Agents (+1 more)), measured by /check/x402.org/ on 2026-10-23."
+ },
+ {
+  "id": "origin-yahoo-com",
+  "name": "Yahoo (yahoo.com)",
+  "url": "https://yahoo.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/yahoo.com/",
+  "note": "Origin publishing 1 machine-native manifest (AI Crawler User-Agent Tokens in robots.txt), measured by /check/yahoo.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-yoast-com",
+  "name": "Yoast SEO (yoast.com)",
+  "url": "https://yoast.com/",
+  "type": "origin",
+  "implements": [
+   "llms-txt"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/yoast.com/",
+  "note": "Origin publishing 1 machine-native manifest (llms.txt), measured by /check/yoast.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-zapier-com",
+  "name": "Zapier (zapier.com)",
+  "url": "https://zapier.com/",
+  "type": "origin",
+  "implements": [
+   "agents-md",
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/zapier.com/",
+  "note": "Origin publishing 8 machine-native manifests (AGENTS.md, AI Catalog well-known file, AI Crawler User-Agent Tokens in robots.txt, Agent Skills (+4 more)), measured by /check/zapier.com/ on 2026-10-23."
+ },
+ {
+  "id": "origin-zuplo-com",
+  "name": "Zuplo API Gateway (zuplo.com)",
+  "url": "https://zuplo.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "ard",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "identity-assertion-authz-grant",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/zuplo.com/",
+  "note": "Origin publishing 12 machine-native manifests (Streamable HTTP MCP server at https://dev.zuplo.com/mcp/docs, SEP-2127 server card, ARD catalog, RFC 9727 API catalog, and Agent Skills index), verified via /check/zuplo.com/ on 2026-10-25."
+ },
+ {
+  "id": "oxford-agora-demo",
+  "name": "Agora Protocol Reference Origin (Oxford Demo)",
+  "url": "https://github.com/agora-protocol/paper-demo",
+  "type": "agent",
+  "implements": [
+   "agora-protocol"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://github.com/agora-protocol/paper-demo",
+  "note": "Reference origin and protocol demonstration for the Oxford Agora Protocol meta-protocol negotiation layer."
+ },
+ {
+  "id": "patchpoint-coral-protocol",
+  "name": "PatchPoint",
+  "url": "https://dev.to/abhi_mishra/building-patchpoint-unifying-devops-security-silos-with-coral-sql-318h",
+  "type": "agent",
+  "implements": [
+   "coral-protocol"
+  ],
+  "observed": "2026-05-31",
+  "date_basis": "source",
+  "source": "https://dev.to/abhi_mishra/building-patchpoint-unifying-devops-security-silos-with-coral-sql-318h",
+  "note": "Autonomous vulnerability impact mapper on Coral SQL correlating GitHub, Linear, and Slack CVE data."
+ },
+ {
+  "id": "pay-sh",
+  "name": "pay.sh (Agent Payment CLI and Runtime)",
+  "url": "https://pay.sh",
+  "type": "harness",
+  "implements": [
+   "x402",
+   "mpp"
+  ],
+  "observed": "2026-09-04",
+  "date_basis": "source",
+  "source": "https://pay.sh/llms.txt",
+  "note": "Multi-protocol payment client and CLI enabling autonomous agents to inspect HTTP 402 challenges and execute payments across x402, MPP, ACP, AP2, and TAP."
+ },
+ {
+  "id": "playmcp-kakao",
+  "name": "Kakao PlayMCP Gateway and Toolbox Registry",
+  "url": "https://playmcp.kakao.com",
+  "type": "venue",
+  "implements": [
+   "mcp"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://playmcp.kakao.com/llms.txt",
+  "note": "Kakao's hosted Model Context Protocol registry and gateway publishing ai-catalog.json, RFC 9727 api-catalog, OAuth metadata, and llms.txt."
+ },
+ {
+  "id": "privy-agent-wallets",
+  "name": "Privy (by Stripe) Agent and Server Wallets",
+  "url": "https://privy.io",
+  "type": "authority",
+  "implements": [
+   "mpp"
+  ],
+  "observed": "2026-09-04",
+  "date_basis": "source",
+  "source": "https://mpp.dev",
+  "note": "TEE-backed key custody and policy engine enabling autonomous agents to sign x402 and MPP payment payloads within strict quorum and spend rules."
+ },
+ {
+  "id": "qntx-erc8183-market",
+  "name": "QNTX and ClawPlaza ERC-8183 Job Escrow Markets",
+  "url": "https://eips.ethereum.org/EIPS/eip-8183",
+  "type": "venue",
+  "implements": [
+   "erc-8183"
+  ],
+  "observed": "2026-07-02",
+  "date_basis": "source",
+  "source": "https://eips.ethereum.org/EIPS/eip-8183",
+  "note": "On-chain agentic job escrow and evaluator settlement marketplaces implementing the ERC-8183 Agentic Commerce contract interface."
+ },
+ {
+  "id": "rako-attribution-authority",
+  "name": "Rako Agent Attribution Protocol (AAP) Authority",
+  "url": "https://rako.sh",
+  "type": "authority",
+  "implements": [
+   "agent-attribution-protocol"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://rako.sh",
+  "note": "Cryptographic referral and attribution authority issuing signed attribution tokens for AI agent commerce and publisher traffic."
+ },
+ {
+  "id": "reef-coral-incident-agent-coral-protocol",
+  "name": "Reef (Coral Incident Agent)",
+  "url": "https://dev.to/grandkojo/how-we-built-reef-a-production-incident-agent-with-coral-sentry-webhooks-and-slack-ngg",
+  "type": "agent",
+  "implements": [
+   "coral-protocol"
+  ],
+  "observed": "2026-05-31",
+  "date_basis": "source",
+  "source": "https://dev.to/grandkojo/how-we-built-reef-a-production-incident-agent-with-coral-sentry-webhooks-and-slack-ngg",
+  "note": "Production incident triage agent on Coral Protocol combining Sentry webhooks and Slack coordination."
+ },
+ {
+  "id": "rsl-collective",
+  "name": "RSL Collective (Really Simple Licensing)",
+  "url": "https://rslcollective.org",
+  "type": "venue",
+  "implements": [
+   "rsl"
+  ],
+  "observed": "2026-06-24",
+  "date_basis": "source",
+  "source": "https://rslcollective.org",
+  "note": "Rights-holder collective and licensing clearinghouse administering machine-readable rsl.xml terms and Open Licensing Payment (OLP 402) tokens."
+ },
+ {
+  "id": "salespeak-agent",
+  "name": "Salespeak B2B Buyer Concierge Agent",
+  "url": "https://salespeak.ai",
+  "type": "agent",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "ard",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/salespeak.ai/",
+  "note": "Origin publishing 6 machine-native manifests (AI Catalog well-known file, AI Crawler User-Agent Tokens in robots.txt, Agentic Resource Discovery, llms.txt (+2 more)), measured by /check/salespeak.ai/ on 2026-10-23."
+ },
+ {
+  "id": "satgate-l402",
+  "name": "SatGate L402 API Gateway",
+  "url": "https://satgate.io",
+  "type": "venue",
+  "implements": [
+   "l402"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://satgate.io",
+  "note": "Hosted L402 Lightning payment gateway metering agent and machine API calls via HTTP 402 Macaroon challenges."
+ },
+ {
+  "id": "shopify-agentic-storefronts",
+  "name": "Shopify Agentic Storefronts and Catalog Venue",
+  "url": "https://shopify.com",
+  "type": "venue",
+  "implements": [
+   "ucp",
+   "mcp"
+  ],
+  "observed": "2026-08-21",
+  "date_basis": "source",
+  "source": "https://shopify.engineering/ucp",
+  "note": "Multi-merchant commerce venue exposing Shopify merchant catalogs and checkout flows over Universal Commerce Protocol (UCP), ACP, NLWeb, and Storefront MCP."
+ },
+ {
+  "id": "sierra-personal-agent-protocol",
+  "name": "Sierra (Personal Agent Protocol Design Partner)",
+  "url": "https://personalagentprotocol.org/docs/path-to-1",
+  "type": "agent",
+  "implements": [
+   "personal-agent-protocol"
+  ],
+  "observed": "2026-10-09",
+  "date_basis": "source",
+  "source": "https://personalagentprotocol.org/docs/path-to-1",
+  "note": "Enterprise customer-experience agent platform co-designing the Personal Agent Protocol for brand-to-personal-agent handshakes."
+ },
+ {
+  "id": "spiffe-spire",
+  "name": "SPIFFE and SPIRE Workload Identity Control Plane (CNCF)",
+  "url": "https://spiffe.io",
+  "type": "authority",
+  "implements": [
+   "spiffe"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://spiffe.io",
+  "note": "CNCF graduated cryptographic workload identity authority issuing short-lived X.509 and JWT SVIDs (spiffe://trust-domain/workload) to agent runtimes."
+ },
+ {
+  "id": "stripe-tempo-mpp",
+  "name": "Stripe and Tempo Machine Payments Protocol (MPP) Directory",
+  "url": "https://mpp.dev",
+  "type": "venue",
+  "implements": [
+   "mpp"
+  ],
+  "observed": "2026-09-04",
+  "date_basis": "source",
+  "source": "https://mpp.dev/services",
+  "note": "Machine Payments Protocol service directory (mpp.dev/services) and HTTP 402 Payment challenge settlement rail for Stripe PaymentIntents and Tempo stablecoins."
+ },
+ {
+  "id": "swarmsync-vcap",
+  "name": "SwarmSync Verified Commerce Agent Protocol (VCAP)",
+  "url": "https://swarmsync.ai",
+  "type": "authority",
+  "implements": [
+   "vcap"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://swarmsync.ai",
+  "note": "Cryptographic mandate and spend-verification authority for autonomous commerce agents implementing VCAP and publishing llms.txt."
+ },
+ {
+  "id": "tollbit",
+  "name": "TollBit Content Licensing and Bot Paywall Clearinghouse",
+  "url": "https://tollbit.com",
+  "type": "venue",
+  "implements": [
+   "rsl"
+  ],
+  "observed": "2026-07-15",
+  "date_basis": "source",
+  "source": "https://rslcollective.org",
+  "note": "Two-sided publisher content licensing marketplace and edge bot paywall issuing agent access tokens and metering per-scrape publisher payouts."
+ },
+ {
+  "id": "ucp-registry",
+  "name": "UCP Registry",
+  "url": "https://ucpregistry.com",
+  "type": "venue",
+  "implements": [
+   "ucp"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://ucpregistry.com",
+  "note": "Third-party directory indexing merchants and storefronts publishing /.well-known/ucp Universal Commerce Protocol manifests."
+ },
+ {
+  "id": "visa-tap",
+  "name": "Visa Intelligent Commerce (Trusted Agent Protocol)",
+  "url": "https://developer.visa.com/capabilities/trusted-agent-protocol",
+  "type": "authority",
+  "implements": [
+   "tap",
+   "webbotauth"
+  ],
+  "observed": "2026-04-28",
+  "date_basis": "source",
+  "source": "https://github.com/visa/trusted-agent-protocol",
+  "note": "Visa's cryptographic agent recognition and payment-mandate authority verifying RFC 9421 bot signatures and consumer payment credentials at merchant checkout."
+ },
+ {
+  "id": "vscode-mcp-client",
+  "name": "Visual Studio Code (Copilot and MCP Client)",
+  "url": "https://code.visualstudio.com",
+  "type": "harness",
+  "implements": [
+   "mcp"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://modelcontextprotocol.io/clients",
+  "note": "Desktop IDE client supporting MCP server discovery, RFC 9728 OAuth 2.1 Protected Resource flows, MCP Apps interactive UI views, and AGENTS.md."
+ },
+ {
+  "id": "wildcard-agents-json",
+  "name": "Wildcard Bridge Reference Agents (Stripe, Resend, Rootly, Sheets)",
+  "url": "https://wild-card.ai",
+  "type": "agent",
+  "implements": [
+   "agents-json"
+  ],
+  "observed": "2026-09-06",
+  "date_basis": "recorded",
+  "source": "https://github.com/wild-card-ai/agents-json",
+  "note": "Reference tool-chaining agents consuming /.well-known/agents.json workflow bundles on top of OpenAPI specs."
+ },
+ {
+  "id": "windsurf",
+  "name": "Windsurf (Cognition)",
+  "url": "https://docs.windsurf.com",
+  "type": "harness",
+  "implements": [
+   "agents-md"
+  ],
+  "observed": "2026-08-29",
+  "date_basis": "source",
+  "source": "https://agents.md/",
+  "note": "Agentic IDE (Cascade harness) consuming MCP tool servers, repository AGENTS.md conventions, and llms.txt documentation indexes."
+ },
+ {
+  "id": "workos-agent-auth",
+  "name": "WorkOS AuthKit and Agent Auth",
+  "url": "https://workos.com",
+  "type": "authority",
+  "implements": [
+   "auth-md",
+   "mcp"
+  ],
+  "observed": "2026-10-23",
+  "date_basis": "source",
+  "source": "https://workos.com/auth.md",
+  "note": "Enterprise identity and MCP authorization authority publishing live auth.md, OAuth CIMD, RFC 9728 Protected Resource metadata, and XAA ID-JAG token support."
+ },
+ {
+  "id": "zed-editor",
+  "name": "Zed Editor",
+  "url": "https://zed.dev",
+  "type": "harness",
+  "implements": [
+   "agent-client-protocol"
+  ],
+  "observed": "2026-08-24",
+  "date_basis": "source",
+  "source": "https://agentclientprotocol.com/",
+  "note": "Multiplayer code editor co-authoring the Agent Client Protocol (ACP) and natively consuming Model Context Protocol servers and AGENTS.md files."
+ },
+ {
+  "id": "zeroclaw-vi",
+  "name": "ZeroClaw Autonomous Assistant",
+  "url": "https://github.com/zeroclaw-labs/zeroclaw",
+  "type": "agent",
+  "implements": [
+   "vi"
+  ],
+  "observed": "2026-03-07",
+  "date_basis": "source",
+  "source": "https://github.com/zeroclaw-labs/zeroclaw/pull/2938",
+  "note": "Open-source autonomous personal-assistant runtime implementing a Rust-native Verifiable Intent SD-JWT credential module for commerce authorization."
+ },
+ {
+  "id": "origin-developers-webflow-com",
+  "name": "Webflow Developers (developers.webflow.com)",
+  "url": "https://developers.webflow.com/",
+  "type": "origin",
+  "implements": [
+   "agents-md",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/developers.webflow.com/",
+  "note": "Webflow developer portal publishing llms.txt, Skill Manifest, API Catalog, and Markdown for Agents."
+ },
+ {
+  "id": "origin-developers-intercom-com",
+  "name": "Intercom Developers (developers.intercom.com)",
+  "url": "https://developers.intercom.com/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "anthropic-agent-skills-format",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/developers.intercom.com/",
+  "note": "Intercom developer hub exposing a live Streamable-HTTP MCP server, A2A card, Skill Manifest, and llms.txt."
+ },
+ {
+  "id": "origin-developers-zoom-us",
+  "name": "Zoom Developers (developers.zoom.us)",
+  "url": "https://developers.zoom.us/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "cloudflare-content-signals-policy",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/developers.zoom.us/",
+  "note": "Zoom developer platform publishing MCP Server Cards, Skill Manifest, Content Signals Policy, and llms.txt."
+ },
+ {
+  "id": "origin-plane-so",
+  "name": "Plane (plane.so)",
+  "url": "https://plane.so/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/plane.so/",
+  "note": "Open-source project management platform publishing MCP Server Cards, Markdown for Agents, Content Signals, and llms.txt."
+ },
+ {
+  "id": "origin-planetscale-com",
+  "name": "PlanetScale (planetscale.com)",
+  "url": "https://planetscale.com/",
+  "type": "origin",
+  "implements": [
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/planetscale.com/",
+  "note": "Database platform publishing MCP Server Cards, API Catalog, Markdown for Agents, and llms.txt."
+ },
+ {
+  "id": "origin-circle-so",
+  "name": "Circle (circle.so)",
+  "url": "https://circle.so/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "cloudflare-content-signals-policy",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/circle.so/",
+  "note": "Community platform shipping MCP Server Cards, Skill Manifest, Content Signals Policy, and llms.txt."
+ },
+ {
+  "id": "origin-customer-io",
+  "name": "Customer.io (customer.io)",
+  "url": "https://customer.io/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/customer.io/",
+  "note": "Customer engagement platform publishing MCP Server Cards, Skill Manifest, API Catalog, and llms.txt."
+ },
+ {
+  "id": "origin-semgrep-dev",
+  "name": "Semgrep (semgrep.dev)",
+  "url": "https://semgrep.dev/",
+  "type": "origin",
+  "implements": [
+   "llms-txt",
+   "mcp",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/semgrep.dev/",
+  "note": "Application security platform shipping an MCP endpoint, OAuth Protected Resource Metadata, OAuth CIMD, and llms.txt."
+ },
+ {
+  "id": "origin-vast-ai",
+  "name": "Vast.ai (vast.ai)",
+  "url": "https://vast.ai/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/vast.ai/",
+  "note": "GPU cloud marketplace publishing MCP Server Cards, Skill Manifest, API Catalog, and llms.txt."
+ },
+ {
+  "id": "origin-wistia-com",
+  "name": "Wistia (wistia.com)",
+  "url": "https://wistia.com/",
+  "type": "origin",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/wistia.com/",
+  "note": "Video marketing platform shipping an OAuth-gated MCP endpoint, MCP Server Cards, Skill Manifest, and API Catalog."
+ },
+ {
+  "id": "origin-savvycal-com",
+  "name": "SavvyCal (savvycal.com)",
+  "url": "https://savvycal.com/",
+  "type": "origin",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/savvycal.com/",
+  "note": "Scheduling platform publishing MCP Server Cards, Skill Manifest, API Catalog, OAuth Metadata, and llms.txt."
+ },
+ {
+  "id": "origin-docs-baseten-co",
+  "name": "Baseten Docs (docs.baseten.co)",
+  "url": "https://docs.baseten.co/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.baseten.co/",
+  "note": "ML inference documentation portal exposing a live Streamable-HTTP MCP server, A2A card, Skill Manifest, and llms.txt."
+ },
+ {
+  "id": "origin-docs-attio-com",
+  "name": "Attio Docs (docs.attio.com)",
+  "url": "https://docs.attio.com/",
+  "type": "origin",
+  "implements": [
+   "a2a",
+   "agents-md",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.attio.com/",
+  "note": "CRM developer documentation exposing a live Streamable-HTTP MCP server, AGENTS.md, A2A card, Skill Manifest, and llms.txt."
+ },
+ {
+  "id": "origin-lancedb-com",
+  "name": "LanceDB (lancedb.com)",
+  "url": "https://lancedb.com/",
+  "type": "origin",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "cloudflare-content-signals-policy",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/lancedb.com/",
+  "note": "Multimodal vector database shipping llms.txt, Skill Manifest, API Catalog, and Markdown for Agents."
+ },
+ {
+  "id": "docs-box-com",
+  "name": "docs.box.com",
+  "type": "origin",
+  "url": "https://docs.box.com/",
+  "implements": [
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.box.com/",
+  "note": "Box Developer Documentation — serves live MCP server (/.well-known/mcp.json -> /mcp), /llms.txt, /AGENTS.md, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "developers-notion-com",
+  "name": "developers.notion.com",
+  "type": "origin",
+  "url": "https://developers.notion.com/",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/developers.notion.com/",
+  "note": "Notion Developers Portal — serves live MCP server (/.well-known/mcp.json -> /mcp), /llms.txt, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "docs-snyk-io",
+  "name": "docs.snyk.io",
+  "type": "origin",
+  "url": "https://docs.snyk.io/",
+  "implements": [
+   "agents-md",
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.snyk.io/",
+  "note": "Snyk Documentation — serves MCP server card, /llms.txt, /AGENTS.md, AI catalog, and Markdown negotiation."
+ },
+ {
+  "id": "developers-telnyx-com",
+  "name": "developers.telnyx.com",
+  "type": "origin",
+  "url": "https://developers.telnyx.com/",
+  "implements": [
+   "agents-md",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/developers.telnyx.com/",
+  "note": "Telnyx Developers — serves live MCP server (/.well-known/mcp.json -> /mcp), /llms.txt, /AGENTS.md, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "docs-cockroachlabs-com",
+  "name": "docs.cockroachlabs.com",
+  "type": "origin",
+  "url": "https://docs.cockroachlabs.com/",
+  "implements": [
+   "cloudflare-content-signals-policy"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.cockroachlabs.com/",
+  "note": "CockroachDB Documentation — serves live MCP server (/.well-known/mcp.json -> /mcp), /llms.txt, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "docs-incident-io",
+  "name": "docs.incident.io",
+  "type": "origin",
+  "url": "https://docs.incident.io/",
+  "implements": [
+   "agents-md",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.incident.io/",
+  "note": "incident.io Documentation — serves live MCP server (/.well-known/mcp.json -> /mcp), /llms.txt, /AGENTS.md, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "docs-turnkey-com",
+  "name": "docs.turnkey.com",
+  "type": "origin",
+  "url": "https://docs.turnkey.com/",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.turnkey.com/",
+  "note": "Turnkey Documentation — serves live MCP server (/.well-known/mcp.json -> /mcp), /llms.txt, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "docs-e2b-dev",
+  "name": "docs.e2b.dev",
+  "type": "origin",
+  "url": "https://docs.e2b.dev/",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.e2b.dev/",
+  "note": "E2B Documentation — serves live MCP server (/.well-known/mcp.json -> /mcp), /llms.txt, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "docs-withorb-com",
+  "name": "docs.withorb.com",
+  "type": "origin",
+  "url": "https://docs.withorb.com/",
+  "implements": [
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.withorb.com/",
+  "note": "Orb Billing Documentation — serves live MCP server, MCP server card, /llms.txt, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "docs-metronome-com",
+  "name": "docs.metronome.com",
+  "type": "origin",
+  "url": "https://docs.metronome.com/",
+  "implements": [
+   "cloudflare-content-signals-policy",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.metronome.com/",
+  "note": "Metronome Documentation — serves live MCP server, /llms.txt, RFC 9728 OAuth Protected Resource metadata, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "developers-harvey-ai",
+  "name": "developers.harvey.ai",
+  "type": "origin",
+  "url": "https://developers.harvey.ai/",
+  "implements": [
+   "a2a",
+   "cloudflare-content-signals-policy"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/developers.harvey.ai/",
+  "note": "Harvey AI Developers — serves live MCP server, MCP server card, /llms.txt, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "docs-devin-ai",
+  "name": "docs.devin.ai",
+  "type": "origin",
+  "url": "https://docs.devin.ai/",
+  "implements": [
+   "agents-md",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.devin.ai/",
+  "note": "Devin (Cognition) Documentation — serves live MCP server (/.well-known/mcp.json -> /mcp), /llms.txt, /AGENTS.md, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "docs-gladia-io",
+  "name": "docs.gladia.io",
+  "type": "origin",
+  "url": "https://docs.gladia.io/",
+  "implements": [
+   "a2a",
+   "cloudflare-content-signals-policy"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.gladia.io/",
+  "note": "Gladia Audio AI Documentation — serves live MCP server (/.well-known/mcp.json -> /mcp), /llms.txt, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "docs-lancedb-com",
+  "name": "docs.lancedb.com",
+  "type": "origin",
+  "url": "https://docs.lancedb.com/",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "cloudflare-content-signals-policy"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.lancedb.com/",
+  "note": "LanceDB Documentation — serves MCP server card, /llms.txt, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "docs-saleor-io",
+  "name": "docs.saleor.io",
+  "type": "origin",
+  "url": "https://docs.saleor.io/",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "ard",
+   "cloudflare-markdown-for-agents",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.saleor.io/",
+  "note": "Saleor Commerce Documentation — serves /.well-known/ard.json, MCP server card, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "docs-discord-com",
+  "name": "docs.discord.com",
+  "type": "origin",
+  "url": "https://docs.discord.com/",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.discord.com/",
+  "note": "Discord Developer Documentation — serves /llms.txt, RFC 9727 api-catalog, Content-Signal, and Markdown negotiation."
+ },
+ {
+  "id": "developer-calendly-com",
+  "name": "developer.calendly.com",
+  "type": "origin",
+  "url": "https://developer.calendly.com/",
+  "implements": [
+   "agents-md",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/developer.calendly.com/",
+  "note": "Calendly Developer Portal — serves /llms.txt, /AGENTS.md, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "developers-make-com",
+  "name": "developers.make.com",
+  "type": "origin",
+  "url": "https://developers.make.com/",
+  "implements": [
+   "agents-md",
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/developers.make.com/",
+  "note": "Make.com Developer Hub — serves MCP server card, /llms.txt, /AGENTS.md, and AI catalog."
+ },
+ {
+  "id": "docs-whereby-com",
+  "name": "docs.whereby.com",
+  "type": "origin",
+  "url": "https://docs.whereby.com/",
+  "implements": [
+   "agents-md",
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.whereby.com/",
+  "note": "Whereby Developer Documentation — serves MCP server card, /llms.txt, /AGENTS.md, and AI catalog."
+ },
+ {
+  "id": "docs-ideogram-ai",
+  "name": "docs.ideogram.ai",
+  "type": "origin",
+  "url": "https://docs.ideogram.ai/",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "cloudflare-content-signals-policy",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.ideogram.ai/",
+  "note": "Ideogram AI Documentation — serves live MCP server, MCP server card, /llms.txt, and AI catalog."
+ },
+ {
+  "id": "docs-kombo-dev",
+  "name": "docs.kombo.dev",
+  "type": "origin",
+  "url": "https://docs.kombo.dev/",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.kombo.dev/",
+  "note": "Kombo Unified API Documentation — serves live MCP server (/.well-known/mcp.json -> /mcp), /llms.txt, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "docs-firecrawl-dev",
+  "name": "docs.firecrawl.dev",
+  "type": "origin",
+  "url": "https://docs.firecrawl.dev/",
+  "implements": [
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.firecrawl.dev/",
+  "note": "Firecrawl Documentation — serves /llms.txt, Agent Skills index, Content-Signal, and AI crawler tokens in robots.txt."
+ },
+ {
+  "id": "docs-tembo-io",
+  "name": "docs.tembo.io",
+  "type": "origin",
+  "url": "https://docs.tembo.io/",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.tembo.io/",
+  "note": "Tembo Postgres Documentation — serves /llms.txt, RFC 9728 OAuth Protected Resource metadata, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "docs-poolside-ai",
+  "name": "docs.poolside.ai",
+  "type": "origin",
+  "url": "https://docs.poolside.ai/",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/docs.poolside.ai/",
+  "note": "Poolside AI Documentation — serves /llms.txt, RFC 9728 OAuth Protected Resource metadata, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "bazel-build",
+  "name": "bazel.build",
+  "type": "origin",
+  "url": "https://bazel.build/",
+  "implements": [
+   "agents-md",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/bazel.build/",
+  "note": "Bazel Build System — serves /llms.txt, /AGENTS.md, Agent Skills index, RFC 9727 api-catalog, and live MCP server."
+ },
+ {
+  "id": "deepeval-com",
+  "name": "deepeval.com",
+  "type": "origin",
+  "url": "https://deepeval.com/",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/deepeval.com/",
+  "note": "DeepEval (Confident AI) — serves /llms.txt, AI catalog, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "c2pa-org",
+  "name": "c2pa.org",
+  "type": "origin",
+  "url": "https://c2pa.org/",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/c2pa.org/",
+  "note": "Coalition for Content Provenance and Authenticity (C2PA) — serves /llms.txt, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "spdx-dev",
+  "name": "spdx.dev",
+  "type": "origin",
+  "url": "https://spdx.dev/",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/spdx.dev/",
+  "note": "Linux Foundation SPDX Standard — serves /llms.txt, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "neo4j-com",
+  "name": "neo4j.com",
+  "type": "origin",
+  "url": "https://neo4j.com/",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/neo4j.com/",
+  "note": "Neo4j Graph Database — serves /llms.txt, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "kysely-dev",
+  "name": "kysely.dev",
+  "type": "origin",
+  "url": "https://kysely.dev/",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "ard",
+   "cloudflare-content-signals-policy",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/kysely.dev/",
+  "note": "Kysely TypeScript SQL Builder — serves /.well-known/ard.json, /llms.txt, and Agent Skills index."
+ },
+ {
+  "id": "gurubase-io",
+  "name": "gurubase.io",
+  "type": "origin",
+  "url": "https://gurubase.io/",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "ard",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/gurubase.io/",
+  "note": "Gurubase — serves /.well-known/ard.json, /llms.txt, Agent Skills index, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "brightdata-com",
+  "name": "brightdata.com",
+  "type": "origin",
+  "url": "https://brightdata.com/",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "api-catalog-rfc9727",
+   "auth-md",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/brightdata.com/",
+  "note": "Bright Data — serves /llms.txt, /auth.md, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "nx-dev",
+  "name": "nx.dev",
+  "type": "origin",
+  "url": "https://nx.dev/",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/nx.dev/",
+  "note": "Nx Build System — serves /llms.txt, Agent Skills index, and Markdown negotiation."
+ },
+ {
+  "id": "oxylabs-io",
+  "name": "oxylabs.io",
+  "type": "origin",
+  "url": "https://oxylabs.io/",
+  "implements": [
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "api-catalog-rfc9727",
+   "cloudflare-content-signals-policy",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/oxylabs.io/",
+  "note": "Oxylabs — serves /llms.txt, AI catalog, and RFC 9727 api-catalog."
+ },
+ {
+  "id": "trunk-io",
+  "name": "trunk.io",
+  "type": "origin",
+  "url": "https://trunk.io/",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "cloudflare-content-signals-policy",
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/trunk.io/",
+  "note": "Trunk.io Developer Experience — serves /llms.txt, Agent Skills index, and Markdown negotiation."
+ },
+ {
+  "id": "memgraph-com",
+  "name": "memgraph.com",
+  "type": "origin",
+  "url": "https://memgraph.com/",
+  "implements": [
+   "ard",
+   "llms-txt",
+   "mcp"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/memgraph.com/",
+  "note": "Memgraph Graph Database — serves /.well-known/ard.json, /llms.txt, and MCP server."
+ },
+ {
+  "id": "scrapfly-io",
+  "name": "scrapfly.io",
+  "type": "origin",
+  "url": "https://scrapfly.io/",
+  "implements": [
+   "ai-crawler-tokens-robots",
+   "anthropic-agent-skills-format",
+   "api-catalog-rfc9727",
+   "cloudflare-markdown-for-agents",
+   "llms-txt",
+   "mcp",
+   "mcp-server-cards",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/scrapfly.io/",
+  "note": "Scrapfly — serves /.well-known/ard.json, /llms.txt, MCP server card, and RFC 9728 OAuth Protected Resource metadata."
+ },
+ {
+  "id": "mcp-vercel-com",
+  "name": "mcp.vercel.com",
+  "type": "origin",
+  "url": "https://mcp.vercel.com/",
+  "implements": [
+   "mcp",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/mcp.vercel.com/",
+  "note": "Vercel Official MCP Server — serves RFC 9728 OAuth Protected Resource metadata, OAuth CIMD, and Streamable HTTP MCP endpoint."
+ },
+ {
+  "id": "mcp-sentry-io",
+  "name": "mcp.sentry.io",
+  "type": "origin",
+  "url": "https://mcp.sentry.io/",
+  "implements": [
+   "cloudflare-markdown-for-agents",
+   "llms-txt"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/mcp.sentry.io/",
+  "note": "Sentry Official MCP Server — serves RFC 9728 OAuth Protected Resource metadata and Streamable HTTP MCP endpoint."
+ },
+ {
+  "id": "mcp-linear-app",
+  "name": "mcp.linear.app",
+  "type": "origin",
+  "url": "https://mcp.linear.app/",
+  "implements": [
+   "identity-assertion-authz-grant",
+   "llms-txt",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/mcp.linear.app/",
+  "note": "Linear Official MCP Server — serves RFC 9728 OAuth Protected Resource metadata and Streamable HTTP MCP endpoint."
+ },
+ {
+  "id": "mcp-notion-com",
+  "name": "mcp.notion.com",
+  "type": "origin",
+  "url": "https://mcp.notion.com/",
+  "implements": [
+   "identity-assertion-authz-grant",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/mcp.notion.com/",
+  "note": "Notion Official MCP Server — serves RFC 9728 OAuth Protected Resource metadata and Streamable HTTP MCP endpoint."
+ },
+ {
+  "id": "mcp-box-com",
+  "name": "mcp.box.com",
+  "type": "origin",
+  "url": "https://mcp.box.com/",
+  "implements": [
+   "mcp",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/mcp.box.com/",
+  "note": "Box Official MCP Server — serves RFC 9728 OAuth Protected Resource metadata and Streamable HTTP MCP endpoint."
+ },
+ {
+  "id": "mcp-asana-com",
+  "name": "mcp.asana.com",
+  "type": "origin",
+  "url": "https://mcp.asana.com/",
+  "implements": [
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/mcp.asana.com/",
+  "note": "Asana Official MCP Server — serves RFC 9728 OAuth Protected Resource metadata and remote MCP endpoint."
+ },
+ {
+  "id": "mcp-intercom-com",
+  "name": "mcp.intercom.com",
+  "type": "origin",
+  "url": "https://mcp.intercom.com/",
+  "implements": [
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/mcp.intercom.com/",
+  "note": "Intercom Official MCP Server — serves RFC 9728 OAuth Protected Resource metadata and Streamable HTTP MCP endpoint."
+ },
+ {
+  "id": "mcp-paypal-com",
+  "name": "mcp.paypal.com",
+  "type": "origin",
+  "url": "https://mcp.paypal.com/",
+  "implements": [
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/mcp.paypal.com/",
+  "note": "PayPal Official MCP Server — serves RFC 9728 OAuth Protected Resource metadata and remote MCP endpoint."
+ },
+ {
+  "id": "mcp-wix-com",
+  "name": "mcp.wix.com",
+  "type": "origin",
+  "url": "https://mcp.wix.com/",
+  "implements": [
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/mcp.wix.com/",
+  "note": "Wix Official MCP Server — serves RFC 9728 OAuth Protected Resource metadata and remote MCP endpoint."
+ },
+ {
+  "id": "mcp-apify-com",
+  "name": "mcp.apify.com",
+  "type": "origin",
+  "url": "https://mcp.apify.com/",
+  "implements": [
+   "mcp-server-cards",
+   "oauth-cimd",
+   "oauth-metadata-for-agents"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/mcp.apify.com/",
+  "note": "Apify Official MCP Server — serves RFC 9728 OAuth Protected Resource metadata, OAuth CIMD, and Streamable HTTP MCP endpoint."
+ },
+ {
+  "id": "belgravialabs-com",
+  "name": "Belgravia Labs (belgravialabs.com)",
+  "type": "origin",
+  "url": "https://belgravialabs.com/",
+  "implements": [
+   "a2a",
+   "agents-md",
+   "ai-catalog-well-known-file",
+   "ai-crawler-tokens-robots",
+   "api-catalog-rfc9727",
+   "ard",
+   "cloudflare-content-signals-policy",
+   "llms-txt",
+   "mcp-server-cards"
+  ],
+  "observed": "2026-10-25",
+  "date_basis": "source",
+  "source": "https://agenticweb.wiki/check/belgravialabs.com/",
+  "note": "Belgravia Labs LLC — A+ reference deployment publishing ARD 1.0 (/.well-known/ard.json), SEP-2127 MCP Server Card, A2A 1.0 Agent Card, RFC 9727 API Catalog, llms.txt, AGENTS.md, AI crawler tokens, and Cloudflare Content-Signal policy."
+ }
+]

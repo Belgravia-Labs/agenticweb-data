@@ -1,0 +1,250 @@
+{
+ "version": 1,
+ "date": "2026-10-21",
+ "url": "https://agenticweb.wiki/digest/2026-10-21/",
+ "generated_at": "2026-10-21T21:00:00Z",
+ "window": {
+  "from": "2026-10-20T21:30:57Z",
+  "to": "2026-10-21T21:00:00Z"
+ },
+ "headline": "IETF DAWN Agent Discovery Framework reaches revision -09",
+ "lede": "At the IETF, the DAWN Agent Discovery Framework published draft revision -09 extending its active review window to 24 April 2027, while the Python a2a-sdk shipped v1.2.3 on PyPI.",
+ "items": [
+  {
+   "id": "2026-10-21-1",
+   "title": "IETF publishes draft-zhang-dawn-agent-discovery-framework-09",
+   "body": "The authors of A Framework for Agent Discovery in DAWN published revision -09 on the IETF Datatracker on 21 Oct 2026. The updated Internet-Draft extends the active review window through 24 April 2027 and refines the discovery model for autonomous agents operating across administrative domains.",
+   "why_it_matters": "Teams tracking IETF agent-discovery drafts alongside ANP and DNS-AID should update citations from -08 to -09.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "dawn-agent-discovery-framework",
+     "name": "A Framework for Agent Discovery in DAWN",
+     "url": "https://agenticweb.wiki/protocols/dawn-agent-discovery-framework/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://datatracker.ietf.org/doc/html/draft-zhang-dawn-agent-discovery-framework-09",
+     "title": "draft-zhang-dawn-agent-discovery-framework-09 - IETF Datatracker",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-21",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  }
+ ],
+ "stats": {
+  "previous": null,
+  "panel": {
+   "domains": 219,
+   "checked": 218,
+   "errors": 1,
+   "compared": 0,
+   "grades": {
+    "A+": 10,
+    "A": 21,
+    "B": 76,
+    "C": 70,
+    "D": 6,
+    "F": 35
+   },
+   "adoption": [
+    {
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt",
+     "domains": 173,
+     "delta": null
+    },
+    {
+     "id": "llms-txt",
+     "name": "llms.txt",
+     "domains": 105,
+     "delta": null
+    },
+    {
+     "id": "cloudflare-content-signals-policy",
+     "name": "Content Signals Policy",
+     "domains": 36,
+     "delta": null
+    },
+    {
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs",
+     "domains": 19,
+     "delta": null
+    },
+    {
+     "id": "oauth-metadata-for-agents",
+     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)",
+     "domains": 19,
+     "delta": null
+    },
+    {
+     "id": "ai-catalog-well-known-file",
+     "name": "AI Catalog well-known file",
+     "domains": 17,
+     "delta": null
+    },
+    {
+     "id": "agents-md",
+     "name": "AGENTS.md",
+     "domains": 14,
+     "delta": null
+    },
+    {
+     "id": "a2a",
+     "name": "Agent2Agent Protocol",
+     "domains": 13,
+     "delta": null
+    },
+    {
+     "id": "oauth-cimd",
+     "name": "OAuth Client ID Metadata Document",
+     "domains": 13,
+     "delta": null
+    },
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "domains": 7,
+     "delta": null
+    },
+    {
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)",
+     "domains": 7,
+     "delta": null
+    },
+    {
+     "id": "agents-txt",
+     "name": "agents.txt",
+     "domains": 6,
+     "delta": null
+    },
+    {
+     "id": "ard",
+     "name": "Agentic Resource Discovery",
+     "domains": 6,
+     "delta": null
+    },
+    {
+     "id": "auth-md",
+     "name": "auth.md",
+     "domains": 6,
+     "delta": null
+    },
+    {
+     "id": "rsl",
+     "name": "Really Simple Licensing",
+     "domains": 3,
+     "delta": null
+    },
+    {
+     "id": "tdmrep",
+     "name": "Text and Data Mining Reservation Protocol",
+     "domains": 3,
+     "delta": null
+    },
+    {
+     "id": "webbotauth",
+     "name": "Web Bot Auth HTTP Message Signatures",
+     "domains": 3,
+     "delta": null
+    },
+    {
+     "id": "identity-assertion-authz-grant",
+     "name": "Identity Assertion JWT Authorization Grant",
+     "domains": 2,
+     "delta": null
+    },
+    {
+     "id": "ads",
+     "name": "Agent Directory Service",
+     "domains": 1,
+     "delta": null
+    },
+    {
+     "id": "agent-permissions-json",
+     "name": "agent-permissions.json",
+     "domains": 1,
+     "delta": null
+    },
+    {
+     "id": "agents-json",
+     "name": "agents.json",
+     "domains": 1,
+     "delta": null
+    },
+    {
+     "id": "agora-protocol",
+     "name": "Agora Protocol",
+     "domains": 1,
+     "delta": null
+    },
+    {
+     "id": "ucp",
+     "name": "Universal Commerce Protocol",
+     "domains": 1,
+     "delta": null
+    }
+   ],
+   "gained": [],
+   "lost": [],
+   "grade_changes": []
+  },
+  "repos": {
+   "tracked": 58,
+   "movers": []
+  },
+  "registry": {
+   "since": "2026-10-19T00:00:00Z",
+   "versions": 3000,
+   "servers": 1708
+  }
+ },
+ "record_changes": [
+  {
+   "record_id": "a2a",
+   "name": "Agent2Agent Protocol",
+   "summary": "a2a-sdk 1.2.3 published 2026-10-19",
+   "url": "https://pypi.org/project/a2a-sdk/",
+   "label": "REPORTED",
+   "date": "2026-10-19"
+  },
+  {
+   "record_id": "dawn-agent-discovery-framework",
+   "name": "A Framework for Agent Discovery in DAWN",
+   "summary": "Datatracker shows draft-zhang-dawn-agent-discovery-framework-09, dated 2026-10-21, expires 2027-04-24",
+   "url": "https://datatracker.ietf.org/doc/draft-zhang-dawn-agent-discovery-framework/",
+   "label": "VERIFIED",
+   "date": "2026-10-21"
+  }
+ ],
+ "previous": "2026-10-20",
+ "method": {
+  "sources": {
+   "feeds": 0,
+   "datatracker": 0,
+   "hn": 0,
+   "arxiv": 12,
+   "exa": 107,
+   "parallel": 5,
+   "tips": 19
+  },
+  "candidates": 143,
+  "after_dedupe": 130,
+  "kept": 49,
+  "fetched": 38,
+  "models": {
+   "triage": "claude-haiku-5-5",
+   "writer": "claude-opus-5-5"
+  },
+  "facts": 30,
+  "notes": [],
+  "rules": "Items are written only from the cited sources and our own measurements; every number in an item appears in a source it cites. VERIFIED = fetched from the standard's issuer or a standards body; REPORTED = a claim by press or a third party."
+ },
+ "license": "CC BY 4.0"
+}

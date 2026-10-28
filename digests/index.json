@@ -1,0 +1,53 @@
+{
+ "latest": "2026-10-27",
+ "digests": [
+  {
+   "date": "2026-10-27",
+   "headline": "Microsoft ships MCP C# SDK 2.0 with stateless HTTP by default, InfoQ reports",
+   "items": 10,
+   "url": "https://agenticweb.wiki/digest/2026-10-27/"
+  },
+  {
+   "date": "2026-10-26",
+   "headline": "Mastercard opens x402 agent payments; WebMCP reaches Commerce.com storefronts",
+   "items": 8,
+   "url": "https://agenticweb.wiki/digest/2026-10-26/"
+  },
+  {
+   "date": "2026-10-25",
+   "headline": "New IETF drafts propose capability grammar and signed receipts for agent authorization",
+   "items": 9,
+   "url": "https://agenticweb.wiki/digest/2026-10-25/"
+  },
+  {
+   "date": "2026-10-24",
+   "headline": "Agentic AI Foundation adds Agent Skills, Open Responses, OpenEnv and OpenSandbox",
+   "items": 9,
+   "url": "https://agenticweb.wiki/digest/2026-10-24/"
+  },
+  {
+   "date": "2026-10-23",
+   "headline": "Anthropic donates Agent Skills to the Agentic AI Foundation",
+   "items": 5,
+   "url": "https://agenticweb.wiki/digest/2026-10-23/"
+  },
+  {
+   "date": "2026-10-22",
+   "headline": "IETF WIMSE HTTP Signatures reaches draft -08 as WebBotAuth JAFAR enters expiry review",
+   "items": 1,
+   "url": "https://agenticweb.wiki/digest/2026-10-22/"
+  },
+  {
+   "date": "2026-10-21",
+   "headline": "IETF DAWN Agent Discovery Framework reaches revision -09",
+   "items": 1,
+   "url": "https://agenticweb.wiki/digest/2026-10-21/"
+  },
+  {
+   "date": "2026-10-20",
+   "headline": "OASIS opens 30-day public review of MCP over AMQP 1.0 transport binding",
+   "items": 9,
+   "url": "https://agenticweb.wiki/digest/2026-10-20/"
+  }
+ ]
+}

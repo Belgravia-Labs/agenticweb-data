@@ -1,0 +1,784 @@
+{
+ "version": 1,
+ "date": "2026-10-26",
+ "url": "https://agenticweb.wiki/digest/2026-10-26/",
+ "generated_at": "2026-10-26T07:59:24Z",
+ "window": {
+  "from": "2026-10-24T18:00:00Z",
+  "to": "2026-10-26T07:30:35Z"
+ },
+ "headline": "Mastercard opens x402 agent payments; WebMCP reaches Commerce.com storefronts",
+ "lede": "Mastercard opened Early Access to Agent Pay for Machines, which lets AI agents pay for digital services with x402 on Base. Cloudflare and Commerce.com are reported to be injecting WebMCP tools at the edge for nearly 100,000 storefronts. Our panel also shows a jump in MCP and MCP Server Cards publication.",
+ "items": [
+  {
+   "id": "2026-10-26-1",
+   "title": "Mastercard opens Early Access to Agent Pay for Machines, built on x402 and settled on Base",
+   "body": "According to Exchange.news, Mastercard showed Agent Pay for Machines at Cloudflare Connect on 20 October. The service lets AI agents pay for data, models, computing power and APIs within a spending limit using x402 vouchers, settled on Base, without an account, API key or prepaid credit at each provider. Mastercard says it ran end-to-end pilots with Cloudflare, Ant International, AIsa, Base, BVNK, Coinbase and Hype. Early Access includes buyer-side and seller-side APIs, a toolkit, a sandbox and documentation.",
+   "why_it_matters": "Sellers of paid APIs and data can evaluate the seller-side API in Early Access to see how Mastercard's x402 vouchers fit their existing payment handling.",
+   "kind": "launch",
+   "related": [
+    {
+     "id": "x402",
+     "name": "x402",
+     "url": "https://agenticweb.wiki/protocols/x402/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://exchange.news/news/base-mastercard-agent-pay-for-machines-x402/",
+     "title": "Mastercard’s Agent Pay for Machines lets AI agents pay",
+     "publisher": "exchange.news",
+     "published": "2026-10-24",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-26-2",
+   "title": "Cloudflare and Commerce.com inject WebMCP shopping tools at the edge across storefronts",
+   "body": "According to aiPressHQ, Cloudflare reported on October 21, 2026 that it and Commerce.com have deployed an edge-level WebMCP implementation. A Cloudflare-injected script exposes tools such as product search and add-to-cart through document.modelContext, so merchants do not need to rebuild their sites or edit themes. The rollout covers nearly 100,000 storefronts using Configuration Rules and custom hostname metadata. Store owners can opt out in the Commerce.com dashboard, and pages load normally if the MCP server is offline or the browser lacks support.",
+   "why_it_matters": "Agent developers can expect WebMCP tools on a large set of storefronts alongside server-side MCP. Merchants on other platforms can use this deployment as a model for adding WebMCP without editing theme code.",
+   "kind": "adoption",
+   "related": [
+    {
+     "id": "webmcp",
+     "name": "WebMCP",
+     "url": "https://agenticweb.wiki/protocols/webmcp/"
+    },
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://aipresshq.com/posts/cloudflare-and-commerce-com-launch-webmcp-for-ai-shopping-agents-ff03e8/",
+     "title": "Cloudflare and Commerce.com Launch WebMCP for AI Shopping Agents | aiPressHQ",
+     "publisher": "aipresshq.com",
+     "published": "2026-10-25",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-26-3",
+   "title": "Malicious AGENTS.md in a Downloads folder led a coding agent to install a rogue npm package",
+   "body": "BleepingComputer reports that Forever Security found an AGENTS.md file in a customer's ~/Downloads folder, which was also the agent's working directory. The file led a coding agent to try to install the malicious npm package 'function-color'. The researchers reproduced the attack against OpenAI Codex. They also demonstrated a related technique against Claude Code that leaked OAuth tokens and hijacked the account. They say there is nothing for OpenAI or Anthropic to patch, because the agent is doing what it was built to do.",
+   "why_it_matters": "Agents automatically load instruction files from their working directory. Teams should avoid running agents in untrusted folders and should limit the tools and permissions those agents can use.",
+   "kind": "security",
+   "related": [
+    {
+     "id": "agents-md",
+     "name": "AGENTS.md",
+     "url": "https://agenticweb.wiki/protocols/agents-md/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
+     "title": "AI coding agents hijacked using AGENTS.md file in Downloads folder",
+     "publisher": "bleepingcomputer.com",
+     "published": "2026-10-25",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-26-4",
+   "title": "Kin enables WebMCP in home-insurance quoting; agent prepares a quote but does not bind the policy",
+   "body": "According to Market & Tech, Kin announced on October 23, 2026 that it has enabled WebMCP in its digital home-insurance quoting flow. Kin says a compatible AI agent can carry a user's request on Kin.com to a personalized quote ready for purchase. Kin does not say the agent binds or pays for the policy. Kin disclosed no quote volume, success rate, error or conversion figures.",
+   "why_it_matters": "This is a WebMCP deployment in a regulated purchase flow where the final commitment stays with the user. There is no performance data yet to judge results.",
+   "kind": "adoption",
+   "related": [
+    {
+     "id": "webmcp",
+     "name": "WebMCP",
+     "url": "https://agenticweb.wiki/protocols/webmcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://marketandtech.com/en/news/2026-10-25-ecom-kin-webmcp-insurance-quotes/",
+     "title": "Kin opens insurance quoting to WebMCP: an AI agent prepares the offer but does not bind the policy itself — Market & Tech",
+     "publisher": "marketandtech.com",
+     "published": "2026-10-25",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-26-5",
+   "title": "TrendAI scan finds internet-reachable MCP servers exposing SQL execution and patient data",
+   "body": "it-daily.net reports on a TrendAI (Trend Micro) report on AI security. In a scan of internet-reachable MCP servers, the researchers found the execute_sql function reachable on 70 hosts, and at least three servers gave access to patient data without login. An analysis of MCP server source projects found that 48 percent recommend storing credentials in plaintext .env or configuration files. The report says most AI incidents came from known weaknesses such as missing authentication and unpatched software, not attacks on models.",
+   "why_it_matters": "Operators of MCP servers should confirm that authentication is enforced on any internet-reachable endpoint and that credentials are not kept in plaintext configuration files.",
+   "kind": "security",
+   "related": [
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.it-daily.net/it-sicherheit/cybercrime/ki-angriffe-zielen-auf-umfeld",
+     "title": "KI-Angriffe zielen auf das Umfeld der Modelle",
+     "publisher": "it-daily.net",
+     "published": "2026-10-25",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-26-6",
+   "title": "MCP and MCP Server Cards publication jumps on our panel; 1800 servers updated on the MCP Registry",
+   "body": "Today 102 of 278 panel domains were checked. Model Context Protocol is published by 50 of 102 panel domains (+15 since 2026-10-25), and MCP Server Cards (SEP-2127) by 36 of 102 (+11 since 2026-10-25). New publishers of both include notion.so and docs.perplexity.ai, and supabase.com now publishes MCP. Separately, 1800 servers (3000 versions) were published or updated on the official MCP Registry since 2026-10-25.",
+   "why_it_matters": "Server Cards are spreading together with MCP endpoints, so clients that read them for discovery will find more sites that support them. Today's counts cover only the domains checked today.",
+   "kind": "adoption",
+   "related": [
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    },
+    {
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)",
+     "url": "https://agenticweb.wiki/protocols/mcp-server-cards/"
+    },
+    {
+     "id": "mcp-registry",
+     "name": "Official MCP Registry",
+     "url": "https://agenticweb.wiki/protocols/mcp-registry/"
+    }
+   ],
+   "sources": [],
+   "stats": [
+    "102 of 278 panel domains were checked today; grades: A+ 32, A 17, B 18, C 27, D 4, F 3.",
+    "Model Context Protocol (mcp) is published by 50 of 102 panel domains (+15 since 2026-10-25).",
+    "MCP Server Cards (SEP-2127) (mcp-server-cards) is published by 36 of 102 panel domains (+11 since 2026-10-25).",
+    "docs.perplexity.ai now publishes Model Context Protocol (mcp); it did not on 2026-10-25.",
+    "docs.perplexity.ai now publishes MCP Server Cards (SEP-2127) (mcp-server-cards); it did not on 2026-10-25.",
+    "notion.so now publishes Model Context Protocol (mcp); it did not on 2026-10-25.",
+    "notion.so now publishes MCP Server Cards (SEP-2127) (mcp-server-cards); it did not on 2026-10-25.",
+    "supabase.com now publishes Model Context Protocol (mcp); it did not on 2026-10-25.",
+    "1800 servers (3000 versions) were published or updated on the official MCP Registry since 2026-10-25."
+   ]
+  },
+  {
+   "id": "2026-10-26-7",
+   "title": "Aegis v0.1.0 adds Web Bot Auth signature verification to Caddy",
+   "body": "A developer announced Aegis (v0.1.0) on the Caddy community forum. It is a handler that checks Web Bot Auth signatures on incoming requests against keys published at a well-known URL, such as OpenAI's http-message-signatures-directory. It passes the result to the rest of the Caddy config so routes can decide what each agent gets. The author suggests starting in observe mode and reviewing access logs before blocking anything.",
+   "why_it_matters": "Caddy operators can route signed agent traffic separately from unsigned bots. The module is early and not yet on the caddyserver.com download page.",
+   "kind": "launch",
+   "related": [
+    {
+     "id": "webbotauth",
+     "name": "Web Bot Auth HTTP Message Signatures",
+     "url": "https://agenticweb.wiki/protocols/webbotauth/"
+    },
+    {
+     "id": "http-message-signatures",
+     "name": "HTTP Message Signatures",
+     "url": "https://agenticweb.wiki/protocols/http-message-signatures/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://caddy.community/t/new-plugin-aegis-which-verifies-web-bot-auth-signatures/34021",
+     "title": "New plugin: Aegis, which verifies Web Bot Auth signatures - Plugins - Caddy Community",
+     "publisher": "caddy.community",
+     "published": "2026-10-25",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-10-26-8",
+   "title": "IAB Tech Lab releases OpenProposal, a draft of AAMP 3.0 for agent ad negotiation",
+   "body": "According to AdTech Sumo, citing PPC Land, IAB Tech Lab has introduced OpenProposal, a draft of the AAMP 3.0 specification. The draft covers how AI agents representing buyers and sellers exchange advertising proposals, from the initial brief to the final purchase commitment.",
+   "why_it_matters": "Ad-tech teams building buy-side or sell-side agents should review the draft to see how proposal exchange may be standardized under AAMP.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "aamp",
+     "name": "Agentic Advertising Management Protocols",
+     "url": "https://agenticweb.wiki/protocols/aamp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://adtechsumo.com/news/openproposal-5c07ed",
+     "title": "IAB Tech Lab Releases Draft AAMP 3.0 for AI Ad Buying and Selling | AdTech Sumo",
+     "publisher": "adtechsumo.com",
+     "published": "2026-10-25",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  }
+ ],
+ "stats": {
+  "previous": "2026-10-25",
+  "panel": {
+   "domains": 278,
+   "checked": 102,
+   "errors": 176,
+   "compared": 68,
+   "grades": {
+    "A+": 32,
+    "A": 17,
+    "B": 18,
+    "C": 27,
+    "D": 4,
+    "F": 3
+   },
+   "adoption": [
+    {
+     "id": "llms-txt",
+     "name": "llms.txt",
+     "domains": 76,
+     "delta": 1
+    },
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "domains": 50,
+     "delta": 15
+    },
+    {
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)",
+     "domains": 36,
+     "delta": 11
+    },
+    {
+     "id": "cloudflare-content-signals-policy",
+     "name": "Content Signals Policy",
+     "domains": 35,
+     "delta": 0
+    },
+    {
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs",
+     "domains": 34,
+     "delta": 3
+    },
+    {
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt",
+     "domains": 32,
+     "delta": -11
+    },
+    {
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents",
+     "domains": 32,
+     "delta": -2
+    },
+    {
+     "id": "oauth-metadata-for-agents",
+     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)",
+     "domains": 30,
+     "delta": 0
+    },
+    {
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills",
+     "domains": 28,
+     "delta": 0
+    },
+    {
+     "id": "ai-catalog-well-known-file",
+     "name": "AI Catalog well-known file",
+     "domains": 22,
+     "delta": 0
+    },
+    {
+     "id": "oauth-cimd",
+     "name": "OAuth Client ID Metadata Document",
+     "domains": 15,
+     "delta": 0
+    },
+    {
+     "id": "ard",
+     "name": "Agentic Resource Discovery",
+     "domains": 12,
+     "delta": 0
+    },
+    {
+     "id": "agents-md",
+     "name": "AGENTS.md",
+     "domains": 11,
+     "delta": 0
+    },
+    {
+     "id": "a2a",
+     "name": "Agent2Agent Protocol",
+     "domains": 8,
+     "delta": -3
+    },
+    {
+     "id": "auth-md",
+     "name": "auth.md",
+     "domains": 5,
+     "delta": 0
+    },
+    {
+     "id": "webbotauth",
+     "name": "Web Bot Auth HTTP Message Signatures",
+     "domains": 3,
+     "delta": 0
+    },
+    {
+     "id": "agents-json",
+     "name": "agents.json",
+     "domains": 2,
+     "delta": 0
+    },
+    {
+     "id": "agents-txt",
+     "name": "agents.txt",
+     "domains": 2,
+     "delta": -2
+    },
+    {
+     "id": "identity-assertion-authz-grant",
+     "name": "Identity Assertion JWT Authorization Grant",
+     "domains": 2,
+     "delta": 0
+    },
+    {
+     "id": "rsl",
+     "name": "Really Simple Licensing",
+     "domains": 2,
+     "delta": 0
+    },
+    {
+     "id": "ads",
+     "name": "Agent Directory Service",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "agent-permissions-json",
+     "name": "agent-permissions.json",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "okf",
+     "name": "Open Knowledge Format",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "ucp",
+     "name": "Universal Commerce Protocol",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "web-bot-auth-signature-agent-card",
+     "name": "Signature Agent Card (Web Bot Auth registry)",
+     "domains": 1,
+     "delta": 0
+    }
+   ],
+   "gained": [
+    {
+     "domain": "2s.io",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "2s.io",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "agent-ready.dev",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "agent-ready.dev",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "agentclientprotocol.com",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "agentclientprotocol.com",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "agentcommunity.org",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "agentcommunity.org",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "agentskills.io",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "agentskills.io",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "amplitude.com",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "amplitude.com",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "api.proof.com",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "asana.com",
+     "id": "llms-txt",
+     "name": "llms.txt"
+    },
+    {
+     "domain": "atlan.com",
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
+    },
+    {
+     "domain": "bird.com",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "bird.com",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "desvela.dev",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "docs.perplexity.ai",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "docs.perplexity.ai",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "eodly.io",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "eodly.io",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "metricspot.com",
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
+    },
+    {
+     "domain": "mintlify.com",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "mpp.dev",
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
+    },
+    {
+     "domain": "notion.so",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "notion.so",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "openfort.io",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "openfort.io",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "supabase.com",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    }
+   ],
+   "lost": [
+    {
+     "domain": "0g.ai",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "aaif.io",
+     "id": "agents-txt",
+     "name": "agents.txt"
+    },
+    {
+     "domain": "aaif.io",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "agentclientprotocol.com",
+     "id": "a2a",
+     "name": "Agent2Agent Protocol"
+    },
+    {
+     "domain": "agentclientprotocol.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "agentcommunity.org",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "agenticresources.dev",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "agentskills.io",
+     "id": "a2a",
+     "name": "Agent2Agent Protocol"
+    },
+    {
+     "domain": "aitxt.ing",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "apify.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "bird.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "desvela.dev",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "docs.n8n.io",
+     "id": "agents-txt",
+     "name": "agents.txt"
+    },
+    {
+     "domain": "docs.n8n.io",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "docs.perplexity.ai",
+     "id": "a2a",
+     "name": "Agent2Agent Protocol"
+    },
+    {
+     "domain": "docs.perplexity.ai",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "openfort.io",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "supabase.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    }
+   ],
+   "grade_changes": [
+    {
+     "domain": "aaif.io",
+     "from": "A",
+     "to": "B",
+     "score_from": 54,
+     "score_to": 38
+    },
+    {
+     "domain": "agenticresources.dev",
+     "from": "B",
+     "to": "C",
+     "score_from": 38,
+     "score_to": 25
+    },
+    {
+     "domain": "asana.com",
+     "from": "D",
+     "to": "C",
+     "score_from": 10,
+     "score_to": 20
+    },
+    {
+     "domain": "atlan.com",
+     "from": "B",
+     "to": "A",
+     "score_from": 36,
+     "score_to": 49
+    },
+    {
+     "domain": "mintlify.com",
+     "from": "B",
+     "to": "A",
+     "score_from": 41,
+     "score_to": 54
+    },
+    {
+     "domain": "mpp.dev",
+     "from": "B",
+     "to": "A",
+     "score_from": 41,
+     "score_to": 54
+    },
+    {
+     "domain": "notion.so",
+     "from": "F",
+     "to": "C",
+     "score_from": 5,
+     "score_to": 25
+    }
+   ]
+  },
+  "repos": {
+   "tracked": 58,
+   "movers": [
+    {
+     "repo": "block/goose",
+     "stars": 55729,
+     "delta": 70,
+     "pct": 0.1
+    },
+    {
+     "repo": "agentskills/agentskills",
+     "stars": 26636,
+     "delta": 56,
+     "pct": 0.2
+    },
+    {
+     "repo": "agentsmd/agents.md",
+     "stars": 25115,
+     "delta": 21,
+     "pct": 0.1
+    },
+    {
+     "repo": "copilotkit/copilotkit",
+     "stars": 38239,
+     "delta": 20,
+     "pct": 0.1
+    },
+    {
+     "repo": "ag-ui-protocol/ag-ui",
+     "stars": 16819,
+     "delta": 18,
+     "pct": 0.1
+    },
+    {
+     "repo": "agentclientprotocol/agent-client-protocol",
+     "stars": 4513,
+     "delta": 16,
+     "pct": 0.4
+    },
+    {
+     "repo": "googlecloudplatform/open-knowledge-format",
+     "stars": 1117,
+     "delta": 14,
+     "pct": 1.3
+    },
+    {
+     "repo": "a2aproject/a2a",
+     "stars": 26298,
+     "delta": 13,
+     "pct": 0.0
+    }
+   ]
+  },
+  "registry": {
+   "since": "2026-10-25T00:00:00Z",
+   "versions": 3000,
+   "servers": 1800
+  }
+ },
+ "record_changes": [],
+ "previous": "2026-10-25",
+ "method": {
+  "sources": {
+   "feeds": 0,
+   "datatracker": 13,
+   "hn": 0,
+   "arxiv": 0,
+   "exa": 100,
+   "parallel": 2,
+   "tips": 0
+  },
+  "candidates": 115,
+  "after_dedupe": 76,
+  "kept": 16,
+  "fetched": 13,
+  "models": {
+   "triage": "claude-opus-5-5",
+   "writer": "claude-opus-5-5"
+  },
+  "facts": 13,
+  "notes": [
+   "item 9 (AI crawler tokens in robots.txt drop on our panel) dropped: numbers not in its sources: ['11']"
+  ],
+  "rules": "Items are written only from the cited sources and our own measurements; every number in an item appears in a source it cites. VERIFIED = fetched from the standard's issuer or a standards body; REPORTED = a claim by press or a third party."
+ },
+ "license": "CC BY 4.0"
+}

@@ -1,0 +1,3 @@
+# Code that CI runs and the engine vendors: changes need a review from the org admin.
+/scripts/ @agenticresources
+/.github/ @agenticresources

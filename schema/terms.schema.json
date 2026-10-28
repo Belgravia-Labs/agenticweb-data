@@ -1,0 +1,9 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"array","items":{"type":"object",
+ "required":["id","name","aliases","definition_md","step","related_protocols","sources","part_of","group"],
+ "properties":{"id":{"type":"string","pattern":"^[a-z0-9-]+$"},"name":{"type":"string"},"aliases":{"type":"array","items":{"type":"string"}},
+  "definition_md":{"type":"string","minLength":20},"step":{"type":["string","null"]},
+  "related_protocols":{"type":"array","items":{"type":"string"}},
+  "sources":{"type":"array","minItems":1,"items":{"type":"object","required":["url","date","label"],
+    "properties":{"url":{"type":"string","pattern":"^https?://"},"date":{"type":["string","null"]},"label":{"type":"string"}}}},
+  "part_of":{"type":["string","null"]},"group":{"type":["string","null"]}},
+ "additionalProperties":false}}

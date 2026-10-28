@@ -1,0 +1,515 @@
+{
+  "version": 1,
+  "date": "2026-10-25",
+  "url": "https://agenticweb.wiki/digest/2026-10-25/",
+  "generated_at": "2026-10-25T02:43:46Z",
+  "window": {
+    "from": "2026-10-23T18:00:00Z",
+    "to": "2026-10-25T02:42:25Z"
+  },
+  "headline": "New IETF drafts propose capability grammar and signed receipts for agent authorization",
+  "lede": "Several individual Internet-Drafts on agent authorization and messaging were posted, including Capability Language Core, which ships a conformance corpus, and a signed permission and action receipt format. Ad Context Protocol shipped v3.2.7. None of the drafts has formal standing in the IETF process.",
+  "items": [
+    {
+      "id": "2026-10-25-1",
+      "title": "Capability Language Core draft defines an executable language for agent authorization",
+      "body": "draft-wei-capability-language-core-01 (Intended status: Experimental) defines a minimal language for describing what an agent is authorized to do. It covers a capability identifier grammar, entailment between a grant and an operation, intersection of grants from multiple sources, and a deterministic decision function. The verdict has three values: allow, deny, allow_unresolved. The author says a published corpus of 154 vectors and 1184 property cases is passed by three implementations (Go, Python, TypeScript), all from the same author.",
+      "why_it_matters": "The language is carrier-neutral and leaves trust, verification and token formats out of scope. It would sit beneath a token or receipt format, not replace one. Teams evaluating it can run the published vectors against their own policy engines.",
+      "kind": "spec",
+      "related": [],
+      "sources": [
+        {
+          "url": "https://datatracker.ietf.org/doc/draft-wei-capability-language-core/",
+          "title": "Capability Language Core",
+          "publisher": "datatracker.ietf.org",
+          "published": "2026-10-24",
+          "label": "VERIFIED",
+          "fetched": true
+        }
+      ],
+      "stats": []
+    },
+    {
+      "id": "2026-10-25-2",
+      "title": "Draft specifies passkey-signed permissions and chained action receipts for agents",
+      "body": "draft-izmaylov-agent-permission-receipts-01 (Intended status: Standards Track) defines records that let a third party check, later and offline, what an agent was permitted to do and what it recorded doing. The principal signs a permission with a passkey. The agent signs a receipt for each action with Ed25519 and ML-DSA-87. Receipts are chained into a log with time-stamped signed tree heads.",
+      "why_it_matters": "Verifiers report separately whether the records are sound and whether each action stayed within its permission. That split is useful for audit tooling. The draft is an individual submission with no IETF endorsement.",
+      "kind": "security",
+      "related": [],
+      "sources": [
+        {
+          "url": "https://datatracker.ietf.org/doc/draft-izmaylov-agent-permission-receipts/",
+          "title": "Signed Permissions and Action Receipts for Automated Agents",
+          "publisher": "datatracker.ietf.org",
+          "published": "2026-10-24",
+          "label": "VERIFIED",
+          "fetched": true
+        }
+      ],
+      "stats": []
+    },
+    {
+      "id": "2026-10-25-3",
+      "title": "Proofpoint authors propose AMMP for sandboxed agent email and messaging",
+      "body": "draft-rapp-ammp-00 (Intended status: Standards Track), by authors at Proofpoint, defines a wire contract carried over a filesystem namespace. The contract sits between an untrusted per-agent connector and a trusted store-and-forward messaging runtime. Outbound messages start as inert request files that the runtime copies, validates and applies policy to before sending. Inbound messages are authenticated and screened before the agent sees a notice.",
+      "why_it_matters": "This is a concrete pattern for giving a sandboxed agent email access without trusting it with credentials. Teams building agent mailboxes can compare it with their own isolation model.",
+      "kind": "security",
+      "related": [],
+      "sources": [
+        {
+          "url": "https://datatracker.ietf.org/doc/draft-rapp-ammp/",
+          "title": "The Agent Mediated Messaging Protocol (AMMP)",
+          "publisher": "datatracker.ietf.org",
+          "published": "2026-10-23",
+          "label": "VERIFIED",
+          "fetched": true
+        }
+      ],
+      "stats": []
+    },
+    {
+      "id": "2026-10-25-4",
+      "title": "Ad Context Protocol releases v3.2.7",
+      "body": "Ad Context Protocol v3.2.7 was released 2026-10-24 on GitHub. It is the current release of the protocol.",
+      "why_it_matters": "AdCP implementers should review the v3.2.7 release notes on GitHub before upgrading.",
+      "kind": "spec",
+      "related": [
+        {
+          "id": "adcp",
+          "name": "Ad Context Protocol",
+          "url": "https://agenticweb.wiki/protocols/adcp/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/adcontextprotocol/adcp/releases/tag/v3.2.7",
+          "title": "Ad Context Protocol: v3.2.7 released 2026-10-24",
+          "publisher": "github.com",
+          "published": "2026-10-24",
+          "label": "VERIFIED",
+          "fetched": true
+        }
+      ],
+      "stats": []
+    },
+    {
+      "id": "2026-10-25-5",
+      "title": "Official MCP Registry saw 1704 servers published or updated in a day",
+      "body": "Our checks counted 1704 servers (3000 versions) published or updated on the official MCP Registry since 2026-10-24.",
+      "why_it_matters": "At this rate of change, clients that consume the registry should poll for updates and pin versions.",
+      "kind": "adoption",
+      "related": [
+        {
+          "id": "mcp-registry",
+          "name": "Official MCP Registry",
+          "url": "https://agenticweb.wiki/protocols/mcp-registry/"
+        },
+        {
+          "id": "mcp",
+          "name": "Model Context Protocol",
+          "url": "https://agenticweb.wiki/protocols/mcp/"
+        }
+      ],
+      "sources": [],
+      "stats": [
+        "1704 servers (3000 versions) were published or updated on the official MCP Registry since 2026-10-24."
+      ]
+    },
+    {
+      "id": "2026-10-25-6",
+      "title": "Three panel domains dropped AI crawler tokens from robots.txt",
+      "body": "AI crawler user-agent tokens in robots.txt are now published by 91 of 210 panel domains (-3 since 2026-10-24). agentskills.io, api.proof.com and docs.adcontextprotocol.org no longer publish them.",
+      "why_it_matters": "Sites that remove these rules fall back to their default crawler policy. Crawler operators should not cache earlier rules.",
+      "kind": "adoption",
+      "related": [
+        {
+          "id": "ai-crawler-tokens-robots",
+          "name": "AI Crawler User-Agent Tokens in robots.txt",
+          "url": "https://agenticweb.wiki/protocols/ai-crawler-tokens-robots/"
+        }
+      ],
+      "sources": [],
+      "stats": [
+        "AI Crawler User-Agent Tokens in robots.txt (ai-crawler-tokens-robots) is published by 91 of 210 panel domains (-3 since 2026-10-24).",
+        "agentskills.io no longer publishes AI Crawler User-Agent Tokens in robots.txt (ai-crawler-tokens-robots); it did on 2026-10-24.",
+        "api.proof.com no longer publishes AI Crawler User-Agent Tokens in robots.txt (ai-crawler-tokens-robots); it did on 2026-10-24.",
+        "docs.adcontextprotocol.org no longer publishes AI Crawler User-Agent Tokens in robots.txt (ai-crawler-tokens-robots); it did on 2026-10-24."
+      ]
+    },
+    {
+      "id": "2026-10-25-7",
+      "title": "aaif.io adds agents.txt and Markdown for Agents, moves from B to A",
+      "body": "aaif.io now publishes agents.txt and Markdown for Agents; it did not on 2026-10-24. Its grade on our panel moved from B (38) to A (54). Markdown for Agents is now published by 64 of 210 panel domains (+1 since 2026-10-24).",
+      "why_it_matters": "This shows which signals our grading credits. Site owners can compare their own score against these additions.",
+      "kind": "adoption",
+      "related": [
+        {
+          "id": "agents-txt",
+          "name": "agents.txt",
+          "url": "https://agenticweb.wiki/protocols/agents-txt/"
+        },
+        {
+          "id": "cloudflare-markdown-for-agents",
+          "name": "Markdown for Agents",
+          "url": "https://agenticweb.wiki/protocols/cloudflare-markdown-for-agents/"
+        }
+      ],
+      "sources": [],
+      "stats": [
+        "Markdown for Agents (cloudflare-markdown-for-agents) is published by 64 of 210 panel domains (+1 since 2026-10-24).",
+        "aaif.io now publishes agents.txt (agents-txt); it did not on 2026-10-24.",
+        "aaif.io now publishes Markdown for Agents (cloudflare-markdown-for-agents); it did not on 2026-10-24.",
+        "aaif.io moved from grade B (38) to A (54)."
+      ]
+    },
+    {
+      "id": "2026-10-25-8",
+      "title": "Agent-channel fan-out draft reaches -03",
+      "body": "draft-morrison-agent-channel-fan-out-03 (Intended status: Informational) specifies a frame format and fan-out delivery model. It covers the concurrent sessions of one identity-bound principal and members of an organizational identity substrate. A sender names a recipient scope rather than a single endpoint. The scope is expanded at delivery time against subscriptions.",
+      "why_it_matters": "This is relevant to anyone coordinating several concurrent agent sessions for one user. It is an individual draft with no IETF standing.",
+      "kind": "spec",
+      "related": [
+        {
+          "id": "agent-channel-fan-out",
+          "name": "Agent-Channel Frame for Identity-Keyed Fan-Out Delivery to Concurrent Sessions",
+          "url": "https://agenticweb.wiki/protocols/agent-channel-fan-out/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://datatracker.ietf.org/doc/draft-morrison-agent-channel-fan-out/",
+          "title": "An Agent-Channel Frame for Identity-Keyed Fan-Out Delivery to Concurrent Sessions",
+          "publisher": "datatracker.ietf.org",
+          "published": "2026-10-23",
+          "label": "VERIFIED",
+          "fetched": true
+        }
+      ],
+      "stats": []
+    },
+    {
+      "id": "2026-10-25-9",
+      "title": "Execution-finality draft describes fail-closed gating of agent actions",
+      "body": "draft-das-execution-finality-foundations-00 (Intended status: Informational) describes an architecture in which a Candidate Act stays non-effective until source-authority evidence and independent execution-time validation establish an authorization context. A Finality Sink withholds effects when required conditions are missing, changed or consumed.",
+      "why_it_matters": "This is an architectural description, not a wire protocol. It is useful mainly as a reference for designing fail-closed approval checks on agent actions.",
+      "kind": "research",
+      "related": [],
+      "sources": [
+        {
+          "url": "https://datatracker.ietf.org/doc/draft-das-execution-finality-foundations/",
+          "title": "Execution-Finality Authority and Independent Validation for Autonomous Operations",
+          "publisher": "datatracker.ietf.org",
+          "published": "2026-10-23",
+          "label": "VERIFIED",
+          "fetched": true
+        }
+      ],
+      "stats": []
+    }
+  ],
+  "stats": {
+    "previous": "2026-10-24",
+    "panel": {
+      "domains": 211,
+      "checked": 210,
+      "errors": 1,
+      "compared": 210,
+      "grades": {
+        "A+": 46,
+        "A": 16,
+        "B": 41,
+        "C": 60,
+        "D": 12,
+        "F": 35
+      },
+      "adoption": [
+        {
+          "id": "llms-txt",
+          "name": "llms.txt",
+          "domains": 143,
+          "delta": 0
+        },
+        {
+          "id": "ai-crawler-tokens-robots",
+          "name": "AI Crawler User-Agent Tokens in robots.txt",
+          "domains": 91,
+          "delta": -3
+        },
+        {
+          "id": "cloudflare-markdown-for-agents",
+          "name": "Markdown for Agents",
+          "domains": 64,
+          "delta": 1
+        },
+        {
+          "id": "cloudflare-content-signals-policy",
+          "name": "Content Signals Policy",
+          "domains": 57,
+          "delta": 0
+        },
+        {
+          "id": "anthropic-agent-skills-format",
+          "name": "Agent Skills",
+          "domains": 46,
+          "delta": 0
+        },
+        {
+          "id": "api-catalog-rfc9727",
+          "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs",
+          "domains": 45,
+          "delta": 0
+        },
+        {
+          "id": "ai-catalog-well-known-file",
+          "name": "AI Catalog well-known file",
+          "domains": 43,
+          "delta": 0
+        },
+        {
+          "id": "oauth-metadata-for-agents",
+          "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)",
+          "domains": 28,
+          "delta": 0
+        },
+        {
+          "id": "a2a",
+          "name": "Agent2Agent Protocol",
+          "domains": 24,
+          "delta": 0
+        },
+        {
+          "id": "agents-md",
+          "name": "AGENTS.md",
+          "domains": 20,
+          "delta": 0
+        },
+        {
+          "id": "mcp",
+          "name": "Model Context Protocol",
+          "domains": 19,
+          "delta": 0
+        },
+        {
+          "id": "mcp-server-cards",
+          "name": "MCP Server Cards (SEP-2127)",
+          "domains": 19,
+          "delta": 0
+        },
+        {
+          "id": "oauth-cimd",
+          "name": "OAuth Client ID Metadata Document",
+          "domains": 16,
+          "delta": 0
+        },
+        {
+          "id": "auth-md",
+          "name": "auth.md",
+          "domains": 15,
+          "delta": 0
+        },
+        {
+          "id": "ard",
+          "name": "Agentic Resource Discovery",
+          "domains": 13,
+          "delta": 0
+        },
+        {
+          "id": "agents-txt",
+          "name": "agents.txt",
+          "domains": 8,
+          "delta": 1
+        },
+        {
+          "id": "webbotauth",
+          "name": "Web Bot Auth HTTP Message Signatures",
+          "domains": 7,
+          "delta": 0
+        },
+        {
+          "id": "rsl",
+          "name": "Really Simple Licensing",
+          "domains": 4,
+          "delta": 0
+        },
+        {
+          "id": "tdmrep",
+          "name": "Text and Data Mining Reservation Protocol",
+          "domains": 3,
+          "delta": 0
+        },
+        {
+          "id": "agents-json",
+          "name": "agents.json",
+          "domains": 2,
+          "delta": 0
+        },
+        {
+          "id": "identity-assertion-authz-grant",
+          "name": "Identity Assertion JWT Authorization Grant",
+          "domains": 2,
+          "delta": 0
+        },
+        {
+          "id": "ucp",
+          "name": "Universal Commerce Protocol",
+          "domains": 2,
+          "delta": 0
+        },
+        {
+          "id": "ads",
+          "name": "Agent Directory Service",
+          "domains": 1,
+          "delta": 0
+        },
+        {
+          "id": "agent-permissions-json",
+          "name": "agent-permissions.json",
+          "domains": 1,
+          "delta": 0
+        },
+        {
+          "id": "okf",
+          "name": "Open Knowledge Format",
+          "domains": 1,
+          "delta": 0
+        },
+        {
+          "id": "web-bot-auth-signature-agent-card",
+          "name": "Signature Agent Card (Web Bot Auth registry)",
+          "domains": 1,
+          "delta": 0
+        }
+      ],
+      "gained": [
+        {
+          "domain": "aaif.io",
+          "id": "agents-txt",
+          "name": "agents.txt"
+        },
+        {
+          "domain": "aaif.io",
+          "id": "cloudflare-markdown-for-agents",
+          "name": "Markdown for Agents"
+        }
+      ],
+      "lost": [
+        {
+          "domain": "agentskills.io",
+          "id": "ai-crawler-tokens-robots",
+          "name": "AI Crawler User-Agent Tokens in robots.txt"
+        },
+        {
+          "domain": "api.proof.com",
+          "id": "ai-crawler-tokens-robots",
+          "name": "AI Crawler User-Agent Tokens in robots.txt"
+        },
+        {
+          "domain": "docs.adcontextprotocol.org",
+          "id": "ai-crawler-tokens-robots",
+          "name": "AI Crawler User-Agent Tokens in robots.txt"
+        }
+      ],
+      "grade_changes": [
+        {
+          "domain": "aaif.io",
+          "from": "B",
+          "to": "A",
+          "score_from": 38,
+          "score_to": 54
+        }
+      ]
+    },
+    "repos": {
+      "tracked": 77,
+      "movers": [
+        {
+          "repo": "block/goose",
+          "stars": 55659,
+          "delta": 47,
+          "pct": 0.1
+        },
+        {
+          "repo": "agentskills/agentskills",
+          "stars": 26580,
+          "delta": 38,
+          "pct": 0.1
+        },
+        {
+          "repo": "copilotkit/copilotkit",
+          "stars": 38219,
+          "delta": 19,
+          "pct": 0.0
+        },
+        {
+          "repo": "agentsmd/agents.md",
+          "stars": 25094,
+          "delta": 17,
+          "pct": 0.1
+        },
+        {
+          "repo": "googlecloudplatform/open-knowledge-format",
+          "stars": 1103,
+          "delta": 13,
+          "pct": 1.2
+        },
+        {
+          "repo": "ag-ui-protocol/ag-ui",
+          "stars": 16801,
+          "delta": 11,
+          "pct": 0.1
+        },
+        {
+          "repo": "a2aproject/a2a",
+          "stars": 26285,
+          "delta": 8,
+          "pct": 0.0
+        },
+        {
+          "repo": "a2ui-project/a2ui",
+          "stars": 16811,
+          "delta": 5,
+          "pct": 0.0
+        }
+      ]
+    },
+    "registry": {
+      "servers": 1704,
+      "since": "2026-10-24T00:00:00Z",
+      "versions": 3000
+    }
+  },
+  "record_changes": [
+    {
+      "record_id": "adcp",
+      "name": "Ad Context Protocol",
+      "summary": "Ad Context Protocol v3.2.7 released 2026-10-24 on GitHub.",
+      "url": "https://github.com/adcontextprotocol/adcp/releases/tag/v3.2.7",
+      "label": "VERIFIED",
+      "date": "2026-10-24"
+    }
+  ],
+  "previous": "2026-10-24",
+  "method": {
+    "sources": {
+      "feeds": 0,
+      "datatracker": 24,
+      "hn": 0,
+      "arxiv": 0,
+      "exa": 0,
+      "parallel": 0,
+      "tips": 0
+    },
+    "candidates": 24,
+    "after_dedupe": 19,
+    "kept": 8,
+    "fetched": 8,
+    "models": {
+      "triage": "claude-opus-5-5",
+      "writer": "claude-opus-5-5"
+    },
+    "facts": 10,
+    "notes": [],
+    "rules": "Items are written only from the cited sources and our own measurements; every number in an item appears in a source it cites. VERIFIED = fetched from the standard's issuer or a standards body; REPORTED = a claim by press or a third party."
+  },
+  "license": "CC BY 4.0"
+}

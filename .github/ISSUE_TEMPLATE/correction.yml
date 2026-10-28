@@ -1,0 +1,16 @@
+name: Correct a record
+description: Something on agenticweb.wiki is wrong or out of date.
+labels: [correction]
+body:
+  - type: input
+    id: record
+    attributes: { label: Record id or page URL }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What is wrong and what it should say }
+    validations: { required: true }
+  - type: input
+    id: source
+    attributes: { label: Source URL that shows the correct value }
+    validations: { required: true }

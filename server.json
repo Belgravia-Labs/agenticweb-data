@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "wiki.agenticweb/probe",
+  "title": "Agentic Web Wiki — standards reference, probe, validate, template",
+  "description": "Look up 133 agentic-web standards, live-probe any domain, validate manifests, generate boilerplate.",
+  "version": "1.3.0",
+  "websiteUrl": "https://agenticweb.wiki",
+  "repository": {
+    "url": "https://github.com/Belgravia-Labs/agenticweb-data",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agenticweb.wiki/mcp"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "license": "MIT",
+      "tools": [
+        "define",
+        "get",
+        "search",
+        "has",
+        "probe",
+        "changes",
+        "stale",
+        "validate_manifest",
+        "template",
+        "ask",
+        "digest"
+      ]
+    }
+  }
+}

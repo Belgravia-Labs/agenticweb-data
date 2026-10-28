@@ -1,0 +1,244 @@
+[
+ {
+  "id": "agent-ready-dev",
+  "name": "Agent Ready",
+  "url": "https://agent-ready.dev/",
+  "kind": "scanner",
+  "does": "Scores a given site against the Vercel Agent Readability Spec and llmstxt.org and lists the fixes it found missing.",
+  "covers": [
+   "vercel-agent-readability",
+   "llms-txt"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "lumar-agentic-readiness",
+  "name": "Lumar Agentic Readiness Scanner",
+  "url": "https://agentic-readiness.lumar.io/",
+  "kind": "scanner",
+  "does": "Checks which agent-facing technologies a site publishes — robots.txt, sitemaps, MCP, schema and Markdown twins — and whether each is implemented correctly.",
+  "covers": [
+   "llms-txt",
+   "mcp",
+   "ai-crawler-tokens-robots"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "agentswelcome-protocol-atlas",
+  "name": "Agents Welcome — Agent Protocol Atlas",
+  "url": "https://agentswelcome.dev/protocols",
+  "kind": "tracker",
+  "does": "Groups agent-facing protocols by layer with links to each specification and to sample code.",
+  "covers": [
+   "mcp",
+   "webmcp",
+   "a2a",
+   "x402",
+   "ap2",
+   "webbotauth",
+   "llms-txt",
+   "rsl",
+   "agents-json"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "agent-almanac",
+  "name": "The Agent Almanac",
+  "url": "https://agentalmanac.org/",
+  "kind": "index",
+  "does": "Aggregates public numbers on agent services, payments and infrastructure across several commerce and agent protocols.",
+  "covers": [
+   "x402",
+   "mpp",
+   "agentic-commerce-protocol",
+   "ucp",
+   "ap2",
+   "a2a",
+   "mcp"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "ardvark",
+  "name": "ardvark",
+  "url": "https://ardvark.no/",
+  "kind": "index",
+  "does": "Crawls the web for ai-catalog.json documents, verifies them against the ARD spec and indexes the agents, MCP servers and skills they declare.",
+  "covers": [
+   "ard"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "neuronto-ard-publishers",
+  "name": "Neuronto ARD publisher list",
+  "url": "https://neuronto.com/ard-publishers",
+  "kind": "index",
+  "does": "Lists the domains it has found publishing an ARD manifest, each checked by fetching the manifest and testing endpoint reachability.",
+  "covers": [
+   "ard"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "mcp-registry",
+  "name": "MCP Registry",
+  "url": "https://github.com/modelcontextprotocol/registry",
+  "kind": "registry",
+  "does": "The Model Context Protocol project's own registry of published MCP servers, with its API and server list in the open.",
+  "covers": [
+   "mcp"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "x402-foundation-members",
+  "name": "x402 Foundation members",
+  "url": "https://x402.org/members/",
+  "kind": "index",
+  "does": "Lists the member organisations of the x402 Foundation.",
+  "covers": [
+   "x402"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "cloudflare-ai-crawl-control-bots",
+  "name": "Cloudflare AI Crawl Control bot reference",
+  "url": "https://developers.cloudflare.com/ai-crawl-control/reference/bots/",
+  "kind": "docs",
+  "does": "Names the AI crawlers Cloudflare recognises, with the operator, user-agent token and stated purpose of each.",
+  "covers": [
+   "ai-crawler-tokens-robots"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "cloudflare-web-bot-auth",
+  "name": "Cloudflare Web Bot Auth documentation",
+  "url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/",
+  "kind": "docs",
+  "does": "Documents how Cloudflare verifies HTTP message signatures from bots at the edge and how a bot operator registers keys.",
+  "covers": [
+   "webbotauth",
+   "http-message-signatures"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "chromestatus-webmcp",
+  "name": "Chrome Platform Status: WebMCP",
+  "url": "https://chromestatus.com/feature/5117755740913664",
+  "kind": "tracker",
+  "does": "Tracks the WebMCP feature's implementation status in Chrome, including its origin trial and standards positions.",
+  "covers": [
+   "webmcp"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "ietf-webbotauth-wg",
+  "name": "IETF webbotauth working group",
+  "url": "https://datatracker.ietf.org/wg/webbotauth/",
+  "kind": "standards-body",
+  "does": "The IETF working group page for Web Bot Auth: charter, adopted drafts and meeting materials.",
+  "covers": [
+   "webbotauth"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "ietf-aipref-wg",
+  "name": "IETF aipref working group",
+  "url": "https://datatracker.ietf.org/wg/aipref/",
+  "kind": "standards-body",
+  "does": "The IETF working group page for AI preferences: charter, drafts and meeting materials.",
+  "covers": [
+   "aipref-vocabulary",
+   "aipref-content-usage-attachment"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "ietf-wimse-wg",
+  "name": "IETF wimse working group",
+  "url": "https://datatracker.ietf.org/wg/wimse/",
+  "kind": "standards-body",
+  "does": "The IETF working group page for workload identity in multi-service environments: charter, drafts and meeting materials.",
+  "covers": [
+   "wimse"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "crawlercheck",
+  "name": "CrawlerCheck",
+  "url": "https://crawlercheck.com/",
+  "kind": "tool",
+  "does": "Tests whether a site's robots.txt allows named search and AI crawlers to fetch a given URL.",
+  "covers": [
+   "ai-crawler-tokens-robots"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "llmstxt-org",
+  "name": "llmstxt.org",
+  "url": "https://llmstxt.org/",
+  "kind": "docs",
+  "does": "The llms.txt proposal's own site: the file format, its rationale and a directory of sites publishing one.",
+  "covers": [
+   "llms-txt"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "agntcy-dir-spec",
+  "name": "AGNTCY Directory specification",
+  "url": "https://spec.dir.agntcy.org/",
+  "kind": "registry",
+  "does": "Specification and API reference for the AGNTCY Agent Directory, a distributed registry of agent records.",
+  "covers": [
+   "ads",
+   "oasf"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "kakao-playmcp",
+  "name": "Kakao PlayMCP",
+  "url": "https://playmcp.kakao.com/",
+  "kind": "registry",
+  "does": "Kakao's registry and playground of MCP servers from Kakao and third parties, with developer registration and an OAuth-protected MCP gateway.",
+  "covers": [
+   "mcp"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "shopbot-index",
+  "name": "ShopBot Index",
+  "url": "https://shopbotindex.com/",
+  "kind": "index",
+  "does": "Weekly crawl of online stores for a published UCP profile; the 2026-10-19 crawl found one at 770 of the 1,667 stores it could check.",
+  "covers": [
+   "ucp"
+  ],
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "crawlindex",
+  "name": "CrawlIndex",
+  "url": "https://crawlindex.org/",
+  "kind": "index",
+  "does": "Nightly crawl of thousands of the most-visited sites recording which AI crawlers they block and whether they publish llms.txt or AGENTS.md, with its method and CC BY 4.0 dataset published.",
+  "covers": [
+   "llms-txt",
+   "ai-crawler-tokens-robots",
+   "agents-md"
+  ],
+  "last_checked": "2026-10-23"
+ }
+]

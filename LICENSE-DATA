@@ -1,0 +1,32 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0) — Dataset & Prose License
+=====================================================================================
+
+Copyright (c) 2026 Belgravia Labs LLC (https://agenticweb.wiki/)
+
+Scope of this license (CC BY 4.0):
+All dataset records, protocol summaries, glossary definitions, comparison tables,
+daily digests, Markdown twins (`index.md`), Open Knowledge Format bundles (`/okf/`),
+and bulk data exports under `/data/` (`standards.json`, `standards.ndjson`,
+`standards.csv`, `protocols.json`, `terms.json`, `instances.json`, `resources.json`,
+`useful-resources.json`, `changes.json`, `news.json`, `versions.json`,
+`panel-latest.json`, `panel-latest.ndjson`, and `ecosystem-census.json`) are
+licensed under the Creative Commons Attribution 4.0 International License.
+
+To view a copy of the full license legal code, visit:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+You are free to:
+- Share: copy and redistribute the material in any medium or format for any
+  purpose, even commercially.
+- Adapt: remix, transform, and build upon the material for any purpose, even
+  commercially.
+
+Under the following terms:
+- Attribution: You must give appropriate credit to "Agentic Web Wiki (by Belgravia Labs)"
+  with a link to https://agenticweb.wiki/, provide a link to the license
+  (https://creativecommons.org/licenses/by/4.0/), and indicate if changes were made.
+
+Note on code, schemas, and probe rules:
+The site generator (`build/`), Cloudflare Worker (`worker/`), JSON Schemas (`schema/`),
+and executable probe rules (`data/probes.json`) are dual/separately licensed under the
+MIT License (see `LICENSE` in the repository root).

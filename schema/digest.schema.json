@@ -1,0 +1,33 @@
+{"$schema": "https://json-schema.org/draft/2020-12/schema", "$id": "https://agenticweb.wiki/schema/digest.schema.json",
+ "title": "agenticweb.wiki daily digest",
+ "description": "One day's digest: written items, each citing the sources it rests on, plus the day's measured stats. Written by the engine's `daily` command; served at /digest/<date>/index.json and by the MCP tool digest(date).",
+ "type": "object", "required": ["version", "date", "url", "generated_at", "window", "headline", "lede", "items", "stats", "record_changes", "method", "license"],
+ "$defs": {
+  "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+  "source": {"type": "object", "required": ["url", "title", "publisher", "published", "label", "fetched"], "additionalProperties": false, "properties": {
+    "url": {"type": "string", "pattern": "^https?://"}, "title": {"type": "string"}, "publisher": {"type": "string"},
+    "published": {"type": ["string", "null"]}, "label": {"enum": ["VERIFIED", "REPORTED"]}, "fetched": {"type": "boolean"}}},
+  "related": {"type": "object", "required": ["id", "name", "url"], "additionalProperties": false, "properties": {"id": {"type": "string"}, "name": {"type": "string"}, "url": {"type": "string"}}}},
+ "properties": {
+  "version": {"const": 1},
+  "date": {"$ref": "#/$defs/date"},
+  "url": {"type": "string", "pattern": "^https://agenticweb\\.wiki/digest/\\d{4}-\\d{2}-\\d{2}/$"},
+  "generated_at": {"type": "string"},
+  "window": {"type": "object", "required": ["from", "to"], "properties": {"from": {"type": "string"}, "to": {"type": "string"}}},
+  "headline": {"type": "string", "minLength": 1, "maxLength": 160},
+  "lede": {"type": "string", "minLength": 1, "maxLength": 800},
+  "items": {"type": "array", "items": {"type": "object", "required": ["id", "title", "body", "why_it_matters", "kind", "related", "sources", "stats"], "additionalProperties": false, "properties": {
+    "id": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}-\\d+$"}, "title": {"type": "string", "minLength": 1}, "body": {"type": "string"},
+    "why_it_matters": {"type": ["string", "null"]}, "kind": {"enum": ["spec", "adoption", "launch", "governance", "security", "research", "other"]},
+    "related": {"type": "array", "items": {"$ref": "#/$defs/related"}}, "sources": {"type": "array", "items": {"$ref": "#/$defs/source"}},
+    "stats": {"type": "array", "items": {"type": "string"}}},
+    "anyOf": [{"properties": {"sources": {"minItems": 1}}}, {"properties": {"stats": {"minItems": 1}}}]}},
+  "stats": {"type": "object", "required": ["previous", "panel", "repos", "registry"], "properties": {
+    "previous": {"anyOf": [{"$ref": "#/$defs/date"}, {"type": "null"}]},
+    "panel": {"type": "object", "required": ["domains", "checked", "errors", "compared", "grades", "adoption", "gained", "lost", "grade_changes"]},
+    "repos": {"type": "object", "required": ["tracked", "movers"]},
+    "registry": {"type": ["object", "null"]}}},
+  "record_changes": {"type": "array", "items": {"type": "object", "required": ["record_id", "name", "summary", "url", "label"]}},
+  "previous": {"anyOf": [{"$ref": "#/$defs/date"}, {"type": "null"}]},
+  "method": {"type": "object", "required": ["sources", "candidates", "kept", "facts", "models", "notes", "rules"]},
+  "license": {"const": "CC BY 4.0"}}}

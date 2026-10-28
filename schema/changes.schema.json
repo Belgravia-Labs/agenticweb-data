@@ -1,0 +1,5 @@
+{"$schema": "https://json-schema.org/draft/2020-12/schema", "type": "array",
+ "items": {"type": "object", "required": ["id","date","record_id","kind","field","claim"], "additionalProperties": false,
+  "properties": {"id": {"type": "string", "pattern": "^q-"}, "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"}, "record_id": {"type": "string"},
+   "kind": {"type": "string"}, "field": {"type": "string"}, "from": {}, "to": {}, "claim": {"type": "string"}, "evidence_url": {"type": ["string","null"]},
+   "detector": {"type": ["string","null"]}, "commit": {"type": ["string","null"]}}}}

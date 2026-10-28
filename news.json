@@ -1,0 +1,744 @@
+[
+ {
+  "date": "2025-08-21",
+  "title": "Agent Communication Protocol v1.0.3 released",
+  "url": "https://github.com/i-am-bee/acp/releases/tag/v1.0.3",
+  "summary": "v1.0.3 released 2025-08-21",
+  "related": [
+   "agent-communication-protocol"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2025-10-14",
+  "title": "Visa introduces the Trusted Agent Protocol",
+  "url": "https://investor.visa.com/news/news-details/2025/Visa-Introduces-Trusted-Agent-Protocol-An-Ecosystem-Led-Framework-for-AI-Commerce/default.aspx",
+  "summary": "Visa announced the Trusted Agent Protocol, a framework for merchants to recognise and trust shopping agents.",
+  "related": [
+   "tap"
+  ]
+ },
+ {
+  "date": "2026-01-27",
+  "title": "Open Semantic Interchange specifications finalised",
+  "url": "https://www.snowflake.com/en/blog/open-semantic-interchanges-specs-finalized/",
+  "summary": "Snowflake reported that the Open Semantic Interchange specifications had been finalised by the initiative's partners.",
+  "related": [
+   "osi"
+  ]
+ },
+ {
+  "date": "2026-03-05",
+  "title": "Mastercard announces Verifiable Intent",
+  "url": "https://www.mastercard.com/global/en/news-and-trends/stories/2026/verifiable-intent.html",
+  "summary": "Mastercard set out Verifiable Intent, a credential format for proving what a user asked an agent to buy.",
+  "related": [
+   "vi"
+  ]
+ },
+ {
+  "date": "2026-04-17",
+  "title": "Agentic Commerce Protocol dated specification 2026-04-17",
+  "url": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
+  "summary": "ACP published its 2026-04-17 dated specification, maintained by OpenAI, Stripe and Meta.",
+  "related": [
+   "agentic-commerce-protocol"
+  ]
+ },
+ {
+  "date": "2026-04-23",
+  "title": "Agent Authorization Grant draft expired",
+  "url": "https://datatracker.ietf.org/doc/draft-rosenberg-oauth-aauth/",
+  "summary": "Expired Internet-Draft (expired 2026-04-23)",
+  "related": [
+   "aauth"
+  ],
+  "kind": "expiry"
+ },
+ {
+  "date": "2026-04-28",
+  "title": "AP2 Checkout Mandate v0.2.0 released",
+  "url": "https://github.com/google-agentic-commerce/AP2/releases/tag/v0.2.0",
+  "summary": "v0.2.0 released 2026-04-28",
+  "related": [
+   "ap2-checkout-mandate"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-06-17",
+  "title": "Google announces the Agentic Resource Discovery specification",
+  "url": "https://developers.googleblog.com/en/announcing-the-agentic-resource-discovery-specification/",
+  "summary": "Google's developer blog announced ARD, a well-known manifest listing the resources a site offers agents.",
+  "related": [
+   "ard"
+  ]
+ },
+ {
+  "date": "2026-06-26",
+  "title": "First Web Bot Auth HTTP signature draft published at the IETF",
+  "url": "https://datatracker.ietf.org/doc/html/draft-meunier-webbotauth-httpsig-protocol-00",
+  "summary": "draft-meunier-webbotauth-httpsig-protocol-00 set out how a bot signs requests with RFC 9421 HTTP message signatures.",
+  "related": [
+   "webbotauth",
+   "http-message-signatures"
+  ]
+ },
+ {
+  "date": "2026-07-14",
+  "title": "x402 Foundation becomes operational under the Linux Foundation",
+  "url": "https://x402.org/announcement",
+  "summary": "The Linux Foundation announced the operational launch of the x402 Foundation to standardise internet-native payments for agents.",
+  "related": [
+   "x402"
+  ]
+ },
+ {
+  "date": "2026-07-28",
+  "title": "Model Context Protocol 2026-07-28 specification revision",
+  "url": "https://modelcontextprotocol.io/specification/2026-07-28/index",
+  "summary": "MCP published a new dated specification revision, the current version of the protocol.",
+  "related": [
+   "mcp"
+  ]
+ },
+ {
+  "date": "2026-07-30",
+  "title": "IAB Tech Lab releases AAMP 2.3",
+  "url": "https://iabtechlab.com/press-releases/iab-tech-lab-releases-aamp-2-3-bringing-enterprise-grade-infrastructure-and-privacy-diligence-to-agentic-advertising/",
+  "summary": "AAMP 2.3 added infrastructure and privacy-diligence components contributed by AWS, HyperMindZ, Mixpeek, SafeGuard Privacy and Adform.",
+  "related": [
+   "aamp"
+  ]
+ },
+ {
+  "date": "2026-08-07",
+  "title": "Chrome documents a WebMCP origin trial",
+  "url": "https://developer.chrome.com/docs/ai/webmcp",
+  "summary": "Chrome's developer documentation described a WebMCP origin trial running from Chrome 149.",
+  "related": [
+   "webmcp"
+  ]
+ },
+ {
+  "date": "2026-08-11",
+  "title": "Agent Authorization Profile draft expired",
+  "url": "https://datatracker.ietf.org/doc/draft-aap-oauth-profile/",
+  "summary": "Expired Internet-Draft (expired 2026-08-11)",
+  "related": [
+   "aap"
+  ],
+  "kind": "expiry"
+ },
+ {
+  "date": "2026-08-12",
+  "title": "IAB Tech Lab publishes ARTF v1.0",
+  "url": "https://iabtechlab.com/standards/artf/",
+  "summary": "The Agentic RTB Framework reached v1.0 and IAB Tech Lab reported production use by unnamed companies.",
+  "related": [
+   "artf"
+  ]
+ },
+ {
+  "date": "2026-08-25",
+  "title": "Universal Commerce Protocol documentation released",
+  "url": "https://ucp.dev/documentation/core-concepts/",
+  "summary": "The UCP site published its core-concepts documentation, dated 25 August 2026, with Shopping, Lodging and Food tracks.",
+  "related": [
+   "ucp"
+  ]
+ },
+ {
+  "date": "2026-08-25",
+  "title": "Universal Commerce Protocol v2026-08-25 released",
+  "url": "https://github.com/Universal-Commerce-Protocol/ucp/releases/tag/v2026-08-25",
+  "summary": "v2026-08-25 released 2026-08-25",
+  "related": [
+   "ucp"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-08-26",
+  "title": "Agentic Resource Discovery v0.91 published",
+  "url": "https://raw.githubusercontent.com/ards-project/ard-spec/main/spec/ard.md",
+  "summary": "The ARD specification reached v0.91, with the manifest served at /.well-known/ard.json.",
+  "related": [
+   "ard"
+  ]
+ },
+ {
+  "date": "2026-08-28",
+  "title": "Agent Registration and Discovery Protocol draft expired",
+  "url": "https://datatracker.ietf.org/doc/draft-pioli-agent-discovery/",
+  "summary": "Expired Internet-Draft (expired 2026-08-28)",
+  "related": [
+   "ardp"
+  ],
+  "kind": "expiry"
+ },
+ {
+  "date": "2026-09-01",
+  "title": "IETF webbotauth working group adopts the HTTP signature draft",
+  "url": "https://datatracker.ietf.org/doc/draft-ietf-webbotauth-httpsig-protocol/",
+  "summary": "draft-ietf-webbotauth-httpsig-protocol-00 replaced the individual Web Bot Auth draft as a working-group document.",
+  "related": [
+   "webbotauth",
+   "http-message-signatures"
+  ]
+ },
+ {
+  "date": "2026-09-04",
+  "title": "WebMCP published as a Draft Community Group Report",
+  "url": "https://webmachinelearning.github.io/webmcp/",
+  "summary": "The W3C Web Machine Learning Community Group published a 4 September 2026 draft of WebMCP, the browser API for pages to expose tools to agents.",
+  "related": [
+   "webmcp"
+  ]
+ },
+ {
+  "date": "2026-09-09",
+  "title": "MPP draft renamed draft-httpauth-payment",
+  "url": "https://datatracker.ietf.org/doc/draft-httpauth-payment/",
+  "summary": "The Machine Payments Protocol IETF draft is now draft-httpauth-payment, with revision -01 dated 9 September 2026.",
+  "related": [
+   "mpp"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-09-14",
+  "title": "AIPREF Vocabulary: revision -08 published",
+  "url": "https://datatracker.ietf.org/doc/html/draft-ietf-aipref-vocab-08",
+  "summary": "Datatracker shows draft-ietf-aipref-vocab-08, dated 2026-09-14, expires 2027-03-18",
+  "related": [
+   "aipref-vocabulary"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-09-15",
+  "title": "aiagent-auth adopted by WIMSE as AIMS",
+  "url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
+  "summary": "The IETF WIMSE working group adopted draft-klrc-aiagent-auth as draft-ietf-wimse-aims-00 on 15 September 2026.",
+  "related": [
+   "aiagent-auth",
+   "wimse-aims"
+  ],
+  "kind": "status"
+ },
+ {
+  "date": "2026-09-18",
+  "title": "AG-UI 1.0 released and frozen",
+  "url": "https://github.com/ag-ui-protocol/ag-ui/discussions/2792",
+  "summary": "AG-UI 1.0 was released and frozen on 18 September 2026, with a JSON Schema published alongside.",
+  "related": [
+   "ag-ui"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-09-24",
+  "title": "ANP v1.2",
+  "url": "https://github.com/agent-network-protocol/AgentNetworkProtocol/releases",
+  "summary": "Agent Network Protocol v1.2 was released on 24 September 2026.",
+  "related": [
+   "anp"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-09-25",
+  "title": "UCP adds lodging booking draft and payments council",
+  "url": "https://github.com/Universal-Commerce-Protocol/ucp/releases",
+  "summary": "UCP formed a Payments Technical Council on 2 September 2026 and added a Lodging Booking draft capability on 25 September 2026.",
+  "related": [
+   "ucp"
+  ],
+  "kind": "status"
+ },
+ {
+  "date": "2026-09-25",
+  "title": "AAuth: Rosenberg draft expired, Hardt draft active",
+  "url": "https://datatracker.ietf.org/doc/draft-hardt-oauth-aauth-protocol/",
+  "summary": "The Rosenberg AAuth draft expired on 23 April 2026; the active AAuth line is draft-hardt-oauth-aauth-protocol-11, dated 25 September 2026.",
+  "related": [
+   "aauth",
+   "aauth-hardt"
+  ],
+  "kind": "status"
+ },
+ {
+  "date": "2026-09-25",
+  "title": "MCP Apps v2.0.3 released",
+  "url": "https://github.com/modelcontextprotocol/ext-apps/releases/tag/v2.0.3",
+  "summary": "v2.0.3 released 2026-09-25",
+  "related": [
+   "mcp-apps"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-09-28",
+  "title": "AAuth Rich Resource Requests: revision -00 published",
+  "url": "https://datatracker.ietf.org/doc/html/draft-hardt-aauth-r3-00",
+  "summary": "Datatracker shows draft-hardt-aauth-r3-00, dated 2026-09-28, expires 2027-04-01",
+  "related": [
+   "aauth-r3"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-10-01",
+  "title": "x402 Foundation appoints executive director",
+  "url": "https://www.linuxfoundation.org/press/linux-foundation-appoints-michael-hursta-as-executive-director-of-the-x402-foundation",
+  "summary": "The Linux Foundation appointed Michael Hursta as executive director of the x402 Foundation, from 1 October 2026.",
+  "related": [
+   "x402"
+  ],
+  "kind": "status"
+ },
+ {
+  "date": "2026-10-04",
+  "title": "AAuth (Hardt): companion draft draft-hardt-aauth-headers expired",
+  "url": "https://datatracker.ietf.org/doc/draft-hardt-aauth-headers/",
+  "summary": "Companion draft draft-hardt-aauth-headers-00 expired on 2026-10-04; the record follows draft-hardt-oauth-aauth-protocol",
+  "related": [
+   "aauth-hardt"
+  ],
+  "kind": "expiry"
+ },
+ {
+  "date": "2026-10-05",
+  "title": "IETF draft: audit record format for agent authorization decisions",
+  "url": "https://datatracker.ietf.org/doc/draft-gilda-wimse-agent-audit-record/",
+  "summary": "draft-gilda-wimse-agent-audit-record-02, an audit record format for AI agent authorization decisions, is dated 5 October 2026.",
+  "related": [
+   "wimse-agent-audit-record"
+  ],
+  "kind": "candidate"
+ },
+ {
+  "date": "2026-10-06",
+  "title": "MCP Server Cards extension reaches Final",
+  "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2127-mcp-server-cards.md",
+  "summary": "SEP-2127 (MCP Server Cards) is marked Final as of 6 October 2026; Skills over MCP (SEP-2640) reached Final on 13 September 2026.",
+  "related": [
+   "mcp",
+   "mcp-server-cards"
+  ],
+  "kind": "status"
+ },
+ {
+  "date": "2026-10-09",
+  "title": "ACP v1.11.0",
+  "url": "https://github.com/agentclientprotocol/agent-client-protocol/blob/main/CHANGELOG.md",
+  "summary": "Agent Client Protocol v1.11.0 (schema v1.25.0) was released on 9 October 2026; v2 remains unstable.",
+  "related": [
+   "agent-client-protocol"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-10-09",
+  "title": "Sierra and Meta publish Personal Agent Protocol (Poppy) v0.1 specification",
+  "url": "https://personalagentprotocol.org/docs/0.1/spec",
+  "summary": "Sierra, Meta and 35+ design partners published Personal Agent Protocol (Poppy) v0.1 at personalagentprotocol.org/docs/0.1/spec under Apache-2.0, with Draft 0.2 now in progress.",
+  "related": [
+   "personal-agent-protocol"
+  ],
+  "kind": "candidate"
+ },
+ {
+  "date": "2026-10-12",
+  "title": "AdCP v3.2.4",
+  "url": "https://github.com/adcontextprotocol/adcp/releases",
+  "summary": "AdCP v3.2.4 was released on 12 October 2026.",
+  "related": [
+   "adcp"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-10-13",
+  "title": "Agent Audit Trail: revision -08 published",
+  "url": "https://datatracker.ietf.org/doc/html/draft-sharif-agent-audit-trail-08",
+  "summary": "Datatracker shows draft-sharif-agent-audit-trail-08, dated 2026-10-13, expires 2027-04-16",
+  "related": [
+   "agent-audit-trail"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-10-15",
+  "title": "Agent Name Service v2 (ANS) draft expired",
+  "url": "https://datatracker.ietf.org/doc/draft-narajala-courtney-ansv2/",
+  "summary": "Expired Internet-Draft (expired 2026-10-15)",
+  "related": [
+   "ans"
+  ],
+  "kind": "expiry"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "s402 repository archived",
+  "url": "https://github.com/s402-protocol/core/releases/tag/v0.8.0",
+  "summary": "Repository archived by its owner",
+  "related": [
+   "s402"
+  ],
+  "kind": "status"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: A Framework for Agent Discovery in DAWN",
+  "url": "https://datatracker.ietf.org/doc/html/draft-zhang-dawn-agent-discovery-framework-06",
+  "summary": "An informational IETF Internet-Draft describing a two-layer federated reference architecture for initial discovery of AI agents under the DAWN charter.",
+  "related": [
+   "dawn-agent-discovery-framework"
+  ],
+  "kind": "candidate",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: The Agent Identity Document: A Hosted, Accountable Public Record for AI Agents",
+  "url": "https://datatracker.ietf.org/doc/html/draft-alla-agent-identity-document-01",
+  "summary": "Specifies a small JSON document served at /.well-known/agent-identity.json on a hostname assigned to a single agent by an identity provider.",
+  "related": [
+   "agent-identity-document"
+  ],
+  "kind": "candidate",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: Discovery of Model Context Protocol Servers via DNS TXT Records",
+  "url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-08",
+  "summary": "This Internet-Draft defines three DNS TXT records: `_mcp.<domain>` for MCP server endpoint, transport, key and capability profile; `_org-alter.<domain>` for operator organisational identity; and `_alter.<domain>` for an Ed25519-signed ~handle envelope.",
+  "related": [
+   "mcp-dns-discovery"
+  ],
+  "kind": "candidate",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: Security Principal and Verifier Binding for Agent Communication Protocols",
+  "url": "https://datatracker.ietf.org/doc/html/draft-bu-agentproto-security-principal-binding-08",
+  "summary": "An individual IETF Internet-Draft that defines a protocol-neutral matrix format for separating security claims such as user authority, agent instance identity, tool identity, delegation, session binding and action evidence.",
+  "related": [
+   "agent-principal-binding"
+  ],
+  "kind": "candidate",
+  "confidence": 0.6
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: Agent Identity Protocol (AIP): Verifiable Delegation for AI Agent Systems",
+  "url": "https://datatracker.ietf.org/doc/html/draft-prakash-aip-02",
+  "summary": "AIP conveys delegated authority along a chain of AI agents so a relying party can verify the grantor, the path, and that each hop only narrowed authority.",
+  "related": [
+   "aip-delegation-chain"
+  ],
+  "kind": "candidate",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: Credential Delegation Protocol for AI Agents in Multi-System Environments",
+  "url": "https://datatracker.ietf.org/doc/html/draft-sweeney-wimse-credential-delegation-01",
+  "summary": "An individual Internet-Draft in the IETF WIMSE space that profiles OAuth 2.0 Token Exchange (RFC 8693), DPoP (RFC 9449), Rich Authorization Requests (RFC 9396) and CIBA for delegating scoped credentials to AI agents.",
+  "related": [
+   "credential-delegation-protocol-wimse"
+  ],
+  "kind": "candidate",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: Agent Delegation Receipts",
+  "url": "https://datatracker.ietf.org/doc/html/draft-nelson-agent-delegation-receipts-11",
+  "summary": "Defines the Agent Delegation Receipt, a signed record of the scope, hard boundaries, validity window, and operator-instruction hash that a human principal authorized for an AI agent.",
+  "related": [
+   "agent-delegation-receipts"
+  ],
+  "kind": "candidate",
+  "confidence": 0.6
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: AAuth Rich Resource Requests",
+  "url": "https://datatracker.ietf.org/doc/html/draft-hardt-aauth-r3-00",
+  "summary": "AAuth R3 is an individual IETF draft by Dick Hardt that extends AAuth so an agent can request named operations from a vocabulary the resource advertises, rather than scope strings.",
+  "related": [
+   "aauth-r3"
+  ],
+  "kind": "candidate",
+  "confidence": 0.6
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: Agent Context Interchange Protocol",
+  "url": "https://datatracker.ietf.org/doc/html/draft-agarwal-acip-00",
+  "summary": "ACIP is an individual Internet-Draft (Informational) defining a YAML policy file, `agent-context.yaml`, and a host resolution procedure for persistent instructions given to coding agents.",
+  "related": [
+   "acip"
+  ],
+  "kind": "candidate",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: The 'knowledge-linkset' Well-Known URI for Publishing Knowledge Artefacts",
+  "url": "https://datatracker.ietf.org/doc/html/draft-besleaga-agentic-knowledge-wellknown-01",
+  "summary": "Defines the well-known URI /.well-known/knowledge-linkset, where an origin serves a single RFC 9264 link set (application/linkset+json) listing its knowledge artefacts such as graph serializations, a JSON-LD context, an agent-facing text file, a chunk export and a change ledger.",
+  "related": [
+   "knowledge-linkset"
+  ],
+  "kind": "candidate",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: AI Agent Execution Profile of SCITT",
+  "url": "https://datatracker.ietf.org/doc/html/draft-emirdag-scitt-ai-agent-execution-01",
+  "summary": "An individual IETF Internet-Draft (-01, Informational) profiling SCITT (RFC 9943) for AI agent execution evidence.",
+  "related": [
+   "scitt-ai-agent-execution"
+  ],
+  "kind": "candidate",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: Agent-Channel Frame for Identity-Keyed Fan-Out Delivery to Concurrent Sessions",
+  "url": "https://datatracker.ietf.org/doc/html/draft-morrison-agent-channel-fan-out-02",
+  "summary": "An individual Internet-Draft (Informational) defining an application-layer JSON frame, the agent-channel frame, for short structured messages between concurrent agent sessions of one principal or members of an organisation.",
+  "related": [
+   "agent-channel-fan-out"
+  ],
+  "kind": "candidate",
+  "confidence": 0.6
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: Agentic Authority Graph Validation",
+  "url": "https://datatracker.ietf.org/doc/html/draft-watts-agentic-authority-graph-validation-00",
+  "summary": "AAGV is an individual IETF Internet-Draft (Experimental) defining a carrier-neutral JSON model and deterministic algorithm for validating authority graphs with declared roots, consequential sinks, normal paths, and revocation cut sets.",
+  "related": [
+   "aagv"
+  ],
+  "kind": "candidate",
+  "confidence": 0.7
+ },
+ {
+  "date": "2026-10-16",
+  "title": "New candidate: A Server-Side Model for Gating Agent-Initiated Human-Sourced Asynchronous HTTP Tasks on Payment or Entitlement",
+  "url": "https://datatracker.ietf.org/doc/html/draft-king-yew-choo-agentic-payments-01",
+  "summary": "An individual-submission Internet-Draft (Informational) presenting a server-side model for paid, human-sourced asynchronous HTTP tasks initiated by software agents.",
+  "related": [
+   "agentic-payments-gating-model"
+  ],
+  "kind": "candidate",
+  "confidence": 0.6
+ },
+ {
+  "date": "2026-10-16",
+  "title": "Ad Context Protocol v3.2.5 released",
+  "url": "https://github.com/adcontextprotocol/adcp/releases/tag/v3.2.5",
+  "summary": "v3.2.5 released 2026-10-16",
+  "related": [
+   "adcp"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "An Audit Record Format for AI Agent Authorization Decisions replaced by draft-gilda-audit-agent-audit-record",
+  "url": "https://datatracker.ietf.org/doc/draft-gilda-audit-agent-audit-record/",
+  "summary": "Datatracker marks draft-gilda-wimse-agent-audit-record as replaced by draft-gilda-audit-agent-audit-record",
+  "related": [
+   "wimse-agent-audit-record"
+  ],
+  "kind": "status"
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: ID MANDAT: A Machine-Readable Credential for the Agents of a Company",
+  "url": "https://datatracker.ietf.org/doc/html/draft-koenig-idmandat-credential-00",
+  "summary": "Describes a JSON credential file a company publishes at /.well-known/idmandat.json, naming the company and its agents with per-agent 'may' and 'mayNot' mandates.",
+  "related": [
+   "idmandat-credential"
+  ],
+  "kind": "candidate",
+  "confidence": 0.6
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: LWS 1.0 Authentication Suite: Self-signed Identity using Controlled Identifiers",
+  "url": "https://w3.org/TR/lws10-authn-ssi-cid",
+  "summary": "Defines an authentication suite for the Linked Web Storage (LWS) protocol for agents that can sign their own identity tokens.",
+  "related": [
+   "lws10-authn-ssi-cid"
+  ],
+  "kind": "candidate",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: Workload Identity Metadata",
+  "url": "https://datatracker.ietf.org/doc/html/draft-heigh-wimse-workload-identity-metadata-00",
+  "summary": "This Internet-Draft specifies metadata attributes (group, role, entitlements) for workload identities, profiling existing JWT claims and defining an authenticated workload metadata endpoint usable with JWT- or X.509-based credentials.",
+  "related": [
+   "wimse-workload-identity-metadata"
+  ],
+  "kind": "candidate",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: High-Assurance Agent Control Envelope",
+  "url": "https://datatracker.ietf.org/doc/html/draft-watts-high-assurance-agent-control-envelope-00",
+  "summary": "HAACE is an individual Internet-Draft (Informational) defining a protocol-neutral execution-gate profile for agent actions.",
+  "related": [
+   "haace"
+  ],
+  "kind": "candidate",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: Per-Call Proof for Local Tool Invocation by AI Agents",
+  "url": "https://datatracker.ietf.org/doc/html/draft-lee-wimse-local-tool-call-proof-01",
+  "summary": "Defines a per-call proof for local tool invocations by AI agents, such as MCP servers over stdio.",
+  "related": [
+   "local-tool-call-proof"
+  ],
+  "kind": "candidate",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: Agent Authorization Envelope",
+  "url": "https://datatracker.ietf.org/doc/html/draft-kroehl-agentic-trust-aae-02",
+  "summary": "The Agent Authorization Envelope (AAE, draft-kroehl-agentic-trust-aae-02) is an individual IETF Internet-Draft by Lars Kersten Kroehl defining a machine-evaluable authorization structure for autonomous AI agents.",
+  "related": [
+   "agent-authorization-envelope"
+  ],
+  "kind": "candidate",
+  "confidence": 0.6
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: Agent-to-Wallet Protocol for Digital Credentials",
+  "url": "https://datatracker.ietf.org/doc/html/draft-senarath-a2wp-01",
+  "summary": "A2WP is an individual IETF Internet-Draft (Standards Track intended) that defines messages and calls between an AI Agent and a Wallet.",
+  "related": [
+   "a2wp"
+  ],
+  "kind": "candidate",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-19",
+  "title": "New candidate: Agent Decision Commitments for Payments",
+  "url": "https://datatracker.ietf.org/doc/html/draft-milan-agent-decision-commitment-00",
+  "summary": "Defines the Agent Decision Commitment (ADC), a salted hash commitment to a decision record covering the content given to the model interface, the model calls, and the resulting answer and action.",
+  "related": [
+   "agent-decision-commitment"
+  ],
+  "kind": "candidate",
+  "confidence": 0.8
+ },
+ {
+  "date": "2026-10-21",
+  "title": "A Framework for Agent Discovery in DAWN: revision -09 published",
+  "url": "https://datatracker.ietf.org/doc/html/draft-zhang-dawn-agent-discovery-framework-09",
+  "summary": "Datatracker shows draft-zhang-dawn-agent-discovery-framework-09, dated 2026-10-21, expires 2027-04-24",
+  "related": [
+   "dawn-agent-discovery-framework"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-10-22",
+  "title": "Agent Delegation Receipts: revision -15 published",
+  "url": "https://datatracker.ietf.org/doc/html/draft-nelson-agent-delegation-receipts-15",
+  "summary": "Datatracker shows draft-nelson-agent-delegation-receipts-15, dated 2026-10-22, expires 2027-04-25",
+  "related": [
+   "agent-delegation-receipts"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-10-22",
+  "title": "JAFAR: A JSON-Based Format for Publishing IP Ranges of Automated HTTP Clients: revision -01 published",
+  "url": "https://datatracker.ietf.org/doc/html/draft-illyes-webbotauth-jafar-01",
+  "summary": "Datatracker shows draft-illyes-webbotauth-jafar-01, dated 2026-10-22, expires 2027-04-25",
+  "related": [
+   "jafar"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-10-22",
+  "title": "Attenuated Delegation Profile for Automated Agents: revision -03 published",
+  "url": "https://datatracker.ietf.org/doc/html/draft-hamr-oauth-agent-delegation-03",
+  "summary": "Datatracker shows draft-hamr-oauth-agent-delegation-03, dated 2026-10-22, expires 2027-04-25",
+  "related": [
+   "oauth-agent-delegation"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-10-22",
+  "title": "Anthropic donates Agent Skills (SKILL.md) to the Linux Foundation Agentic AI Foundation",
+  "url": "https://aaif.io/news/agentic-ai-foundation-announces-four-new-projects",
+  "summary": "Anthropic contributed the Agent Skills specification (agentskills.io) to the Linux Foundation's Agentic AI Foundation (AAIF) alongside projects from Harvey, Arcade.dev, and Block.",
+  "related": [
+   "anthropic-agent-skills-format"
+  ],
+  "kind": "status"
+ },
+ {
+  "date": "2026-10-22",
+  "title": "Cloudflare retires legacy /sse MCP transport on first-party managed MCP servers",
+  "url": "https://developers.cloudflare.com/agents/model-context-protocol/transport/",
+  "summary": "Cloudflare retired the legacy HTTP+SSE (/sse) transport across its 16 managed MCP servers on 22 Oct 2026 in favor of MCP Streamable HTTP (/mcp).",
+  "related": [
+   "mcp"
+  ],
+  "kind": "status"
+ },
+ {
+  "date": "2026-10-23",
+  "title": "Discovery of Model Context Protocol Servers via DNS TXT Records: revision -09 published",
+  "url": "https://datatracker.ietf.org/doc/html/draft-morrison-mcp-dns-discovery-09",
+  "summary": "Datatracker shows draft-morrison-mcp-dns-discovery-09, dated 2026-10-22, expires 2027-04-25",
+  "related": [
+   "mcp-dns-discovery"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-10-23",
+  "title": "Ad Context Protocol v3.2.6 released",
+  "url": "https://github.com/adcontextprotocol/adcp/releases/tag/v3.2.6",
+  "summary": "v3.2.6 released 2026-10-23",
+  "related": [
+   "adcp"
+  ],
+  "kind": "version"
+ },
+ {
+  "date": "2026-10-23",
+  "title": "Agent-Channel Frame for Identity-Keyed Fan-Out Delivery: revision -03 published",
+  "url": "https://datatracker.ietf.org/doc/html/draft-morrison-agent-channel-fan-out-03",
+  "summary": "Datatracker shows draft-morrison-agent-channel-fan-out-03, dated 2026-10-23, expires 2027-04-26",
+  "related": [
+   "agent-channel-fan-out"
+  ],
+  "kind": "version"
+ }
+]

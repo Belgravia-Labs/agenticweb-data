@@ -1,0 +1,9796 @@
+{
+ "generated": "2026-10-25",
+ "url": "https://agenticweb.wiki/data/ecosystem-census.json",
+ "total_origins_in_census": 1730,
+ "stratified_swarm": {
+  "sample_size": 1481,
+  "valid_probed": 1477,
+  "cohorts": {
+   "1_known_publisher": 256,
+   "2_docs_portals": 327,
+   "3_ai_devtools_cloud": 448,
+   "4_enterprise_fintech_commerce": 230,
+   "5_general_web_control": 220
+  },
+  "outcomes": {
+   "blocked": 49,
+   "guard_rejected": 4,
+   "moved": 116,
+   "scored": 1188,
+   "timeout": 124
+  },
+  "grades": {
+   "A+": 103,
+   "A": 52,
+   "B": 134,
+   "C": 390,
+   "D": 86,
+   "F": 716
+  },
+  "preferred_modes": {
+   "exa_or_http_fetch": 681,
+   "llms_txt": 369,
+   "mcp": 137,
+   "moved": 116,
+   "blocked": 87,
+   "openapi": 32,
+   "markdown_negotiation": 25,
+   "agent_skills": 20,
+   "a2a": 10
+  },
+  "ai_crawler_postures": {
+   "open_to_all": 842,
+   "unspecified": 403,
+   "waf_challenged": 119,
+   "search_allowed_training_blocked": 54,
+   "all_ai_blocked": 39,
+   "search_partially_blocked": 20
+  },
+  "score_distribution": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   13,
+   13,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   23,
+   23,
+   23,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   28,
+   28,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   30,
+   31,
+   31,
+   31,
+   33,
+   33,
+   33,
+   33,
+   33,
+   33,
+   33,
+   33,
+   33,
+   33,
+   33,
+   33,
+   33,
+   33,
+   33,
+   33,
+   33,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   36,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   39,
+   39,
+   39,
+   41,
+   41,
+   41,
+   41,
+   41,
+   41,
+   41,
+   41,
+   43,
+   43,
+   43,
+   43,
+   43,
+   43,
+   43,
+   43,
+   43,
+   46,
+   46,
+   48,
+   48,
+   49,
+   49,
+   49,
+   49,
+   49,
+   49,
+   49,
+   51,
+   51,
+   51,
+   51,
+   51,
+   51,
+   52,
+   52,
+   52,
+   52,
+   52,
+   54,
+   54,
+   54,
+   54,
+   54,
+   54,
+   54,
+   54,
+   55,
+   56,
+   56,
+   56,
+   57,
+   57,
+   57,
+   57,
+   57,
+   57,
+   57,
+   57,
+   57,
+   59,
+   59,
+   59,
+   59,
+   59,
+   59,
+   59,
+   59,
+   59,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   61,
+   62,
+   62,
+   62,
+   62,
+   62,
+   62,
+   62,
+   62,
+   62,
+   64,
+   64,
+   64,
+   64,
+   64,
+   64,
+   65,
+   65,
+   65,
+   65,
+   65,
+   65,
+   65,
+   65,
+   65,
+   65,
+   65,
+   65,
+   65,
+   65,
+   65,
+   65,
+   65,
+   65,
+   65,
+   65,
+   65,
+   65,
+   67,
+   67,
+   67,
+   67,
+   67,
+   67,
+   67,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   70,
+   75,
+   75,
+   75,
+   75,
+   75,
+   75,
+   75,
+   75,
+   75,
+   80,
+   90,
+   95,
+   95
+  ],
+  "mcp_verification": {
+   "domains_declaring_mcp": 168,
+   "live_unauthenticated": 122,
+   "oauth_gated": 59,
+   "dead_or_404": 13
+  },
+  "a2a_verification": {
+   "domains_declaring_a2a": 62,
+   "live_callable": 4,
+   "pseudo_endpoint_html": 37
+  },
+  "ard_coherence": {
+   "domains_publishing_catalog": 73,
+   "canonical_ard_json": 29,
+   "deprecated_ai_catalog_only": 44,
+   "coherent_all_entries_live": 21,
+   "broken_or_dead_entries": 34
+  }
+ },
+ "empirical_by_standard": {
+  "a2a": {
+   "observed_present": 35,
+   "strict_valid": 4,
+   "valid_legacy": 29,
+   "top_pitfalls": [
+    {
+     "issue": "description missing (required in A2A 1.0)",
+     "kind": "error",
+     "count": 7
+    },
+    {
+     "issue": "version missing",
+     "kind": "error",
+     "count": 4
+    },
+    {
+     "issue": "skills[0].tags missing (required)",
+     "kind": "error",
+     "count": 3
+    },
+    {
+     "issue": "skills[1].tags missing (required)",
+     "kind": "error",
+     "count": 3
+    },
+    {
+     "issue": "supportedInterfaces missing; A2A 1.0 cards declare interfaces there (url, protocolBinding, protocolVersion) and the top-level url is the 0.3 shape",
+     "kind": "warning",
+     "count": 16
+    },
+    {
+     "issue": "protocolVersion missing; clients cannot tell which A2A revision the card follows",
+     "kind": "warning",
+     "count": 11
+    }
+   ],
+   "verified_live_examples": [
+    "agenticweb.wiki",
+    "surrealdb.com",
+    "agent-ready.dev",
+    "attio.com"
+   ],
+   "endpoint_verification": {
+    "domains_declaring_a2a": 62,
+    "live_callable": 4,
+    "pseudo_endpoint_html_homepage": 37
+   }
+  },
+  "agents-md": {
+   "observed_present": 22,
+   "strict_valid": 22,
+   "valid_legacy": 0,
+   "top_pitfalls": [],
+   "verified_live_examples": [
+    "fly.io",
+    "helius.dev",
+    "docs.lightning.engineering",
+    "docs.n8n.io",
+    "agenticweb.wiki"
+   ]
+  },
+  "ai-catalog-well-known-file": {
+   "observed_present": 64,
+   "strict_valid": 0,
+   "valid_legacy": 62,
+   "top_pitfalls": [
+    {
+     "issue": "specVersion missing",
+     "kind": "error",
+     "count": 1
+    },
+    {
+     "issue": "entries missing or not an array",
+     "kind": "error",
+     "count": 1
+    },
+    {
+     "issue": "body is not valid JSON",
+     "kind": "error",
+     "count": 1
+    },
+    {
+     "issue": "served only at deprecated /.well-known/ai-catalog.json; ARD v0.91+ expects /.well-known/ard.json (serve both during migration)",
+     "kind": "warning",
+     "count": 40
+    },
+    {
+     "issue": "no entry has representativeQueries; ARD registries use 2-5 example queries to index entries",
+     "kind": "warning",
+     "count": 22
+    },
+    {
+     "issue": "entries[0] has no description; registries index on it",
+     "kind": "warning",
+     "count": 16
+    }
+   ],
+   "verified_live_examples": []
+  },
+  "ai-crawler-tokens-robots": {
+   "observed_present": 782,
+   "strict_valid": 761,
+   "valid_legacy": 0,
+   "top_pitfalls": [
+    {
+     "issue": "no User-agent group at all",
+     "kind": "error",
+     "count": 21
+    },
+    {
+     "issue": "no Agentmap: line (optional convention pointing agents at /.well-known/ard.json)",
+     "kind": "warning",
+     "count": 767
+    },
+    {
+     "issue": "no Content-Signal: line (optional; states ai-train / search / ai-input preferences)",
+     "kind": "warning",
+     "count": 652
+    },
+    {
+     "issue": "no AI crawler token named (GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, ...); the policy for them is whatever User-agent: * says (partial)",
+     "kind": "warning",
+     "count": 312
+    },
+    {
+     "issue": "no AI crawler token named (GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, ...); the policy for them is whatever User-agent: * says (allowed)",
+     "kind": "warning",
+     "count": 146
+    }
+   ],
+   "verified_live_examples": [
+    "nubank.com.br",
+    "materialize.com",
+    "slack.com",
+    "portable.io",
+    "reuters.com"
+   ]
+  },
+  "anthropic-agent-skills-format": {
+   "observed_present": 90,
+   "strict_valid": 86,
+   "valid_legacy": 0,
+   "top_pitfalls": [
+    {
+     "issue": "skills[0].url missing",
+     "kind": "error",
+     "count": 2
+    },
+    {
+     "issue": "skills[1].url missing",
+     "kind": "error",
+     "count": 2
+    },
+    {
+     "issue": "skills[2].url missing",
+     "kind": "error",
+     "count": 1
+    },
+    {
+     "issue": "skills[3].url missing",
+     "kind": "error",
+     "count": 1
+    },
+    {
+     "issue": "skills[0].digest missing",
+     "kind": "warning",
+     "count": 18
+    },
+    {
+     "issue": "skills[1].digest missing",
+     "kind": "warning",
+     "count": 13
+    }
+   ],
+   "verified_live_examples": [
+    "bird.com",
+    "developers.cloudflare.com",
+    "fly.io",
+    "vapi.ai",
+    "apideck.com"
+   ]
+  },
+  "api-catalog-rfc9727": {
+   "observed_present": 97,
+   "strict_valid": 92,
+   "valid_legacy": 2,
+   "top_pitfalls": [
+    {
+     "issue": "Content-Type must be application/linkset+json (RFC 9727 §4), got binary/octet-stream",
+     "kind": "error",
+     "count": 1
+    },
+    {
+     "issue": "Content-Type must be application/linkset+json (RFC 9727 §4), got application/octet-stream",
+     "kind": "error",
+     "count": 1
+    },
+    {
+     "issue": "Content-Type must be application/linkset+json (RFC 9727 §4), got application/json",
+     "kind": "error",
+     "count": 1
+    },
+    {
+     "issue": "top-level linkset array missing (RFC 9264)",
+     "kind": "error",
+     "count": 1
+    },
+    {
+     "issue": "linkset[0].service-desc has no type (e.g. application/openapi+json)",
+     "kind": "warning",
+     "count": 4
+    },
+    {
+     "issue": "linkset[1].service-desc has no type (e.g. application/openapi+json)",
+     "kind": "warning",
+     "count": 1
+    }
+   ],
+   "verified_live_examples": [
+    "bird.com",
+    "developers.cloudflare.com",
+    "fly.io",
+    "dri.es",
+    "vapi.ai"
+   ]
+  },
+  "ard": {
+   "observed_present": 28,
+   "strict_valid": 23,
+   "valid_legacy": 0,
+   "top_pitfalls": [
+    {
+     "issue": "specVersion missing",
+     "kind": "error",
+     "count": 4
+    },
+    {
+     "issue": "body is not valid JSON",
+     "kind": "error",
+     "count": 1
+    },
+    {
+     "issue": "host block missing (displayName, identifier, documentationUrl help clients name the publisher)",
+     "kind": "warning",
+     "count": 9
+    },
+    {
+     "issue": "entries[0] has no description; registries index on it",
+     "kind": "warning",
+     "count": 5
+    },
+    {
+     "issue": "entries[1] has no description; registries index on it",
+     "kind": "warning",
+     "count": 5
+    },
+    {
+     "issue": "no entry has representativeQueries; ARD registries use 2-5 example queries to index entries",
+     "kind": "warning",
+     "count": 4
+    }
+   ],
+   "verified_live_examples": [
+    "bird.com",
+    "developers.cloudflare.com",
+    "fly.io",
+    "helius.dev",
+    "agenticweb.wiki"
+   ]
+  },
+  "auth-md": {
+   "observed_present": 50,
+   "strict_valid": 22,
+   "valid_legacy": 0,
+   "top_pitfalls": [
+    {
+     "issue": "none of the auth.md mechanism names found (identity_assertion, service_auth, anonymous)",
+     "kind": "error",
+     "count": 28
+    }
+   ],
+   "verified_live_examples": [
+    "fly.io",
+    "helius.dev",
+    "agenticweb.wiki",
+    "neon.com",
+    "xata.io"
+   ]
+  },
+  "llms-txt": {
+   "observed_present": 437,
+   "strict_valid": 430,
+   "valid_legacy": 0,
+   "top_pitfalls": [
+    {
+     "issue": "no H1 title line (# Project name) — the only required element",
+     "kind": "error",
+     "count": 6
+    },
+    {
+     "issue": "served as HTML, not Markdown or plain text",
+     "kind": "error",
+     "count": 1
+    },
+    {
+     "issue": "no blockquote summary under the title",
+     "kind": "warning",
+     "count": 73
+    },
+    {
+     "issue": "file is large; keep llms.txt an index and put the full text in llms-full.txt",
+     "kind": "warning",
+     "count": 52
+    },
+    {
+     "issue": "no Markdown links: list the pages an agent should read",
+     "kind": "warning",
+     "count": 31
+    },
+    {
+     "issue": "the H1 is not the first line",
+     "kind": "warning",
+     "count": 11
+    }
+   ],
+   "verified_live_examples": [
+    "materialize.com",
+    "slack.com",
+    "replit.com",
+    "support.claude.com",
+    "modal.com"
+   ]
+  },
+  "mcp": {
+   "observed_present": 97,
+   "strict_valid": 50,
+   "valid_legacy": 0,
+   "top_pitfalls": [],
+   "verified_live_examples": [
+    "dri.es",
+    "docs.lightning.engineering",
+    "docs.n8n.io",
+    "huggingface.co",
+    "agenticweb.wiki"
+   ],
+   "endpoint_verification": {
+    "domains_declaring_mcp": 168,
+    "live_unauthenticated": 122,
+    "oauth_gated": 59,
+    "dead_or_404": 13
+   }
+  },
+  "mcp-server-cards": {
+   "observed_present": 116,
+   "strict_valid": 38,
+   "valid_legacy": 59,
+   "top_pitfalls": [
+    {
+     "issue": "$schema missing (required: https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json)",
+     "kind": "error",
+     "count": 65
+    },
+    {
+     "issue": "name must be reverse-DNS with exactly one slash, e.g. com.example/weather",
+     "kind": "error",
+     "count": 44
+    },
+    {
+     "issue": "version missing",
+     "kind": "error",
+     "count": 42
+    },
+    {
+     "issue": "name missing",
+     "kind": "error",
+     "count": 30
+    },
+    {
+     "issue": "remotes missing: a card with no remotes gives clients nothing to connect to",
+     "kind": "warning",
+     "count": 71
+    },
+    {
+     "issue": "pre-final card shape (url/transport/tools); the final SEP-2127 card uses name, version, description and remotes[]",
+     "kind": "warning",
+     "count": 60
+    }
+   ],
+   "verified_live_examples": [
+    "developers.cloudflare.com",
+    "helius.dev",
+    "docs.lightning.engineering",
+    "docs.n8n.io",
+    "huggingface.co"
+   ]
+  },
+  "okf": {
+   "observed_present": 3,
+   "strict_valid": 1,
+   "valid_legacy": 0,
+   "top_pitfalls": [
+    {
+     "issue": "missing YAML frontmatter block (--- ... ---)",
+     "kind": "error",
+     "count": 2
+    },
+    {
+     "issue": "missing okf_version (0.1 or 0.2) in frontmatter (OKF §8)",
+     "kind": "error",
+     "count": 2
+    }
+   ],
+   "verified_live_examples": [
+    "agenticweb.wiki"
+   ]
+  },
+  "security-txt": {
+   "observed_present": 259,
+   "strict_valid": 174,
+   "valid_legacy": 0,
+   "top_pitfalls": [
+    {
+     "issue": "Expires: missing (RFC 9116 requires it)",
+     "kind": "error",
+     "count": 63
+    },
+    {
+     "issue": "Expires: is in the past",
+     "kind": "error",
+     "count": 15
+    },
+    {
+     "issue": "Contact: missing (RFC 9116 requires it)",
+     "kind": "error",
+     "count": 7
+    },
+    {
+     "issue": "Expires: is not an ISO 8601 date-time",
+     "kind": "error",
+     "count": 2
+    },
+    {
+     "issue": "Canonical: missing",
+     "kind": "warning",
+     "count": 121
+    },
+    {
+     "issue": "Content-Type should be text/plain",
+     "kind": "warning",
+     "count": 3
+    }
+   ],
+   "verified_live_examples": [
+    "support.claude.com",
+    "bird.com",
+    "fly.io",
+    "rootly.com",
+    "helius.dev"
+   ]
+  }
+ },
+ "baseline_by_origin": {
+  "materialize.com": {
+   "checked": "2026-10-25T17:45:30Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "slack.com": {
+   "checked": "2026-10-25T17:51:43Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "reuters.com": {
+   "checked": "2026-10-25T17:46:28Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "replit.com": {
+   "checked": "2026-10-25T17:51:44Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "kaggle.com": {
+   "checked": "2026-10-25T17:50:09Z",
+   "found": [
+    "llms-txt",
+    "mcp",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "freebsd.org": {
+   "checked": "2026-10-25T17:44:34Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "support.claude.com": {
+   "checked": "2026-10-25T17:51:03Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "modal.com": {
+   "checked": "2026-10-25T17:51:44Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "windmill.dev": {
+   "checked": "2026-10-25T17:51:45Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "bird.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "developers.cloudflare.com": {
+   "checked": "2026-10-25T17:43:48Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "imdb.com": {
+   "checked": "2026-10-25T17:45:00Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "lumalabs.ai": {
+   "checked": "2026-10-25T17:45:25Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "fly.io": {
+   "checked": "2026-10-25T17:44:32Z",
+   "found": [
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp-server-cards"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "goplausible.com": {
+   "checked": "2026-10-25T17:44:43Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "dri.es": {
+   "checked": "2026-10-25T17:44:11Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "aipref-content-usage-attachment",
+    "aipref-vocabulary",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "mcp"
+   ],
+   "score": 57,
+   "grade": "A"
+  },
+  "edenai.co": {
+   "checked": "2026-10-25T17:44:17Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "tinybird.co": {
+   "checked": "2026-10-25T17:51:46Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "inflection.ai": {
+   "checked": "2026-10-25T17:45:00Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "rootly.com": {
+   "checked": "2026-10-25T17:46:31Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "facilitator.live.nevermined.app": {
+   "checked": "2026-10-25T17:44:26Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "api.agoraproto.org": {
+   "checked": "2026-10-25T17:42:44Z",
+   "found": [
+    "ads"
+   ]
+  },
+  "vapi.ai": {
+   "checked": "2026-10-25T17:47:16Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "llms-txt"
+   ]
+  },
+  "openknowledge.ai": {
+   "checked": "2026-10-25T17:45:54Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "framer.com": {
+   "checked": "2026-10-24T20:43:28Z",
+   "found": [
+    "llms-txt",
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "helius.dev": {
+   "checked": "2026-10-25T17:44:50Z",
+   "found": [
+    "a2a",
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "ard",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "twitch.tv": {
+   "checked": "2026-10-25T17:47:11Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "apideck.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "a2a",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "justworks.com": {
+   "checked": "2026-10-25T17:50:10Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "agents.coinbase.com": {
+   "checked": "2026-10-25T17:42:34Z",
+   "found": [
+    "mcp",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "rive.app": {
+   "checked": "2026-10-25T17:46:30Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "estuary.dev": {
+   "checked": "2026-10-25T17:44:21Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "strandsagents.com": {
+   "checked": "2026-10-25T17:46:57Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "atlan.com": {
+   "checked": "2026-10-25T17:42:55Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 49,
+   "grade": "A"
+  },
+  "honeyb.ai": {
+   "checked": "2026-10-25T17:44:54Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "angular.dev": {
+   "checked": "2026-10-25T17:42:43Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.lightning.engineering": {
+   "checked": "2026-10-25T17:44:01Z",
+   "found": [
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 57,
+   "grade": "A"
+  },
+  "base-ui.com": {
+   "checked": "2026-10-25T17:42:59Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "unified.to": {
+   "checked": "2026-10-25T17:51:45Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "rslstandard.org": {
+   "checked": "2026-10-25T17:46:31Z",
+   "found": [
+    "rsl"
+   ]
+  },
+  "venturebeat.com": {
+   "checked": "2026-10-25T17:51:12Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "getstream.io": {
+   "checked": "2026-10-25T17:44:40Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "kilo.ai": {
+   "checked": "2026-10-25T17:45:09Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "inngest.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "courier.com": {
+   "checked": "2026-10-25T17:49:38Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.n8n.io": {
+   "checked": "2026-10-25T17:44:03Z",
+   "found": [
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 57,
+   "grade": "A"
+  },
+  "react.dev": {
+   "checked": "2026-10-25T17:51:46Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "hightouch.com": {
+   "checked": "2026-10-25T17:44:52Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "llms-txt"
+   ]
+  },
+  "mvnrepository.com": {
+   "checked": "2026-10-25T17:45:38Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "writer.com": {
+   "checked": "2026-10-25T17:51:31Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "ironcladapp.com": {
+   "checked": "2026-10-25T17:45:02Z",
+   "found": [
+    "oauth-cimd"
+   ]
+  },
+  "ap.org": {
+   "checked": "2026-10-25T17:42:44Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "nodejs.org": {
+   "checked": "2026-10-25T17:45:50Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "rtblint.org": {
+   "checked": "2026-10-25T17:46:32Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "duckdb.org": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "huggingface.co": {
+   "checked": "2026-10-25T17:44:57Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "api-catalog-rfc9727",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 57,
+   "grade": "A"
+  },
+  "linear.app": {
+   "checked": "2026-10-25T17:50:21Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "mapsoft.com": {
+   "checked": "2026-10-25T17:45:27Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "vast.ai": {
+   "checked": "2026-10-25T17:47:18Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp-server-cards"
+   ],
+   "score": 55,
+   "grade": "A"
+  },
+  "agenticweb.wiki": {
+   "checked": "2026-10-25T17:42:39Z",
+   "found": [
+    "a2a",
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents",
+    "web-bot-auth-signature-agent-card",
+    "webbotauth"
+   ],
+   "score": 90,
+   "grade": "A+"
+  },
+  "docs.stripe.com": {
+   "checked": "2026-10-25T17:44:05Z",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "elevenlabs.io": {
+   "checked": "2026-10-25T17:44:20Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp-server-cards"
+   ],
+   "score": 62,
+   "grade": "A+"
+  },
+  "sendbird.com": {
+   "checked": "2026-10-25T17:46:39Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "ubuntu.com": {
+   "checked": "2026-10-25T17:51:08Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "sanity.io": {
+   "checked": "2026-10-25T17:51:53Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 64,
+   "grade": "A+"
+  },
+  "upstash.com": {
+   "checked": "2026-10-25T17:51:47Z",
+   "found": [
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "juliamaehler.com": {
+   "checked": "2026-10-25T17:45:08Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "openfort.io": {
+   "checked": "2026-10-25T17:45:57Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "karangoyal.cc": {
+   "checked": "2026-10-25T17:50:07Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "todoist.com": {
+   "checked": "2026-10-25T17:47:06Z",
+   "found": [
+    "oauth-cimd"
+   ]
+  },
+  "springernature.com": {
+   "checked": "2026-10-25T17:50:57Z",
+   "found": [
+    "tdmrep"
+   ]
+  },
+  "sunilprakash.com": {
+   "checked": "2026-10-25T17:46:57Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "front.com": {
+   "checked": "2026-10-25T17:44:33Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "calendly.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "tempo.xyz": {
+   "checked": "2026-10-25T17:51:02Z",
+   "found": [
+    "agents-md",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "webbotauth"
+   ],
+   "score": 67,
+   "grade": "A+"
+  },
+  "bun.sh": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "zilliz.com": {
+   "checked": "2026-10-25T17:51:43Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "metricspot.com": {
+   "checked": "2026-10-25T17:45:32Z",
+   "found": [
+    "agents-md",
+    "agents-txt",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "llms-txt"
+   ],
+   "score": 49,
+   "grade": "A"
+  },
+  "shopify.com": {
+   "checked": "2026-10-25T17:50:45Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "buildwithfern.com": {
+   "checked": "2026-10-25T17:51:48Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "zoom.us": {
+   "checked": "2026-10-25T17:47:35Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "planetscale.com": {
+   "checked": "2026-10-25T17:46:11Z",
+   "found": [
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp-server-cards"
+   ],
+   "score": 49,
+   "grade": "A"
+  },
+  "dagster.io": {
+   "checked": "2026-10-25T17:43:36Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "dub.co": {
+   "checked": "2026-10-25T17:47:32Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "fal.ai": {
+   "checked": "2026-10-25T17:47:32Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "getlago.com": {
+   "checked": "2026-10-25T17:47:35Z",
+   "found": [
+    "agents-txt",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "oxc.rs": {
+   "checked": "2026-10-25T17:46:02Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "github.com": {
+   "checked": "2026-10-25T17:50:00Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ],
+   "score": 48,
+   "grade": "A"
+  },
+  "novu.co": {
+   "checked": "2026-10-25T17:45:50Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ],
+   "score": 56,
+   "grade": "A"
+  },
+  "finch.com": {
+   "checked": "2026-10-25T17:49:58Z",
+   "found": [
+    "llms-txt",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "bmdpat.com": {
+   "checked": "2026-10-25T17:43:08Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "hex.tech": {
+   "checked": "2026-10-25T17:44:50Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "mastra.ai": {
+   "checked": "2026-10-25T17:47:32Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "clickup.com": {
+   "checked": "2026-10-25T17:43:23Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "braze.com": {
+   "checked": "2026-10-25T17:43:10Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "aitxt.ing": {
+   "checked": "2026-10-25T17:42:39Z",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "zendesk.com": {
+   "checked": "2026-10-25T17:51:40Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "polar.sh": {
+   "checked": "2026-10-25T17:46:12Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "mixpanel.com": {
+   "checked": "2026-10-25T17:45:35Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "taskade.com": {
+   "checked": "2026-10-25T17:50:58Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 67,
+   "grade": "A+"
+  },
+  "lottiefiles.com": {
+   "checked": "2026-10-25T17:45:24Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "chargebee.com": {
+   "checked": "2026-10-25T17:43:16Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "mailchimp.com": {
+   "checked": "2026-10-25T17:50:24Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "portkey.ai": {
+   "checked": "2026-10-25T17:47:35Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "crewai.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 62,
+   "grade": "A+"
+  },
+  "target.com": {
+   "checked": "2026-10-25T03:18:55Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "kotlinlang.org": {
+   "checked": "2026-10-25T17:45:13Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "grafbase.com": {
+   "checked": "2026-10-25T17:50:03Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "vuejs.org": {
+   "checked": "2026-10-25T17:47:35Z",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "devtoollab.com": {
+   "checked": "2026-10-25T17:43:52Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "neon.com": {
+   "checked": "2026-10-25T17:45:41Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "developer.visa.com": {
+   "checked": "2026-10-25T17:49:49Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "vercel.com": {
+   "checked": "2026-10-25T17:51:13Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-cimd"
+   ],
+   "score": 67,
+   "grade": "A+"
+  },
+  "bloomberg.com": {
+   "checked": "2026-10-25T17:43:07Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "atlassian.com": {
+   "checked": "2026-10-25T17:49:33Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "dagger.io": {
+   "checked": "2026-10-25T17:43:37Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "businessinsider.com": {
+   "checked": "2026-10-25T17:49:34Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "lesswrong.com": {
+   "checked": "2026-10-25T17:50:16Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "mcp",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "singlestore.com": {
+   "checked": "2026-10-24T21:56:35Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "wandb.ai": {
+   "checked": "2026-10-25T17:47:22Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "cloud.tencent.com": {
+   "checked": "2026-10-25T17:43:23Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "loom.com": {
+   "checked": "2026-10-25T17:45:24Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "0g.ai": {
+   "checked": "2026-10-25T17:42:30Z",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "platform.claude.com": {
+   "checked": "2026-10-25T17:46:12Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 51,
+   "grade": "A"
+  },
+  "sourcegraph.com": {
+   "checked": "2026-10-25T17:50:48Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "saleor.io": {
+   "checked": "2026-10-25T17:46:33Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "economist.com": {
+   "checked": "2026-10-25T17:44:16Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "trychroma.com": {
+   "checked": "2026-10-25T17:51:12Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "newrelic.com": {
+   "checked": "2026-10-25T17:45:47Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "steel.dev": {
+   "checked": "2026-10-25T17:47:32Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "sleeknova.com": {
+   "checked": "2026-10-25T17:46:47Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "dropbox.com": {
+   "checked": "2026-10-25T17:44:13Z",
+   "found": [
+    "identity-assertion-authz-grant",
+    "llms-txt"
+   ]
+  },
+  "xata.io": {
+   "checked": "2026-10-25T17:51:36Z",
+   "found": [
+    "a2a",
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp"
+   ],
+   "score": 75,
+   "grade": "A+"
+  },
+  "sequoiacap.com": {
+   "checked": "2026-10-25T17:46:41Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "alchemy.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "recurly.com": {
+   "checked": "2026-10-25T17:46:24Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "pika.art": {
+   "checked": "2026-10-25T17:46:09Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "qdrant.tech": {
+   "checked": "2026-10-25T17:46:21Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "make.com": {
+   "checked": "2026-10-25T17:50:27Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "zapier.com": {
+   "checked": "2026-10-25T17:51:38Z",
+   "found": [
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "coinbase.com": {
+   "checked": "2026-10-25T17:49:38Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-cimd"
+   ],
+   "score": 62,
+   "grade": "A+"
+  },
+  "deepmind.google": {
+   "checked": "2026-10-25T17:49:44Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "belvo.com": {
+   "checked": "2026-10-25T13:55:51Z",
+   "found": [
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "crowdstrike.com": {
+   "checked": "2026-10-25T17:49:43Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "gov.uk": {
+   "checked": "2026-10-25T17:44:45Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "kinde.com": {
+   "checked": "2026-10-25T17:47:37Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "readme.com": {
+   "checked": "2026-10-25T17:47:35Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "storyblok.com": {
+   "checked": "2026-10-25T17:50:58Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "elsevier.com": {
+   "checked": "2026-10-25T17:49:57Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "tdmrep"
+   ]
+  },
+  "cloudflare.com": {
+   "checked": "2026-10-25T17:47:31Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "auth-md",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "rottentomatoes.com": {
+   "checked": "2026-10-25T17:46:31Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "heroku.com": {
+   "checked": "2026-10-25T17:44:52Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "soundcloud.com": {
+   "checked": "2026-10-25T17:46:49Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "gong.io": {
+   "checked": "2026-10-25T17:50:07Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "betterstack.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 59,
+   "grade": "A"
+  },
+  "navan.com": {
+   "checked": "2026-10-25T17:45:42Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "strava.com": {
+   "checked": "2026-10-25T17:50:56Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "descope.com": {
+   "checked": "2026-10-25T17:47:38Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 64,
+   "grade": "A+"
+  },
+  "sap.com": {
+   "checked": "2026-10-25T17:46:36Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "honeycomb.io": {
+   "checked": "2026-10-25T17:50:08Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "thirdweb.com": {
+   "checked": "2026-10-25T17:51:02Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "maxio.com": {
+   "checked": "2026-10-25T17:50:30Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "ucp.dev": {
+   "checked": "2026-10-25T17:51:09Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "zuplo.com": {
+   "checked": "2026-10-25T17:47:38Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-content-signals-policy",
+    "identity-assertion-authz-grant",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "dev.to": {
+   "checked": "2026-10-25T17:49:46Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "agentskills.io": {
+   "checked": "2026-10-25",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 67,
+   "grade": "A+"
+  },
+  "disneyplus.com": {
+   "checked": "2026-10-25T17:49:49Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "rslcollective.org": {
+   "checked": "2026-10-25T17:46:31Z",
+   "found": [
+    "rsl"
+   ]
+  },
+  "asana.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "prefect.io": {
+   "checked": "2026-10-25T17:50:38Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "langfuse.com": {
+   "checked": "2026-10-25T17:47:36Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "beehiiv.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "docs.windsurf.com": {
+   "checked": "2026-10-25T17:44:10Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 67,
+   "grade": "A+"
+  },
+  "surrealdb.com": {
+   "checked": "2026-10-25T17:47:36Z",
+   "found": [
+    "a2a",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 75,
+   "grade": "A+"
+  },
+  "okta.com": {
+   "checked": "2026-10-25T17:45:54Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "composio.dev": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-catalog-well-known-file",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp"
+   ],
+   "score": 49,
+   "grade": "A"
+  },
+  "lambda.ai": {
+   "checked": "2026-10-25T17:50:10Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "tldraw.com": {
+   "checked": "2026-10-25T17:47:36Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "gamma.app": {
+   "checked": "2026-10-25T17:50:00Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "swarmsync.ai": {
+   "checked": "2026-10-25T17:47:00Z",
+   "found": [
+    "a2a",
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "lovable.dev": {
+   "checked": "2026-10-25T17:47:36Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "identity-assertion-authz-grant",
+    "llms-txt",
+    "oauth-cimd"
+   ]
+  },
+  "wordpress.com": {
+   "checked": "2026-10-25T17:51:28Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "mintlify.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "auth-md",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "onesignal.com": {
+   "checked": "2026-10-25T17:45:52Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "shutterstock.com": {
+   "checked": "2026-10-25T17:46:45Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "docs.augmentcode.com": {
+   "checked": "2026-10-25T17:49:53Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "instacart.com": {
+   "checked": "2026-10-25T17:45:03Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "ft.com": {
+   "checked": "2026-10-25T17:44:36Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "artisan.co": {
+   "checked": "2026-10-25T17:42:51Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "retellai.com": {
+   "checked": "2026-10-25T17:46:28Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "speakeasy.com": {
+   "checked": "2026-10-25T17:47:37Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "posthog.com": {
+   "checked": "2026-10-25T17:47:35Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "wistia.com": {
+   "checked": "2026-10-25T17:51:23Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 52,
+   "grade": "A"
+  },
+  "resend.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "n8n.io": {
+   "checked": "2026-10-25T17:45:41Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "arm.com": {
+   "checked": "2026-10-25T17:49:34Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "daytona.io": {
+   "checked": "2026-10-25T17:49:44Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "nba.com": {
+   "checked": "2026-10-25T17:45:43Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "sentinelone.com": {
+   "checked": "2026-10-25T17:50:44Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "gravitee.io": {
+   "checked": "2026-10-25T17:44:47Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "cometchat.com": {
+   "checked": "2026-10-25T17:49:38Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "greylock.com": {
+   "checked": "2026-10-25T17:44:47Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "ideogram.ai": {
+   "checked": "2026-10-25T17:50:06Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "dover.com": {
+   "checked": "2026-10-25T17:49:56Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "aembit.io": {
+   "checked": "2026-10-25T17:42:29Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "peloton.com": {
+   "checked": "2026-10-25T17:46:07Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "astronomer.io": {
+   "checked": "2026-10-25T17:42:55Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "cncf.io": {
+   "checked": "2026-10-25T17:43:26Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "smartsheet.com": {
+   "checked": "2026-10-25T17:50:47Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "airtable.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-catalog-well-known-file",
+    "oauth-cimd"
+   ]
+  },
+  "miro.com": {
+   "checked": "2026-10-25T17:47:36Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "11x.ai": {
+   "checked": "2026-10-25T17:42:32Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "workable.com": {
+   "checked": "2026-10-25T17:51:30Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 62,
+   "grade": "A+"
+  },
+  "milvus.io": {
+   "checked": "2026-10-25T17:45:34Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "hackerrank.com": {
+   "checked": "2026-10-25T17:50:07Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "anon.com": {
+   "checked": "2026-10-25T17:42:47Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "aaif.io": {
+   "checked": "2026-10-25T17:42:31Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "paypal.com": {
+   "checked": "2026-10-25T17:46:06Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "amplitude.com": {
+   "checked": "2026-10-25T17:42:41Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "remix.run": {
+   "checked": "2026-10-25T17:46:26Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "wix.com": {
+   "checked": "2026-10-25T17:51:24Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "meilisearch.com": {
+   "checked": "2026-10-24T21:01:05Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "vidyard.com": {
+   "checked": "2026-10-25T17:47:19Z",
+   "found": [
+    "a2a",
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "tripadvisor.com": {
+   "checked": "2026-10-25T17:51:10Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "travis-ci.com": {
+   "checked": "2026-10-25T17:51:09Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "spiegel.de": {
+   "checked": "2026-10-25T17:50:47Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "klaviyo.com": {
+   "checked": "2026-10-25T17:45:12Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "cursor.com": {
+   "checked": "2026-10-25T17:43:33Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "axiom.co": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "devin.ai": {
+   "checked": "2026-10-25T17:43:52Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 59,
+   "grade": "A"
+  },
+  "circle.so": {
+   "checked": "2026-10-25T17:43:20Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 59,
+   "grade": "A"
+  },
+  "letta.com": {
+   "checked": "2026-10-25T17:51:51Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "circle.com": {
+   "checked": "2026-10-25T17:43:19Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "agoraproto.org": {
+   "checked": "2026-10-25T17:42:38Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "commercetools.com": {
+   "checked": "2026-10-25T17:43:31Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "cockroachlabs.com": {
+   "checked": "2026-10-25T17:49:44Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "danilchenko.dev": {
+   "checked": "2026-10-25T17:49:43Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "indexventures.com": {
+   "checked": "2026-10-25T17:50:07Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "slashdot.org": {
+   "checked": "2026-10-25T17:50:44Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "figma.com": {
+   "checked": "2026-10-25T17:49:59Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "identity-assertion-authz-grant"
+   ]
+  },
+  "substack.com": {
+   "checked": "2026-10-25T17:47:38Z",
+   "found": [
+    "webbotauth"
+   ]
+  },
+  "canva.com": {
+   "checked": "2026-10-25T17:43:14Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "ubs.com": {
+   "checked": "2026-10-25T17:51:12Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "cultureamp.com": {
+   "checked": "2026-10-25T17:49:43Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "brilliant.org": {
+   "checked": "2026-10-25T17:49:32Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "prismic.io": {
+   "checked": "2026-10-25T17:46:16Z",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "aikido.dev": {
+   "checked": "2026-10-25T03:08:25Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "motherduck.com": {
+   "checked": "2026-10-25T17:47:40Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 62,
+   "grade": "A+"
+  },
+  "modelcontextprotocol.io": {
+   "checked": "2026-10-25T17:47:40Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "spline.design": {
+   "checked": "2026-10-25T17:46:54Z",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "nuxt.com": {
+   "checked": "2026-10-25T17:45:50Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "convex.dev": {
+   "checked": "2026-10-25",
+   "found": [
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 51,
+   "grade": "A"
+  },
+  "opensearch.org": {
+   "checked": "2026-10-25T17:45:58Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "yugabyte.com": {
+   "checked": "2026-10-25T17:51:40Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "dynatrace.com": {
+   "checked": "2026-10-25T17:44:16Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "agentman.ai": {
+   "checked": "2026-10-25T17:42:38Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "pay.sh": {
+   "checked": "2026-10-25T17:46:03Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "bamboohr.com": {
+   "checked": "2026-10-25T17:42:57Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "plaid.com": {
+   "checked": "2026-10-25T17:46:11Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "wsj.com": {
+   "checked": "2026-10-25T17:51:32Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "suno.com": {
+   "checked": "2026-10-25T17:50:55Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "nytimes.com": {
+   "checked": "2026-10-25T17:45:53Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "apollo.io": {
+   "checked": "2026-10-25T17:42:48Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "railway.com": {
+   "checked": "2026-10-25T17:46:23Z",
+   "found": [
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "algolia.com": {
+   "checked": "2026-10-25T17:42:40Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "docusign.com": {
+   "checked": "2026-10-25T17:44:12Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "wellfound.com": {
+   "checked": "2026-10-25T17:51:29Z",
+   "found": [
+    "mcp",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "personalagentprotocol.org": {
+   "checked": "2026-10-25T17:46:04Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "edx.org": {
+   "checked": "2026-10-25T17:44:18Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "gcore.com": {
+   "checked": "2026-10-25T17:44:37Z",
+   "found": [
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 64,
+   "grade": "A+"
+  },
+  "expedia.com": {
+   "checked": "2026-10-25T17:44:26Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "firecrawl.dev": {
+   "checked": "2026-10-25T17:44:31Z",
+   "found": [
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "tyk.io": {
+   "checked": "2026-10-25T17:47:12Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "agenticadvertising.org": {
+   "checked": "2026-10-25T17:42:34Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "pubnub.com": {
+   "checked": "2026-10-25T17:50:41Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "kraken.com": {
+   "checked": "2026-10-25T17:50:13Z",
+   "found": [
+    "api-catalog-rfc9727"
+   ]
+  },
+  "dchub.cloud": {
+   "checked": "2026-10-25",
+   "found": [
+    "a2a",
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-cimd",
+    "oauth-metadata-for-agents",
+    "webbotauth"
+   ],
+   "score": 75,
+   "grade": "A+"
+  },
+  "atscale.com": {
+   "checked": "2026-10-25T13:56:06Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "zscaler.com": {
+   "checked": "2026-10-25T17:51:47Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "forbes.com": {
+   "checked": "2026-10-25T17:50:02Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "blakecrosley.com": {
+   "checked": "2026-10-25T17:43:03Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "gladia.io": {
+   "checked": "2026-10-25T17:50:06Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "suprsend.com": {
+   "checked": "2026-10-25T17:51:05Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "webex.com": {
+   "checked": "2026-10-25T17:51:23Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "haystack.deepset.ai": {
+   "checked": "2026-10-25T17:44:47Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "agentcommunity.org": {
+   "checked": "2026-10-25T17:42:29Z",
+   "found": [
+    "a2a",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 75,
+   "grade": "A+"
+  },
+  "tembo.io": {
+   "checked": "2026-10-25T17:51:05Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "ark-ui.com": {
+   "checked": "2026-10-25T17:42:51Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "zed.dev": {
+   "checked": "2026-10-25T17:47:40Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "traefik.io": {
+   "checked": "2026-10-25T17:51:12Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "americanexpress.com": {
+   "checked": "2026-10-25T17:42:43Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "neuronto.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "a2a",
+    "ai-catalog-well-known-file",
+    "api-catalog-rfc9727",
+    "ard",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 49,
+   "grade": "A"
+  },
+  "playmcp.kakao.com": {
+   "checked": "2026-10-25T17:46:13Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "ampcode.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt",
+    "oauth-cimd"
+   ]
+  },
+  "samsung.com": {
+   "checked": "2026-10-25T17:46:37Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "docs.warp.dev": {
+   "checked": "2026-10-25T17:44:08Z",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 56,
+   "grade": "A"
+  },
+  "squareup.com": {
+   "checked": "2026-10-25T17:50:52Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "speechmatics.com": {
+   "checked": "2026-10-25T17:50:56Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "cafe24.com": {
+   "checked": "2026-10-25T17:49:41Z",
+   "found": [
+    "llms-txt",
+    "mcp",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "publica.la": {
+   "checked": "2026-10-25T17:47:41Z",
+   "found": [
+    "a2a",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 75,
+   "grade": "A+"
+  },
+  "ashbyhq.com": {
+   "checked": "2026-10-25T17:49:32Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "buildkite.com": {
+   "checked": "2026-10-25T17:43:13Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ard",
+    "mcp"
+   ]
+  },
+  "eodly.io": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "webhooks.cc": {
+   "checked": "2026-10-25T17:51:23Z",
+   "found": [
+    "auth-md",
+    "llms-txt",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "yapily.com": {
+   "checked": "2026-10-25T17:51:38Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "sonarsource.com": {
+   "checked": "2026-10-25T17:50:54Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "intel.com": {
+   "checked": "2026-10-25T17:45:03Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "braintrust.dev": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "quicknode.com": {
+   "checked": "2026-10-25T17:46:22Z",
+   "found": [
+    "a2a",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "svelte.dev": {
+   "checked": "2026-10-25T17:51:49Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "rippling.com": {
+   "checked": "2026-10-25T17:46:29Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "gitbook.com": {
+   "checked": "2026-10-25T17:44:41Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "rako.sh": {
+   "checked": "2026-10-25T17:46:23Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "agent-ready.dev": {
+   "checked": "2026-10-25T17:42:27Z",
+   "found": [
+    "a2a",
+    "agent-permissions-json",
+    "agents-json",
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents",
+    "ucp",
+    "webbotauth"
+   ],
+   "score": 95,
+   "grade": "A+"
+  },
+  "mx.com": {
+   "checked": "2026-10-25T17:50:29Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "glean.com": {
+   "checked": "2026-10-25T17:44:41Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "api.githubcopilot.com": {
+   "checked": "2026-10-25T17:42:45Z",
+   "found": [
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "developers.openai.com": {
+   "checked": "2026-10-25T17:49:49Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "patronus.ai": {
+   "checked": "2026-10-25T17:46:06Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "stability.ai": {
+   "checked": "2026-10-25T17:46:55Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "kayak.com": {
+   "checked": "2026-10-25T17:50:11Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "twilio.com": {
+   "checked": "2026-10-25T17:51:13Z",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "meta.com": {
+   "checked": "2026-10-25T17:50:29Z",
+   "found": [
+    "webbotauth"
+   ]
+  },
+  "zuora.com": {
+   "checked": "2026-10-25T17:51:48Z",
+   "found": [
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "checklyhq.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "anthropic-agent-skills-format",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "augmentcode.com": {
+   "checked": "2026-10-25T17:49:28Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 51,
+   "grade": "A"
+  },
+  "oreilly.com": {
+   "checked": "2026-10-25T17:45:58Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "liblab.com": {
+   "checked": "2026-10-25T17:50:15Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "render.com": {
+   "checked": "2026-10-25T17:46:27Z",
+   "found": [
+    "agents-md",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "netflix.com": {
+   "checked": "2026-10-25T17:45:45Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "supabase.com": {
+   "checked": "2026-10-25T17:46:58Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "hubspot.com": {
+   "checked": "2026-10-25T17:50:10Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "mem0.ai": {
+   "checked": "2026-10-25T17:51:51Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "openhands.dev": {
+   "checked": "2026-10-25",
+   "found": [
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "baseten.co": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "2s.io": {
+   "checked": "2026-10-25",
+   "found": [
+    "a2a",
+    "agents-json",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 64,
+   "grade": "A+"
+  },
+  "scalar.com": {
+   "checked": "2026-10-25T17:51:51Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-cimd"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "marimo.io": {
+   "checked": "2026-10-25T17:50:25Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "flickr.com": {
+   "checked": "2026-10-25T17:44:32Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "quora.com": {
+   "checked": "2026-10-25T17:46:23Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "bbc.com": {
+   "checked": "2026-10-25T13:39:33Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "brex.com": {
+   "checked": "2026-10-25T17:49:31Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "pulumi.com": {
+   "checked": "2026-10-25T17:46:20Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "loops.so": {
+   "checked": "2026-10-25T17:47:44Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 52,
+   "grade": "A"
+  },
+  "you.com": {
+   "checked": "2026-10-25T17:47:45Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "api-catalog-rfc9727",
+    "ard",
+    "llms-txt",
+    "mcp",
+    "webbotauth"
+   ],
+   "score": 62,
+   "grade": "A+"
+  },
+  "corriere.it": {
+   "checked": "2026-10-25T03:28:22Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "dreaming.press": {
+   "checked": "2026-10-25T17:44:12Z",
+   "found": [
+    "a2a",
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "nature.com": {
+   "checked": "2026-10-25T17:50:33Z",
+   "found": [
+    "tdmrep"
+   ]
+  },
+  "spacelift.io": {
+   "checked": "2026-10-25T17:46:49Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "risingwave.com": {
+   "checked": "2026-10-25T17:46:29Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "savvycal.com": {
+   "checked": "2026-10-25T17:46:37Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "code.visualstudio.com": {
+   "checked": "2026-10-25T17:43:28Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "datocms.com": {
+   "checked": "2026-10-25T17:43:38Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "zdnet.com": {
+   "checked": "2026-10-25T17:51:43Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "danads.com": {
+   "checked": "2026-10-25T17:43:35Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "together.ai": {
+   "checked": "2026-10-25T17:47:45Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "squarespace.com": {
+   "checked": "2026-10-25T17:50:51Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "dlthub.com": {
+   "checked": "2026-10-25T17:43:54Z",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "wordpress.org": {
+   "checked": "2026-10-25T17:47:44Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "stripe.com": {
+   "checked": "2026-10-23T07:59:38Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "packalyst.com": {
+   "checked": "2026-10-25T17:46:02Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "replicate.com": {
+   "checked": "2026-10-25T17:47:45Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "x.ai": {
+   "checked": "2026-10-25T17:51:37Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "api.proof.com": {
+   "checked": "2026-10-25T17:42:45Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-content-signals-policy",
+    "llms-txt",
+    "mcp",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "yahoo.com": {
+   "checked": "2026-10-25T17:51:39Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "plane.so": {
+   "checked": "2026-10-25T17:46:12Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 57,
+   "grade": "A"
+  },
+  "pmg.com": {
+   "checked": "2026-10-25T17:50:34Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "medium.com": {
+   "checked": "2026-10-25T17:47:43Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "rsl"
+   ]
+  },
+  "airbnb.com": {
+   "checked": "2026-10-25T17:42:40Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "lg.com": {
+   "checked": "2026-10-25T17:50:19Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "bandwidth.com": {
+   "checked": "2026-10-25T17:42:59Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "skyvern.com": {
+   "checked": "2026-10-25T17:47:44Z",
+   "found": [
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 49,
+   "grade": "A"
+  },
+  "nextjs.org": {
+   "checked": "2026-10-25T17:50:27Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "deel.com": {
+   "checked": "2026-10-25T17:43:40Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "agenticresources.dev": {
+   "checked": "2026-10-25T17:42:35Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ard"
+   ]
+  },
+  "trigger.dev": {
+   "checked": "2026-10-25T17:47:45Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "auth0.com": {
+   "checked": "2026-10-25T17:42:56Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "rudderstack.com": {
+   "checked": "2026-10-25T17:50:42Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "llms-txt"
+   ]
+  },
+  "oysterhr.com": {
+   "checked": "2026-10-25T17:50:30Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "zoominfo.com": {
+   "checked": "2026-10-25T17:51:46Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "tailscale.com": {
+   "checked": "2026-10-25T17:47:00Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "qail.ai": {
+   "checked": "2026-10-25T17:46:21Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "auth-md.com": {
+   "checked": "2026-10-25T17:42:56Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ],
+   "score": 46,
+   "grade": "A"
+  },
+  "time.com": {
+   "checked": "2026-10-25T17:51:04Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "datadoghq.com": {
+   "checked": "2026-10-25T03:10:54Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "zerotier.com": {
+   "checked": "2026-10-25T17:51:46Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "telnyx.com": {
+   "checked": "2026-10-25T17:47:46Z",
+   "found": [
+    "a2a",
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents",
+    "ucp",
+    "webbotauth"
+   ],
+   "score": 95,
+   "grade": "A+"
+  },
+  "checkout.com": {
+   "checked": "2026-10-25T17:49:38Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "nbcnews.com": {
+   "checked": "2026-10-25T17:45:43Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "snowflake.com": {
+   "checked": "2026-10-25T17:50:51Z",
+   "found": [
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "intercom.com": {
+   "checked": "2026-10-25T17:45:04Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "pinecone.io": {
+   "checked": "2026-10-25T17:50:33Z",
+   "found": [
+    "a2a",
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 51,
+   "grade": "A"
+  },
+  "incident.io": {
+   "checked": "2026-10-25T17:45:01Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "mistral.ai": {
+   "checked": "2026-10-25T17:45:33Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "plausible.io": {
+   "checked": "2026-10-25T17:47:44Z",
+   "found": [
+    "oauth-cimd"
+   ]
+  },
+  "plivo.com": {
+   "checked": "2026-10-25T17:50:34Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "chainalysis.com": {
+   "checked": "2026-10-25T17:49:38Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "cnbc.com": {
+   "checked": "2026-10-25T17:43:25Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "mailgun.com": {
+   "checked": "2026-10-24T21:00:35Z",
+   "found": [
+    "oauth-metadata-for-agents",
+    "oauth-cimd"
+   ]
+  },
+  "mnemom.ai": {
+   "checked": "2026-10-25T17:45:36Z",
+   "found": [
+    "a2a",
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "better-auth.com": {
+   "checked": "2026-10-25T17:47:46Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "apollo.dev": {
+   "checked": "2026-10-25T17:42:47Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "tavily.com": {
+   "checked": "2026-10-25T17:51:05Z",
+   "found": [
+    "a2a",
+    "agents-md",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "ard",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 80,
+   "grade": "A+"
+  },
+  "axios.com": {
+   "checked": "2026-10-25T17:42:57Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "turso.tech": {
+   "checked": "2026-10-25T17:47:45Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-cimd"
+   ],
+   "score": 59,
+   "grade": "A"
+  },
+  "docs.ag-ui.com": {
+   "checked": "2026-10-25T17:49:53Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "logto.io": {
+   "checked": "2026-10-25T17:50:26Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "workos.com": {
+   "checked": "2026-10-25T17:51:31Z",
+   "found": [
+    "auth-md",
+    "cloudflare-markdown-for-agents",
+    "identity-assertion-authz-grant",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-cimd"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "kochava.com": {
+   "checked": "2026-10-25T17:45:12Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "usatoday.com": {
+   "checked": "2026-10-25T17:51:21Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "lever.co": {
+   "checked": "2026-10-25T17:50:16Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "coder.com": {
+   "checked": "2026-10-25T17:49:39Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 64,
+   "grade": "A+"
+  },
+  "gumroad.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt",
+    "mcp",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "lancedb.com": {
+   "checked": "2026-10-25T17:50:15Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "docs.adcontextprotocol.org": {
+   "checked": "2026-10-25T17:49:52Z",
+   "found": [
+    "a2a",
+    "agents-md",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 75,
+   "grade": "A+"
+  },
+  "pipedream.com": {
+   "checked": "2026-10-25T17:47:44Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "dell.com": {
+   "checked": "2026-10-25T17:49:51Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "etsy.com": {
+   "checked": "2026-10-25T17:49:58Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "cal.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "aioseo.com": {
+   "checked": "2026-10-25T17:49:27Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "satgate.io": {
+   "checked": "2026-10-25T17:50:38Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "helicone.ai": {
+   "checked": "2026-10-25T17:47:46Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "freshworks.com": {
+   "checked": "2026-10-25T17:44:34Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "twist.com": {
+   "checked": "2026-10-25T17:47:11Z",
+   "found": [
+    "oauth-cimd"
+   ]
+  },
+  "fivetran.com": {
+   "checked": "2026-10-25T17:44:32Z",
+   "found": [
+    "identity-assertion-authz-grant",
+    "llms-txt"
+   ]
+  },
+  "propelauth.com": {
+   "checked": "2026-10-25T17:47:47Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "relevanceai.com": {
+   "checked": "2026-10-25T17:47:46Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "fusionauth.io": {
+   "checked": "2026-10-25T17:44:37Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "qualcomm.com": {
+   "checked": "2026-10-25T17:50:40Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "postmarkapp.com": {
+   "checked": "2026-10-25T17:46:15Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ],
+   "score": 59,
+   "grade": "A"
+  },
+  "mollie.com": {
+   "checked": "2026-10-24T21:01:05Z",
+   "found": [
+    "llms-txt",
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "payloadcms.com": {
+   "checked": "2026-10-25T17:47:47Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "val.town": {
+   "checked": "2026-10-25T17:51:51Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "folk.app": {
+   "checked": "2026-10-25T17:44:32Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "wiz.io": {
+   "checked": "2026-10-25T17:51:27Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "turnkey.com": {
+   "checked": "2026-10-25T17:51:10Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "activepieces.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "lobste.rs": {
+   "checked": "2026-10-25T17:50:25Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "unsplash.com": {
+   "checked": "2026-10-25T17:47:15Z",
+   "found": [
+    "oauth-cimd"
+   ]
+  },
+  "hp.com": {
+   "checked": "2026-10-25T17:44:56Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "apollographql.com": {
+   "checked": "2026-10-25T17:42:49Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "serpapi.com": {
+   "checked": "2026-10-25T17:50:42Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "temporal.io": {
+   "checked": "2026-10-25T17:51:04Z",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "pagerduty.com": {
+   "checked": "2026-10-25T17:46:03Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "lattice.com": {
+   "checked": "2026-10-25T17:50:15Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "cohere.com": {
+   "checked": "2026-10-25T17:43:29Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "apify.com": {
+   "checked": "2026-10-25T17:42:48Z",
+   "found": [
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "customer.io": {
+   "checked": "2026-10-25T17:43:35Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp-server-cards"
+   ],
+   "score": 57,
+   "grade": "A"
+  },
+  "mpp.dev": {
+   "checked": "2026-10-25T17:45:39Z",
+   "found": [
+    "agents-md",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "crawlytics.app": {
+   "checked": "2026-10-25T17:43:32Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "desvela.dev": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ard",
+    "llms-txt",
+    "mcp"
+   ]
+  },
+  "scaleway.com": {
+   "checked": "2026-10-25T17:50:43Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727"
+   ]
+  },
+  "salespeak.ai": {
+   "checked": "2026-10-25T17:46:34Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "ard",
+    "llms-txt",
+    "mcp-server-cards"
+   ],
+   "score": 54,
+   "grade": "A"
+  },
+  "teller.io": {
+   "checked": "2026-10-25T17:51:04Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "cnet.com": {
+   "checked": "2026-10-24T20:59:26Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "oauth-metadata-for-agents",
+    "oauth-cimd"
+   ]
+  },
+  "assemblyai.com": {
+   "checked": "2026-10-25T17:49:29Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "washingtonpost.com": {
+   "checked": "2026-10-25T17:51:23Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "patreon.com": {
+   "checked": "2026-10-25T17:46:05Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "decagon.ai": {
+   "checked": "2026-10-25T17:43:38Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "producthunt.com": {
+   "checked": "2026-10-24T20:59:31Z",
+   "found": [
+    "llms-txt",
+    "anthropic-agent-skills-format"
+   ]
+  },
+  "gradio.app": {
+   "checked": "2026-10-25T17:44:45Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "fidoalliance.org": {
+   "checked": "2026-10-25T17:44:29Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "coursera.org": {
+   "checked": "2026-10-25T17:43:33Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "yoast.com": {
+   "checked": "2026-10-25T17:51:38Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "getdbt.com": {
+   "checked": "2026-10-25T17:50:05Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "luma.ai": {
+   "checked": "2026-10-25T17:45:24Z",
+   "found": [
+    "llms-txt",
+    "mcp",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "plain.com": {
+   "checked": "2026-10-25T17:46:11Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "e2b.dev": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "nango.dev": {
+   "checked": "2026-10-25T17:47:48Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "netlify.com": {
+   "checked": "2026-10-25T17:45:46Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "runpod.io": {
+   "checked": "2026-10-25T17:47:48Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ],
+   "score": 61,
+   "grade": "A+"
+  },
+  "mcp.sentry.dev": {
+   "checked": "2026-10-25T17:45:31Z",
+   "found": [
+    "llms-txt",
+    "oauth-cimd"
+   ]
+  },
+  "cisco.com": {
+   "checked": "2026-10-25T17:49:39Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "whereby.com": {
+   "checked": "2026-10-25T17:51:31Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "wundergraph.com": {
+   "checked": "2026-10-25T17:51:31Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "circleci.com": {
+   "checked": "2026-10-25T17:43:20Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "snyk.io": {
+   "checked": "2026-10-25T17:50:50Z",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "typesense.org": {
+   "checked": "2026-10-25T17:47:13Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "solo.io": {
+   "checked": "2026-10-25T17:50:52Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "chrishood.com": {
+   "checked": "2026-10-25T17:49:41Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "bland.ai": {
+   "checked": "2026-10-25T17:43:07Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "deepgram.com": {
+   "checked": "2026-10-25T17:43:40Z",
+   "found": [
+    "api-catalog-rfc9727",
+    "llms-txt"
+   ]
+  },
+  "exa.ai": {
+   "checked": "2026-10-25T17:44:23Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ard",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "jasper.ai": {
+   "checked": "2026-10-25T17:45:05Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "theverge.com": {
+   "checked": "2026-10-25T17:47:49Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "knock.app": {
+   "checked": "2026-10-25T17:45:11Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "bettermode.com": {
+   "checked": "2026-10-25T17:43:04Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "infobip.com": {
+   "checked": "2026-10-25T17:45:02Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "factory.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "vimeo.com": {
+   "checked": "2026-10-25T17:47:19Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "litellm.ai": {
+   "checked": "2026-10-25T17:50:24Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "dailymotion.com": {
+   "checked": "2026-10-25T17:49:43Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "swagger.io": {
+   "checked": "2026-10-25T17:50:56Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "postman.com": {
+   "checked": "2026-10-25T17:46:15Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "ai21.com": {
+   "checked": "2026-10-25T17:42:39Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "vendure.io": {
+   "checked": "2026-10-25T17:47:18Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "ably.com": {
+   "checked": "2026-10-25T17:42:29Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "copilotkit.ai": {
+   "checked": "2026-10-25T17:43:32Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "medusajs.com": {
+   "checked": "2026-10-25T17:47:49Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 54,
+   "grade": "A"
+  },
+  "arize.com": {
+   "checked": "2026-10-25T17:42:49Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.github.com": {
+   "checked": "2026-10-23T02:22:52Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "iterable.com": {
+   "checked": "2026-10-25T17:45:03Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "ossi.org": {
+   "checked": "2026-10-25T17:45:58Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "socket.dev": {
+   "checked": "2026-10-25T17:50:48Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "unkey.com": {
+   "checked": "2026-10-25T17:47:50Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "fastly.com": {
+   "checked": "2026-10-25T17:44:29Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "asus.com": {
+   "checked": "2026-10-25T17:49:34Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "airwallex.com": {
+   "checked": "2026-10-25T03:08:29Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "airbyte.com": {
+   "checked": "2026-10-25T17:42:39Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-metadata-for-agents",
+    "ucp"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "hygraph.com": {
+   "checked": "2026-10-25T17:44:55Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "sentry.io": {
+   "checked": "2026-10-25T17:46:41Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "nvidia.com": {
+   "checked": "2026-10-25T17:45:51Z",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "theatlantic.com": {
+   "checked": "2026-10-25T17:51:05Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "hostinger.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "agora.io": {
+   "checked": "2026-10-25T17:49:31Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "pydantic.dev": {
+   "checked": "2026-10-25T17:47:50Z",
+   "found": [
+    "a2a",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "gem.com": {
+   "checked": "2026-10-25T17:50:05Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "proof.com": {
+   "checked": "2026-10-25T17:46:19Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "agentclientprotocol.com": {
+   "checked": "2026-10-25T17:42:29Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 75,
+   "grade": "A+"
+  },
+  "byteiota.com": {
+   "checked": "2026-10-25T17:49:40Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "vite.dev": {
+   "checked": "2026-10-25T17:47:50Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "konghq.com": {
+   "checked": "2026-10-25T17:50:13Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "clay.com": {
+   "checked": "2026-10-25T17:49:39Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "x402.org": {
+   "checked": "2026-10-25T17:47:50Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 64,
+   "grade": "A+"
+  },
+  "infisical.com": {
+   "checked": "2026-10-25T17:47:50Z",
+   "found": [
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp-server-cards"
+   ]
+  },
+  "clerk.com": {
+   "checked": "2026-10-25T17:43:21Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "ruby-lang.org": {
+   "checked": "2026-10-25T17:50:42Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "gtmetrix.com": {
+   "checked": "2026-10-25T17:47:50Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 51,
+   "grade": "A"
+  },
+  "browserbase.com": {
+   "checked": "2026-10-25T17:49:33Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "webbotauth"
+   ]
+  },
+  "chatgpt.com": {
+   "checked": "2026-10-25T17:43:15Z",
+   "found": [
+    "webbotauth"
+   ]
+  },
+  "docs.perplexity.ai": {
+   "checked": "2026-10-25T17:44:04Z",
+   "found": [
+    "a2a",
+    "agents-md",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 75,
+   "grade": "A+"
+  },
+  "vonage.com": {
+   "checked": "2026-10-25T17:51:22Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "shortcut.com": {
+   "checked": "2026-10-25T17:50:44Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "vespa.ai": {
+   "checked": "2026-10-25T17:51:17Z",
+   "found": [
+    "llms-txt",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "ebay.com": {
+   "checked": "2026-10-25T17:44:16Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "mux.com": {
+   "checked": "2026-10-25T17:50:26Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "monday.com": {
+   "checked": "2026-10-25T17:47:53Z",
+   "found": [
+    "a2a",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 75,
+   "grade": "A+"
+  },
+  "privy.io": {
+   "checked": "2026-10-25T17:50:37Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "theguardian.com": {
+   "checked": "2026-10-25T17:51:05Z",
+   "found": [
+    "rsl"
+   ]
+  },
+  "webflow.com": {
+   "checked": "2026-10-25T17:51:25Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "attio.com": {
+   "checked": "2026-10-25T17:42:56Z",
+   "found": [
+    "a2a",
+    "ai-crawler-tokens-robots",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 56,
+   "grade": "A"
+  },
+  "semgrep.dev": {
+   "checked": "2026-10-25T17:46:39Z",
+   "found": [
+    "llms-txt",
+    "mcp",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 46,
+   "grade": "A"
+  },
+  "natwest.com": {
+   "checked": "2026-10-25T17:50:29Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "springer.com": {
+   "checked": "2026-10-25T17:51:02Z",
+   "found": [
+    "tdmrep"
+   ]
+  },
+  "cloudandsre.com": {
+   "checked": "2026-10-25T17:43:24Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "stm-assoc.org": {
+   "checked": "2026-10-25T17:46:57Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "pinterest.com": {
+   "checked": "2026-10-24T21:01:05Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "docs.cdp.coinbase.com": {
+   "checked": "2026-10-25T17:43:54Z",
+   "found": [
+    "a2a",
+    "agents-md",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "img.ly": {
+   "checked": "2026-10-25T17:47:50Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "mercury.com": {
+   "checked": "2026-10-25T17:45:33Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "api-catalog-rfc9727",
+    "ard",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "arcade.dev": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "clickhouse.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "redocly.com": {
+   "checked": "2026-10-25T17:47:50Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 59,
+   "grade": "A"
+  },
+  "weaviate.io": {
+   "checked": "2026-10-25T17:47:23Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "openrouter.ai": {
+   "checked": "2026-10-25T17:47:51Z",
+   "found": [
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 52,
+   "grade": "A"
+  },
+  "adyen.com": {
+   "checked": "2026-10-25T03:04:15Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "bigcommerce.com": {
+   "checked": "2026-10-25T10:05:45Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "bitwarden.com": {
+   "checked": "2026-10-25T13:44:47Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "box.com": {
+   "checked": "2026-10-25T03:09:44Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "comcastadvertising.com": {
+   "checked": "2026-10-25T17:43:31Z",
+   "found": [
+    "llms-txt",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "console.groq.com": {
+   "checked": "2026-10-25T17:43:30Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "contabo.com": {
+   "checked": "2026-10-25T03:10:39Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "context7.com": {
+   "checked": "2026-10-25T13:31:18Z",
+   "score": 70,
+   "grade": "A+",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "identity-assertion-authz-grant",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "crunchbase.com": {
+   "checked": "2026-10-25T17:49:43Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "oauth-cimd"
+   ]
+  },
+  "databricks.com": {
+   "checked": "2026-10-25T03:28:21Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "deepset.ai": {
+   "checked": "2026-10-25T17:49:48Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "developer.box.com": {
+   "checked": "2026-10-25T17:43:46Z",
+   "found": [
+    "a2a",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "developer.paddle.com": {
+   "checked": "2026-10-25T17:43:47Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "developers.asana.com": {
+   "checked": "2026-10-25T15:51:56Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "llms-txt"
+   ]
+  },
+  "developers.belvo.com": {
+   "checked": "2026-10-25T11:46:47Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "developers.clay.com": {
+   "checked": "2026-10-25T19:42:32Z",
+   "found": [
+    "agents-md",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "developers.deepgram.com": {
+   "checked": "2026-10-25T17:49:48Z",
+   "found": [
+    "agents-md",
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 47,
+   "grade": "A"
+  },
+  "developers.figma.com": {
+   "checked": "2026-10-25T19:35:49Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "developers.intercom.com": {
+   "checked": "2026-10-25T17:49:49Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 54,
+   "grade": "A"
+  },
+  "developers.klaviyo.com": {
+   "checked": "2026-10-25T03:28:26Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727"
+   ]
+  },
+  "developers.meta.com": {
+   "checked": "2026-10-25T19:35:56Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "developers.miro.com": {
+   "checked": "2026-10-25T03:28:26Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "llms-txt"
+   ]
+  },
+  "developers.notion.com": {
+   "checked": "2026-10-25T19:42:31Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "developers.sap.com": {
+   "checked": "2026-10-25T13:54:16Z",
+   "score": 49,
+   "grade": "A",
+   "found": [
+    "a2a",
+    "agents-md",
+    "ai-crawler-tokens-robots",
+    "llms-txt",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "developers.webflow.com": {
+   "checked": "2026-10-25T17:49:52Z",
+   "found": [
+    "agents-md",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 45,
+   "grade": "A"
+  },
+  "developers.zoom.us": {
+   "checked": "2026-10-25T17:43:51Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 59,
+   "grade": "A"
+  },
+  "docs.0g.ai": {
+   "checked": "2026-10-25T19:35:38Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.adyen.com": {
+   "checked": "2026-10-25T17:49:46Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "docs.agntcy.org": {
+   "checked": "2026-10-25T19:35:52Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.airbyte.com": {
+   "checked": "2026-10-25T17:43:53Z",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "docs.arcade.dev": {
+   "checked": "2026-10-25T17:43:56Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.cartesia.ai": {
+   "checked": "2026-10-25T17:49:56Z",
+   "found": [
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "docs.cohere.com": {
+   "checked": "2026-10-25T17:43:54Z",
+   "found": [
+    "agents-md",
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "docs.composio.dev": {
+   "checked": "2026-10-25T17:43:55Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.convex.dev": {
+   "checked": "2026-10-25T17:49:55Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.datadoghq.com": {
+   "checked": "2026-10-25T17:43:55Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.deno.com": {
+   "checked": "2026-10-25T17:43:58Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.descope.com": {
+   "checked": "2026-10-25T17:43:57Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.devin.ai": {
+   "checked": "2026-10-25T19:42:27Z",
+   "found": [
+    "agents-md",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents"
+   ],
+   "score": 59,
+   "grade": "A"
+  },
+  "docs.docker.com": {
+   "checked": "2026-10-25T17:43:58Z",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 59,
+   "grade": "A"
+  },
+  "docs.hetzner.com": {
+   "checked": "2026-10-25T17:44:00Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.klarna.com": {
+   "checked": "2026-10-25T17:44:01Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.linuxfoundation.org": {
+   "checked": "2026-10-25T13:53:37Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "docs.livekit.io": {
+   "checked": "2026-10-25T17:44:02Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "llms-txt"
+   ]
+  },
+  "docs.lovable.dev": {
+   "checked": "2026-10-25T17:44:03Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 75,
+   "grade": "A+"
+  },
+  "docs.netlify.com": {
+   "checked": "2026-10-25T17:44:03Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.prefect.io": {
+   "checked": "2026-10-25T17:44:06Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "docs.privy.io": {
+   "checked": "2026-10-25T19:42:34Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "docs.replit.com": {
+   "checked": "2026-10-25T17:49:56Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "docs.snowflake.com": {
+   "checked": "2026-10-25T19:35:58Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.tavily.com": {
+   "checked": "2026-10-25T17:44:06Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "docs.together.ai": {
+   "checked": "2026-10-25T17:44:08Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 75,
+   "grade": "A+"
+  },
+  "docs.trychroma.com": {
+   "checked": "2026-10-25T17:44:10Z",
+   "found": [
+    "a2a",
+    "agents-md",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "docs.unstructured.io": {
+   "checked": "2026-10-25T17:44:10Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "docs.vapi.ai": {
+   "checked": "2026-10-25T17:44:08Z",
+   "found": [
+    "agents-md",
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 47,
+   "grade": "A"
+  },
+  "docs.x.ai": {
+   "checked": "2026-10-25T19:42:27Z",
+   "found": [
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 59,
+   "grade": "A"
+  },
+  "etherscan.io": {
+   "checked": "2026-10-25T17:44:22Z",
+   "found": [
+    "agents-md",
+    "agents-txt",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 47,
+   "grade": "A"
+  },
+  "glama.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "llms-txt",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 54,
+   "grade": "A"
+  },
+  "ollama.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "opencode.ai": {
+   "checked": "2026-10-25T17:47:35Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "padlet.com": {
+   "checked": "2026-10-25T17:46:02Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "paloaltonetworks.com": {
+   "checked": "2026-10-25T17:46:03Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "prisma.io": {
+   "checked": "2026-10-25",
+   "found": [
+    "anthropic-agent-skills-format",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "prnewswire.com": {
+   "checked": "2026-10-25T17:50:41Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "pulsemcp.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "redis.io": {
+   "checked": "2026-10-25T17:46:25Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "savrn.com": {
+   "checked": "2026-10-25T17:50:42Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "semianalysis.com": {
+   "checked": "2026-10-25T17:46:40Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "www.photonica.io": {
+   "checked": "2026-10-25T17:51:35Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "ant-intl.com": {
+   "checked": "2026-10-25T17:49:35Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "blog.cloudflare.com": {
+   "checked": "2026-10-25T17:43:06Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "developer.squareup.com": {
+   "checked": "2026-10-25T17:43:47Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "docs.attio.com": {
+   "checked": "2026-10-25T17:49:55Z",
+   "found": [
+    "a2a",
+    "agents-md",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "docs.baseten.co": {
+   "checked": "2026-10-25T17:43:54Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "docs.daily.co": {
+   "checked": "2026-10-25T17:43:58Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "docs.fireworks.ai": {
+   "checked": "2026-10-25T17:43:59Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 75,
+   "grade": "A+"
+  },
+  "docs.digitalocean.com": {
+   "checked": "2026-10-25T17:49:57Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.helicone.ai": {
+   "checked": "2026-10-25T17:44:01Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "docs.litellm.ai": {
+   "checked": "2026-10-25T17:44:02Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.parallel.ai": {
+   "checked": "2026-10-25T17:44:03Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 75,
+   "grade": "A+"
+  },
+  "docs.runpod.io": {
+   "checked": "2026-10-25T17:44:04Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 75,
+   "grade": "A+"
+  },
+  "docs.pinecone.io": {
+   "checked": "2026-10-25T17:44:05Z",
+   "found": [
+    "a2a",
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 62,
+   "grade": "A+"
+  },
+  "docs.statsig.com": {
+   "checked": "2026-10-25T17:44:07Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.temporal.io": {
+   "checked": "2026-10-25T17:44:07Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.vllm.ai": {
+   "checked": "2026-10-25T17:44:08Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "docs.turso.tech": {
+   "checked": "2026-10-25T17:44:08Z",
+   "found": [
+    "a2a",
+    "agents-md",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "grafana.com": {
+   "checked": "2026-10-25T17:50:01Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "goteleport.com": {
+   "checked": "2026-10-25T17:44:45Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "heygen.com": {
+   "checked": "2026-10-25T17:44:52Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "kyvosinsights.com": {
+   "checked": "2026-10-25T17:50:14Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "ngrok.com": {
+   "checked": "2026-10-25T17:45:48Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "notion.so": {
+   "checked": "2026-10-25T17:45:50Z",
+   "found": [
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "openapis.org": {
+   "checked": "2026-10-25T17:45:56Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "orm.drizzle.team": {
+   "checked": "2026-10-25T17:45:57Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "parallel.ai": {
+   "checked": "2026-10-25T17:46:04Z",
+   "found": [
+    "auth-md",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 64,
+   "grade": "A+"
+  },
+  "pipedrive.com": {
+   "checked": "2026-10-25T17:50:33Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "roboflow.com": {
+   "checked": "2026-10-25T17:50:37Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "sambanova.ai": {
+   "checked": "2026-10-25T17:46:34Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "science.org": {
+   "checked": "2026-10-25T17:50:46Z",
+   "found": [
+    "tdmrep"
+   ]
+  },
+  "vllm.ai": {
+   "checked": "2026-10-25T17:51:15Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "woocommerce.com": {
+   "checked": "2026-10-25T17:51:27Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "zoho.com": {
+   "checked": "2026-10-25T17:51:43Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "merge.dev": {
+   "checked": "2026-10-25T17:51:47Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "www.cloudflare.com": {
+   "checked": "2026-10-25T17:47:31Z",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "auth-md",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "www.shopify.com": {
+   "checked": "2026-10-25T17:47:32Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "stytch.com": {
+   "checked": "2026-10-25T17:51:53Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "a2a-protocol.org": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "aave.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "agenta.ai": {
+   "checked": "2026-10-25T19:37:43Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "agents.cloudflare.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "ai-sdk.dev": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "ai.engineer": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "aihero.dev": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "amasad.me": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "answer.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "api.slack.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "apnews.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "appwrite.io": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "argo-cd.readthedocs.io": {
+   "checked": "2026-10-25T19:37:22Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "arstechnica.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "artillery.io": {
+   "checked": "2026-10-25T19:37:18Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "asyncapi.com": {
+   "checked": "2026-10-25T19:39:02Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "automerge.org": {
+   "checked": "2026-10-25T19:36:51Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "bazel.build": {
+   "checked": "2026-10-25T19:42:35Z",
+   "found": [
+    "agents-md",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "betalist.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "brightdata.com": {
+   "checked": "2026-10-25T19:37:49Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "auth-md",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 57,
+   "grade": "A"
+  },
+  "browser-use.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "llms-txt",
+    "mcp",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "buf.build": {
+   "checked": "2026-10-25T19:37:03Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "buttondown.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "c2pa.org": {
+   "checked": "2026-10-25T19:38:16Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 67,
+   "grade": "A+"
+  },
+  "cassidoo.co": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "cerebrium.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "a2a",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "chartdb.io": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "checkmarx.com": {
+   "checked": "2026-10-25T19:38:06Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "llms-txt",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "chromatic.com": {
+   "checked": "2026-10-25T19:37:12Z",
+   "found": [
+    "oauth-cimd"
+   ]
+  },
+  "cilium.io": {
+   "checked": "2026-10-25T19:37:24Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "cline.bot": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "cloud.laravel.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "cognee.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "confident-ai.com": {
+   "checked": "2026-10-25T19:37:43Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "coolify.io": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "cypress.io": {
+   "checked": "2026-10-25T19:37:14Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "dashlane.com": {
+   "checked": "2026-10-25T19:38:06Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "datafa.st": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt",
+    "mcp",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "deepeval.com": {
+   "checked": "2026-10-25T19:37:41Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "developer.amazon.com": {
+   "checked": "2026-10-25T19:35:39Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "developer.calendly.com": {
+   "checked": "2026-10-25T19:36:49Z",
+   "found": [
+    "agents-md",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "developer.gemini.com": {
+   "checked": "2026-10-25T19:42:27Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "developer.mastercard.com": {
+   "checked": "2026-10-25T19:36:00Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "developer.paypal.com": {
+   "checked": "2026-10-25T19:35:53Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "developer.spotify.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "developers.akamai.com": {
+   "checked": "2026-10-25T19:35:39Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "developers.fireblocks.com": {
+   "checked": "2026-10-25T19:42:26Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "developers.harvey.ai": {
+   "checked": "2026-10-25T19:42:28Z",
+   "found": [
+    "a2a",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "developers.hellosign.com": {
+   "checked": "2026-10-25T19:35:58Z",
+   "found": [
+    "agents-md",
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "developers.kit.com": {
+   "checked": "2026-10-25T19:42:27Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "developers.llamaindex.ai": {
+   "checked": "2026-10-25T19:36:11Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "developers.make.com": {
+   "checked": "2026-10-25T19:36:51Z",
+   "found": [
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "developers.sinch.com": {
+   "checked": "2026-10-25T19:42:26Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "mcp-server-cards"
+   ]
+  },
+  "developers.smartsheet.com": {
+   "checked": "2026-10-25T19:38:56Z",
+   "found": [
+    "llms-txt",
+    "oauth-cimd"
+   ]
+  },
+  "developers.telnyx.com": {
+   "checked": "2026-10-25T19:42:35Z",
+   "found": [
+    "agents-md",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "devhunt.org": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "dexie.org": {
+   "checked": "2026-10-25T19:38:59Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "directus.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.ada.cx": {
+   "checked": "2026-10-25T19:36:10Z",
+   "found": [
+    "api-catalog-rfc9727"
+   ]
+  },
+  "docs.aembit.io": {
+   "checked": "2026-10-25T19:38:55Z",
+   "found": [
+    "llms-txt",
+    "okf"
+   ]
+  },
+  "docs.agora.io": {
+   "checked": "2026-10-25T19:36:07Z",
+   "found": [
+    "anthropic-agent-skills-format"
+   ]
+  },
+  "docs.anyscale.com": {
+   "checked": "2026-10-25T19:35:57Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.apify.com": {
+   "checked": "2026-10-25T19:36:49Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.bigcommerce.com": {
+   "checked": "2026-10-25T19:35:57Z",
+   "found": [
+    "agents-md",
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.bnbchain.org": {
+   "checked": "2026-10-25T19:35:51Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.box.com": {
+   "checked": "2026-10-25T19:42:27Z",
+   "found": [
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "docs.browserbase.com": {
+   "checked": "2026-10-25T19:42:35Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "docs.checklyhq.com": {
+   "checked": "2026-10-25T19:36:31Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.cockroachlabs.com": {
+   "checked": "2026-10-25T19:42:26Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "docs.commercetools.com": {
+   "checked": "2026-10-25T19:36:43Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.contabo.com": {
+   "checked": "2026-10-25T19:35:51Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.copilotkit.ai": {
+   "checked": "2026-10-25T19:36:06Z",
+   "found": [
+    "auth-md",
+    "llms-txt"
+   ]
+  },
+  "docs.coreweave.com": {
+   "checked": "2026-10-25T19:35:40Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "docs.crewai.com": {
+   "checked": "2026-10-25T19:42:36Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "docs.databricks.com": {
+   "checked": "2026-10-25T19:36:34Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.discord.com": {
+   "checked": "2026-10-25T19:35:58Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 54,
+   "grade": "A"
+  },
+  "docs.e2b.dev": {
+   "checked": "2026-10-25T19:42:32Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "docs.firecrawl.dev": {
+   "checked": "2026-10-25T19:42:34Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "docs.getdbt.com": {
+   "checked": "2026-10-25T19:36:32Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.ghost.org": {
+   "checked": "2026-10-25T19:42:27Z",
+   "found": [
+    "a2a",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "docs.gladia.io": {
+   "checked": "2026-10-25T19:42:28Z",
+   "found": [
+    "a2a",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "docs.glean.com": {
+   "checked": "2026-10-25T19:35:52Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.haystack.deepset.ai": {
+   "checked": "2026-10-25T19:35:49Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.honeycomb.io": {
+   "checked": "2026-10-25T19:42:26Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "docs.hoppscotch.io": {
+   "checked": "2026-10-25T19:42:28Z",
+   "found": [
+    "a2a",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "docs.ideogram.ai": {
+   "checked": "2026-10-25T19:42:28Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "cloudflare-content-signals-policy",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 51,
+   "grade": "A"
+  },
+  "docs.incident.io": {
+   "checked": "2026-10-25T19:42:34Z",
+   "found": [
+    "agents-md",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "docs.induced.ai": {
+   "checked": "2026-10-25T19:42:28Z",
+   "found": [
+    "a2a",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "docs.infura.io": {
+   "checked": "2026-10-25T19:38:54Z",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.kick.com": {
+   "checked": "2026-10-25T19:35:41Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 54,
+   "grade": "A"
+  },
+  "docs.kombo.dev": {
+   "checked": "2026-10-25T19:42:33Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "docs.lancedb.com": {
+   "checked": "2026-10-25T19:42:26Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "docs.langchain.com": {
+   "checked": "2026-10-25T19:42:26Z",
+   "found": [
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "docs.letta.com": {
+   "checked": "2026-10-25T19:35:48Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.literalai.com": {
+   "checked": "2026-10-25T19:42:34Z",
+   "found": [
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 57,
+   "grade": "A"
+  },
+  "docs.marimo.io": {
+   "checked": "2026-10-25T19:35:57Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.mem0.ai": {
+   "checked": "2026-10-25T19:42:27Z",
+   "found": [
+    "agents-md",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "mcp"
+   ],
+   "score": 62,
+   "grade": "A+"
+  },
+  "docs.merge.dev": {
+   "checked": "2026-10-25T19:35:40Z",
+   "found": [
+    "api-catalog-rfc9727"
+   ]
+  },
+  "docs.metronome.com": {
+   "checked": "2026-10-25T19:42:28Z",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "docs.mixpanel.com": {
+   "checked": "2026-10-25T19:42:27Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "mcp"
+   ],
+   "score": 54,
+   "grade": "A"
+  },
+  "docs.moralis.com": {
+   "checked": "2026-10-25T19:42:35Z",
+   "found": [
+    "agents-md",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "docs.multion.ai": {
+   "checked": "2026-10-25T19:36:06Z",
+   "found": [
+    "agents-md",
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.newrelic.com": {
+   "checked": "2026-10-25T19:36:31Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.nvidia.com": {
+   "checked": "2026-10-25T19:36:06Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "docs.openhands.dev": {
+   "checked": "2026-10-25T19:42:34Z",
+   "found": [
+    "agents-md",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "docs.pagerduty.com": {
+   "checked": "2026-10-25T19:35:59Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "docs.poolside.ai": {
+   "checked": "2026-10-25T19:35:54Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 52,
+   "grade": "A"
+  },
+  "docs.qualcomm.com": {
+   "checked": "2026-10-25T19:36:01Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.retellai.com": {
+   "checked": "2026-10-25T19:42:27Z",
+   "found": [
+    "agents-md",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "docs.saleor.io": {
+   "checked": "2026-10-25T19:35:38Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-markdown-for-agents",
+    "mcp-server-cards"
+   ],
+   "score": 57,
+   "grade": "A"
+  },
+  "docs.salesforce.com": {
+   "checked": "2026-10-25T19:35:57Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.semgrep.dev": {
+   "checked": "2026-10-25T19:42:34Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "docs.sentry.io": {
+   "checked": "2026-10-25T19:36:31Z",
+   "found": [
+    "agents-md",
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.snyk.io": {
+   "checked": "2026-10-25T19:36:35Z",
+   "found": [
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "docs.spline.design": {
+   "checked": "2026-10-25T19:35:48Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.stability.ai": {
+   "checked": "2026-10-25T19:42:26Z",
+   "found": [
+    "agents-md",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents"
+   ],
+   "score": 59,
+   "grade": "A"
+  },
+  "docs.strapi.io": {
+   "checked": "2026-10-25T19:36:02Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.tembo.io": {
+   "checked": "2026-10-25T19:35:53Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 52,
+   "grade": "A"
+  },
+  "docs.turnkey.com": {
+   "checked": "2026-10-25T19:42:34Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "docs.val.town": {
+   "checked": "2026-10-25T19:36:01Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "docs.vespa.ai": {
+   "checked": "2026-10-25T19:36:09Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.vultr.com": {
+   "checked": "2026-10-25T19:36:07Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "docs.whereby.com": {
+   "checked": "2026-10-25T19:36:05Z",
+   "found": [
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "docs.wise.com": {
+   "checked": "2026-10-25T19:42:32Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "docs.withorb.com": {
+   "checked": "2026-10-25T19:42:27Z",
+   "found": [
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "docs.yapily.com": {
+   "checked": "2026-10-25T19:42:27Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "mcp"
+   ],
+   "score": 54,
+   "grade": "A"
+  },
+  "docs.yugabyte.com": {
+   "checked": "2026-10-25T19:35:49Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "documenso.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "dokploy.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "dosu.dev": {
+   "checked": "2026-10-25T19:37:52Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "dragonflydb.io": {
+   "checked": "2026-10-25T19:37:00Z",
+   "found": [
+    "agents-md"
+   ]
+  },
+  "elysiajs.com": {
+   "checked": "2026-10-25T19:37:07Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "encore.dev": {
+   "checked": "2026-10-25T19:37:59Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "ethereum.org": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "expo.dev": {
+   "checked": "2026-10-25T19:37:08Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "expressjs.com": {
+   "checked": "2026-10-25T19:37:08Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "faros.ai": {
+   "checked": "2026-10-25T19:37:55Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "fastify.dev": {
+   "checked": "2026-10-25T19:37:08Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "feather.so": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "featherless.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "fluxui.dev": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "fortinet.com": {
+   "checked": "2026-10-25T19:38:06Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "gatling.io": {
+   "checked": "2026-10-25T19:37:15Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "getzep.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "giskard.ai": {
+   "checked": "2026-10-25T19:37:40Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "gitlab.com": {
+   "checked": "2026-10-25T19:38:05Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "gradle.org": {
+   "checked": "2026-10-25T19:37:15Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "graphlit.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt",
+    "mcp",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "graphql.org": {
+   "checked": "2026-10-25T19:38:17Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "greptile.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "guardrailsai.com": {
+   "checked": "2026-10-25T19:37:37Z",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "gumloop.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "gurubase.io": {
+   "checked": "2026-10-25T19:37:50Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 60,
+   "grade": "A+"
+  },
+  "headshotpro.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "hiddenlayer.com": {
+   "checked": "2026-10-25T19:37:40Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "hono.dev": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "hoodmaps.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "hookdeck.com": {
+   "checked": "2026-10-25T19:36:51Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 70,
+   "grade": "A+"
+  },
+  "humanloop.com": {
+   "checked": "2026-10-25T19:37:42Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "hyperbolic.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "hyperbrowser.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt",
+    "webbotauth"
+   ]
+  },
+  "inkeep.com": {
+   "checked": "2026-10-25T19:37:50Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "instantdb.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "jsr.io": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "kentcdodds.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "klavis.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "kratix.io": {
+   "checked": "2026-10-25T19:37:58Z",
+   "found": [
+    "llms-txt",
+    "ucp"
+   ]
+  },
+  "kysely.dev": {
+   "checked": "2026-10-25T19:36:59Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "ard",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ],
+   "score": 62,
+   "grade": "A+"
+  },
+  "lambdalabs.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "laravel.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "levels.io": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "librechat.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "llms-txt",
+    "webbotauth"
+   ]
+  },
+  "linearb.io": {
+   "checked": "2026-10-25T19:37:55Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "liveblocks.io": {
+   "checked": "2026-10-25T19:36:51Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "lmstudio.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "agents-md",
+    "agents-txt",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "markitdown.ai": {
+   "checked": "2026-10-25T19:37:49Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "marqo.ai": {
+   "checked": "2026-10-25T19:37:47Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "mcp.airtable.com": {
+   "checked": "2026-10-25T19:36:15Z",
+   "found": [
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.apify.com": {
+   "checked": "2026-10-25T19:36:16Z",
+   "found": [
+    "mcp-server-cards",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.asana.com": {
+   "checked": "2026-10-25T19:36:13Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.axiom.co": {
+   "checked": "2026-10-25T19:36:22Z",
+   "found": [
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.bitrise.io": {
+   "checked": "2026-10-25T19:36:16Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.box.com": {
+   "checked": "2026-10-25T19:42:32Z",
+   "found": [
+    "mcp",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.canva.com": {
+   "checked": "2026-10-25T19:36:17Z",
+   "found": [
+    "identity-assertion-authz-grant",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.clickup.com": {
+   "checked": "2026-10-25T19:36:19Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.datadoghq.com": {
+   "checked": "2026-10-25T19:36:23Z",
+   "found": [
+    "identity-assertion-authz-grant",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.exa.ai": {
+   "checked": "2026-10-25T19:42:32Z",
+   "found": [
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.figma.com": {
+   "checked": "2026-10-25T19:36:15Z",
+   "found": [
+    "identity-assertion-authz-grant",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.honeycomb.io": {
+   "checked": "2026-10-25T19:42:34Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.hubspot.com": {
+   "checked": "2026-10-25T19:36:16Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.intercom.com": {
+   "checked": "2026-10-25T19:36:15Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.linear.app": {
+   "checked": "2026-10-25T19:36:11Z",
+   "found": [
+    "identity-assertion-authz-grant",
+    "llms-txt",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.make.com": {
+   "checked": "2026-10-25T19:36:15Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.miro.com": {
+   "checked": "2026-10-25T19:36:18Z",
+   "found": [
+    "identity-assertion-authz-grant",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.monday.com": {
+   "checked": "2026-10-25T19:36:20Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.nango.dev": {
+   "checked": "2026-10-25T19:36:22Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.neon.tech": {
+   "checked": "2026-10-25T19:36:14Z",
+   "found": [
+    "llms-txt",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.newrelic.com": {
+   "checked": "2026-10-25T19:36:24Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.notion.com": {
+   "checked": "2026-10-25T19:38:57Z",
+   "found": [
+    "identity-assertion-authz-grant",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.paypal.com": {
+   "checked": "2026-10-25T19:36:13Z",
+   "found": [
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.plaid.com": {
+   "checked": "2026-10-25T19:36:18Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.posthog.com": {
+   "checked": "2026-10-25T19:38:57Z",
+   "found": [
+    "mcp",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.ramp.com": {
+   "checked": "2026-10-25T19:36:18Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.sentry.io": {
+   "checked": "2026-10-25T19:36:16Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "mcp.so": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "mcp.socket.dev": {
+   "checked": "2026-10-25T19:36:24Z",
+   "found": [
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.squareup.com": {
+   "checked": "2026-10-25T19:36:14Z",
+   "found": [
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.stripe.com": {
+   "checked": "2026-10-25T19:36:10Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.tavily.com": {
+   "checked": "2026-10-25T19:36:20Z",
+   "found": [
+    "oauth-cimd"
+   ]
+  },
+  "mcp.vercel.com": {
+   "checked": "2026-10-25T19:42:30Z",
+   "found": [
+    "mcp",
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.webflow.com": {
+   "checked": "2026-10-25T19:36:16Z",
+   "found": [
+    "oauth-cimd",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "mcp.wix.com": {
+   "checked": "2026-10-25T19:36:18Z",
+   "found": [
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "memgraph.com": {
+   "checked": "2026-10-25T19:38:58Z",
+   "found": [
+    "ard",
+    "llms-txt",
+    "mcp"
+   ],
+   "score": 48,
+   "grade": "A"
+  },
+  "mercadolibre.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "mergent.co": {
+   "checked": "2026-10-25T19:36:51Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "metamask.io": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "metorial.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "mikro-orm.io": {
+   "checked": "2026-10-25T19:37:01Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "moonbitlang.com": {
+   "checked": "2026-10-25T19:39:02Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "moonrepo.dev": {
+   "checked": "2026-10-25T19:37:15Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "morphllm.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "nemoguardrails.com": {
+   "checked": "2026-10-25T19:37:39Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "neo4j.com": {
+   "checked": "2026-10-25T19:36:56Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 62,
+   "grade": "A+"
+  },
+  "nomads.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "novita.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "a2a",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "nx.dev": {
+   "checked": "2026-10-25T19:37:17Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 54,
+   "grade": "A"
+  },
+  "oasis-open.org": {
+   "checked": "2026-10-25T19:38:15Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "openstatus.dev": {
+   "checked": "2026-10-25",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "opentelemetry.io": {
+   "checked": "2026-10-25T19:38:15Z",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "openwebui.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "openzeppelin.com": {
+   "checked": "2026-10-25T19:38:08Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "optimism.io": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "overreacted.io": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "oxylabs.io": {
+   "checked": "2026-10-25T19:37:48Z",
+   "found": [
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ],
+   "score": 54,
+   "grade": "A"
+  },
+  "papermark.io": {
+   "checked": "2026-10-25",
+   "found": [
+    "anthropic-agent-skills-format",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "pathway.com": {
+   "checked": "2026-10-25T19:37:46Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "platform.jetbrains.com": {
+   "checked": "2026-10-25T19:35:59Z",
+   "found": [
+    "llms-txt",
+    "oauth-cimd"
+   ]
+  },
+  "podscan.fm": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "port.io": {
+   "checked": "2026-10-25T19:39:00Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "powersync.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "anthropic-agent-skills-format",
+    "llms-txt"
+   ]
+  },
+  "qovery.com": {
+   "checked": "2026-10-25T19:37:58Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "ragie.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "react.email": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "reactnative.dev": {
+   "checked": "2026-10-25T19:37:09Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "reducto.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "a2a",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "relace.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "remoteok.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "revid.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "robwalling.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "rxdb.info": {
+   "checked": "2026-10-25T19:36:52Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "scrapfly.io": {
+   "checked": "2026-10-25T19:42:36Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "scylladb.com": {
+   "checked": "2026-10-25T19:36:59Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "sebastianraschka.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "selenium.dev": {
+   "checked": "2026-10-25T19:37:15Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "sfcompute.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "shadeform.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy"
+   ]
+  },
+  "shopify.dev": {
+   "checked": "2026-10-25T19:36:43Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "signoz.io": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp-server-cards"
+   ]
+  },
+  "snapcraft.io": {
+   "checked": "2026-10-25T19:37:19Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "solana.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "spdx.dev": {
+   "checked": "2026-10-25T19:38:17Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 67,
+   "grade": "A+"
+  },
+  "sst.dev": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "stackone.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "api-catalog-rfc9727",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "stagehand.dev": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "steipete.me": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "storybook.js.org": {
+   "checked": "2026-10-25T19:37:12Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "llms-txt"
+   ]
+  },
+  "supermemory.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "support.bolt.new": {
+   "checked": "2026-10-25T19:42:32Z",
+   "found": [
+    "anthropic-agent-skills-format",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ],
+   "score": 65,
+   "grade": "A+"
+  },
+  "svix.com": {
+   "checked": "2026-10-25T19:39:00Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "swyx.io": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "synack.com": {
+   "checked": "2026-10-25T19:38:08Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "tanstack.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "taplio.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "tauri.app": {
+   "checked": "2026-10-25T19:37:09Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "testimonial.to": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "tinylaunch.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "tinyseed.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "tldr.tech": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "trailofbits.com": {
+   "checked": "2026-10-25T19:38:08Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "trpc.io": {
+   "checked": "2026-10-25T19:37:05Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "trunk.io": {
+   "checked": "2026-10-25T19:37:53Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "anthropic-agent-skills-format",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ],
+   "score": 49,
+   "grade": "A"
+  },
+  "typeorm.io": {
+   "checked": "2026-10-25T19:36:59Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "ui.shadcn.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "uneed.best": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "unicode.org": {
+   "checked": "2026-10-25T19:38:15Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "unstructured.io": {
+   "checked": "2026-10-25",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "useinstructor.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-markdown-for-agents"
+   ]
+  },
+  "useparagon.com": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "v0.app": {
+   "checked": "2026-10-25",
+   "found": [
+    "cloudflare-markdown-for-agents",
+    "mcp",
+    "oauth-metadata-for-agents"
+   ]
+  },
+  "vellum.ai": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "cloudflare-content-signals-policy",
+    "cloudflare-markdown-for-agents",
+    "llms-txt"
+   ]
+  },
+  "vitest.dev": {
+   "checked": "2026-10-25T19:37:10Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "warp.dev": {
+   "checked": "2026-10-25",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "ard",
+    "llms-txt",
+    "mcp",
+    "mcp-server-cards"
+   ]
+  },
+  "wasmer.io": {
+   "checked": "2026-10-25T19:38:02Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "webdriver.io": {
+   "checked": "2026-10-25T19:37:12Z",
+   "found": [
+    "ai-crawler-tokens-robots",
+    "cloudflare-content-signals-policy",
+    "llms-txt"
+   ]
+  },
+  "wiremock.org": {
+   "checked": "2026-10-25T19:37:15Z",
+   "found": [
+    "llms-txt"
+   ]
+  },
+  "zyte.com": {
+   "checked": "2026-10-25T19:37:49Z",
+   "found": [
+    "ai-crawler-tokens-robots"
+   ]
+  },
+  "belgravialabs.com": {
+   "checked": "2026-10-25T22:24:00Z",
+   "score": 70,
+   "grade": "A+",
+   "found": [
+    "a2a",
+    "agents-md",
+    "ai-catalog-well-known-file",
+    "ai-crawler-tokens-robots",
+    "api-catalog-rfc9727",
+    "ard",
+    "cloudflare-content-signals-policy",
+    "llms-txt",
+    "mcp-server-cards"
+   ]
+  }
+ }
+}
