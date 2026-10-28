@@ -1,6 +1,12 @@
 {
- "latest": "2026-10-27",
+ "latest": "2026-10-28",
  "digests": [
+  {
+   "date": "2026-10-28",
+   "headline": "Google Toolbox MCP server flaw CVE-2026-93328 affects versions 1.2.0 through 1.4.0",
+   "items": 10,
+   "url": "https://agenticweb.wiki/digest/2026-10-28/"
+  },
   {
    "date": "2026-10-27",
    "headline": "Microsoft ships MCP C# SDK 2.0 with stateless HTTP by default, InfoQ reports",
