@@ -1,6 +1,12 @@
 {
- "latest": "2026-10-28",
+ "latest": "2026-10-29",
  "digests": [
+  {
+   "date": "2026-10-29",
+   "headline": "Google opens Search and Gemini to third-party apps built on MCP servers",
+   "items": 10,
+   "url": "https://agenticweb.wiki/digest/2026-10-29/"
+  },
   {
    "date": "2026-10-28",
    "headline": "Google Toolbox MCP server flaw CVE-2026-93328 affects versions 1.2.0 through 1.4.0",
