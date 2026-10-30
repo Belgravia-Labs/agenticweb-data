@@ -1,6 +1,12 @@
 {
- "latest": "2026-10-29",
+ "latest": "2026-10-30",
  "digests": [
+  {
+   "date": "2026-10-30",
+   "headline": "Web Bot Auth signing draft reaches -01; Google brings MCP Apps to Gemini Enterprise",
+   "items": 10,
+   "url": "https://agenticweb.wiki/digest/2026-10-30/"
+  },
   {
    "date": "2026-10-29",
    "headline": "Google opens Search and Gemini to third-party apps built on MCP servers",
