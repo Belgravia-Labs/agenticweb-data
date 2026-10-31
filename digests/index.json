@@ -1,6 +1,12 @@
 {
- "latest": "2026-10-30",
+ "latest": "2026-10-31",
  "digests": [
+  {
+   "date": "2026-10-31",
+   "headline": "Google plans to honor a shared AI training opt-out token in robots.txt",
+   "items": 10,
+   "url": "https://agenticweb.wiki/digest/2026-10-31/"
+  },
   {
    "date": "2026-10-30",
    "headline": "Web Bot Auth signing draft reaches -01; Google brings MCP Apps to Gemini Enterprise",
