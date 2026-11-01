@@ -1,0 +1,797 @@
+{
+ "version": 1,
+ "date": "2026-11-01",
+ "url": "https://agenticweb.wiki/digest/2026-11-01/",
+ "generated_at": "2026-11-01T08:01:50Z",
+ "window": {
+  "from": "2026-10-30T18:00:00Z",
+  "to": "2026-11-01T07:30:34Z"
+ },
+ "headline": "Anthropic author's draft maps AI training preferences onto ordinary robots.txt groups",
+ "lede": "A new Internet-Draft, draft-kelley-aipref-training-preference-signal-00, binds usage preferences such as \"no AI training\" to paths using robots.txt groups keyed by per-purpose policy tokens, with no new directives or grammar. Separately, the Agent Transfer Protocol draft family was revised, and the base spec at -10 adds per-request proof of possession.",
+ "items": [
+  {
+   "id": "2026-11-01-1",
+   "title": "Training preference signal draft reuses robots.txt groups and User-Agent tokens",
+   "body": "draft-kelley-aipref-training-preference-signal-00, published 30 October 2026 and authored by K. Kelley of Anthropic, binds usage preferences such as \"no AI training\" to paths. It does this with ordinary robots.txt groups keyed by a per-purpose policy token in the User-Agent line. The draft says it introduces no new directive names and no new grammar, and it leaves path matching, longest-match precedence and group structure unchanged. It targets Standards Track, and discussion takes place on the AI Preferences Working Group mailing list.",
+   "why_it_matters": "Site operators could express training preferences with existing robots.txt tooling. Crawler operators should review how per-purpose policy tokens would interact with their current User-Agent matching.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "aipref-vocabulary",
+     "name": "AIPREF Vocabulary",
+     "url": "https://agenticweb.wiki/protocols/aipref-vocabulary/"
+    },
+    {
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt",
+     "url": "https://agenticweb.wiki/protocols/ai-crawler-tokens-robots/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://datatracker.ietf.org/doc/html/draft-kelley-aipref-training-preference-signal",
+     "title": "draft-kelley-aipref-training-preference-signal-00",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-30",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-01-2",
+   "title": "AGTP base draft reaches -10 with per-request proof of possession",
+   "body": "Chris Hood of Nomotic, Inc. revised the Agent Transfer Protocol family on 30 October 2026. The base draft-hood-independent-agtp-10 adds per-request proof of possession, so a verified identity document and a live sender are bound by signature. It runs on IANA-assigned port 4480. The identity document format moved into a new draft-hood-agtp-identity-document-00, which the draft says is \"unchanged in substance.\" The composition profiles (-02) map MCP, A2A and ACP messages onto AGTP, and the transport bindings (-01) cover TCP with TLS 1.3, QUIC and HTTP/3.",
+   "why_it_matters": "These are independent submissions that the datatracker says have no formal standing in the IETF process. Anyone tracking AGTP identity should read the identity document in its new standalone draft.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "agtp",
+     "name": "Agent Transfer Protocol",
+     "url": "https://agenticweb.wiki/protocols/agtp/"
+    },
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    },
+    {
+     "id": "a2a",
+     "name": "Agent2Agent Protocol",
+     "url": "https://agenticweb.wiki/protocols/a2a/"
+    },
+    {
+     "id": "agent-communication-protocol",
+     "name": "Agent Communication Protocol",
+     "url": "https://agenticweb.wiki/protocols/agent-communication-protocol/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-hood-independent-agtp/",
+     "title": "Agent Transfer Protocol (AGTP)",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-30",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-hood-agtp-identity-document/",
+     "title": "AGTP Agent Identity Document",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-30",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-hood-agtp-composition/",
+     "title": "AGTP Composition Profiles",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-30",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-hood-agtp-bindings/",
+     "title": "AGTP Transport Bindings: TCP/TLS, QUIC, and HTTP/3",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-30",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-01-3",
+   "title": "Credential Delegation Protocol for AI agents revised to -02",
+   "body": "draft-sweeney-wimse-credential-delegation-02, published 30 October 2026 with intended status Standards Track, profiles OAuth 2.0 Token Exchange (RFC 8693), DPoP (RFC 9449), Rich Authorization Requests (RFC 9396) and OpenID Connect CIBA. Users delegate scoped, attenuated credentials to agents. The draft covers ephemeral agent keys, capability-shaped delegation tokens, credential wrapping that keeps underlying OAuth tokens away from agents, cascading revocation and audit chains. It defines no new token formats or grant types.",
+   "why_it_matters": "Because the draft only combines existing OAuth mechanisms, teams that already run token exchange and DPoP can check how closely their deployments match the profile.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "credential-delegation-protocol-wimse",
+     "name": "Credential Delegation Protocol for AI Agents in Multi-System Environments",
+     "url": "https://agenticweb.wiki/protocols/credential-delegation-protocol-wimse/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-sweeney-wimse-credential-delegation/",
+     "title": "Credential Delegation Protocol for AI Agents in Multi-System Environments",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-31",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/html/draft-sweeney-wimse-credential-delegation-02",
+     "title": "draft-sweeney-wimse-credential-delegation-02",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-30",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-01-4",
+   "title": "Three drafts target revocation of delegated agent authority",
+   "body": "draft-chen-oauth-agent-revocation-01 from China Mobile extends RFC 7009 token revocation with batch revocation by agent ID, cascade propagation, conditional revocation and audit trails. draft-watts-oauth-agent-revocation-closure-03 defines authority epochs and delegation-lineage requirements. It argues that invalidating one token does not show the authority can no longer cause a new consequential operation. draft-watts-agent-clockout-profile-01 separates agent proposals from authorization, effect admission and termination.",
+   "why_it_matters": "Each draft identifies gaps in single-token revocation for chains of child agents and queued work. Authorization server implementers can compare them against their own revocation semantics.",
+   "kind": "security",
+   "related": [],
+   "sources": [
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-chen-oauth-agent-revocation/",
+     "title": "OAuth 2.0 Agent Authorization Explicit Revocation",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-30",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-watts-oauth-agent-revocation-closure/",
+     "title": "Revocation Closure and Authority Epochs for Agent Delegation",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-31",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-watts-agent-clockout-profile/",
+     "title": "External Authorization and Bounded CLOCKOUT for Agentic Systems",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-31",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-01-5",
+   "title": "MCP Server Cards adoption rises to 123 of 277 panel domains",
+   "body": "Our panel check finds MCP Server Cards (SEP-2127) on 123 of 277 domains, up 5 since 2026-10-31. New publishers include descope.com, docs.adcontextprotocol.org, docs.kombo.dev, docs.lightning.engineering, docs.n8n.io and docs.tembo.io. Separately, 1658 servers (3000 versions) were published or updated on the official MCP Registry since 2026-10-31.",
+   "why_it_matters": "Server Cards had the largest one-day gain among the formats we track. Clients that rely on well-known discovery will find more servers they can describe without connecting.",
+   "kind": "adoption",
+   "related": [
+    {
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)",
+     "url": "https://agenticweb.wiki/protocols/mcp-server-cards/"
+    },
+    {
+     "id": "mcp-registry",
+     "name": "Official MCP Registry",
+     "url": "https://agenticweb.wiki/protocols/mcp-registry/"
+    },
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    }
+   ],
+   "sources": [],
+   "stats": [
+    "MCP Server Cards (SEP-2127) (mcp-server-cards) is published by 123 of 277 panel domains (+5 since 2026-10-31).",
+    "descope.com now publishes MCP Server Cards (SEP-2127) (mcp-server-cards); it did not on 2026-10-31.",
+    "docs.adcontextprotocol.org now publishes MCP Server Cards (SEP-2127) (mcp-server-cards); it did not on 2026-10-31.",
+    "docs.kombo.dev now publishes MCP Server Cards (SEP-2127) (mcp-server-cards); it did not on 2026-10-31.",
+    "docs.lightning.engineering now publishes MCP Server Cards (SEP-2127) (mcp-server-cards); it did not on 2026-10-31.",
+    "docs.n8n.io now publishes MCP Server Cards (SEP-2127) (mcp-server-cards); it did not on 2026-10-31.",
+    "docs.tembo.io now publishes MCP Server Cards (SEP-2127) (mcp-server-cards); it did not on 2026-10-31.",
+    "1658 servers (3000 versions) were published or updated on the official MCP Registry since 2026-10-31."
+   ]
+  },
+  {
+   "id": "2026-11-01-6",
+   "title": "OAuth drafts add agent context to Transaction Tokens and human proof of intent",
+   "body": "draft-araut-oauth-transaction-tokens-for-agents-03 defines an agentic_ctx JWT claim that carries chain-level metadata in OAuth Transaction Tokens. In multi-agent flows, the Transaction Token Service replaces the token at each agent transition. draft-williams-oauth-poi-core-00 specifies a Proof-of-Intent protocol for human-in-the-loop step-up. It aims to distinguish parameters a human reviewed or approved from parameters an intermediary agent synthesized.",
+   "why_it_matters": "Resource servers handling high-consequence agent calls can review both drafts for ways to record which agent acted and what a human actually approved.",
+   "kind": "spec",
+   "related": [],
+   "sources": [
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-araut-oauth-transaction-tokens-for-agents/",
+     "title": "Transaction Tokens For Agents",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-31",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-williams-oauth-poi-core/",
+     "title": "Cryptographic Proof-of-Intent (PoI) Core Protocol for Human-in-the-Loop (HITL) Step-Up Authorization",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-31",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-01-7",
+   "title": "Agent Identity Document draft revised to -02",
+   "body": "draft-alla-agent-identity-document-02, published 31 October 2026, specifies a small JSON document served at a well-known URI on a hostname assigned to one agent. It separates what the identity provider knows to be true from what the operator asserts, and it publishes the provider's dated, expiring checks rather than a single trust level. The author says it describes a practice in production at one provider, knownAs.dev.",
+   "why_it_matters": "The draft requests a well-known URI registration. Agent identity implementers can check its lifecycle and suspension semantics against the other identity formats they track.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "agent-identity-document",
+     "name": "The Agent Identity Document: A Hosted, Accountable Public Record for AI Agents",
+     "url": "https://agenticweb.wiki/protocols/agent-identity-document/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-alla-agent-identity-document/",
+     "title": "The Agent Identity Document: A Hosted, Accountable Public Record for AI Agents",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-31",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/html/draft-alla-agent-identity-document-02",
+     "title": "draft-alla-agent-identity-document-02",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-31",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-01-8",
+   "title": "Discovery and enrollment drafts: APIX split, AEP -05, BEST -02",
+   "body": "draft-rehfeld-bot-service-index-08 now only documents its supersession by three APIX drafts covering core infrastructure, service registration and IoT devices. draft-kavian-agent-enrollment-protocol-05 defines HTTP-based agent enrollment using DIDs, client assertion JWTs and Problem Details. draft-dinuzzo-best-protocol-02 has services self-describe at /.well-known/best, with CloudEvents 1.0 messages and credentials issued through the OAuth Device Authorization Grant.",
+   "why_it_matters": "Readers following APIX should switch to the successor drafts. AEP and BEST are further candidates for machine-first service onboarding.",
+   "kind": "spec",
+   "related": [],
+   "sources": [
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-rehfeld-bot-service-index/",
+     "title": "API Index (APIX): A Global Discovery Infrastructure for Autonomous Agent Services",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-30",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-kavian-agent-enrollment-protocol/",
+     "title": "The Agent Enrollment Protocol",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-31",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-dinuzzo-best-protocol/",
+     "title": "BEST: The Behavioral State Protocol",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-10-30",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-01-9",
+   "title": "github.com and mpp.dev drop several agent formats in today's check",
+   "body": "Our check found github.com no longer publishes MCP or the AI Catalog well-known file, and its grade moved from A+ (61) to B (35). mpp.dev no longer publishes Agent Skills, MCP or MCP Server Cards, and moved from A+ (65) to A (54). AI Catalog publishers fell to 61 of 277 (-1 since 2026-10-31).",
+   "why_it_matters": "A single day's loss can be a deliberate removal or a temporary change. Clients that depend on these endpoints should confirm they still resolve before relying on them.",
+   "kind": "adoption",
+   "related": [
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    },
+    {
+     "id": "ai-catalog-well-known-file",
+     "name": "AI Catalog well-known file",
+     "url": "https://agenticweb.wiki/protocols/ai-catalog-well-known-file/"
+    },
+    {
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills",
+     "url": "https://agenticweb.wiki/protocols/anthropic-agent-skills-format/"
+    },
+    {
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)",
+     "url": "https://agenticweb.wiki/protocols/mcp-server-cards/"
+    }
+   ],
+   "sources": [],
+   "stats": [
+    "github.com no longer publishes AI Catalog well-known file (ai-catalog-well-known-file); it did on 2026-10-31.",
+    "github.com no longer publishes Model Context Protocol (mcp); it did on 2026-10-31.",
+    "github.com moved from grade A+ (61) to B (35).",
+    "mpp.dev no longer publishes Agent Skills (anthropic-agent-skills-format); it did on 2026-10-31.",
+    "mpp.dev no longer publishes Model Context Protocol (mcp); it did on 2026-10-31.",
+    "mpp.dev no longer publishes MCP Server Cards (SEP-2127) (mcp-server-cards); it did on 2026-10-31.",
+    "mpp.dev moved from grade A+ (65) to A (54).",
+    "AI Catalog well-known file (ai-catalog-well-known-file) is published by 61 of 277 panel domains (-1 since 2026-10-31)."
+   ]
+  }
+ ],
+ "stats": {
+  "previous": "2026-10-31",
+  "panel": {
+   "domains": 278,
+   "checked": 277,
+   "errors": 1,
+   "compared": 275,
+   "grades": {
+    "A+": 114,
+    "A": 43,
+    "B": 43,
+    "C": 60,
+    "D": 11,
+    "F": 6
+   },
+   "adoption": [
+    {
+     "id": "llms-txt",
+     "name": "llms.txt",
+     "domains": 228,
+     "delta": -1
+    },
+    {
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents",
+     "domains": 135,
+     "delta": 3
+    },
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "domains": 135,
+     "delta": 1
+    },
+    {
+     "id": "cloudflare-content-signals-policy",
+     "name": "Content Signals Policy",
+     "domains": 133,
+     "delta": 0
+    },
+    {
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)",
+     "domains": 123,
+     "delta": 5
+    },
+    {
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs",
+     "domains": 113,
+     "delta": 0
+    },
+    {
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills",
+     "domains": 109,
+     "delta": 0
+    },
+    {
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt",
+     "domains": 81,
+     "delta": 0
+    },
+    {
+     "id": "oauth-metadata-for-agents",
+     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)",
+     "domains": 63,
+     "delta": 0
+    },
+    {
+     "id": "ai-catalog-well-known-file",
+     "name": "AI Catalog well-known file",
+     "domains": 61,
+     "delta": -1
+    },
+    {
+     "id": "oauth-cimd",
+     "name": "OAuth Client ID Metadata Document",
+     "domains": 31,
+     "delta": 0
+    },
+    {
+     "id": "agents-md",
+     "name": "AGENTS.md",
+     "domains": 30,
+     "delta": 0
+    },
+    {
+     "id": "ard",
+     "name": "Agentic Resource Discovery",
+     "domains": 26,
+     "delta": 0
+    },
+    {
+     "id": "a2a",
+     "name": "Agent2Agent Protocol",
+     "domains": 22,
+     "delta": 0
+    },
+    {
+     "id": "auth-md",
+     "name": "auth.md",
+     "domains": 19,
+     "delta": 0
+    },
+    {
+     "id": "webbotauth",
+     "name": "Web Bot Auth HTTP Message Signatures",
+     "domains": 9,
+     "delta": 0
+    },
+    {
+     "id": "identity-assertion-authz-grant",
+     "name": "Identity Assertion JWT Authorization Grant",
+     "domains": 7,
+     "delta": 0
+    },
+    {
+     "id": "agents-txt",
+     "name": "agents.txt",
+     "domains": 4,
+     "delta": 0
+    },
+    {
+     "id": "rsl",
+     "name": "Really Simple Licensing",
+     "domains": 4,
+     "delta": 0
+    },
+    {
+     "id": "tdmrep",
+     "name": "Text and Data Mining Reservation Protocol",
+     "domains": 3,
+     "delta": 0
+    },
+    {
+     "id": "agents-json",
+     "name": "agents.json",
+     "domains": 2,
+     "delta": 0
+    },
+    {
+     "id": "ucp",
+     "name": "Universal Commerce Protocol",
+     "domains": 2,
+     "delta": 0
+    },
+    {
+     "id": "ads",
+     "name": "Agent Directory Service",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "agent-permissions-json",
+     "name": "agent-permissions.json",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "aipref-content-usage-attachment",
+     "name": "AIPREF Content-Usage Attachment",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "aipref-vocabulary",
+     "name": "AIPREF Vocabulary",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "okf",
+     "name": "Open Knowledge Format",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "web-bot-auth-signature-agent-card",
+     "name": "Signature Agent Card (Web Bot Auth registry)",
+     "domains": 1,
+     "delta": 0
+    }
+   ],
+   "gained": [
+    {
+     "domain": "circle.so",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "descope.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "descope.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "descope.com",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "descope.com",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "docs.adcontextprotocol.org",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "docs.kombo.dev",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "docs.lightning.engineering",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "docs.lightning.engineering",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "docs.lightning.engineering",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "docs.n8n.io",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "docs.n8n.io",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "docs.n8n.io",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "docs.tembo.io",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    }
+   ],
+   "lost": [
+    {
+     "domain": "docs.whereby.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "github.com",
+     "id": "ai-catalog-well-known-file",
+     "name": "AI Catalog well-known file"
+    },
+    {
+     "domain": "github.com",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "mpp.dev",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "mpp.dev",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "mpp.dev",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "neuronto.com",
+     "id": "llms-txt",
+     "name": "llms.txt"
+    }
+   ],
+   "grade_changes": [
+    {
+     "domain": "circle.so",
+     "from": "A",
+     "to": "A+",
+     "score_from": 59,
+     "score_to": 62
+    },
+    {
+     "domain": "descope.com",
+     "from": "B",
+     "to": "A+",
+     "score_from": 30,
+     "score_to": 67
+    },
+    {
+     "domain": "docs.ideogram.ai",
+     "from": "A",
+     "to": "B",
+     "score_from": 46,
+     "score_to": 41
+    },
+    {
+     "domain": "docs.kombo.dev",
+     "from": "A",
+     "to": "A+",
+     "score_from": 57,
+     "score_to": 60
+    },
+    {
+     "domain": "docs.lightning.engineering",
+     "from": "A",
+     "to": "A+",
+     "score_from": 46,
+     "score_to": 60
+    },
+    {
+     "domain": "docs.n8n.io",
+     "from": "A",
+     "to": "A+",
+     "score_from": 46,
+     "score_to": 60
+    },
+    {
+     "domain": "docs.whereby.com",
+     "from": "A+",
+     "to": "A",
+     "score_from": 60,
+     "score_to": 57
+    },
+    {
+     "domain": "github.com",
+     "from": "A+",
+     "to": "B",
+     "score_from": 61,
+     "score_to": 35
+    },
+    {
+     "domain": "mpp.dev",
+     "from": "A+",
+     "to": "A",
+     "score_from": 65,
+     "score_to": 54
+    },
+    {
+     "domain": "neuronto.com",
+     "from": "A+",
+     "to": "A",
+     "score_from": 65,
+     "score_to": 52
+    }
+   ]
+  },
+  "repos": {
+   "tracked": 58,
+   "movers": [
+    {
+     "repo": "block/goose",
+     "stars": 56062,
+     "delta": 59,
+     "pct": 0.1
+    },
+    {
+     "repo": "googlecloudplatform/open-knowledge-format",
+     "stars": 1223,
+     "delta": 40,
+     "pct": 3.4
+    },
+    {
+     "repo": "agentskills/agentskills",
+     "stars": 26839,
+     "delta": 26,
+     "pct": 0.1
+    },
+    {
+     "repo": "copilotkit/copilotkit",
+     "stars": 38440,
+     "delta": 26,
+     "pct": 0.1
+    },
+    {
+     "repo": "agentsmd/agents.md",
+     "stars": 25252,
+     "delta": 22,
+     "pct": 0.1
+    },
+    {
+     "repo": "a2ui-project/a2ui",
+     "stars": 16919,
+     "delta": 16,
+     "pct": 0.1
+    },
+    {
+     "repo": "ag-ui-protocol/ag-ui",
+     "stars": 16952,
+     "delta": 11,
+     "pct": 0.1
+    },
+    {
+     "repo": "a2aproject/a2a",
+     "stars": 26367,
+     "delta": 8,
+     "pct": 0.0
+    }
+   ]
+  },
+  "registry": {
+   "since": "2026-10-31T00:00:00Z",
+   "versions": 3000,
+   "servers": 1658
+  }
+ },
+ "record_changes": [],
+ "previous": "2026-10-31",
+ "method": {
+  "sources": {
+   "feeds": 0,
+   "datatracker": 34,
+   "hn": 0,
+   "arxiv": 0,
+   "exa": 102,
+   "parallel": 5,
+   "tips": 0
+  },
+  "candidates": 141,
+  "after_dedupe": 121,
+  "kept": 41,
+  "fetched": 40,
+  "models": {
+   "triage": "claude-opus-5-5",
+   "writer": "claude-opus-5-5"
+  },
+  "facts": 30,
+  "notes": [],
+  "rules": "Items are written only from the cited sources and our own measurements; every number in an item appears in a source it cites. VERIFIED = fetched from the standard's issuer or a standards body; REPORTED = a claim by press or a third party."
+ },
+ "license": "CC BY 4.0"
+}

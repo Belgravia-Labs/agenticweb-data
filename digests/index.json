@@ -1,6 +1,12 @@
 {
- "latest": "2026-10-31",
+ "latest": "2026-11-01",
  "digests": [
+  {
+   "date": "2026-11-01",
+   "headline": "Anthropic author's draft maps AI training preferences onto ordinary robots.txt groups",
+   "items": 9,
+   "url": "https://agenticweb.wiki/digest/2026-11-01/"
+  },
   {
    "date": "2026-10-31",
    "headline": "Google plans to honor a shared AI training opt-out token in robots.txt",
