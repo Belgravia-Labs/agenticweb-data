@@ -1,6 +1,12 @@
 {
- "latest": "2026-11-01",
+ "latest": "2026-11-02",
  "digests": [
+  {
+   "date": "2026-11-02",
+   "headline": "Google, OpenAI and Microsoft plan to honor one shared robots.txt AI-training signal",
+   "items": 10,
+   "url": "https://agenticweb.wiki/digest/2026-11-02/"
+  },
   {
    "date": "2026-11-01",
    "headline": "Anthropic author's draft maps AI training preferences onto ordinary robots.txt groups",
