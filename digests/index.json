@@ -1,6 +1,12 @@
 {
- "latest": "2026-11-02",
+ "latest": "2026-11-03",
  "digests": [
+  {
+   "date": "2026-11-03",
+   "headline": "Official MCP Python and TypeScript SDKs patched for OAuth credential exposure",
+   "items": 10,
+   "url": "https://agenticweb.wiki/digest/2026-11-03/"
+  },
   {
    "date": "2026-11-02",
    "headline": "Google, OpenAI and Microsoft plan to honor one shared robots.txt AI-training signal",

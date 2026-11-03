@@ -1,0 +1,828 @@
+{
+ "version": 1,
+ "date": "2026-11-03",
+ "url": "https://agenticweb.wiki/digest/2026-11-03/",
+ "generated_at": "2026-11-03T08:01:28Z",
+ "window": {
+  "from": "2026-11-01T18:00:00Z",
+  "to": "2026-11-03T07:30:34Z"
+ },
+ "headline": "Official MCP Python and TypeScript SDKs patched for OAuth credential exposure",
+ "lede": "A security researcher says the official MCP Python and TypeScript SDKs let a malicious server redirect OAuth credentials, and that upgrading alone is not enough. Two new papers report that most MCP hosts lack default approval for destructive tools and that no framework they tested defends against tool poisoning.",
+ "items": [
+  {
+   "id": "2026-11-03-1",
+   "title": "MCP Python and TypeScript SDKs fixed for OAuth credential redirection",
+   "body": "Writing on HackerNoon, security researcher Aviral Srivastava says he reported in April 2026 that a malicious or compromised MCP server could abuse OAuth discovery to send credentials meant for one authorization server to an attacker-controlled endpoint. He says exposed material could include client secrets, refresh tokens, authorization codes, PKCE verifiers or signed client assertions. CVE-2026-115563 (Python) is fixed in mcp 1.30.0 / 2.2.0. CVE-2026-104850 (TypeScript) is fixed in @modelcontextprotocol/sdk 1.31.0 / @modelcontextprotocol/client 2.2.0. Both are rated CVSS v3.1 7.5 (High).",
+   "why_it_matters": "MCP clients built on these SDKs should upgrade. According to the author, the official advisories state that upgrading alone is insufficient, so read them for the additional steps.",
+   "kind": "security",
+   "related": [
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    },
+    {
+     "id": "oauth-metadata-for-agents",
+     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)",
+     "url": "https://agenticweb.wiki/protocols/oauth-metadata-for-agents/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://hackernoon.com/the-mcp-server-chose-the-token-endpoint-two-official-sdks-trusted-it",
+     "title": "The MCP Server Chose the Token Endpoint. Two Official SDKs Trusted It.",
+     "publisher": "hackernoon.com",
+     "published": "2026-11-02",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-03-2",
+   "title": "Study: most MCP destructive tools and hosts have no default human approval",
+   "body": "An arXiv paper measured approval for destructive MCP tools from source code. In a 1,000-repository sample of the official MCP registry, the authors estimate 90% of destructive tools have no server-side confirmation. They report 32 of 41 popular open-source hosts and agent SDKs have no approval step by default, and 60.7% of sampled tool and application pairs have no enforced human approval. If hosts prompted for every tool not annotated read-only or non-destructive, they estimate the unapproved share would fall to 5.4%.",
+   "why_it_matters": "The authors conclude that host applications should configure approval themselves. Server authors should also annotate tools, because hosts can only use annotations that servers provide.",
+   "kind": "research",
+   "related": [
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2611.02527v1",
+     "title": "When Neither Side Confirms: Destructive Tool Approval Across MCP Servers and Hosts",
+     "publisher": "arxiv.org",
+     "published": "2026-11-02",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-03-3",
+   "title": "Cross-framework MCP tool-poisoning study finds no intentional defenses",
+   "body": "An arXiv paper used the open-source tool mcpvenom to run a 9,720-cell matrix across 12 frameworks, 18 models and 45 attack scenarios, with real tool execution. The authors report an overall attack success rate of 22.9%. Of the vulnerable cells, 12.1% verifiably exfiltrated a secret. They say resistance is model-level and that no framework implements intentional defense. A regex description scanner rejected 20 of 45 scenarios at a 7.2% false-positive rate.",
+   "why_it_matters": "The paper finds metadata scanning is only a partial control. Teams that rely on description filtering should not treat tool descriptions and responses as trusted input.",
+   "kind": "research",
+   "related": [
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2611.03555v1",
+     "title": "MCP Tool Poisoning in Agentic AI Frameworks: A Cross-Framework Measurement Study",
+     "publisher": "arxiv.org",
+     "published": "2026-11-02",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-03-4",
+   "title": "Glow Labs: coding agents install archived MCP reference servers",
+   "body": "According to Help Net Security, Glow Labs reviewed coding-session transcripts and found agents installing deprecated MCP servers from archived repositories. Glow Labs calls the pattern MCPhantom. In 98% of those sessions, the agent appears to have taken the package name from training data. Glow Labs reports four high-severity vulnerabilities in the reference servers, including remote code execution in the Puppeteer server via prompt injection. Its report was closed as out of scope because the server is archived.",
+   "why_it_matters": "Developers should check which MCP packages their agents actually installed. Replace archived reference servers with maintained ones, such as GitHub's own MCP server.",
+   "kind": "security",
+   "related": [
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.helpnetsecurity.com/2026/11/03/mcphantom-deprecated-mcp-servers/",
+     "title": "AI coding agents are installing MCP servers that will never be patched - Help Net Security",
+     "publisher": "helpnetsecurity.com",
+     "published": "2026-11-03",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-03-5",
+   "title": "WIMSE AI Identity Management System draft revised to -01",
+   "body": "The WIMSE working group published draft-ietf-wimse-aims-01 on 2 November 2026. Its authors are from Defakto Security, AWS, Zscaler, Ping Identity, OpenAI and Okta. The Informational draft proposes best practices for authenticating and authorizing AI agent interactions using the WIMSE architecture and OAuth 2.0 specifications. It defines no new protocols. It aims to identify gaps and guide future standardization.",
+   "why_it_matters": "Implementers designing agent authentication should track this working group document. It describes how existing, widely deployed standards are expected to be applied to agents.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "wimse-aims",
+     "name": "WIMSE AI Identity Management System",
+     "url": "https://agenticweb.wiki/protocols/wimse-aims/"
+    },
+    {
+     "id": "aiagent-auth",
+     "name": "AI Agent Authentication and Authorization (AIMS)",
+     "url": "https://agenticweb.wiki/protocols/aiagent-auth/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
+     "title": "AI Identity Management System",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-11-02",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/html/draft-ietf-wimse-aims",
+     "title": "draft-ietf-wimse-aims-01",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-11-02",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-03-6",
+   "title": "Vercel MCP accepts any client using Client ID Metadata Documents",
+   "body": "Vercel says any MCP client can now ask to connect to Vercel MCP without prior review. To connect, a client publishes a Client ID Metadata Document on its own domain and uses that document's HTTPS URL as its OAuth client_id. Vercel says this follows the MCP authorization spec, which now recommends CIMD over Dynamic Client Registration. CIMD clients get no verified badge, so the consent screen shows the hostname serving the metadata. Our panel check finds CIMD published by 31 of 278 domains.",
+   "why_it_matters": "MCP client developers can reach Vercel MCP by publishing a CIMD. Users approving these clients are trusting the hostname shown on the consent screen.",
+   "kind": "adoption",
+   "related": [
+    {
+     "id": "oauth-cimd",
+     "name": "OAuth Client ID Metadata Document",
+     "url": "https://agenticweb.wiki/protocols/oauth-cimd/"
+    },
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://vercel.com/changelog/vercel-mcp-now-supports-client-id-metadata-documents",
+     "title": "Vercel MCP now supports Client ID Metadata Documents",
+     "publisher": "vercel.com",
+     "published": "2026-11-02",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": [
+    "OAuth Client ID Metadata Document (oauth-cimd) is published by 31 of 278 panel domains."
+   ]
+  },
+  {
+   "id": "2026-11-03-7",
+   "title": "Agentic Resource Discovery submitted to IETF as three drafts",
+   "body": "Neuronto reports that on 30 October 2026, authors at Google and Ericsson submitted ARD to the IETF DAWN effort as three individual -00 drafts, under the name Agent Resource Discovery. It says the format is unchanged, but the drafts register application/ard+json and let a client ignore a manifest served without that media type. Neuronto says that of 179 domains serving /.well-known/ard.json, none used it. Separately, our panel check finds clickhouse.com now publishes ARD.",
+   "why_it_matters": "ARD publishers should check the Content-Type their manifest is served with. Under the drafts as reported, clients may ignore manifests that lack the new media type.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "ard",
+     "name": "Agentic Resource Discovery",
+     "url": "https://agenticweb.wiki/protocols/ard/"
+    },
+    {
+     "id": "ai-catalog-well-known-file",
+     "name": "AI Catalog well-known file",
+     "url": "https://agenticweb.wiki/protocols/ai-catalog-well-known-file/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://neuronto.com/blog/ard-ietf-internet-draft",
+     "title": "ARD is now an IETF Internet-Draft: what changed, and who is ready",
+     "publisher": "neuronto.com",
+     "published": "2026-11-02",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": [
+    "clickhouse.com now publishes Agentic Resource Discovery (ard); it did not on 2026-11-02."
+   ]
+  },
+  {
+   "id": "2026-11-03-8",
+   "title": "OAuth Transaction Authorization Challenge draft revised",
+   "body": "draft-rosomakho-oauth-txn-challenge-01, a Standards Track draft discussed on the OAuth working group list, defines a challenge a protected resource returns when one operation needs additional approval. The draft says this is useful for agent-mediated requests that need confirmation from a human or organizational authority. The client takes the challenge to an authorization server, which issues an access token whose Rich Authorization Requests details describe the approved operation.",
+   "why_it_matters": "This draft defines one way to get per-operation human approval for agent requests without broad token scopes. Resource servers handling sensitive actions should evaluate it.",
+   "kind": "spec",
+   "related": [],
+   "sources": [
+    {
+     "url": "https://datatracker.ietf.org/doc/html/draft-rosomakho-oauth-txn-challenge",
+     "title": "draft-rosomakho-oauth-txn-challenge-01",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-11-02",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-03-9",
+   "title": "Cisco authors propose PACE dialog protocol over Media over QUIC",
+   "body": "draft-nandakumar-agentproto-pace-00, published 1 November 2026 by Cisco authors, defines the Protocol for Agent Communication Exchange (PACE). It is a dialog management protocol with a binding to Media over QUIC Transport. It is intended as Standards Track and replaces draft-nandakumar-a2a-moqt-transport. PACE does not define dialog content. A2A, MCP and AutoGen keep their own message formats and carry the dialog context through their extension points.",
+   "why_it_matters": "Teams building multi-party or audio and video agent sessions on A2A or MCP can follow this draft. It proposes carrying dialog context across intermediaries without changing those protocols.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "a2a",
+     "name": "Agent2Agent Protocol",
+     "url": "https://agenticweb.wiki/protocols/a2a/"
+    },
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://datatracker.ietf.org/doc/html/draft-nandakumar-agentproto-pace",
+     "title": "draft-nandakumar-agentproto-pace-00",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-11-01",
+     "label": "VERIFIED",
+     "fetched": true
+    },
+    {
+     "url": "https://datatracker.ietf.org/doc/draft-nandakumar-agentproto-pace/",
+     "title": "PACE: Protocol for Agent Communication Exchange",
+     "publisher": "datatracker.ietf.org",
+     "published": "2026-11-02",
+     "label": "VERIFIED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-03-10",
+   "title": "Amazon Connect Customer flows can call MCP tools",
+   "body": "AWS says Amazon Connect Customer can now invoke MCP tools in customer experience flows through a new External Tool block. Flows connect to third-party applications through Amazon Bedrock AgentCore Gateway. AWS says this reuses the same tools as agentic experiences, without custom Lambda functions. It is available in selected US, Canada, Europe and Asia Pacific regions.",
+   "why_it_matters": "MCP server operators can now be called from Amazon Connect contact-center flows as well as from agents. Check the AgentCore Gateway requirements before exposing tools.",
+   "kind": "launch",
+   "related": [
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-flows-mcp-tools/",
+     "title": "Amazon Connect Customer now supports Model Context Protocol (MCP) tools in flows - AWS",
+     "publisher": "aws.amazon.com",
+     "published": "2026-11-02",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  }
+ ],
+ "stats": {
+  "previous": "2026-11-02",
+  "panel": {
+   "domains": 278,
+   "checked": 278,
+   "errors": 0,
+   "compared": 276,
+   "grades": {
+    "A+": 114,
+    "A": 43,
+    "B": 42,
+    "C": 59,
+    "D": 12,
+    "F": 6
+   },
+   "adoption": [
+    {
+     "id": "llms-txt",
+     "name": "llms.txt",
+     "domains": 225,
+     "delta": -3
+    },
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "domains": 135,
+     "delta": -4
+    },
+    {
+     "id": "cloudflare-content-signals-policy",
+     "name": "Content Signals Policy",
+     "domains": 133,
+     "delta": 0
+    },
+    {
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents",
+     "domains": 132,
+     "delta": -5
+    },
+    {
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)",
+     "domains": 122,
+     "delta": -3
+    },
+    {
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs",
+     "domains": 114,
+     "delta": 0
+    },
+    {
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills",
+     "domains": 109,
+     "delta": -1
+    },
+    {
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt",
+     "domains": 80,
+     "delta": -1
+    },
+    {
+     "id": "oauth-metadata-for-agents",
+     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)",
+     "domains": 64,
+     "delta": 0
+    },
+    {
+     "id": "ai-catalog-well-known-file",
+     "name": "AI Catalog well-known file",
+     "domains": 63,
+     "delta": 1
+    },
+    {
+     "id": "oauth-cimd",
+     "name": "OAuth Client ID Metadata Document",
+     "domains": 31,
+     "delta": 0
+    },
+    {
+     "id": "agents-md",
+     "name": "AGENTS.md",
+     "domains": 27,
+     "delta": -3
+    },
+    {
+     "id": "ard",
+     "name": "Agentic Resource Discovery",
+     "domains": 27,
+     "delta": 1
+    },
+    {
+     "id": "a2a",
+     "name": "Agent2Agent Protocol",
+     "domains": 23,
+     "delta": 1
+    },
+    {
+     "id": "auth-md",
+     "name": "auth.md",
+     "domains": 20,
+     "delta": 1
+    },
+    {
+     "id": "webbotauth",
+     "name": "Web Bot Auth HTTP Message Signatures",
+     "domains": 9,
+     "delta": 0
+    },
+    {
+     "id": "identity-assertion-authz-grant",
+     "name": "Identity Assertion JWT Authorization Grant",
+     "domains": 7,
+     "delta": 0
+    },
+    {
+     "id": "rsl",
+     "name": "Really Simple Licensing",
+     "domains": 4,
+     "delta": 0
+    },
+    {
+     "id": "agents-txt",
+     "name": "agents.txt",
+     "domains": 3,
+     "delta": -1
+    },
+    {
+     "id": "tdmrep",
+     "name": "Text and Data Mining Reservation Protocol",
+     "domains": 3,
+     "delta": 0
+    },
+    {
+     "id": "agents-json",
+     "name": "agents.json",
+     "domains": 2,
+     "delta": 0
+    },
+    {
+     "id": "ucp",
+     "name": "Universal Commerce Protocol",
+     "domains": 2,
+     "delta": 0
+    },
+    {
+     "id": "ads",
+     "name": "Agent Directory Service",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "agent-permissions-json",
+     "name": "agent-permissions.json",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "aipref-content-usage-attachment",
+     "name": "AIPREF Content-Usage Attachment",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "aipref-vocabulary",
+     "name": "AIPREF Vocabulary",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "okf",
+     "name": "Open Knowledge Format",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "web-bot-auth-signature-agent-card",
+     "name": "Signature Agent Card (Web Bot Auth registry)",
+     "domains": 1,
+     "delta": 0
+    }
+   ],
+   "gained": [
+    {
+     "domain": "clickhouse.com",
+     "id": "ard",
+     "name": "Agentic Resource Discovery"
+    },
+    {
+     "domain": "clickhouse.com",
+     "id": "auth-md",
+     "name": "auth.md"
+    },
+    {
+     "domain": "mcp.notion.com",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "notion.so",
+     "id": "ai-catalog-well-known-file",
+     "name": "AI Catalog well-known file"
+    },
+    {
+     "domain": "samsung.com",
+     "id": "llms-txt",
+     "name": "llms.txt"
+    },
+    {
+     "domain": "scrapfly.io",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "stackone.com",
+     "id": "a2a",
+     "name": "Agent2Agent Protocol"
+    },
+    {
+     "domain": "supabase.com",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    }
+   ],
+   "lost": [
+    {
+     "domain": "agentcommunity.org",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "ant-intl.com",
+     "id": "llms-txt",
+     "name": "llms.txt"
+    },
+    {
+     "domain": "circle.so",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "descope.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "descope.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "descope.com",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "descope.com",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "docs.adcontextprotocol.org",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "docs.n8n.io",
+     "id": "agents-md",
+     "name": "AGENTS.md"
+    },
+    {
+     "domain": "docs.n8n.io",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "docs.n8n.io",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "docs.n8n.io",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "docs.snyk.io",
+     "id": "agents-md",
+     "name": "AGENTS.md"
+    },
+    {
+     "domain": "docs.snyk.io",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "docs.snyk.io",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "docs.snyk.io",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "docs.whereby.com",
+     "id": "agents-md",
+     "name": "AGENTS.md"
+    },
+    {
+     "domain": "docs.whereby.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "docs.whereby.com",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "docs.whereby.com",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "dreaming.press",
+     "id": "agents-txt",
+     "name": "agents.txt"
+    },
+    {
+     "domain": "fidoalliance.org",
+     "id": "llms-txt",
+     "name": "llms.txt"
+    },
+    {
+     "domain": "neuronto.com",
+     "id": "llms-txt",
+     "name": "llms.txt"
+    },
+    {
+     "domain": "samsung.com",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "stm-assoc.org",
+     "id": "llms-txt",
+     "name": "llms.txt"
+    }
+   ],
+   "grade_changes": [
+    {
+     "domain": "ant-intl.com",
+     "from": "C",
+     "to": "F",
+     "score_from": 20,
+     "score_to": 0
+    },
+    {
+     "domain": "circle.so",
+     "from": "A+",
+     "to": "A",
+     "score_from": 62,
+     "score_to": 59
+    },
+    {
+     "domain": "descope.com",
+     "from": "A+",
+     "to": "B",
+     "score_from": 67,
+     "score_to": 30
+    },
+    {
+     "domain": "docs.n8n.io",
+     "from": "A+",
+     "to": "A",
+     "score_from": 60,
+     "score_to": 48
+    },
+    {
+     "domain": "docs.snyk.io",
+     "from": "A+",
+     "to": "B",
+     "score_from": 60,
+     "score_to": 43
+    },
+    {
+     "domain": "docs.whereby.com",
+     "from": "A+",
+     "to": "A",
+     "score_from": 60,
+     "score_to": 48
+    },
+    {
+     "domain": "dreaming.press",
+     "from": "A",
+     "to": "B",
+     "score_from": 56,
+     "score_to": 43
+    },
+    {
+     "domain": "fidoalliance.org",
+     "from": "B",
+     "to": "D",
+     "score_from": 30,
+     "score_to": 10
+    },
+    {
+     "domain": "mcp.notion.com",
+     "from": "C",
+     "to": "A",
+     "score_from": 26,
+     "score_to": 49
+    },
+    {
+     "domain": "microsoft.com",
+     "from": "F",
+     "to": "blocked",
+     "score_from": 0,
+     "score_to": 0
+    },
+    {
+     "domain": "neuronto.com",
+     "from": "A+",
+     "to": "A",
+     "score_from": 65,
+     "score_to": 52
+    },
+    {
+     "domain": "stm-assoc.org",
+     "from": "C",
+     "to": "blocked",
+     "score_from": 20,
+     "score_to": 0
+    }
+   ]
+  },
+  "repos": {
+   "tracked": 58,
+   "movers": [
+    {
+     "repo": "block/goose",
+     "stars": 56158,
+     "delta": 47,
+     "pct": 0.1
+    },
+    {
+     "repo": "agentskills/agentskills",
+     "stars": 26899,
+     "delta": 37,
+     "pct": 0.1
+    },
+    {
+     "repo": "googlecloudplatform/open-knowledge-format",
+     "stars": 1284,
+     "delta": 21,
+     "pct": 1.7
+    },
+    {
+     "repo": "copilotkit/copilotkit",
+     "stars": 38481,
+     "delta": 20,
+     "pct": 0.1
+    },
+    {
+     "repo": "a2aproject/a2a",
+     "stars": 26404,
+     "delta": 17,
+     "pct": 0.1
+    },
+    {
+     "repo": "agentsmd/agents.md",
+     "stars": 25287,
+     "delta": 16,
+     "pct": 0.1
+    },
+    {
+     "repo": "a2ui-project/a2ui",
+     "stars": 16948,
+     "delta": 14,
+     "pct": 0.1
+    },
+    {
+     "repo": "ag-ui-protocol/ag-ui",
+     "stars": 16981,
+     "delta": 10,
+     "pct": 0.1
+    }
+   ]
+  },
+  "registry": {
+   "since": "2026-11-02T00:00:00Z",
+   "versions": 3000,
+   "servers": 2189
+  }
+ },
+ "record_changes": [],
+ "previous": "2026-11-02",
+ "method": {
+  "sources": {
+   "feeds": 0,
+   "datatracker": 9,
+   "hn": 0,
+   "arxiv": 16,
+   "exa": 104,
+   "parallel": 6,
+   "tips": 0
+  },
+  "candidates": 135,
+  "after_dedupe": 114,
+  "kept": 23,
+  "fetched": 20,
+  "models": {
+   "triage": "claude-opus-5-5",
+   "writer": "claude-opus-5-5"
+  },
+  "facts": 20,
+  "notes": [],
+  "rules": "Items are written only from the cited sources and our own measurements; every number in an item appears in a source it cites. VERIFIED = fetched from the standard's issuer or a standards body; REPORTED = a claim by press or a third party."
+ },
+ "license": "CC BY 4.0"
+}
