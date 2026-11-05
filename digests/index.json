@@ -1,6 +1,12 @@
 {
- "latest": "2026-11-04",
+ "latest": "2026-11-05",
  "digests": [
+  {
+   "date": "2026-11-05",
+   "headline": "Google, Microsoft, OpenAI and Anthropic back a shared AI training opt-out for robots.txt",
+   "items": 10,
+   "url": "https://agenticweb.wiki/digest/2026-11-05/"
+  },
   {
    "date": "2026-11-04",
    "headline": "Google, OpenAI, Microsoft and Anthropic back one robots.txt signal for AI training",
