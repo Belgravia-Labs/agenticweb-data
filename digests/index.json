@@ -1,6 +1,12 @@
 {
- "latest": "2026-11-05",
+ "latest": "2026-11-06",
  "digests": [
+  {
+   "date": "2026-11-06",
+   "headline": "MCP Inspector 2.14.0 patches three vulnerabilities; Pillar details an RCE chain",
+   "items": 10,
+   "url": "https://agenticweb.wiki/digest/2026-11-06/"
+  },
   {
    "date": "2026-11-05",
    "headline": "Google, Microsoft, OpenAI and Anthropic back a shared AI training opt-out for robots.txt",
