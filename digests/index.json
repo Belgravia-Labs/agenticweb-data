@@ -1,6 +1,12 @@
 {
- "latest": "2026-11-06",
+ "latest": "2026-11-07",
  "digests": [
+  {
+   "date": "2026-11-07",
+   "headline": "NSA guidance names tool poisoning and weak credentials as core MCP security risks",
+   "items": 7,
+   "url": "https://agenticweb.wiki/digest/2026-11-07/"
+  },
   {
    "date": "2026-11-06",
    "headline": "MCP Inspector 2.14.0 patches three vulnerabilities; Pillar details an RCE chain",

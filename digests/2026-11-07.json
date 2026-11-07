@@ -1,0 +1,709 @@
+{
+ "version": 1,
+ "date": "2026-11-07",
+ "url": "https://agenticweb.wiki/digest/2026-11-07/",
+ "generated_at": "2026-11-07T07:57:44Z",
+ "window": {
+  "from": "2026-11-05T18:00:00Z",
+  "to": "2026-11-07T07:30:34Z"
+ },
+ "headline": "NSA guidance names tool poisoning and weak credentials as core MCP security risks",
+ "lede": "According to aigovernance.com, the NSA issued a cybersecurity information sheet on MCP that names tool poisoning, weak authentication, inadequate human approval and absent audit logs as core failure modes. Cloudflare separately says it has formed a coalition to standardize signed, delegated agent identity.",
+ "items": [
+  {
+   "id": "2026-11-07-1",
+   "title": "NSA information sheet lists core MCP failure modes and countermeasures",
+   "body": "aigovernance.com, citing Cranium AI, reports that the U.S. National Security Agency issued a cybersecurity information sheet on MCP security risks. The sheet reportedly identifies four failure modes: tool poisoning, weak or missing authentication, inadequate human approval workflows, and absent audit logs. Its countermeasures include pinning and reviewing tool definitions before use, short-lived credentials scoped to minimum access, isolating MCP servers, validating tool inputs and outputs, and logging agent and user identity on every invocation.",
+   "why_it_matters": "MCP server and client operators can check their deployments against this list: pinned tool definitions, scoped short-lived credentials, server isolation and per-call identity logging. aigovernance.com argues regulated teams will be measured against it.",
+   "kind": "security",
+   "related": [
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://aigovernance.com/news/nsa-names-tool-poisoning-and-weak-credentials-as-core-mcp-security-risks",
+     "title": "NSA Names Tool Poisoning and Weak Credentials as Core MCP…",
+     "publisher": "aigovernance.com",
+     "published": "2026-11-06",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-07-2",
+   "title": "Cloudflare announces Trusted Agent Delegation coalition built on Web Bot Auth",
+   "body": "According to Reveneau, Cloudflare announced the Trusted Agent Delegation coalition on 5 November 2026. The coalition's goal is one open standard for how an agent proves who sent it, covering identity, reputation and accountability. Cloudflare describes the partners only by category and names no individual company. Cloudflare says it builds on Web Bot Auth for per-request signatures and on MOLE, a protocol for per-person rate limiting with an anonymous identifier. The coalition also plans a machine-readable Site Agent Access Policy file.",
+   "why_it_matters": "Agent builders choosing between custom headers and signed requests should look at Web Bot Auth. Site operators should watch for the Site Agent Access Policy format, which would declare which agents a site accepts and at which identity level.",
+   "kind": "launch",
+   "related": [
+    {
+     "id": "webbotauth",
+     "name": "Web Bot Auth HTTP Message Signatures",
+     "url": "https://agenticweb.wiki/protocols/webbotauth/"
+    },
+    {
+     "id": "web-bot-auth-signature-agent-card",
+     "name": "Signature Agent Card (Web Bot Auth registry)",
+     "url": "https://agenticweb.wiki/protocols/web-bot-auth-signature-agent-card/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://reveneau.com/ainews/cloudflare-trusted-agent-delegation-coalition-web-bot-auth-identity",
+     "title": "Cloudflare launches a coalition for signed, delegated AI agent identity: Reveneau",
+     "publisher": "reveneau.com",
+     "published": "2026-11-05",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-07-3",
+   "title": "Google, Microsoft, Anthropic and OpenAI back a new AI training opt-out proposal",
+   "body": "A Knight-Georgetown Institute commentary by Alissa Cooper says Google, Microsoft, Anthropic and OpenAI all announced plans to support a new mechanism that lets publishers opt out of having their content used for AI training. The proposal was authored by Anthropic's Kevin Kelley. Cooper argues that the coverage left out how the proposal relates to the IETF AIPREF effort, which builds in part on RFC 9309, the Robots Exclusion Protocol.",
+   "why_it_matters": "Publishers who already express preferences in robots.txt or through AIPREF drafts should track how the new mechanism relates to the IETF vocabulary before adopting it.",
+   "kind": "governance",
+   "related": [
+    {
+     "id": "aipref-vocabulary",
+     "name": "AIPREF Vocabulary",
+     "url": "https://agenticweb.wiki/protocols/aipref-vocabulary/"
+    },
+    {
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt",
+     "url": "https://agenticweb.wiki/protocols/ai-crawler-tokens-robots/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://kgi.georgetown.edu/research-and-commentary/what-the-new-ai-training-opt-out-really-means/",
+     "title": "What the New AI Training Opt-Out Really Means – Knight-Georgetown Institute",
+     "publisher": "kgi.georgetown.edu",
+     "published": "2026-11-06",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-07-4",
+   "title": "AG-UI Kotlin SDK 0.5.0 aligns with AG-UI 1.0, with breaking validation changes",
+   "body": "The AG-UI release of 2026-11-05 published kotlin-core, kotlin-client and kotlin-tools 0.5.0 to Maven Central. The release targets AG-UI 1.0 and adds REASONING_* events, deprecating THINKING_* events. It also adds interrupt protocol support on RUN_FINISHED outcomes and ACTIVITY_SNAPSHOT/ACTIVITY_DELTA events. The notes warn that strict event and input decoding may reject previously accepted payloads. The release of 2026-11-06 published ag-ui-openai-agents 0.1.0 on PyPI, without approved release notes.",
+   "why_it_matters": "Kotlin integrators upgrading to 0.5.0 should test payloads that older versions accepted, and migrate THINKING_* handling to REASONING_* events.",
+   "kind": "spec",
+   "related": [
+    {
+     "id": "ag-ui",
+     "name": "Agent-User Interaction Protocol",
+     "url": "https://agenticweb.wiki/protocols/ag-ui/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/ag-ui-protocol/ag-ui/releases/tag/release%2F2026-11-05",
+     "title": "AG-UI protocol release 2026-11-05",
+     "publisher": "github.com",
+     "published": "2026-11-05",
+     "label": "REPORTED",
+     "fetched": true
+    },
+    {
+     "url": "https://github.com/ag-ui-protocol/ag-ui/releases",
+     "title": "AG-UI protocol release 2026-11-06 ships ag-ui-openai-agents 0.1.0",
+     "publisher": "github.com",
+     "published": "2026-11-06",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-07-5",
+   "title": "Cashfree adds WebMCP tools to its Hosted Checkout",
+   "body": "Cashfree says its Hosted Checkout now publishes WebMCP tools that browser agents can call. Agents can use them to read the order, find a payment method and show a UPI QR code for the user to pay. Cashfree says merchants do not need to change their integrations. Support covers redirect mode, and UPI QR payments work on the desktop layout. Cashfree says agents need a Chromium-based browser.",
+   "why_it_matters": "This is a payment-provider deployment of WebMCP, which is still a Draft Community Group Report. Agent developers can test checkout flows against it rather than parsing the page.",
+   "kind": "adoption",
+   "related": [
+    {
+     "id": "webmcp",
+     "name": "WebMCP",
+     "url": "https://agenticweb.wiki/protocols/webmcp/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.cashfree.com/blog/cashfree-hosted-checkout-is-now-agent-ready-with-webmcp/",
+     "title": "Cashfree launches Checkout for Agents on WebMCP",
+     "publisher": "cashfree.com",
+     "published": "2026-11-06",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-07-6",
+   "title": "Scraping Agency index: training crawlers are blocked far more often than AI search bots",
+   "body": "Scraping Agency reports that 29.6% of sites with a robots.txt fully block at least one AI training crawler (151 of 510 sites). According to its index, 21.2% block OpenAI's GPTBot, versus 11.2% for OAI-SearchBot. It also reports that 3.3% publish Cloudflare-style Content Signals in robots.txt (17 of 510 sites).",
+   "why_it_matters": "Operators of crawlers and fetchers should expect training and search user agents to be treated differently. Using separate, documented tokens per purpose affects how much of the web each crawler can reach.",
+   "kind": "research",
+   "related": [
+    {
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt",
+     "url": "https://agenticweb.wiki/protocols/ai-crawler-tokens-robots/"
+    },
+    {
+     "id": "cloudflare-content-signals-policy",
+     "name": "Content Signals Policy",
+     "url": "https://agenticweb.wiki/protocols/cloudflare-content-signals-policy/"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://scrapingagency.com/research/ai-crawler-access-index/",
+     "title": "AI Crawler Access Index 2026-11: how top sites treat AI bots | Scraping Agency",
+     "publisher": "scrapingagency.com",
+     "published": "2026-11-06",
+     "label": "REPORTED",
+     "fetched": true
+    }
+   ],
+   "stats": []
+  },
+  {
+   "id": "2026-11-07-7",
+   "title": "Panel: three docs sites drop MCP and Server Cards, while descope.com adds them",
+   "body": "Our panel counted MCP on 135 of 278 domains (-2 since 2026-11-06) and MCP Server Cards on 122 of 278 (-2 since 2026-11-06). docs.gladia.io, docs.incident.io and docs.kombo.dev stopped publishing both. docs.incident.io moved from grade A+ (60) to B (38), and docs.kombo.dev from A+ (60) to B (43). descope.com began publishing both and moved from grade B (30) to A+ (67). The official MCP Registry saw 1911 servers (3000 versions) published or updated since 2026-11-06.",
+   "why_it_matters": "Simultaneous drops across several docs sites can indicate a shared hosting or platform change. Publishers relying on such platforms should verify their MCP endpoints still resolve.",
+   "kind": "adoption",
+   "related": [
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "url": "https://agenticweb.wiki/protocols/mcp/"
+    },
+    {
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)",
+     "url": "https://agenticweb.wiki/protocols/mcp-server-cards/"
+    },
+    {
+     "id": "mcp-registry",
+     "name": "Official MCP Registry",
+     "url": "https://agenticweb.wiki/protocols/mcp-registry/"
+    }
+   ],
+   "sources": [],
+   "stats": [
+    "Model Context Protocol (mcp) is published by 135 of 278 panel domains (-2 since 2026-11-06).",
+    "MCP Server Cards (SEP-2127) (mcp-server-cards) is published by 122 of 278 panel domains (-2 since 2026-11-06).",
+    "docs.gladia.io no longer publishes Model Context Protocol (mcp); it did on 2026-11-06.",
+    "docs.gladia.io no longer publishes MCP Server Cards (SEP-2127) (mcp-server-cards); it did on 2026-11-06.",
+    "docs.incident.io no longer publishes Model Context Protocol (mcp); it did on 2026-11-06.",
+    "docs.incident.io no longer publishes MCP Server Cards (SEP-2127) (mcp-server-cards); it did on 2026-11-06.",
+    "docs.kombo.dev no longer publishes Model Context Protocol (mcp); it did on 2026-11-06.",
+    "docs.kombo.dev no longer publishes MCP Server Cards (SEP-2127) (mcp-server-cards); it did on 2026-11-06.",
+    "descope.com now publishes Model Context Protocol (mcp); it did not on 2026-11-06.",
+    "descope.com now publishes MCP Server Cards (SEP-2127) (mcp-server-cards); it did not on 2026-11-06.",
+    "descope.com moved from grade B (30) to A+ (67).",
+    "docs.incident.io moved from grade A+ (60) to B (38).",
+    "docs.kombo.dev moved from grade A+ (60) to B (43).",
+    "1911 servers (3000 versions) were published or updated on the official MCP Registry since 2026-11-06."
+   ]
+  }
+ ],
+ "stats": {
+  "previous": "2026-11-06",
+  "panel": {
+   "domains": 278,
+   "checked": 278,
+   "errors": 0,
+   "compared": 277,
+   "grades": {
+    "A+": 114,
+    "A": 44,
+    "B": 41,
+    "C": 61,
+    "D": 11,
+    "F": 6
+   },
+   "adoption": [
+    {
+     "id": "llms-txt",
+     "name": "llms.txt",
+     "domains": 228,
+     "delta": 0
+    },
+    {
+     "id": "mcp",
+     "name": "Model Context Protocol",
+     "domains": 135,
+     "delta": -2
+    },
+    {
+     "id": "cloudflare-content-signals-policy",
+     "name": "Content Signals Policy",
+     "domains": 133,
+     "delta": 1
+    },
+    {
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents",
+     "domains": 133,
+     "delta": -1
+    },
+    {
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)",
+     "domains": 122,
+     "delta": -2
+    },
+    {
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs",
+     "domains": 112,
+     "delta": -3
+    },
+    {
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills",
+     "domains": 107,
+     "delta": -1
+    },
+    {
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt",
+     "domains": 80,
+     "delta": 1
+    },
+    {
+     "id": "ai-catalog-well-known-file",
+     "name": "AI Catalog well-known file",
+     "domains": 64,
+     "delta": 0
+    },
+    {
+     "id": "oauth-metadata-for-agents",
+     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)",
+     "domains": 64,
+     "delta": 1
+    },
+    {
+     "id": "oauth-cimd",
+     "name": "OAuth Client ID Metadata Document",
+     "domains": 31,
+     "delta": 0
+    },
+    {
+     "id": "agents-md",
+     "name": "AGENTS.md",
+     "domains": 30,
+     "delta": 1
+    },
+    {
+     "id": "ard",
+     "name": "Agentic Resource Discovery",
+     "domains": 28,
+     "delta": 0
+    },
+    {
+     "id": "a2a",
+     "name": "Agent2Agent Protocol",
+     "domains": 25,
+     "delta": 3
+    },
+    {
+     "id": "auth-md",
+     "name": "auth.md",
+     "domains": 20,
+     "delta": 0
+    },
+    {
+     "id": "webbotauth",
+     "name": "Web Bot Auth HTTP Message Signatures",
+     "domains": 9,
+     "delta": 0
+    },
+    {
+     "id": "identity-assertion-authz-grant",
+     "name": "Identity Assertion JWT Authorization Grant",
+     "domains": 8,
+     "delta": 0
+    },
+    {
+     "id": "agents-txt",
+     "name": "agents.txt",
+     "domains": 4,
+     "delta": 0
+    },
+    {
+     "id": "rsl",
+     "name": "Really Simple Licensing",
+     "domains": 4,
+     "delta": 0
+    },
+    {
+     "id": "tdmrep",
+     "name": "Text and Data Mining Reservation Protocol",
+     "domains": 3,
+     "delta": 0
+    },
+    {
+     "id": "agents-json",
+     "name": "agents.json",
+     "domains": 2,
+     "delta": 0
+    },
+    {
+     "id": "ucp",
+     "name": "Universal Commerce Protocol",
+     "domains": 2,
+     "delta": 0
+    },
+    {
+     "id": "ads",
+     "name": "Agent Directory Service",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "agent-permissions-json",
+     "name": "agent-permissions.json",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "aipref-content-usage-attachment",
+     "name": "AIPREF Content-Usage Attachment",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "aipref-vocabulary",
+     "name": "AIPREF Vocabulary",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "okf",
+     "name": "Open Knowledge Format",
+     "domains": 1,
+     "delta": 0
+    },
+    {
+     "id": "web-bot-auth-signature-agent-card",
+     "name": "Signature Agent Card (Web Bot Auth registry)",
+     "domains": 1,
+     "delta": 0
+    }
+   ],
+   "gained": [
+    {
+     "domain": "dchub.cloud",
+     "id": "a2a",
+     "name": "Agent2Agent Protocol"
+    },
+    {
+     "domain": "dchub.cloud",
+     "id": "agents-md",
+     "name": "AGENTS.md"
+    },
+    {
+     "domain": "dchub.cloud",
+     "id": "ai-crawler-tokens-robots",
+     "name": "AI Crawler User-Agent Tokens in robots.txt"
+    },
+    {
+     "domain": "dchub.cloud",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "dchub.cloud",
+     "id": "cloudflare-content-signals-policy",
+     "name": "Content Signals Policy"
+    },
+    {
+     "domain": "dchub.cloud",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "dchub.cloud",
+     "id": "llms-txt",
+     "name": "llms.txt"
+    },
+    {
+     "domain": "dchub.cloud",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "descope.com",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "descope.com",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "descope.com",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "descope.com",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "docs.gladia.io",
+     "id": "a2a",
+     "name": "Agent2Agent Protocol"
+    },
+    {
+     "domain": "docs.kombo.dev",
+     "id": "a2a",
+     "name": "Agent2Agent Protocol"
+    },
+    {
+     "domain": "fly.io",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "fly.io",
+     "id": "oauth-metadata-for-agents",
+     "name": "OAuth Protected Resource and Authorization Server Metadata (as used for agent authorization)"
+    }
+   ],
+   "lost": [
+    {
+     "domain": "customer.io",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "customer.io",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "docs.gladia.io",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "docs.gladia.io",
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
+    },
+    {
+     "domain": "docs.gladia.io",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "docs.gladia.io",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "docs.gladia.io",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "docs.incident.io",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "docs.incident.io",
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
+    },
+    {
+     "domain": "docs.incident.io",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "docs.incident.io",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "docs.incident.io",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "docs.kombo.dev",
+     "id": "anthropic-agent-skills-format",
+     "name": "Agent Skills"
+    },
+    {
+     "domain": "docs.kombo.dev",
+     "id": "api-catalog-rfc9727",
+     "name": "api-catalog: A Well-Known URI and Link Relation to Help Discovery of APIs"
+    },
+    {
+     "domain": "docs.kombo.dev",
+     "id": "cloudflare-markdown-for-agents",
+     "name": "Markdown for Agents"
+    },
+    {
+     "domain": "docs.kombo.dev",
+     "id": "mcp",
+     "name": "Model Context Protocol"
+    },
+    {
+     "domain": "docs.kombo.dev",
+     "id": "mcp-server-cards",
+     "name": "MCP Server Cards (SEP-2127)"
+    },
+    {
+     "domain": "samsung.com",
+     "id": "llms-txt",
+     "name": "llms.txt"
+    }
+   ],
+   "grade_changes": [
+    {
+     "domain": "descope.com",
+     "from": "B",
+     "to": "A+",
+     "score_from": 30,
+     "score_to": 67
+    },
+    {
+     "domain": "docs.gladia.io",
+     "from": "A+",
+     "to": "A",
+     "score_from": 65,
+     "score_to": 48
+    },
+    {
+     "domain": "docs.incident.io",
+     "from": "A+",
+     "to": "B",
+     "score_from": 60,
+     "score_to": 38
+    },
+    {
+     "domain": "docs.kombo.dev",
+     "from": "A+",
+     "to": "B",
+     "score_from": 60,
+     "score_to": 43
+    },
+    {
+     "domain": "samsung.com",
+     "from": "C",
+     "to": "blocked",
+     "score_from": 20,
+     "score_to": 0
+    }
+   ]
+  },
+  "repos": {
+   "tracked": 80,
+   "movers": [
+    {
+     "repo": "block/goose",
+     "stars": 56317,
+     "delta": 35,
+     "pct": 0.1
+    },
+    {
+     "repo": "agentskills/agentskills",
+     "stars": 27029,
+     "delta": 34,
+     "pct": 0.1
+    },
+    {
+     "repo": "agentsmd/agents.md",
+     "stars": 25374,
+     "delta": 22,
+     "pct": 0.1
+    },
+    {
+     "repo": "googlecloudplatform/open-knowledge-format",
+     "stars": 1363,
+     "delta": 19,
+     "pct": 1.4
+    },
+    {
+     "repo": "copilotkit/copilotkit",
+     "stars": 38549,
+     "delta": 12,
+     "pct": 0.0
+    },
+    {
+     "repo": "ag-ui-protocol/ag-ui",
+     "stars": 17052,
+     "delta": 11,
+     "pct": 0.1
+    },
+    {
+     "repo": "apache/ossie",
+     "stars": 2651,
+     "delta": 11,
+     "pct": 0.4
+    },
+    {
+     "repo": "a2ui-project/a2ui",
+     "stars": 17001,
+     "delta": 8,
+     "pct": 0.0
+    }
+   ]
+  },
+  "registry": {
+   "since": "2026-11-06T00:00:00Z",
+   "versions": 3000,
+   "servers": 1911
+  }
+ },
+ "record_changes": [],
+ "previous": "2026-11-06",
+ "method": {
+  "sources": {
+   "feeds": 1,
+   "datatracker": 6,
+   "hn": 0,
+   "arxiv": 3,
+   "exa": 106,
+   "parallel": 10,
+   "tips": 0
+  },
+  "candidates": 126,
+  "after_dedupe": 98,
+  "kept": 14,
+  "fetched": 8,
+  "models": {
+   "triage": "claude-opus-5-5",
+   "writer": "claude-opus-5-5"
+  },
+  "facts": 8,
+  "notes": [],
+  "rules": "Items are written only from the cited sources and our own measurements; every number in an item appears in a source it cites. VERIFIED = fetched from the standard's issuer or a standards body; REPORTED = a claim by press or a third party."
+ },
+ "license": "CC BY 4.0"
+}
